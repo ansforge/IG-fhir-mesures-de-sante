@@ -1,9 +1,9 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.example
-canonical: http://hl7.org/fhir/fr/example
-name: ExampleIG
-title: ANS IG Example
+id: ans.fhir.fr.mesures
+canonical: http://interop.esante.gouv.fr/ci-sis/fhir/mesures
+name: mesures
+title: Mesures de santé
 publisher:
   name: ANS
   url: https://esante.gouv.fr
@@ -16,6 +16,12 @@ releaseLabel: ci-build
 parameters:
     shownav: 'true'
 
+
+dependencies:
+    hl7.fhir.fr.core: 
+        uri: https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download
+        version: 1.1.0
+    hl7.fhir.uv.phd: 1.0.0
 
 
 pages:
