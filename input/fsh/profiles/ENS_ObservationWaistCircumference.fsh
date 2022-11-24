@@ -32,7 +32,7 @@ Id: ens-observation-waistcircumference
 * code.coding[WaistCircumferenceCode].code = #8280-0 (exactly)
 * subject only Reference(fr-patient)
 * encounter only Reference(fr-encounter)
-* performer only Reference(CareTeam or RelatedPerson or fr-patient or fr-practitioner or $fr-practitioner-role-exercice or fr-organization)
+* performer only Reference(CareTeam or RelatedPerson or fr-patient or fr-practitioner or fr-practitioner-role-exercice or fr-organization)
 * value[x] only Quantity
 * value[x].system 1..
 * value[x].system = "http://unitsofmeasure.org" (exactly)

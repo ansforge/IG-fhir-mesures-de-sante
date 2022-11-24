@@ -20,7 +20,6 @@ Id: ens-observation-bodytemperature
 * extension contains ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1
 * extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. infection, insolation, vaccination…)"
-* valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity.code = #Cel (exactly)
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

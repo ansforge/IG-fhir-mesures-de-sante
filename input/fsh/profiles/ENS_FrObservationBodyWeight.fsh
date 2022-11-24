@@ -16,7 +16,6 @@ Description: "Poids du patient"
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1
-* valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity.code = #kg (exactly)
 * valueQuantity.code ^short = "\"kg\""
 * valueQuantity.code ^definition = "\"kg\""

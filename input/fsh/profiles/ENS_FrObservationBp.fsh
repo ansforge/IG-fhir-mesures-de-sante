@@ -20,7 +20,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
     ENS_MomentOfMeasurement named ENS_MomentOfMeasurement 0..1
 * category[VSCat] ^sliceName = "VSCat"
 * category[VSCat].coding.display = "Signes vitaux" (exactly)
-* subject only Reference($FrPatient)
+* subject only Reference(fr-patient)
 * effective[x] only dateTime
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
@@ -44,6 +44,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * component.dataAbsentReason.coding.system 1..
 * component.dataAbsentReason.coding.code 1..
 * component.referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+* component[SystolicBP] ^slicing.rules = #open
 * component[SystolicBP] ^sliceName = "SystolicBP"
 * component[SystolicBP].value[x] ^slicing.discriminator.type = #type
 * component[SystolicBP].value[x] ^slicing.discriminator.path = "$this"

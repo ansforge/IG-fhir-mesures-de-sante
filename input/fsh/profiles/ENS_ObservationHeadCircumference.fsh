@@ -31,9 +31,9 @@ Id: ens-observation-headcircumference
 * code.coding[headCircumCode].system = "http://loinc.org" (exactly)
 * code.coding[headCircumCode].code 1..
 * code.coding[headCircumCode].code = #8287-5 (exactly)
-* subject only Reference($fr-patient)
-* encounter only Reference($fr-encounter)
-* performer only Reference(CareTeam or RelatedPerson or $FrPatient or $FrPractitioner or $FrPractitionerRoleExercice or $FrOrganization)
+* subject only Reference(fr-patient)
+* encounter only Reference(fr-encounter)
+* performer only Reference(CareTeam or RelatedPerson or FrPatient or FrPractitioner or FrPractitionerRoleExercice or FrOrganization)
 * value[x] only Quantity
 * value[x] ^slicing.discriminator[0].type = #type
 * value[x] ^slicing.discriminator[=].path = "$this"

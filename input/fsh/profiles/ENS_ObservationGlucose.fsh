@@ -1,6 +1,6 @@
 Profile: ENS_ObservationGlucose
 Parent: http://hl7.org/fhir/StructureDefinition/vitalsigns
-Id: 2e6388e2-8697-4d64-85c0-3ea083d822e2
+Id: ens-observation-glucose
 Description: """Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.
 
 Ce profil permet de gérer 4 types d'indicateurs de glycémie:
@@ -49,10 +49,10 @@ L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans l
 * code ^binding.description = "Glucose sanguin ou intersticiel"
 * code.coding.system 1..
 * code.coding.code 1..
-* subject only Reference($fr-patient)
-* encounter only Reference($fr-encounter)
+* subject only Reference(fr-patient)
+* encounter only Reference(fr-encounter)
 * effective[x] only dateTime
-* performer only Reference(CareTeam or RelatedPerson or $fr-practitioner or $fr-practitioner-role-exercice or $fr-organization or $fr-patient)
+* performer only Reference(CareTeam or RelatedPerson or fr-practitioner or fr-practitioner-role-exercice or fr-organization or fr-patient)
 * value[x] only Quantity
 * value[x].value ^short = "Valeur mesurée"
 * value[x].system 1..
@@ -62,22 +62,30 @@ L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans l
 * value[x].code ^binding.description = "JDV-J163-GlucoseUnits-ENS"
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
-* method ^slicing.discriminator.type = #type
-* method ^slicing.discriminator.path = "$this"
+
+// TODO : à corriger, method ne peut pas être slicé si max = 1
+// ex : https://www.hl7.org/fhir/elementdefinition-definitions.html#ElementDefinition.slicing
+* method ^slicing.discriminator.type = #pattern
+* method ^slicing.discriminator.path = "method.coding.system"
 * method ^slicing.rules = #closed
+* method ^slicing.ordered = false   // can be omitted, since false is the default
+* method ^slicing.description = "Slice based on the method.coding.system pattern"
 * method contains
     GlucoseSanguin 0..1 and
     GlucoseInterstitiel 0..1
+
 * method[GlucoseSanguin] from $JDV-J155-MethodGlucoseSanguin-ENS (required)
 * method[GlucoseSanguin] ^short = "JDV pour la glycémie sanguine"
 * method[GlucoseSanguin] ^binding.description = "JDV_J155-MethodGlucoseSanguin-ENS"
-* method[GlucoseSanguin].coding.system 1..
-* method[GlucoseSanguin].coding.code 1..
+* method[GlucoseSanguin].coding.system 1..1
+* method[GlucoseSanguin].coding.code 1..1
+
 * method[GlucoseInterstitiel] from $JDV-J156-MethodGlucoseInterstitiel-ENS (required)
 * method[GlucoseInterstitiel] ^short = "JDV pour la glycémie interstitielle"
 * method[GlucoseInterstitiel] ^binding.description = "JDV_J156-MethodGlucoseInterstitiel-ENS"
-* method[GlucoseInterstitiel].coding.system 1..
-* method[GlucoseInterstitiel].coding.code 1..
+* method[GlucoseInterstitiel].coding.system 1..1
+* method[GlucoseInterstitiel].coding.code 1..1
+
 * device only Reference($PhdDevice)
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire"
 * referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
