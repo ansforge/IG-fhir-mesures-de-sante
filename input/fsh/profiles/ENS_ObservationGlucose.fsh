@@ -63,28 +63,11 @@ L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans l
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-// TODO : à corriger, method ne peut pas être slicé si max = 1
-// ex : https://www.hl7.org/fhir/elementdefinition-definitions.html#ElementDefinition.slicing
-* method ^slicing.discriminator.type = #pattern
-* method ^slicing.discriminator.path = "method.coding.system"
-* method ^slicing.rules = #closed
-* method ^slicing.ordered = false   // can be omitted, since false is the default
-* method ^slicing.description = "Slice based on the method.coding.system pattern"
-* method contains
-    GlucoseSanguin 0..1 and
-    GlucoseInterstitiel 0..1
 
-* method[GlucoseSanguin] from $JDV-J155-MethodGlucoseSanguin-ENS (required)
-* method[GlucoseSanguin] ^short = "JDV pour la glycémie sanguine"
-* method[GlucoseSanguin] ^binding.description = "JDV_J155-MethodGlucoseSanguin-ENS"
-* method[GlucoseSanguin].coding.system 1..1
-* method[GlucoseSanguin].coding.code 1..1
-
-* method[GlucoseInterstitiel] from $JDV-J156-MethodGlucoseInterstitiel-ENS (required)
-* method[GlucoseInterstitiel] ^short = "JDV pour la glycémie interstitielle"
-* method[GlucoseInterstitiel] ^binding.description = "JDV_J156-MethodGlucoseInterstitiel-ENS"
-* method[GlucoseInterstitiel].coding.system 1..1
-* method[GlucoseInterstitiel].coding.code 1..1
+* method from method-glucose-vs (required)
+* method ^short = "JDV pour la glycémie "
+* method.coding.system 1..1
+* method.coding.code 1..1
 
 * device only Reference($PhdDevice)
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire"
