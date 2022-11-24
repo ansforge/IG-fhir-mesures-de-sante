@@ -24,6 +24,11 @@ Id: ens-observation-heartrate
 * extension contains ENS_MomentOfMeasurement named ENS_MomentOfMeasurement 0..1
 * extension[ENS_MomentOfMeasurement] ^short = "Moment de la mesure"
 * extension[ENS_MomentOfMeasurement] ^definition = "Moment de la mesure\r\nTexte libre"
+
+
+* value[x] ^slicing.rules = #open
+
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 * bodySite ^short = "Non utilisé"

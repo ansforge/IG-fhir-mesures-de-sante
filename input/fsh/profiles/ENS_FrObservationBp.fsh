@@ -15,6 +15,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
+
 * extension contains
     ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1 and
     ENS_MomentOfMeasurement named ENS_MomentOfMeasurement 0..1
@@ -59,4 +60,4 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * component[DiastolicBP].value[x] ^slicing.rules = #closed
 * component[DiastolicBP].valueQuantity ^sliceName = "valueQuantity"
 * component[DiastolicBP].valueQuantity.value ^short = "Valeur mesurée"
-* component contains MeanBP 0..0
+* component[MeanBP] 0..0

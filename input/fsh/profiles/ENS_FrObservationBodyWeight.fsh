@@ -16,9 +16,13 @@ Description: "Poids du patient"
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1
+
+
+* value[x] ^slicing.rules = #open
 * valueQuantity.code = #kg (exactly)
 * valueQuantity.code ^short = "\"kg\""
 * valueQuantity.code ^definition = "\"kg\""
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 * method from $JDV-J145-MethodBodyWeight-ENS (required)
