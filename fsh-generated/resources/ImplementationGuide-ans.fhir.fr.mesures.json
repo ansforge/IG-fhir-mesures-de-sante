@@ -1,0 +1,319 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ans.fhir.fr.mesures",
+  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures",
+  "version": "1.3",
+  "name": "mesures",
+  "title": "Mesures de santé",
+  "status": "draft",
+  "publisher": "ANS",
+  "contact": [
+    {
+      "name": "ANS",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://esante.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "packageId": "ans.fhir.fr.mesures",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.fr.core",
+      "uri": "https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download",
+      "version": "1.1.0",
+      "id": "hl7_fhir_fr_core"
+    },
+    {
+      "packageId": "hl7.fhir.uv.phd",
+      "version": "1.0.0",
+      "uri": "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd",
+      "id": "hl7_fhir_uv_phd"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsFrObservationBmi"
+        },
+        "name": "EnsFrObservationBmi",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsFrObservationBodyHeight"
+        },
+        "name": "EnsFrObservationBodyHeight",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsFrObservationBodyTemperature"
+        },
+        "name": "EnsFrObservationBodyTemperature",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsFrObservationBodyWeight"
+        },
+        "name": "EnsFrObservationBodyWeight",
+        "description": "Poids du patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsFrObservationBp"
+        },
+        "name": "EnsFrObservationBp",
+        "description": "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsFrObservationHeartrate"
+        },
+        "name": "EnsFrObservationHeartrate",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsObservationGlucose"
+        },
+        "name": "EnsObservationGlucose",
+        "description": "Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension ENS_NumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsObservationHeadCircumference"
+        },
+        "name": "EnsObservationHeadCircumference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsObservationPainSeverity"
+        },
+        "name": "EnsObservationPainSeverity",
+        "description": "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsObservationStepsByDay"
+        },
+        "name": "EnsObservationStepsByDay",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsObservationWaistCircumference"
+        },
+        "name": "EnsObservationWaistCircumference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsDiabetisType"
+        },
+        "name": "EnsDiabetisType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsMomentOfMeasurement"
+        },
+        "name": "EnsMomentOfMeasurement",
+        "description": "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsNumberOfDays"
+        },
+        "name": "EnsNumberOfDays",
+        "description": "Nombre de jours",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EnsReasonForMeasurement"
+        },
+        "name": "EnsReasonForMeasurement",
+        "description": "Motif de la mesure.\nExprimé en texte libre.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/method-glucose-vs"
+        },
+        "name": "Méthode de mesures de glycémie sanguine ou interstitielle",
+        "description": "Méthode de mesures de glycémie sanguine ou interstitielle.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "Contexte-metier.page.html",
+          "title": "Contexte métier",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_DiabetisType---Types-de-diabetes.page.html",
+          "title": "Extension ENS_DiabetisType - Type de diabète",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_FrObservationBmi---Indice-de-masse-corporelle.page.html",
+          "title": "ENS_FrObservationBmi - Indice de masse corporelle",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_FrObservationBodyHeight---Taille.page.html",
+          "title": "ENS_FrObservationBodyHeight - Taille",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_FrObservationBodyTemperature--Temperature.page.html",
+          "title": "ENS Fr Observation Body Temperature Temperature Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_FrObservationBodyWeight---Poids.page.html",
+          "title": "ENS Fr Observation Body Weight Poids Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_FrObservationBp---Pression-arterielle.page.html",
+          "title": "ENS Fr Observation Bp Pression Arterielle Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_FrObservationHeartrate---Frequence-cardiaque.page.html",
+          "title": "ENS Fr Observation Heartrate Frequence Cardiaque Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_MomentOfMeasurement---Moment-de-la-mesure.page.html",
+          "title": "ENS Moment Of Measurement Moment De La Mesure Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_NumberOfDays---Nombre-de-jours.page.html",
+          "title": "ENS Number Of Days Nombre De Jours Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_ObservationGlucose---Glycemie.page.html",
+          "title": "ENS Observation Glucose Glycemie Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_ObservationHeadCircumference---Perimetre-cranien.page.html",
+          "title": "ENS Observation Head Circumference Perimetre Cranien Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_ObservationPainSeverity---Niveau-de-douleur.page.html",
+          "title": "ENS Observation Pain Severity Niveau De Douleur Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_ObservationStepsByDay---Nombre-de-pas-quotidien.page.html",
+          "title": "ENS Observation Steps By Day Nombre De Pas Quotidien Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_ObservationWaistCircumference---Tour-de-taille.page.html",
+          "title": "ENS Observation Waist Circumference Tour De Taille Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ENS_ReasonForMeasurement---Motif-de-la-mesure.page.html",
+          "title": "ENS Reason For Measurement Motif De La Mesure Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "FHIR-R4.01.page.html",
+          "title": "FHIR R 4 01 Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Generalites.page.html",
+          "title": "Generalites Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "index.html",
+          "title": "Index",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Introduction.page.html",
+          "title": "Introduction Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Jeux-de-valeurs.page.html",
+          "title": "Jeux De Valeurs Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Le-profil-FHIR-des-objets-connectes.page.html",
+          "title": "Le Profil FHIR Des Objets Connectes Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Les-profils-utilises-pour-les-dispositifs-connectes.page.html",
+          "title": "Les Profils Utilises Pour Les Dispositifs Connectes Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Les-profils-utilises-pour-les-mesures-de-sante.page.html",
+          "title": "Les Profils Utilises Pour Les Mesures De Sante Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Liste-des-codes-des-observations.page.html",
+          "title": "Liste Des Codes Des Observations Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Liste-des-profils.page.html",
+          "title": "Liste Des Profils Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Terminologies.page.html",
+          "title": "Terminologies Page",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "shownav",
+        "value": "true"
+      }
+    ]
+  }
+}
