@@ -32,11 +32,7 @@ Ce profil permet de gérer 4 types d'indicateurs de glycémie:
 L'extension ENS_NumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .
 
 L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."""
-* ^meta.lastUpdated = "2022-08-02T10:20:25.1804375+00:00"
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationGlucose"
-* ^version = "1.2"
-* ^status = #draft
-* ^date = "2022-08-02"
 * ^publisher = "ANS"
 * meta 1..
 * meta.profile 1..1

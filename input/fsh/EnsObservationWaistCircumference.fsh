@@ -11,11 +11,7 @@ Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrg
 Profile: EnsObservationWaistCircumference
 Parent: $vitalsigns
 Id: EnsObservationWaistCircumference
-* ^meta.lastUpdated = "2022-08-02T10:24:11.1539776+00:00"
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationWaistCircumference"
-* ^version = "1.2"
-* ^status = #draft
-* ^date = "2022-08-02"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
