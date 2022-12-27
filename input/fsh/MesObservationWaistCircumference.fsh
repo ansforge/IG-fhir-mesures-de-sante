@@ -21,8 +21,8 @@ Id: mes-observation-waist-circumference
     $workflow-supportingInfo named supportingInfo 0..1 and
     mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
 
-* extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. surpoids ou obésité, diabète, maladie du cœur et des vaisseaux, tabac…)"
+* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
+* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. surpoids ou obésité, diabète, maladie du cœur et des vaisseaux, tabac…)"
 
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "code"

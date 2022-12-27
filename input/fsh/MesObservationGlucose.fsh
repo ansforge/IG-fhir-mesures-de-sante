@@ -22,9 +22,9 @@ Ce profil permet de gérer 4 types d'indicateurs de glycémie:
 - l’hémoglobine glyquée (Hb1Ac) mesurée en %
 - l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
 
-L'extension ENS_NumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .
+L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .
 
-L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."""
+L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."""
 * meta 1..
 * meta.profile 1..*
 * meta.profile = Canonical(mes-observation-glucose) (exactly)
@@ -35,22 +35,23 @@ L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans l
 * extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1 and
-    mes-moment-of-measurement named ENS_MomentOfMeasurement 0..1 and
-    mes-number-of-days named ENS_NumberOfDays 0..1 and
-    mes-diabetis-type named ENS_DiabetisType 0..1
-* extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
-* extension[ENS_MomentOfMeasurement] ^short = "Moment de la mesure"
-* extension[ENS_MomentOfMeasurement] ^definition = "Moment de la mesure"
-* extension[ENS_MomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-ENS (required)
-* extension[ENS_MomentOfMeasurement].value[x] ^binding.description = "JDV-J157-MomentGlucose-ENS"
+    mes-reason-for-measurement named MesReasonForMeasurement 0..1 and
+    mes-moment-of-measurement named MesMomentOfMeasurement 0..1 and
+    mes-number-of-days named MesNumberOfDays 0..1 and
+    mes-diabetis-type named MesDiabetisType 0..1
+* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
+* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
 
-* extension[ENS_NumberOfDays] ^short = "Nombre de jours"
-* extension[ENS_NumberOfDays] ^definition = "Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie."
-* extension[ENS_NumberOfDays].value[x] 1..
-* extension[ENS_NumberOfDays].value[x] from $JDV-J164-GlucoseNumberOfDays-ENS (required)
-* extension[ENS_NumberOfDays].value[x] ^binding.description = "JDV_J164-GlucoseNumberOfDays-ENS"
+* extension[MesMomentOfMeasurement] ^short = "Moment de la mesure"
+* extension[MesMomentOfMeasurement] ^definition = "Moment de la mesure"
+* extension[MesMomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-ENS (required)
+* extension[MesMomentOfMeasurement].value[x] ^binding.description = "JDV-J157-MomentGlucose-ENS"
+
+* extension[MesNumberOfDays] ^short = "Nombre de jours"
+* extension[MesNumberOfDays] ^definition = "Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie."
+* extension[MesNumberOfDays].value[x] 1..
+* extension[MesNumberOfDays].value[x] from $JDV-J164-GlucoseNumberOfDays-ENS (required)
+* extension[MesNumberOfDays].value[x] ^binding.description = "JDV_J164-GlucoseNumberOfDays-ENS"
 
 * category[VSCat].coding.display = "Signes vitaux" (exactly)
 

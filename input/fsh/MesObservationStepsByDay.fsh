@@ -19,11 +19,11 @@ Id: mes-observation-steps-by-day
 * extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
+    mes-reason-for-measurement named MesReasonForMeasurement 0..1
 
 * extension[supportingInfo] ^definition = "Autres ressources pertinentes *du dossier patient*"
-* extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
+* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
+* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
 
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "code"

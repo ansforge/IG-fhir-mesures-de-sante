@@ -17,8 +17,8 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1 and
-    mes-moment-of-measurement named ENS_MomentOfMeasurement 0..1
+    mes-reason-for-measurement named MesReasonForMeasurement 0..1 and
+    mes-moment-of-measurement named MesMomentOfMeasurement 0..1
 
 * category[VSCat] ^sliceName = "VSCat"
 * category[VSCat].coding.display = "Signes vitaux" (exactly)

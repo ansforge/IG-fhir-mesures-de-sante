@@ -16,7 +16,7 @@ Description: "Poids du patient"
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
-* extension contains mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
+* extension contains mes-reason-for-measurement named MesReasonForMeasurement 0..1
 
 * value[x] ^slicing.rules = #open
 * value[x] only Quantity

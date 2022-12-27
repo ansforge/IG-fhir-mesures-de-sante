@@ -18,11 +18,11 @@ Id: mes-observation-head-circumference
 * extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
+    mes-reason-for-measurement named MesReasonForMeasurement 0..1
 * extension[supportingInfo] ^isModifier = false
-* extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure"
-* extension[ENS_ReasonForMeasurement] ^isModifier = false
+* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
+* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure"
+* extension[MesReasonForMeasurement] ^isModifier = false
 
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "code"

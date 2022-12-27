@@ -22,9 +22,9 @@ Id: mes-fr-observation-body-temperature
 * extension[levelOfExertion] ^definition = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^min = 0
 
-* extension contains mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
-* extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. infection, insolation, vaccination…)"
+* extension contains mes-reason-for-measurement named MesReasonForMeasurement 0..1
+* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
+* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. infection, insolation, vaccination…)"
 
 * value[x] ^slicing.rules = #open
 * value[x] only Quantity
