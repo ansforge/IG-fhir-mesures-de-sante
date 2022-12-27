@@ -7,7 +7,7 @@ Alias: $fr-practitioner-role-exercice = http://interopsante.org/fhir/StructureDe
 Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
 
 
-Profile: EnsObservationWaistCircumference
+Profile: MesObservationWaistCircumference
 Parent: $vitalsigns
 Id: mes-observation-waist-circumference
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationWaistCircumference"
@@ -39,10 +39,10 @@ Id: mes-observation-waist-circumference
 * encounter only Reference($fr-encounter)
 * performer only Reference(CareTeam or RelatedPerson or $fr-patient or $fr-practitioner or $fr-practitioner-role-exercice or $fr-organization)
 * value[x] only Quantity
+* valueQuantity = http://unitsofmeasure.org#cm
 * value[x].system 1..
-* value[x].system = "http://unitsofmeasure.org" (exactly)
 * value[x].code 1..
-* value[x].code = #cm (exactly)
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 * bodySite ^short = "Non utilisé"

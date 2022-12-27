@@ -87,13 +87,40 @@
         ]
       },
       {
-        "id": "Observation.valueQuantity",
-        "path": "Observation.valueQuantity"
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
       },
       {
-        "id": "Observation.valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
-        "fixedCode": "Cel"
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
+        "patternQuantity": {
+          "code": "Cel",
+          "system": "http://unitsofmeasure.org"
+        }
       },
       {
         "id": "Observation.dataAbsentReason.coding.system",

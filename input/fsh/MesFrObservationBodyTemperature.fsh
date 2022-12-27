@@ -21,10 +21,15 @@ Id: mes-fr-observation-body-temperature
 * extension contains mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
 * extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. infection, insolation, vaccination…)"
-* valueQuantity ^sliceName = "valueQuantity"
-* valueQuantity.code = #Cel (exactly)
+
+* value[x] only Quantity
+* valueQuantity = http://unitsofmeasure.org#Cel
+* value[x].system 1..
+* value[x].code 1..
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
+
 * bodySite from $JDV-J151-BodySiteBodyTemperature-ENS (required)
 * bodySite.coding.system 1..
 * bodySite.coding.code 1..

@@ -79,15 +79,35 @@
         ]
       },
       {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
         "id": "Observation.valueQuantity",
-        "path": "Observation.valueQuantity"
+        "path": "Observation.valueQuantity",
+        "patternQuantity": {
+          "code": "kg",
+          "system": "http://unitsofmeasure.org"
+        }
       },
       {
         "id": "Observation.valueQuantity.code",
         "path": "Observation.valueQuantity.code",
-        "short": "\"kg\"",
-        "definition": "\"kg\"",
-        "fixedCode": "kg"
+        "definition": "Quantity in \"kg\""
       },
       {
         "id": "Observation.dataAbsentReason.coding.system",

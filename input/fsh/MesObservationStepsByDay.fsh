@@ -39,13 +39,13 @@ Id: mes-observation-steps-by-day
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
 * performer only Reference(CareTeam or RelatedPerson or $fr-practitioner or $fr-practitioner-role-exercice or $fr-organization or $fr-patient)
+
 * value[x] only Quantity
-* value[x].unit 1..
-* value[x].code = #1/(24.h) (exactly)
-* value[x].system = "http://unitsofmeasure.org" (exactly)
-* value[x].unit = "steps/day" (exactly)
-* value[x].system 1..
-* value[x].code 1..
+* valueQuantity.unit 1..
+* valueQuantity = $UCUM#1/(24.h)  (exactly)
+* valueQuantity.system 1..
+* valueQuantity.code 1..
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 * method from $JDV-J158-MethodStepsByDay-ENS (required)

@@ -19,8 +19,11 @@ Id: mes-fr-observation-bodyheight
 * extension[bodyposition] ^definition = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 * extension[bodyposition] ^min = 0
 
-* valueQuantity ^sliceName = "valueQuantity"
-* valueQuantity.code = http://unitsofmeasure.org#cm (exactly)
+* value[x] only Quantity
+* valueQuantity = http://unitsofmeasure.org#cm
+* value[x].system 1..
+* value[x].code 1..
+
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

@@ -176,6 +176,16 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Quantity"
@@ -183,22 +193,29 @@
         ]
       },
       {
-        "id": "Observation.value[x].unit",
-        "path": "Observation.value[x].unit",
-        "min": 1,
-        "fixedString": "steps/day"
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
+        "min": 0,
+        "max": "1",
+        "fixedQuantity": {
+          "code": "1/(24.h)",
+          "system": "http://unitsofmeasure.org"
+        }
       },
       {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "min": 1,
-        "fixedUri": "http://unitsofmeasure.org"
+        "id": "Observation.valueQuantity.unit",
+        "path": "Observation.valueQuantity.unit",
+        "min": 1
       },
       {
-        "id": "Observation.value[x].code",
-        "path": "Observation.value[x].code",
-        "min": 1,
-        "fixedCode": "1/(24.h)"
+        "id": "Observation.valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "min": 1
       },
       {
         "id": "Observation.dataAbsentReason.coding.system",

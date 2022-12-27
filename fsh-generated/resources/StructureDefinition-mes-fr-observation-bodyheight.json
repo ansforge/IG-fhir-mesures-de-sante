@@ -70,13 +70,40 @@
         "definition": "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
       },
       {
-        "id": "Observation.valueQuantity",
-        "path": "Observation.valueQuantity"
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
       },
       {
-        "id": "Observation.valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
-        "fixedCode": "cm"
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
+        "patternQuantity": {
+          "code": "cm",
+          "system": "http://unitsofmeasure.org"
+        }
       },
       {
         "id": "Observation.dataAbsentReason.coding.system",
