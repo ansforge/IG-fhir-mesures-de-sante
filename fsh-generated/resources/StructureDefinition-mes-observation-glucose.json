@@ -242,6 +242,16 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Quantity"
@@ -249,19 +259,25 @@
         ]
       },
       {
-        "id": "Observation.value[x].value",
-        "path": "Observation.value[x].value",
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.valueQuantity.value",
+        "path": "Observation.valueQuantity.value",
         "short": "Valeur mesurée"
       },
       {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
+        "id": "Observation.valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
         "min": 1,
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation.value[x].code",
-        "path": "Observation.value[x].code",
+        "id": "Observation.valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
         "min": 1,
         "binding": {
           "strength": "required",

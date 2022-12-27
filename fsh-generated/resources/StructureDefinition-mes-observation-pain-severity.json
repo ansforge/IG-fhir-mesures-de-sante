@@ -119,18 +119,6 @@
         }
       },
       {
-        "id": "Observation.code.coding.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Observation.code.coding.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "fixedCode": "72514-3"
-      },
-      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "type": [
@@ -142,6 +130,16 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Quantity"
@@ -149,21 +147,20 @@
         ]
       },
       {
-        "id": "Observation.value[x].unit",
-        "path": "Observation.value[x].unit",
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.valueQuantity.unit",
+        "path": "Observation.valueQuantity.unit",
         "min": 1,
         "fixedString": "Level"
       },
       {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "short": "Code system de l'unité",
-        "min": 1,
-        "fixedUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.value[x].code",
-        "path": "Observation.value[x].code",
+        "id": "Observation.valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
         "min": 1,
         "fixedCode": "1"
       },

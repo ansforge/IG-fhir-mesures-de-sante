@@ -20,10 +20,9 @@ Id: mes-fr-observation-bodyheight
 * extension[bodyposition] ^min = 0
 
 * value[x] only Quantity
-* valueQuantity = http://unitsofmeasure.org#cm
+* valueQuantity = $UCUM#cm
 * value[x].system 1..
 * value[x].code 1..
-
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

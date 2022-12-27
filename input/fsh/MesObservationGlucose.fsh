@@ -1,4 +1,3 @@
-Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
@@ -61,17 +60,20 @@ L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans l
 * code ^binding.description = "Glucose sanguin ou intersticiel"
 * code.coding.system 1..
 * code.coding.code 1..
+
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
 * effective[x] only dateTime
 * performer only Reference(CareTeam or RelatedPerson or $fr-practitioner or $fr-practitioner-role-exercice or $fr-organization or $fr-patient)
+
 * value[x] only Quantity
-* value[x].value ^short = "Valeur mesurée"
-* value[x].system 1..
-* value[x].system = "http://unitsofmeasure.org" (exactly)
-* value[x].code 1..
-* value[x].code from $JDV-J163-GlucoseUnits-ENS (required)
-* value[x].code ^binding.description = "JDV-J163-GlucoseUnits-ENS"
+* valueQuantity.value ^short = "Valeur mesurée"
+* valueQuantity.system 1..
+* valueQuantity.system = "http://unitsofmeasure.org" (exactly)
+* valueQuantity.code 1..
+* valueQuantity.code from $JDV-J163-GlucoseUnits-ENS (required)
+* valueQuantity.code ^binding.description = "JDV-J163-GlucoseUnits-ENS"
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 

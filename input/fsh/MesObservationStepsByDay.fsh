@@ -1,4 +1,3 @@
-Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter

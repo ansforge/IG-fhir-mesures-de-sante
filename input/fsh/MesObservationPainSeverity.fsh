@@ -1,4 +1,3 @@
-Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $JDV-J159-MethodPainSeverity-ENS = https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS
 
@@ -22,30 +21,30 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
     mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
 * extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre"
+
 * category[VSCat].coding.display = "Signes vitaux" (exactly)
+
 * code = http://loinc.org#72514-3 (exactly)
-* code.coding.system 1..
-* code.coding.system = "http://loinc.org" (exactly)
-* code.coding.code 1..
-* code.coding.code = #72514-3 (exactly)
+
 * effective[x] only dateTime
 
 * value[x] only Quantity
 * valueQuantity.unit 1..
-* valueQuantity.code = #1 (exactly)
 * valueQuantity.unit = "Level" (exactly)
-* valueQuantity.system 1..
-* valueQuantity.system ^short = "Code system de l'unité"
+* valueQuantity.code = #1 (exactly) // Quel est ce code ?
 * valueQuantity.code 1..
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
+
 * bodySite ^short = "Lieu de la douleur - Texte libre"
 * bodySite ^definition = "Lieu de la douleur - Texte libre"
+
 * method from $JDV-J159-MethodPainSeverity-ENS (required)
 * method ^binding.description = "JDV_J159-MethodPainSeverity-ENS"
 * method.coding.system 1..
 * method.coding.code 1..
+
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire\r\nhttp://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"

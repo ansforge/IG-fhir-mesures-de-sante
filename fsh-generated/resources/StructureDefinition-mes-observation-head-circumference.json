@@ -197,7 +197,11 @@
         "id": "Observation.valueQuantity",
         "path": "Observation.valueQuantity",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "fixedQuantity": {
+          "code": "cm",
+          "system": "http://unitsofmeasure.org"
+        }
       },
       {
         "id": "Observation.valueQuantity.value",
@@ -212,19 +216,12 @@
       {
         "id": "Observation.valueQuantity.system",
         "path": "Observation.valueQuantity.system",
-        "min": 1,
-        "fixedUri": "http://unitsofmeasure.org"
+        "min": 1
       },
       {
         "id": "Observation.valueQuantity.code",
         "path": "Observation.valueQuantity.code",
-        "min": 1,
-        "fixedCode": "cm",
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1",
-          "description": "Ucum Body Lengh"
-        }
+        "min": 1
       }
     ]
   }

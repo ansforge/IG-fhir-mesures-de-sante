@@ -1,4 +1,3 @@
-Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
@@ -26,6 +25,7 @@ Id: mes-observation-head-circumference
 * extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^isModifier = false
+
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "code"
 * code.coding ^slicing.discriminator[+].type = #value
@@ -36,20 +36,19 @@ Id: mes-observation-head-circumference
 * code.coding[headCircumCode].system = "http://loinc.org" (exactly)
 * code.coding[headCircumCode].code 1..
 * code.coding[headCircumCode].code = #8287-5 (exactly)
+
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
 * performer only Reference(CareTeam or RelatedPerson or $fr-patient or $fr-practitioner or $fr-practitioner-role-exercice or $fr-organization)
+
 * value[x] only Quantity
 * value[x] ^slicing.discriminator[0].type = #type
 * value[x] ^slicing.discriminator[=].path = "$this"
 * value[x] ^slicing.rules = #open
 * valueQuantity only Quantity
 * valueQuantity ^sliceName = "valueQuantity"
+* valueQuantity = $UCUM#cm (exactly)
 * valueQuantity.value 1..
 * valueQuantity.unit 1..
 * valueQuantity.system 1..
-* valueQuantity.system = "http://unitsofmeasure.org" (exactly)
 * valueQuantity.code 1..
-* valueQuantity.code = #cm (exactly)
-* valueQuantity.code from http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1 (required)
-* valueQuantity.code ^binding.description = "Ucum Body Lengh"

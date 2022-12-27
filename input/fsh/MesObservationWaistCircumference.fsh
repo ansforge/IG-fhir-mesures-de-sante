@@ -1,4 +1,3 @@
-Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
@@ -38,6 +37,7 @@ Id: mes-observation-waist-circumference
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
 * performer only Reference(CareTeam or RelatedPerson or $fr-patient or $fr-practitioner or $fr-practitioner-role-exercice or $fr-organization)
+
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#cm
 * value[x].system 1..

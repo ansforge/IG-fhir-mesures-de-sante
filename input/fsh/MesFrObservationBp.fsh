@@ -1,5 +1,4 @@
 Alias: $FrObservationBp = http://interopsante.org/fhir/StructureDefinition/FrObservationBp
-Alias: $ENS_MomentOfMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_MomentOfMeasurement
 Alias: $FrPatient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $JDV-J149-BodySiteBP-ENS = https://mos.esante.gouv.fr/NOS/JDV_J149-BodySiteBP-ENS/FHIR/JDV-J149-BodySiteBP-ENS
 Alias: $JDV-J150-MethodBP-ENS = https://mos.esante.gouv.fr/NOS/JDV_J150-MethodBP-ENS/FHIR/JDV-J150-MethodBP-ENS
@@ -13,7 +12,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
-* meta.profile 1..1
+* meta.profile 1..*
 * meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBp" (exactly)
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -21,7 +20,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * extension ^min = 0
 * extension contains
     mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1 and
-    $ENS_MomentOfMeasurement named ENS_MomentOfMeasurement 0..1
+    mes-moment-of-measurement named ENS_MomentOfMeasurement 0..1
 * category[VSCat] ^sliceName = "VSCat"
 * category[VSCat].coding.display = "Signes vitaux" (exactly)
 * subject only Reference($FrPatient)
