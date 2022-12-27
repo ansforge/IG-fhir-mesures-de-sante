@@ -16,7 +16,7 @@ Id: mes-fr-observation-body-temperature
 * extension ^slicing.rules = #open
 * extension ^min = 0
 
-// Où est définie cette extension ?
+// Extension définie au niveau du profil d'interopsanté
 * extension[levelOfExertion] ^sliceName = "levelOfExertion"
 * extension[levelOfExertion] ^short = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^definition = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"

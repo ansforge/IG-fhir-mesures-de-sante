@@ -30,7 +30,7 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * value[x] only Quantity
 * valueQuantity.unit 1..
 * valueQuantity.unit = "Level" (exactly)
-* valueQuantity.code = #1 (exactly) // Quel est ce code ?
+* valueQuantity.code = #1 (exactly) // A quoi correspond ce code ?
 * valueQuantity.code 1..
 
 * dataAbsentReason.coding.system 1..
