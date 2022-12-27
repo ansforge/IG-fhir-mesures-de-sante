@@ -1,8 +1,6 @@
 Alias: $FrObservationBp = http://interopsante.org/fhir/StructureDefinition/FrObservationBp
-Alias: $ENS_ReasonForMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement
 Alias: $ENS_MomentOfMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_MomentOfMeasurement
 Alias: $FrPatient = http://interopsante.org/fhir/StructureDefinition/FrPatient
-Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
 Alias: $JDV-J149-BodySiteBP-ENS = https://mos.esante.gouv.fr/NOS/JDV_J149-BodySiteBP-ENS/FHIR/JDV-J149-BodySiteBP-ENS
 Alias: $JDV-J150-MethodBP-ENS = https://mos.esante.gouv.fr/NOS/JDV_J150-MethodBP-ENS/FHIR/JDV-J150-MethodBP-ENS
 Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS
@@ -22,7 +20,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1 and
+    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1 and
     $ENS_MomentOfMeasurement named ENS_MomentOfMeasurement 0..1
 * category[VSCat] ^sliceName = "VSCat"
 * category[VSCat].coding.display = "Signes vitaux" (exactly)

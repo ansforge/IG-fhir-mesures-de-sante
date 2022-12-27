@@ -1,6 +1,4 @@
 Alias: $FrObservationBodyWeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyWeight
-Alias: $ENS_ReasonForMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement
-Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
 Alias: $JDV-J145-MethodBodyWeight-ENS = https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS
 
 Profile: EnsFrObservationBodyWeight
@@ -13,11 +11,12 @@ Description: "Poids du patient"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
 * meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBodyWeight" (exactly)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
-* extension contains $ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1
+* extension contains mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
 * valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity.code = #kg (exactly)
 * valueQuantity.code ^short = "\"kg\""

@@ -5,7 +5,6 @@ Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncoun
 Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
 Alias: $fr-practitioner-role-exercice = http://interopsante.org/fhir/StructureDefinition/FrPractitionerRoleExercice
 Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
-Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
 Alias: $JDV-J157-MomentGlucose-ENS = https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS
 Alias: $JDV-J164-GlucoseNumberOfDays-ENS = https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS
 Alias: $JDV-J154-TypeGlucose-ENS = https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS

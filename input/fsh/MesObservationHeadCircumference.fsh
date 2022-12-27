@@ -1,6 +1,5 @@
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $ENS_ReasonForMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement
 Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
 Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
@@ -22,7 +21,7 @@ Id: mes-observation-head-circumference
 * extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    $ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1
+    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
 * extension[supportingInfo] ^isModifier = false
 * extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure"

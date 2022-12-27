@@ -1,12 +1,10 @@
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $ENS_ReasonForMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement
 Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
 Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
 Alias: $fr-practitioner-role-exercice = http://interopsante.org/fhir/StructureDefinition/FrPractitionerRoleExercice
 Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
-Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
 Alias: $JDV-J158-MethodStepsByDay-ENS = https://mos.esante.gouv.fr/NOS/JDV_J158-MethodStepsByDay-ENS/FHIR/JDV-J158-MethodStepsByDay-ENS
 
 Profile: MesObservationStepsByDay
@@ -24,7 +22,7 @@ Id: mes-observation-steps-by-day
 * extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    $ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1
+    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
 * extension[supportingInfo] ^definition = "Autres ressources pertinentes *du dossier patient*"
 * extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"

@@ -1,7 +1,5 @@
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $ENS_ReasonForMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement
-Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
 Alias: $JDV-J159-MethodPainSeverity-ENS = https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS
 
 Profile: MesObservationPainSeverity
@@ -21,7 +19,7 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    $ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1
+    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
 * extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre"
 * category[VSCat].coding.display = "Signes vitaux" (exactly)

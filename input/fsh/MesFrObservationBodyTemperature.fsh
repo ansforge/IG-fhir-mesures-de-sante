@@ -1,6 +1,4 @@
 Alias: $FrObservationBodyTemperature = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyTemperature
-Alias: $ENS_ReasonForMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement
-Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
 Alias: $JDV-J151-BodySiteBodyTemperature-ENS = https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS/FHIR/JDV-J151-BodySiteBodyTemperature-ENS
 Alias: $JDV-J152-MethodBodyTemperature-ENS = https://mos.esante.gouv.fr/NOS/JDV_J152-MethodBodyTemperature-ENS/FHIR/JDV-J152-MethodBodyTemperature-ENS
 
@@ -20,7 +18,7 @@ Id: mes-fr-observation-body-temperature
 * extension[levelOfExertion] ^short = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^definition = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^min = 0
-* extension contains $ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1
+* extension contains mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
 * extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. infection, insolation, vaccination…)"
 * valueQuantity ^sliceName = "valueQuantity"
