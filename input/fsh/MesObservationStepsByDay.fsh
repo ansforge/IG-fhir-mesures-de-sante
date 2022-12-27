@@ -1,8 +1,6 @@
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
 Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
-Alias: $fr-practitioner-role-exercice = http://interopsante.org/fhir/StructureDefinition/FrPractitionerRoleExercice
 Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
 Alias: $JDV-J158-MethodStepsByDay-ENS = https://mos.esante.gouv.fr/NOS/JDV_J158-MethodStepsByDay-ENS/FHIR/JDV-J158-MethodStepsByDay-ENS
 
@@ -37,7 +35,7 @@ Id: mes-observation-steps-by-day
 * code.coding[StepsByDayCode].code = #41950-7 (exactly)
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
-* performer only Reference(CareTeam or RelatedPerson or $fr-practitioner or $fr-practitioner-role-exercice or $fr-organization or $fr-patient)
+* performer only Reference(CareTeam or RelatedPerson or $fr-practitioner or PractitionerRole or $fr-organization or $fr-patient)
 
 * value[x] only Quantity
 * valueQuantity.unit 1..

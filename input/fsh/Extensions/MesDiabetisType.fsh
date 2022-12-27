@@ -5,7 +5,7 @@ Id: mes-diabetis-type
 * ^context.type = #element
 * ^context.expression = "Observation"
 * value[x] only CodeableConcept
-* value[x] from $JDV-J153-TypeDiabete-ENS (required)
-* value[x] ^binding.description = "JDV_J153-TypeDiabete-ENSDiabète"
-* value[x].coding.system 1..
-* value[x].coding.code 1..
+* valueCodeableConcept from $JDV-J153-TypeDiabete-ENS (required)
+* valueCodeableConcept ^binding.description = "JDV_J153-TypeDiabete-ENSDiabète"
+* valueCodeableConcept.coding.system 1..
+* valueCodeableConcept.coding.code 1..
