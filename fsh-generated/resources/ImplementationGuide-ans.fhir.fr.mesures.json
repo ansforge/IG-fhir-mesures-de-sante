@@ -40,13 +40,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/mes-fr-observation-bmi"
-        },
-        "name": "EnsFrObservationBmi",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mes-fr-observation-bodyheight"
         },
         "name": "EnsFrObservationBodyHeight",
@@ -91,6 +84,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mes-fr-observation-bmi"
+        },
+        "name": "MesFrObservationBmi",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mes-observation-glucose"
         },
         "name": "MesObservationGlucose",
@@ -121,17 +121,17 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mes-diabetis-type"
-        },
-        "name": "EnsDiabetisType",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mes-number-of-days"
         },
         "name": "EnsNumberOfDays",
         "description": "Nombre de jours",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mes-diabetis-type"
+        },
+        "name": "MesDiabetisType",
         "exampleBoolean": false
       },
       {

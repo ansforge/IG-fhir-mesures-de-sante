@@ -1,9 +1,5 @@
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $ENS_ReasonForMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement
-Alias: $ENS_MomentOfMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_MomentOfMeasurement
-Alias: $ENS_NumberOfDays = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_NumberOfDays
-Alias: $ENS_DiabetisType = http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_DiabetisType
 Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
 Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
@@ -17,6 +13,7 @@ Alias: $JDV-J163-GlucoseUnits-ENS = https://mos.esante.gouv.fr/NOS/JDV_J163-Gluc
 Alias: $JDV-J155-MethodGlucoseSanguin-ENS = https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS
 Alias: $JDV-J156-MethodGlucoseInterstitiel-ENS = https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS/FHIR/JDV-J156-MethodGlucoseInterstitiel-ENS
 Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS
+Alias: $JDV-J153-TypeDiabete-ENS = https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS
 
 Profile: MesObservationGlucose
 Parent: $vitalsigns
@@ -43,10 +40,10 @@ L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans l
 * extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    $ENS_ReasonForMeasurement named ENS_ReasonForMeasurement 0..1 and
-    $ENS_MomentOfMeasurement named ENS_MomentOfMeasurement 0..1 and
-    $ENS_NumberOfDays named ENS_NumberOfDays 0..1 and
-    $ENS_DiabetisType named ENS_DiabetisType 0..1
+    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1 and
+    mes-moment-of-measurement named ENS_MomentOfMeasurement 0..1 and
+    mes-number-of-days named ENS_NumberOfDays 0..1 and
+    mes-diabetis-type named ENS_DiabetisType 0..1
 * extension[ENS_ReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[ENS_ReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
 * extension[ENS_MomentOfMeasurement] ^short = "Moment de la mesure"
