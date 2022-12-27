@@ -10,7 +10,7 @@ Description: "Poids du patient"
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBodyWeight" (exactly)
+* meta.profile = Canonical(mes-fr-observation-body-weight) (exactly)
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

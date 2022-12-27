@@ -11,7 +11,8 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationPainSeverity" (exactly)
+* meta.profile = Canonical(mes-observation-pain-severity) (exactly)
+
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"
 * extension ^slicing.rules = #open
@@ -48,6 +49,7 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire\r\nhttp://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
+
 * component ^slicing.discriminator[0].type = #value
 * component ^slicing.discriminator[=].path = "code.coding.code"
 * component ^slicing.discriminator[+].type = #value

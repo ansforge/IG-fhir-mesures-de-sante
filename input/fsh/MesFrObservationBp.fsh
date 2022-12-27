@@ -2,7 +2,7 @@ Alias: $JDV-J149-BodySiteBP-ENS = https://mos.esante.gouv.fr/NOS/JDV_J149-BodySi
 Alias: $JDV-J150-MethodBP-ENS = https://mos.esante.gouv.fr/NOS/JDV_J150-MethodBP-ENS/FHIR/JDV-J150-MethodBP-ENS
 Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS
 
-Profile: EnsFrObservationBp
+Profile: MesFrObservationBp
 Parent: $FrObservationBp
 Id: mes-fr-observation-bp
 Description: "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé"
@@ -11,7 +11,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.profile 1..*
-* meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBp" (exactly)
+* meta.profile = Canonical(mes-fr-observation-bp) (exactly)
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

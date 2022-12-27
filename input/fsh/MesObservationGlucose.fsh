@@ -25,11 +25,10 @@ Ce profil permet de gérer 4 types d'indicateurs de glycémie:
 L'extension ENS_NumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .
 
 L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."""
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationGlucose"
-* ^publisher = "ANS"
 * meta 1..
 * meta.profile 1..*
-* meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationGlucose" (exactly)
+* meta.profile = Canonical(mes-observation-glucose) (exactly)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -46,12 +45,15 @@ L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans l
 * extension[ENS_MomentOfMeasurement] ^definition = "Moment de la mesure"
 * extension[ENS_MomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-ENS (required)
 * extension[ENS_MomentOfMeasurement].value[x] ^binding.description = "JDV-J157-MomentGlucose-ENS"
+
 * extension[ENS_NumberOfDays] ^short = "Nombre de jours"
 * extension[ENS_NumberOfDays] ^definition = "Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie."
 * extension[ENS_NumberOfDays].value[x] 1..
 * extension[ENS_NumberOfDays].value[x] from $JDV-J164-GlucoseNumberOfDays-ENS (required)
 * extension[ENS_NumberOfDays].value[x] ^binding.description = "JDV_J164-GlucoseNumberOfDays-ENS"
+
 * category[VSCat].coding.display = "Signes vitaux" (exactly)
+
 * code from $JDV-J154-TypeGlucose-ENS (extensible)
 * code ^short = "Types de glycémie"
 * code ^definition = "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Hémoglobine glyquée (HbA1c)\r\n• Index de gestion de glycémie (IGG)"
@@ -82,6 +84,7 @@ L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans l
 
 * device only Reference($PhdDevice)
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire"
+
 * referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
 * referenceRange.appliesTo ^binding.description = "JDV_J148-ReferenceRangeAppliesTo-CISIS"
 * referenceRange.appliesTo.coding.system 1..

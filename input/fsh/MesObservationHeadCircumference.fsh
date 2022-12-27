@@ -10,8 +10,9 @@ Id: mes-observation-head-circumference
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..1
-* meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationHeadCircumference" (exactly)
+* meta.profile 1..*
+* meta.profile = Canonical(mes-observation-head-circumference) (exactly)
+
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"
 * extension ^slicing.rules = #open

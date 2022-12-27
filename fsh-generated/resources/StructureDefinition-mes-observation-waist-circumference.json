@@ -192,16 +192,6 @@
         ]
       },
       {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x].code",
-        "path": "Observation.value[x].code",
-        "min": 1
-      },
-      {
         "id": "Observation.valueQuantity",
         "path": "Observation.valueQuantity",
         "min": 0,
@@ -210,6 +200,16 @@
           "code": "cm",
           "system": "http://unitsofmeasure.org"
         }
+      },
+      {
+        "id": "Observation.valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "min": 1
       },
       {
         "id": "Observation.dataAbsentReason.coding.system",

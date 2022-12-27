@@ -2,14 +2,15 @@ Alias: $FrObservationHeartrate = http://interopsante.org/fhir/StructureDefinitio
 Alias: $JDV-J147-MethodHeartrate-ENS = https://mos.esante.gouv.fr/NOS/JDV_J147-MethodHeartrate-ENS/FHIR/JDV-J147-MethodHeartrate-ENS
 Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS
 
-Profile: EnsFrObservationHeartrate
+Profile: MesFrObservationHeartrate
 Parent: $FrObservationHeartrate
 Id: mes-fr-observation-heartrate
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationHeartrate" (exactly)
+* meta.profile = Canonical(mes-fr-observation-heartrate) (exactly)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

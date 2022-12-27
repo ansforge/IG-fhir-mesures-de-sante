@@ -9,7 +9,7 @@ Id: mes-fr-observation-body-temperature
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBodyTemperature" (exactly)
+* meta.profile = Canonical(mes-fr-observation-body-temperature) (exactly)
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

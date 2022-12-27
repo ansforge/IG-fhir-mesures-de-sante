@@ -8,7 +8,7 @@ Id: mes-fr-observation-bodyheight
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBodyHeight" (exactly)
+* meta.profile = Canonical(mes-fr-observation-bodyheight) (exactly)
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -19,10 +19,11 @@ Id: mes-fr-observation-bodyheight
 * extension[bodyposition] ^definition = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 * extension[bodyposition] ^min = 0
 
+* value[x] ^slicing.rules = #open
 * value[x] only Quantity
 * valueQuantity = $UCUM#cm
-* value[x].system 1..
-* value[x].code 1..
+* valueQuantity.system 1..
+* valueQuantity.code 1..
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
@@ -42,4 +43,3 @@ Id: mes-fr-observation-bodyheight
 * hasMember ^definition = "Non utilisé"
 * derivedFrom ^short = "Non utilisé"
 * derivedFrom ^definition = "Non utilisé"
-* value[x] ^slicing.rules = #open

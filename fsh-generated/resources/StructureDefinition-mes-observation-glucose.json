@@ -1,11 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-observation-glucose",
-  "url": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationGlucose",
+  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-observation-glucose",
   "version": "1.3",
   "name": "MesObservationGlucose",
   "status": "active",
-  "publisher": "ANS",
   "description": "Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension ENS_NumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
   "fhirVersion": "4.0.1",
   "mapping": [
