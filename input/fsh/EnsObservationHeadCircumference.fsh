@@ -11,9 +11,6 @@ Profile: EnsObservationHeadCircumference
 Parent: $vitalsigns
 Id: EnsObservationHeadCircumference
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationHeadCircumference"
-* ^version = "1.2"
-* ^status = #draft
-* ^date = "2022-08-02"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"

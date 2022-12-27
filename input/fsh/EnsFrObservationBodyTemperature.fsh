@@ -7,9 +7,6 @@ Alias: $JDV-J152-MethodBodyTemperature-ENS = https://mos.esante.gouv.fr/NOS/JDV_
 Profile: EnsFrObservationBodyTemperature
 Parent: $FrObservationBodyTemperature
 Id: EnsFrObservationBodyTemperature
-* ^meta.lastUpdated = "2022-08-02T10:10:06.0348919+00:00"
-* ^status = #draft
-* ^date = "2022-08-02"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"

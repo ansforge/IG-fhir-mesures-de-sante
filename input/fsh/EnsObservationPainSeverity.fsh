@@ -8,11 +8,7 @@ Profile: EnsObservationPainSeverity
 Parent: $vitalsigns
 Id: EnsObservationPainSeverity
 Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé"
-* ^meta.lastUpdated = "2022-08-02T10:21:27.7804224+00:00"
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationPainSeverity"
-* ^version = "1.2"
-* ^status = #draft
-* ^date = "2022-08-02"
 * ^publisher = "ANS"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"

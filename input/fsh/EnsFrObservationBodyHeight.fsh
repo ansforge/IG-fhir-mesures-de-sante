@@ -5,9 +5,6 @@ Alias: $JDV-J146-MethodBodyHeight-ENS = https://mos.esante.gouv.fr/NOS/JDV_J146-
 Profile: EnsFrObservationBodyHeight
 Parent: $FrObservationBodyHeight
 Id: EnsFrObservationBodyHeight
-* ^meta.lastUpdated = "2022-08-02T10:03:35.322255+00:00"
-* ^status = #draft
-* ^date = "2022-08-02"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"

@@ -5,9 +5,6 @@ Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/
 Profile: EnsFrObservationBmi
 Parent: $FrObservationBmi
 Id: EnsFrObservationBmi
-* ^meta.lastUpdated = "2022-08-02T09:55:21.7461587+00:00"
-* ^status = #draft
-* ^date = "2022-08-02"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"

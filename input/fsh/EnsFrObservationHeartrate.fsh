@@ -7,9 +7,6 @@ Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/
 Profile: EnsFrObservationHeartrate
 Parent: $FrObservationHeartrate
 Id: EnsFrObservationHeartrate
-* ^meta.lastUpdated = "2022-08-02T10:18:53.3378397+00:00"
-* ^status = #draft
-* ^date = "2022-08-02"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"

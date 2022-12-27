@@ -7,10 +7,8 @@ Profile: EnsFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
 Id: EnsFrObservationBodyWeight
 Description: "Poids du patient"
-* ^meta.lastUpdated = "2022-08-02T10:13:10.4200798+00:00"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2022-08-02"
+
+
 * meta 1..1
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"

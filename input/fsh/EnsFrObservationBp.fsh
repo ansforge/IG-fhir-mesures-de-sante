@@ -11,9 +11,6 @@ Profile: EnsFrObservationBp
 Parent: $FrObservationBp
 Id: EnsFrObservationBp
 Description: "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé"
-* ^meta.lastUpdated = "2022-08-02T10:15:18.8260739+00:00"
-* ^status = #draft
-* ^date = "2022-08-02"
 * ^publisher = "ANS"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
