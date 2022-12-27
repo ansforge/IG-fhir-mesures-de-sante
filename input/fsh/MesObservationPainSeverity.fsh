@@ -29,14 +29,15 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * code.coding.code 1..
 * code.coding.code = #72514-3 (exactly)
 * effective[x] only dateTime
+
 * value[x] only Quantity
-* value[x].unit 1..
-* value[x].code = #1 (exactly)
-* value[x].system = "http://unitsofmeasure.org" (exactly)
-* value[x].unit = "Level" (exactly)
-* value[x].system 1..
-* value[x].system ^short = "Code system de l'unité"
-* value[x].code 1..
+* valueQuantity.unit 1..
+* valueQuantity.code = #1 (exactly)
+* valueQuantity.unit = "Level" (exactly)
+* valueQuantity.system 1..
+* valueQuantity.system ^short = "Code system de l'unité"
+* valueQuantity.code 1..
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 * bodySite ^short = "Lieu de la douleur - Texte libre"
