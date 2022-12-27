@@ -18,9 +18,9 @@ Alias: $JDV-J155-MethodGlucoseSanguin-ENS = https://mos.esante.gouv.fr/NOS/JDV_J
 Alias: $JDV-J156-MethodGlucoseInterstitiel-ENS = https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS/FHIR/JDV-J156-MethodGlucoseInterstitiel-ENS
 Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS
 
-Profile: EnsObservationGlucose
+Profile: MesObservationGlucose
 Parent: $vitalsigns
-Id: EnsObservationGlucose
+Id: mes-observation-glucose
 Description: """Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.
 
 Ce profil permet de gérer 4 types d'indicateurs de glycémie:
@@ -35,7 +35,7 @@ L'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans l
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationGlucose"
 * ^publisher = "ANS"
 * meta 1..
-* meta.profile 1..1
+* meta.profile 1..*
 * meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationGlucose" (exactly)
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

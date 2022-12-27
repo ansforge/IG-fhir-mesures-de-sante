@@ -7,9 +7,9 @@ Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPra
 Alias: $fr-practitioner-role-exercice = http://interopsante.org/fhir/StructureDefinition/FrPractitionerRoleExercice
 Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
 
-Profile: EnsObservationHeadCircumference
+Profile: MesObservationHeadCircumference
 Parent: $vitalsigns
-Id: EnsObservationHeadCircumference
+Id: mes-observation-head-circumference
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationHeadCircumference"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."

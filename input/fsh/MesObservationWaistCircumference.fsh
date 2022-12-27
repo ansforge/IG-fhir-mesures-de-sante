@@ -10,12 +10,12 @@ Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrg
 
 Profile: EnsObservationWaistCircumference
 Parent: $vitalsigns
-Id: EnsObservationWaistCircumference
+Id: mes-observation-waist-circumference
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationWaistCircumference"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..1
+* meta.profile 1..*
 * meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationWaistCircumference" (exactly)
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"

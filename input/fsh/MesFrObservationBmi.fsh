@@ -2,13 +2,13 @@ Alias: $FrObservationBmi = http://interopsante.org/fhir/StructureDefinition/FrOb
 Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
 Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS
 
-Profile: EnsFrObservationBmi
+Profile: MesFrObservationBmi
 Parent: $FrObservationBmi
-Id: EnsFrObservationBmi
+Id: mes-fr-observation-bmi
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..1
+* meta.profile 1..*
 * meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBmi" (exactly)
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

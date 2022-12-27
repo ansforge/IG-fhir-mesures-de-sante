@@ -5,14 +5,13 @@ Alias: $JDV-J145-MethodBodyWeight-ENS = https://mos.esante.gouv.fr/NOS/JDV_J145-
 
 Profile: EnsFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
-Id: EnsFrObservationBodyWeight
+Id: mes-fr-observation-body-weight
 Description: "Poids du patient"
-
 
 * meta 1..1
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..1
+* meta.profile 1..*
 * meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBodyWeight" (exactly)
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

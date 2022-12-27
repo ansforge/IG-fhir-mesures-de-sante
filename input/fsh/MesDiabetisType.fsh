@@ -1,7 +1,7 @@
 Alias: $JDV-J153-TypeDiabete-ENS = https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS
 
 Extension: EnsDiabetisType
-Id: EnsDiabetisType
+Id: mes-diabetis-type
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_DiabetisType"
 * ^context.type = #element
 * ^context.expression = "Observation"

@@ -9,7 +9,7 @@ Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/
 
 Profile: EnsFrObservationBp
 Parent: $FrObservationBp
-Id: EnsFrObservationBp
+Id: mes-fr-observation-bp
 Description: "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé"
 * ^publisher = "ANS"
 * meta 1..

@@ -1,0 +1,335 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mes-observation-glucose",
+  "url": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationGlucose",
+  "version": "1.3",
+  "name": "MesObservationGlucose",
+  "status": "active",
+  "publisher": "ANS",
+  "description": "Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension ENS_NumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/vitalsigns",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.meta",
+        "path": "Observation.meta",
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile",
+        "path": "Observation.meta.profile",
+        "min": 1,
+        "fixedCanonical": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationGlucose"
+      },
+      {
+        "id": "Observation.extension:supportingInfo",
+        "path": "Observation.extension",
+        "sliceName": "supportingInfo",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.extension:ENS_ReasonForMeasurement",
+        "path": "Observation.extension",
+        "sliceName": "ENS_ReasonForMeasurement",
+        "short": "Motif de la mesure",
+        "definition": "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.extension:ENS_MomentOfMeasurement",
+        "path": "Observation.extension",
+        "sliceName": "ENS_MomentOfMeasurement",
+        "short": "Moment de la mesure",
+        "definition": "Moment de la mesure",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_MomentOfMeasurement"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.extension:ENS_MomentOfMeasurement.value[x]",
+        "path": "Observation.extension.value[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS",
+          "description": "JDV-J157-MomentGlucose-ENS"
+        }
+      },
+      {
+        "id": "Observation.extension:ENS_NumberOfDays",
+        "path": "Observation.extension",
+        "sliceName": "ENS_NumberOfDays",
+        "short": "Nombre de jours",
+        "definition": "Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_NumberOfDays"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.extension:ENS_NumberOfDays.value[x]",
+        "path": "Observation.extension.value[x]",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS",
+          "description": "JDV_J164-GlucoseNumberOfDays-ENS"
+        }
+      },
+      {
+        "id": "Observation.extension:ENS_DiabetisType",
+        "path": "Observation.extension",
+        "sliceName": "ENS_DiabetisType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_DiabetisType"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.category:VSCat",
+        "path": "Observation.category",
+        "sliceName": "VSCat"
+      },
+      {
+        "id": "Observation.category:VSCat.coding.display",
+        "path": "Observation.category.coding.display",
+        "fixedString": "Signes vitaux"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Types de glycémie",
+        "definition": "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Hémoglobine glyquée (HbA1c)\r\n• Index de gestion de glycémie (IGG)",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS",
+          "description": "Glucose sanguin ou intersticiel"
+        }
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://interopsante.org/fhir/StructureDefinition/FrPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://interopsante.org/fhir/StructureDefinition/FrEncounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://interopsante.org/fhir/StructureDefinition/FrPractitioner",
+              "http://interopsante.org/fhir/StructureDefinition/FrPractitionerRoleExercice",
+              "http://interopsante.org/fhir/StructureDefinition/FrOrganization",
+              "http://interopsante.org/fhir/StructureDefinition/FrPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "short": "Valeur mesurée"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS",
+          "description": "JDV-J163-GlucoseUnits-ENS"
+        }
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding.system",
+        "path": "Observation.dataAbsentReason.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding.code",
+        "path": "Observation.dataAbsentReason.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "short": "JDV pour la glycémie ",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/ValueSet/method-glucose-vs"
+        }
+      },
+      {
+        "id": "Observation.method.coding.system",
+        "path": "Observation.method.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.method.coding.code",
+        "path": "Observation.method.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
+        "definition": "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo",
+        "path": "Observation.referenceRange.appliesTo",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS",
+          "description": "JDV_J148-ReferenceRangeAppliesTo-CISIS"
+        }
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo.coding.system",
+        "path": "Observation.referenceRange.appliesTo.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo.coding.code",
+        "path": "Observation.referenceRange.appliesTo.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

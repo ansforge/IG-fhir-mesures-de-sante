@@ -4,16 +4,16 @@ Alias: $ENS_ReasonForMeasurement = http://esante.gouv.fr/ci-sis/fhir/StructureDe
 Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
 Alias: $JDV-J159-MethodPainSeverity-ENS = https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS
 
-Profile: EnsObservationPainSeverity
+Profile: MesObservationPainSeverity
 Parent: $vitalsigns
-Id: EnsObservationPainSeverity
+Id: mes-observation-pain-severity
 Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé"
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationPainSeverity"
 * ^publisher = "ANS"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..1
+* meta.profile 1..*
 * meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationPainSeverity" (exactly)
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"

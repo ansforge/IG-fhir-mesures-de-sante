@@ -1,5 +1,5 @@
 Extension: EnsNumberOfDays
-Id: EnsNumberOfDays
+Id: mes-number-of-days
 Description: "Nombre de jours"
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_NumberOfDays"
 * ^context.type = #element

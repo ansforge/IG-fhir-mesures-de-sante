@@ -40,28 +40,28 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/EnsFrObservationBmi"
+          "reference": "StructureDefinition/mes-fr-observation-bmi"
         },
         "name": "EnsFrObservationBmi",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EnsFrObservationBodyHeight"
+          "reference": "StructureDefinition/mes-fr-observation-bodyheight"
         },
         "name": "EnsFrObservationBodyHeight",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EnsFrObservationBodyTemperature"
+          "reference": "StructureDefinition/mes-fr-observation-body-temperature"
         },
         "name": "EnsFrObservationBodyTemperature",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EnsFrObservationBodyWeight"
+          "reference": "StructureDefinition/mes-fr-observation-body-weight"
         },
         "name": "EnsFrObservationBodyWeight",
         "description": "Poids du patient",
@@ -69,7 +69,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EnsFrObservationBp"
+          "reference": "StructureDefinition/mes-fr-observation-bp"
         },
         "name": "EnsFrObservationBp",
         "description": "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé",
@@ -77,66 +77,58 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EnsFrObservationHeartrate"
+          "reference": "StructureDefinition/mes-fr-observation-heartrate"
         },
         "name": "EnsFrObservationHeartrate",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EnsObservationGlucose"
-        },
-        "name": "EnsObservationGlucose",
-        "description": "Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension ENS_NumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/EnsObservationHeadCircumference"
-        },
-        "name": "EnsObservationHeadCircumference",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/EnsObservationPainSeverity"
-        },
-        "name": "EnsObservationPainSeverity",
-        "description": "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/EnsObservationStepsByDay"
-        },
-        "name": "EnsObservationStepsByDay",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/EnsObservationWaistCircumference"
+          "reference": "StructureDefinition/mes-observation-waist-circumference"
         },
         "name": "EnsObservationWaistCircumference",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EnsDiabetisType"
+          "reference": "StructureDefinition/mes-observation-glucose"
+        },
+        "name": "MesObservationGlucose",
+        "description": "Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension ENS_NumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension ENS_MomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mes-observation-head-circumference"
+        },
+        "name": "MesObservationHeadCircumference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mes-observation-pain-severity"
+        },
+        "name": "MesObservationPainSeverity",
+        "description": "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mes-observation-steps-by-day"
+        },
+        "name": "MesObservationStepsByDay",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mes-diabetis-type"
         },
         "name": "EnsDiabetisType",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EnsMomentOfMeasurement"
-        },
-        "name": "EnsMomentOfMeasurement",
-        "description": "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/EnsNumberOfDays"
+          "reference": "StructureDefinition/mes-number-of-days"
         },
         "name": "EnsNumberOfDays",
         "description": "Nombre de jours",
@@ -144,9 +136,17 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EnsReasonForMeasurement"
+          "reference": "StructureDefinition/mes-moment-of-measurement"
         },
-        "name": "EnsReasonForMeasurement",
+        "name": "MesMomentOfMeasurement",
+        "description": "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mes-reason-for-measurement"
+        },
+        "name": "MesReasonForMeasurement",
         "description": "Motif de la mesure.\nExprimé en texte libre.",
         "exampleBoolean": false
       },

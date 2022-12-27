@@ -4,11 +4,11 @@ Alias: $JDV-J146-MethodBodyHeight-ENS = https://mos.esante.gouv.fr/NOS/JDV_J146-
 
 Profile: EnsFrObservationBodyHeight
 Parent: $FrObservationBodyHeight
-Id: EnsFrObservationBodyHeight
+Id: mes-fr-observation-bodyheight
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..1
+* meta.profile 1..*
 * meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBodyHeight" (exactly)
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
