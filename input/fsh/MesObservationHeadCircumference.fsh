@@ -6,7 +6,6 @@ Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrg
 Profile: MesObservationHeadCircumference
 Parent: $vitalsigns
 Id: mes-observation-head-circumference
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationHeadCircumference"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"

@@ -3,7 +3,7 @@
   "id": "mes-fr-observation-bp",
   "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-fr-observation-bp",
   "version": "1.3",
-  "name": "EnsFrObservationBp",
+  "name": "MesFrObservationBp",
   "status": "active",
   "publisher": "ANS",
   "description": "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé",
@@ -62,7 +62,7 @@
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "min": 1,
-        "fixedCanonical": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBp"
+        "fixedCanonical": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-fr-observation-bp"
       },
       {
         "id": "Observation.extension:ENS_ReasonForMeasurement",

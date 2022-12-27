@@ -2,7 +2,7 @@ Alias: $FrObservationBodyTemperature = http://interopsante.org/fhir/StructureDef
 Alias: $JDV-J151-BodySiteBodyTemperature-ENS = https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS/FHIR/JDV-J151-BodySiteBodyTemperature-ENS
 Alias: $JDV-J152-MethodBodyTemperature-ENS = https://mos.esante.gouv.fr/NOS/JDV_J152-MethodBodyTemperature-ENS/FHIR/JDV-J152-MethodBodyTemperature-ENS
 
-Profile: EnsFrObservationBodyTemperature
+Profile: MesFrObservationBodyTemperature
 Parent: $FrObservationBodyTemperature
 Id: mes-fr-observation-body-temperature
 * meta 1..

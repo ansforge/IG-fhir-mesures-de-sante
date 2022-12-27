@@ -5,8 +5,6 @@ Profile: MesObservationPainSeverity
 Parent: $vitalsigns
 Id: mes-observation-pain-severity
 Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé"
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationPainSeverity"
-* ^publisher = "ANS"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"

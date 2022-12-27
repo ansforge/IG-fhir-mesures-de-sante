@@ -1,7 +1,7 @@
 Alias: $FrObservationBodyWeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyWeight
 Alias: $JDV-J145-MethodBodyWeight-ENS = https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS
 
-Profile: EnsFrObservationBodyWeight
+Profile: MesFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
 Id: mes-fr-observation-body-weight
 Description: "Poids du patient"

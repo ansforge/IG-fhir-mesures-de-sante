@@ -1,7 +1,7 @@
 Alias: $FrObservationBodyHeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyHeight
 Alias: $JDV-J146-MethodBodyHeight-ENS = https://mos.esante.gouv.fr/NOS/JDV_J146-MethodBodyHeight-ENS/FHIR/JDV-J146-MethodBodyHeight-ENS
 
-Profile: EnsFrObservationBodyHeight
+Profile: MesFrObservationBodyHeight
 Parent: $FrObservationBodyHeight
 Id: mes-fr-observation-bodyheight
 * meta 1..

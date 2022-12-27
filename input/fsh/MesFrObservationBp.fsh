@@ -6,7 +6,6 @@ Profile: MesFrObservationBp
 Parent: $FrObservationBp
 Id: mes-fr-observation-bp
 Description: "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé"
-* ^publisher = "ANS"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource."

@@ -7,8 +7,6 @@ Alias: $JDV-J158-MethodStepsByDay-ENS = https://mos.esante.gouv.fr/NOS/JDV_J158-
 Profile: MesObservationStepsByDay
 Parent: $vitalsigns
 Id: mes-observation-steps-by-day
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationStepsByDay"
-
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
