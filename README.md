@@ -1,20 +1,11 @@
 # Description
-Ceci est exemple d'ImplementationGuide très simplifié qui servira de template pour les prochains développement d'IGs. Pour créer un nouvel IG, il suffit de forker ce document, puis de faire les modifications :
+Ceci est l'Implementation Guide mesures de santé. Il est notamment utilisé dans le cadre de Mon Espace Santé.
+L'IG n'est pas publié, il est utilisé pour alimenter le projet ci-sis sur simplifier avec les ressources de conformances générées grâce à FSH.
 
-1. Lors de la phase de mise en place :
-* sushi-config.yaml
-* package-list.json
-* ig.ini
-
-2. Lors de la phase de documentation :
-* input/fsh (liste des profils, instances, extensions, ... générés avec la [grammaire FSH](https://build.fhir.org/ig/HL7/fhir-shorthand/))
-* input/pagecontent (liste des pages contenant la docummentation narrative au format markdown.
-
-Ce sample IG a été créé à partir du sample-ig fhir : https://github.com/FHIR/sample-ig.
 
 # IG publisher
 
-Après avoir créé les profil et mis à jour sushi-config, il y a une démarche à suivre pour générer la page web de l'IG. Celle-ci est à suivre dans le [wiki de ce repo](https://github.com/ansforge/FIG_ans-ig-sample/wiki).
+Pour générer la page web de l'IG, suivre les indications dans le [wiki](https://github.com/ansforge/FIG_ans-ig-sample/wiki).
 
 
 
