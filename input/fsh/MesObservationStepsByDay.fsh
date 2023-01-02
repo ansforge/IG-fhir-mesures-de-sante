@@ -45,6 +45,7 @@ Id: mes-observation-steps-by-day
 * valueQuantity = $UCUM#1/(24.h)  (exactly)
 * valueQuantity.system 1..
 * valueQuantity.code 1..
+* valueQuantity.unit = "steps/day" (exactly)
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
