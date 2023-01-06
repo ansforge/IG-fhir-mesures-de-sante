@@ -1,5 +1,5 @@
-Extension: EnsMomentOfMeasurement
-Id: EnsMomentOfMeasurement
+Extension: MesMomentOfMeasurement
+Id: mes-moment-of-measurement
 Description: """Moment de la mesure.
 Peut être exprimé par un texte libre ou un code."""
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_MomentOfMeasurement"
@@ -7,6 +7,6 @@ Peut être exprimé par un texte libre ou un code."""
 * ^context.expression = "Observation"
 * url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_MomentOfMeasurement" (exactly)
 * value[x] only CodeableConcept
-* value[x].coding ..1
-* value[x].coding.system 1..
-* value[x].coding.code 1..
+* valueCodeableConcept.coding ..1
+* valueCodeableConcept.coding.system 1..
+* valueCodeableConcept.coding.code 1..

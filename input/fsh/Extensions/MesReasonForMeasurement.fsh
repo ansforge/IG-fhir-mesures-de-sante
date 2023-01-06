@@ -1,5 +1,5 @@
-Extension: EnsReasonForMeasurement
-Id: EnsReasonForMeasurement
+Extension: MesReasonForMeasurement
+Id: mes-reason-for-measurement
 Description: """Motif de la mesure.
 Exprimé en texte libre."""
 * ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement"
