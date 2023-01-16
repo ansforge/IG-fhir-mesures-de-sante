@@ -5,6 +5,7 @@
   "version": "1.3",
   "name": "MesDiabetisType",
   "status": "active",
+  "description": "Type de diabète ",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -26,6 +27,11 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Type de diabète "
+      },
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
@@ -63,7 +69,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS",
-          "description": "JDV_J153-TypeDiabete-ENSDiabète"
+          "description": "https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS"
         }
       },
       {

@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleMesFrObservationBodyHeight001",
+  "meta": {
+    "profile": [
+      "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-fr-observation-bodyheight"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8302-2",
+        "display": "Body height"
+      }
+    ],
+    "text": "Body height"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "cm",
+    "value": 185,
+    "unit": "cm"
+  },
+  "extension": [
+    {
+      "url": "http://interopsante.org/fhir/StructureDefinition/FrObservationHeightBodyPosition",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "NIMPORTEAOUAC",
+            "system": "NIMPORTEAOUAC"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "1999-07-02"
+}

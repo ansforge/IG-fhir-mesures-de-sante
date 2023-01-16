@@ -1,11 +1,13 @@
-Alias: $JDV-J153-TypeDiabete-ENS = https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS
+
 
 Extension: MesDiabetisType
 Id: mes-diabetis-type
+Description: """ Type de diabète """
 * ^context.type = #element
 * ^context.expression = "Observation"
+* url = Canonical(mes-diabetis-type) (exactly)
 * value[x] only CodeableConcept
 * valueCodeableConcept from $JDV-J153-TypeDiabete-ENS (required)
-* valueCodeableConcept ^binding.description = "JDV_J153-TypeDiabete-ENSDiabète"
+* valueCodeableConcept ^binding.description = $JDV-J153-TypeDiabete-ENS
 * valueCodeableConcept.coding.system 1..
 * valueCodeableConcept.coding.code 1..
