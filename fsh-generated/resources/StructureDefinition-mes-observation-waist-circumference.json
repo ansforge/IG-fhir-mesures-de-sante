@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-observation-waist-circumference",
-  "url": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationWaistCircumference",
+  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-observation-waist-circumference",
   "version": "1.3",
   "name": "MesObservationWaistCircumference",
   "status": "active",
@@ -60,7 +60,20 @@
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "min": 1,
-        "fixedCanonical": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ObservationWaistCircumference"
+        "fixedCanonical": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-observation-waist-circumference"
+      },
+      {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
       },
       {
         "id": "Observation.extension:supportingInfo",
@@ -89,11 +102,7 @@
           {
             "code": "Extension",
             "profile": [
-<<<<<<< Updated upstream
-              "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement"
-=======
               "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
->>>>>>> Stashed changes
             ]
           }
         ]
@@ -121,31 +130,21 @@
         "path": "Observation.code.coding",
         "sliceName": "WaistCircumferenceCode",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "fixedCoding": {
+          "code": "8280-0",
+          "system": "http://loinc.org"
+        }
       },
       {
         "id": "Observation.code.coding:WaistCircumferenceCode.system",
         "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://loinc.org"
+        "min": 1
       },
       {
         "id": "Observation.code.coding:WaistCircumferenceCode.code",
         "path": "Observation.code.coding.code",
-        "min": 1,
-        "fixedCode": "8280-0"
-      },
-      {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://interopsante.org/fhir/StructureDefinition/FrPatient"
-            ]
-          }
-        ]
+        "min": 1
       },
       {
         "id": "Observation.encounter",
@@ -155,23 +154,6 @@
             "code": "Reference",
             "targetProfile": [
               "http://interopsante.org/fhir/StructureDefinition/FrEncounter"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://interopsante.org/fhir/StructureDefinition/FrPatient",
-              "http://interopsante.org/fhir/StructureDefinition/FrPractitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://interopsante.org/fhir/StructureDefinition/FrOrganization"
             ]
           }
         ]
