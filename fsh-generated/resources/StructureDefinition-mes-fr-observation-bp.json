@@ -104,6 +104,18 @@
         "fixedString": "Signes vitaux"
       },
       {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://interopsante.org/fhir/StructureDefinition/FrPatient"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "type": [

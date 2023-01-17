@@ -1,6 +1,6 @@
 
 Instance: ExamplefrPatient001
-InstanceOf: $fr-core-patient
+InstanceOf: $fr-patient
 Usage: #example
 * identifier.use = #official
 * identifier.system = "1.2.250.1.213.1.4.2"

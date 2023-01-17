@@ -147,6 +147,18 @@
         "min": 1
       },
       {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://interopsante.org/fhir/StructureDefinition/FrPatient"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.encounter",
         "path": "Observation.encounter",
         "type": [
@@ -154,6 +166,23 @@
             "code": "Reference",
             "targetProfile": [
               "http://interopsante.org/fhir/StructureDefinition/FrEncounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://interopsante.org/fhir/StructureDefinition/FrPatient",
+              "http://interopsante.org/fhir/StructureDefinition/FrPractitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://interopsante.org/fhir/StructureDefinition/FrOrganization"
             ]
           }
         ]

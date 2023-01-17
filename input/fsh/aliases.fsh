@@ -1,6 +1,26 @@
-Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
+
 Alias: $UCUM = http://unitsofmeasure.org
+
+// --- HL7 ---
+
+Alias: $bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
+Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
+Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
+
+// --- fr-core ---
+
+
+Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
+Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
+Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
+Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
+Alias: $fr-obervation-interpretation = http://www.interopsante.org/fhir/structuredefinition/observation/fr-core-obervation-interpretation
+Alias: $fr-core-weight-measurement-method = http://interopsante.org/fhir/valueset/fr-core-weight-measurement-method
+
+
+Alias: $FrObservationBodyWeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyWeight
+Alias: $FrObservationBodyHeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyHeight
 Alias: $FrObservationBp = http://interopsante.org/fhir/StructureDefinition/FrObservationBp
 Alias: $FrObservationBmi = http://interopsante.org/fhir/StructureDefinition/FrObservationBmi
 Alias: $FrObservationBodyTemperature = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyTemperature
@@ -29,7 +49,3 @@ Alias: $JDV-J158-MethodStepsByDay-ENS = https://mos.esante.gouv.fr/NOS/JDV_J158-
 Alias: $JDV-J159-MethodPainSeverity-ENS = https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS
 Alias: $JDV-J163-GlucoseUnits-ENS = https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS
 Alias: $JDV-J164-GlucoseNumberOfDays-ENS = https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS
-
-
-
-
