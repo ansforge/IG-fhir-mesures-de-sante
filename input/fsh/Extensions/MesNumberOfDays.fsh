@@ -1,4 +1,4 @@
-Extension: EnsNumberOfDays
+Extension: MesNumberOfDays
 Id: mes-number-of-days
 Description: "Nombre de jours"
 * ^context.type = #element
