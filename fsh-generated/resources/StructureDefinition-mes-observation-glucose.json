@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-observation-glucose",
-  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-observation-glucose",
+  "url": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-glucose",
   "version": "1.3",
   "name": "MesObservationGlucose",
   "status": "active",
@@ -55,7 +55,7 @@
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "min": 1,
-        "fixedCanonical": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-observation-glucose"
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-glucose"
       },
       {
         "id": "Observation.extension",
@@ -97,7 +97,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
+              "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
             ]
           }
         ]
@@ -114,7 +114,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-moment-of-measurement"
+              "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-moment-of-measurement"
             ]
           }
         ]
@@ -140,7 +140,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-number-of-days"
+              "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-number-of-days"
             ]
           }
         ]
@@ -165,7 +165,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-diabetis-type"
+              "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-diabetis-type"
             ]
           }
         ]
@@ -313,7 +313,7 @@
         "short": "JDV pour la glycémie ",
         "binding": {
           "strength": "required",
-          "valueSet": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/ValueSet/method-glucose-vs"
+          "valueSet": "http://interop.esante.gouv.fr/fhir/mesures/ValueSet/method-glucose-vs"
         }
       },
       {

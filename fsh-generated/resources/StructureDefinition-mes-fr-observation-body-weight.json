@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-fr-observation-body-weight",
-  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight",
+  "url": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight",
   "version": "1.3",
   "name": "MesFrObservationBodyWeight",
   "status": "active",
@@ -61,7 +61,7 @@
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "min": 1,
-        "fixedCanonical": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"
       },
       {
         "id": "Observation.extension:MesReasonForMeasurement",
@@ -73,7 +73,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
+              "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
             ]
           }
         ]

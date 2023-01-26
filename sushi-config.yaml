@@ -1,7 +1,7 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
 id: ans.fhir.fr.mesures
-canonical: http://interop.esante.gouv.fr/ci-sis/fhir/mesures
+canonical: http://interop.esante.gouv.fr/fhir/mesures
 name: mesures
 title: Mesures de santé
 publisher:
@@ -14,40 +14,68 @@ copyrightYear: 2020+
 releaseLabel: ci-build
 
 parameters:
-    shownav: 'true'
+  shownav: 'true'
 
 
 dependencies:
-    hl7.fhir.fr.core: 
-        uri: https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download
-        version: 1.1.0
-    hl7.fhir.uv.phd: 1.0.0
+  hl7.fhir.fr.core: 
+    uri: https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download
+    version: 1.1.0
+  hl7.fhir.uv.phd: 1.0.0
 
 
-# menu:
-#   Home: index.html
-#   Artifacts: artifacts.html
-
-# pages:
-#     index.md:
-#         title: Accueil
-#     specifications_techniques.md:
-#         construction_des_flux.md:
-#         st_flux1.md:
-#             title: Flux 01
-#         st_flux2.md:
-#             title: Flux 02
-#     specifications_fonctionnelles.md:
-#         sf_ajout.md:
-#             title: Fonctionnalité 1
-#     autres_ressources.md:
-#         title: Autres Ressources
-#         securite.md:
-#             title: Sécurité
-#         downloads.md:
-#             title: Téléchargements et usages
+pages:
+    index.md:
+    Introduction.page.md:
+    Contexte-metier.page.md:
+    Generalites.page.md:
+    FHIR-R4.01.page.md:
+    Les-profils-utilises-pour-les-mesures-de-sante.page.md:
+    Les-profils-utilises-pour-les-dispositifs-connectes.page.md:
+    Liste-des-profils.page.md:
+    Terminologies.page.md:
+    Jeux-de-valeurs.page.md:
+    Le-profil-FHIR-des-objets-connectes.page.md:
+    Liste-des-codes-des-observations.page.md:
 
 
+menu:
+  Accueil: index.html
+  Introduction: introduction.page.html
+  Contexte Métier: Contexte-metier.page.html
+  Standards-utilises:
+    Généralités: Generalites.page.html
+    FHIR-R4.01: FHIR-R4.01.page.html
+  Profils:
+    Les profils utilisés pour les mesures de santé: Les-profils-utilises-pour-les-mesures-de-sante.page.html
+    Les profils utilisés pour les dispositifs connectés: Les-profils-utilises-pour-les-dispositifs-connectes.page.html
+  Les profils FHIR des constantes MES:
+    Liste des profils MES: Liste-des-profils.page.html
+    MesFrObservationBodyWeight---Poids: StructureDefinition-mes-fr-observation-body-weight.html
+    MesFrObservationBodyHeight---Taille: StructureDefinition-mes-fr-observation-bodyheight.html
+    MesFrObservationBodyTemperature--Temperature: StructureDefinition-mes-fr-observation-body-temperature.html
+    MesFrObservationBp---Pression-arterielle: StructureDefinition-mes-fr-observation-bp.html
+    MesObservationGlucose---Glycemie: StructureDefinition-mes-observation-glucose.html
+    MesFrObservationBmi---Indice-de-masse-corporelle: StructureDefinition-mes-fr-observation-bmi.html
+    MesObservationWaistCircumference---Tour-de-taille: StructureDefinition-mes-observation-waist-circumference.html
+    MesObservationStepsByDay---Nombre-de-pas-quotidien: StructureDefinition-mes-observation-steps-by-day.html
+    MesObservationPainSeverity---Niveau-de-douleur: StructureDefinition-mes-observation-pain-severity.html
+    MesObservationHeadCircumference---Perimetre-cranien: StructureDefinition-mes-observation-head-circumference.html
+    MesObservationHeartrate---Frequence-cardiaque: StructureDefinition-mes-fr-observation-heartrate.html
+  Les-extensions-specifiques-MES:
+    MesDiabetisTYpe---Types de diabète: StructureDefinition-mes-diabetis-type.html
+    MesReasonForMeasurement---Motif de la mesure: StructureDefinition-mes-reason-for-measurement.html
+    MesMomentOfMeasurement--Moment de la mesure: StructureDefinition-mes-moment-of-measurement.html
+    MesNumberOfDays--Nombre de jours: StructureDefinition-mes-number-of-days.html
+  Terminologies-et-jeux-de-valeurs:
+    Terminologies: Terminologies.page.html
+    Jeux de valeurs: Jeux-de-valeurs.page.html
+  Le profil FHIR des objets connectés: Le-profil-FHIR-des-objets-connectes.page.html
+  Annexes:
+    Liste des codes des observations: Liste-des-codes-des-observations.page.html
+
+
+  
 # menu:
 #   Accueil: index.html
 #   Spécifications techniques:

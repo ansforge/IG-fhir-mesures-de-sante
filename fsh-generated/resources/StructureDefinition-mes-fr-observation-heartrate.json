@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-fr-observation-heartrate",
-  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-fr-observation-heartrate",
+  "url": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-heartrate",
   "version": "1.3",
   "name": "MesFrObservationHeartrate",
   "status": "active",
@@ -60,7 +60,7 @@
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "min": 1,
-        "fixedCanonical": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-fr-observation-heartrate"
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-heartrate"
       },
       {
         "id": "Observation.extension:levelOfExertion",
@@ -88,7 +88,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-moment-of-measurement"
+              "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-moment-of-measurement"
             ]
           }
         ]

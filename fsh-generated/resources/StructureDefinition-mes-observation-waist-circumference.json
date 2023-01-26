@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-observation-waist-circumference",
-  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-observation-waist-circumference",
+  "url": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-waist-circumference",
   "version": "1.3",
   "name": "MesObservationWaistCircumference",
   "status": "active",
@@ -60,7 +60,7 @@
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "min": 1,
-        "fixedCanonical": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-observation-waist-circumference"
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-waist-circumference"
       },
       {
         "id": "Observation.extension",
@@ -102,7 +102,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
+              "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
             ]
           }
         ]

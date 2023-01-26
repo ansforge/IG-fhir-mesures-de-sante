@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "ans.fhir.fr.mesures",
-  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures",
+  "url": "http://interop.esante.gouv.fr/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures",
   "version": "1.3",
   "name": "mesures",
   "title": "Mesures de santé",
@@ -158,13 +158,188 @@
         "name": "Méthode de mesures de glycémie sanguine ou interstitielle",
         "description": "Méthode de mesures de glycémie sanguine ou interstitielle.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/TRE-R308-TAASIP"
+        },
+        "name": "TRE_R308-TAASIP",
+        "description": "TA_ASIP",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/TRE-R311-CIM10Atih"
+        },
+        "name": "TRE_R311-CIM10Atih",
+        "description": "CIM-10 FR à usage PMSI",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesFrObservationBP001"
+        },
+        "name": "ExampleMesFrObservationBP001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-bp"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesFrObservationBmi001"
+        },
+        "name": "ExampleMesFrObservationBmi001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-bmi"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesFrObservationBodyHeight001"
+        },
+        "name": "ExampleMesFrObservationBodyHeight001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-bodyheight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesFrObservationBodyTemperature001"
+        },
+        "name": "ExampleMesFrObservationBodyTemperature001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-body-temperature"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesFrObservationBodyWeight001"
+        },
+        "name": "ExampleMesFrObservationBodyWeight001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesFrObservationHeartrate001"
+        },
+        "name": "ExampleMesFrObservationHeartrate001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-heartrate"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesObservationGlucose001"
+        },
+        "name": "ExampleMesObservationGlucose001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-glucose"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesObservationHeadCircumference001"
+        },
+        "name": "ExampleMesObservationHeadCircumference001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-head-circumference"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesObservationPainSeverity001"
+        },
+        "name": "ExampleMesObservationPainSeverity001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-pain-severity"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleMesObservationStepsByDay001"
+        },
+        "name": "ExampleMesObservationStepsByDay001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-steps-by-day"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleObservationWaistCircumference001"
+        },
+        "name": "ExampleObservationWaistCircumference001",
+        "exampleCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-waist-circumference"
+      },
+      {
+        "reference": {
+          "reference": "Patient/ExamplefrPatient001"
+        },
+        "name": "ExamplefrPatient001",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/JDV-J153-TypeDiabete-ENS"
+        },
+        "name": "JDV-J153-TypeDiabete-ENS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/JDV-J164-GlucoseNumberOfDays-ENS"
+        },
+        "name": "JDV-J164-GlucoseNumberOfDays-ENS",
+        "exampleBoolean": false
       }
     ],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
-      "page": []
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Index",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Introduction.page.html",
+          "title": "Introduction Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Contexte-metier.page.html",
+          "title": "Contexte Metier Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Generalites.page.html",
+          "title": "Generalites Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "FHIR-R4.01.page.html",
+          "title": "FHIR R 4 01 Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Les-profils-utilises-pour-les-mesures-de-sante.page.html",
+          "title": "Les Profils Utilises Pour Les Mesures De Sante Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Les-profils-utilises-pour-les-dispositifs-connectes.page.html",
+          "title": "Les Profils Utilises Pour Les Dispositifs Connectes Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Liste-des-profils.page.html",
+          "title": "Liste Des Profils Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Terminologies.page.html",
+          "title": "Terminologies Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Jeux-de-valeurs.page.html",
+          "title": "Jeux De Valeurs Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Le-profil-FHIR-des-objets-connectes.page.html",
+          "title": "Le Profil FHIR Des Objets Connectes Page",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Liste-des-codes-des-observations.page.html",
+          "title": "Liste Des Codes Des Observations Page",
+          "generation": "markdown"
+        }
+      ]
     },
     "parameter": [
       {

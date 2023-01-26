@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-observation-steps-by-day",
-  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-observation-steps-by-day",
+  "url": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-steps-by-day",
   "version": "1.3",
   "name": "MesObservationStepsByDay",
   "status": "active",
@@ -60,7 +60,7 @@
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "min": 1,
-        "fixedCanonical": "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-observation-steps-by-day"
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-steps-by-day"
       },
       {
         "id": "Observation.extension",
@@ -103,7 +103,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ci-sis/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
+              "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
             ]
           }
         ]
