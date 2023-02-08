@@ -63,19 +63,6 @@
         "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-head-circumference"
       },
       {
-        "id": "Observation.extension",
-        "path": "Observation.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.extension:supportingInfo",
         "path": "Observation.extension",
         "sliceName": "supportingInfo",
@@ -88,7 +75,8 @@
               "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"
             ]
           }
-        ]
+        ],
+        "isModifier": false
       },
       {
         "id": "Observation.extension:MesReasonForMeasurement",
@@ -105,7 +93,8 @@
               "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
             ]
           }
-        ]
+        ],
+        "isModifier": false
       },
       {
         "id": "Observation.code.coding",

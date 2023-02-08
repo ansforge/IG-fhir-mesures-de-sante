@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J198-FonctionLieu-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-09-30T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J198-FonctionLieu-ROR/FHIR/JDV-J198-FonctionLieu-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.30"
+    }
+  ],
+  "version": "20220930120000",
+  "name": "JDV_J198-FonctionLieu-ROR",
+  "status": "active",
+  "date": "2022-09-30T12:00:00+01:00",
+  "description": "Destination d'usage du lieu pour le lieu de réalisation de l'offre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R343-FonctionLieu/FHIR/TRE-R343-FonctionLieu",
+        "concept": [
+          {
+            "code": "001",
+            "display": "Hébergement",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.227"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
