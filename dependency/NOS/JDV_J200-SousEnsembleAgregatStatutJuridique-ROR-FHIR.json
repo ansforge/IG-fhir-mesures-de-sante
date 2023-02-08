@@ -1,0 +1,92 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J200-SousEnsembleAgregatStatutJuridique-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-08-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J200-SousEnsembleAgregatStatutJuridique-ROR/FHIR/JDV-J200-SousEnsembleAgregatStatutJuridique-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.32"
+    }
+  ],
+  "version": "20220826120000",
+  "name": "JDV_J200-SousEnsembleAgregatStatutJuridique-ROR",
+  "status": "active",
+  "date": "2022-08-26T12:00:00+01:00",
+  "description": "Agrégats de statuts juridiques FINESS niveau 2",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R69-FinessAgregatStatutJuridiqueNiv2/FHIR/TRE-R69-FinessAgregatStatutJuridiqueNiv2",
+        "concept": [
+          {
+            "code": "1100",
+            "display": "Etat et Collectivités territoriales",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.64"
+              }
+            ]
+          },
+          {
+            "code": "1200",
+            "display": "Etablissement public",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.64"
+              }
+            ]
+          },
+          {
+            "code": "2100",
+            "display": "Organisme privé à but non lucratif",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.64"
+              }
+            ]
+          },
+          {
+            "code": "2200",
+            "display": "Organisme privé à caractère commercial",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.64"
+              }
+            ]
+          },
+          {
+            "code": "3100",
+            "display": "Personne morale de droit étranger",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.64"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

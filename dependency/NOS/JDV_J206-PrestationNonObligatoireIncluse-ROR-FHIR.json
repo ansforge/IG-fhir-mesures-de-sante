@@ -1,0 +1,164 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J206-PrestationNonObligatoireIncluse-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-08-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J206-PrestationNonObligatoireIncluse-ROR/FHIR/JDV-J206-PrestationNonObligatoireIncluse-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.38"
+    }
+  ],
+  "version": "20220826120000",
+  "name": "JDV_J206-PrestationNonObligatoireIncluse-ROR",
+  "status": "active",
+  "date": "2022-08-26T12:00:00+01:00",
+  "description": "Prestations non obligatoire incluses",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R264-PrestationNonObligatoireIncluse/FHIR/TRE-R264-PrestationNonObligatoireIncluse",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Entretien du linge du résident non délicat",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "02",
+            "display": "Marquage du linge",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "03",
+            "display": "Fourniture de produits d'hygiène corporelle (savon, gel douche, shampoing, dentifrice...)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "04",
+            "display": "Mise à disposition d'un poste de téléphonie dans la chambre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "05",
+            "display": "Appels téléphoniques entrants non facturés en sus",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "06",
+            "display": "Appels téléphoniques sortants non facturés en sus",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "07",
+            "display": "Mise à disposition d'un poste de télévision dans la chambre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "08",
+            "display": "Internet dans la chambre (abonnement/accès au réseau Wifi)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "09",
+            "display": "Prestation de coiffure (shampoing, coupe)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "10",
+            "display": "Prestation esthétique de base",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          },
+          {
+            "code": "11",
+            "display": "Prestation de pédicurie-podologie (hors prescription médicale)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.59"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
