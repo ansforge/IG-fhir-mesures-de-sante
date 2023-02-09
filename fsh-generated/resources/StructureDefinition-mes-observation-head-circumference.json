@@ -59,8 +59,25 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile:MesObservationHeadCircumference",
+        "path": "Observation.meta.profile",
+        "sliceName": "MesObservationHeadCircumference",
         "min": 1,
-        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-head-circumference"
+        "max": "1",
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-head-circumference",
+        "mustSupport": true
       },
       {
         "id": "Observation.extension",

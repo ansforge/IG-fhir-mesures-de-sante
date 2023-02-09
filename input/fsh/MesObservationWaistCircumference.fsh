@@ -1,8 +1,3 @@
-Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
-Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
-Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
-
 
 Profile: MesObservationWaistCircumference
 Parent: $vitalsigns
@@ -11,7 +6,11 @@ Id: mes-observation-waist-circumference
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = Canonical(mes-observation-waist-circumference) (exactly)
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains MesObservationWaistCircumference 1..1 MS
+* meta.profile[MesObservationWaistCircumference] = Canonical(mes-observation-waist-circumference) (exactly)
 
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"

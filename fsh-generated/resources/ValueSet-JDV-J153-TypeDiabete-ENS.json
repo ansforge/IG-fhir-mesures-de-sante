@@ -1,0 +1,114 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J153-TypeDiabete-ENS",
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2021-04-30T12:00:00+01:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.1.1.5.608"
+    }
+  ],
+  "version": "20210430120000",
+  "name": "JDV_J153-TypeDiabete-ENS",
+  "status": "active",
+  "date": "2021-04-30T12:00:00+01:00",
+  "description": "JDV pour caractériser le type de diabète dans l'extension DiabetisType",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih",
+        "concept": [
+          {
+            "code": "E11.x0",
+            "display": "Diabète type 2 insulinotraité",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.67"
+              }
+            ]
+          },
+          {
+            "code": "E11.x8",
+            "display": "Diabète type 2 non insulinotraité",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.67"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R310-CIM10/FHIR/TRE-R310-CIM10",
+        "concept": [
+          {
+            "code": "E10",
+            "display": "Diabète type 1",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:2.16.840.1.113883.6.3"
+              }
+            ]
+          },
+          {
+            "code": "O24.4",
+            "display": "Diabète de grossesse",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:2.16.840.1.113883.6.3"
+              }
+            ]
+          },
+          {
+            "code": "E14",
+            "display": "Autres types de diabète sucré",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:2.16.840.1.113883.6.3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP",
+        "concept": [
+          {
+            "code": "MED-874",
+            "display": "Non diabétique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.1.4.322"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

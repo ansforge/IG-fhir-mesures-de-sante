@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleMesObservationPainSeverity001",
+  "meta": {
+    "profile": [
+      "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-pain-severity"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "72514-3",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "unit": "Level",
+    "code": "1",
+    "value": 5
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ExamplefrPatient001",
+    "display": "Pierre Durand",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2022-11-06"
+}

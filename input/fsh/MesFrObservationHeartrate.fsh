@@ -1,6 +1,4 @@
-Alias: $FrObservationHeartrate = http://interopsante.org/fhir/StructureDefinition/FrObservationHeartrate
-Alias: $JDV-J147-MethodHeartrate-ENS = https://mos.esante.gouv.fr/NOS/JDV_J147-MethodHeartrate-ENS/FHIR/JDV-J147-MethodHeartrate-ENS
-Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS
+
 
 Profile: MesFrObservationHeartrate
 Parent: $FrObservationHeartrate
@@ -9,7 +7,11 @@ Id: mes-fr-observation-heartrate
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = Canonical(mes-fr-observation-heartrate) (exactly)
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains MesFrObservationHeartrate 1..1 MS
+* meta.profile[MesFrObservationHeartrate] = Canonical(mes-fr-observation-heartrate) (exactly)
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -33,21 +35,21 @@ Id: mes-fr-observation-heartrate
 * bodySite ^short = "Non utilisé"
 * bodySite ^definition = "Non utilisé"
 
-* method from $JDV-J147-MethodHeartrate-ENS (required)
+* method from $JDV-J147-MethodHeartrate-MES (required)
 * method ^short = "Méthode de la mesure"
 * method ^definition = "Méthode de la mesure"
-* method ^binding.description = "JDV_J147-MethodHeartrate-ENS"
+* method ^binding.description = $JDV-J147-MethodHeartrate-MES
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\r\n=>cette référence est obligatoire"
 
 * referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
-* referenceRange.appliesTo ^binding.description = "JDV_J148-ReferenceRangeAppliesTo-CISIS"
+* referenceRange.appliesTo ^binding.description = $JDV-J148-ReferenceRangeAppliesTo-CISIS
 * referenceRange.appliesTo.coding.system 1..
 * referenceRange.appliesTo.coding.code 1..
 
 * hasMember ^short = "Non utilisé"
 * hasMember ^definition = "Non utilisé"
 
-* value[x] ^slicing.rules = #open
+//* value[x] ^slicing.rules = #open

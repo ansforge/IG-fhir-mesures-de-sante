@@ -60,8 +60,25 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile:MesFrObservationBodyWeight",
+        "path": "Observation.meta.profile",
+        "sliceName": "MesFrObservationBodyWeight",
         "min": 1,
-        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"
+        "max": "1",
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight",
+        "mustSupport": true
       },
       {
         "id": "Observation.extension:MesReasonForMeasurement",
@@ -125,7 +142,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS",
-          "description": "JDV_J145-MethodBodyWeight-ENS"
+          "description": "https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS"
         }
       },
       {

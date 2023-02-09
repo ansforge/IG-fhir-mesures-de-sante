@@ -1,0 +1,92 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J164-GlucoseNumberOfDays-ENS",
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2021-06-25T12:00:00+01:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.1.1.5.640"
+    }
+  ],
+  "version": "20220128120000",
+  "name": "JDV_J164-GlucoseNumberOfDays-ENS",
+  "status": "active",
+  "date": "2022-01-28T12:00:00+01:00",
+  "description": "Liste fermée des codes utilisables pour la mesure du taux de glucose interstitiel et de l'index de gestion de glycémie (IGG) avec le profil ENS_ObservationGlucose",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP",
+        "concept": [
+          {
+            "code": "GEN-092",
+            "display": "Autre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.1.4.322"
+              }
+            ]
+          },
+          {
+            "code": "GEN-275",
+            "display": "7j",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.1.4.322"
+              }
+            ]
+          },
+          {
+            "code": "GEN-276",
+            "display": "14j",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.1.4.322"
+              }
+            ]
+          },
+          {
+            "code": "GEN-277",
+            "display": "30j",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.1.4.322"
+              }
+            ]
+          },
+          {
+            "code": "GEN-278",
+            "display": "90j",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.1.4.322"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

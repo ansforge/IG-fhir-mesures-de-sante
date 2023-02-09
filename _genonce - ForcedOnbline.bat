@@ -3,13 +3,10 @@ SET publisher_jar=publisher.jar
 SET input_cache_path=%CD%\input-cache
 
 ECHO Checking internet connection...
-PING tx.fhir.org -4 -n 1 -w 1000 | FINDSTR TTL && GOTO isonline
-ECHO We're offline...
-SET txoption=-tx n/a
-GOTO igpublish
+
 
 :isonline
-ECHO We're online
+ECHO Forcing online
 SET txoption=
 
 :igpublish

@@ -1,0 +1,83 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TRE_R311-CIM10Atih",
+  "id": "TRE-R311-CIM10Atih",
+  "description": "CIM-10 FR à usage PMSI",
+  "version": "20210528120000",
+  "url": "https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih",
+  "concept": [
+    {
+      "code": "E11.x0",
+      "display": "Diabète type 2 insulinotraité",
+      "designation": [
+        {
+          "use": {
+            "code": "LibelleCourt"
+          },
+          "value": "Diabète type 2 insulinotraité"
+        },
+        {
+          "use": {
+            "code": "LibelleAdapte"
+          },
+          "value": "Diabète type 2 insulinotraité"
+        }
+      ],
+      "property": [
+        {
+          "code": "dateValid",
+          "valueDateTime": "2021-04-30T12:00:00+01:00"
+        },
+        {
+          "code": "dateMaj",
+          "valueDateTime": "2021-04-30T12:00:00+01:00"
+        }
+      ]
+    },
+    {
+      "code": "E11.x8",
+      "display": "Diabète type 2 non insulinotraité",
+      "designation": [
+        {
+          "use": {
+            "code": "LibelleCourt"
+          },
+          "value": "Diabète type 2 non insulinot."
+        },
+        {
+          "use": {
+            "code": "LibelleAdapte"
+          },
+          "value": "Diabète type 2 non insulinotraité"
+        }
+      ],
+      "property": [
+        {
+          "code": "dateValid",
+          "valueDateTime": "2021-04-30T12:00:00+01:00"
+        },
+        {
+          "code": "dateMaj",
+          "valueDateTime": "2021-04-30T12:00:00+01:00"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2021-04-30T12:00:00+01:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.2.67"
+    }
+  ],
+  "date": "2021-05-28T12:00:00+01:00",
+  "count": 2
+}

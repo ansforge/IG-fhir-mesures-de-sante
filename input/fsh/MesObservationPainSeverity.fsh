@@ -1,5 +1,3 @@
-Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $JDV-J159-MethodPainSeverity-ENS = https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS
 
 Profile: MesObservationPainSeverity
 Parent: $vitalsigns
@@ -9,7 +7,11 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = Canonical(mes-observation-pain-severity) (exactly)
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains MesObservationPainSeverity 1..1 MS
+* meta.profile[MesObservationPainSeverity] = Canonical(mes-observation-pain-severity) (exactly)
 
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"
@@ -39,8 +41,8 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * bodySite ^short = "Lieu de la douleur - Texte libre"
 * bodySite ^definition = "Lieu de la douleur - Texte libre"
 
-* method from $JDV-J159-MethodPainSeverity-ENS (required)
-* method ^binding.description = "JDV_J159-MethodPainSeverity-ENS"
+* method from $JDV-J159-MethodPainSeverity-MES (required)
+* method ^binding.description = $JDV-J159-MethodPainSeverity-MES
 * method.coding.system 1..
 * method.coding.code 1..
 

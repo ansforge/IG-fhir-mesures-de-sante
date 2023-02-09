@@ -44,10 +44,9 @@ Usage: #example
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
 * extension[mes-reason-for-measurement].valueString = "Calcul IMC"
-* method.coding.code = #NIMPORTEAOUAC
-* method.coding.system = $JDV-J145-MethodBodyWeight-ENS
-* device = Reference(BalanceElectronique)
-* device.type = "PhdDevice"
+* method.coding.code = #K50BI02
+* method.coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED"
+* device = Reference(phd-74E8FFFEFF051C00)
 * valueQuantity.value = 95
 * valueQuantity.code = #kg
 * valueQuantity.unit = "Kg"
@@ -93,11 +92,11 @@ Usage: #example
 * component[SystolicBP].code.coding[SBPCode] = http://loinc.org#8480-6 "Tension artérielle systolique"
 * component[SystolicBP].code.coding[+] = http://snomed.info/sct#271649006 "Tension artérielle systolique"
 * component[SystolicBP].code.coding[+] = http://acme.org/devices/clinical-codes#bp-s "Tension artérielle systolique"
-* component[SystolicBP].valueQuantity.value = 107 
+* component[SystolicBP].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
 * component[SystolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "normale"
 * component[SystolicBP].interpretation.text = "Normal"
 * component[DiastolicBP].code = http://loinc.org#8462-4 "Tension artérielle diastolique"
-* component[DiastolicBP].valueQuantity.value = 60 
+* component[DiastolicBP].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
 * component[DiastolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * component[DiastolicBP].interpretation.text = "En dessous de la normale"
 
@@ -105,6 +104,7 @@ Usage: #example
 Instance: ExampleMesFrObservationBmi001
 InstanceOf: MesFrObservationBmi
 Usage: #example
+* meta.profile[0] = Canonical(MesFrObservationBmi)
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
@@ -136,8 +136,7 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
-* code = $JDV-J154-TypeGlucose-ENS|#4548-4
-* code = https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS|#4548-4
+* code = $JDV-J154-TypeGlucose-MES|#4548-4
 * valueQuantity = 1.5 'mg/dL' "milligramme par décilitre"
 * extension[MesReasonForMeasurement].valueString = "Malaise du patient"
 * extension[MesMomentOfMeasurement].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc|#16915-1 "Glucose post prandial"

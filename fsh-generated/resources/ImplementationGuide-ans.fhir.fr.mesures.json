@@ -124,7 +124,6 @@
           "reference": "StructureDefinition/mes-diabetis-type"
         },
         "name": "MesDiabetisType",
-        "description": "Type de diabète ",
         "exampleBoolean": false
       },
       {
@@ -157,6 +156,14 @@
         },
         "name": "Méthode de mesures de glycémie sanguine ou interstitielle",
         "description": "Méthode de mesures de glycémie sanguine ou interstitielle.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/TRE-R306-CLADIMED"
+        },
+        "name": "TRE_R306-CLADIMED",
+        "description": "Classification française des Dispositifs Médicaux",
         "exampleBoolean": false
       },
       {
@@ -261,6 +268,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/JDV-J145-MethodBodyWeight-ENS"
+        },
+        "name": "JDV-J145-MethodBodyWeight-ENS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/JDV-J153-TypeDiabete-ENS"
         },
         "name": "JDV-J153-TypeDiabete-ENS",
@@ -272,6 +286,20 @@
         },
         "name": "JDV-J164-GlucoseNumberOfDays-ENS",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/blood-pressure"
+        },
+        "name": "blood-pressure",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/phd-74E8FFFEFF051C00"
+        },
+        "name": "phd-74E8FFFEFF051C00",
+        "exampleBoolean": true
       }
     ],
     "page": {
@@ -280,13 +308,8 @@
       "generation": "html",
       "page": [
         {
-          "nameUrl": "index.html",
+          "nameUrl": "Index.html",
           "title": "Index",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "Introduction.page.html",
-          "title": "Introduction Page",
           "generation": "markdown"
         },
         {

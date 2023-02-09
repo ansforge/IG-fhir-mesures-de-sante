@@ -1,15 +1,3 @@
-Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
-Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
-Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
-Alias: $JDV-J157-MomentGlucose-ENS = https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS
-Alias: $JDV-J164-GlucoseNumberOfDays-ENS = https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS
-Alias: $JDV-J154-TypeGlucose-ENS = https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS
-Alias: $JDV-J163-GlucoseUnits-ENS = https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS
-Alias: $JDV-J155-MethodGlucoseSanguin-ENS = https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS
-Alias: $JDV-J156-MethodGlucoseInterstitiel-ENS = https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS/FHIR/JDV-J156-MethodGlucoseInterstitiel-ENS
-Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS
-Alias: $JDV-J153-TypeDiabete-ENS = https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS
 
 Profile: MesObservationGlucose
 Parent: $vitalsigns
@@ -27,7 +15,11 @@ L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesu
 L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."""
 * meta 1..
 * meta.profile 1..*
-* meta.profile = Canonical(mes-observation-glucose) (exactly)
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains MesObservationGlucose 1..1 MS
+* meta.profile[MesObservationGlucose] = Canonical(mes-observation-glucose) (exactly)
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -44,18 +36,18 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 
 * extension[MesMomentOfMeasurement] ^short = "Moment de la mesure"
 * extension[MesMomentOfMeasurement] ^definition = "Moment de la mesure"
-* extension[MesMomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-ENS (required)
+* extension[MesMomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-MES (required)
 * extension[MesMomentOfMeasurement].value[x] ^binding.description = "JDV-J157-MomentGlucose-ENS"
 
 * extension[MesNumberOfDays] ^short = "Nombre de jours"
 * extension[MesNumberOfDays] ^definition = "Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie."
 * extension[MesNumberOfDays].value[x] 1..
-* extension[MesNumberOfDays].value[x] from $JDV-J164-GlucoseNumberOfDays-ENS (required)
+* extension[MesNumberOfDays].value[x] from $JDV-J164-GlucoseNumberOfDays-MES (required)
 * extension[MesNumberOfDays].value[x] ^binding.description = "JDV_J164-GlucoseNumberOfDays-ENS"
 
 * category[VSCat].coding.display = "Signes vitaux" (exactly)
 
-* code from $JDV-J154-TypeGlucose-ENS (extensible)
+* code from $JDV-J154-TypeGlucose-MES (extensible)
 * code ^short = "Types de glycémie"
 * code ^definition = "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Hémoglobine glyquée (HbA1c)\r\n• Index de gestion de glycémie (IGG)"
 * code ^binding.description = "Glucose sanguin ou intersticiel"
@@ -72,8 +64,8 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * valueQuantity.system 1..
 * valueQuantity.system = "http://unitsofmeasure.org" (exactly)
 * valueQuantity.code 1..
-* valueQuantity.code from $JDV-J163-GlucoseUnits-ENS (required)
-* valueQuantity.code ^binding.description = "JDV-J163-GlucoseUnits-ENS"
+* valueQuantity.code from $JDV-J163-GlucoseUnits-MES (required)
+* valueQuantity.code ^binding.description = $JDV-J163-GlucoseUnits-MES
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
