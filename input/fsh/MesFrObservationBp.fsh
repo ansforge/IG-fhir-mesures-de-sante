@@ -26,8 +26,6 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * subject only Reference($fr-patient)
 * effective[x] only dateTime
 
-* dataAbsentReason.coding.system 1..
-* dataAbsentReason.coding.code 1..
 
 * interpretation ^short = "Non renseigné"
 * interpretation ^definition = "Non renseigné"
@@ -51,8 +49,8 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * referenceRange.appliesTo.coding.system 1..
 * referenceRange.appliesTo.coding.code 1..
 
-* component.dataAbsentReason.coding.system 1..
-* component.dataAbsentReason.coding.code 1..
+// * component.dataAbsentReason.coding.system 1..
+// * component.dataAbsentReason.coding.code 1..
 * component.referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 
 // * component[SystolicBP] ^sliceName = "SystolicBP"

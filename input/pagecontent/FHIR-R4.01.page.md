@@ -1,7 +1,4 @@
----
-topic: FHIRR4.01
----
-## {{page-title}}
+
 &nbsp;
 
 Ces spécifications techniques se basent sur le standard HL7 FHIR (R4.0.1). Elles font référence à un certain nombre de ressources du standard ainsi qu'aux spécifications de l'API REST FHIR, basée sur le protocole HTTP. La syntaxe retenue pour les échanges est la syntaxe JSON.

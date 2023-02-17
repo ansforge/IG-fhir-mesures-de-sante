@@ -1,7 +1,4 @@
----
-topic: Terminologies-duplicate-2
----
-## {{page-title}}
+
 
 &nbsp;
 
@@ -17,6 +14,7 @@ topic: Terminologies-duplicate-2
 |     CLADIMED        |     https://www.cladimed.com/                                                                                                                                               |     CLADIMED                                                                 |
 |     TA_ASIP         |     JDV   métier géré par l’ANS                                                                                                                                             |     LOv2                                                                     |
 |     HL7             |     http://www.hl7.org/                                                                                                                                                     |     http://www.hl7.org/documentcenter/public/gforge_include/hl7_eula.html    |
+{: .grid }
 
 &nbsp;
 
