@@ -59,8 +59,29 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile:MesObservationWaistCircumference",
+        "path": "Observation.meta.profile",
+        "sliceName": "MesObservationWaistCircumference",
         "min": 1,
+<<<<<<< Updated upstream
         "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-waist-circumference"
+=======
+        "max": "1",
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-waist-circumference",
+        "mustSupport": true
+>>>>>>> Stashed changes
       },
       {
         "id": "Observation.extension",
@@ -108,43 +129,16 @@
         ]
       },
       {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "fixedCodeableConcept": {
+          "coding": [
             {
-              "type": "value",
-              "path": "code"
-            },
-            {
-              "type": "value",
-              "path": "system"
+              "code": "8280-0",
+              "system": "http://loinc.org"
             }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.code.coding:WaistCircumferenceCode",
-        "path": "Observation.code.coding",
-        "sliceName": "WaistCircumferenceCode",
-        "min": 1,
-        "max": "1",
-        "fixedCoding": {
-          "code": "8280-0",
-          "system": "http://loinc.org"
+          ]
         }
-      },
-      {
-        "id": "Observation.code.coding:WaistCircumferenceCode.system",
-        "path": "Observation.code.coding.system",
-        "min": 1
-      },
-      {
-        "id": "Observation.code.coding:WaistCircumferenceCode.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.subject",

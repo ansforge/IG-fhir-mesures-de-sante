@@ -54,8 +54,29 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile:MesObservationGlucose",
+        "path": "Observation.meta.profile",
+        "sliceName": "MesObservationGlucose",
         "min": 1,
+<<<<<<< Updated upstream
         "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-glucose"
+=======
+        "max": "1",
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-glucose",
+        "mustSupport": true
+>>>>>>> Stashed changes
       },
       {
         "id": "Observation.extension",
@@ -294,7 +315,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS",
-          "description": "JDV-J163-GlucoseUnits-ENS"
+          "description": "https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS"
         }
       },
       {

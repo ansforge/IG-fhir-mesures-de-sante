@@ -1,6 +1,19 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-fr-observation-bp",
+<<<<<<< Updated upstream
+=======
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+>>>>>>> Stashed changes
   "url": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-bp",
   "version": "1.3",
   "name": "MesFrObservationBp",
@@ -60,8 +73,29 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile:MesFrObservationBp",
+        "path": "Observation.meta.profile",
+        "sliceName": "MesFrObservationBp",
         "min": 1,
+<<<<<<< Updated upstream
         "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-bp"
+=======
+        "max": "1",
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-bp",
+        "mustSupport": true
+>>>>>>> Stashed changes
       },
       {
         "id": "Observation.extension:MesReasonForMeasurement",
@@ -125,16 +159,6 @@
         ]
       },
       {
-        "id": "Observation.dataAbsentReason.coding.system",
-        "path": "Observation.dataAbsentReason.coding.system",
-        "min": 1
-      },
-      {
-        "id": "Observation.dataAbsentReason.coding.code",
-        "path": "Observation.dataAbsentReason.coding.code",
-        "min": 1
-      },
-      {
         "id": "Observation.interpretation",
         "path": "Observation.interpretation",
         "short": "Non renseigné",
@@ -146,7 +170,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J149-BodySiteBP-ENS/FHIR/JDV-J149-BodySiteBP-ENS",
-          "description": "JDV_J149-BodySiteBP-ENS"
+          "description": "https://mos.esante.gouv.fr/NOS/JDV_J149-BodySiteBP-ENS/FHIR/JDV-J149-BodySiteBP-ENS"
         }
       },
       {
@@ -165,7 +189,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J150-MethodBP-ENS/FHIR/JDV-J150-MethodBP-ENS",
-          "description": "JDV_J150-MethodBP-ENS"
+          "description": "https://mos.esante.gouv.fr/NOS/JDV_J150-MethodBP-ENS/FHIR/JDV-J150-MethodBP-ENS"
         }
       },
       {
@@ -202,7 +226,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS",
-          "description": "JDV_J148-ReferenceRangeAppliesTo-CISIS"
+          "description": "https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS"
         }
       },
       {
@@ -220,19 +244,10 @@
         "path": "Observation.component"
       },
       {
-        "id": "Observation.component.dataAbsentReason.coding.system",
-        "path": "Observation.component.dataAbsentReason.coding.system",
-        "min": 1
-      },
-      {
-        "id": "Observation.component.dataAbsentReason.coding.code",
-        "path": "Observation.component.dataAbsentReason.coding.code",
-        "min": 1
-      },
-      {
         "id": "Observation.component.referenceRange",
         "path": "Observation.component.referenceRange",
         "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+<<<<<<< Updated upstream
       },
       {
         "id": "Observation.component:SystolicBP",
@@ -297,6 +312,8 @@
         "id": "Observation.component:DiastolicBP.valueQuantity.value",
         "path": "Observation.component.valueQuantity.value",
         "short": "Valeur mesurée"
+=======
+>>>>>>> Stashed changes
       }
     ]
   }

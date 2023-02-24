@@ -59,8 +59,29 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile:MesObservationStepsByDay",
+        "path": "Observation.meta.profile",
+        "sliceName": "MesObservationStepsByDay",
         "min": 1,
+<<<<<<< Updated upstream
         "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-steps-by-day"
+=======
+        "max": "1",
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-steps-by-day",
+        "mustSupport": true
+>>>>>>> Stashed changes
       },
       {
         "id": "Observation.extension",
@@ -109,43 +130,16 @@
         ]
       },
       {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "fixedCodeableConcept": {
+          "coding": [
             {
-              "type": "value",
-              "path": "code"
-            },
-            {
-              "type": "value",
-              "path": "system"
+              "code": "41950-7",
+              "system": "http://loinc.org"
             }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.code.coding:StepsByDayCode",
-        "path": "Observation.code.coding",
-        "sliceName": "StepsByDayCode",
-        "min": 1,
-        "max": "1",
-        "fixedCoding": {
-          "code": "41950-7",
-          "system": "http://loinc.org"
+          ]
         }
-      },
-      {
-        "id": "Observation.code.coding:StepsByDayCode.system",
-        "path": "Observation.code.coding.system",
-        "min": 1
-      },
-      {
-        "id": "Observation.code.coding:StepsByDayCode.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -249,7 +243,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J158-MethodStepsByDay-ENS/FHIR/JDV-J158-MethodStepsByDay-ENS",
-          "description": "JDV_J158-MethodStepsByDay-ENS"
+          "description": "https://mos.esante.gouv.fr/NOS/JDV_J158-MethodStepsByDay-ENS/FHIR/JDV-J158-MethodStepsByDay-ENS"
         }
       },
       {

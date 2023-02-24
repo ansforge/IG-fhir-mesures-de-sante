@@ -1,5 +1,3 @@
-Alias: $FrObservationBodyHeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyHeight
-Alias: $JDV-J146-MethodBodyHeight-ENS = https://mos.esante.gouv.fr/NOS/JDV_J146-MethodBodyHeight-ENS/FHIR/JDV-J146-MethodBodyHeight-ENS
 
 Profile: MesFrObservationBodyHeight
 Parent: $FrObservationBodyHeight
@@ -8,7 +6,11 @@ Id: mes-fr-observation-bodyheight
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = Canonical(mes-fr-observation-bodyheight) (exactly)
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains MesFrObservationBodyHeight 1..1 MS
+* meta.profile[MesFrObservationBodyHeight] = Canonical(mes-fr-observation-bodyheight) (exactly)
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -32,8 +34,8 @@ Id: mes-fr-observation-bodyheight
 
 * bodySite ^short = "Non utilisé"
 
-* method from $JDV-J146-MethodBodyHeight-ENS (required)
-* method ^binding.description = "JDV_J146-MethodBodyHeight-ENS"
+* method from $JDV-J146-MethodBodyHeight-MES (required)
+* method ^binding.description = $JDV-J158-MethodStepsByDay-MES
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"

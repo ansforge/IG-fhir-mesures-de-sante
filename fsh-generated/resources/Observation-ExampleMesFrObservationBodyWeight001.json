@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleMesFrObservationBodyWeight001",
+  "meta": {
+    "profile": [
+      "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-reason-for-measurement",
+      "valueString": "Calcul IMC"
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "kg",
+    "value": 95,
+    "unit": "Kg"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ExamplefrPatient001",
+    "display": "Pierre Durand",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2022-11-06",
+  "method": {
+    "coding": [
+      {
+        "code": "K50BI02",
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED"
+      }
+    ]
+  },
+  "device": {
+    "reference": "Device/phd-74E8FFFEFF051C00"
+  }
+}

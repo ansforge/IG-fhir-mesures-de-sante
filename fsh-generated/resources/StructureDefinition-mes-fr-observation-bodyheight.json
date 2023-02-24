@@ -59,8 +59,29 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile:MesFrObservationBodyHeight",
+        "path": "Observation.meta.profile",
+        "sliceName": "MesFrObservationBodyHeight",
         "min": 1,
+<<<<<<< Updated upstream
         "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-bodyheight"
+=======
+        "max": "1",
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-fr-observation-bodyheight",
+        "mustSupport": true
+>>>>>>> Stashed changes
       },
       {
         "id": "Observation.extension:bodyposition",
@@ -116,7 +137,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J146-MethodBodyHeight-ENS/FHIR/JDV-J146-MethodBodyHeight-ENS",
-          "description": "JDV_J146-MethodBodyHeight-ENS"
+          "description": "https://mos.esante.gouv.fr/NOS/JDV_J158-MethodStepsByDay-ENS/FHIR/JDV-J158-MethodStepsByDay-ENS"
         }
       },
       {

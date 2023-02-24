@@ -60,8 +60,29 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile:MesObservationPainSeverity",
+        "path": "Observation.meta.profile",
+        "sliceName": "MesObservationPainSeverity",
         "min": 1,
+<<<<<<< Updated upstream
         "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-pain-severity"
+=======
+        "max": "1",
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-pain-severity",
+        "mustSupport": true
+>>>>>>> Stashed changes
       },
       {
         "id": "Observation.extension",
@@ -171,6 +192,11 @@
         "fixedString": "Level"
       },
       {
+        "id": "Observation.valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
         "id": "Observation.valueQuantity.code",
         "path": "Observation.valueQuantity.code",
         "min": 1,
@@ -198,7 +224,7 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS",
-          "description": "JDV_J159-MethodPainSeverity-ENS"
+          "description": "https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS"
         }
       },
       {

@@ -59,8 +59,29 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile:MesObservationHeadCircumference",
+        "path": "Observation.meta.profile",
+        "sliceName": "MesObservationHeadCircumference",
         "min": 1,
+<<<<<<< Updated upstream
         "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-head-circumference"
+=======
+        "max": "1",
+        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-head-circumference",
+        "mustSupport": true
+>>>>>>> Stashed changes
       },
       {
         "id": "Observation.extension",
@@ -108,41 +129,16 @@
         ]
       },
       {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "fixedCodeableConcept": {
+          "coding": [
             {
-              "type": "value",
-              "path": "code"
-            },
-            {
-              "type": "value",
-              "path": "system"
+              "code": "8287-5",
+              "system": "http://loinc.org"
             }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.code.coding:headCircumCode",
-        "path": "Observation.code.coding",
-        "sliceName": "headCircumCode",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:headCircumCode.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Observation.code.coding:headCircumCode.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "fixedCode": "8287-5"
+          ]
+        }
       },
       {
         "id": "Observation.subject",
@@ -221,7 +217,8 @@
       {
         "id": "Observation.valueQuantity.unit",
         "path": "Observation.valueQuantity.unit",
-        "min": 1
+        "min": 1,
+        "patternString": "cm"
       },
       {
         "id": "Observation.valueQuantity.system",

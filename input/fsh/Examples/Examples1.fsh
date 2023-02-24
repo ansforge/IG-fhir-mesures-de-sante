@@ -6,12 +6,10 @@ Usage: #example
 * identifier.system = "1.2.250.1.213.1.4.2"
 * identifier.value = "123456789012244"
 * active = true
-
 * name[0].use = #official
 * name[=].family = "Durand"
 * name[=].given[0] = "Pierre"
 * name[=].given[+] = "Jean"
-
 * telecom[0].use = #home
 * telecom[0].system = #phone
 * telecom[0].value = "01 23 24 67 89"
@@ -23,7 +21,6 @@ Usage: #example
 * telecom[2].rank = 2
 * telecom[2].system = #phone
 * telecom[2].value = "06 80 55 34 33"
-
 * gender = #male
 * birthDate = "1974-12-25"
 * deceasedBoolean = false
@@ -35,6 +32,26 @@ Usage: #example
 * address.postalCode = "45100"
 * address.period.start = "2018-06-01"
 
+Instance: ExampleFrPractitionner001
+InstanceOf: Practitioner
+Usage: #example
+* identifier.system = "http://www.acme.org/practitioners"
+* identifier.value = "23"
+* active = true
+* name.family = "Careful"
+* name.given = "Adam"
+* name.prefix = "Dr"
+* address.use = #home
+* address.line = "534 Erewhon St"
+* address.city = "PleasantVille"
+* address.state = "Vic"
+* address.postalCode = "3999"
+* qualification.identifier.system = "http://example.org/UniversityIdentifier"
+* qualification.identifier.value = "12345"
+* qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360/2.7#BS "Bachelor of Science"
+* qualification.code.text = "Bachelor of Science"
+* qualification.period.start = "1995"
+* qualification.issuer.display = "Example University"
 
 Instance: ExampleMesFrObservationBodyWeight001
 InstanceOf: MesFrObservationBodyWeight
@@ -62,7 +79,7 @@ Usage: #example
 * category[VSCat].text = "Vital Signs"
 * code = http://loinc.org#8302-2 "Body height"
 * code.text = "Body height"
-* subject.reference = "Patient/example"
+* subject = Reference(ExamplefrPatient001) "Pierre Durand"
 * effectiveDateTime = "1999-07-02"
 * valueQuantity.value = 185 
 * valueQuantity.code = #cm
@@ -86,11 +103,12 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2012-09-17"
-* performer.reference = "Practitioner/example"
+* performer  = Reference(ExampleFrPractitionner001) "Jean-Louis Dutraittant"
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
-* bodySite = http://snomed.info/sct#368209003 "Right arm"
+* bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
 * component[SystolicBP].code.coding[SBPCode] = http://loinc.org#8480-6 "Tension artérielle systolique"
+<<<<<<< Updated upstream
 * component[SystolicBP].code.coding[+] = http://snomed.info/sct#271649006 "Tension artérielle systolique"
 * component[SystolicBP].code.coding[+] = http://acme.org/devices/clinical-codes#bp-s "Tension artérielle systolique"
 * component[SystolicBP].valueQuantity.value = 107 
@@ -98,6 +116,15 @@ Usage: #example
 * component[SystolicBP].interpretation.text = "Normal"
 * component[DiastolicBP].code = http://loinc.org#8462-4 "Tension artérielle diastolique"
 * component[DiastolicBP].valueQuantity.value = 60 
+=======
+// * component[SystolicBP].code.coding[+] = http://snomed.info/sct#271649006 "Tension artérielle systolique"
+// * component[SystolicBP].code.coding[+] = http://acme.org/devices/clinical-codes#bp-s "Tension artérielle systolique"
+* component[SystolicBP].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
+* component[SystolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "normale"
+* component[SystolicBP].interpretation.text = "Normal"
+* component[DiastolicBP].code = http://loinc.org#8462-4 "Tension artérielle diastolique"
+* component[DiastolicBP].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
+>>>>>>> Stashed changes
 * component[DiastolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * component[DiastolicBP].interpretation.text = "En dessous de la normale"
 
@@ -105,6 +132,7 @@ Usage: #example
 Instance: ExampleMesFrObservationBmi001
 InstanceOf: MesFrObservationBmi
 Usage: #example
+* meta.profile[0] = Canonical(MesFrObservationBmi)
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
@@ -123,7 +151,7 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
-* subject.reference = "Patient/example"
+* subject = Reference(ExamplefrPatient001) "Pierre Durand"
 * effectiveDateTime = "1999-07-02"
 * valueQuantity = 44 '/min' "battements/minute"
 
@@ -136,23 +164,21 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
-* code = $JDV-J154-TypeGlucose-ENS|#4548-4
-* code = https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS|#4548-4
+* code = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#4548-4
 * valueQuantity = 1.5 'mg/dL' "milligramme par décilitre"
-* extension[MesReasonForMeasurement].valueString = "Malaise du patient"
-* extension[MesMomentOfMeasurement].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc|#16915-1 "Glucose post prandial"
-* extension[MesNumberOfDays].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP|#GEN-092 "Autre"
-* extension[MesDiabetisType].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih|#E11.x0
+* extension[MesReasonForMeasurement].valueString.value = "Malaise du patient"
+* extension[MesMomentOfMeasurement].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#16915-1 "Glucose post prandial"
+* extension[MesNumberOfDays].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP#GEN-092 "Autre"
+* extension[MesDiabetisType].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih#E11.x0
 
 Instance: ExampleMesObservationHeadCircumference001
 InstanceOf: MesObservationHeadCircumference
 Usage: #example
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
-  * type = "Patient"
+  * type = "Patient" 
 * effectiveDateTime = "2022-11-06"
-* valueQuantity.value = 61
-* valueQuantity.unit = "cm"
+* valueQuantity = 61 'cm' 
 
 Instance: ExampleMesObservationPainSeverity001
 InstanceOf: MesObservationPainSeverity
@@ -162,6 +188,7 @@ Usage: #example
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
 * valueQuantity.value = 5
+* valueQuantity.system = "http://unitsofmeasure.org"
 
 Instance: ExampleMesObservationStepsByDay001
 InstanceOf: MesObservationStepsByDay
@@ -169,8 +196,9 @@ Usage: #example
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
+* code = http://loinc.org#41950-7
 * effectiveDateTime = "2022-11-06"
-* valueQuantity.value = 2500
+* valueQuantity = 2500 '1/(24.h)' 
 
 Instance: ExampleObservationWaistCircumference001
 InstanceOf: MesObservationWaistCircumference
