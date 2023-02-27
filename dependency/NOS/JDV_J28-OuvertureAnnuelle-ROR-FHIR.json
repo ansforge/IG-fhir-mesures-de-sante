@@ -1,0 +1,92 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J28-OuvertureAnnuelle-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2017-10-13T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J28-OuvertureAnnuelle-ROR/FHIR/JDV-J28-OuvertureAnnuelle-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.3.28"
+    }
+  ],
+  "version": "20200424120000",
+  "name": "JDV_J28-OuvertureAnnuelle-ROR",
+  "status": "active",
+  "date": "2020-04-24T12:00:00+01:00",
+  "description": "Ouverture annuelle - ROR",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R238-OuvertureAnnuelle/FHIR/TRE-R238-OuvertureAnnuelle",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Semaine hors week-end jusqu'à 210 jours par an",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.27"
+              }
+            ]
+          },
+          {
+            "code": "02",
+            "display": "Semaine et week-end (de 211 à 364 jours par an)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.27"
+              }
+            ]
+          },
+          {
+            "code": "03",
+            "display": "Année complète (365 jours par an)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.27"
+              }
+            ]
+          },
+          {
+            "code": "04",
+            "display": "Semaine hors week-end à partir de 210 jours",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.27"
+              }
+            ]
+          },
+          {
+            "code": "05",
+            "display": "Week-end et vacances scolaires uniquement",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.27"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

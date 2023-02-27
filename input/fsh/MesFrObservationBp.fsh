@@ -53,23 +53,6 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 // * component.dataAbsentReason.coding.code 1..
 * component.referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 
-<<<<<<< Updated upstream
-* component[SystolicBP] ^sliceName = "SystolicBP"
-* component[SystolicBP].value[x] ^slicing.discriminator.type = #type
-* component[SystolicBP].value[x] ^slicing.discriminator.path = "$this"
-* component[SystolicBP].value[x] ^slicing.rules = #closed
-* component[SystolicBP].valueQuantity ^sliceName = "valueQuantity"
-* component[SystolicBP].valueQuantity.value ^short = "Valeur mesurée"
-* component[SystolicBP].dataAbsentReason.coding.system 1..
-* component[SystolicBP].dataAbsentReason.coding.code 1..
-
-* component[DiastolicBP] ^sliceName = "DiastolicBP"
-* component[DiastolicBP].value[x] ^slicing.discriminator.type = #type
-* component[DiastolicBP].value[x] ^slicing.discriminator.path = "$this"
-* component[DiastolicBP].value[x] ^slicing.rules = #closed
-* component[DiastolicBP].valueQuantity ^sliceName = "valueQuantity"
-* component[DiastolicBP].valueQuantity.value ^short = "Valeur mesurée"
-=======
 // * component[SystolicBP] ^sliceName = "SystolicBP"
 // * component[SystolicBP].value[x] ^slicing.discriminator.type = #type
 // * component[SystolicBP].value[x] ^slicing.discriminator.path = "$this"
@@ -85,4 +68,3 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 // * component[DiastolicBP].value[x] ^slicing.rules = #closed
 // * component[DiastolicBP].valueQuantity ^sliceName = "valueQuantity"
 // * component[DiastolicBP].valueQuantity.value ^short = "Valeur mesurée"
->>>>>>> Stashed changes

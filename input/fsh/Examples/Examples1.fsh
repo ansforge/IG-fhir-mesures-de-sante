@@ -61,10 +61,9 @@ Usage: #example
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
 * extension[mes-reason-for-measurement].valueString = "Calcul IMC"
-* method.coding.code = #NIMPORTEAOUAC
-* method.coding.system = $JDV-J145-MethodBodyWeight-ENS
-* device = Reference(BalanceElectronique)
-* device.type = "PhdDevice"
+* method.coding.code = #K50BI02
+* method.coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED"
+* device = Reference(phd-74E8FFFEFF051C00)
 * valueQuantity.value = 95
 * valueQuantity.code = #kg
 * valueQuantity.unit = "Kg"
@@ -108,15 +107,6 @@ Usage: #example
 * interpretation.text = "Below low normal"
 * bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
 * component[SystolicBP].code.coding[SBPCode] = http://loinc.org#8480-6 "Tension artérielle systolique"
-<<<<<<< Updated upstream
-* component[SystolicBP].code.coding[+] = http://snomed.info/sct#271649006 "Tension artérielle systolique"
-* component[SystolicBP].code.coding[+] = http://acme.org/devices/clinical-codes#bp-s "Tension artérielle systolique"
-* component[SystolicBP].valueQuantity.value = 107 
-* component[SystolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "normale"
-* component[SystolicBP].interpretation.text = "Normal"
-* component[DiastolicBP].code = http://loinc.org#8462-4 "Tension artérielle diastolique"
-* component[DiastolicBP].valueQuantity.value = 60 
-=======
 // * component[SystolicBP].code.coding[+] = http://snomed.info/sct#271649006 "Tension artérielle systolique"
 // * component[SystolicBP].code.coding[+] = http://acme.org/devices/clinical-codes#bp-s "Tension artérielle systolique"
 * component[SystolicBP].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
@@ -124,7 +114,6 @@ Usage: #example
 * component[SystolicBP].interpretation.text = "Normal"
 * component[DiastolicBP].code = http://loinc.org#8462-4 "Tension artérielle diastolique"
 * component[DiastolicBP].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
->>>>>>> Stashed changes
 * component[DiastolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * component[DiastolicBP].interpretation.text = "En dessous de la normale"
 

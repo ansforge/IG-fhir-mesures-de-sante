@@ -1,0 +1,632 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J33-CompetenceSpecifique-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2017-10-13T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J33-CompetenceSpecifique-ROR/FHIR/JDV-J33-CompetenceSpecifique-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.3.38"
+    }
+  ],
+  "version": "20221028120000",
+  "name": "JDV_J33-CompetenceSpecifique-ROR",
+  "status": "active",
+  "date": "2022-10-28T12:00:00+01:00",
+  "description": "Compétence spécifique - ROR",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R243-CompetenceSpecifique/FHIR/TRE-R243-CompetenceSpecifique",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Maîtrise de la Langue des Signes Française (LSF)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "02",
+            "display": "Maîtrise de la Langue Parlé Complété (LPC)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "03",
+            "display": "Maîtrise de la lecture et de l'écriture du Braille",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "04",
+            "display": "Art-thérapeute",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "05",
+            "display": "Neuropsychologue",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "06",
+            "display": "Maîtrise de langue étrangère",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "07",
+            "display": "Maîtrise de langue régionale",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "08",
+            "display": "Médiateur de santé pair",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "10",
+            "display": "Socio-esthéticienne",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "11",
+            "display": "Enseignant du 1er degré",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "12",
+            "display": "Enseignant du 2nd degré",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "13",
+            "display": "Enseignant du supérieur",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "14",
+            "display": "Puéricultrice",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "19",
+            "display": "Médecin coordonnateur",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "20",
+            "display": "Infirmier coordonnateur",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "21",
+            "display": "Phoniatre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "22",
+            "display": "Audio phonologue",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "23",
+            "display": "Ingénieur en analyse du mouvement",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "24",
+            "display": "Psychologue clinicien",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "25",
+            "display": "Animateur socio-culturel",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "26",
+            "display": "Moniteur d'atelier",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "27",
+            "display": "Maîtrise de la Méthode verbo-tonale : aide à l'apprentissage de la parole",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "29",
+            "display": "Maîtrise du PECS",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "30",
+            "display": "Maîtrise de la Méthode ABA",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "31",
+            "display": "Maîtrise du MAKATON",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "32",
+            "display": "Maîtrise des Gestes Borel-Maisonny",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "33",
+            "display": "Maîtrise de la COGHAMO",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "34",
+            "display": "Maîtrise des Codes de communication pictographiques (classeurs, planches)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "35",
+            "display": "Maîtrise des outils informatisés avec synthèse vocale à entrée orthographique ou pictographique (téléthèses, logiciels de communication)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "36",
+            "display": "Maîtrise des logiciels d'aide à la transcription (retour vocal, prédicteur de mots)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "37",
+            "display": "Ostéopathe",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "38",
+            "display": "Enseignant en Activité Physique Adaptée (EAPA)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "39",
+            "display": "Accompagnant des Élèves en Situation de Handicap (AESH)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "40",
+            "display": "Maîtrise de programmes d'intervention globaux à référence développementale (TEACCH, DENVER,...)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "41",
+            "display": "Psychiatre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "42",
+            "display": "Gériatre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "43",
+            "display": "Pédopsychiatre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "44",
+            "display": "Veilleur de nuit",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "45",
+            "display": "Assistant(e) de soins en gérontologie",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "46",
+            "display": "Conseillère en économie sociale et familiale (CESF)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "47",
+            "display": "Aide médico psychologique (AMP)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "48",
+            "display": "Auxiliaire de vie sociale (AVS)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "49",
+            "display": "Accompagnant Educatif et Social (AES)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "50",
+            "display": "Avéjiste",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "51",
+            "display": "Instructeur en locomotion",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "52",
+            "display": "Educateur sportif",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "53",
+            "display": "Conseiller en insertion professionnelle",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "54",
+            "display": "Coordonnateur et gestionnaire de parcours handicap",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "55",
+            "display": "Neuropédiatre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          },
+          {
+            "code": "56",
+            "display": "Psychopédagogue",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.37"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

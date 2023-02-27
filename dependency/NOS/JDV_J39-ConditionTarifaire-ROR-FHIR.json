@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J39-ConditionTarifaire-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2018-01-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J39-ConditionTarifaire-ROR/FHIR/JDV-J39-ConditionTarifaire-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.3.47"
+    }
+  ],
+  "version": "20200424120000",
+  "name": "JDV_J39-ConditionTarifaire-ROR",
+  "status": "active",
+  "date": "2020-04-24T12:00:00+01:00",
+  "description": "Conditions d'accès à un tarif modulé",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R250-ConditionTarifaire/FHIR/TRE-R250-ConditionTarifaire",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Tarif public",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.46"
+              }
+            ]
+          },
+          {
+            "code": "02",
+            "display": "Tarif agréé Aide Sociale",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.46"
+              }
+            ]
+          },
+          {
+            "code": "03",
+            "display": "Tarif agréé ASH",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.46"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

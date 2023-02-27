@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J207-Civilite-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-08-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J207-Civilite-ROR/FHIR/JDV-J207-Civilite-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.39"
+    }
+  ],
+  "version": "20220826120000",
+  "name": "JDV_J207-Civilite-ROR",
+  "status": "active",
+  "date": "2022-08-26T12:00:00+01:00",
+  "description": "Civilité",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
+        "concept": [
+          {
+            "code": "M",
+            "display": "Monsieur",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.69"
+              }
+            ]
+          },
+          {
+            "code": "MLLE",
+            "display": "Mademoiselle",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.69"
+              }
+            ]
+          },
+          {
+            "code": "MME",
+            "display": "Madame",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.69"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

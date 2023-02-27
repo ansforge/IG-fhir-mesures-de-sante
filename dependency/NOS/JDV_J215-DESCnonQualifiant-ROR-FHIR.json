@@ -1,0 +1,524 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J215-DESCnonQualifiant-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-08-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J215-DESCnonQualifiant-ROR/FHIR/JDV-J215-DESCnonQualifiant-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.47"
+    }
+  ],
+  "version": "20220826120000",
+  "name": "JDV_J215-DESCnonQualifiant-ROR",
+  "status": "active",
+  "date": "2022-08-26T12:00:00+01:00",
+  "description": "DESC non qualifiant",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R42-DESCnonQualifiant/FHIR/TRE-R42-DESCnonQualifiant",
+        "concept": [
+          {
+            "code": "DSM200",
+            "display": "Addictologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM201",
+            "display": "Allergologie et Immunologie clinique (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM202",
+            "display": "Andrologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM203",
+            "display": "Biochimie hormonale et métabolique (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM204",
+            "display": "Biologie des agents infectieux (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM205",
+            "display": "Biologie moléculaire (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM206",
+            "display": "Cancérologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM207",
+            "display": "Chirurgie de la face et du cou (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM208",
+            "display": "Chirurgie plastique et reconstructrice (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM209",
+            "display": "Chirurgie vasculaire (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM210",
+            "display": "Cytogénétique humaine (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM211",
+            "display": "Dermatopathologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM212",
+            "display": "Foetopathologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM213",
+            "display": "Gériatrie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM214",
+            "display": "Hématologie biologique (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM215",
+            "display": "Hématologie maladies du sang (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM216",
+            "display": "Hémobiologie-transfusion (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM217",
+            "display": "Immunologie et Immunopathologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM218",
+            "display": "Médecine de la reproduction (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM219",
+            "display": "Médecine du sport (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM220",
+            "display": "Médecine d'urgence (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM221",
+            "display": "Médecine légale et Expertises médicales (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM222",
+            "display": "Médecine nucléaire (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM223",
+            "display": "Médecine vasculaire (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM224",
+            "display": "Néonatalogie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM225",
+            "display": "Neuropathologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM226",
+            "display": "Nutrition (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM227",
+            "display": "Orthopédie dento-maxillo-faciale (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM228",
+            "display": "Pathologie infectieuse et tropicale, clinique et biologique (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM229",
+            "display": "Pharmacocinétique et Métabolisme des médicaments (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM230",
+            "display": "Pharmacologie clinique et Evaluation des thérapeutiques (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM231",
+            "display": "Psychiatrie de l'enfant et de l'adolescent (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM232",
+            "display": "Radiopharmacie et Radiobiologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM233",
+            "display": "Réanimation médicale (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM234",
+            "display": "Toxicologie biologique (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM235",
+            "display": "Médecine de la douleur et Médecine palliative (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM236",
+            "display": "Cancérologie, option Traitements médicaux des cancers (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM237",
+            "display": "Cancérologie, option Chirurgie cancérologique (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM238",
+            "display": "Cancérologie, option Réseaux de cancérologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM239",
+            "display": "Cancérologie, option Biologie cancérologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          },
+          {
+            "code": "DSM240",
+            "display": "Cancérologie, option Imagerie cancérologie (DNQ)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.2.32"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J193-TypeSourceCapacite-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-05-27T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J193-TypeSourceCapacite-ROR/FHIR/JDV-J193-TypeSourceCapacite-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.26"
+    }
+  ],
+  "version": "20220527120000",
+  "name": "JDV_J193-TypeSourceCapacite-ROR",
+  "status": "active",
+  "date": "2022-05-27T12:00:00+01:00",
+  "description": "Permet d'indiquer dans le ROR quel type de source est à l'origine de l'information de capacité",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R335-TypeSourceCapacite/FHIR/TRE-R335-TypeSourceCapacite",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Saisie manuelle",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.218"
+              }
+            ]
+          },
+          {
+            "code": "02",
+            "display": "Bed management",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.218"
+              }
+            ]
+          },
+          {
+            "code": "03",
+            "display": "Gestion administrative du malade (GAM)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.218"
+              }
+            ]
+          },
+          {
+            "code": "04",
+            "display": "Dossier patient informatisé (DPI)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.218"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

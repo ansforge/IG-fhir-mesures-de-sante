@@ -18,11 +18,7 @@ Ce paragraphe présente les profils FHIR des mesures de santé.
 |     Nombre de pas   pendant la journée                  |     vitalsigns                      |     MesObservationStepsByDay                         |   |
 |     Niveau de la   douleur                              |     vitalsigns                      |     MesObservationPainSeverity                       |   |
 |     Périmètre   cranien                                 |     vitalsigns                      |     MesObservationHeadCircumference                  |   |
-<<<<<<< Updated upstream
-
-=======
 {: .grid }
->>>>>>> Stashed changes
 &nbsp;
 
 Les profils FHIR pour les mesures de santé décrites dans ce document s'appuient sur la ressource standard Observation définie par HL7, en ajoutant quelques contraintes : Ces contraintes sont indiquées dans la description détaillé de chaque profil.

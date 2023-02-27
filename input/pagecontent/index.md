@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-#{% include  %}
-Accueil
-   
-![image info](schemaProfilsMES.png)
-=======
 
 
 
@@ -42,4 +36,3 @@ Cette spécification technique s’appuie sur le standard HL7 FHIR et plus parti
 &nbsp;
 &nbsp;
 &nbsp;
->>>>>>> Stashed changes

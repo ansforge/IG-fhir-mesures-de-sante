@@ -1,0 +1,140 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J226-ModaliteAccueil-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-08-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.58"
+    }
+  ],
+  "version": "20220826120000",
+  "name": "JDV_J226-ModaliteAccueil-ROR",
+  "status": "active",
+  "date": "2022-08-26T12:00:00+01:00",
+  "description": "Modalité d'accueil",
+  "compose": {
+    "include": [
+      {
+        "system": "",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Accueil séquentiel accepté",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.221"
+              }
+            ]
+          },
+          {
+            "code": "02",
+            "display": "Prise en charge directe SMUR",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.221"
+              }
+            ]
+          },
+          {
+            "code": "03",
+            "display": "Consultation en présentiel",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.221"
+              }
+            ]
+          },
+          {
+            "code": "04",
+            "display": "Téléconsultation",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.221"
+              }
+            ]
+          },
+          {
+            "code": "05",
+            "display": "Visite à domicile",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.221"
+              }
+            ]
+          },
+          {
+            "code": "06",
+            "display": "Prise en charge sans rendez-vous",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.221"
+              }
+            ]
+          },
+          {
+            "code": "07",
+            "display": "Accueil anonyme",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.221"
+              }
+            ]
+          },
+          {
+            "code": "08",
+            "display": "Accueil réservé aux femmes",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.221"
+              }
+            ]
+          },
+          {
+            "code": "09",
+            "display": "Participation aux gardes/astreintes",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.221"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J202-ESPIC-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-08-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J20-ESPIC-ROR/FHIR/JDV-J202-ESPIC-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.34"
+    }
+  ],
+  "version": "20220826120000",
+  "name": "JDV_J202-ESPIC-ROR",
+  "status": "active",
+  "date": "2022-08-26T12:00:00+01:00",
+  "description": "Etablissement de santé privé d'intérêt collectif",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC",
+        "concept": [
+          {
+            "code": "0",
+            "display": "Non concerné",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.45"
+              }
+            ]
+          },
+          {
+            "code": "1",
+            "display": "Etablissement public de santé",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.45"
+              }
+            ]
+          },
+          {
+            "code": "2",
+            "display": "PSPH par intégration",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.45"
+              }
+            ]
+          },
+          {
+            "code": "3",
+            "display": "PSPH par concession",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.45"
+              }
+            ]
+          },
+          {
+            "code": "4",
+            "display": "PSPH par association",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.45"
+              }
+            ]
+          },
+          {
+            "code": "5",
+            "display": "Assoc 1901 act. Psy",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.45"
+              }
+            ]
+          },
+          {
+            "code": "6",
+            "display": "Etablissement de santé privé d'intérêt collectif",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.45"
+              }
+            ]
+          },
+          {
+            "code": "7",
+            "display": "Etablissement de santé privé non lucratif, non déclaré d'intérêt collectif",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.45"
+              }
+            ]
+          },
+          {
+            "code": "9",
+            "display": "Indéterminé",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.1.6.1.45"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J221-NatureContact-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-08-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J221-NatureContact-ROR/FHIR/JDV-J221-NatureContact-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.53"
+    }
+  ],
+  "version": "20220826120000",
+  "name": "JDV_J221-NatureContact-ROR",
+  "status": "active",
+  "date": "2022-08-26T12:00:00+01:00",
+  "description": "Un service ou un guichet assurant le contact au sein de l'organisation",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R287-NatureContact/FHIR/TRE-R287-NatureContact",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Accueil",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "02",
+            "display": "Prise de rendez-vous",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "03",
+            "display": "Admission",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "04",
+            "display": "Médical",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "05",
+            "display": "Soignant",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "06",
+            "display": "Standard",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "07",
+            "display": "Secrétariat",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "08",
+            "display": "Alerte-Tension-SSE",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "09",
+            "display": "Télémédecine",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "10",
+            "display": "Direction",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "11",
+            "display": "Alerte heures ouvrées",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "12",
+            "display": "Alerte heures non ouvrées",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "13",
+            "display": "Alerte H24",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          },
+          {
+            "code": "14",
+            "display": "Garde ou astreinte",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.67"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

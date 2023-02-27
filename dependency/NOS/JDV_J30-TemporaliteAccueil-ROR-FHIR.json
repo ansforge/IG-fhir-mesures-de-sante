@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J30-TemporaliteAccueil-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2017-10-13T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.3.32"
+    }
+  ],
+  "version": "20200424120000",
+  "name": "JDV_J30-TemporaliteAccueil-ROR",
+  "status": "active",
+  "date": "2020-04-24T12:00:00+01:00",
+  "description": "Temporalité accueil - ROR",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Temporaire",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.31"
+              }
+            ]
+          },
+          {
+            "code": "02",
+            "display": "Permanent",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

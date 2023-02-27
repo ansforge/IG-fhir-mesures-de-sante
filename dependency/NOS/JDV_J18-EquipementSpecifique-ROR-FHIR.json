@@ -1,0 +1,1676 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J18-EquipementSpecifique-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2016-09-01T00:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J18-EquipementSpecifique-ROR/FHIR/JDV-J18-EquipementSpecifique-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.6"
+    }
+  ],
+  "version": "20221028120000",
+  "name": "JDV_J18-EquipementSpecifique-ROR",
+  "status": "active",
+  "date": "2022-10-28T12:00:00+01:00",
+  "description": "Equipement spécifique - ROR",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R212-Equipement/FHIR/TRE-R212-Equipement",
+        "concept": [
+          {
+            "code": "003",
+            "display": "Angioscope",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "005",
+            "display": "Autotransfuseur",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "009",
+            "display": "Chambre à pression négative",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "010",
+            "display": "Chambre à pression positive (chambre stérile)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "017",
+            "display": "Coronaroscanner",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "021",
+            "display": "Echographe transportable",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "030",
+            "display": "Echographe 3D",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "040",
+            "display": "Ergocycle",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "041",
+            "display": "Ergorameur",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "047",
+            "display": "Holter tensionnel",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "051",
+            "display": "Impédance masse graisseuse",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "052",
+            "display": "IRM obésité diamètre de 70 cm - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "054",
+            "display": "IRM corps entier",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "056",
+            "display": "Laboratoire du sommeil (polysomnographe)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "064",
+            "display": "Planche à massage cardiaque automatique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "065",
+            "display": "Polysomnographe portatif",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "068",
+            "display": "Réaction en chaîne par polymérase (PCR)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "069",
+            "display": "Robot opératoire pour chirurgie robot assistée",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "071",
+            "display": "Spectromètre de masse",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "072",
+            "display": "Table de bloc opératoire obésité (poids supérieur à 250 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "083",
+            "display": "Table de radiologie obésité (poids entre 150 et 250 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "084",
+            "display": "Table de radiologie obésité (poids supérieur à 250 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "085",
+            "display": "Scanner (TDM) obésité diamètre de 80 cm - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "086",
+            "display": "Scanner (TDM) obésité champ ouvert - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "087",
+            "display": "IRM à champ ouvert",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "088",
+            "display": "Table de bloc opératoire obésité (poids entre 150 et 250 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "089",
+            "display": "Lit d'hospitalisation obésité (poids entre 250 et 350 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "090",
+            "display": "Lit d'hospitalisation obésité (poids entre 350 et 450 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "091",
+            "display": "Brancard obésité (poids entre 180 et 250 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "092",
+            "display": "Brancard obésité (poids entre 250 et 350 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "093",
+            "display": "ECMO transportable",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "094",
+            "display": "Mammographe",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "095",
+            "display": "Laboratoire microbiologie P3",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "096",
+            "display": "Laboratoire microbiologie P4",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "097",
+            "display": "Chambre d'isolement et de contention",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "098",
+            "display": "Bassin thérapeutique pour balnéothérapie (<20m2)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "099",
+            "display": "Piscine pour balnéothérapie (>20m2)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "100",
+            "display": "Salle aménagée pour la thérapie systémique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "101",
+            "display": "Salle de stimulation multi-sensorielle",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "102",
+            "display": "Appareil d'isocinétisme",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "103",
+            "display": "Assistant robotisé à la marche",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "104",
+            "display": "Assistant robotisé des membres supérieurs et de la préhension",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "106",
+            "display": "Laboratoire d'analyse tridimensionnelle du mouvement, de la marche",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "107",
+            "display": "Salle de réanimation avec scopes, défibrillateur, matériel d'intubation et de ventilation assistée",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "108",
+            "display": "Hotte à flux laminaire",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "109",
+            "display": "Equipement de rééducation pour obésité massive",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "110",
+            "display": "Studio pré-greffe et post-greffe",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "111",
+            "display": "Douche filiforme pour brûlés",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "112",
+            "display": "Equipement pour monitorage par télémétrie",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "113",
+            "display": "Prises d'oxygène en salle de rééducation",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "114",
+            "display": "Locaux adaptés à la désorientation temporo-spatiale",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "115",
+            "display": "Prises d'oxygène dans les chambres",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "116",
+            "display": "Appartement pour mise en situation d'autonomie",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "118",
+            "display": "Monitoring cardiaque portatif",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "119",
+            "display": "Plateau technique neuropsycho cognitif",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "120",
+            "display": "Plateau de simulation de conduite automobile",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "121",
+            "display": "Véhicules adaptés à la conduite en situation de handicap",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "122",
+            "display": "Mur d'escalade",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "123",
+            "display": "Chambre domotisée",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "124",
+            "display": "Atelier de confection de prothèses",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "125",
+            "display": "Gymnase",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "126",
+            "display": "Cuisine thérapeutique et éducative",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "127",
+            "display": "Système de traction halo-crânienne",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "128",
+            "display": "Plateforme multitest équilibre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "129",
+            "display": "Plateau d'analyse informatisée du rachis",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "130",
+            "display": "Chambre et locaux sécurisés permettant la prise en charge des personnes à risque suicidaire",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "131",
+            "display": "Module fixe de décontamination",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "132",
+            "display": "Module transportable de décontamination",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "134",
+            "display": "Appareil de biologie délocalisé",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "135",
+            "display": "Incubateur de transport",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "136",
+            "display": "Respirateur néonatal et pédiatrique de transport",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "137",
+            "display": "Chambre carcérale",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "138",
+            "display": "PSM1 (Poste Sanitaire Mobile niveau 1)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "139",
+            "display": "PSM2 (Poste Sanitaire Mobile niveau 2)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "140",
+            "display": "PSM3 (Poste Sanitaire Mobile niveau 3)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "141",
+            "display": "Poste médical avancé (PMA)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "142",
+            "display": "Appareil de mesure de la glycémie capillaire",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "144",
+            "display": "Système EOS",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "145",
+            "display": "Salle physiologique (salle nature accouchement)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "146",
+            "display": "Cabine d'audiologie",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "147",
+            "display": "Espace de calme-retrait, d'apaisement",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "148",
+            "display": "Jardin pédagogique et-ou thérapeutique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "149",
+            "display": "Ferme pédagogique et-ou thérapeutique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "150",
+            "display": "Plateau ou salle de rééducation",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "152",
+            "display": "Equipement de géolocalisation des personnes vulnérables",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "153",
+            "display": "Equipement de télémédecine (chariot, cabine)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "154",
+            "display": "Chambre à double flux",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "155",
+            "display": "Rails de transfert",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "156",
+            "display": "Moniteur multiparamétrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "157",
+            "display": "Systèmes corporels d'alerte sans fil",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "158",
+            "display": "Fauteuil rotatoire",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "159",
+            "display": "Plateforme verticale subjective",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "160",
+            "display": "Appartement domotisé pour mise en situation d'autonomie",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "161",
+            "display": "Caisson hyperbare occupation simple",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "162",
+            "display": "Caisson hyperbare occupation multiple patient intubé",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "163",
+            "display": "Caisson hyperbare occupation multiple patient non intubé",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "164",
+            "display": "Cabine de cryothérapie",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "165",
+            "display": "PCA ou autre injecteur automatique d'antalgiques",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "166",
+            "display": "PCR multiplex (Film array)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "167",
+            "display": "Séquenceurs haut débit (NGS)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "168",
+            "display": "Cytomètre de flux",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "169",
+            "display": "Atelier de confection d'orthèse",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "170",
+            "display": "Atelier de confection aide technique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "173",
+            "display": "SNP Array",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "174",
+            "display": "CGH Array",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "175",
+            "display": "Spectromètre de masse haute résolution",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "176",
+            "display": "Chromatographe haute performance en phase liquide",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "177",
+            "display": "Chromatographe en phase gazeuse",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "178",
+            "display": "Agrégomètre optique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "179",
+            "display": "Véhicules adaptés au transport de personnes à mobilité réduite",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "180",
+            "display": "Pupillomètre",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "181",
+            "display": "Accélérateur réchauffeur de sang",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "183",
+            "display": "Equipement d'oxygénothérapie de déambulation",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "184",
+            "display": "Dispositif de réadaptation à la marche par allègement du poids du corps (anti-gravité)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "185",
+            "display": "PSM pédiatriques (Poste Sanitaire Mobile)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "186",
+            "display": "Lit fluidisé",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "187",
+            "display": "Table réfrigérée",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "188",
+            "display": "Case réfrigérée",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "189",
+            "display": "Table de coronarographie obésité (poids entre 150 et 250 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "190",
+            "display": "Table de coronarographie obésité (poids entre 250 et 350 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "191",
+            "display": "Table de coronarographie obésité (poids entre 350 et 450 kg) - bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "192",
+            "display": "Arthromoteurs (genoux, épaules, coudes)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "193",
+            "display": "Appareils de renforcement musculaire",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "194",
+            "display": "Appareil d'ondes de choc pour traitement non invasif",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "195",
+            "display": "Appareil de massage par vacuo-aspiration",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "196",
+            "display": "Absorptiomètre obésité 70-80 cm (densitomètre bariatrique)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "197",
+            "display": "Fauteuil obésité (poids entre 250 et 350 kg) bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "198",
+            "display": "Holter tensionnel bariatrique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "199",
+            "display": "Appareil d'imagerie volumétrique par faisceau conique (CBCT)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "200",
+            "display": "Fauteuil dentaire adapté au handicap moteur",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "201",
+            "display": "Laser rétinien",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "202",
+            "display": "Laser Yag ophtalmologique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "203",
+            "display": "Atelier intégré d'appareillage",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "204",
+            "display": "Imagerie par fluorescence",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "205",
+            "display": "Ultrason de haute intensité (HIFU)",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "206",
+            "display": "Dispositif mobile de traitement d'air",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          },
+          {
+            "code": "207",
+            "display": "Défibrillateur semi-automatique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.10"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "resourceType": "ValueSet",
+  "id": "JDV-J225-CanalCommunication-ROR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/ressource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2022-08-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://mos.esante.gouv.fr/NOS/JDV_J225-CanalCommunication-ROR/FHIR/JDV-J225-CanalCommunication-ROR",
+  "identifier": [
+    {
+      "value": "urn:oid:1.2.250.1.213.3.4.57"
+    }
+  ],
+  "version": "20220826120000",
+  "name": "JDV_J225-CanalCommunication-ROR",
+  "status": "active",
+  "date": "2022-08-26T12:00:00+01:00",
+  "description": "Canal de communication",
+  "compose": {
+    "include": [
+      {
+        "system": "https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/FHIR/TRE-R200-CanalCommunication",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Téléphone mobile",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.1"
+              }
+            ]
+          },
+          {
+            "code": "2",
+            "display": "Téléphone fixe",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.1"
+              }
+            ]
+          },
+          {
+            "code": "3",
+            "display": "Courrier électronique",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.1"
+              }
+            ]
+          },
+          {
+            "code": "4",
+            "display": "Adresse web",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.1"
+              }
+            ]
+          },
+          {
+            "code": "5",
+            "display": "Transfert de fichiers",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.1"
+              }
+            ]
+          },
+          {
+            "code": "6",
+            "display": "Télécopie",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.1"
+              }
+            ]
+          },
+          {
+            "code": "7",
+            "display": "Réseau radio numérique ANTARES",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.1"
+              }
+            ]
+          },
+          {
+            "code": "8",
+            "display": "Téléphone d'alerte",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.1"
+              }
+            ]
+          },
+          {
+            "code": "9",
+            "display": "Mail d'alerte",
+            "designation": [
+              {
+                "use": {
+                  "code": "OID"
+                },
+                "value": "urn:oid:1.2.250.1.213.3.3.1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
