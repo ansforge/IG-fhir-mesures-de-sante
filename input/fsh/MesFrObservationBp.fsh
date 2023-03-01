@@ -11,7 +11,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBp 1..1 MS
-* meta.profile[MesFrObservationBp] = Canonical(mes-fr-observation-bp) (exactly)
+* meta.profile[MesFrObservationBp] = Canonical(mes-fr-observation-bp) 
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -22,7 +22,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
     mes-moment-of-measurement named MesMomentOfMeasurement 0..1
 
 * category[VSCat] ^sliceName = "VSCat"
-* category[VSCat].coding.display = "Signes vitaux" (exactly)
+* category[VSCat].coding.display = "Signes vitaux" 
 * subject only Reference($fr-patient)
 * effective[x] only dateTime
 

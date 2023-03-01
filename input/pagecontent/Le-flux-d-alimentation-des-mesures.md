@@ -10,9 +10,9 @@ Ce profil se base sur l’interaction “transaction"  de l’API REST de FHIR. 
 
 Le corps de cette requête contient un “Bundle” qui empaquette deux ressources:  
 
-•	Une ressource “Observation” suivant un profil ENS défini dans le volet mesures de santé (https://esante.gouv.fr/volet-mesures-de-sante) du CI-SIS (partie 5) et dont les ressources de conformance sont publiées sur Simplifier (https://simplifier.net/ci-sis/~resources?text=ens ).  
+•	Une ressource “Observation” suivant un profil MES défini dans le volet mesures de santé (https://esante.gouv.fr/volet-mesures-de-sante) du CI-SIS (partie 5) et dont les ressources de conformance sont publiées sur Simplifier ( <https://simplifier.net/ci-sis/~resources?text=Mes> ).  
   
-•	Une ressource “Device” suivant le profil “PhdDevice” (https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html), représentant le dispositif ayant effectué la mesure. 
+•	Une ressource “Device” suivant le profil “PhdDevice” (<https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html>), représentant le dispositif ayant effectué la mesure. 
     Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”  
   
 	
@@ -34,7 +34,7 @@ Ci-dessous, la structure d’un “bundle” au format JSON contenant des ressou
                   "meta": {  
                        "source": "<OID de la solution éditeur>",  
                        "profile": [  
-                      "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBp"  
+                      "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/MesFrObservationBp"  
                       ]  
                   },  
                 {...}  
@@ -77,7 +77,7 @@ A noter que la validation FHIR requiert l’incorporation d’un champ “fullUr
 ###  L’attribut « ifNoneExist »
   
 L’attribut ifNoneExist contenant l’oid du device (« sous oid » de la solution éditeur) et son identifier est obligatoire pour la ressource Device. Cet attribut permet d’exécuter la transaction « conditional create »  pour les Devices :
--	Si le device existe déjà dans l’entrepôt de l’ENS identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné). 
+-	Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné). 
 S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.
   
 A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation. 
@@ -86,7 +86,7 @@ A noter que la validation FHIR requiert l’incorporation d’un champ “fullUr
 ###  L’attribut « ifNoneExist »
 
 L’attribut ifNoneExist contenant l’oid du device (« sous oid » de la solution éditeur) et son identifier est obligatoire pour la ressource Device. Cet attribut permet d’exécuter la transaction « conditional create »  pour les Devices :
--	Si le device existe déjà dans l’entrepôt de l’ENS identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné). 
+-	Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné). 
 -   S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.
   
 
@@ -103,7 +103,7 @@ Le champ source contient le code du système (qui correspond à l’issuer lors 
 
 Ce champ est facultatif :
 -	S’il est envoyé, il est validé, 
--	S’il n’est pas fourni, il est positionné à partir de l’oid stocké côté référentiel ENS
+-	S’il n’est pas fourni, il est positionné à partir de l’oid stocké côté référentiel MES
   
 ###  L’attribut « meta.profile »
 
@@ -114,9 +114,9 @@ Cette information est nécessaire, elle permet de valider la conformance des res
 ###  Exemple d’appel  
 
 Ci-dessous, un exemple de “Bundle” complet  qui doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :  
--	Une ressource Observation ENS_FrObservationBodyWeight
+-	Une ressource Observation MesFrObservationBodyWeight
 -	Une ressource Device responsable de la mesure avec : 
-    *	comme identifiant unique au sein de l'ENS :  urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-AB-AA-DE-AD-77-C5
+    *	comme identifiant unique au sein de MES :  urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-AB-AA-DE-AD-77-C5
     *   la spécialisation Generic 20601 Device (code 528457)
 
 ~~~~~~~~
@@ -193,7 +193,7 @@ Ci-dessous, un exemple de “Bundle” complet  qui doit être envoyé dans le c
                 "resourceType": "Observation",
                 "meta": {
                     "profile": [
-                        "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_FrObservationBodyWeight"
+                        "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/MesFrObservationBodyWeight"
                     ]
                 },
                 "status": "final",
@@ -235,7 +235,7 @@ Ci-dessous, un exemple de “Bundle” complet  qui doit être envoyé dans le c
                 },
                 "extension": [
                     {
-                        "url": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement",
+                        "url": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/MesReasonForMeasurement",
                         "valueString": "Mon nouveau poids !"
                     }
                 ]
@@ -252,7 +252,7 @@ Ci-dessous, un exemple de “Bundle” complet  qui doit être envoyé dans le c
 {: .language-json}
   
   
-L’oid de ***Device.identifier.system*** est celui de la solution éditeur gérant le device. On le retrouve (ou un sous oid) dans l’attribut ifNoneExist afin d’identifier le device de manière unique au sein de l’entrepôt FHIR de l’ENS.
+L’oid de ***Device.identifier.system*** est celui de la solution éditeur gérant le device. On le retrouve (ou un sous oid) dans l’attribut ifNoneExist afin d’identifier le device de manière unique au sein de l’entrepôt FHIR de MES.
  
 ###  Réponse à la requête d’alimentation
 
@@ -272,7 +272,7 @@ Voici un exemple de retour à la suite de la création d’une Observation et d�
         {
             "response": {
                 "status": "201 Created",
-                "location": "Observation/urn:oid:<OID-ENS>|29680733-6158-4e22-ab7e-eb6825dcdb13"
+                "location": "Observation/urn:oid:<OID-MES>|29680733-6158-4e22-ab7e-eb6825dcdb13"
             }
         },
         {
@@ -316,14 +316,22 @@ Pour chacune des ressources à valider, il sera toujours retourné un code HTTP 
 | 422                                                 | Bundle not valid.                      | INVALID      | Bundle must contains one conditional creation of a device (POST + ifNoneExist)         |                                                                             |
 | 422                                                 | Bundle not valid.                      | INVALID      | Device request must have a valid IfNoneEx-ist attribute : identifi-er=urn:oid:<OID>    | <DEVICE ID>                                                                 | L'identifier du device présent dans l’attribut « ifNoneExist » doit respecter la regex suivante : identifier=urn:oid:([0-9]+[\.[0-9]+]+)\|([a-zA-Z0-9]+[-[a-zA-Z0-9]+]+) |
 | 422                                                 | Bundle not valid.                      | INVALID      | Bundle must contains one observation crea-tion (POST)                                  |                                                                             |
-| Erreur sur le lien entre l’observation et le device |
+{: .grid }  
+  
+
+>
+> ***Erreur sur le lien entre l’observation et le device***
+> 
+
+| Code HTTP                                           | Message                                | Outcome type | Outcome diagnostic                                                                     | Précision                                                                   |
+| --------------------------------------------------- |
 | 422                                                 | Observation and Device link not valid. | INVALID      | Observa-tion.device.reference is mandatory.                                            |                                                                             |
 | 422                                                 | Observation and Device link not valid. | INVALID      | Observation and de-vice not linked by id (Observa-tion.device.reference <-> Device.id) |
 {: .grid }
   
 
 >                                      
->  ***Erreur sur l’observation***  
+> ***Erreur sur l’observation***  
 >  
  
        
@@ -331,34 +339,41 @@ Pour chacune des ressources à valider, il sera toujours retourné un code HTTP 
 | Code HTTP | Message | Outcome type | Outcome diagnostic | Précision |
 | --------- ||
 |422	    | Observation resource not valid.	        | INVALID	| Observation must provide meta.profile value.	            |
-|422	    | Observation resource not valid.	        |VALUE	    | Solution oid contains in Observa-tion.meta.source don't belong to root editor oid (<OID>).	| Si cet attribut est fourni, il est validé. S’il n’est pas fourni l’ENS le renseigne avec les données issues du référentiel. |
-|422	    | Observation resource not valid.	        |VALUE	    | Observation value quantity not provided.	                |Dans l’ENS, des observations sans valeur sont refusées |
-|422	    | Observation resource not valid.	        |NOTSUPPORTED	| Bmi observation can-not be created.	                |Les observations IMC sont calcu-lées à la volée et ne peuvent donc pas être créées.|
+|422	    | Observation resource not valid.	        |VALUE	    | Solution oid contains in Observa-tion.meta.source don't belong to root editor oid (<OID>).	| Si cet attribut est fourni, il est validé. S’il n’est pas fourni, MES le renseigne avec les données issues du référentiel. |
+|422	    | Observation resource not valid.	        |VALUE	    | Observation value quantity not provided.	                |Dans MES, des observations sans valeur sont refusées |
+|422	    | Observation resource not valid.	        |NOTSUPPORTED	| Bmi observation can-not be created.	                |Les observations IMC sont calculées à la volée et ne peuvent donc pas être créées.|
 |422	    | Observation resource not valid.	        | INVALID	| Observation.subject.identifier is mandatory.	            | Ce champ doit contenir le couple oid/IDPE |
 |422	    | Observation resource not valid.	        | INCOMPLETE |	Observation.extension.moment is mandatory.	            | Se référer au chapitre sur le Cas particulier de la glycémie |
 |422	    | Observation resource not valid.	        | INVALID	    | Observation.extension.numberOfDays cannot be added.	|           |
 |422	    | Observation resource not valid.	        | INVALID	    | Observation.extension.moment cannot be added.	        |           |
 |422	    | Observation resource not valid.	        | INCOMPLETE	| Observation.extension.numberOfDays is mandatory.	    |       |
-|                           Erreur sur le device                |
-|422	    | Device resource not valid.	            |INVALID	    |   Device must provide meta.profile value.	            |       |
 {: .grid }
 
-			
-  
-Cette ressource OperationOutcome (https://www.hl7.org/fhir/operationoutcome.html) contient le détail des erreurs et avertissements résultants du traitement de la requête transmise par MES. 
+>                                      
+> ***Erreur sur le device***                
+> 
   
 
-  
+| Code HTTP | Message | Outcome type | Outcome diagnostic | Précision |
+| --------- || 
+|422	    | Device resource not valid.	            |INVALID	    |   Device must provide meta.profile value.	            |       |
+{: .grid }
+			
+      
+Cette ressource OperationOutcome (<https://www.hl7.org/fhir/operationoutcome.html>) contient le détail des erreurs et avertissements résultants du traitement de la requête transmise par MES. 
+    
+     
+      
 | Niveau | Elément          | Card | Type                                                                  | Description                                                         |
 | ------ |
 | 0      | OperationOutcome | 0..1 |                                                                       |                                                                     |
 | 1      | Issue            | 1..* | BackboneEle-ment                                                      |                                                                     |
-| 2      | Severity         | 1..1 | Code                                                                  | Criticité de l’erreur (http://hl7.org/fhir/ValueSet/issue-severity) |
-| 2      | Code             | 1..1 | Code	Type d’erreur (http://www.hl7.org/fhir/valueset-issue-type.html) |
+| 2      | Severity         | 1..1 | Code                                                                  | Criticité de l’erreur (<http://hl7.org/fhir/ValueSet/issue-severity>) |
+| 2      | Code             | 1..1 | Code	Type d’erreur (<http://www.hl7.org/fhir/valueset-issue-type.html>) |
 | 2      | Diagnostics      | 0..1 | String                                                                | Informations complémentaires sur l’erreur                           |
 {: .grid }
+   
   
-
 
 Seul les niveaux « fatal » et « error » provoquent un retour avec un code http d’erreur.
 

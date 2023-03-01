@@ -10,7 +10,7 @@ Id: mes-fr-observation-bodyheight
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBodyHeight 1..1 MS
-* meta.profile[MesFrObservationBodyHeight] = Canonical(mes-fr-observation-bodyheight) (exactly)
+* meta.profile[MesFrObservationBodyHeight] = Canonical(mes-fr-observation-bodyheight) 
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

@@ -23,16 +23,16 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre"
 
-* category[VSCat].coding.display = "Signes vitaux" (exactly)
+* category[VSCat].coding.display = "Signes vitaux" 
 
-* code = http://loinc.org#72514-3 (exactly)
+* code = http://loinc.org#72514-3
 
 * effective[x] only dateTime
 
 * value[x] only Quantity
 * valueQuantity.unit 1..
-* valueQuantity.unit = "Level" (exactly)
-* valueQuantity.code = #1 (exactly) // Correspond à une unité
+* valueQuantity.unit = "Level" 
+* valueQuantity.code = #1  // Correspond à une unité
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code 1..
 

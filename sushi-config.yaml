@@ -1,14 +1,14 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
 id: ans.fhir.fr.mesures
-canonical: http://interop.esante.gouv.fr/fhir/mesures
+canonical: http://interop.esante.gouv.fr/ig/fhir/mesures
 name: mesures
-title: Mesures de santé
+title: Guide d'implémentation FHIR des mesures de santé
 publisher:
   name: ANS
   url: https://esante.gouv.fr
 status: active
-version: 1.3
+version: 0.1.3
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaseLabel: ci-build
@@ -73,12 +73,12 @@ menu:
     MesObservationPainSeverity---Niveau-de-douleur: StructureDefinition-mes-observation-pain-severity.html
     MesObservationHeadCircumference---Perimetre-cranien: StructureDefinition-mes-observation-head-circumference.html
     MesObservationHeartrate---Frequence-cardiaque: StructureDefinition-mes-fr-observation-heartrate.html
-  Les-extensions-specifiques-MES:
+  Les-extensions specifiques MES:
     MesDiabetisTYpe---Types de diabète: StructureDefinition-mes-diabetis-type.html
     MesReasonForMeasurement---Motif de la mesure: StructureDefinition-mes-reason-for-measurement.html
     MesMomentOfMeasurement--Moment de la mesure: StructureDefinition-mes-moment-of-measurement.html
     MesNumberOfDays--Nombre de jours: StructureDefinition-mes-number-of-days.html
-  Terminologies-et-jeux-de-valeurs:
+  Terminologies et jeux de valeurs:
     Terminologies: Terminologies.page.html
     Jeux de valeurs: Jeux-de-valeurs.page.html
   Le profil FHIR des objets connectés: Le-profil-FHIR-des-objets-connectes.page.html
@@ -88,19 +88,3 @@ menu:
 
 
   
-# menu:
-#   Accueil: index.html
-#   Spécifications techniques:
-#       Construction des flux: construction_des_flux.html
-#       Flux 01: st_flux1.html
-#       Flux 02: st_flux2.html
-#   Spécifications fonctionnelles:
-#       Spécifications fonctionnelles: specifications_fonctionnelles.html
-#       Fonctionnalité 1: sf_ajout.html
-#   Autres ressources:
-#       Sécurité: securite.html
-#       Téléchargements et usage: downloads.html
-#   Ressources extérieures:
-#       "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
-#       "ANS website ": new-tab https://esante.gouv.fr/
-#       */

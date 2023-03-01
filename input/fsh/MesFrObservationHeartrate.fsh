@@ -11,7 +11,7 @@ Id: mes-fr-observation-heartrate
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationHeartrate 1..1 MS
-* meta.profile[MesFrObservationHeartrate] = Canonical(mes-fr-observation-heartrate) (exactly)
+* meta.profile[MesFrObservationHeartrate] = Canonical(mes-fr-observation-heartrate) 
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

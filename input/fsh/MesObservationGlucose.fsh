@@ -19,7 +19,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesObservationGlucose 1..1 MS
-* meta.profile[MesObservationGlucose] = Canonical(mes-observation-glucose) (exactly)
+* meta.profile[MesObservationGlucose] = Canonical(mes-observation-glucose) 
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -45,7 +45,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * extension[MesNumberOfDays].value[x] from $JDV-J164-GlucoseNumberOfDays-MES (required)
 * extension[MesNumberOfDays].value[x] ^binding.description = "JDV_J164-GlucoseNumberOfDays-ENS"
 
-* category[VSCat].coding.display = "Signes vitaux" (exactly)
+* category[VSCat].coding.display = "Signes vitaux" 
 
 * code from $JDV-J154-TypeGlucose-MES (extensible)
 * code ^short = "Types de glycémie"
@@ -62,7 +62,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * value[x] only Quantity
 * valueQuantity.value ^short = "Valeur mesurée"
 * valueQuantity.system 1..
-* valueQuantity.system = "http://unitsofmeasure.org" (exactly)
+* valueQuantity.system = "http://unitsofmeasure.org" 
 * valueQuantity.code 1..
 * valueQuantity.code from $JDV-J163-GlucoseUnits-MES (required)
 * valueQuantity.code ^binding.description = $JDV-J163-GlucoseUnits-MES

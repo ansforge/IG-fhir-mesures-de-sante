@@ -10,7 +10,7 @@ Id: mes-fr-observation-bmi
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBmi 1..1 MS
-* meta.profile[MesFrObservationBmi] = Canonical(mes-fr-observation-bmi) (exactly)
+* meta.profile[MesFrObservationBmi] = Canonical(mes-fr-observation-bmi) 
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

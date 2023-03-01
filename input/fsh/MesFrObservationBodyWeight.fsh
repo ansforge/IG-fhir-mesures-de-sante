@@ -12,7 +12,7 @@ Description: "Poids du patient"
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBodyWeight 1..1 MS
-* meta.profile[MesFrObservationBodyWeight] = Canonical(mes-fr-observation-body-weight) (exactly)
+* meta.profile[MesFrObservationBodyWeight] = Canonical(mes-fr-observation-body-weight) 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

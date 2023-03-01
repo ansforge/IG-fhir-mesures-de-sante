@@ -10,7 +10,7 @@ Id: mes-fr-observation-body-temperature
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBodyTemperature 1..1 MS
-* meta.profile[MesFrObservationBodyTemperature] = Canonical(mes-fr-observation-body-temperature) (exactly)
+* meta.profile[MesFrObservationBodyTemperature] = Canonical(mes-fr-observation-body-temperature) 
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

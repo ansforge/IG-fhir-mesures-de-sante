@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-observation-pain-severity",
-  "url": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-pain-severity",
-  "version": "1.3",
+  "url": "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-pain-severity",
+  "version": "0.1.3",
   "name": "MesObservationPainSeverity",
   "status": "active",
   "description": "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé",
@@ -77,7 +77,7 @@
         "sliceName": "MesObservationPainSeverity",
         "min": 1,
         "max": "1",
-        "fixedCanonical": "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-observation-pain-severity",
+        "fixedCanonical": "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-pain-severity",
         "mustSupport": true
       },
       {
@@ -120,7 +120,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
+              "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
             ]
           }
         ]
@@ -133,12 +133,12 @@
       {
         "id": "Observation.category:VSCat.coding.display",
         "path": "Observation.category.coding.display",
-        "fixedString": "Signes vitaux"
+        "patternString": "Signes vitaux"
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "code": "72514-3",
@@ -185,7 +185,7 @@
         "id": "Observation.valueQuantity.unit",
         "path": "Observation.valueQuantity.unit",
         "min": 1,
-        "fixedString": "Level"
+        "patternString": "Level"
       },
       {
         "id": "Observation.valueQuantity.system",
@@ -196,7 +196,7 @@
         "id": "Observation.valueQuantity.code",
         "path": "Observation.valueQuantity.code",
         "min": 1,
-        "fixedCode": "1"
+        "patternCode": "1"
       },
       {
         "id": "Observation.dataAbsentReason.coding.system",

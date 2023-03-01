@@ -3,7 +3,7 @@ Instance: ExamplefrPatient001
 InstanceOf: Patient
 Usage: #example
 * identifier.use = #official
-* identifier.system = "1.2.250.1.213.1.4.2"
+* identifier.system = "urn:oid:1.2.250.1.213.1.4.2"
 * identifier.value = "123456789012244"
 * active = true
 * name[0].use = #official

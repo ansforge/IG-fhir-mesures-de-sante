@@ -32,7 +32,7 @@ Id: mes-observation-waist-circumference
 // * code.coding contains WaistCircumferenceCode 1..1
 // * code.coding[WaistCircumferenceCode].system 1..
 // * code.coding[WaistCircumferenceCode].code 1..
-* code = http://loinc.org#8280-0 (exactly)
+* code = http://loinc.org#8280-0 
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)

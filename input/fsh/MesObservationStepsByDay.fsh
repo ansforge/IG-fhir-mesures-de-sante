@@ -10,7 +10,7 @@ Id: mes-observation-steps-by-day
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesObservationStepsByDay 1..1 MS
-* meta.profile[MesObservationStepsByDay] = Canonical(mes-observation-steps-by-day) (exactly)
+* meta.profile[MesObservationStepsByDay] = Canonical(mes-observation-steps-by-day) 
 
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"
@@ -26,14 +26,15 @@ Id: mes-observation-steps-by-day
 
 // * code.coding ^slicing.discriminator[0].type = #value
 // * code.coding ^slicing.discriminator[0].path = "code"
-// * code.coding ^slicing.discriminator[1].type = #value
-// * code.coding ^slicing.discriminator[1].path = "system"
+// * code.coding ^slicing.discriminator[0].type = #value
+// * code.coding ^slicing.discriminator[0].path = "system"
 // * code.coding ^slicing.rules = #open
 
 // * code.coding contains StepsByDayCode 1..1
 // * code.coding[StepsByDayCode].code 1..
 // * code.coding[StepsByDayCode].system 1..
-* code = http://loinc.org#41950-7 (exactly)
+// * code.coding[StepsByDayCode] = http://loinc.org#41950-7 
+* code.coding = http://loinc.org#41950-7
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
@@ -41,10 +42,10 @@ Id: mes-observation-steps-by-day
 
 * value[x] only Quantity
 * valueQuantity.unit 1..
-* valueQuantity = $UCUM#1/(24.h)  (exactly)
+* valueQuantity = $UCUM#1/(24.h)  
 * valueQuantity.system 1..
 * valueQuantity.code 1..
-* valueQuantity.unit = "steps/day" (exactly)
+* valueQuantity.unit = "steps/day" 
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

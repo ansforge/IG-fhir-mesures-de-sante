@@ -11,7 +11,7 @@ Id: mes-observation-head-circumference
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesObservationHeadCircumference 1..1 MS
-* meta.profile[MesObservationHeadCircumference] = Canonical(mes-observation-head-circumference) (exactly)
+* meta.profile[MesObservationHeadCircumference] = Canonical(mes-observation-head-circumference) 
 
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"
@@ -25,16 +25,16 @@ Id: mes-observation-head-circumference
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^isModifier = false
 
-// * code.coding ^slicing.discriminator[0].type = #value
-// * code.coding ^slicing.discriminator[=].path = "code"
-// * code.coding ^slicing.discriminator[+].type = #value
-// * code.coding ^slicing.discriminator[=].path = "system"
-// * code.coding ^slicing.rules = #open
-// * code.coding contains headCircumCode 1..1
-// * code.coding[headCircumCode].system 1..
-// * code.coding[headCircumCode].system = "http://loinc.org" (exactly)
-// * code.coding[headCircumCode].code 1..
-* code. = http://loinc.org#8287-5 (exactly)
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "code"
+* code.coding ^slicing.discriminator[+].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.rules = #open
+* code.coding contains headCircumCode 1..1
+* code.coding[headCircumCode].system 1..
+* code.coding[headCircumCode].system = "http://loinc.org" 
+* code.coding[headCircumCode].code 1..
+* code = http://loinc.org#8287-5 
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
@@ -46,7 +46,7 @@ Id: mes-observation-head-circumference
 * value[x] ^slicing.rules = #open
 * valueQuantity only Quantity
 * valueQuantity ^sliceName = "valueQuantity"
-* valueQuantity = $UCUM#cm (exactly)
+* valueQuantity = $UCUM#cm 
 * valueQuantity.unit = "cm"
 * valueQuantity.value 1..
 * valueQuantity.unit 1..
