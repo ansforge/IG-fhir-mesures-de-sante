@@ -107,8 +107,6 @@ Usage: #example
 * interpretation.text = "Below low normal"
 * bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
 * component[SystolicBP].code.coding[SBPCode] = http://loinc.org#8480-6 "Tension artérielle systolique"
-// * component[SystolicBP].code.coding[+] = http://snomed.info/sct#271649006 "Tension artérielle systolique"
-// * component[SystolicBP].code.coding[+] = http://acme.org/devices/clinical-codes#bp-s "Tension artérielle systolique"
 * component[SystolicBP].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
 * component[SystolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "normale"
 * component[SystolicBP].interpretation.text = "Normal"

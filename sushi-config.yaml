@@ -3,7 +3,7 @@
 id: ans.fhir.fr.mesures
 canonical: http://interop.esante.gouv.fr/ig/fhir/mesures
 name: mesures
-title: Guide d'implémentation FHIR des mesures de santé
+title: Guide d'implémentation FHIR - Mesures de santé
 publisher:
   name: ANS
   url: https://esante.gouv.fr
@@ -29,10 +29,8 @@ pages:
       title: Accueil
     Contexte-metier.page.md: 
       title: Contexte métier
-    Generalites.page.md: 
-      title: Généralités
-    FHIR-R4.01.page.md: 
-      title: FHIR-RA.01
+    Standards.md: 
+      title: Standards utilisés
     Les-profils-utilises-pour-les-mesures-de-sante.page.md:
       title: Les profils utilisés pour les mesures de santé
     Les-profils-utilises-pour-les-dispositifs-connectes.page.md:
@@ -52,15 +50,13 @@ pages:
 
 
 menu:
-  Accueil: index.html
+  Accueil: Index.html
   Contexte Métier: Contexte-metier.page.html
-  Standards-utilises:
-    Généralités: Generalites.page.html
-    FHIR-R4.01: FHIR-R4.01.page.html
+  Standards-utilises: Standards.html
   Profils:
     Les profils utilisés pour les mesures de santé: Les-profils-utilises-pour-les-mesures-de-sante.page.html
     Les profils utilisés pour les dispositifs connectés: Les-profils-utilises-pour-les-dispositifs-connectes.page.html
-  Les profils FHIR des constantes MES:
+  Les extensions FHIR Mesures de santé:
     Liste des profils MES: Liste-des-profils.page.html
     MesFrObservationBodyWeight---Poids: StructureDefinition-mes-fr-observation-body-weight.html
     MesFrObservationBodyHeight---Taille: StructureDefinition-mes-fr-observation-bodyheight.html

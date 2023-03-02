@@ -22,16 +22,6 @@ Id: mes-observation-waist-circumference
 
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. surpoids ou obésité, diabète, maladie du cœur et des vaisseaux, tabac…)"
-
-// * code.coding ^slicing.discriminator[0].type = #value
-// * code.coding ^slicing.discriminator[=].path = "code"
-// * code.coding ^slicing.discriminator[+].type = #value
-// * code.coding ^slicing.discriminator[=].path = "system"
-// * code.coding ^slicing.rules = #open
-
-// * code.coding contains WaistCircumferenceCode 1..1
-// * code.coding[WaistCircumferenceCode].system 1..
-// * code.coding[WaistCircumferenceCode].code 1..
 * code = http://loinc.org#8280-0 
 
 * subject only Reference($fr-patient)

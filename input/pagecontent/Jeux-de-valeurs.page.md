@@ -2,7 +2,7 @@
 topic: Jeuxdevaleurs
 ---
 
-&nbsp;
+Les ressources Mesures de santé utilisent les jeux de valeurs suivants :
 
 
 |     Nom du JDV                                |     OID   du JDV               |     URL                                                                                                                  |     Profils utilisant ce JDV                                                                               |

@@ -23,17 +23,6 @@ Id: mes-observation-steps-by-day
 * extension[supportingInfo] ^definition = "Autres ressources pertinentes *du dossier patient*"
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
-
-// * code.coding ^slicing.discriminator[0].type = #value
-// * code.coding ^slicing.discriminator[0].path = "code"
-// * code.coding ^slicing.discriminator[0].type = #value
-// * code.coding ^slicing.discriminator[0].path = "system"
-// * code.coding ^slicing.rules = #open
-
-// * code.coding contains StepsByDayCode 1..1
-// * code.coding[StepsByDayCode].code 1..
-// * code.coding[StepsByDayCode].system 1..
-// * code.coding[StepsByDayCode] = http://loinc.org#41950-7 
 * code.coding = http://loinc.org#41950-7
 
 * subject only Reference($fr-patient)

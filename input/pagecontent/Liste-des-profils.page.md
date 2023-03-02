@@ -17,9 +17,9 @@ Ce paragraphe présente les profils FHIR des mesures de santé.
 |     Niveau de la   douleur                              |     vitalsigns                      | HL7           |     MesObservationPainSeverity                       |   
 |     Périmètre   cranien                                 |     vitalsigns                      | HL7           |     MesObservationHeadCircumference                  |   
 {: .grid }
-&nbsp;  
   
-Les profils FHIR pour les mesures de santé décrites dans ce document s'appuient sur la ressource standard Observation définie par HL7, en ajoutant quelques contraintes : Ces contraintes sont indiquées dans la description détaillé de chaque profil.
   
-Pour chaque ressource détaillée dans la suite de ce document, le lien vers la spécification technique InteropSanté (sur Simplifier) est indiqué lorsqu'elle existe.
+Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes : ces contraintes sont indiquées dans la description détaillé de chaque profil.
+  
+Pour chaque ressource, le lien vers la spécification technique InteropSanté (sur Simplifier) est indiqué.
   

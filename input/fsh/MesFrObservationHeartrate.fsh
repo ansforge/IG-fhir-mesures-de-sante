@@ -51,5 +51,3 @@ Id: mes-fr-observation-heartrate
 
 * hasMember ^short = "Non utilisé"
 * hasMember ^definition = "Non utilisé"
-
-//* value[x] ^slicing.rules = #open

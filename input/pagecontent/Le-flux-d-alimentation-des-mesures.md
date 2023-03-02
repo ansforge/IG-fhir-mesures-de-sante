@@ -10,7 +10,7 @@ Ce profil se base sur l’interaction “transaction"  de l’API REST de FHIR. 
 
 Le corps de cette requête contient un “Bundle” qui empaquette deux ressources:  
 
-•	Une ressource “Observation” suivant un profil MES défini dans le volet mesures de santé (https://esante.gouv.fr/volet-mesures-de-sante) du CI-SIS (partie 5) et dont les ressources de conformance sont publiées sur Simplifier ( <https://simplifier.net/ci-sis/~resources?text=Mes> ).  
+•	Une ressource “Observation” suivant un profil MES défini dans le volet mesures de santé (<https://esante.gouv.fr/volet-mesures-de-sante>) du CI-SIS (partie 5).
   
 •	Une ressource “Device” suivant le profil “PhdDevice” (<https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html>), représentant le dispositif ayant effectué la mesure. 
     Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”  
@@ -77,8 +77,9 @@ A noter que la validation FHIR requiert l’incorporation d’un champ “fullUr
 ###  L’attribut « ifNoneExist »
   
 L’attribut ifNoneExist contenant l’oid du device (« sous oid » de la solution éditeur) et son identifier est obligatoire pour la ressource Device. Cet attribut permet d’exécuter la transaction « conditional create »  pour les Devices :
--	Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné). 
-S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.
+- Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné).  
+
+- S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.
   
 A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation. 
   
@@ -108,7 +109,7 @@ Ce champ est facultatif :
 ###  L’attribut « meta.profile »
 
 L’Observation et le Device doivent renseigner l’url canonique du profil dans le champs meta.profile.  
-Cette information est nécessaire, elle permet de valider la conformance des ressources Device avec le profil PhdDevice ainsi que celle des ressources Observation avec l’un des 11 profils des mesures de santé.  
+Cette information est nécessaire, elle permet de valider la conformité des ressources Device avec le profil PhdDevice ainsi que celle des ressources Observation avec l’un des 11 profils des mesures de santé.  
 
  
 ###  Exemple d’appel  
