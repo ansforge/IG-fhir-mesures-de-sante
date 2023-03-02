@@ -18,7 +18,7 @@ Id: mes-observation-waist-circumference
 * extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mes-reason-for-measurement named ENS_ReasonForMeasurement 0..1
+    mes-reason-for-measurement named MesReasonForMeasurement 0..1
 
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. surpoids ou obésité, diabète, maladie du cœur et des vaisseaux, tabac…)"

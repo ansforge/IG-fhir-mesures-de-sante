@@ -50,9 +50,3 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire\r\nhttp://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
-
-* component ^slicing.discriminator[0].type = #value
-* component ^slicing.discriminator[=].path = "code.coding.code"
-* component ^slicing.discriminator[+].type = #value
-* component ^slicing.discriminator[=].path = "code.coding.system"
-* component ^slicing.rules = #open
