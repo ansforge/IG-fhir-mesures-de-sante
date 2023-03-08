@@ -12,10 +12,6 @@ Id: mes-observation-steps-by-day
 * meta.profile contains MesObservationStepsByDay 1..1 MS
 * meta.profile[MesObservationStepsByDay] = Canonical(mes-observation-steps-by-day) 
 
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[=].path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
     mes-reason-for-measurement named MesReasonForMeasurement 0..1
@@ -23,8 +19,8 @@ Id: mes-observation-steps-by-day
 * extension[supportingInfo] ^definition = "Autres ressources pertinentes *du dossier patient*"
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
-* code.coding = http://loinc.org#41950-7
 
+* code.coding = http://loinc.org#41950-7
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
 * performer only Reference(CareTeam or RelatedPerson or $fr-practitioner or PractitionerRole or $fr-organization or $fr-patient)

@@ -21,26 +21,16 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * meta.profile contains MesObservationGlucose 1..1 MS
 * meta.profile[MesObservationGlucose] = Canonical(mes-observation-glucose) 
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
     mes-reason-for-measurement named MesReasonForMeasurement 0..1 and
     mes-moment-of-measurement named MesMomentOfMeasurement 0..1 and
     mes-number-of-days named MesNumberOfDays 0..1 and
     mes-diabetis-type named MesDiabetisType 0..1
-* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
 
-* extension[MesMomentOfMeasurement] ^short = "Moment de la mesure"
-* extension[MesMomentOfMeasurement] ^definition = "Moment de la mesure"
 * extension[MesMomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-MES (required)
 * extension[MesMomentOfMeasurement].value[x] ^binding.description = "JDV-J157-MomentGlucose-ENS"
 
-* extension[MesNumberOfDays] ^short = "Nombre de jours"
-* extension[MesNumberOfDays] ^definition = "Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie."
 * extension[MesNumberOfDays].value[x] 1..
 * extension[MesNumberOfDays].value[x] from $JDV-J164-GlucoseNumberOfDays-MES (required)
 * extension[MesNumberOfDays].value[x] ^binding.description = "JDV_J164-GlucoseNumberOfDays-ENS"

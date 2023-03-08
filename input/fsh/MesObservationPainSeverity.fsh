@@ -13,10 +13,6 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * meta.profile contains MesObservationPainSeverity 1..1 MS
 * meta.profile[MesObservationPainSeverity] = Canonical(mes-observation-pain-severity) (exactly)
 
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[=].path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
     mes-reason-for-measurement named MesReasonForMeasurement 0..1

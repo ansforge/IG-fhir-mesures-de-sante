@@ -4,9 +4,9 @@ Alias: $UCUM = http://unitsofmeasure.org
 // --- HL7 ---
 
 Alias: $bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
-Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
+Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 
 // --- fr-core ---
 
@@ -17,6 +17,8 @@ Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPra
 Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
 Alias: $fr-obervation-interpretation = http://www.interopsante.org/fhir/structuredefinition/observation/fr-core-obervation-interpretation
 Alias: $fr-core-weight-measurement-method = http://interopsante.org/fhir/valueset/fr-core-weight-measurement-method
+
+Alias: $levelOfExertion = http://interopsante.org/fhir/StructureDefinition/FrObservationLevelOfExertion
 
 
 Alias: $FrObservationBodyWeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyWeight
@@ -29,7 +31,7 @@ Alias: $FrObservationHeartrate = http://interopsante.org/fhir/StructureDefinitio
 // --- ANS-core ---
 
 
-Alias: $MesBodyPosition = http://interopsante.org/fhir/StructureDefinition/fr-core-observation-height-body-position
+Alias: $MesBodyPosition = http://interopsante.org/fhir/StructureDefinition/FrObservationHeightBodyPosition
 
 // JDV
 Alias: $JDV-J145-MethodBodyWeight-MES = https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS

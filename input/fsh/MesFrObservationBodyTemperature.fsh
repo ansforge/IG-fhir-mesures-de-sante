@@ -12,16 +12,10 @@ Id: mes-fr-observation-body-temperature
 * meta.profile contains MesFrObservationBodyTemperature 1..1 MS
 * meta.profile[MesFrObservationBodyTemperature] = Canonical(mes-fr-observation-body-temperature) 
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
-
 // Extension définie au niveau du profil d'interopsanté
-* extension[levelOfExertion] ^sliceName = "levelOfExertion"
+* extension contains $levelOfExertion named levelOfExertion 0..1
 * extension[levelOfExertion] ^short = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^definition = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
-* extension[levelOfExertion] ^min = 0
 
 * extension contains mes-reason-for-measurement named MesReasonForMeasurement 0..1
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"

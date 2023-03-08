@@ -12,10 +12,6 @@ Id: mes-observation-waist-circumference
 * meta.profile contains MesObservationWaistCircumference 1..1 MS
 * meta.profile[MesObservationWaistCircumference] = Canonical(mes-observation-waist-circumference) (exactly)
 
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[=].path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
     mes-reason-for-measurement named MesReasonForMeasurement 0..1

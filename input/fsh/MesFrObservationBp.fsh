@@ -13,10 +13,6 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * meta.profile contains MesFrObservationBp 1..1 MS
 * meta.profile[MesFrObservationBp] = Canonical(mes-fr-observation-bp) 
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     mes-reason-for-measurement named MesReasonForMeasurement 0..1 and
     mes-moment-of-measurement named MesMomentOfMeasurement 0..1

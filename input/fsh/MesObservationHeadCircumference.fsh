@@ -13,13 +13,10 @@ Id: mes-observation-head-circumference
 * meta.profile contains MesObservationHeadCircumference 1..1 MS
 * meta.profile[MesObservationHeadCircumference] = Canonical(mes-observation-head-circumference) 
 
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[=].path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
     mes-reason-for-measurement named MesReasonForMeasurement 0..1
+
 * extension[supportingInfo] ^isModifier = false
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure"
