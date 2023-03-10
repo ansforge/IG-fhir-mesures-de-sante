@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-number-of-days",
-  "url": "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days",
+  "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days",
   "version": "0.1.3",
   "name": "MesNumberOfDays",
   "status": "active",
@@ -30,7 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "Nombre de jours"
+        "short": "Nombre de jours",
+        "definition": "Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie."
       },
       {
         "id": "Extension.extension",
@@ -40,47 +41,16 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days"
+        "fixedUri": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
             "code": "CodeableConcept"
           }
         ]
-      },
-      {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.valueCodeableConcept.coding",
-        "path": "Extension.valueCodeableConcept.coding",
-        "max": "1"
-      },
-      {
-        "id": "Extension.valueCodeableConcept.coding.system",
-        "path": "Extension.valueCodeableConcept.coding.system",
-        "min": 1
-      },
-      {
-        "id": "Extension.valueCodeableConcept.coding.code",
-        "path": "Extension.valueCodeableConcept.coding.code",
-        "min": 1
       }
     ]
   }

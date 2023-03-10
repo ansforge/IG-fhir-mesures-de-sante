@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-observation-waist-circumference",
-  "url": "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-waist-circumference",
+  "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-waist-circumference",
   "version": "0.1.3",
   "name": "MesObservationWaistCircumference",
   "status": "active",
@@ -76,7 +76,7 @@
         "sliceName": "MesObservationWaistCircumference",
         "min": 1,
         "max": "1",
-        "fixedCanonical": "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-waist-circumference",
+        "fixedCanonical": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-waist-circumference",
         "mustSupport": true
       },
       {
@@ -89,6 +89,7 @@
               "path": "url"
             }
           ],
+          "ordered": false,
           "rules": "open"
         }
       },
@@ -108,9 +109,9 @@
         ]
       },
       {
-        "id": "Observation.extension:ENS_ReasonForMeasurement",
+        "id": "Observation.extension:MesReasonForMeasurement",
         "path": "Observation.extension",
-        "sliceName": "ENS_ReasonForMeasurement",
+        "sliceName": "MesReasonForMeasurement",
         "short": "Motif de la mesure",
         "definition": "Motif de la mesure\r\nTexte libre (ex. surpoids ou obésité, diabète, maladie du cœur et des vaisseaux, tabac…)",
         "min": 0,
@@ -119,7 +120,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
             ]
           }
         ]

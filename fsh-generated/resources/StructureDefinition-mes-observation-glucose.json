@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mes-observation-glucose",
-  "url": "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-glucose",
+  "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-glucose",
   "version": "0.1.3",
   "name": "MesObservationGlucose",
   "status": "active",
@@ -71,7 +71,7 @@
         "sliceName": "MesObservationGlucose",
         "min": 1,
         "max": "1",
-        "patternCanonical": "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-glucose",
+        "patternCanonical": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-glucose",
         "mustSupport": true
       },
       {
@@ -84,6 +84,7 @@
               "path": "url"
             }
           ],
+          "ordered": false,
           "rules": "open"
         }
       },
@@ -106,15 +107,13 @@
         "id": "Observation.extension:MesReasonForMeasurement",
         "path": "Observation.extension",
         "sliceName": "MesReasonForMeasurement",
-        "short": "Motif de la mesure",
-        "definition": "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
             ]
           }
         ]
@@ -123,15 +122,13 @@
         "id": "Observation.extension:MesMomentOfMeasurement",
         "path": "Observation.extension",
         "sliceName": "MesMomentOfMeasurement",
-        "short": "Moment de la mesure",
-        "definition": "Moment de la mesure",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-moment-of-measurement"
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-moment-of-measurement"
             ]
           }
         ]
@@ -149,15 +146,13 @@
         "id": "Observation.extension:MesNumberOfDays",
         "path": "Observation.extension",
         "sliceName": "MesNumberOfDays",
-        "short": "Nombre de jours",
-        "definition": "Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days"
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days"
             ]
           }
         ]
@@ -182,7 +177,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-diabetis-type"
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-diabetis-type"
             ]
           }
         ]
@@ -330,7 +325,7 @@
         "short": "JDV pour la glycémie ",
         "binding": {
           "strength": "required",
-          "valueSet": "http://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs"
+          "valueSet": "https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs"
         }
       },
       {
