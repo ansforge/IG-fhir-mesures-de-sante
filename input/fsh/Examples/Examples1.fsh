@@ -119,7 +119,7 @@ Usage: #example
 Instance: ExampleMesFrObservationBmi001
 InstanceOf: MesFrObservationBmi
 Usage: #example
-* meta.profile[0] = Canonical(MesFrObservationBmi)
+* meta.profile[MesFrObservationBmi] = Canonical(MesFrObservationBmi)
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
