@@ -1,26 +1,19 @@
----
-topic: Terminologies-duplicate-2
----
-## {{page-title}}
-
-&nbsp;
 
 
-|     Terminologie    |     URI                                                                                                                                                                     |     Licence                                                                  |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-|     LOINC           |     http://loinc.org/[loinc   number]                                                                                                                                       |     https://loinc.org/kb/license/                                            |
-|     UCUM            |     http://unitsofmeasure.org                                                                                                                                               |     https://ucum.org                                                         |
-|     CIM-10          |     https://icd.who.int/browse10/2019/en#/                                                                                                                                  |                                                                              |
-|     CIM-10 ATIH     |     https://www.atih.sante.fr/                                                                                                                                              |     ATIH                                                                     |
-|     FMA             |     http://purl.org/sig/ont/fma/fmaXXXXX                                                                                                                                    |     http://sig.biostr.washington.edu/projects/fm/AboutFM.html                |
-|     NCIT            |     http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#CYYYY   ou     https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=CYYYY    |     https://creativecommons.org/licenses/by/4.0/legalcode                    |
-|     CLADIMED        |     https://www.cladimed.com/                                                                                                                                               |     CLADIMED                                                                 |
-|     TA_ASIP         |     JDV   métier géré par l’ANS                                                                                                                                             |     LOv2                                                                     |
-|     HL7             |     http://www.hl7.org/                                                                                                                                                     |     http://www.hl7.org/documentcenter/public/gforge_include/hl7_eula.html    |
+Les ressources Mesures de santé utilisent les terminologies suivantes :
 
-&nbsp;
 
-LOINC : “This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 
-SNOMED CT : Ce document fait référence à la terminologie SNOMED CT qui est utilisée dans les ressources HL7 et InteropSanté. La mise en œuvre, le déploiement et l'utilisation de tout contenu de la SNOMED CT sont soumis à la signature d'un accord de licence affilié (affilaite license agreement) et au paiment de droit d’usage : https://mlds.ihtsdotools.org/#/landing . Les ressources spécifiques pour les constantes de l’ENS décrites dans ce document n’utilisent pas la SNOMED CT.
+|**Terminologie**|**Utilisation**|**Lien**|
+| :-: | :-: | :- |
+|CIM-10|Type de diabète|<https://smt.esante.gouv.fr/terminologie-cim-10/>|
+|EMDN|Dispositif médical|<https://smt.esante.gouv.fr/terminologie-emdn/>|
+|HL7|Sexe|<https://smt.esante.gouv.fr/terminologie-hl7-vocabulary-domains/>|
+|LOINC|Code de la mesure|<https://smt.esante.gouv.fr/terminologie-loinc-international/>|
+|NCIT|Méthode utilisée pour la mesure|<https://smt.esante.gouv.fr/terminologie-ncit/>|
+|SNOMED-CT|Localisation anatomique|<https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs>|
+|TA\_ASIP|divers|<https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs>|
+|UCUM|Unités de mesures|<https://smt.esante.gouv.fr/terminologie-UCUM/>|
+
+
 

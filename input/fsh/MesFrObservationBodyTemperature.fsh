@@ -1,6 +1,3 @@
-Alias: $FrObservationBodyTemperature = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyTemperature
-Alias: $JDV-J151-BodySiteBodyTemperature-ENS = https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS/FHIR/JDV-J151-BodySiteBodyTemperature-ENS
-Alias: $JDV-J152-MethodBodyTemperature-ENS = https://mos.esante.gouv.fr/NOS/JDV_J152-MethodBodyTemperature-ENS/FHIR/JDV-J152-MethodBodyTemperature-ENS
 
 Profile: MesFrObservationBodyTemperature
 Parent: $FrObservationBodyTemperature
@@ -9,18 +6,15 @@ Id: mes-fr-observation-body-temperature
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = Canonical(mes-fr-observation-body-temperature) (exactly)
-
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains MesFrObservationBodyTemperature 1..1 MS
+* meta.profile[MesFrObservationBodyTemperature] = Canonical(mes-fr-observation-body-temperature) 
 
 // Extension définie au niveau du profil d'interopsanté
-* extension[levelOfExertion] ^sliceName = "levelOfExertion"
 * extension[levelOfExertion] ^short = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^definition = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
-* extension[levelOfExertion] ^min = 0
 
 * extension contains mes-reason-for-measurement named MesReasonForMeasurement 0..1
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
@@ -35,12 +29,12 @@ Id: mes-fr-observation-body-temperature
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* bodySite from $JDV-J151-BodySiteBodyTemperature-ENS (required)
+* bodySite from $JDV-J151-BodySiteBodyTemperature-MES (required)
 * bodySite.coding.system 1..
 * bodySite.coding.code 1..
 
-* method from $JDV-J152-MethodBodyTemperature-ENS (required)
-* method ^binding.description = "JDV_J152-MethodBodyTemperature-ENS"
+* method from $JDV-J152-MethodBodyTemperature-MES (required)
+* method ^binding.description = $JDV-J152-MethodBodyTemperature-MES
 * method.coding.system 1..
 * method.coding.code 1..
 

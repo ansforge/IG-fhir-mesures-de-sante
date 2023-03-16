@@ -1,5 +1,3 @@
-Alias: $FrObservationBodyWeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyWeight
-Alias: $JDV-J145-MethodBodyWeight-ENS = https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS
 
 Profile: MesFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
@@ -10,13 +8,14 @@ Description: "Poids du patient"
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = Canonical(mes-fr-observation-body-weight) (exactly)
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains MesFrObservationBodyWeight 1..1 MS
+* meta.profile[MesFrObservationBodyWeight] = Canonical(mes-fr-observation-body-weight) 
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains mes-reason-for-measurement named MesReasonForMeasurement 0..1
+
 
 * value[x] ^slicing.rules = #open
 * value[x] only Quantity
@@ -28,8 +27,8 @@ Description: "Poids du patient"
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
-* method from $JDV-J145-MethodBodyWeight-ENS (required)
-* method ^binding.description = "JDV_J145-MethodBodyWeight-ENS"
+* method from $JDV-J145-MethodBodyWeight-MES (required)
+* method ^binding.description = $JDV-J145-MethodBodyWeight-MES
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"

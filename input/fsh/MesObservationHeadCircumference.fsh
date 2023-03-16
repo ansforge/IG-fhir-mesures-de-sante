@@ -1,7 +1,4 @@
-Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
-Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
-Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
+
 
 Profile: MesObservationHeadCircumference
 Parent: $vitalsigns
@@ -10,15 +7,16 @@ Id: mes-observation-head-circumference
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.profile 1..*
-* meta.profile = Canonical(mes-observation-head-circumference) (exactly)
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains MesObservationHeadCircumference 1..1 MS
+* meta.profile[MesObservationHeadCircumference] = Canonical(mes-observation-head-circumference) 
 
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[=].path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
     mes-reason-for-measurement named MesReasonForMeasurement 0..1
+
 * extension[supportingInfo] ^isModifier = false
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure"
@@ -31,9 +29,9 @@ Id: mes-observation-head-circumference
 * code.coding ^slicing.rules = #open
 * code.coding contains headCircumCode 1..1
 * code.coding[headCircumCode].system 1..
-* code.coding[headCircumCode].system = "http://loinc.org" (exactly)
+* code.coding[headCircumCode].system = "http://loinc.org" 
 * code.coding[headCircumCode].code 1..
-* code.coding[headCircumCode].code = #8287-5 (exactly)
+* code = http://loinc.org#8287-5 
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
@@ -45,7 +43,8 @@ Id: mes-observation-head-circumference
 * value[x] ^slicing.rules = #open
 * valueQuantity only Quantity
 * valueQuantity ^sliceName = "valueQuantity"
-* valueQuantity = $UCUM#cm (exactly)
+* valueQuantity = $UCUM#cm 
+* valueQuantity.unit = "cm"
 * valueQuantity.value 1..
 * valueQuantity.unit 1..
 * valueQuantity.system 1..

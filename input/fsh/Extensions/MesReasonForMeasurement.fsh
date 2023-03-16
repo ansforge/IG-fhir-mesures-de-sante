@@ -2,8 +2,8 @@ Extension: MesReasonForMeasurement
 Id: mes-reason-for-measurement
 Description: """Motif de la mesure.
 Exprimé en texte libre."""
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement"
 * ^context.type = #element
 * ^context.expression = "Observation"
-* url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ENS_ReasonForMeasurement" (exactly)
+* . ^short = "Motif de la mesure"
+* . ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
 * value[x] only string

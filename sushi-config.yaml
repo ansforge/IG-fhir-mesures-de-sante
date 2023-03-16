@@ -1,61 +1,86 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
 id: ans.fhir.fr.mesures
-canonical: http://interop.esante.gouv.fr/ci-sis/fhir/mesures
+canonical:  https://interop.esante.gouv.fr/ig/fhir/mesures
 name: mesures
-title: Mesures de santé
+title: Guide d'implémentation FHIR - Mesures de santé
 publisher:
   name: ANS
   url: https://esante.gouv.fr
 status: active
-version: 1.3
+version: 3.0.0
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaseLabel: ci-build
 
 parameters:
-    shownav: 'true'
+  shownav: 'true'
 
 
 dependencies:
-    hl7.fhir.fr.core: 
-        uri: https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download
-        version: 1.1.0
-    hl7.fhir.uv.phd: 1.0.0
+  hl7.fhir.fr.core: 
+    uri: https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download
+    version: 1.1.0
+  hl7.fhir.uv.phd: 1.0.0
 
 
 pages:
-    index.md:
-        title: Accueil
-    specifications_techniques.md:
-        construction_des_flux.md:
-        st_flux1.md:
-            title: Flux 01
-        st_flux2.md:
-            title: Flux 02
-    specifications_fonctionnelles.md:
-        sf_ajout.md:
-            title: Fonctionnalité 1
-    autres_ressources.md:
-        title: Autres Ressources
-        securite.md:
-            title: Sécurité
-        downloads.md:
-            title: Téléchargements et usages
+    index.md: 
+      title: Accueil
+    Contexte-metier.page.md: 
+      title: Contexte métier
+    Standards.md: 
+      title: Standards utilisés
+    Les-profils-utilises-pour-les-mesures-de-sante.page.md:
+      title: Les profils utilisés pour les mesures de santé
+    Les-profils-utilises-pour-les-dispositifs-connectes.page.md:
+      title: Les profils utilisés pour les dispositifs connectés
+    Liste-des-profils.page.md:
+      title: Liste des profils
+    Terminologies.page.md:
+      title: Terminologies
+    Jeux-de-valeurs.page.md:
+      title: Jeux de valeurs
+    Le-profil-FHIR-des-objets-connectes.page.md:
+      title: Le profil FHIR des objets connectés
+    Liste-des-codes-des-observations.page.md:
+      title: Liste des codes des observations
+    Le-flux-d-alimentation-des-mesures.md:
+      title: Le flux d'alimentation des mesures de santé
 
 
 menu:
   Accueil: index.html
-  Spécifications techniques:
-      Construction des flux: construction_des_flux.html
-      Flux 01: st_flux1.html
-      Flux 02: st_flux2.html
-  Spécifications fonctionnelles:
-      Spécifications fonctionnelles: specifications_fonctionnelles.html
-      Fonctionnalité 1: sf_ajout.html
-  Autres ressources:
-      Sécurité: securite.html
-      Téléchargements et usage: downloads.html
-  Ressources extérieures:
-      "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
-      "ANS website ": new-tab https://esante.gouv.fr/
+  Contexte Métier: Contexte-metier.page.html
+  Standards-utilises: Standards.html
+  Profils:
+    Les profils utilisés pour les mesures de santé: Les-profils-utilises-pour-les-mesures-de-sante.page.html
+    Les profils utilisés pour les dispositifs connectés: Les-profils-utilises-pour-les-dispositifs-connectes.page.html
+  Les extensions FHIR Mesures de santé:
+    Liste des profils MES: Liste-des-profils.page.html
+    MesFrObservationBodyWeight - Poids: StructureDefinition-mes-fr-observation-body-weight.html
+    MesFrObservationBodyHeight - Taille: StructureDefinition-mes-fr-observation-bodyheight.html
+    MesFrObservationBodyTemperature - Temperature: StructureDefinition-mes-fr-observation-body-temperature.html
+    MesFrObservationBp - Pression-arterielle: StructureDefinition-mes-fr-observation-bp.html
+    MesObservationGlucose - Glycemie: StructureDefinition-mes-observation-glucose.html
+    MesFrObservationBmi - Indice-de-masse-corporelle: StructureDefinition-mes-fr-observation-bmi.html
+    MesObservationWaistCircumference - Tour-de-taille: StructureDefinition-mes-observation-waist-circumference.html
+    MesObservationStepsByDay - Nombre-de-pas-quotidien: StructureDefinition-mes-observation-steps-by-day.html
+    MesObservationPainSeverity - Niveau-de-douleur: StructureDefinition-mes-observation-pain-severity.html
+    MesObservationHeadCircumference - Perimetre-cranien: StructureDefinition-mes-observation-head-circumference.html
+    MesObservationHeartrate - Frequence-cardiaque: StructureDefinition-mes-fr-observation-heartrate.html
+  Les-extensions specifiques MES:
+    MesDiabetisType - Types de diabète: StructureDefinition-mes-diabetis-type.html
+    MesReasonForMeasurement - Motif de la mesure: StructureDefinition-mes-reason-for-measurement.html
+    MesMomentOfMeasurement - Moment de la mesure: StructureDefinition-mes-moment-of-measurement.html
+    MesNumberOfDays - Nombre de jours: StructureDefinition-mes-number-of-days.html
+  Terminologies et jeux de valeurs:
+    Terminologies: Terminologies.page.html
+    Jeux de valeurs: Jeux-de-valeurs.page.html
+  Le profil FHIR des objets connectés: Le-profil-FHIR-des-objets-connectes.page.html
+  Le flux d'alimentation des mesures de santé: Le-flux-d-alimentation-des-mesures.html
+  Annexes:
+    Liste des codes des observations: Liste-des-codes-des-observations.page.html
+
+
+  

@@ -1,6 +1,3 @@
-Alias: $JDV-J149-BodySiteBP-ENS = https://mos.esante.gouv.fr/NOS/JDV_J149-BodySiteBP-ENS/FHIR/JDV-J149-BodySiteBP-ENS
-Alias: $JDV-J150-MethodBP-ENS = https://mos.esante.gouv.fr/NOS/JDV_J150-MethodBP-ENS/FHIR/JDV-J150-MethodBP-ENS
-Alias: $JDV-J148-ReferenceRangeAppliesTo-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS
 
 Profile: MesFrObservationBp
 Parent: $FrObservationBp
@@ -10,34 +7,32 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.profile 1..*
-* meta.profile = Canonical(mes-fr-observation-bp) (exactly)
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains MesFrObservationBp 1..1 MS
+* meta.profile[MesFrObservationBp] = Canonical(mes-fr-observation-bp) 
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     mes-reason-for-measurement named MesReasonForMeasurement 0..1 and
     mes-moment-of-measurement named MesMomentOfMeasurement 0..1
 
 * category[VSCat] ^sliceName = "VSCat"
-* category[VSCat].coding.display = "Signes vitaux" (exactly)
+* category[VSCat].coding.display = "Signes vitaux" 
 * subject only Reference($fr-patient)
 * effective[x] only dateTime
 
-* dataAbsentReason.coding.system 1..
-* dataAbsentReason.coding.code 1..
 
 * interpretation ^short = "Non renseigné"
 * interpretation ^definition = "Non renseigné"
 
-* bodySite from $JDV-J149-BodySiteBP-ENS (required)
-* bodySite ^binding.description = "JDV_J149-BodySiteBP-ENS"
+* bodySite from $JDV-J149-BodySiteBP-MES (required)
+* bodySite ^binding.description = $JDV-J149-BodySiteBP-MES
 * bodySite.coding.system 1..
 * bodySite.coding.code 1..
 
-* method from $JDV-J150-MethodBP-ENS (required)
-* method ^binding.description = "JDV_J150-MethodBP-ENS"
+* method from $JDV-J150-MethodBP-MES (required)
+* method ^binding.description = $JDV-J150-MethodBP-MES
 * method.coding.system 1..
 * method.coding.code 1..
 
@@ -46,26 +41,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * device.reference 1..
 
 * referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
-* referenceRange.appliesTo ^binding.description = "JDV_J148-ReferenceRangeAppliesTo-CISIS"
+* referenceRange.appliesTo ^binding.description = $JDV-J148-ReferenceRangeAppliesTo-CISIS
 * referenceRange.appliesTo.coding.system 1..
 * referenceRange.appliesTo.coding.code 1..
-
-* component.dataAbsentReason.coding.system 1..
-* component.dataAbsentReason.coding.code 1..
 * component.referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
-
-* component[SystolicBP] ^sliceName = "SystolicBP"
-* component[SystolicBP].value[x] ^slicing.discriminator.type = #type
-* component[SystolicBP].value[x] ^slicing.discriminator.path = "$this"
-* component[SystolicBP].value[x] ^slicing.rules = #closed
-* component[SystolicBP].valueQuantity ^sliceName = "valueQuantity"
-* component[SystolicBP].valueQuantity.value ^short = "Valeur mesurée"
-* component[SystolicBP].dataAbsentReason.coding.system 1..
-* component[SystolicBP].dataAbsentReason.coding.code 1..
-
-* component[DiastolicBP] ^sliceName = "DiastolicBP"
-* component[DiastolicBP].value[x] ^slicing.discriminator.type = #type
-* component[DiastolicBP].value[x] ^slicing.discriminator.path = "$this"
-* component[DiastolicBP].value[x] ^slicing.rules = #closed
-* component[DiastolicBP].valueQuantity ^sliceName = "valueQuantity"
-* component[DiastolicBP].valueQuantity.value ^short = "Valeur mesurée"
