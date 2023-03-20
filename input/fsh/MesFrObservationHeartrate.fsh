@@ -1,5 +1,3 @@
-
-
 Profile: MesFrObservationHeartrate
 Parent: $FrObservationHeartrate
 Id: mes-fr-observation-heartrate
