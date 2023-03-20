@@ -14,6 +14,7 @@ Id: mes-fr-observation-bodyheight
 
 
 // Extension bodyposition définie au niveau du profil d'interopsanté
+* extension contains $MesBodyPosition named bodyposition 0..1 
 * extension[bodyposition] ^short = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 * extension[bodyposition] ^definition = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 
