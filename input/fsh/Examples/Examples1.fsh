@@ -100,14 +100,19 @@ Usage: #example
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
 * bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
-* component[SystolicBP].code.coding[SBPCode] = http://loinc.org#8480-6 "Tension artérielle systolique"
-* component[SystolicBP].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
-* component[SystolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
-* component[SystolicBP].interpretation.text = "Normal"
-* component[DiastolicBP].code = http://loinc.org#8462-4 "Tension artérielle diastolique"
-* component[DiastolicBP].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
-* component[DiastolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
-* component[DiastolicBP].interpretation.text = "En dessous de la normale"
+
+// Systoic BP
+* component[0].code = http://loinc.org#8480-6 "Tension artérielle systolique"
+* component[0].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
+* component[0].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
+* component[0].interpretation.text = "Normal"
+
+
+// Diastolic BP
+* component[1].code = http://loinc.org#8462-4 "Tension artérielle diastolique"
+* component[1].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
+* component[1].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
+* component[1].interpretation.text = "En dessous de la normale"
 
 
 Instance: ExampleMesFrObservationBmi001

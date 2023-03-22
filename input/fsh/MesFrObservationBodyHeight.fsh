@@ -26,7 +26,6 @@ Id: mes-fr-observation-bodyheight
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* bodySite ^short = "Non utilisé"
 
 * method from $JDV-J146-MethodBodyHeight-MES (required)
 * method ^binding.description = $JDV-J158-MethodStepsByDay-MES
@@ -34,10 +33,3 @@ Id: mes-fr-observation-bodyheight
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire"
-
-* referenceRange.appliesTo ^short = "Non utilisé"
-* referenceRange.appliesTo ^definition = "Non utilisé"
-* hasMember ^short = "Non utilisé"
-* hasMember ^definition = "Non utilisé"
-* derivedFrom ^short = "Non utilisé"
-* derivedFrom ^definition = "Non utilisé"

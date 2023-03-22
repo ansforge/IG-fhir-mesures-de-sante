@@ -34,7 +34,3 @@ Description: "Poids du patient"
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\n=>cette référence est obligatoire"
 
-* referenceRange.appliesTo ^short = "Non utilisé"
-* referenceRange.appliesTo ^definition = "Non utilisé"
-* hasMember ^short = "Non utilisé"
-* derivedFrom ^short = "Non utilisé"

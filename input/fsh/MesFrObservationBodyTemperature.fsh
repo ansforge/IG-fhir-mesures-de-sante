@@ -41,12 +41,3 @@ Id: mes-fr-observation-body-temperature
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\r\n=>cette référence est obligatoire\r\nhttp://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
-
-* referenceRange.appliesTo ^short = "Non utilisé"
-* referenceRange.appliesTo ^definition = "Non utilisé"
-
-* hasMember ^short = "Non utilisé"
-* hasMember ^definition = "Non utilisé"
-
-* derivedFrom ^short = "Non utilisé"
-* derivedFrom ^definition = "Non utilisé"
