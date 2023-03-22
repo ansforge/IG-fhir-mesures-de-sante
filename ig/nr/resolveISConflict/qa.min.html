@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 765, errors = 1, warn = 94, info = 8-->
+<!-- broken links = 765, errors = 1, warn = 92, info = 7-->
 <head>
   <title>Mesures : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Mesures</h1>
- <p>Generated Wed Mar 22 15:46:44 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Wed Mar 22 16:14:36 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.3.0</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.mesures, Canonical = https://interop.esante.gouv.fr/ig/fhir/mesures</td></tr>
@@ -60,7 +60,7 @@
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Previous Version Comparison:</td><td> </td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 1, warn = 94, info = 8, broken links = 765</td></tr>
+ <tr><td>Summary:</td><td> errors = 1, warn = 92, info = 7, broken links = 765</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -70,7 +70,7 @@
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>765</b></td><td><b>27</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-mesures-de-sante_IG-fhir-mesures-de-sante_fsh-generated_resources_Observation-ExampleMesFrObservationBP001"><b>/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBP001</b></a></td><td><b>0</b></td><td><b>8</b></td><td><b>1</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-mesures-de-sante_IG-fhir-mesures-de-sante_fsh-generated_resources_Observation-ExampleMesFrObservationBP001"><b>/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBP001</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-mesures-de-sante_IG-fhir-mesures-de-sante_fsh-generated_resources_Observation-ExampleMesFrObservationBodyWeight001"><b>/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBodyWeight001</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -2513,19 +2513,13 @@
      <td><b>Observation.bodySite.coding[0] (l114/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.component[0].code.coding[0] (l31/c12)</b></td><td><b>warning</b></td><td><b>The display &quot;Tension artérielle systolique&quot; is not a valid display for the code {http://loinc.org}8480-6 - should be one of ['Systolic blood pressure', 'BP sys', '', '一般血压' (zh-CN), '血压.原子型' (zh-CN), '血压指标.原子型 压力' (zh-CN), '压强 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血管内收缩期' (zh-CN), '血管内心缩期 血管内的' (zh-CN), 'Pressure' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Art sys' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'IV' (pt-BR), 'Intravenous' (pt-BR), 'BLOOD PRESSURE MEASUREMENTS.ATOM' (pt-BR), 'BP systolic' (pt-BR), 'Blood pressure systolic' (pt-BR), 'Sys BP' (pt-BR), 'SBP' (pt-BR), 'Pressione Pressione arteriosa - atomica Punto nel tempo (episodio)' (it-IT), 'Давление Количественный Точка во времени' (ru-RU), 'Момент' (ru-RU), 'Blutdruck systolisch' (de-AT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#8480-6'</b> (<a href="qa-tx.html#l32">see Tx log</a>)</td>
+     <td><b>Observation.component[0].code.coding[0] (l31/c12)</b></td><td><b>warning</b></td><td><b>The display &quot;Tension artérielle systolique&quot; is not a valid display for the code {http://loinc.org}8480-6 - should be one of ['Systolic blood pressure', 'BP sys', '', '一般血压' (zh-CN), '血压.原子型' (zh-CN), '血压指标.原子型 压力' (zh-CN), '压强 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血管内收缩期' (zh-CN), '血管内心缩期 血管内的' (zh-CN), 'Pressure' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Art sys' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'IV' (pt-BR), 'Intravenous' (pt-BR), 'BLOOD PRESSURE MEASUREMENTS.ATOM' (pt-BR), 'BP systolic' (pt-BR), 'Blood pressure systolic' (pt-BR), 'Sys BP' (pt-BR), 'SBP' (pt-BR), 'Pressione Pressione arteriosa - atomica Punto nel tempo (episodio)' (it-IT), 'Давление Количественный Точка во времени' (ru-RU), 'Момент' (ru-RU), 'Blutdruck systolisch' (de-AT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#8480-6'</b> (<a href="qa-tx.html#l33">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation.component[0].interpretation[0] (l45/c10)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://www.interopsante.org/fhir/structuredefinition/observation/fr-obervation-interpretation not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.component[0].interpretation[0].coding[0] (l47/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N should be 'Normal', not 'normale' for 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.component[0].interpretation[0] (l45/c10)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N should be 'Normal', not 'normale'"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N should be 'Normal', not 'normale'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.component[1].code.coding[0] (l60/c12)</b></td><td><b>warning</b></td><td><b>The display &quot;Tension artérielle diastolique&quot; is not a valid display for the code {http://loinc.org}8462-4 - should be one of ['Diastolic blood pressure', 'BP dias', '', '一般血压' (zh-CN), '血压.原子型' (zh-CN), '血压指标.原子型 压力' (zh-CN), '压强 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血管内心舒期' (zh-CN), '血管内舒张期 血管内的' (zh-CN), 'Dias' (pt-BR), 'Diast' (pt-BR), 'Pressure' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Art sys' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'IV' (pt-BR), 'Intravenous' (pt-BR), 'Diastoli' (pt-BR), 'BLOOD PRESSURE MEASUREMENTS.ATOM' (pt-BR), 'Blood pressure diastolic' (pt-BR), 'BP diastolic' (pt-BR), 'Dias BP' (pt-BR), 'DBP' (pt-BR), 'Pressione Pressione arteriosa - atomica Punto nel tempo (episodio)' (it-IT), 'Внутрисосудистый диастолический Давление Количественный Точка во времени' (ru-RU), 'Момент' (ru-RU), 'Blutdruck diastolisch' (de-AT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#8462-4'</b> (<a href="qa-tx.html#l34">see Tx log</a>)</td>
+     <td><b>Observation.component[1].code.coding[0] (l60/c12)</b></td><td><b>warning</b></td><td><b>The display &quot;Tension artérielle diastolique&quot; is not a valid display for the code {http://loinc.org}8462-4 - should be one of ['Diastolic blood pressure', 'BP dias', '', '一般血压' (zh-CN), '血压.原子型' (zh-CN), '血压指标.原子型 压力' (zh-CN), '压强 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血管内心舒期' (zh-CN), '血管内舒张期 血管内的' (zh-CN), 'Dias' (pt-BR), 'Diast' (pt-BR), 'Pressure' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Art sys' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'IV' (pt-BR), 'Intravenous' (pt-BR), 'Diastoli' (pt-BR), 'BLOOD PRESSURE MEASUREMENTS.ATOM' (pt-BR), 'Blood pressure diastolic' (pt-BR), 'BP diastolic' (pt-BR), 'Dias BP' (pt-BR), 'DBP' (pt-BR), 'Pressione Pressione arteriosa - atomica Punto nel tempo (episodio)' (it-IT), 'Внутрисосудистый диастолический Давление Количественный Точка во времени' (ru-RU), 'Момент' (ru-RU), 'Blutdruck diastolisch' (de-AT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#8462-4'</b> (<a href="qa-tx.html#l35">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation.component[1].interpretation[0] (l74/c10)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://www.interopsante.org/fhir/structuredefinition/observation/fr-obervation-interpretation not found by validator</b></td>
@@ -2544,7 +2538,7 @@
      <td><b>Observation.method (l46/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.method.coding[0] (l48/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED' is unknown so the code cannot be validated</b></td>
+     <td><b>Observation.method.coding[0] (l48/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.250.1.213.2.65' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -2856,7 +2850,7 @@
      <td><b>ValueSet (l1/c1242)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'method-glucose-vs')</b></td><td><b>error</b></td><td><b>Error from server: Unable to find value set &quot;https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS&quot;</b> (<a href="qa-tx.html#l62">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'method-glucose-vs')</b></td><td><b>error</b></td><td><b>Error from server: Unable to find value set &quot;https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS&quot;</b> (<a href="qa-tx.html#l63">see Tx log</a>)</td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -2906,9 +2900,6 @@
      <td><a href="Observation-ExampleMesFrObservationBP001.html">fsh-generated/resources/Observation-ExampleMesFrObservationBP001.json</a></td><td><b>The display &quot;Tension artérielle systolique&quot; is not a valid display for the code {http://loinc.org}8480-6 - should be one of ['Systolic blood pressure', 'BP sys', '', '一般血压' (zh-CN), '血压.原子型' (zh-CN), '血压指标.原子型 压力' (zh-CN), '压强 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血管内收缩期' (zh-CN), '血管内心缩期 血管内的' (zh-CN), 'Pressure' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Art sys' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'IV' (pt-BR), 'Intravenous' (pt-BR), 'BLOOD PRESSURE MEASUREMENTS.ATOM' (pt-BR), 'BP systolic' (pt-BR), 'Blood pressure systolic' (pt-BR), 'Sys BP' (pt-BR), 'SBP' (pt-BR), 'Pressione Pressione arteriosa - atomica Punto nel tempo (episodio)' (it-IT), 'Давление Количественный Точка во времени' (ru-RU), 'Момент' (ru-RU), 'Blutdruck systolisch' (de-AT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#8480-6'</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-ExampleMesFrObservationBP001.html">fsh-generated/resources/Observation-ExampleMesFrObservationBP001.json</a></td><td><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N should be 'Normal', not 'normale' for 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
      <td><a href="Observation-ExampleMesFrObservationBP001.html">fsh-generated/resources/Observation-ExampleMesFrObservationBP001.json</a></td><td><b>The display &quot;Tension artérielle diastolique&quot; is not a valid display for the code {http://loinc.org}8462-4 - should be one of ['Diastolic blood pressure', 'BP dias', '', '一般血压' (zh-CN), '血压.原子型' (zh-CN), '血压指标.原子型 压力' (zh-CN), '压强 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血管内心舒期' (zh-CN), '血管内舒张期 血管内的' (zh-CN), 'Dias' (pt-BR), 'Diast' (pt-BR), 'Pressure' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Art sys' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'IV' (pt-BR), 'Intravenous' (pt-BR), 'Diastoli' (pt-BR), 'BLOOD PRESSURE MEASUREMENTS.ATOM' (pt-BR), 'Blood pressure diastolic' (pt-BR), 'BP diastolic' (pt-BR), 'Dias BP' (pt-BR), 'DBP' (pt-BR), 'Pressione Pressione arteriosa - atomica Punto nel tempo (episodio)' (it-IT), 'Внутрисосудистый диастолический Давление Количественный Точка во времени' (ru-RU), 'Момент' (ru-RU), 'Blutdruck diastolisch' (de-AT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#8462-4'</b></td>
    </tr>
 </table>
@@ -2920,7 +2911,7 @@
      <td><a href="Observation-ExampleMesFrObservationBP001.html">fsh-generated/resources/Observation-ExampleMesFrObservationBP001.json</a></td><td><b>Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Observation-ExampleMesFrObservationBodyWeight001.html">fsh-generated/resources/Observation-ExampleMesFrObservationBodyWeight001.json</a></td><td><b>Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED' is unknown so the code cannot be validated</b></td>
+     <td><a href="Observation-ExampleMesFrObservationBodyWeight001.html">fsh-generated/resources/Observation-ExampleMesFrObservationBodyWeight001.json</a></td><td><b>Code System URI 'urn:oid:1.2.250.1.213.2.65' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Observation-ExampleMesObservationGlucose001.html">fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json</a></td><td><b>Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc' is unknown so the code cannot be validated</b></td>
@@ -2933,9 +2924,6 @@
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Observation-ExampleMesObservationGlucose001.html">fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json</a></td><td><b>Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Practitioner-ExampleFrPractitionner001.html">fsh-generated/resources/Practitioner-ExampleFrPractitionner001.json</a></td><td><b>Code System URI 'http://terminology.hl7.org/CodeSystem/v2-0360/2.7' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>

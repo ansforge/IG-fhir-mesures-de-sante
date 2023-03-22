@@ -80,7 +80,21 @@
      fhir:unit [ fhir:v "milligramme par décilitre" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "mg/dL" ]
-  ] . # 
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "3.1"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmol/l" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mmol/L" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "6.2"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmol/l" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mmol/L" ]
+     ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 
