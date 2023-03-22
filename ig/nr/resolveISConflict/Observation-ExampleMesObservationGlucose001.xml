@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleMesObservationGlucose001"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-glucose"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ExampleMesObservationGlucose001"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ExampleMesObservationGlucose001&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mes-observation-glucose.html">MesObservationGlucose</a></p></div><p><b style="color: maroon">Exception generating Narrative: Unknown Content value @  START_TAG seen ...&lt;valueString&gt;\n    &lt;value value=&quot;Malaise du patient&quot;/&gt;... @5:40</b></p></div>
+  </text>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement">
+    <valueString>
+      <value value="Malaise du patient"/>
+    </valueString>
+  </extension>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-moment-of-measurement">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc"/>
+        <code value="16915-1"/>
+        <display value="Glucose post prandial"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP"/>
+        <code value="GEN-092"/>
+        <display value="Autre"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-diabetis-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih"/>
+        <code value="E11.x0"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc"/>
+      <code value="4548-4"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplefrPatient001"/>
+    <type value="Patient"/>
+    <display value="Pierre Durand"/>
+  </subject>
+  <effectiveDateTime value="2022-11-06"/>
+  <valueQuantity>
+    <value value="1.5"/>
+    <unit value="milligramme par décilitre"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mg/dL"/>
+  </valueQuantity>
+</Observation>

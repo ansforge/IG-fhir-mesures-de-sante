@@ -1,0 +1,71 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleMesObservationGlucose001",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-glucose"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleMesObservationGlucose001\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleMesObservationGlucose001&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mes-observation-glucose.html\">MesObservationGlucose</a></p></div><p><b style=\"color: maroon\">Exception generating Narrative: Unknown Content value @  START_TAG seen ...&lt;valueString&gt;\\n    &lt;value value=&quot;Malaise du patient&quot;/&gt;... @5:40</b></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement",
+    "_valueString" : {
+      "value" : "Malaise du patient"
+    }
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-moment-of-measurement",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc",
+        "code" : "16915-1",
+        "display" : "Glucose post prandial"
+      }]
+    }
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP",
+        "code" : "GEN-092",
+        "display" : "Autre"
+      }]
+    }
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-diabetis-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih",
+        "code" : "E11.x0"
+      }]
+    }
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc",
+      "code" : "4548-4"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplefrPatient001",
+    "type" : "Patient",
+    "display" : "Pierre Durand"
+  },
+  "effectiveDateTime" : "2022-11-06",
+  "valueQuantity" : {
+    "value" : 1.5,
+    "unit" : "milligramme par décilitre",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mg/dL"
+  }
+}
