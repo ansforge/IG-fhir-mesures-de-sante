@@ -38,20 +38,14 @@ Usage: #example
 * identifier.system = "http://www.acme.org/practitioners"
 * identifier.value = "23"
 * active = true
-* name.family = "Careful"
+* name.family = "Durant"
 * name.given = "Adam"
-* name.prefix = "Dr"
+* name.prefix = "Mr"
 * address.use = #home
-* address.line = "534 Erewhon St"
-* address.city = "PleasantVille"
-* address.state = "Vic"
-* address.postalCode = "3999"
-* qualification.identifier.system = "http://example.org/UniversityIdentifier"
-* qualification.identifier.value = "12345"
-* qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360/2.7#BS "Bachelor of Science"
-* qualification.code.text = "Bachelor of Science"
-* qualification.period.start = "1995"
-* qualification.issuer.display = "Example University"
+* address.line = "7 rue Coursier"
+* address.city = "Amiens"
+* address.postalCode = "80000"
+
 
 Instance: ExampleMesFrObservationBodyWeight001
 InstanceOf: MesFrObservationBodyWeight
@@ -62,7 +56,7 @@ Usage: #example
 * effectiveDateTime = "2022-11-06"
 * extension[mes-reason-for-measurement].valueString = "Calcul IMC"
 * method.coding.code = #K50BI02
-* method.coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED"
+* method.coding.system = "urn:oid:1.2.250.1.213.2.65"
 * device = Reference(phd-74E8FFFEFF051C00)
 * valueQuantity.value = 95
 * valueQuantity.code = #kg
@@ -106,23 +100,25 @@ Usage: #example
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
 * bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
-* component[0].code.coding[0] = http://loinc.org#8480-6 "Tension artérielle systolique"
-* component[=].valueQuantity = 120 'mm[Hg]' "mm[Hg]"
-// * component[=].valueQuantity.unit = "mm[Hg]"
-// * component[=].valueQuantity.code = 'mm[Hg]'
 
-* component[=].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "normale"
-* component[=].interpretation.text = "Normal"
-* component[+].code = http://loinc.org#8462-4 "Tension artérielle diastolique"
-* component[=].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
-* component[=].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
-* component[=].interpretation.text = "En dessous de la normale"
+// Systoic BP
+* component[0].code.coding[SBPCode] = http://loinc.org#8480-6 "Tension artérielle systolique"
+* component[0].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
+* component[0].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
+* component[0].interpretation.text = "Normal"
+
+
+// Diastolic BP
+* component[1].code = http://loinc.org#8462-4 "Tension artérielle diastolique"
+* component[1].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
+* component[1].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
+* component[1].interpretation.text = "En dessous de la normale"
 
 
 Instance: ExampleMesFrObservationBmi001
 InstanceOf: MesFrObservationBmi
 Usage: #example
-* meta.profile[MesFrObservationBmi] = Canonical(MesFrObservationBmi)
+* meta.profile[0] = Canonical(MesFrObservationBmi)
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
@@ -156,6 +152,8 @@ Usage: #example
 * effectiveDateTime = "2022-11-06"
 * code = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#4548-4
 * valueQuantity = 1.5 'mg/dL' "milligramme par décilitre"
+* referenceRange.low = 3.1 'mmol/L' "mmol/l"
+* referenceRange.high = 6.2 'mmol/L' "mmol/l"
 * extension[MesReasonForMeasurement].valueString.value = "Malaise du patient"
 * extension[MesMomentOfMeasurement].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#16915-1 "Glucose post prandial"
 * extension[MesNumberOfDays].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP#GEN-092 "Autre"
