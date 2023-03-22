@@ -102,7 +102,7 @@ Usage: #example
 * bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
 
 // Systoic BP
-* component[0].code.coding[SBPCode] = http://loinc.org#8480-6 "Tension artérielle systolique"
+* component[0].code = http://loinc.org#8480-6 "Tension artérielle systolique"
 * component[0].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
 * component[0].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
 * component[0].interpretation.text = "Normal"
