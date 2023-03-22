@@ -1,0 +1,13 @@
+{
+    "package-id" : "ans.fhir.fr.mesures",
+    "version" : "3.0.0",
+    "path" : "https://interop.esante.gouv.fr/ig/fhir/mesures/3.0.0",
+    "mode" : "working",
+    "status" : "ballot",
+    "sequence" : "draft",
+    "title" : "Guide d'implémentation FHIR - Mesures de santé",
+    "desc" : "1/ Les symboles underscore ont été supprimés des nom des profils, et le prefixe 'ENS_' est devenu 'Mes', 2/ Dans les profils qui ne descendent pas des profils InteropSante, les références Fr-Patient, Fr-Practitionner, etc... ont été corrigées, 3/ Dans EnsObservationGlucose, le slice sur method (illégal) a été supprimé et remplacé par un binding sur un JDV MethodeGlucoseVS qui inclut les deux JDV, 4/ La racine des URL canoniques ANS a été changée en http://interop.esante.gouv.fr/ig/fhir/mesures",
+    "ci-build" : "https://build.interop.esante.gouv.fr/ig/fhir/mesures",
+    "category" : "Clinical Records",
+    "introduction" : "Guide d'implémentation FHIR - Mesures de santé"
+  }

@@ -2,7 +2,7 @@
 
 id: ans.fhir.fr.mesures
 canonical:  https://interop.esante.gouv.fr/ig/fhir/mesures
-name: mesures
+name: Mesures
 title: Guide d'implémentation FHIR - Mesures de santé
 publisher:
   name: ANS
@@ -47,16 +47,15 @@ pages:
       title: Liste des codes des observations
     Le-flux-d-alimentation-des-mesures.md:
       title: Le flux d'alimentation des mesures de santé
+    about.md:
+        title: A propos de ce guide
 
 
 menu:
   Accueil: index.html
-  Contexte Métier: Contexte-metier.page.html
-  Standards-utilises: Standards.html
-  Profils:
+  Les profils Mesures:
     Les profils utilisés pour les mesures de santé: Les-profils-utilises-pour-les-mesures-de-sante.page.html
     Les profils utilisés pour les dispositifs connectés: Les-profils-utilises-pour-les-dispositifs-connectes.page.html
-  Les extensions FHIR Mesures de santé:
     Liste des profils MES: Liste-des-profils.page.html
     MesFrObservationBodyWeight - Poids: StructureDefinition-mes-fr-observation-body-weight.html
     MesFrObservationBodyHeight - Taille: StructureDefinition-mes-fr-observation-bodyheight.html
@@ -69,7 +68,8 @@ menu:
     MesObservationPainSeverity - Niveau-de-douleur: StructureDefinition-mes-observation-pain-severity.html
     MesObservationHeadCircumference - Perimetre-cranien: StructureDefinition-mes-observation-head-circumference.html
     MesObservationHeartrate - Frequence-cardiaque: StructureDefinition-mes-fr-observation-heartrate.html
-  Les-extensions specifiques MES:
+    Le profil FHIR des objets connectés: Le-profil-FHIR-des-objets-connectes.page.html
+  Les extensions Mesures:
     MesDiabetisType - Types de diabète: StructureDefinition-mes-diabetis-type.html
     MesReasonForMeasurement - Motif de la mesure: StructureDefinition-mes-reason-for-measurement.html
     MesMomentOfMeasurement - Moment de la mesure: StructureDefinition-mes-moment-of-measurement.html
@@ -77,10 +77,13 @@ menu:
   Terminologies et jeux de valeurs:
     Terminologies: Terminologies.page.html
     Jeux de valeurs: Jeux-de-valeurs.page.html
-  Le profil FHIR des objets connectés: Le-profil-FHIR-des-objets-connectes.page.html
-  Le flux d'alimentation des mesures de santé: Le-flux-d-alimentation-des-mesures.html
-  Annexes:
     Liste des codes des observations: Liste-des-codes-des-observations.page.html
+  Flux d'alimentation des mesures : Le-flux-d-alimentation-des-mesures.html
+  About:
+    Contexte Métier: Contexte-metier.page.html
+    Standards-utilises: Standards.html
+    A propos de ce guide: about.html
+    
 
 
   
