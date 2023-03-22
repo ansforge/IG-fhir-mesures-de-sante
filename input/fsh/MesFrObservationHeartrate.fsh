@@ -22,11 +22,11 @@ Id: mes-fr-observation-heartrate
 * extension[MesMomentOfMeasurement] ^short = "Moment de la mesure"
 * extension[MesMomentOfMeasurement] ^definition = "Moment de la mesure\r\nTexte libre"
 
+* value[x] only Quantity
+* value[x] ^slicing.rules = #closed
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
-
-* bodySite ^short = "Non utilisé"
-* bodySite ^definition = "Non utilisé"
 
 * method from $JDV-J147-MethodHeartrate-MES (required)
 * method ^short = "Méthode de la mesure"
@@ -41,6 +41,3 @@ Id: mes-fr-observation-heartrate
 * referenceRange.appliesTo ^binding.description = $JDV-J148-ReferenceRangeAppliesTo-CISIS
 * referenceRange.appliesTo.coding.system 1..
 * referenceRange.appliesTo.coding.code 1..
-
-* hasMember ^short = "Non utilisé"
-* hasMember ^definition = "Non utilisé"

@@ -32,21 +32,7 @@ Id: mes-observation-waist-circumference
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* bodySite ^short = "Non utilisé"
-* bodySite ^definition = "Non utilisé"
-
-* method ^short = "Non utilisé"
-* method ^definition = "Non utilisé"
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\r\n=>cette référence est obligatoire"
-
-* referenceRange.appliesTo ^short = "Non utilisé"
-* referenceRange.appliesTo ^definition = "Non utilisé"
-
-* hasMember ^short = "Non utilisé"
-* hasMember ^definition = "Non utilisé"
-
-* derivedFrom ^short = "Non utilisé"
-* derivedFrom ^definition = "Non utilisé"

@@ -1,4 +1,3 @@
-
 Alias: $UCUM = http://unitsofmeasure.org
 
 // --- HL7 ---
@@ -15,9 +14,7 @@ Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
 Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
 Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
-Alias: $fr-obervation-interpretation = http://www.interopsante.org/fhir/structuredefinition/observation/fr-core-obervation-interpretation
 Alias: $fr-core-weight-measurement-method = http://interopsante.org/fhir/valueset/fr-core-weight-measurement-method
-
 Alias: $levelOfExertion = http://interopsante.org/fhir/StructureDefinition/FrObservationLevelOfExertion
 
 
