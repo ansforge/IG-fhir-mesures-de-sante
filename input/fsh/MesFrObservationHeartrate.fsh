@@ -11,7 +11,6 @@ Id: mes-fr-observation-heartrate
 * meta.profile contains MesFrObservationHeartrate 1..1 MS
 * meta.profile[MesFrObservationHeartrate] = Canonical(mes-fr-observation-heartrate) 
 
-// levelOfExertion from interopsanté
 * extension[levelOfExertion] ^short = "Cette extension permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^definition = "Cette extension permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 

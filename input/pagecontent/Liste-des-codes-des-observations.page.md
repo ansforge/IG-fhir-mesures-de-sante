@@ -2,7 +2,7 @@
      
 |     Ressource                            |     Code de l'observation                                                                                                                     |     display                                         |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-|     MesFrObservationBodyWeight          |    <http://loinc.org/9463-7>                                                                                                                   |     "Poids corporel"                                |
+|     MesFrObservationBodyWeight          |    <http://loinc.org/29463-7>                                                                                                                   |     "Poids corporel"                                |
 |     MesFrObservationBodyHeight          |     <http://loinc.org/8302-2>                                                                                                                   |     "Taille"                                        |
 |     MesFrObservationHeartrate           |     <http://loinc.org/8867-4>                                                                                                                   |     "Fréquence cardiaque"                           |
 |     MesFrObservationBp                  |     <http://loinc.org/85354-9>                                                                                                                  |     "Pression artérielle"                           |
