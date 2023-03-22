@@ -1,2 +1,0 @@
-sushi --snapshot
-pause 
