@@ -10,7 +10,7 @@ Ce profil se base sur l’interaction “transaction"  de l’API REST de FHIR. 
 
 Le corps de cette requête contient un “Bundle” qui empaquette deux ressources:  
 
-•	Une ressource “Observation” suivant un profil MES défini dans le volet mesures de santé (<https://esante.gouv.fr/volet-mesures-de-sante>) du CI-SIS (partie 5).
+•	Une ressource “Observation” suivant un profil MES défini dans ce guide.
   
 •	Une ressource “Device” suivant le profil “PhdDevice” (<https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html>), représentant le dispositif ayant effectué la mesure. 
     Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”  
@@ -34,7 +34,7 @@ Ci-dessous, la structure d’un “bundle” au format JSON contenant des ressou
                   "meta": {  
                        "source": "<OID de la solution éditeur>",  
                        "profile": [  
-                      "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/MesFrObservationBp"  
+                      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bp"  
                       ]  
                   },  
                 {...}  
@@ -194,7 +194,7 @@ Ci-dessous, un exemple de “Bundle” complet  qui doit être envoyé dans le c
                 "resourceType": "Observation",
                 "meta": {
                     "profile": [
-                        "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/MesFrObservationBodyWeight"
+                        "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"
                     ]
                 },
                 "status": "final",
@@ -236,7 +236,7 @@ Ci-dessous, un exemple de “Bundle” complet  qui doit être envoyé dans le c
                 },
                 "extension": [
                     {
-                        "url": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/MesReasonForMeasurement",
+                        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement",
                         "valueString": "Mon nouveau poids !"
                     }
                 ]
