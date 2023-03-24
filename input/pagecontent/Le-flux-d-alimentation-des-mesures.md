@@ -10,10 +10,8 @@ Ce profil se base sur l’interaction “transaction"  de l’API REST de FHIR. 
 
 Le corps de cette requête contient un “Bundle” qui empaquette deux ressources:  
 
-•	Une ressource “Observation” suivant un profil MES défini dans ce guide.
-  
-•	Une ressource “Device” suivant le profil “PhdDevice” (<https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html>), représentant le dispositif ayant effectué la mesure. 
-    Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”  
+* Une ressource “Observation” suivant un profil MES défini dans ce guide.
+* Une ressource “Device” suivant le profil “PhdDevice” (<https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”  
   
 	
 Ces 2 ressources sont incorporées dans la liste (“array”) de Bundle.entry.   
@@ -77,24 +75,16 @@ A noter que la validation FHIR requiert l’incorporation d’un champ “fullUr
 ###  L’attribut « ifNoneExist »
   
 L’attribut ifNoneExist contenant l’oid du device (« sous oid » de la solution éditeur) et son identifier est obligatoire pour la ressource Device. Cet attribut permet d’exécuter la transaction « conditional create »  pour les Devices :
-- Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné).  
 
-- S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.
+* Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné).  
+* S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.
   
-A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation. 
-  
-  
-###  L’attribut « ifNoneExist »
-
-L’attribut ifNoneExist contenant l’oid du device (« sous oid » de la solution éditeur) et son identifier est obligatoire pour la ressource Device. Cet attribut permet d’exécuter la transaction « conditional create »  pour les Devices :
--	Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné). 
--   S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.
-  
+A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation.   
 
 ###  Référence de la ressource Observation vers la ressource Device (Observation.device)
 
-La ressource Device doit être référencée dans l’attribut Observation.device.reference.  
-Ainsi, il doit contenir le préfixe « Device/ » et le Device.id doit contenir uniquement l’uuid.  
+La ressource Device peut être référencée dans l’attribut Observation.device.reference.  
+Ainsi, il doit contenir le préfixe « Device/ » et le l'identifiant du Device doit contenir uniquement l’uuid.  
   
 
 ### L’attribut « Observation.meta.source »
