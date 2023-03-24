@@ -255,7 +255,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#contenu-de-la-requête-dalimentation" id="markdown-toc-contenu-de-la-requête-dalimentation">Contenu de la requête d’alimentation</a></li>
   <li><a href="#lattribut--ifnoneexist-" id="markdown-toc-lattribut--ifnoneexist-">L’attribut « ifNoneExist »</a></li>
-  <li><a href="#lattribut--ifnoneexist--1" id="markdown-toc-lattribut--ifnoneexist--1">L’attribut « ifNoneExist »</a></li>
   <li><a href="#référence-de-la-ressource-observation-vers-la-ressource-device-observationdevice" id="markdown-toc-référence-de-la-ressource-observation-vers-la-ressource-device-observationdevice">Référence de la ressource Observation vers la ressource Device (Observation.device)</a></li>
   <li><a href="#lattribut--observationmetasource-" id="markdown-toc-lattribut--observationmetasource-">L’attribut « Observation.meta.source »</a></li>
   <li><a href="#lattribut--metaprofile-" id="markdown-toc-lattribut--metaprofile-">L’attribut « meta.profile »</a></li>
@@ -275,10 +274,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Le corps de cette requête contient un “Bundle” qui empaquette deux ressources:</p>
 
-<p>•	Une ressource “Observation” suivant un profil MES défini dans ce guide.</p>
-
-<p>•	Une ressource “Device” suivant le profil “PhdDevice” (<a href="https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html">https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html</a>), représentant le dispositif ayant effectué la mesure. 
-    Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”</p>
+<ul>
+  <li>Une ressource “Observation” suivant un profil MES défini dans ce guide.</li>
+  <li>Une ressource “Device” suivant le profil “PhdDevice” (<a href="https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html">https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html</a>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”</li>
+</ul>
 
 <p>Ces 2 ressources sont incorporées dans la liste (“array”) de Bundle.entry. <br />
 Chaque élément de cette liste est un objet contenant 2 sous-objets : une ressource et la requête http associée. Dans le cas classique de l’écriture d’une observation et du “device” utilisé pour la réaliser, cette liste contient donc 4 objets.</p>
@@ -337,29 +336,18 @@ Chaque élément de cette liste est un objet contenant 2 sous-objets : une resso
 <h3 id="lattribut--ifnoneexist-">L’attribut « ifNoneExist »</h3>
 
 <p>L’attribut ifNoneExist contenant l’oid du device (« sous oid » de la solution éditeur) et son identifier est obligatoire pour la ressource Device. Cet attribut permet d’exécuter la transaction « conditional create »  pour les Devices :</p>
-<ul>
-  <li>
-    <p>Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné).</p>
-  </li>
-  <li>
-    <p>S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.</p>
-  </li>
-</ul>
 
-<p>A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation.</p>
-
-<h3 id="lattribut--ifnoneexist--1">L’attribut « ifNoneExist »</h3>
-
-<p>L’attribut ifNoneExist contenant l’oid du device (« sous oid » de la solution éditeur) et son identifier est obligatoire pour la ressource Device. Cet attribut permet d’exécuter la transaction « conditional create »  pour les Devices :</p>
 <ul>
   <li>Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné).</li>
   <li>S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.</li>
 </ul>
 
+<p>A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation.</p>
+
 <h3 id="référence-de-la-ressource-observation-vers-la-ressource-device-observationdevice">Référence de la ressource Observation vers la ressource Device (Observation.device)</h3>
 
-<p>La ressource Device doit être référencée dans l’attribut Observation.device.reference.<br />
-Ainsi, il doit contenir le préfixe « Device/ » et le Device.id doit contenir uniquement l’uuid.</p>
+<p>La ressource Device peut être référencée dans l’attribut Observation.device.reference.<br />
+Ainsi, il doit contenir le préfixe « Device/ » et le l’identifiant du Device doit contenir uniquement l’uuid.</p>
 
 <h3 id="lattribut--observationmetasource-">L’attribut « Observation.meta.source »</h3>
 
@@ -918,7 +906,7 @@ Pour chacune des ressources à valider, il sera toujours retourné un code HTTP 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 24, 2023 10:24+0000">2023-03-24</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 24, 2023 10:26+0000">2023-03-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
