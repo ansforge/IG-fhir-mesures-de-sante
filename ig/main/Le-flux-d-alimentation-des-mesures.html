@@ -275,7 +275,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Le corps de cette requête contient un “Bundle” qui empaquette deux ressources:</p>
 
-<p>•	Une ressource “Observation” suivant un profil MES défini dans le volet mesures de santé (<a href="https://esante.gouv.fr/volet-mesures-de-sante">https://esante.gouv.fr/volet-mesures-de-sante</a>) du CI-SIS (partie 5).</p>
+<p>•	Une ressource “Observation” suivant un profil MES défini dans ce guide.</p>
 
 <p>•	Une ressource “Device” suivant le profil “PhdDevice” (<a href="https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html">https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html</a>), représentant le dispositif ayant effectué la mesure. 
     Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”</p>
@@ -296,7 +296,7 @@ Chaque élément de cette liste est un objet contenant 2 sous-objets : une resso
                   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
                        </span><span class="nl">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;OID de la solution éditeur&gt;"</span><span class="p">,</span><span class="w">  
                        </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">  
-                      </span><span class="s2">"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/MesFrObservationBp"</span><span class="w">  
+                      </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bp"</span><span class="w">  
                       </span><span class="p">]</span><span class="w">  
                   </span><span class="p">},</span><span class="w">  
                 </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">  
@@ -473,7 +473,7 @@ Cette information est nécessaire, elle permet de valider la conformité des res
                 </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                        </span><span class="s2">"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/MesFrObservationBodyWeight"</span><span class="w">
+                        </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                 </span><span class="p">},</span><span class="w">
                 </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
@@ -515,7 +515,7 @@ Cette information est nécessaire, elle permet de valider la conformité des res
                 </span><span class="p">},</span><span class="w">
                 </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/MesReasonForMeasurement"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mon nouveau poids !"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                 </span><span class="p">]</span><span class="w">
@@ -918,7 +918,7 @@ Pour chacune des ressources à valider, il sera toujours retourné un code HTTP 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 22, 2023 16:14+0000">2023-03-22</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 24, 2023 10:23+0000">2023-03-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
