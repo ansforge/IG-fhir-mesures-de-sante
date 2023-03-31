@@ -61,7 +61,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * dataAbsentReason.coding.code 1..
 
 * method from method-glucose-vs (required)
-* method ^short = "JDV pour la glycémie "
+* method ^short = "JDV pour la glycémie"
 * method.coding.system 1..1
 * method.coding.code 1..1
 
