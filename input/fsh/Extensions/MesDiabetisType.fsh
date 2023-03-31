@@ -1,7 +1,7 @@
 
 
 Extension: MesDiabetisType
-Id: mes-diabetis-type
+Id: mesures-diabetis-type
 * ^context.type = #element
 * ^context.expression = "Observation"
 * . ^short = "Type de diabète"

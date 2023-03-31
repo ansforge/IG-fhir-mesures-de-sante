@@ -1,5 +1,5 @@
 Extension: MesReasonForMeasurement
-Id: mes-reason-for-measurement
+Id: mesures-reason-for-measurement
 Description: """Motif de la mesure.
 Exprimé en texte libre."""
 * ^context.type = #element

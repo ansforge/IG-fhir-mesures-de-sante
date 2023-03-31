@@ -1,7 +1,7 @@
 
 Profile: MesObservationWaistCircumference
 Parent: $vitalsigns
-Id: mes-observation-waist-circumference
+Id: mesures-observation-waist-circumference
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
@@ -10,11 +10,11 @@ Id: mes-observation-waist-circumference
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesObservationWaistCircumference 1..1 MS
-* meta.profile[MesObservationWaistCircumference] = Canonical(mes-observation-waist-circumference) (exactly)
+* meta.profile[MesObservationWaistCircumference] = Canonical(mesures-observation-waist-circumference) (exactly)
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mes-reason-for-measurement named MesReasonForMeasurement 0..1
+    mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. surpoids ou obésité, diabète, maladie du cœur et des vaisseaux, tabac…)"

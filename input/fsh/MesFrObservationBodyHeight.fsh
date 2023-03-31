@@ -1,7 +1,7 @@
 
 Profile: MesFrObservationBodyHeight
 Parent: $FrObservationBodyHeight
-Id: mes-fr-observation-bodyheight
+Id: mesures-fr-observation-bodyheight
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
@@ -10,7 +10,7 @@ Id: mes-fr-observation-bodyheight
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBodyHeight 1..1 MS
-* meta.profile[MesFrObservationBodyHeight] = Canonical(mes-fr-observation-bodyheight) 
+* meta.profile[MesFrObservationBodyHeight] = Canonical(mesures-fr-observation-bodyheight) 
 
 
 // Extension bodyposition définie au niveau du profil d'interopsanté

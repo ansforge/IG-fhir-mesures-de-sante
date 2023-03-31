@@ -1,7 +1,7 @@
 
 Profile: MesObservationStepsByDay
 Parent: $vitalsigns
-Id: mes-observation-steps-by-day
+Id: mesures-observation-steps-by-day
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
@@ -10,11 +10,11 @@ Id: mes-observation-steps-by-day
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesObservationStepsByDay 1..1 MS
-* meta.profile[MesObservationStepsByDay] = Canonical(mes-observation-steps-by-day) 
+* meta.profile[MesObservationStepsByDay] = Canonical(mesures-observation-steps-by-day) 
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mes-reason-for-measurement named MesReasonForMeasurement 0..1
+    mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
 * extension[supportingInfo] ^definition = "Autres ressources pertinentes *du dossier patient*"
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"

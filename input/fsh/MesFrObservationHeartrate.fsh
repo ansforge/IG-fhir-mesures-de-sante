@@ -1,6 +1,6 @@
 Profile: MesFrObservationHeartrate
 Parent: $FrObservationHeartrate
-Id: mes-fr-observation-heartrate
+Id: mesures-fr-observation-heartrate
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
@@ -9,7 +9,7 @@ Id: mes-fr-observation-heartrate
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationHeartrate 1..1 MS
-* meta.profile[MesFrObservationHeartrate] = Canonical(mes-fr-observation-heartrate) 
+* meta.profile[MesFrObservationHeartrate] = Canonical(mesures-fr-observation-heartrate) 
 
 * extension[levelOfExertion] ^short = "Cette extension permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^definition = "Cette extension permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
@@ -17,7 +17,7 @@ Id: mes-fr-observation-heartrate
 * extension[bodyPosition] ^short = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 * extension[bodyPosition] ^definition = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 
-* extension contains mes-moment-of-measurement named MesMomentOfMeasurement 0..1
+* extension contains mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 * extension[MesMomentOfMeasurement] ^short = "Moment de la mesure"
 * extension[MesMomentOfMeasurement] ^definition = "Moment de la mesure\r\nTexte libre"
 

@@ -54,7 +54,7 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
-* extension[mes-reason-for-measurement].valueString = "Calcul IMC"
+* extension[mesures-reason-for-measurement].valueString = "Calcul IMC"
 * method.coding.code = #K50BI02
 * method.coding.system = "urn:oid:1.2.250.1.213.2.65"
 * device = Reference(phd-74E8FFFEFF051C00)
@@ -154,7 +154,7 @@ Usage: #example
 * valueQuantity = 1.5 'mg/dL' "milligramme par décilitre"
 * referenceRange.low = 3.1 'mmol/L' "mmol/l"
 * referenceRange.high = 6.2 'mmol/L' "mmol/l"
-* extension[MesReasonForMeasurement].valueString.value = "Malaise du patient"
+* extension[MesReasonForMeasurement].valueString = "Malaise du patient"
 * extension[MesMomentOfMeasurement].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#16915-1 "Glucose post prandial"
 * extension[MesNumberOfDays].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP#GEN-092 "Autre"
 * extension[MesDiabetisType].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih#E11.x0
