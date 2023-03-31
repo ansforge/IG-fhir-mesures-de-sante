@@ -55,8 +55,7 @@ Usage: #example
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
 * extension[mesures-reason-for-measurement].valueString = "Calcul IMC"
-* method.coding.code = #K50BI02
-* method.coding.system = "urn:oid:1.2.250.1.213.2.65"
+* method.coding = https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED#K50BI02
 * device = Reference(phd-74E8FFFEFF051C00)
 * valueQuantity.value = 95
 * valueQuantity.code = #kg
