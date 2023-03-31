@@ -1,9 +1,9 @@
 ﻿Mesures : Validation Results
 =========================================
 
-err = 1, warn = 92, info = 7
+err = 1, warn = 90, info = 7
 IG Publisher Version: 1.3.4
-Generated Fri Mar 31 12:35:51 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+Generated Fri Mar 31 15:22:27 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 3839 / 27 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mesures : 0 / 0 / 1
@@ -29,7 +29,7 @@ Generated Fri Mar 31 12:35:51 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesur
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-heartrate : 0 / 9 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-moment-of-measurement : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-number-of-days : 0 / 0 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-glucose : 0 / 12 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-glucose : 0 / 10 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-head-circumference : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-pain-severity : 0 / 2 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-steps-by-day : 0 / 2 / 2
@@ -3981,8 +3981,6 @@ WARNING: StructureDefinition/mesures-fr-observation-heartrate: StructureDefiniti
 == fsh-generated/resources/StructureDefinition-mesures-moment-of-measurement.json ==
 == fsh-generated/resources/StructureDefinition-mesures-number-of-days.json ==
 == fsh-generated/resources/StructureDefinition-mesures-observation-glucose.json ==
-WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.snapshot.element[102].short: value should not start or finish with whitespace 'JDV pour la glycémie '
-WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[27].short: value should not start or finish with whitespace 'JDV pour la glycémie '
 WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[7].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS on element Observation.extension.value[x] could not be resolved
 WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[9].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS on element Observation.extension.value[x] could not be resolved
 WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[13].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS on element Observation.code could not be resolved
