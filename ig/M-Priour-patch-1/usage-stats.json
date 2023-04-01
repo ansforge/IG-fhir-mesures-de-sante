@@ -1,0 +1,165 @@
+{
+  "package": "ans.fhir.fr.mesures",
+  "version": "3.0.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-diabetis-type",
+      "title": "MesDiabetisType",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-moment-of-measurement",
+      "title": "MesMomentOfMeasurement",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days",
+      "title": "MesNumberOfDays",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement",
+      "title": "MesReasonForMeasurement",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bmi",
+        "title": "MesFrObservationBmi"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-temperature",
+        "title": "MesFrObservationBodyTemperature"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight",
+        "title": "MesFrObservationBodyWeight"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bodyheight",
+        "title": "MesFrObservationBodyHeight"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bp",
+        "title": "MesFrObservationBp"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-heartrate",
+        "title": "MesFrObservationHeartrate"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-glucose",
+        "title": "MesObservationGlucose"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-head-circumference",
+        "title": "MesObservationHeadCircumference"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-pain-severity",
+        "title": "MesObservationPainSeverity"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-steps-by-day",
+        "title": "MesObservationStepsByDay"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-waist-circumference",
+        "title": "MesObservationWaistCircumference"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrObservationBodyPositionExt": [
+      "Observation"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrObservationHeightBodyPosition": [
+      "Observation"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrObservationLevelOfExertion": [
+      "Observation"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-diabetis-type": [
+      "Observation"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-moment-of-measurement": [
+      "Observation"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-number-of-days": [
+      "Observation"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement": [
+      "Observation"
+    ]
+  }
+}
