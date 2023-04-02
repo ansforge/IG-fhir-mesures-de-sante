@@ -1,3 +1,4 @@
+[![Workflow Init](https://github.com/ansforge/IG-fhir-mesures-de-sante/actions/workflows/fhir-worklows.yml/badge.svg)](https://github.com/ansforge/IG-fhir-mesures-de-sante/actions/workflows/fhir-worklows.yml)
 Cet exemple d'Implementation Guide (IG) décrit l'usage des mesures de santé pour la France. La démarche d'élaboration d'un nouvel IG est expliquée dans le [wiki de ce repo](https://github.com/ansforge/FIG_ans-ig-sample/wiki). 
 
 # Contexte
