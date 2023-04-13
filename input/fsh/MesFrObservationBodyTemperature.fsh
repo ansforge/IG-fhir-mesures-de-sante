@@ -1,7 +1,7 @@
 
 Profile: MesFrObservationBodyTemperature
 Parent: $FrObservationBodyTemperature
-Id: mes-fr-observation-body-temperature
+Id: mesures-fr-observation-body-temperature
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
@@ -10,13 +10,13 @@ Id: mes-fr-observation-body-temperature
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBodyTemperature 1..1 MS
-* meta.profile[MesFrObservationBodyTemperature] = Canonical(mes-fr-observation-body-temperature) 
+* meta.profile[MesFrObservationBodyTemperature] = Canonical(mesures-fr-observation-body-temperature) 
 
 // Extension définie au niveau du profil d'interopsanté
 * extension[levelOfExertion] ^short = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^definition = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 
-* extension contains mes-reason-for-measurement named MesReasonForMeasurement 0..1
+* extension contains mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. infection, insolation, vaccination…)"
 

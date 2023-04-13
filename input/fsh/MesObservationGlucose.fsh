@@ -1,7 +1,7 @@
 
 Profile: MesObservationGlucose
 Parent: $vitalsigns
-Id: mes-observation-glucose
+Id: mesures-observation-glucose
 Description: """Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.
 
 Ce profil permet de gérer 4 types d'indicateurs de glycémie:
@@ -19,14 +19,14 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesObservationGlucose 1..1 MS
-* meta.profile[MesObservationGlucose] = Canonical(mes-observation-glucose) 
+* meta.profile[MesObservationGlucose] = Canonical(mesures-observation-glucose) 
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mes-reason-for-measurement named MesReasonForMeasurement 0..1 and
-    mes-moment-of-measurement named MesMomentOfMeasurement 0..1 and
-    mes-number-of-days named MesNumberOfDays 0..1 and
-    mes-diabetis-type named MesDiabetisType 0..1
+    mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and
+    mesures-moment-of-measurement named MesMomentOfMeasurement 0..1 and
+    mesures-number-of-days named MesNumberOfDays 0..1 and
+    mesures-diabetis-type named MesDiabetisType 0..1
 
 * extension[MesMomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-MES (required)
 * extension[MesMomentOfMeasurement].value[x] ^binding.description = "JDV-J157-MomentGlucose-ENS"
@@ -61,7 +61,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * dataAbsentReason.coding.code 1..
 
 * method from method-glucose-vs (required)
-* method ^short = "JDV pour la glycémie "
+* method ^short = "JDV pour la glycémie"
 * method.coding.system 1..1
 * method.coding.code 1..1
 

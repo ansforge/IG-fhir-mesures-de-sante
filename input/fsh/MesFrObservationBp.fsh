@@ -1,7 +1,7 @@
 
 Profile: MesFrObservationBp
 Parent: $FrObservationBp
-Id: mes-fr-observation-bp
+Id: mesures-fr-observation-bp
 Description: "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé"
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
@@ -11,11 +11,11 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBp 1..1 MS
-* meta.profile[MesFrObservationBp] = Canonical(mes-fr-observation-bp) 
+* meta.profile[MesFrObservationBp] = Canonical(mesures-fr-observation-bp) 
 
 * extension contains
-    mes-reason-for-measurement named MesReasonForMeasurement 0..1 and
-    mes-moment-of-measurement named MesMomentOfMeasurement 0..1
+    mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and
+    mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 
 * category[VSCat] ^sliceName = "VSCat"
 * category[VSCat].coding.display = "Signes vitaux" 

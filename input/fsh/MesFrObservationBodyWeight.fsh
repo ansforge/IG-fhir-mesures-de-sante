@@ -1,7 +1,7 @@
 
 Profile: MesFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
-Id: mes-fr-observation-body-weight
+Id: mesures-fr-observation-body-weight
 Description: "Poids du patient"
 
 * meta 1..1
@@ -12,9 +12,9 @@ Description: "Poids du patient"
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBodyWeight 1..1 MS
-* meta.profile[MesFrObservationBodyWeight] = Canonical(mes-fr-observation-body-weight) 
+* meta.profile[MesFrObservationBodyWeight] = Canonical(mesures-fr-observation-body-weight) 
 
-* extension contains mes-reason-for-measurement named MesReasonForMeasurement 0..1
+* extension contains mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
 
 * value[x] ^slicing.rules = #open

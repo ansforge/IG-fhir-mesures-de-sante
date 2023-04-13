@@ -2,7 +2,7 @@
 
 Profile: MesObservationHeadCircumference
 Parent: $vitalsigns
-Id: mes-observation-head-circumference
+Id: mesures-observation-head-circumference
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
@@ -11,11 +11,11 @@ Id: mes-observation-head-circumference
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesObservationHeadCircumference 1..1 MS
-* meta.profile[MesObservationHeadCircumference] = Canonical(mes-observation-head-circumference) 
+* meta.profile[MesObservationHeadCircumference] = Canonical(mesures-observation-head-circumference) 
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mes-reason-for-measurement named MesReasonForMeasurement 0..1
+    mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
 * extension[supportingInfo] ^isModifier = false
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"

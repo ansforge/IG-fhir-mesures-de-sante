@@ -1,5 +1,5 @@
 Extension: MesNumberOfDays
-Id: mes-number-of-days
+Id: mesures-number-of-days
 Description: "Nombre de jours"
 * ^context.type = #element
 * ^context.expression = "Observation"

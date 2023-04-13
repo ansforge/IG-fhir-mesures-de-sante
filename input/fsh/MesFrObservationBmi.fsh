@@ -1,7 +1,7 @@
 
 Profile: MesFrObservationBmi
 Parent: $FrObservationBmi
-Id: mes-fr-observation-bmi
+Id: mesures-fr-observation-bmi
 
 * meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
@@ -11,7 +11,7 @@ Id: mes-fr-observation-bmi
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains MesFrObservationBmi 1..1 MS
-* meta.profile[MesFrObservationBmi] = Canonical(mes-fr-observation-bmi) 
+* meta.profile[MesFrObservationBmi] = Canonical(mesures-fr-observation-bmi) 
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
