@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2023-04-02T16:06:54+00:00"/>
+  <date value="2023-04-13T15:45:50+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -446,7 +446,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-fr-observation-bmi"/>
+        <reference value="StructureDefinition/mesures-fr-observation-bmi"/>
       </reference>
       <name value="MesFrObservationBmi"/>
       <exampleBoolean value="false"/>
@@ -456,7 +456,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-fr-observation-bodyheight"/>
+        <reference value="StructureDefinition/mesures-fr-observation-bodyheight"/>
       </reference>
       <name value="MesFrObservationBodyHeight"/>
       <exampleBoolean value="false"/>
@@ -466,7 +466,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-fr-observation-body-temperature"/>
+        <reference value="StructureDefinition/mesures-fr-observation-body-temperature"/>
       </reference>
       <name value="MesFrObservationBodyTemperature"/>
       <exampleBoolean value="false"/>
@@ -476,7 +476,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-fr-observation-body-weight"/>
+        <reference value="StructureDefinition/mesures-fr-observation-body-weight"/>
       </reference>
       <name value="MesFrObservationBodyWeight"/>
       <description value="Poids du patient"/>
@@ -487,7 +487,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-fr-observation-bp"/>
+        <reference value="StructureDefinition/mesures-fr-observation-bp"/>
       </reference>
       <name value="MesFrObservationBp"/>
       <description value="Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé"/>
@@ -498,7 +498,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-fr-observation-heartrate"/>
+        <reference value="StructureDefinition/mesures-fr-observation-heartrate"/>
       </reference>
       <name value="MesFrObservationHeartrate"/>
       <exampleBoolean value="false"/>
@@ -508,7 +508,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-observation-glucose"/>
+        <reference value="StructureDefinition/mesures-observation-glucose"/>
       </reference>
       <name value="MesObservationGlucose"/>
       <description value="Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.&#xA;&#xA;Ce profil permet de gérer 4 types d'indicateurs de glycémie:&#xA;- le taux de glucose sanguin, mesuré en mg/dl&#xA;- le taux de glucose interstitiel, mesuré en mg/dl&#xA;- l’hémoglobine glyquée (Hb1Ac) mesurée en %&#xA;- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %&#xA;&#xA;L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .&#xA;&#xA;L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."/>
@@ -519,7 +519,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-observation-head-circumference"/>
+        <reference value="StructureDefinition/mesures-observation-head-circumference"/>
       </reference>
       <name value="MesObservationHeadCircumference"/>
       <exampleBoolean value="false"/>
@@ -529,7 +529,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-observation-pain-severity"/>
+        <reference value="StructureDefinition/mesures-observation-pain-severity"/>
       </reference>
       <name value="MesObservationPainSeverity"/>
       <description value="Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé"/>
@@ -540,7 +540,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-observation-steps-by-day"/>
+        <reference value="StructureDefinition/mesures-observation-steps-by-day"/>
       </reference>
       <name value="MesObservationStepsByDay"/>
       <exampleBoolean value="false"/>
@@ -550,7 +550,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-observation-waist-circumference"/>
+        <reference value="StructureDefinition/mesures-observation-waist-circumference"/>
       </reference>
       <name value="MesObservationWaistCircumference"/>
       <exampleBoolean value="false"/>
@@ -560,7 +560,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-diabetis-type"/>
+        <reference value="StructureDefinition/mesures-diabetis-type"/>
       </reference>
       <name value="MesDiabetisType"/>
       <exampleBoolean value="false"/>
@@ -570,7 +570,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-moment-of-measurement"/>
+        <reference value="StructureDefinition/mesures-moment-of-measurement"/>
       </reference>
       <name value="MesMomentOfMeasurement"/>
       <description value="Moment de la mesure.&#xA;Peut être exprimé par un texte libre ou un code."/>
@@ -581,7 +581,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-number-of-days"/>
+        <reference value="StructureDefinition/mesures-number-of-days"/>
       </reference>
       <name value="MesNumberOfDays"/>
       <description value="Nombre de jours"/>
@@ -592,7 +592,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mes-reason-for-measurement"/>
+        <reference value="StructureDefinition/mesures-reason-for-measurement"/>
       </reference>
       <name value="MesReasonForMeasurement"/>
       <description value="Motif de la mesure.&#xA;Exprimé en texte libre."/>
@@ -627,7 +627,7 @@
         <reference value="Observation/ExampleMesFrObservationBP001"/>
       </reference>
       <name value="ExampleMesFrObservationBP001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bp"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -637,7 +637,7 @@
         <reference value="Observation/ExampleMesFrObservationBmi001"/>
       </reference>
       <name value="ExampleMesFrObservationBmi001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bmi"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -647,7 +647,7 @@
         <reference value="Observation/ExampleMesFrObservationBodyHeight001"/>
       </reference>
       <name value="ExampleMesFrObservationBodyHeight001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bodyheight"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -657,7 +657,7 @@
         <reference value="Observation/ExampleMesFrObservationBodyTemperature001"/>
       </reference>
       <name value="ExampleMesFrObservationBodyTemperature001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-temperature"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -667,7 +667,7 @@
         <reference value="Observation/ExampleMesFrObservationBodyWeight001"/>
       </reference>
       <name value="ExampleMesFrObservationBodyWeight001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -677,7 +677,7 @@
         <reference value="Observation/ExampleMesFrObservationHeartrate001"/>
       </reference>
       <name value="ExampleMesFrObservationHeartrate001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-heartrate"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -687,7 +687,7 @@
         <reference value="Observation/ExampleMesObservationGlucose001"/>
       </reference>
       <name value="ExampleMesObservationGlucose001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-glucose"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -697,7 +697,7 @@
         <reference value="Observation/ExampleMesObservationHeadCircumference001"/>
       </reference>
       <name value="ExampleMesObservationHeadCircumference001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-head-circumference"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -707,7 +707,7 @@
         <reference value="Observation/ExampleMesObservationPainSeverity001"/>
       </reference>
       <name value="ExampleMesObservationPainSeverity001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-pain-severity"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -717,7 +717,7 @@
         <reference value="Observation/ExampleMesObservationStepsByDay001"/>
       </reference>
       <name value="ExampleMesObservationStepsByDay001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-steps-by-day"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -727,7 +727,7 @@
         <reference value="Observation/ExampleObservationWaistCircumference001"/>
       </reference>
       <name value="ExampleObservationWaistCircumference001"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-waist-circumference"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

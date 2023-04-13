@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2023-04-02T16:06:54+00:00",
+  "date" : "2023-04-13T15:45:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -601,7 +601,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-fr-observation-bmi"
+        "reference" : "StructureDefinition/mesures-fr-observation-bmi"
       },
       "name" : "MesFrObservationBmi",
       "exampleBoolean" : false
@@ -612,7 +612,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-fr-observation-bodyheight"
+        "reference" : "StructureDefinition/mesures-fr-observation-bodyheight"
       },
       "name" : "MesFrObservationBodyHeight",
       "exampleBoolean" : false
@@ -623,7 +623,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-fr-observation-body-temperature"
+        "reference" : "StructureDefinition/mesures-fr-observation-body-temperature"
       },
       "name" : "MesFrObservationBodyTemperature",
       "exampleBoolean" : false
@@ -634,7 +634,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-fr-observation-body-weight"
+        "reference" : "StructureDefinition/mesures-fr-observation-body-weight"
       },
       "name" : "MesFrObservationBodyWeight",
       "description" : "Poids du patient",
@@ -646,7 +646,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-fr-observation-bp"
+        "reference" : "StructureDefinition/mesures-fr-observation-bp"
       },
       "name" : "MesFrObservationBp",
       "description" : "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé",
@@ -658,7 +658,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-fr-observation-heartrate"
+        "reference" : "StructureDefinition/mesures-fr-observation-heartrate"
       },
       "name" : "MesFrObservationHeartrate",
       "exampleBoolean" : false
@@ -669,7 +669,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-observation-glucose"
+        "reference" : "StructureDefinition/mesures-observation-glucose"
       },
       "name" : "MesObservationGlucose",
       "description" : "Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
@@ -681,7 +681,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-observation-head-circumference"
+        "reference" : "StructureDefinition/mesures-observation-head-circumference"
       },
       "name" : "MesObservationHeadCircumference",
       "exampleBoolean" : false
@@ -692,7 +692,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-observation-pain-severity"
+        "reference" : "StructureDefinition/mesures-observation-pain-severity"
       },
       "name" : "MesObservationPainSeverity",
       "description" : "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé",
@@ -704,7 +704,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-observation-steps-by-day"
+        "reference" : "StructureDefinition/mesures-observation-steps-by-day"
       },
       "name" : "MesObservationStepsByDay",
       "exampleBoolean" : false
@@ -715,7 +715,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-observation-waist-circumference"
+        "reference" : "StructureDefinition/mesures-observation-waist-circumference"
       },
       "name" : "MesObservationWaistCircumference",
       "exampleBoolean" : false
@@ -726,7 +726,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-diabetis-type"
+        "reference" : "StructureDefinition/mesures-diabetis-type"
       },
       "name" : "MesDiabetisType",
       "exampleBoolean" : false
@@ -737,7 +737,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-moment-of-measurement"
+        "reference" : "StructureDefinition/mesures-moment-of-measurement"
       },
       "name" : "MesMomentOfMeasurement",
       "description" : "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code.",
@@ -749,7 +749,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-number-of-days"
+        "reference" : "StructureDefinition/mesures-number-of-days"
       },
       "name" : "MesNumberOfDays",
       "description" : "Nombre de jours",
@@ -761,7 +761,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mes-reason-for-measurement"
+        "reference" : "StructureDefinition/mesures-reason-for-measurement"
       },
       "name" : "MesReasonForMeasurement",
       "description" : "Motif de la mesure.\nExprimé en texte libre.",
@@ -799,7 +799,7 @@
         "reference" : "Observation/ExampleMesFrObservationBP001"
       },
       "name" : "ExampleMesFrObservationBP001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bp"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"
     },
     {
       "extension" : [{
@@ -810,7 +810,7 @@
         "reference" : "Observation/ExampleMesFrObservationBmi001"
       },
       "name" : "ExampleMesFrObservationBmi001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bmi"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi"
     },
     {
       "extension" : [{
@@ -821,7 +821,7 @@
         "reference" : "Observation/ExampleMesFrObservationBodyHeight001"
       },
       "name" : "ExampleMesFrObservationBodyHeight001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bodyheight"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight"
     },
     {
       "extension" : [{
@@ -832,7 +832,7 @@
         "reference" : "Observation/ExampleMesFrObservationBodyTemperature001"
       },
       "name" : "ExampleMesFrObservationBodyTemperature001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-temperature"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature"
     },
     {
       "extension" : [{
@@ -843,7 +843,7 @@
         "reference" : "Observation/ExampleMesFrObservationBodyWeight001"
       },
       "name" : "ExampleMesFrObservationBodyWeight001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"
     },
     {
       "extension" : [{
@@ -854,7 +854,7 @@
         "reference" : "Observation/ExampleMesFrObservationHeartrate001"
       },
       "name" : "ExampleMesFrObservationHeartrate001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-heartrate"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate"
     },
     {
       "extension" : [{
@@ -865,7 +865,7 @@
         "reference" : "Observation/ExampleMesObservationGlucose001"
       },
       "name" : "ExampleMesObservationGlucose001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-glucose"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
     },
     {
       "extension" : [{
@@ -876,7 +876,7 @@
         "reference" : "Observation/ExampleMesObservationHeadCircumference001"
       },
       "name" : "ExampleMesObservationHeadCircumference001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-head-circumference"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"
     },
     {
       "extension" : [{
@@ -887,7 +887,7 @@
         "reference" : "Observation/ExampleMesObservationPainSeverity001"
       },
       "name" : "ExampleMesObservationPainSeverity001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-pain-severity"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity"
     },
     {
       "extension" : [{
@@ -898,7 +898,7 @@
         "reference" : "Observation/ExampleMesObservationStepsByDay001"
       },
       "name" : "ExampleMesObservationStepsByDay001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-steps-by-day"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day"
     },
     {
       "extension" : [{
@@ -909,7 +909,7 @@
         "reference" : "Observation/ExampleObservationWaistCircumference001"
       },
       "name" : "ExampleObservationWaistCircumference001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-observation-waist-circumference"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"
     },
     {
       "extension" : [{
