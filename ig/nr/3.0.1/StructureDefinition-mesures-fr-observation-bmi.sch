@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:Observation</sch:title>
     <sch:rule context="f:Observation">
-      <sch:assert test="count(f:meta) &gt;= 1">meta: minimum cardinality of 'meta' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

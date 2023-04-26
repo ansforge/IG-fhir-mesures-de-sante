@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "f40a7437-4397-44e1-a4f9-4199cf3b37c5-5",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f40a7437-4397-44e1-a4f9-4199cf3b37c5-5",
+  "id" : "9335714a-8c31-4ea0-86f9-df18c211d6cb-5",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9335714a-8c31-4ea0-86f9-df18c211d6cb-5",
   "name" : "UnionMesFrObservationBmiAndMesFrObservationBmi",
   "title" : "Union of null And null",
   "status" : "active",
-  "date" : "2023-04-26T08:11:32+00:00",
+  "date" : "2023-04-26T08:21:06+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Observation",
@@ -160,7 +160,7 @@
       "path" : "Observation.meta",
       "short" : "Metadata about the resource",
       "definition" : "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Meta"
@@ -348,7 +348,7 @@
       "short" : "Profiles this resource claims to conform to",
       "definition" : "A list of profiles (references to [StructureDefinition] resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url].",
       "comment" : "It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "canonical",
