@@ -1,0 +1,17 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3204acf2-524f-43d9-9848-4ae5d566e3ab-51",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3204acf2-524f-43d9-9848-4ae5d566e3ab-51",
+  "name" : "IntersectionMethodeGlucoseVSAndMethodeGlucoseVS",
+  "title" : "Intersection of Méthode de mesures de glycémie sanguine ou interstitielle And Méthode de mesures de glycémie sanguine ou interstitielle",
+  "status" : "active",
+  "date" : "2023-04-26T14:10:23+00:00",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS"]
+    },
+    {
+      "valueSet" : ["https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS/FHIR/JDV-J156-MethodGlucoseInterstitiel-ENS"]
+    }]
+  }
+}
