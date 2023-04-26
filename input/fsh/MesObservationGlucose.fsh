@@ -13,13 +13,6 @@ Ce profil permet de gérer 4 types d'indicateurs de glycémie:
 L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .
 
 L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."""
-* meta 1..
-* meta.profile 1..*
-* meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "$this"
-* meta.profile ^slicing.rules = #open
-* meta.profile contains MesObservationGlucose 1..1 MS
-* meta.profile[MesObservationGlucose] = Canonical(mesures-observation-glucose) 
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and

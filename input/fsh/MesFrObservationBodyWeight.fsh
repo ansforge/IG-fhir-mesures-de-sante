@@ -3,16 +3,8 @@ Profile: MesFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
 Id: mesures-fr-observation-body-weight
 Description: "Poids du patient"
-
-* meta 1..1
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..*
-* meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "$this"
-* meta.profile ^slicing.rules = #open
-* meta.profile contains MesFrObservationBodyWeight 1..1 MS
-* meta.profile[MesFrObservationBodyWeight] = Canonical(mesures-fr-observation-body-weight) 
 
 * extension contains mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
