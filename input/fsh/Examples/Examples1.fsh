@@ -45,10 +45,10 @@ Usage: #example
 * address.line = "7 rue Coursier"
 * address.city = "Amiens"
 * address.postalCode = "80000"
-* telecom[1].use = #work
-* telecom[1].rank = 1
-* telecom[1].system = #phone
-* telecom[1].value = "01 70 88 88 64"
+* telecom[0].use = #work
+* telecom[0].rank = 1
+* telecom[0].system = #phone
+* telecom[0].value = "01 70 88 88 64"
 
 
 Instance: ExampleMesFrObservationBodyWeight001
