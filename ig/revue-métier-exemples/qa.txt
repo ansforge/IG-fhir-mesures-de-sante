@@ -1,9 +1,9 @@
 ﻿Mesures : Validation Results
 =========================================
 
-err = 1, warn = 90, info = 7
+err = 2, warn = 90, info = 7
 IG Publisher Version: 1.3.4
-Generated Wed Apr 26 14:11:54 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+Generated Wed Apr 26 14:30:09 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 696 / 27 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mesures : 0 / 0 / 1
@@ -19,7 +19,7 @@ Generated Wed Apr 26 14:11:54 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesur
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001 : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleObservationWaistCircumference001 : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Patient-ExamplefrPatient001 : 0 / 0 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Practitioner-ExampleFrPractitionner001 : 0 / 0 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Practitioner-ExampleFrPractitionner001 : 1 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-diabetis-type : 0 / 2 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-bmi : 0 / 2 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-body-temperature : 0 / 5 / 1
@@ -794,6 +794,7 @@ WARNING: Observation/ExampleMesObservationGlucose001: Observation.value.ofType(Q
 == fsh-generated/resources/Observation-ExampleObservationWaistCircumference001.json ==
 == fsh-generated/resources/Patient-ExamplefrPatient001.json ==
 == fsh-generated/resources/Practitioner-ExampleFrPractitionner001.json ==
+ERROR: Practitioner.telecom[0]: The property telecom must be an Array, not a Null (at Practitioner.telecom[0])
 == fsh-generated/resources/StructureDefinition-mesures-diabetis-type.json ==
 WARNING: StructureDefinition/mesures-diabetis-type: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS on element Extension.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/mesures-diabetis-type: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS on element Extension.value[x] could not be resolved

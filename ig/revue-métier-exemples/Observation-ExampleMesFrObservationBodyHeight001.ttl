@@ -23,19 +23,15 @@
   fhir:category ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "vital-signs" ] ;
-       fhir:display [ fhir:v "Vital Signs" ]
-     ] ) ;
-     fhir:text [ fhir:v "Vital Signs" ]
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:8302-2 ;
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "8302-2" ] ;
-       fhir:display [ fhir:v "Body height" ]
-     ] ) ;
-     fhir:text [ fhir:v "Body height" ]
+       fhir:code [ fhir:v "8302-2" ]
+     ] )
   ] ; # 
   fhir:subject [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/ExamplefrPatient001> ;
