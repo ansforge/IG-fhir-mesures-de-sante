@@ -3,7 +3,7 @@ Instance: ExamplefrPatient001
 InstanceOf: Patient
 Usage: #example
 * identifier.use = #official
-* identifier.system = "urn:oid:1.2.250.1.213.1.4.2"
+* identifier.system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier.value = "123456789012244"
 * active = true
 * name[0].use = #official
@@ -36,15 +36,19 @@ Instance: ExampleFrPractitionner001
 InstanceOf: Practitioner
 Usage: #example
 * identifier.system = "http://www.acme.org/practitioners"
-* identifier.value = "23"
+* identifier.value = "801234567897"
 * active = true
-* name.family = "Durant"
-* name.given = "Adam"
+* name.family = "Dupont"
+* name.given = "Jean"
 * name.prefix = "Mr"
 * address.use = #home
 * address.line = "7 rue Coursier"
 * address.city = "Amiens"
 * address.postalCode = "80000"
+* telecom[0].use = #work
+* telecom[0].rank = 1
+* telecom[0].system = #phone
+* telecom[0].value = "01 70 88 88 64"
 
 
 Instance: ExampleMesFrObservationBodyWeight001
@@ -56,8 +60,7 @@ Usage: #example
 * effectiveDateTime = "2022-11-06"
 * extension[mesures-reason-for-measurement].valueString = "Calcul IMC"
 * method.coding = https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED#K50BI02
-* device = Reference(phd-74E8FFFEFF051C00)
-* valueQuantity.value = 95
+* valueQuantity.value = 96
 * valueQuantity.code = #kg
 * valueQuantity.unit = "Kg"
 * valueQuantity.system = $UCUM
@@ -67,10 +70,6 @@ Instance: ExampleMesFrObservationBodyHeight001
 InstanceOf: MesFrObservationBodyHeight
 Usage: #example
 * status = #final
-* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
-* category[VSCat].text = "Vital Signs"
-* code = http://loinc.org#8302-2 "Body height"
-* code.text = "Body height"
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
 * effectiveDateTime = "1999-07-02"
 * valueQuantity.value = 185 
@@ -95,7 +94,7 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2012-09-17"
-* performer  = Reference(ExampleFrPractitionner001) "Jean-Louis Dutraittant"
+* performer  = Reference(ExampleFrPractitionner001) "Jean Dupont"
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
 * bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
@@ -122,10 +121,11 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
-* valueQuantity.value = 1.2
+* valueQuantity.value = 28
 * valueQuantity.code = #kg/m2
 * valueQuantity.unit = "Kg/m2"
 * valueQuantity.system = $UCUM
+* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
 
 
 
@@ -136,9 +136,7 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
-* subject = Reference(ExamplefrPatient001) "Pierre Durand"
-* effectiveDateTime = "1999-07-02"
-* valueQuantity = 44 '/min' "battements/minute"
+* valueQuantity = 70 '/min' "battements/minute"
 
 
 
@@ -150,13 +148,15 @@ Usage: #example
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
 * code = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#4548-4
-* valueQuantity = 1.5 'mg/dL' "milligramme par décilitre"
-* referenceRange.low = 3.1 'mmol/L' "mmol/l"
-* referenceRange.high = 6.2 'mmol/L' "mmol/l"
+* valueQuantity = 92 'mg/dL' "milligramme par décilitre"
+* referenceRange.low = 70 'mg/dL' "milligramme par décilitre"
+* referenceRange.high = 100 'mg/dL' "milligramme par décilitre"
 * extension[MesReasonForMeasurement].valueString = "Malaise du patient"
 * extension[MesMomentOfMeasurement].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#16915-1 "Glucose post prandial"
-* extension[MesNumberOfDays].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP#GEN-092 "Autre"
+* extension[MesNumberOfDays].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP#GEN-275 "7j"
 * extension[MesDiabetisType].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih#E11.x0
+
+
 
 Instance: ExampleMesObservationHeadCircumference001
 InstanceOf: MesObservationHeadCircumference
@@ -176,6 +176,7 @@ Usage: #example
 * effectiveDateTime = "2022-11-06"
 * valueQuantity.value = 5
 * valueQuantity.system = "http://unitsofmeasure.org"
+* extension[MesReasonForMeasurement].valueString = "Malaise du patient"
 
 Instance: ExampleMesObservationStepsByDay001
 InstanceOf: MesObservationStepsByDay
@@ -186,6 +187,7 @@ Usage: #example
 * code = http://loinc.org#41950-7
 * effectiveDateTime = "2022-11-06"
 * valueQuantity = 2500 '1/(24.h)' 
+* extension[MesReasonForMeasurement].valueString = "Essoufflement du patient"
 
 Instance: ExampleObservationWaistCircumference001
 InstanceOf: MesObservationWaistCircumference
@@ -195,3 +197,4 @@ Usage: #example
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
 * valueQuantity.value = 117
+* extension[MesReasonForMeasurement].valueString = "Prise de masse importante récente (confinement)"
