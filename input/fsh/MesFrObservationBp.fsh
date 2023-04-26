@@ -3,15 +3,8 @@ Profile: MesFrObservationBp
 Parent: $FrObservationBp
 Id: mesures-fr-observation-bp
 Description: "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé"
-* meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
-* meta.profile 1..*
-* meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "$this"
-* meta.profile ^slicing.rules = #open
-* meta.profile contains MesFrObservationBp 1..1 MS
-* meta.profile[MesFrObservationBp] = Canonical(mesures-fr-observation-bp) 
 
 * extension contains
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and

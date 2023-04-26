@@ -2,15 +2,8 @@
 Profile: MesFrObservationBodyTemperature
 Parent: $FrObservationBodyTemperature
 Id: mesures-fr-observation-body-temperature
-* meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..*
-* meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "$this"
-* meta.profile ^slicing.rules = #open
-* meta.profile contains MesFrObservationBodyTemperature 1..1 MS
-* meta.profile[MesFrObservationBodyTemperature] = Canonical(mesures-fr-observation-body-temperature) 
 
 // Extension définie au niveau du profil d'interopsanté
 * extension[levelOfExertion] ^short = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"

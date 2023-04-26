@@ -2,16 +2,8 @@
 Profile: MesFrObservationBmi
 Parent: $FrObservationBmi
 Id: mesures-fr-observation-bmi
-
-* meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..*
-* meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "$this"
-* meta.profile ^slicing.rules = #open
-* meta.profile contains MesFrObservationBmi 1..1 MS
-* meta.profile[MesFrObservationBmi] = Canonical(mesures-fr-observation-bmi) 
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

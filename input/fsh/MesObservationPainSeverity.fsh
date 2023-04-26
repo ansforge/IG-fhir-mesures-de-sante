@@ -3,15 +3,8 @@ Profile: MesObservationPainSeverity
 Parent: $vitalsigns
 Id: mesures-observation-pain-severity
 Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé"
-* meta 1..
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 * meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
-* meta.profile 1..*
-* meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "$this"
-* meta.profile ^slicing.rules = #open
-* meta.profile contains MesObservationPainSeverity 1..1 MS
-* meta.profile[MesObservationPainSeverity] = Canonical(mesures-observation-pain-severity) (exactly)
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
