@@ -10,17 +10,23 @@
   fhir:id [ fhir:v "ExampleFrPractitionner001"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"ExampleFrPractitionner001\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;ExampleFrPractitionner001&quot; </p></div><p><b>identifier</b>: id: 23</p><p><b>active</b>: true</p><p><b>name</b>: Adam Durant </p><p><b>address</b>: 7 rue Coursier Amiens 80000 (HOME)</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"ExampleFrPractitionner001\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;ExampleFrPractitionner001&quot; </p></div><p><b>identifier</b>: id: 801234567897</p><p><b>active</b>: true</p><p><b>name</b>: Jean Dupont </p><p><b>telecom</b>: ph: 01 70 88 88 64(WORK)</p><p><b>address</b>: 7 rue Coursier Amiens 80000 (HOME)</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "23" ]
+     fhir:value [ fhir:v "801234567897" ]
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:name ( [
-     fhir:family [ fhir:v "Durant" ] ;
-     fhir:given ( [ fhir:v "Adam" ] ) ;
+     fhir:family [ fhir:v "Dupont" ] ;
+     fhir:given ( [ fhir:v "Jean" ] ) ;
      fhir:prefix ( [ fhir:v "Mr" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "01 70 88 88 64" ] ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
   ] ) ; # 
   fhir:address ( [
      fhir:use [ fhir:v "home" ] ;
