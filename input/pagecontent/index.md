@@ -1,7 +1,3 @@
-Cette spécification est destinée à concertation, elle ne doit pas être utilisée avant publication officielle
-{:.stu-note}
-
-
 Le projet ***Mon espace santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager : 
 
     •	Fréquence cardiaque
