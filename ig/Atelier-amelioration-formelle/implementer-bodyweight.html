@@ -269,6 +269,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#généralités" id="markdown-toc-généralités">Généralités</a></li>
   <li><a href="#les-éléments-clefs-de-limplémentation" id="markdown-toc-les-éléments-clefs-de-limplémentation">Les éléments clefs de l’implémentation</a></li>
   <li><a href="#la-valeur-de-la-mesure" id="markdown-toc-la-valeur-de-la-mesure">La valeur de la mesure</a></li>
+  <li><a href="#le-déclaration-de-conformité" id="markdown-toc-le-déclaration-de-conformité">Le déclaration de conformité</a></li>
+  <li><a href="#les-extensions-autorisées" id="markdown-toc-les-extensions-autorisées">Les extensions autorisées</a></li>
   <li><a href="#exemple-complet" id="markdown-toc-exemple-complet">Exemple complet</a></li>
 </ul>
 
@@ -276,13 +278,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="généralités">Généralités</h3>
 
-<p>La mesure bodyWeight blablabla</p>
+<p>La mesure du poids du patient est recueillie dans une observation “MesFrObservationBodyWeight”.</p>
 
 <h3 id="les-éléments-clefs-de-limplémentation">Les éléments clefs de l’implémentation</h3>
 
+<p>Les éléments clefs de l’implémentation de cette mesure de santé sont les suivants:</p>
+
 <h4 id="le-code-loinc-de-la-mesure">Le code LOINC de la mesure</h4>
 
-<p>Le code loinc est spécifié dans code.coding.code.
+<p>Le code loinc de la mesure est spécifié dans code.coding.code.
 Sa valeur est fixée à “29463-7”.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -306,6 +310,36 @@ Sa valeur est fixée à “29463-7”.</p>
     </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Kg"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
+
+<h3 id="le-déclaration-de-conformité">Le déclaration de conformité</h3>
+
+<p>On peut déclarer la conformité au profil “MesFrObservationBodyWeight” dans le but de permettre au système récepteur d’identifier le type de mesure qu’il manipule.
+Cette déclaration de conformité se fait dans l’élément “meta”:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="les-extensions-autorisées">Les extensions autorisées</h3>
+
+<h4 id="mesreasonformeasurement--motif-de-la-mesure">MesReasonForMeasurement : motif de la mesure</h4>
+
+<p>Le motif de la mesure peut être précisé dans cette extension, sous forme de chaine de caractères:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Calcul IMC"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="supportinginfo--autre-information">supportingInfo : autre information</h4>
+
+<p>L’extension supportingInfo permet d’ajouter une information supplémentaire sous forme d’une référence vers une ressource.</p>
 
 <h3 id="exemple-complet">Exemple complet</h3>
 
@@ -412,7 +446,7 @@ Sa valeur est fixée à “29463-7”.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 12, 2023 08:17+0000">2023-05-12</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 12, 2023 15:07+0000">2023-05-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
