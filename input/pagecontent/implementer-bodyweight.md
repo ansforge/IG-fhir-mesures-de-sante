@@ -1,15 +1,17 @@
 
 ### Généralités
-
-La mesure bodyWeight blablabla
-
+  
+La mesure du poids du patient est recueillie dans une observation "MesFrObservationBodyWeight".
+  
 ### Les éléments clefs de l'implémentation
+  
+Les éléments clefs de l'implémentation de cette mesure de santé sont les suivants:
 
 #### Le code LOINC de la mesure
 
-Le code loinc est spécifié dans code.coding.code.
-Sa valeur est fixée à "29463-7".
-
+Le code loinc de la mesure est spécifié dans code.coding.code.
+Sa valeur est fixée à "29463-7". 
+  
 ~~~~~~~~
 "code": {
     "coding": [
@@ -21,6 +23,7 @@ Sa valeur est fixée à "29463-7".
   }
 ~~~~~~~~
 {: .language-json}
+  
 
 ### La valeur de la mesure
 
@@ -35,10 +38,48 @@ La valeur mesurée est renseignée, en kg, dans l'élément "valueQuantity":
   }
 ~~~~~~~~
 {: .language-json}
+  
+  
+### Le déclaration de conformité
 
+On peut déclarer la conformité au profil "MesFrObservationBodyWeight" dans le but de permettre au système récepteur d'identifier le type de mesure qu'il manipule.
+Cette déclaration de conformité se fait dans l'élément "meta":
 
+~~~~~~~~
+"meta": {
+    "profile": [
+      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"
+    ]
+  }
+~~~~~~~~
+{: .language-json}
+  
+### Les extensions autorisées
+  
+#### MesReasonForMeasurement : motif de la mesure
+
+Le motif de la mesure peut être précisé dans cette extension, sous forme de chaine de caractères:
+
+~~~~~~~~
+"extension": [
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
+      "valueString": "Calcul IMC"
+    }
+  ]
+~~~~~~~~
+{: .language-json}
+  
+
+#### supportingInfo : autre information
+
+L'extension supportingInfo permet d'ajouter une information supplémentaire sous forme d'une référence vers une ressource.
+
+  
 ### Exemple complet
-
+  
+  
+  
 ~~~~~~~~
 {
   "resourceType": "Observation",
