@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2023-05-12T15:07:01+00:00"/>
+  <date value="2023-05-23T14:13:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -29,6 +29,14 @@
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
     <version value="5.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="1.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_fr_core">
     <uri value="https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download"/>
@@ -849,10 +857,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="implementer-bodyweight.html"/>
+          <valueUrl value="implementer-mesure.html"/>
         </extension>
-        <nameUrl value="implementer-bodyweight.html"/>
-        <title value="Implémenter la constante bodyweight"/>
+        <nameUrl value="implementer-mesure.html"/>
+        <title value="Implémentation des constantes"/>
         <generation value="markdown"/>
       </page>
       <page>

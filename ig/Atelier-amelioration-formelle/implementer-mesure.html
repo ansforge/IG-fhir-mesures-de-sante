@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.MESURES\Implémenter la constante bodyweight - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.MESURES\Implémentation des constantes - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -183,7 +183,7 @@
         <a href="Le-flux-d-alimentation-des-mesures.html">Flux d&apos;alimentation des mesures</a>
       </li>
       <li>
-        <a href="implementer-bodyweight.html">La constante bodyweight</a>
+        <a href="implementer-mesure.html">Implémentation des constantes</a>
       </li>
     </ul>
   </li>
@@ -218,7 +218,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Implémenter la constante bodyweight</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Implémentation des constantes</b></li>
 
           <span style="float:right;">
 
@@ -249,7 +249,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
-  <h2>Implémenter la constante bodyweight</h2>
+  <h2>Implémentation des constantes</h2>
   
 
 
@@ -267,27 +267,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#généralités" id="markdown-toc-généralités">Généralités</a></li>
-  <li><a href="#les-éléments-clefs-de-limplémentation" id="markdown-toc-les-éléments-clefs-de-limplémentation">Les éléments clefs de l’implémentation</a></li>
-  <li><a href="#la-valeur-de-la-mesure" id="markdown-toc-la-valeur-de-la-mesure">La valeur de la mesure</a></li>
-  <li><a href="#le-déclaration-de-conformité" id="markdown-toc-le-déclaration-de-conformité">Le déclaration de conformité</a></li>
-  <li><a href="#les-extensions-autorisées" id="markdown-toc-les-extensions-autorisées">Les extensions autorisées</a></li>
-  <li><a href="#exemple-complet" id="markdown-toc-exemple-complet">Exemple complet</a></li>
+  <li><a href="#le-déclaration-de-conformité-0" id="markdown-toc-le-déclaration-de-conformité-0">Le déclaration de conformité (0..*)</a></li>
+  <li><a href="#spécifier-le-sujet-de-lobservation-11" id="markdown-toc-spécifier-le-sujet-de-lobservation-11">Spécifier le sujet de l’observation (1..1)</a></li>
+  <li><a href="#spécifier-le-statut-de-lobservation-11" id="markdown-toc-spécifier-le-statut-de-lobservation-11">Spécifier le statut de l’observation (1..1)</a></li>
+  <li><a href="#renseigner-la-valeur-de-la-mesure" id="markdown-toc-renseigner-la-valeur-de-la-mesure">Renseigner la valeur de la mesure</a></li>
 </ul>
 
 </div>
-
 <h3 id="généralités">Généralités</h3>
 
-<p>La mesure du poids du patient est recueillie dans une observation “MesFrObservationBodyWeight”.</p>
+<p>Cette page présente l’implémentation des éléments communs à l’ensemble des mesures du volet.
+<br /><br /></p>
 
-<h3 id="les-éléments-clefs-de-limplémentation">Les éléments clefs de l’implémentation</h3>
+<h3 id="le-déclaration-de-conformité-0">Le déclaration de conformité (0..*)</h3>
 
-<p>Les éléments clefs de l’implémentation de cette mesure de santé sont les suivants:</p>
+<p>Il est possible de déclarer la conformité au profil de la mesure dans le but de permettre au système récepteur d’identifier le type de mesure qu’il manipule.
+Cette déclaration de conformité se fait alors dans l’élément “meta.profile”, en rensignant l’URL canonique de la ressource de conformité:</p>
 
-<h4 id="le-code-loinc-de-la-mesure">Le code LOINC de la mesure</h4>
+<p>Exemple pour MesFrObservationBodyHeight:</p>
 
-<p>Le code loinc de la mesure est spécifié dans code.coding.code.
-Sa valeur est fixée à “29463-7”.</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><br /><br /></p>
+
+<h4 id="le-code-loinc-de-la-mesure-11">Le code LOINC de la mesure (1..1)</h4>
+<p><br /><br />
+Le code loinc de la mesure est spécifié dans “code.coding.code”.</p>
+
+<p>La liste des codes LOINC correspondant à chaque profil de constante est disponible ici:</p>
+
+<p>&lt;./Liste-des-codes-des-observations.page.html&gt;</p>
+
+<p>Exemple d’implémentation du code LOINC pour la constante “Poids”:</p>
+
+<p>La valeur du code est fixée à “29463-7”.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -298,106 +316,110 @@ Sa valeur est fixée à “29463-7”.</p>
     </span><span class="p">]</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
+<p><br /><br /></p>
 
-<h3 id="la-valeur-de-la-mesure">La valeur de la mesure</h3>
+<h3 id="spécifier-le-sujet-de-lobservation-11">Spécifier le sujet de l’observation (1..1)</h3>
+<p><br /><br />
+Il est obligatoire de spécifier le sujet de la mesure à travers l’élément “subject”, en incluant une référence vers un ressource patient.</p>
 
-<p>La valeur mesurée est renseignée, en kg, dans l’élément “valueQuantity”:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/ExamplefrPatient001"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pierre Durand"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p><br /><br /></p>
+
+<h3 id="spécifier-le-statut-de-lobservation-11">Spécifier le statut de l’observation (1..1)</h3>
+<p><br /><br />
+Le statut de l’observation doit obligatoirement être renseigné avec l’une des valeurs du JDV suivant:
+<a href="http://hl7.org/fhir/R4/valueset-observation-status.html">http://hl7.org/fhir/R4/valueset-observation-status.html</a></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+<p><br /><br /></p>
+
+<h3 id="renseigner-la-valeur-de-la-mesure">Renseigner la valeur de la mesure</h3>
+<p><br /><br />
+Dans l’ensemble des constantes, à l’exception de la pression arterielle, la valeur mesurée est renseignée dans l’élément “valueQuantity”.</p>
+
+<h4 id="cas-général">Cas général</h4>
+<p><br /><br /></p>
+
+<h5 id="exemple-dimplémentation-dune-mesure-de-taille-de-184-cm">Exemple d’implémentation d’une mesure de taille de 184 cm.</h5>
+<p>L’unité “cm” est imposée dans le profil “MesFrObservationBodyHeight”.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kg"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">96</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Kg"</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cm"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">184</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cm"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
+<p><br /><br /></p>
 
-<h3 id="le-déclaration-de-conformité">Le déclaration de conformité</h3>
+<h5 id="exemple-dimplémentation-dune-mesure-de-glycémie">Exemple d’implémentation d’une mesure de glycémie:</h5>
 
-<p>On peut déclarer la conformité au profil “MesFrObservationBodyWeight” dans le but de permettre au système récepteur d’identifier le type de mesure qu’il manipule.
-Cette déclaration de conformité se fait dans l’élément “meta”:</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">92</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mg/dL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"milligramme par décilitre"</span><span class="w">
+  </span><span class="p">}</span><span class="err">,</span><span class="w">
 </span></code></pre></div></div>
+<p><br /><br /></p>
 
-<h3 id="les-extensions-autorisées">Les extensions autorisées</h3>
+<h4 id="cas-de-la-pression-artérielle">Cas de la pression artérielle</h4>
 
-<h4 id="mesreasonformeasurement--motif-de-la-mesure">MesReasonForMeasurement : motif de la mesure</h4>
+<p>Dans le profil “MesFrObservationBp” (pression artérielle), les différentes valeurs (diastolique et systolique) sont renseignées dans l’élément “Component”.</p>
 
-<p>Le motif de la mesure peut être précisé dans cette extension, sous forme de chaine de caractères:</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"component"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Calcul IMC"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="supportinginfo--autre-information">supportingInfo : autre information</h4>
-
-<p>L’extension supportingInfo permet d’ajouter une information supplémentaire sous forme d’une référence vers une ressource.</p>
-
-<h3 id="exemple-complet">Exemple complet</h3>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ExampleMesFrObservationBodyWeight001"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8480-6"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tension artérielle systolique"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">107</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm[Hg]"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm[Hg]"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"interpretation"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/observation-category"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vital-signs"</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"N"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Normal"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Normal"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"29463-7"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Calcul IMC"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kg"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">96</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Kg"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/ExamplefrPatient001"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pierre Durand"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-11-06"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"K50BI02"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8462-4"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tension artérielle diastolique"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm[Hg]"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm[Hg]"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
 </span></code></pre></div></div>
+<p><br /><br /></p>
 
 
 
@@ -446,7 +468,7 @@ Cette déclaration de conformité se fait dans l’élément “meta”:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 12, 2023 15:07+0000">2023-05-12</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 23, 2023 14:13+0000">2023-05-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
