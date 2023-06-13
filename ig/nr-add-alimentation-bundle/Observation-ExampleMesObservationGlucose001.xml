@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleMesObservationGlucose001"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ExampleMesObservationGlucose001"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ExampleMesObservationGlucose001&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mesures-observation-glucose.html">MesObservationGlucose</a></p></div><p><b>MesReasonForMeasurement</b>: Malaise du patient</p><p><b>MesMomentOfMeasurement</b>: Glucose post prandial <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (TRE-A04-Loinc#16915-1)</span></p><p><b>MesNumberOfDays</b>: 7j <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (TRE-R308-TAASIP#GEN-275)</span></p><p><b>MesDiabetisType</b>: E11.x0 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (TRE-R311-CIM10Atih#E11.x0)</span></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 4548-4 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (TRE-A04-Loinc#4548-4)</span></p><p><b>subject</b>: <a href="Patient-ExamplefrPatient001.html">Patient/ExamplefrPatient001: Pierre Durand</a> &quot; DURAND&quot;</p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 92 milligramme par décilitre<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/dL = 'mg/dL')</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>70 milligramme par décilitre<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/dL = 'mg/dL')</span></td><td>100 milligramme par décilitre<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/dL = 'mg/dL')</span></td></tr></table></div>
+  </text>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement">
+    <valueString value="Malaise du patient"/>
+  </extension>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc"/>
+        <code value="16915-1"/>
+        <display value="Glucose post prandial"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP"/>
+        <code value="GEN-275"/>
+        <display value="7j"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diabetis-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih"/>
+        <code value="E11.x0"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc"/>
+      <code value="4548-4"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplefrPatient001"/>
+    <type value="Patient"/>
+    <display value="Pierre Durand"/>
+  </subject>
+  <effectiveDateTime value="2022-11-06"/>
+  <valueQuantity>
+    <value value="92"/>
+    <unit value="milligramme par décilitre"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mg/dL"/>
+  </valueQuantity>
+  <referenceRange>
+    <low>
+      <value value="70"/>
+      <unit value="milligramme par décilitre"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg/dL"/>
+    </low>
+    <high>
+      <value value="100"/>
+      <unit value="milligramme par décilitre"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg/dL"/>
+    </high>
+  </referenceRange>
+</Observation>
