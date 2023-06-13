@@ -1,5 +1,3 @@
-
-
 Profile: MesObservationHeadCircumference
 Parent: $vitalsigns
 Id: mesures-observation-head-circumference
@@ -34,11 +32,9 @@ Id: mesures-observation-head-circumference
 * value[x] ^slicing.discriminator[0].type = #type
 * value[x] ^slicing.discriminator[=].path = "$this"
 * value[x] ^slicing.rules = #open
-* valueQuantity only Quantity
-* valueQuantity ^sliceName = "valueQuantity"
-* valueQuantity = $UCUM#cm 
+* value[x] only Quantity
 * valueQuantity.unit = "cm"
 * valueQuantity.value 1..
 * valueQuantity.unit 1..
-* valueQuantity.system 1..
+* valueQuantity.system = $UCUM
 * valueQuantity.code 1..
