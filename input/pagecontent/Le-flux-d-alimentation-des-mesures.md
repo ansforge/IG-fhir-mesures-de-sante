@@ -8,7 +8,7 @@ Ce profil se base sur l’interaction “transaction"  de l’API REST de FHIR. 
   
 ###  Contenu de la requête d’alimentation  
 
-Le corps de cette requête contient un “Bundle” qui empaquette deux ressources:  
+Le corps de cette requête contient un “Bundle” conforme au profil [MesBundleFluxAlimentation](StructureDefinition-mesures-bundle-flux-alimentation.html) qui empaquette deux ressources:  
 
 * Une ressource “Observation” suivant un profil MES défini dans ce guide.
 * Une ressource “Device” suivant le profil “PhdDevice” (<https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”  

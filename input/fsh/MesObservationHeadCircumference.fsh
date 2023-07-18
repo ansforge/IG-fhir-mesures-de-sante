@@ -29,9 +29,8 @@ Id: mesures-observation-head-circumference
 * performer only Reference(CareTeam or RelatedPerson or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)
 
 * value[x] only Quantity
-* valueQuantity = $UCUM#cm 
 * valueQuantity.unit = "cm"
 * valueQuantity.value 1..
 * valueQuantity.unit 1..
-* valueQuantity.system 1..
+* valueQuantity.system = $UCUM
 * valueQuantity.code 1..
