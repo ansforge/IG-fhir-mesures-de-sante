@@ -1,4 +1,3 @@
-
 Profile: MesObservationWaistCircumference
 Parent: $vitalsigns
 Id: mesures-observation-waist-circumference

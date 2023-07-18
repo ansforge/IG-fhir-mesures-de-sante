@@ -16,3 +16,5 @@ Id: mesures-fr-observation-bmi
 * referenceRange.appliesTo ^binding.description = "JDV_J148-ReferenceRangeAppliesTo-CISIS"
 * referenceRange.appliesTo.coding.system 1..
 * referenceRange.appliesTo.coding.code 1..
+
+* interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)

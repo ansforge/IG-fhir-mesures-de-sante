@@ -16,8 +16,6 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * effective[x] only dateTime
 
 
-* interpretation ^short = "Non renseigné"
-* interpretation ^definition = "Non renseigné"
 
 * bodySite from $JDV-J149-BodySiteBP-MES (required)
 * bodySite ^binding.description = $JDV-J149-BodySiteBP-MES
@@ -38,3 +36,5 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * referenceRange.appliesTo.coding.system 1..
 * referenceRange.appliesTo.coding.code 1..
 * component.referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+
+* interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)
