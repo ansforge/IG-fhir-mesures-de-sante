@@ -22,11 +22,6 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
     mesures-diabetis-type named MesDiabetisType 0..1
 
 * extension[MesMomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-MES (required)
-* extension[MesMomentOfMeasurement].value[x] ^binding.description = "JDV-J157-MomentGlucose-ENS"
-
-* extension[MesNumberOfDays].value[x] 1..
-* extension[MesNumberOfDays].value[x] from $JDV-J164-GlucoseNumberOfDays-MES (required)
-* extension[MesNumberOfDays].value[x] ^binding.description = "JDV_J164-GlucoseNumberOfDays-ENS"
 
 * category[VSCat].coding.display = "Signes vitaux" 
 
