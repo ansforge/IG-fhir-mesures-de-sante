@@ -22,7 +22,7 @@ Les spécifications techniques de ce guide s’appuient:
   
 * sur les profils français de la ressource Observation (Profls Interop'Santé ou ANS)
   
-* sur le profil PHD de la ressource Device défini par le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif ayant effectué la mesure.  
+* sur le profil PHD de la ressource Device profilé dans l'Implementation Guide PHD et dont l'usage est défini dans le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif ayant effectué la mesure.  
   
 Pour les opérations sur les ressources, l’API REST définie par le standard HL7 FHIR est mise en œuvre notamment la logique de la transaction PCH-01 du profil IHE « Personal Health Device Observation Upload (POU) » pour l’alimentation.  
    

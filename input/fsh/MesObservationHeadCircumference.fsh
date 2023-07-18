@@ -29,10 +29,6 @@ Id: mesures-observation-head-circumference
 * performer only Reference(CareTeam or RelatedPerson or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)
 
 * value[x] only Quantity
-* value[x] ^slicing.discriminator[0].type = #type
-* value[x] ^slicing.discriminator[=].path = "$this"
-* value[x] ^slicing.rules = #open
-* value[x] only Quantity
 * valueQuantity.unit = "cm"
 * valueQuantity.value 1..
 * valueQuantity.unit 1..
