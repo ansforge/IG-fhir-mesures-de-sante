@@ -6,3 +6,4 @@ Description: "Nombre de jours"
 * . ^short = "Nombre de jours"
 * . ^definition = "Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie."
 * value[x] only CodeableConcept
+* valueCodeableConcept from $JDV-J164-GlucoseNumberOfDays-MES (required)
