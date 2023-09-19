@@ -34,3 +34,6 @@ Id: mesures-fr-observation-body-temperature
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\r\n=>cette référence est obligatoire\r\nhttp://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
+
+
+* interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)

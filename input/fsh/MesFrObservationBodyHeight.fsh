@@ -25,3 +25,6 @@ Id: mesures-fr-observation-bodyheight
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire"
+
+
+* interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)

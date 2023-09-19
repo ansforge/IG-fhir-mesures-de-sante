@@ -1,4 +1,3 @@
-
 Profile: MesObservationGlucose
 Parent: $vitalsigns
 Id: mesures-observation-glucose

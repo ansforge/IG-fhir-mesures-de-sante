@@ -1,4 +1,3 @@
-
 Profile: MesObservationStepsByDay
 Parent: $vitalsigns
 Id: mesures-observation-steps-by-day

@@ -1,4 +1,3 @@
-
 Profile: MesObservationPainSeverity
 Parent: $vitalsigns
 Id: mesures-observation-pain-severity
