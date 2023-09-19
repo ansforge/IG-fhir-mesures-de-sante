@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "MethodeGlucoseVS"] ; # 
   fhir:title [ fhir:v "Méthode de mesures de glycémie sanguine ou interstitielle"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-09-19T16:09:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-19T16:18:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -29,15 +29,9 @@
   fhir:description [ fhir:v "Méthode de mesures de glycémie sanguine ou interstitielle."] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:valueSet ( [
-         fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS"^^xsd:anyURI ;
-         fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS>
-       ] )
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP"^^xsd:anyURI ]
      ] [
-       fhir:valueSet ( [
-         fhir:v "https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS/FHIR/JDV-J156-MethodGlucoseInterstitiel-ENS"^^xsd:anyURI ;
-         fhir:link <https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS/FHIR/JDV-J156-MethodGlucoseInterstitiel-ENS>
-       ] )
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT"^^xsd:anyURI ]
      ] )
   ] . # 
 

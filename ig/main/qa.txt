@@ -1,9 +1,9 @@
 ﻿Mesures : Validation Results
 =========================================
 
-err = 6, warn = 96, info = 8
+err = 5, warn = 95, info = 8
 IG Publisher Version: 1.4.6
-Generated Tue Sep 19 16:12:21 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+Generated Tue Sep 19 16:21:46 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 712 / 27 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mesures : 0 / 0 / 1
@@ -36,7 +36,7 @@ Generated Tue Sep 19 16:12:21 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesur
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-steps-by-day : 0 / 2 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-waist-circumference : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-reason-for-measurement : 0 / 0 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ValueSet-method-glucose-vs : 1 / 3 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ValueSet-method-glucose-vs : 0 / 2 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
@@ -889,7 +889,5 @@ WARNING: StructureDefinition/mesures-observation-steps-by-day: StructureDefiniti
 == fsh-generated/resources/StructureDefinition-mesures-observation-waist-circumference.json ==
 == fsh-generated/resources/StructureDefinition-mesures-reason-for-measurement.json ==
 == fsh-generated/resources/ValueSet-method-glucose-vs.json ==
-WARNING: ValueSet/method-glucose-vs: ValueSet.compose.include[0].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS could not be found so cannot be checked
-WARNING: ValueSet/method-glucose-vs: ValueSet.compose.include[1].valueSet[0]: The value set import https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS/FHIR/JDV-J156-MethodGlucoseInterstitiel-ENS could not be found so cannot be checked
 WARNING: ValueSet/method-glucose-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'method-glucose-vs'): Error from server: Unable to find value set "https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS"
+WARNING: ValueSet.where(id = 'method-glucose-vs'): Error from server: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP

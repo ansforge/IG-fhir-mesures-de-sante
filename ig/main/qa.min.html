@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 712, errors = 6, warn = 96, info = 8-->
+<!-- broken links = 712, errors = 5, warn = 95, info = 8-->
 <head>
   <title>Mesures : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Mesures</h1>
- <p>Generated Tue Sep 19 16:12:21 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Tue Sep 19 16:21:45 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.6</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.mesures, Canonical = https://interop.esante.gouv.fr/ig/fhir/mesures</td></tr>
@@ -129,7 +129,7 @@ hl7.terminology.r4#3.1.0:     <a href="http://terminology.hl7.org/3.1.0/CodeSyst
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Previous Version Comparison:</td><td> </td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 6, warn = 96, info = 8, broken links = 712</td></tr>
+ <tr><td>Summary:</td><td> errors = 5, warn = 95, info = 8, broken links = 712</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -207,8 +207,8 @@ hl7.terminology.r4#3.1.0:     <a href="http://terminology.hl7.org/3.1.0/CodeSyst
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-mesures-de-sante_IG-fhir-mesures-de-sante_fsh-generated_resources_StructureDefinition-mesures-observation-steps-by-day"><b>/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-steps-by-day</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_IG-fhir-mesures-de-sante_IG-fhir-mesures-de-sante_fsh-generated_resources_ValueSet-method-glucose-vs"><b>/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ValueSet-method-glucose-vs</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-mesures-de-sante_IG-fhir-mesures-de-sante_fsh-generated_resources_ValueSet-method-glucose-vs"><b>/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ValueSet-method-glucose-vs</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -2908,16 +2908,10 @@ hl7.terminology.r4#3.1.0:     <a href="http://terminology.hl7.org/3.1.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose.include[0].valueSet[0]</b></td><td><b>warning</b></td><td title=""><b>The value set import https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS could not be found so cannot be checked</b></td>
+     <td><b>ValueSet (l1/c758)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose.include[1].valueSet[0]</b></td><td><b>warning</b></td><td title=""><b>The value set import https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS/FHIR/JDV-J156-MethodGlucoseInterstitiel-ENS could not be found so cannot be checked</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c858)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet&#8203;.where(id = 'method-glucose-vs')</b></td><td><b>error</b></td><td><b>Error from server: Unable to find value set &quot;https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS&quot;</b> (<a href="qa-tx.html#l66">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'method-glucose-vs')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP</b> (<a href="qa-tx.html#l67">see Tx log</a>)</td>
    </tr>
 </table>
 <a name="suppressed"> </a>
