@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2023-09-19T16:18:04+00:00",
+  "date" : "2023-09-20T15:08:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -268,6 +268,17 @@
       "extension" : [{
         "url" : "code",
         "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
       },
       {
         "url" : "value",
@@ -547,6 +558,17 @@
       "extension" : [{
         "url" : "code",
         "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
       },
       {
         "url" : "value",
@@ -979,19 +1001,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Contexte-metier.page.html"
+          "valueUrl" : "Le-flux-d-alimentation-des-mesures.html"
         }],
-        "nameUrl" : "Contexte-metier.page.html",
-        "title" : "Contexte métier",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Standards.html"
-        }],
-        "nameUrl" : "Standards.html",
-        "title" : "Standards utilisés",
+        "nameUrl" : "Le-flux-d-alimentation-des-mesures.html",
+        "title" : "Le flux d'alimentation des mesures de santé",
         "generation" : "markdown"
       },
       {
@@ -1055,24 +1068,6 @@
         }],
         "nameUrl" : "Liste-des-codes-des-observations.page.html",
         "title" : "Liste des codes des observations",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Le-flux-d-alimentation-des-mesures.html"
-        }],
-        "nameUrl" : "Le-flux-d-alimentation-des-mesures.html",
-        "title" : "Le flux d'alimentation des mesures de santé",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "about.html"
-        }],
-        "nameUrl" : "about.html",
-        "title" : "A propos de ce guide",
         "generation" : "markdown"
       }]
     },

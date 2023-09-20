@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-09-19T16:18:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-20T15:08:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -254,6 +254,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -474,6 +483,15 @@
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true" ]
@@ -928,18 +946,10 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Contexte-metier.page.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "Le-flux-d-alimentation-des-mesures.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "Contexte-metier.page.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Contexte métier" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Standards.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "Standards.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Standards utilisés" ] ;
+         fhir:name [ fhir:v "Le-flux-d-alimentation-des-mesures.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Le flux d'alimentation des mesures de santé" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -996,22 +1006,6 @@
          ] ) ;
          fhir:name [ fhir:v "Liste-des-codes-des-observations.page.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Liste des codes des observations" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Le-flux-d-alimentation-des-mesures.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "Le-flux-d-alimentation-des-mesures.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Le flux d'alimentation des mesures de santé" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "about.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "about.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "A propos de ce guide" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

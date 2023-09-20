@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2023-09-19T16:18:04+00:00"/>
+  <date value="2023-09-20T15:08:45+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -204,6 +204,14 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -407,6 +415,14 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -788,18 +804,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Contexte-metier.page.html"/>
+          <valueUrl value="Le-flux-d-alimentation-des-mesures.html"/>
         </extension>
-        <nameUrl value="Contexte-metier.page.html"/>
-        <title value="Contexte métier"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Standards.html"/>
-        </extension>
-        <nameUrl value="Standards.html"/>
-        <title value="Standards utilisés"/>
+        <nameUrl value="Le-flux-d-alimentation-des-mesures.html"/>
+        <title value="Le flux d'alimentation des mesures de santé"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -856,22 +864,6 @@
         </extension>
         <nameUrl value="Liste-des-codes-des-observations.page.html"/>
         <title value="Liste des codes des observations"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Le-flux-d-alimentation-des-mesures.html"/>
-        </extension>
-        <nameUrl value="Le-flux-d-alimentation-des-mesures.html"/>
-        <title value="Le flux d'alimentation des mesures de santé"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="about.html"/>
-        </extension>
-        <nameUrl value="about.html"/>
-        <title value="A propos de ce guide"/>
         <generation value="markdown"/>
       </page>
     </page>

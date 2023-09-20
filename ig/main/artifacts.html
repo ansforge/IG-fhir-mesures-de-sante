@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.MESURES\Artifacts Summary - FHIR v4.0.1</title>
+    <title>Artifacts Summary - Guide d'implémentation FHIR - Mesures de santé v3.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,7 +20,6 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
-    <!-- CSS only -->
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -32,27 +31,27 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13"}
-    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
-  <div id="ans-nav">
-    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-  </div>
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+  <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FHIR - Mesures de santé</span>
@@ -92,6 +91,9 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li>
+        <a href="Le-flux-d-alimentation-des-mesures.html">Flux d&apos;alimentation des mesures</a>
+      </li>
       <li>
         <a href="Les-profils-utilises-pour-les-mesures-de-sante.page.html">Les profils utilisés pour les mesures de santé</a>
       </li>
@@ -158,6 +160,9 @@
       </li>
     </ul>
   </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminologies et jeux de valeurs
       <b class="caret"></b>
@@ -175,26 +180,7 @@
     </ul>
   </li>
   <li>
-    <a href="artifacts.html">Ressources de conformité</a>
-  </li>
-  <li>
-    <a href="Le-flux-d-alimentation-des-mesures.html">Flux d&apos;alimentation des mesures</a>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="Contexte-metier.page.html">Contexte Métier</a>
-      </li>
-      <li>
-        <a href="Standards.html">Standards-utilises</a>
-      </li>
-      <li>
-        <a href="about.html">A propos de ce guide</a>
-      </li>
-    </ul>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -212,7 +198,7 @@
 
           <span style="float:right;">
 
-            <a href="about.html">&lt;prev</a> | 
+            <a href="Liste-des-codes-des-observations.page.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -270,7 +256,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="1"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
-    <p>Ces structures définissent les contraintes sur les ressources FHIR par les systèmes conformes à cet Implementation Guide (IG).</p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -402,7 +388,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="2"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
-    <p>Ces structures définissent les contraintes sur les extensions FHIR par les systèmes conformes à cet Implementation Guide (IG).</p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -452,7 +438,7 @@ Exprimé en texte libre.</p>
    <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
-    <p>Les ressources ValueSet définissent les ensembles de codes utilisés par les systèmes conformes à cet Implementation Guide (IG). Equivalent NOS : Jeu De Valeur (JDV).</p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -473,7 +459,7 @@ Exprimé en texte libre.</p>
    <a name="4"> </a>
    <h3>Example: Example Instances </h3>
    <p>
-    <p>Ces exemples dévoilent à quoi doivent ressembler les données produites et consommées par les systèmes conformes à cet Implementation Guide (IG).</p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 </p>
    <p>
       <table class="grid">
@@ -481,14 +467,14 @@ Exprimé en texte libre.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-ExamplefrPatient001.html"
-                     title="Patient/ExamplefrPatient001">ExamplefrPatient001</a>
+                  <a href="Practitioner-ExampleFrPractitionner001.html"
+                     title="Practitioner/ExampleFrPractitionner001">ExampleFrPractitionner001</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Practitioner-ExampleFrPractitionner001.html"
-                     title="Practitioner/ExampleFrPractitionner001">ExampleFrPractitionner001</a>
+                  <a href="Observation-ExampleMesFrObservationBP001.html"
+                     title="Observation/ExampleMesFrObservationBP001">ExampleMesFrObservationBP001</a>
                </td>
             </tr>
             <tr>
@@ -513,12 +499,6 @@ Exprimé en texte libre.</p>
                <td style="column-width:30%">
                   <a href="Observation-ExampleMesFrObservationBodyWeight001.html"
                      title="Observation/ExampleMesFrObservationBodyWeight001">ExampleMesFrObservationBodyWeight001</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ExampleMesFrObservationBP001.html"
-                     title="Observation/ExampleMesFrObservationBP001">ExampleMesFrObservationBP001</a>
                </td>
             </tr>
             <tr>
@@ -559,6 +539,12 @@ Exprimé en texte libre.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Patient-ExamplefrPatient001.html"
+                     title="Patient/ExamplefrPatient001">ExamplefrPatient001</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Device-phd-74E8FFFEFF051C00.html"
                      title="Device/phd-74E8FFFEFF051C00">phd-74E8FFFEFF051C00</a>
                </td>
@@ -594,7 +580,7 @@ Exprimé en texte libre.</p>
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="about.html">&lt;prev</a>
+                <a href="Liste-des-codes-des-observations.page.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -612,14 +598,13 @@ Exprimé en texte libre.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 19, 2023 16:18+0000">2023-09-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 20, 2023 15:08+0000">2023-09-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new">New Issue</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new">New Issue</a>
                 
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -762,6 +747,4 @@ anchors.add()</script>
   </footer>
   </body>
 </html>
-
-
 
