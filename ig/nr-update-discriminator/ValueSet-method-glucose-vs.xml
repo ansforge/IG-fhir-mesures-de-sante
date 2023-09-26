@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="method-glucose-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs"/>
+  <version value="3.0.1"/>
+  <name value="MethodeGlucoseVS"/>
+  <title value="Méthode de mesures de glycémie sanguine ou interstitielle"/>
+  <status value="active"/>
+  <date value="2023-09-26T15:39:18+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Méthode de mesures de glycémie sanguine ou interstitielle."/>
+  <compose>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP"/>
+    </include>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT"/>
+    </include>
+  </compose>
+</ValueSet>
