@@ -5,10 +5,10 @@ Description: "Bundle du flux d'alimentation à envoyer au serveur"
 
 * type = #transaction
 
-* entry ^slicing.discriminator.type = #pattern
-* entry ^slicing.discriminator.path = "entry.request.url"
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "request.url"
 * entry ^slicing.rules = #open
-* entry ^slicing.description = "Slice based on the entry.request.url pattern"
+* entry ^slicing.description = "Slice based on the request.url pattern"
 
 * entry contains mes-observation 1..1 and mes-device 0..1
 
