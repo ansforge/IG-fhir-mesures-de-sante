@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "3.0.1"] ; # 
   fhir:name [ fhir:v "MesBundleFluxAlimentation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-09-20T15:08:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-27T13:54:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -791,10 +791,10 @@
        fhir:path [ fhir:v "Bundle.entry" ] ;
        fhir:slicing [
          fhir:discriminator ( [
-           fhir:type [ fhir:v "pattern" ] ;
-           fhir:path [ fhir:v "entry.request.url" ]
+           fhir:type [ fhir:v "profile" ] ;
+           fhir:path [ fhir:v "request.url" ]
          ] ) ;
-         fhir:description [ fhir:v "Slice based on the entry.request.url pattern" ] ;
+         fhir:description [ fhir:v "Slice based on the request.url pattern" ] ;
          fhir:rules [ fhir:v "open" ]
        ] ;
        fhir:short [ fhir:v "Entry in the bundle - will have a resource or information" ] ;
@@ -5030,10 +5030,10 @@
        fhir:path [ fhir:v "Bundle.entry" ] ;
        fhir:slicing [
          fhir:discriminator ( [
-           fhir:type [ fhir:v "pattern" ] ;
-           fhir:path [ fhir:v "entry.request.url" ]
+           fhir:type [ fhir:v "profile" ] ;
+           fhir:path [ fhir:v "request.url" ]
          ] ) ;
-         fhir:description [ fhir:v "Slice based on the entry.request.url pattern" ] ;
+         fhir:description [ fhir:v "Slice based on the request.url pattern" ] ;
          fhir:rules [ fhir:v "open" ]
        ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]

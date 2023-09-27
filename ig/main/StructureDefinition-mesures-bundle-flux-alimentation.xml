@@ -9,7 +9,7 @@
   <version value="3.0.1"/>
   <name value="MesBundleFluxAlimentation"/>
   <status value="active"/>
-  <date value="2023-09-20T15:08:45+00:00"/>
+  <date value="2023-09-27T13:54:59+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -718,10 +718,10 @@
       <path value="Bundle.entry"/>
       <slicing>
         <discriminator>
-          <type value="pattern"/>
-          <path value="entry.request.url"/>
+          <type value="profile"/>
+          <path value="request.url"/>
         </discriminator>
-        <description value="Slice based on the entry.request.url pattern"/>
+        <description value="Slice based on the request.url pattern"/>
         <rules value="open"/>
       </slicing>
       <short value="Entry in the bundle - will have a resource or information"/>
@@ -4587,10 +4587,10 @@
       <path value="Bundle.entry"/>
       <slicing>
         <discriminator>
-          <type value="pattern"/>
-          <path value="entry.request.url"/>
+          <type value="profile"/>
+          <path value="request.url"/>
         </discriminator>
-        <description value="Slice based on the entry.request.url pattern"/>
+        <description value="Slice based on the request.url pattern"/>
         <rules value="open"/>
       </slicing>
       <min value="1"/>

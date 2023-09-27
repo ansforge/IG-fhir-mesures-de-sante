@@ -9,7 +9,7 @@
   "version" : "3.0.1",
   "name" : "MesBundleFluxAlimentation",
   "status" : "active",
-  "date" : "2023-09-20T15:08:45+00:00",
+  "date" : "2023-09-27T13:54:59+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -762,10 +762,10 @@
       "path" : "Bundle.entry",
       "slicing" : {
         "discriminator" : [{
-          "type" : "pattern",
-          "path" : "entry.request.url"
+          "type" : "profile",
+          "path" : "request.url"
         }],
-        "description" : "Slice based on the entry.request.url pattern",
+        "description" : "Slice based on the request.url pattern",
         "rules" : "open"
       },
       "short" : "Entry in the bundle - will have a resource or information",
@@ -4886,10 +4886,10 @@
       "path" : "Bundle.entry",
       "slicing" : {
         "discriminator" : [{
-          "type" : "pattern",
-          "path" : "entry.request.url"
+          "type" : "profile",
+          "path" : "request.url"
         }],
-        "description" : "Slice based on the entry.request.url pattern",
+        "description" : "Slice based on the request.url pattern",
         "rules" : "open"
       },
       "min" : 1
