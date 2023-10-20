@@ -1,0 +1,1238 @@
+{
+  "resourceType": "Bundle",
+  "id": "c4a662ec-ddc0-489f-8526-07df624a08d8",
+  "meta": {
+    "lastUpdated": "2023-09-26T12:44:03.196+00:00"
+  },
+  "type": "searchset",
+  "total": 4,
+  "link": [ {
+    "relation": "self",
+    "url": "https://ecs-projectaton-edr.novalocal/edr/fhir/DocumentReference?_include=*&author%3APractitioner.family=Brooks&author%3APractitioner.given=Isabelle&date=ge2020-01-01&date=le2023-12-31"
+  } ],
+  "entry": [ {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/DocumentReference/d9ca56ed-a136-41d3-9715-9cb72532000b",
+    "resource": {
+      "resourceType": "DocumentReference",
+      "id": "d9ca56ed-a136-41d3-9715-9cb72532000b",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:42.711+00:00",
+        "source": "#8lrsuO2I44GWQyUF"
+      },
+      "status": "current",
+      "type": {
+        "coding": [ {
+          "system": "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS",
+          "code": "DEM-AVIS"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/42e0e7ac-a442-46fd-afa4-26d44472afb3"
+      },
+      "date": "2023-09-24T14:31:17.845+00:00",
+      "author": [ {
+        "reference": "Organization/e6fb387c-e1de-46d7-8fca-298bd53f6698"
+      }, {
+        "reference": "Practitioner/f64a81c5-ab53-4aad-aea7-f4e744c03b01"
+      }, {
+        "reference": "PractitionerRole/30da3b72-6fa3-4311-82be-b0d82869fe35"
+      }, {
+        "reference": "PractitionerRole/3d083e37-f2ed-4600-a1a9-515bc57d6b23"
+      }, {
+        "reference": "RelatedPerson/e5cfb7b6-d3c9-41b5-9b55-7755df5a006c"
+      }, {
+        "reference": "Device/3d2a6b60-a26a-4070-a251-fb837b2597cc"
+      } ],
+      "content": [ {
+        "attachment": {
+          "url": "/images/ContenuNote.png"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/DocumentReference/fc53688e-4c36-415b-afd7-e724b828ba83",
+    "resource": {
+      "resourceType": "DocumentReference",
+      "id": "fc53688e-4c36-415b-afd7-e724b828ba83",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:45.594+00:00",
+        "source": "#UhLsngdDpgOvf4jc"
+      },
+      "status": "current",
+      "type": {
+        "coding": [ {
+          "system": "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS",
+          "code": "DEM-AVIS"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/e4ffa200-3da9-4538-a26f-d815276596f8"
+      },
+      "date": "2023-09-24T14:31:17.845+00:00",
+      "author": [ {
+        "reference": "Organization/0c1b3aeb-27f2-45aa-86e8-bcd60ee9957c"
+      }, {
+        "reference": "Practitioner/e95ffb8d-f7bb-486c-93a5-ddfcc25f9ea9"
+      }, {
+        "reference": "PractitionerRole/4715fa5d-c9bf-4cd7-883c-8937d7576e4a"
+      }, {
+        "reference": "PractitionerRole/2091619f-0b51-4dc3-b079-8d5d36fcae4a"
+      }, {
+        "reference": "RelatedPerson/2a63734a-be56-41e8-bd59-e9e120e45943"
+      }, {
+        "reference": "Device/3954aa3f-8663-4ed1-ade4-d84bf640091f"
+      } ],
+      "content": [ {
+        "attachment": {
+          "url": "/images/ContenuNote.png"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/DocumentReference/01b5a4b9-9609-4474-b8d3-051c0cee74c3",
+    "resource": {
+      "resourceType": "DocumentReference",
+      "id": "01b5a4b9-9609-4474-b8d3-051c0cee74c3",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:17:51.141+00:00",
+        "source": "#KpA21JKJNw0jRJFF"
+      },
+      "status": "current",
+      "type": {
+        "coding": [ {
+          "system": "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS",
+          "code": "DEM-AVIS"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ef089c71-d749-4b09-b746-4f83649f61f2"
+      },
+      "date": "2023-09-24T14:31:17.845+00:00",
+      "author": [ {
+        "reference": "Organization/5cbd5ab6-adaa-4fe5-acbb-eb91d6b01ce8"
+      }, {
+        "reference": "Practitioner/ae00dca6-564c-4905-99b0-44ed290f1d9f"
+      }, {
+        "reference": "PractitionerRole/fde0140c-df79-4dab-aa68-3f0c653d3cc8"
+      }, {
+        "reference": "PractitionerRole/3507632f-f4e1-463f-b859-1a9883cc9519"
+      }, {
+        "reference": "RelatedPerson/519551f4-5d7e-40cc-99fa-b7dda7175e8c"
+      }, {
+        "reference": "Device/fec86ddb-3d29-444a-b104-9dc903959c03"
+      } ],
+      "content": [ {
+        "attachment": {
+          "url": "/images/ContenuNote.png"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/DocumentReference/b40b54e7-8e38-4813-a4a6-e3ff2662dcbd",
+    "resource": {
+      "resourceType": "DocumentReference",
+      "id": "b40b54e7-8e38-4813-a4a6-e3ff2662dcbd",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:43:59.206+00:00",
+        "source": "#a7m7HNoJovNJ3yb3"
+      },
+      "status": "current",
+      "type": {
+        "coding": [ {
+          "system": "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS",
+          "code": "DEM-AVIS"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/495fac7a-89f1-4391-935f-96c80b4d11b9"
+      },
+      "date": "2023-09-24T14:31:17.845+00:00",
+      "author": [ {
+        "reference": "Organization/f58d47ea-d5d4-4504-9c2d-d419c5c721ac"
+      }, {
+        "reference": "Practitioner/7c7718a9-ac61-4084-8adb-c771aa42c6e2"
+      }, {
+        "reference": "PractitionerRole/64719098-aa7f-4aec-8268-9fd48d9c3e56"
+      }, {
+        "reference": "PractitionerRole/42a2e98c-ab83-4a21-954f-df0bc22a8e40"
+      }, {
+        "reference": "RelatedPerson/508b1988-8f55-4f61-a4ae-cd76ffe626b8"
+      }, {
+        "reference": "Device/c21ce7f7-d835-4c4f-ad2a-f72240d84b03"
+      } ],
+      "content": [ {
+        "attachment": {
+          "url": "/images/ContenuNote.png"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Organization/e6fb387c-e1de-46d7-8fca-298bd53f6698",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "e6fb387c-e1de-46d7-8fca-298bd53f6698",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:42.711+00:00",
+        "source": "#8lrsuO2I44GWQyUF"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-3307",
+          "code": "MEDICAL"
+        } ]
+      } ],
+      "name": "Cabinet médical CC CC",
+      "address": [ {
+        "line": [ "12 rue du paris" ],
+        "city": "Rennes",
+        "postalCode": "35000",
+        "country": "FRA"
+      } ],
+      "contact": [ {
+        "telecom": [ {
+          "system": "phone",
+          "value": "+33601030507",
+          "use": "mobile"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Patient/42e0e7ac-a442-46fd-afa4-26d44472afb3",
+    "resource": {
+      "resourceType": "Patient",
+      "id": "42e0e7ac-a442-46fd-afa4-26d44472afb3",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:42.711+00:00",
+        "source": "#8lrsuO2I44GWQyUF"
+      },
+      "extension": [ {
+        "url": "http://interopsante.org/fhir/StructureDefinition/FrPatientIdentReliability",
+        "extension": [ {
+          "url": "identityReliability",
+          "valueCoding": {
+            "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-0445",
+            "code": "VALI"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "district": "29064"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "system": "http://interopsante.org/CodeSystem/fr-v2-0203",
+            "code": "INS-NIR",
+            "display": "NIR"
+          } ]
+        },
+        "system": "urn:oid:1.2.250.1.213.1.4.8",
+        "value": "184102906496883"
+      } ],
+      "active": true,
+      "name": [ {
+        "use": "official",
+        "family": "Thobois",
+        "given": [ "Jacques" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "0609080706",
+        "use": "home"
+      }, {
+        "system": "email",
+        "value": "jacques.thobois@yopmail.com",
+        "use": "work",
+        "rank": 1
+      } ],
+      "gender": "male",
+      "birthDate": "1984-10-02",
+      "address": [ {
+        "use": "home",
+        "type": "both",
+        "text": "place de la mairie",
+        "city": "Rennes",
+        "country": "FRA",
+        "period": {
+          "start": "1997-01-06"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Practitioner/f64a81c5-ab53-4aad-aea7-f4e744c03b01",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "f64a81c5-ab53-4aad-aea7-f4e744c03b01",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:42.711+00:00",
+        "source": "#8lrsuO2I44GWQyUF"
+      },
+      "identifier": [ {
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-0203",
+            "code": "RPPS"
+          } ]
+        },
+        "system": "urn:oid:1.2.250.1.71.4.2.1",
+        "value": "1256125645"
+      } ],
+      "name": [ {
+        "family": "Brooks",
+        "given": [ "Isabelle" ]
+      } ],
+      "telecom": [ {
+        "system": "email",
+        "value": "isabelle.brooks@hotmail.fr"
+      } ],
+      "gender": "female",
+      "birthDate": "1970-01-01"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/PractitionerRole/30da3b72-6fa3-4311-82be-b0d82869fe35",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "30da3b72-6fa3-4311-82be-b0d82869fe35",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:42.711+00:00",
+        "source": "#8lrsuO2I44GWQyUF"
+      },
+      "active": true,
+      "practitioner": {
+        "reference": "Practitioner/f64a81c5-ab53-4aad-aea7-f4e744c03b01"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.10",
+          "code": "C"
+        }, {
+          "system": "urn:oid:1.2.250.1.71.1.2.7",
+          "code": "60"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/PractitionerRole/3d083e37-f2ed-4600-a1a9-515bc57d6b23",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "3d083e37-f2ed-4600-a1a9-515bc57d6b23",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:42.711+00:00",
+        "source": "#8lrsuO2I44GWQyUF"
+      },
+      "extension": [ {
+        "url": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-partOf",
+        "valueReference": {
+          "reference": "PractitionerRole/30da3b72-6fa3-4311-82be-b0d82869fe35"
+        }
+      } ],
+      "active": true,
+      "organization": {
+        "reference": "Organization/e6fb387c-e1de-46d7-8fca-298bd53f6698"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.19",
+          "code": "GENR01"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.18",
+          "code": "S"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/RelatedPerson/e5cfb7b6-d3c9-41b5-9b55-7755df5a006c",
+    "resource": {
+      "resourceType": "RelatedPerson",
+      "id": "e5cfb7b6-d3c9-41b5-9b55-7755df5a006c",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:42.711+00:00",
+        "source": "#8lrsuO2I44GWQyUF"
+      },
+      "identifier": [ {
+        "system": "http:/example.org/fhir/ids",
+        "value": "06RP"
+      } ],
+      "active": true,
+      "patient": {
+        "reference": "Patient/42e0e7ac-a442-46fd-afa4-26d44472afb3"
+      },
+      "relationship": [ {
+        "coding": [ {
+          "system": "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code": "ECON"
+        } ]
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "Martin",
+        "given": [ "Thomas" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "06 09 08 07 09"
+      } ],
+      "gender": "male"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Device/3d2a6b60-a26a-4070-a251-fb837b2597cc",
+    "resource": {
+      "resourceType": "Device",
+      "id": "3d2a6b60-a26a-4070-a251-fb837b2597cc",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:42.711+00:00",
+        "source": "#8lrsuO2I44GWQyUF"
+      },
+      "udiCarrier": [ {
+        "deviceIdentifier": "12340"
+      } ],
+      "status": "active",
+      "type": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "337414009",
+          "display": "Blood glucose meter (physical object)"
+        } ]
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Organization/0c1b3aeb-27f2-45aa-86e8-bcd60ee9957c",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "0c1b3aeb-27f2-45aa-86e8-bcd60ee9957c",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:45.594+00:00",
+        "source": "#UhLsngdDpgOvf4jc"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-3307",
+          "code": "MEDICAL"
+        } ]
+      } ],
+      "name": "Cabinet médical CC CC",
+      "address": [ {
+        "line": [ "12 rue du paris" ],
+        "city": "Rennes",
+        "postalCode": "35000",
+        "country": "FRA"
+      } ],
+      "contact": [ {
+        "telecom": [ {
+          "system": "phone",
+          "value": "+33601030507",
+          "use": "mobile"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Patient/e4ffa200-3da9-4538-a26f-d815276596f8",
+    "resource": {
+      "resourceType": "Patient",
+      "id": "e4ffa200-3da9-4538-a26f-d815276596f8",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:45.594+00:00",
+        "source": "#UhLsngdDpgOvf4jc"
+      },
+      "extension": [ {
+        "url": "http://interopsante.org/fhir/StructureDefinition/FrPatientIdentReliability",
+        "extension": [ {
+          "url": "identityReliability",
+          "valueCoding": {
+            "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-0445",
+            "code": "VALI"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "district": "29064"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "system": "http://interopsante.org/CodeSystem/fr-v2-0203",
+            "code": "INS-NIR",
+            "display": "NIR"
+          } ]
+        },
+        "system": "urn:oid:1.2.250.1.213.1.4.8",
+        "value": "184102906496883"
+      } ],
+      "active": true,
+      "name": [ {
+        "use": "official",
+        "family": "Thobois",
+        "given": [ "Jacques" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "0609080706",
+        "use": "home"
+      }, {
+        "system": "email",
+        "value": "jacques.thobois@yopmail.com",
+        "use": "work",
+        "rank": 1
+      } ],
+      "gender": "male",
+      "birthDate": "1984-10-02",
+      "address": [ {
+        "use": "home",
+        "type": "both",
+        "text": "place de la mairie",
+        "city": "Rennes",
+        "country": "FRA",
+        "period": {
+          "start": "1997-01-06"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Practitioner/e95ffb8d-f7bb-486c-93a5-ddfcc25f9ea9",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "e95ffb8d-f7bb-486c-93a5-ddfcc25f9ea9",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:45.594+00:00",
+        "source": "#UhLsngdDpgOvf4jc"
+      },
+      "identifier": [ {
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-0203",
+            "code": "RPPS"
+          } ]
+        },
+        "system": "urn:oid:1.2.250.1.71.4.2.1",
+        "value": "1256125645"
+      } ],
+      "name": [ {
+        "family": "Brooks",
+        "given": [ "Isabelle" ]
+      } ],
+      "telecom": [ {
+        "system": "email",
+        "value": "isabelle.brooks@hotmail.fr"
+      } ],
+      "gender": "female",
+      "birthDate": "1970-01-01"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/PractitionerRole/4715fa5d-c9bf-4cd7-883c-8937d7576e4a",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "4715fa5d-c9bf-4cd7-883c-8937d7576e4a",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:45.594+00:00",
+        "source": "#UhLsngdDpgOvf4jc"
+      },
+      "active": true,
+      "practitioner": {
+        "reference": "Practitioner/e95ffb8d-f7bb-486c-93a5-ddfcc25f9ea9"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.10",
+          "code": "C"
+        }, {
+          "system": "urn:oid:1.2.250.1.71.1.2.7",
+          "code": "60"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/PractitionerRole/2091619f-0b51-4dc3-b079-8d5d36fcae4a",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "2091619f-0b51-4dc3-b079-8d5d36fcae4a",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:45.594+00:00",
+        "source": "#UhLsngdDpgOvf4jc"
+      },
+      "extension": [ {
+        "url": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-partOf",
+        "valueReference": {
+          "reference": "PractitionerRole/4715fa5d-c9bf-4cd7-883c-8937d7576e4a"
+        }
+      } ],
+      "active": true,
+      "organization": {
+        "reference": "Organization/0c1b3aeb-27f2-45aa-86e8-bcd60ee9957c"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.19",
+          "code": "GENR01"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.18",
+          "code": "S"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/RelatedPerson/2a63734a-be56-41e8-bd59-e9e120e45943",
+    "resource": {
+      "resourceType": "RelatedPerson",
+      "id": "2a63734a-be56-41e8-bd59-e9e120e45943",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:45.594+00:00",
+        "source": "#UhLsngdDpgOvf4jc"
+      },
+      "identifier": [ {
+        "system": "http:/example.org/fhir/ids",
+        "value": "06RP"
+      } ],
+      "active": true,
+      "patient": {
+        "reference": "Patient/e4ffa200-3da9-4538-a26f-d815276596f8"
+      },
+      "relationship": [ {
+        "coding": [ {
+          "system": "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code": "ECON"
+        } ]
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "Martin",
+        "given": [ "Thomas" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "06 09 08 07 09"
+      } ],
+      "gender": "male"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Device/3954aa3f-8663-4ed1-ade4-d84bf640091f",
+    "resource": {
+      "resourceType": "Device",
+      "id": "3954aa3f-8663-4ed1-ade4-d84bf640091f",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T10:17:45.594+00:00",
+        "source": "#UhLsngdDpgOvf4jc"
+      },
+      "udiCarrier": [ {
+        "deviceIdentifier": "12340"
+      } ],
+      "status": "active",
+      "type": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "337414009",
+          "display": "Blood glucose meter (physical object)"
+        } ]
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Organization/5cbd5ab6-adaa-4fe5-acbb-eb91d6b01ce8",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "5cbd5ab6-adaa-4fe5-acbb-eb91d6b01ce8",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:17:51.141+00:00",
+        "source": "#KpA21JKJNw0jRJFF"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-3307",
+          "code": "MEDICAL"
+        } ]
+      } ],
+      "name": "Cabinet médical CC CC",
+      "address": [ {
+        "line": [ "12 rue du paris" ],
+        "city": "Rennes",
+        "postalCode": "35000",
+        "country": "FRA"
+      } ],
+      "contact": [ {
+        "telecom": [ {
+          "system": "phone",
+          "value": "+33601030507",
+          "use": "mobile"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Patient/ef089c71-d749-4b09-b746-4f83649f61f2",
+    "resource": {
+      "resourceType": "Patient",
+      "id": "ef089c71-d749-4b09-b746-4f83649f61f2",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:17:51.141+00:00",
+        "source": "#KpA21JKJNw0jRJFF"
+      },
+      "extension": [ {
+        "url": "http://interopsante.org/fhir/StructureDefinition/FrPatientIdentReliability",
+        "extension": [ {
+          "url": "identityReliability",
+          "valueCoding": {
+            "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-0445",
+            "code": "VALI"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "district": "29064"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "system": "http://interopsante.org/CodeSystem/fr-v2-0203",
+            "code": "INS-NIR",
+            "display": "NIR"
+          } ]
+        },
+        "system": "urn:oid:1.2.250.1.213.1.4.8",
+        "value": "184102906496883"
+      } ],
+      "active": true,
+      "name": [ {
+        "use": "official",
+        "family": "Thobois",
+        "given": [ "Jacques" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "0609080706",
+        "use": "home"
+      }, {
+        "system": "email",
+        "value": "jacques.thobois@yopmail.com",
+        "use": "work",
+        "rank": 1
+      } ],
+      "gender": "male",
+      "birthDate": "1984-10-02",
+      "address": [ {
+        "use": "home",
+        "type": "both",
+        "text": "place de la mairie",
+        "city": "Rennes",
+        "country": "FRA",
+        "period": {
+          "start": "1997-01-06"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Practitioner/ae00dca6-564c-4905-99b0-44ed290f1d9f",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "ae00dca6-564c-4905-99b0-44ed290f1d9f",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:17:51.141+00:00",
+        "source": "#KpA21JKJNw0jRJFF"
+      },
+      "identifier": [ {
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-0203",
+            "code": "RPPS"
+          } ]
+        },
+        "system": "urn:oid:1.2.250.1.71.4.2.1",
+        "value": "1256125645"
+      } ],
+      "name": [ {
+        "family": "Brooks",
+        "given": [ "Isabelle" ]
+      } ],
+      "telecom": [ {
+        "system": "email",
+        "value": "isabelle.brooks@hotmail.fr"
+      } ],
+      "gender": "female",
+      "birthDate": "1970-01-01"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/PractitionerRole/fde0140c-df79-4dab-aa68-3f0c653d3cc8",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "fde0140c-df79-4dab-aa68-3f0c653d3cc8",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:17:51.141+00:00",
+        "source": "#KpA21JKJNw0jRJFF"
+      },
+      "active": true,
+      "practitioner": {
+        "reference": "Practitioner/ae00dca6-564c-4905-99b0-44ed290f1d9f"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.10",
+          "code": "C"
+        }, {
+          "system": "urn:oid:1.2.250.1.71.1.2.7",
+          "code": "60"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/PractitionerRole/3507632f-f4e1-463f-b859-1a9883cc9519",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "3507632f-f4e1-463f-b859-1a9883cc9519",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:17:51.141+00:00",
+        "source": "#KpA21JKJNw0jRJFF"
+      },
+      "extension": [ {
+        "url": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-partOf",
+        "valueReference": {
+          "reference": "PractitionerRole/fde0140c-df79-4dab-aa68-3f0c653d3cc8"
+        }
+      } ],
+      "active": true,
+      "organization": {
+        "reference": "Organization/5cbd5ab6-adaa-4fe5-acbb-eb91d6b01ce8"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.19",
+          "code": "GENR01"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.18",
+          "code": "S"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/RelatedPerson/519551f4-5d7e-40cc-99fa-b7dda7175e8c",
+    "resource": {
+      "resourceType": "RelatedPerson",
+      "id": "519551f4-5d7e-40cc-99fa-b7dda7175e8c",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:17:51.141+00:00",
+        "source": "#KpA21JKJNw0jRJFF"
+      },
+      "identifier": [ {
+        "system": "http:/example.org/fhir/ids",
+        "value": "06RP"
+      } ],
+      "active": true,
+      "patient": {
+        "reference": "Patient/ef089c71-d749-4b09-b746-4f83649f61f2"
+      },
+      "relationship": [ {
+        "coding": [ {
+          "system": "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code": "ECON"
+        } ]
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "Martin",
+        "given": [ "Thomas" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "06 09 08 07 09"
+      } ],
+      "gender": "male"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Device/fec86ddb-3d29-444a-b104-9dc903959c03",
+    "resource": {
+      "resourceType": "Device",
+      "id": "fec86ddb-3d29-444a-b104-9dc903959c03",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:17:51.141+00:00",
+        "source": "#KpA21JKJNw0jRJFF"
+      },
+      "udiCarrier": [ {
+        "deviceIdentifier": "12340"
+      } ],
+      "status": "active",
+      "type": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "337414009",
+          "display": "Blood glucose meter (physical object)"
+        } ]
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Organization/f58d47ea-d5d4-4504-9c2d-d419c5c721ac",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "f58d47ea-d5d4-4504-9c2d-d419c5c721ac",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:43:59.206+00:00",
+        "source": "#a7m7HNoJovNJ3yb3"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-3307",
+          "code": "MEDICAL"
+        } ]
+      } ],
+      "name": "Cabinet médical CC CC",
+      "address": [ {
+        "line": [ "12 rue du paris" ],
+        "city": "Rennes",
+        "postalCode": "35000",
+        "country": "FRA"
+      } ],
+      "contact": [ {
+        "telecom": [ {
+          "system": "phone",
+          "value": "+33601030507",
+          "use": "mobile"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Patient/495fac7a-89f1-4391-935f-96c80b4d11b9",
+    "resource": {
+      "resourceType": "Patient",
+      "id": "495fac7a-89f1-4391-935f-96c80b4d11b9",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:43:59.206+00:00",
+        "source": "#a7m7HNoJovNJ3yb3"
+      },
+      "extension": [ {
+        "url": "http://interopsante.org/fhir/StructureDefinition/FrPatientIdentReliability",
+        "extension": [ {
+          "url": "identityReliability",
+          "valueCoding": {
+            "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-0445",
+            "code": "VALI"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "district": "29064"
+        }
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "system": "http://interopsante.org/CodeSystem/fr-v2-0203",
+            "code": "INS-NIR",
+            "display": "NIR"
+          } ]
+        },
+        "system": "urn:oid:1.2.250.1.213.1.4.8",
+        "value": "184102906496883"
+      } ],
+      "active": true,
+      "name": [ {
+        "use": "official",
+        "family": "Thobois",
+        "given": [ "Jacques" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "0609080706",
+        "use": "home"
+      }, {
+        "system": "email",
+        "value": "jacques.thobois@yopmail.com",
+        "use": "work",
+        "rank": 1
+      } ],
+      "gender": "male",
+      "birthDate": "1984-10-02",
+      "address": [ {
+        "use": "home",
+        "type": "both",
+        "text": "place de la mairie",
+        "city": "Rennes",
+        "country": "FRA",
+        "period": {
+          "start": "1997-01-06"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Practitioner/7c7718a9-ac61-4084-8adb-c771aa42c6e2",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "7c7718a9-ac61-4084-8adb-c771aa42c6e2",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:43:59.206+00:00",
+        "source": "#a7m7HNoJovNJ3yb3"
+      },
+      "identifier": [ {
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "system": "http://interopsante.org/fhir/CodeSystem/fr-v2-0203",
+            "code": "RPPS"
+          } ]
+        },
+        "system": "urn:oid:1.2.250.1.71.4.2.1",
+        "value": "1256125645"
+      } ],
+      "name": [ {
+        "family": "Brooks",
+        "given": [ "Isabelle" ]
+      } ],
+      "telecom": [ {
+        "system": "email",
+        "value": "isabelle.brooks@hotmail.fr"
+      } ],
+      "gender": "female",
+      "birthDate": "1970-01-01"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/PractitionerRole/64719098-aa7f-4aec-8268-9fd48d9c3e56",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "64719098-aa7f-4aec-8268-9fd48d9c3e56",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:43:59.206+00:00",
+        "source": "#a7m7HNoJovNJ3yb3"
+      },
+      "active": true,
+      "practitioner": {
+        "reference": "Practitioner/7c7718a9-ac61-4084-8adb-c771aa42c6e2"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.10",
+          "code": "C"
+        }, {
+          "system": "urn:oid:1.2.250.1.71.1.2.7",
+          "code": "60"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/PractitionerRole/42a2e98c-ab83-4a21-954f-df0bc22a8e40",
+    "resource": {
+      "resourceType": "PractitionerRole",
+      "id": "42a2e98c-ab83-4a21-954f-df0bc22a8e40",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:43:59.206+00:00",
+        "source": "#a7m7HNoJovNJ3yb3"
+      },
+      "extension": [ {
+        "url": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-partOf",
+        "valueReference": {
+          "reference": "PractitionerRole/64719098-aa7f-4aec-8268-9fd48d9c3e56"
+        }
+      } ],
+      "active": true,
+      "organization": {
+        "reference": "Organization/f58d47ea-d5d4-4504-9c2d-d419c5c721ac"
+      },
+      "code": [ {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.19",
+          "code": "GENR01"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "urn:oid:1.2.250.1.213.1.6.1.18",
+          "code": "S"
+        } ]
+      } ]
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/RelatedPerson/508b1988-8f55-4f61-a4ae-cd76ffe626b8",
+    "resource": {
+      "resourceType": "RelatedPerson",
+      "id": "508b1988-8f55-4f61-a4ae-cd76ffe626b8",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:43:59.206+00:00",
+        "source": "#a7m7HNoJovNJ3yb3"
+      },
+      "identifier": [ {
+        "system": "http:/example.org/fhir/ids",
+        "value": "06RP"
+      } ],
+      "active": true,
+      "patient": {
+        "reference": "Patient/495fac7a-89f1-4391-935f-96c80b4d11b9"
+      },
+      "relationship": [ {
+        "coding": [ {
+          "system": "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code": "ECON"
+        } ]
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "Martin",
+        "given": [ "Thomas" ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "06 09 08 07 09"
+      } ],
+      "gender": "male"
+    },
+    "search": {
+      "mode": "include"
+    }
+  }, {
+    "fullUrl": "https://ecs-projectaton-edr.novalocal/edr/fhir/Device/c21ce7f7-d835-4c4f-ad2a-f72240d84b03",
+    "resource": {
+      "resourceType": "Device",
+      "id": "c21ce7f7-d835-4c4f-ad2a-f72240d84b03",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2023-09-26T12:43:59.206+00:00",
+        "source": "#a7m7HNoJovNJ3yb3"
+      },
+      "udiCarrier": [ {
+        "deviceIdentifier": "12340"
+      } ],
+      "status": "active",
+      "type": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "337414009",
+          "display": "Blood glucose meter (physical object)"
+        } ]
+      }
+    },
+    "search": {
+      "mode": "include"
+    }
+  } ]
+}
