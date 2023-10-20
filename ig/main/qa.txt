@@ -1,9 +1,9 @@
 ﻿Mesures : Validation Results
 =========================================
 
-err = 5, warn = 94, info = 8
-IG Publisher Version: 1.4.8
-Generated Wed Sep 27 13:56:46 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+err = 2, warn = 94, info = 8
+IG Publisher Version: 1.4.16
+Generated Fri Oct 20 13:20:27 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 0 / 26 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mesures : 0 / 0 / 1
@@ -23,9 +23,9 @@ Generated Wed Sep 27 13:56:46 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesur
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-bundle-flux-alimentation : 0 / 1 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-diabetis-type : 0 / 2 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-bmi : 0 / 2 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-body-temperature : 1 / 4 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-body-weight : 1 / 2 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-bodyheight : 1 / 2 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-body-temperature : 0 / 4 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-body-weight : 0 / 2 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-bodyheight : 0 / 2 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-bp : 0 / 9 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-heartrate : 0 / 8 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-moment-of-measurement : 0 / 0 / 1
@@ -76,20 +76,20 @@ WARNING: Observation/ExampleMesFrObservationBP001: Observation.component[0].inte
 ERROR: Observation/ExampleMesFrObservationBP001: Observation.component[1].code.coding[0]: Wrong Display Name 'Tension artérielle diastolique' for http://loinc.org#8462-4 - should be one of 36 choices: 'Diastolic blood pressure', 'BP dias', '一般血压' (zh-CN), '血压.原子型' (zh-CN), '血压指标.原子型 压力' (zh-CN), '压强 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血管内心舒期' (zh-CN), '血管内舒张期 血管内的' (zh-CN), 'Dias' (pt-BR), 'Diast' (pt-BR), 'Pressure' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Art sys' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'IV' (pt-BR), 'Intravenous' (pt-BR), 'Diastoli' (pt-BR), 'BLOOD PRESSURE MEASUREMENTS.ATOM' (pt-BR), 'Blood pressure diastolic' (pt-BR), 'BP diastolic' (pt-BR), 'Dias BP' (pt-BR), 'DBP' (pt-BR), 'Pressione Pressione arteriosa - atomica Punto nel tempo (episodio)' (it-IT), 'Внутрисосудистый диастолический Давление Количественный Точка во времени' (ru-RU), 'Момент' (ru-RU) or 'Blutdruck diastolisch' (de-AT) (for the language(s) '--') (from Tx-Server) for 'http://loinc.org#8462-4'
 WARNING: Observation/ExampleMesFrObservationBP001: Observation.component[1].interpretation[0]: ValueSet http://www.interopsante.org/fhir/structuredefinition/observation/fr-obervation-interpretation not found
 == fsh-generated/resources/Observation-ExampleMesFrObservationBmi001.json ==
-WARNING: Observation/ExampleMesFrObservationBmi001: Observation: All observations should have a performer
+WARNING: Observation/ExampleMesFrObservationBmi001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesFrObservationBodyHeight001.json ==
 WARNING: Observation/ExampleMesFrObservationBodyHeight001: Observation.value.ofType(Quantity).code: Resolved system http://unitsofmeasure.org, but the definition is not complete, so assuming value set include is correct
-WARNING: Observation/ExampleMesFrObservationBodyHeight001: Observation: All observations should have a performer
+WARNING: Observation/ExampleMesFrObservationBodyHeight001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesFrObservationBodyTemperature001.json ==
 WARNING: Observation/ExampleMesFrObservationBodyTemperature001: Observation.value.ofType(Quantity).code: Resolved system http://unitsofmeasure.org, but the definition is not complete, so assuming value set include is correct
-WARNING: Observation/ExampleMesFrObservationBodyTemperature001: Observation: All observations should have a performer
+WARNING: Observation/ExampleMesFrObservationBodyTemperature001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesFrObservationBodyWeight001.json ==
 WARNING: Observation/ExampleMesFrObservationBodyWeight001: Observation.value.ofType(Quantity).code: Resolved system http://unitsofmeasure.org, but the definition is not complete, so assuming value set include is correct
 WARNING: Observation/ExampleMesFrObservationBodyWeight001: Observation.method: ValueSet https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS not found
 INFORMATION: Observation/ExampleMesFrObservationBodyWeight001: Observation.method.coding[0]: Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED' is unknown so the code cannot be validated
-WARNING: Observation/ExampleMesFrObservationBodyWeight001: Observation: All observations should have a performer
+WARNING: Observation/ExampleMesFrObservationBodyWeight001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesFrObservationHeartrate001.json ==
-WARNING: Observation/ExampleMesFrObservationHeartrate001: Observation: All observations should have a performer
+WARNING: Observation/ExampleMesFrObservationHeartrate001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json ==
 INFORMATION: Observation/ExampleMesObservationGlucose001: Observation.extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc' is unknown so the code cannot be validated
 WARNING: Observation/ExampleMesObservationGlucose001: Observation.extension[1].value.ofType(CodeableConcept): ValueSet https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS not found
@@ -100,15 +100,15 @@ INFORMATION: Observation/ExampleMesObservationGlucose001: Observation.extension[
 WARNING: Observation/ExampleMesObservationGlucose001: Observation.code: ValueSet https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS not found
 INFORMATION: Observation/ExampleMesObservationGlucose001: Observation.code.coding[0]: Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc' is unknown so the code cannot be validated
 WARNING: Observation/ExampleMesObservationGlucose001: Observation.value.ofType(Quantity).code: ValueSet https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS not found
-WARNING: Observation/ExampleMesObservationGlucose001: Observation: All observations should have a performer
+WARNING: Observation/ExampleMesObservationGlucose001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001.json ==
-WARNING: Observation/ExampleMesObservationHeadCircumference001: Observation: All observations should have a performer
+WARNING: Observation/ExampleMesObservationHeadCircumference001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001.json ==
-WARNING: Observation/ExampleMesObservationPainSeverity001: Observation: All observations should have a performer
+WARNING: Observation/ExampleMesObservationPainSeverity001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001.json ==
-WARNING: Observation/ExampleMesObservationStepsByDay001: Observation: All observations should have a performer
+WARNING: Observation/ExampleMesObservationStepsByDay001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleObservationWaistCircumference001.json ==
-WARNING: Observation/ExampleObservationWaistCircumference001: Observation: All observations should have a performer
+WARNING: Observation/ExampleObservationWaistCircumference001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Patient-ExamplefrPatient001.json ==
 == fsh-generated/resources/Practitioner-ExampleFrPractitionner001.json ==
 == fsh-generated/resources/StructureDefinition-mesures-bundle-flux-alimentation.json ==
@@ -120,18 +120,15 @@ WARNING: StructureDefinition/mesures-diabetis-type: StructureDefinition.snapshot
 WARNING: StructureDefinition/mesures-fr-observation-bmi: StructureDefinition.differential.element[5].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS on element Observation.referenceRange.appliesTo could not be resolved
 WARNING: StructureDefinition/mesures-fr-observation-bmi: StructureDefinition.snapshot.element[88].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS on element Observation.referenceRange.appliesTo could not be resolved
 == fsh-generated/resources/StructureDefinition-mesures-fr-observation-body-temperature.json ==
-ERROR: StructureDefinition.snapshot.element[40]: The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
-WARNING: StructureDefinition/mesures-fr-observation-body-temperature: StructureDefinition.differential.element[9].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS/FHIR/JDV-J151-BodySiteBodyTemperature-ENS on element Observation.bodySite could not be resolved
-WARNING: StructureDefinition/mesures-fr-observation-body-temperature: StructureDefinition.differential.element[12].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J152-MethodBodyTemperature-ENS/FHIR/JDV-J152-MethodBodyTemperature-ENS on element Observation.method could not be resolved
+WARNING: StructureDefinition/mesures-fr-observation-body-temperature: StructureDefinition.differential.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS/FHIR/JDV-J151-BodySiteBodyTemperature-ENS on element Observation.bodySite could not be resolved
+WARNING: StructureDefinition/mesures-fr-observation-body-temperature: StructureDefinition.differential.element[11].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J152-MethodBodyTemperature-ENS/FHIR/JDV-J152-MethodBodyTemperature-ENS on element Observation.method could not be resolved
 WARNING: StructureDefinition/mesures-fr-observation-body-temperature: StructureDefinition.snapshot.element[79].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS/FHIR/JDV-J151-BodySiteBodyTemperature-ENS on element Observation.bodySite could not be resolved
 WARNING: StructureDefinition/mesures-fr-observation-body-temperature: StructureDefinition.snapshot.element[91].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J152-MethodBodyTemperature-ENS/FHIR/JDV-J152-MethodBodyTemperature-ENS on element Observation.method could not be resolved
 == fsh-generated/resources/StructureDefinition-mesures-fr-observation-body-weight.json ==
-ERROR: StructureDefinition.snapshot.element[39]: The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
-WARNING: StructureDefinition/mesures-fr-observation-body-weight: StructureDefinition.differential.element[9].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS on element Observation.method could not be resolved
+WARNING: StructureDefinition/mesures-fr-observation-body-weight: StructureDefinition.differential.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS on element Observation.method could not be resolved
 WARNING: StructureDefinition/mesures-fr-observation-body-weight: StructureDefinition.snapshot.element[79].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS on element Observation.method could not be resolved
 == fsh-generated/resources/StructureDefinition-mesures-fr-observation-bodyheight.json ==
-ERROR: StructureDefinition.snapshot.element[39]: The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
-WARNING: StructureDefinition/mesures-fr-observation-bodyheight: StructureDefinition.differential.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J146-MethodBodyHeight-ENS/FHIR/JDV-J146-MethodBodyHeight-ENS on element Observation.method could not be resolved
+WARNING: StructureDefinition/mesures-fr-observation-bodyheight: StructureDefinition.differential.element[7].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J146-MethodBodyHeight-ENS/FHIR/JDV-J146-MethodBodyHeight-ENS on element Observation.method could not be resolved
 WARNING: StructureDefinition/mesures-fr-observation-bodyheight: StructureDefinition.snapshot.element[79].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J146-MethodBodyHeight-ENS/FHIR/JDV-J146-MethodBodyHeight-ENS on element Observation.method could not be resolved
 == fsh-generated/resources/StructureDefinition-mesures-fr-observation-bp.json ==
 WARNING: StructureDefinition/mesures-fr-observation-bp: StructureDefinition.differential.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J149-BodySiteBP-ENS/FHIR/JDV-J149-BodySiteBP-ENS on element Observation.bodySite could not be resolved
@@ -157,17 +154,17 @@ WARNING: StructureDefinition/mesures-fr-observation-heartrate: StructureDefiniti
 WARNING: StructureDefinition/mesures-number-of-days: StructureDefinition.differential.element[3].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition/mesures-number-of-days: StructureDefinition.snapshot.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS on element Extension.value[x] could not be resolved
 == fsh-generated/resources/StructureDefinition-mesures-observation-glucose.json ==
-WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[4].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS on element Observation.extension.value[x] could not be resolved
-WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[9].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS on element Observation.code could not be resolved
-WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[19].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS on element Observation.value[x].code could not be resolved
-WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[26].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS on element Observation.referenceRange.appliesTo could not be resolved
+WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[3].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS on element Observation.extension.value[x] could not be resolved
+WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[8].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS on element Observation.code could not be resolved
+WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[18].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS on element Observation.value[x].code could not be resolved
+WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.differential.element[25].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS on element Observation.referenceRange.appliesTo could not be resolved
 WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.snapshot.element[14].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS on element Observation.extension.value[x] could not be resolved
 WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.snapshot.element[46].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS on element Observation.code could not be resolved
 WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.snapshot.element[71].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS on element Observation.value[x].code could not be resolved
 WARNING: StructureDefinition/mesures-observation-glucose: StructureDefinition.snapshot.element[108].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS on element Observation.referenceRange.appliesTo could not be resolved
 == fsh-generated/resources/StructureDefinition-mesures-observation-head-circumference.json ==
 == fsh-generated/resources/StructureDefinition-mesures-observation-pain-severity.json ==
-WARNING: StructureDefinition/mesures-observation-pain-severity: StructureDefinition.differential.element[15].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS on element Observation.method could not be resolved
+WARNING: StructureDefinition/mesures-observation-pain-severity: StructureDefinition.differential.element[14].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS on element Observation.method could not be resolved
 WARNING: StructureDefinition/mesures-observation-pain-severity: StructureDefinition.snapshot.element[66].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS on element Observation.method could not be resolved
 == fsh-generated/resources/StructureDefinition-mesures-observation-steps-by-day.json ==
 WARNING: StructureDefinition/mesures-observation-steps-by-day: StructureDefinition.differential.element[13].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J158-MethodStepsByDay-ENS/FHIR/JDV-J158-MethodStepsByDay-ENS on element Observation.method could not be resolved
