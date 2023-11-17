@@ -53,8 +53,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * method.coding.code 1..1
 
 * device only Reference($PhdDevice)
-* device MS
-* device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
+* device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire"
 
 * referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
 * referenceRange.appliesTo ^binding.description = "JDV_J148-ReferenceRangeAppliesTo-CISIS"

@@ -27,8 +27,8 @@ Id: mesures-fr-observation-heartrate
 * method ^binding.description = $JDV-J147-MethodHeartrate-MES
 
 * device only Reference($PhdDevice)
-* device MS
-* device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
+* device ^short = "Dispositif utilisé pour l'observation"
+* device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\r\n=>cette référence est obligatoire"
 
 * referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
 * referenceRange.appliesTo ^binding.description = $JDV-J148-ReferenceRangeAppliesTo-CISIS

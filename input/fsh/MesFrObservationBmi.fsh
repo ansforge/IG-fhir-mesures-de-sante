@@ -9,7 +9,6 @@ Id: mesures-fr-observation-bmi
 * dataAbsentReason.coding.code 1..
 
 * device only Reference($PhdDevice)
-* device MS
 * device ^short = "Dispositif utilisé pour l'observation"
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) \r\n=>cette référence est obligatoire"
 
