@@ -1,4 +1,3 @@
-
 Profile: MesFrObservationBodyTemperature
 Parent: $FrObservationBodyTemperature
 Id: mesures-fr-observation-body-temperature

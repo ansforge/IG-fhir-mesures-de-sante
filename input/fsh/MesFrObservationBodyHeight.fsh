@@ -1,4 +1,3 @@
-
 Profile: MesFrObservationBodyHeight
 Parent: $FrObservationBodyHeight
 Id: mesures-fr-observation-bodyheight

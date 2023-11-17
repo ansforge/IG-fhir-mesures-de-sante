@@ -1,4 +1,3 @@
-
 Profile: MesFrObservationBp
 Parent: $FrObservationBp
 Id: mesures-fr-observation-bp
