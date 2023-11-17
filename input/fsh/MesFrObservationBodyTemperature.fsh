@@ -26,10 +26,8 @@ Id: mesures-fr-observation-body-temperature
 * bodySite.coding.system 1..
 * bodySite.coding.code 1..
 
-* method from $JDV-J152-MethodBodyTemperature-MES (required)
-* method ^binding.description = $JDV-J152-MethodBodyTemperature-MES
-* method.coding.system 1..
-* method.coding.code 1..
+* method MS
+* method from $JDV-J152-MethodBodyTemperature-MES (extensible)
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"

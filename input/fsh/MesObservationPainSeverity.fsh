@@ -28,13 +28,6 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * dataAbsentReason.coding.code 1..
 
 * bodySite ^short = "Lieu de la douleur - Texte libre"
-* bodySite ^definition = "Lieu de la douleur - Texte libre"
 
-* method from $JDV-J159-MethodPainSeverity-MES (required)
-* method ^binding.description = $JDV-J159-MethodPainSeverity-MES
-* method.coding.system 1..
-* method.coding.code 1..
-
-* device only Reference($PhdDevice)
-* device ^short = "Dispositif utilisé pour l'observation"
-* device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire\r\nhttp://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
+* method MS
+* method from $JDV-J159-MethodPainSeverity-MES (extensible)

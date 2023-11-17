@@ -47,10 +47,8 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* method from method-glucose-vs (required)
-* method ^short = "JDV pour la glycémie"
-* method.coding.system 1..1
-* method.coding.code 1..1
+* method MS
+* method from method-glucose-vs (extensible)
 
 * device only Reference($PhdDevice)
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire"
