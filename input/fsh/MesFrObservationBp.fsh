@@ -10,8 +10,7 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and
     mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 
-* category[VSCat] ^sliceName = "VSCat"
-* category[VSCat].coding.display = "Signes vitaux" 
+* category[VSCat].coding.display = "vital-signs" 
 * subject only Reference($fr-patient)
 * effective[x] only dateTime
 
