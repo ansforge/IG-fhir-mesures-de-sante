@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "method-glucose-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT</code></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs",
+  "version" : "3.0.1",
+  "name" : "MethodeGlucoseVS",
+  "title" : "Méthode de mesures de glycémie sanguine ou interstitielle",
+  "status" : "active",
+  "date" : "2023-11-17T15:47:58+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Méthode de mesures de glycémie sanguine ou interstitielle.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT"
+    }]
+  }
+}
