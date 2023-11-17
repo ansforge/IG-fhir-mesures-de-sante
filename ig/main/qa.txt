@@ -1,20 +1,20 @@
 ﻿Mesures : Validation Results
 =========================================
 
-err = 2, warn = 94, info = 8
-IG Publisher Version: 1.4.16
-Generated Fri Oct 20 13:20:27 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+err = 3, warn = 95, info = 9
+IG Publisher Version: 1.5.4
+Generated Fri Nov 17 15:48:45 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 0 / 26 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mesures : 0 / 0 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBP001 : 2 / 3 / 2
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBmi001 : 0 / 1 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBodyHeight001 : 0 / 2 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBodyTemperature001 : 0 / 2 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBodyWeight001 : 0 / 3 / 2
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationHeartrate001 : 0 / 1 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBP001 : 2 / 3 / 3
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBmi001 : 0 / 1 / 2
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBodyHeight001 : 0 / 2 / 2
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBodyTemperature001 : 0 / 2 / 2
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBodyWeight001 : 0 / 3 / 3
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationHeartrate001 : 0 / 1 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationGlucose001 : 0 / 6 / 5
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001 : 0 / 1 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001 : 1 / 2 / 3
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001 : 0 / 1 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001 : 0 / 1 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleObservationWaistCircumference001 : 0 / 1 / 1
@@ -103,6 +103,9 @@ WARNING: Observation/ExampleMesObservationGlucose001: Observation.value.ofType(Q
 WARNING: Observation/ExampleMesObservationGlucose001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001.json ==
 WARNING: Observation/ExampleMesObservationHeadCircumference001: Observation: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Observation/ExampleMesObservationHeadCircumference001: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/headcircum|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Observation/ExampleMesObservationHeadCircumference001: Observation.code: Observation.code.coding:HeadCircumCode: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/headcircum|4.0.1)
+WARNING: Observation/ExampleMesObservationHeadCircumference001: Observation.value.ofType(Quantity).code: Resolved system http://unitsofmeasure.org, but the definition is not complete, so assuming value set include is correct
 == fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001.json ==
 WARNING: Observation/ExampleMesObservationPainSeverity001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001.json ==

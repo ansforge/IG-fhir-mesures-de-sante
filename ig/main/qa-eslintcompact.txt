@@ -26,6 +26,9 @@
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json: line 22, col 20, Warning - ValueSet https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS not found (CODEINVALID)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001.json: line 11, col 8, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/headcircum|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001.json: line 9, col 4, Error - Observation.code.coding:HeadCircumCode: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/headcircum|4.0.1) (STRUCTURE)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001.json: line 30, col 17, Warning - Resolved system http://unitsofmeasure.org, but the definition is not complete, so assuming value set include is correct (INFORMATIONAL)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleObservationWaistCircumference001.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
@@ -80,6 +83,6 @@
 Mesures : Validation Results
 =========================================
 
-err = 2, warn = 94, info = 8
-IG Publisher Version: 1.4.16
-Generated Fri Oct 20 13:20:27 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+err = 3, warn = 95, info = 9
+IG Publisher Version: 1.5.4
+Generated Fri Nov 17 15:48:45 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
