@@ -26,8 +26,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
 "Observation.meta.source","Observation.meta.source","","","",0,1,"","","Y","uri {[]} {[]}
-","Uri identifiant les systèmes tiers ayant envoyé la ressource.","Uri identifiant les systèmes tiers ayant envoyé la ressource.
-L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »","In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. 
+","Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »","A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.","In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. 
 
 This element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL.","","","","","","","","",,,,,"",,,,"Meta.source",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -67,7 +66,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Observation.extension:levelOfExertion","Observation.extension","levelOfExertion","","",0,1,"","","","Extension {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrObservationLevelOfExertion]]} {[]}
-","Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire","Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Observation.extension:supportingInfo","Observation.extension","supportingInfo","extensions
@@ -77,7 +76,7 @@ user content","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/St
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Observation.extension:MesReasonForMeasurement","Observation.extension","MesReasonForMeasurement","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement]]} {[]}
 ","Motif de la mesure","Motif de la mesure
-Texte libre (ex. infection, insolation, vaccination…)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+Texte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.modifierExtension","Observation.modifierExtension","","extensions
