@@ -11,7 +11,7 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre"
 
-* category[VSCat].coding.display = "Signes vitaux" 
+* category[VSCat].coding.display = "vital-signs" 
 
 * code = http://loinc.org#72514-3
 
@@ -28,10 +28,8 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * dataAbsentReason.coding.code 1..
 
 * bodySite ^short = "Lieu de la douleur - Texte libre"
-* bodySite ^definition = "Lieu de la douleur - Texte libre"
 
 * method from $JDV-J159-MethodPainSeverity-MES (required)
-* method ^binding.description = $JDV-J159-MethodPainSeverity-MES
 * method.coding.system 1..
 * method.coding.code 1..
 

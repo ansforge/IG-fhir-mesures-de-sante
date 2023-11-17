@@ -22,7 +22,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 
 * extension[MesMomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-MES (required)
 
-* category[VSCat].coding.display = "Signes vitaux" 
+* category[VSCat].coding.display = "vital-signs" 
 
 * code from $JDV-J154-TypeGlucose-MES (extensible)
 * code ^short = "Types de glycémie"

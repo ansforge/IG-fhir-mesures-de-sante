@@ -8,16 +8,14 @@ Id: mesures-observation-head-circumference
     $workflow-supportingInfo named supportingInfo 0..1 and
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
-* extension[supportingInfo] ^isModifier = false
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure"
-* extension[MesReasonForMeasurement] ^isModifier = false
 
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "code"
 * code.coding ^slicing.discriminator[+].type = #value
 * code.coding ^slicing.discriminator[=].path = "system"
 * code.coding ^slicing.rules = #open
+
 * code.coding contains headCircumCode 1..1
 * code.coding[headCircumCode].system 1..
 * code.coding[headCircumCode].system = "http://loinc.org" 
