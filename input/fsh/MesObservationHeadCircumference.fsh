@@ -1,8 +1,8 @@
 Profile: MesObservationHeadCircumference
 Parent: $vitalsigns
 Id: mesures-observation-head-circumference
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
-* meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+
+* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and

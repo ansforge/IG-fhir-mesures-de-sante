@@ -2,8 +2,10 @@ Profile: MesFrObservationOxygenSat
 Parent: http://interopsante.org/fhir/StructureDefinition/FrObservationOxygenSaturation
 Id: mesures-fr-observation-oxygen-sat
 
+* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+
 * extension contains mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
-* extension[MesMomentOfMeasurement] ^short = "Moment de la mesure"
+
 
 * value[x] ^slicing.rules = #closed
 

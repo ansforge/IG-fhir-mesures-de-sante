@@ -2,8 +2,8 @@
 Profile: MesFrObservationBodyHeight
 Parent: $FrObservationBodyHeight
 Id: mesures-fr-observation-bodyheight
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
-* meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+
+* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
 // Extension bodyposition définie au niveau du profil d'interopsanté
 * extension[bodyposition] ^short = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
