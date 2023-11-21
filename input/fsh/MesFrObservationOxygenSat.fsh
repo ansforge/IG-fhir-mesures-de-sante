@@ -10,8 +10,13 @@ Id: mesures-fr-observation-oxygen-sat
 * value[x] ^slicing.rules = #closed
 
 * method MS
+* method from $JDV-J147-MethodHeartrate-MES (required)
+* method.coding.system 1..
+* method.coding.code 1..
+
 
 * category[VSCat].coding.display = "vital-signs" 
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
+
