@@ -331,7 +331,7 @@
         
           Active
           
-            as of 2023-11-17
+            as of 2023-11-23
           
         
       </td>
@@ -541,7 +541,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.extension:supportingInfo, Observation.extension:MesReasonForMeasurement, Observation.modifierExtension, Observation.component.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
 <tr><td>obs-7</td><td>error</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Observation.subject, Observation.device</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
@@ -745,7 +745,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.meta.extension, Observation.extension, Observation.extension:supportingInfo, Observation.extension:MesReasonForMeasurement, Observation.modifierExtension, Observation.category:VSCat.extension, Observation.category:VSCat.coding.extension, Observation.value[x].extension, Observation.dataAbsentReason.extension, Observation.dataAbsentReason.coding.extension, Observation.method.extension, Observation.method.coding.extension, Observation.referenceRange.extension, Observation.referenceRange.modifierExtension, Observation.component.extension, Observation.component.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-3</td><td>error</td><td>Observation.referenceRange</td><td>Must have at least a low or a high or text<br/>: low.exists() or high.exists() or text.exists()</td><td></td></tr>
 <tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
 <tr><td>obs-7</td><td>error</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
@@ -1095,7 +1095,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.extension:supportingInfo, Observation.extension:MesReasonForMeasurement, Observation.modifierExtension, Observation.component.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
 <tr><td>obs-7</td><td>error</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Observation.subject, Observation.device</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
@@ -1299,7 +1299,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Observation.meta.extension, Observation.extension, Observation.extension:supportingInfo, Observation.extension:MesReasonForMeasurement, Observation.modifierExtension, Observation.category:VSCat.extension, Observation.category:VSCat.coding.extension, Observation.value[x].extension, Observation.dataAbsentReason.extension, Observation.dataAbsentReason.coding.extension, Observation.method.extension, Observation.method.coding.extension, Observation.referenceRange.extension, Observation.referenceRange.modifierExtension, Observation.component.extension, Observation.component.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-3</td><td>error</td><td>Observation.referenceRange</td><td>Must have at least a low or a high or text<br/>: low.exists() or high.exists() or text.exists()</td><td></td></tr>
 <tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
 <tr><td>obs-7</td><td>error</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
@@ -1587,7 +1587,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 17, 2023 15:40+0000">2023-11-17</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 23, 2023 10:07+0000">2023-11-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
