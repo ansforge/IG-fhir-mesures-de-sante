@@ -27,7 +27,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice)
   <version value="3.0.1"/>
   <name value="MesFrObservationBodyWeight"/>
   <status value="active"/>
-  <date value="2023-11-17T15:45:14+00:00"/>
+  <date value="2023-11-23T10:14:09+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -310,7 +310,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice)
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -3365,7 +3365,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice)
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -3500,7 +3500,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice)
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
