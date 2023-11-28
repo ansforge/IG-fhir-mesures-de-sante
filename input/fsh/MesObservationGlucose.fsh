@@ -13,6 +13,8 @@ L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesu
 
 L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."""
 
+* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and
@@ -47,10 +49,8 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* method from method-glucose-vs (required)
-* method ^short = "JDV pour la glycémie"
-* method.coding.system 1..1
-* method.coding.code 1..1
+* method MS
+* method from method-glucose-vs (extensible)
 
 * device only Reference($PhdDevice)
 * device MS
