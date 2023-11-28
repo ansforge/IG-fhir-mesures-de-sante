@@ -11,7 +11,7 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre"
 
-* category[VSCat].coding.display = "Signes vitaux" 
+* category[VSCat].coding.display = "vital-signs" 
 
 * code = http://loinc.org#72514-3
 
