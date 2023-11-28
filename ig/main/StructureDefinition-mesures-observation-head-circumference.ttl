@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "3.0.1"] ; # 
   fhir:name [ fhir:v "MesObservationHeadCircumference"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-11-28T13:27:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-28T13:42:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -822,7 +822,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -835,7 +834,7 @@
        fhir:path [ fhir:v "Observation.extension" ] ;
        fhir:sliceName [ fhir:v "MesReasonForMeasurement" ] ;
        fhir:short [ fhir:v "Motif de la mesure" ] ;
-       fhir:definition [ fhir:v "Motif de la mesure" ] ;
+       fhir:definition [ fhir:v "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -871,8 +870,7 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Observation.modifierExtension" ] ;
        fhir:extension ( [
@@ -4813,14 +4811,12 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Observation.extension:MesReasonForMeasurement" ] ;
        fhir:path [ fhir:v "Observation.extension" ] ;
        fhir:sliceName [ fhir:v "MesReasonForMeasurement" ] ;
        fhir:short [ fhir:v "Motif de la mesure" ] ;
-       fhir:definition [ fhir:v "Motif de la mesure" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
@@ -4829,8 +4825,7 @@
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement>
          ] )
-       ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       ] )
      ] [
        fhir:id [ fhir:v "Observation.code" ] ;
        fhir:path [ fhir:v "Observation.code" ] ;

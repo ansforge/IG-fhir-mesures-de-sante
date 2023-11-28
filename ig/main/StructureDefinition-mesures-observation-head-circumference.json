@@ -9,7 +9,7 @@
   "version" : "3.0.1",
   "name" : "MesObservationHeadCircumference",
   "status" : "active",
-  "date" : "2023-11-28T13:27:45+00:00",
+  "date" : "2023-11-28T13:42:11+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -782,7 +782,6 @@
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
-      "isModifier" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -797,7 +796,7 @@
       "path" : "Observation.extension",
       "sliceName" : "MesReasonForMeasurement",
       "short" : "Motif de la mesure",
-      "definition" : "Motif de la mesure",
+      "definition" : "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -825,8 +824,7 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Observation.modifierExtension",
@@ -4747,22 +4745,19 @@
       "type" : [{
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Observation.extension:MesReasonForMeasurement",
       "path" : "Observation.extension",
       "sliceName" : "MesReasonForMeasurement",
       "short" : "Motif de la mesure",
-      "definition" : "Motif de la mesure",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"]
-      }],
-      "isModifier" : false
+      }]
     },
     {
       "id" : "Observation.code",

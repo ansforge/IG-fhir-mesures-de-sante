@@ -2536,7 +2536,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-fr-observation-bp","Observation.category:VSCat.coding.display","Observation.category.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings SHALL NOT exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Signes vitaux""/>","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
+","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings SHALL NOT exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""vital-signs""/>","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-fr-observation-bp","Observation.category:VSCat.coding.userSelected","Observation.category.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -4464,7 +4464,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-glucose","Observation.category:VSCat.coding.display","Observation.category.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings SHALL NOT exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Signes vitaux""/>","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
+","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings SHALL NOT exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""vital-signs""/>","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-glucose","Observation.category:VSCat.coding.userSelected","Observation.category.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -4871,7 +4871,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mesures-observation-head-circumference","Observation.extension:MesReasonForMeasurement","Observation.extension","MesReasonForMeasurement","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement]]} {[]}
-","Motif de la mesure","Motif de la mesure","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Motif de la mesure","Motif de la mesure
+Texte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mesures-observation-head-circumference","Observation.modifierExtension","Observation.modifierExtension","","extensions
@@ -5337,7 +5338,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-pain-severity","Observation.category:VSCat.coding.display","Observation.category.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings SHALL NOT exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Signes vitaux""/>","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
+","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings SHALL NOT exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""vital-signs""/>","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-pain-severity","Observation.category:VSCat.coding.userSelected","Observation.category.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}

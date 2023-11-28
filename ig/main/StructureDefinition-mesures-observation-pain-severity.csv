@@ -142,7 +142,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1","n/a","./code"
 "Observation.category:VSCat.coding.display","Observation.category.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings SHALL NOT exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Signes vitaux""/>","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
+","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings SHALL NOT exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""vital-signs""/>","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.2 - but note this is not well followed","n/a","CV.displayName"
 "Observation.category:VSCat.coding.userSelected","Observation.category.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
