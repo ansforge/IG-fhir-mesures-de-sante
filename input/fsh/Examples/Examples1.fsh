@@ -87,6 +87,21 @@ Usage: #example
 * effectiveDateTime = "2022-11-06"
 * valueQuantity = 36.5 'Cel' "C"
 
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Instance: ExampleMesFrOxygenSat
+InstanceOf: MesFrObservationOxygenSat
+Usage: #example
+* status = #final
+* subject = Reference(ExamplefrPatient001) "Pierre Durand"
+* category = $observation-category#vital-signs "Vital Signs"
+* category.text = "Vital Signs"
+* code.coding[0] = $loinc#2708-6 "Oxygen saturation in Arterial blood"
+* code.text = "oxygen_saturation"
+* effectiveDateTime = "1999-07-02"
+* valueQuantity = 99 '%' "%O2"
+
 Instance: ExampleMesFrObservationBP001
 InstanceOf: MesFrObservationBp
 Usage: #example
