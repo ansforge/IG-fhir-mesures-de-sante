@@ -16,6 +16,6 @@ Les ressources Mesures de santé utilisent les terminologies suivantes :
 
 Les codes de la nomenclature MDC (Médical Device Communication) sont issus de la norme de nomenclature ISO/IEEE 11073-10101. Elle contient les codes utilisés dans les dispositifs « Personal Health Devices » (PHD) et autres dispositifs médicaux pour l'identification des mesures physiologiques ainsi que pour les alarmes et de nombreuses conditions techniques telles que l'état d'étalonnage et l'état de la batterie.
 
-Les codes MDC utilisés dans le profil « PhdDevice » caractérisent les PHD. Cela se traduit par l’utilisation d’un codeable concept pour coder les éléments d’un PHD (MDC code system entry : Fixed Value: 65573).
+Les codes MDC caractérisent le type de dispositifs utilisés. Dans ce volet les mesures sont issues des dispositifs PHD dont le type est définit uniquement par la valeur 65573.
 
 Dans le profil PhdDevice, l'attribut System-Type-Spec-List contient une liste de spécialisations auxquelles le PHD est conforme. Ces éléments de cette liste indiquent non seulement la fonction du PHD, mais également ses spécificités et la version du dispositif. L’ensemble de ces informations est présent au niveau du profil PhdDevice.
