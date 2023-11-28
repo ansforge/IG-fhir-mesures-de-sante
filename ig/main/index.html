@@ -291,11 +291,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Le projet <strong><em>Mon espace santé</em></strong> propose la mise en place des fonctions d’alimentation et de consultation des mesures de santé d’un usager :</p>
+<p>Le guide <strong><em>mesures de santé</em></strong> propose la mise en place des fonctions d’alimentation et de consultation des mesures de santé d’un usager :</p>
 
 <ul>
   <li>Fréquence cardiaque</li>
   <li>Pression artérielle (systolique / diastolique)</li>
+  <li>Saturation en oxygène</li>
   <li>Nombre de pas</li>
   <li>Niveau de douleur</li>
   <li>IMC</li>
@@ -307,7 +308,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Périmètre cranien</li>
 </ul>
 
-<p>Cette liste pourra être complétée par d’autres mesures jugées pertinentes (Ex. Saturation pulsée en oxygène (SpO2)).</p>
+<p>Cette liste pourra être complétée par d’autres mesures jugées pertinentes (Ex. Fréquence Respiratoire (FR)).</p>
 
 <p>Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre ces fonctions d’alimentation et de consultation des mesures de santé d’un usager.</p>
 
@@ -316,7 +317,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>sur le standard HL7 FHIR et plus particulièrement sur un sous-ensemble des ressources définies par ce standard ainsi que sur la notion d’extension et de profilage des ressources.</li>
   <li>sur les profils français de la ressource Observation (Profls Interop’Santé ou ANS)</li>
-  <li>sur le profil PHD de la ressource Device profilé dans l’Implementation Guide PHD et dont l’usage est défini dans le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif ayant effectué la mesure.</li>
+  <li>sur le profil PHD de la ressource Device profilé dans l’Implementation Guide PHD et dont l’usage est défini dans le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif connecté ayant effectué la mesure.</li>
 </ul>
 
 <p>Pour les opérations sur les ressources, l’API REST définie par le standard HL7 FHIR est mise en œuvre notamment la logique de la transaction PCH-01 du profil IHE « Personal Health Device Observation Upload (POU) » pour l’alimentation.</p>
@@ -410,7 +411,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 28, 2023 12:22+0000">2023-11-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 28, 2023 12:44+0000">2023-11-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
