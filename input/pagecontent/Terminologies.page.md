@@ -1,7 +1,6 @@
 
 Les ressources Mesures de santé utilisent les terminologies suivantes :
 
-
 |**Terminologie**|**Utilisation**|**Lien**|
 | :-: | :-: | :- |
 | CIM-10|Type de diabète|<https://smt.esante.gouv.fr/terminologie-cim-10/> |
@@ -13,7 +12,7 @@ Les ressources Mesures de santé utilisent les terminologies suivantes :
 | UCUM|Unités de mesures|<https://smt.esante.gouv.fr/terminologie-UCUM/> |
 | MDC | terminologie complète pour les modèles d'appareils | <https://www.hl7.org/fhir/R4/mdc.html/> |
 
-# Description de la nomenclature MDC
+### Description de la nomenclature MDC
 
 Les codes de la nomenclature MDC (Médical Device Communication) sont issus de la norme de nomenclature ISO/IEEE 11073-10101. Elle contient les codes utilisés dans les dispositifs « Personal Health Devices » (PHD) et autres dispositifs médicaux pour l'identification des mesures physiologiques ainsi que pour les alarmes et de nombreuses conditions techniques telles que l'état d'étalonnage et l'état de la batterie.
 
