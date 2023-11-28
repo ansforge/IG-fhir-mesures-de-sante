@@ -25,10 +25,8 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * bodySite.coding.system 1..
 * bodySite.coding.code 1..
 
-* method from $JDV-J150-MethodBP-MES (required)
-* method ^binding.description = $JDV-J150-MethodBP-MES
-* method.coding.system 1..
-* method.coding.code 1..
+* method MS
+* method from $JDV-J150-MethodBP-MES (extensible)
 
 * device only Reference($PhdDevice)
 * device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire"

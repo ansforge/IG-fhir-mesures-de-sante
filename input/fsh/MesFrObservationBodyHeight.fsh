@@ -18,9 +18,8 @@ Id: mesures-fr-observation-bodyheight
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-
-* method from $JDV-J146-MethodBodyHeight-MES (required)
-* method ^binding.description = $JDV-J158-MethodStepsByDay-MES
+* method MS
+* method from $JDV-J146-MethodBodyHeight-MES (extensible)
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"

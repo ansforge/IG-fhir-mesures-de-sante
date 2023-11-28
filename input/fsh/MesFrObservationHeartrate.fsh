@@ -19,10 +19,9 @@ Id: mesures-fr-observation-heartrate
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* method from $JDV-J147-MethodHeartrate-MES (required)
+* method MS
+* method from $JDV-J147-MethodHeartrate-MES (extensible)
 * method ^short = "Méthode de la mesure"
-* method ^definition = "Méthode de la mesure"
-* method ^binding.description = $JDV-J147-MethodHeartrate-MES
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"

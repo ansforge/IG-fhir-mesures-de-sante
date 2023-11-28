@@ -27,10 +27,8 @@ Id: mesures-observation-steps-by-day
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* method from $JDV-J158-MethodStepsByDay-MES (required)
-* method ^binding.description = $JDV-J158-MethodStepsByDay-MES
-* method.coding.system 1..
-* method.coding.code 1..
+* method MS
+* method from $JDV-J158-MethodStepsByDay-MES (extensible)
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"

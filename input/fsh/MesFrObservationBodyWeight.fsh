@@ -19,8 +19,9 @@ Description: "Poids du patient"
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
-* method from $JDV-J145-MethodBodyWeight-MES (required)
-* method ^binding.description = $JDV-J145-MethodBodyWeight-MES
+
+* method MS
+* method from $JDV-J145-MethodBodyWeight-MES (extensible)
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
