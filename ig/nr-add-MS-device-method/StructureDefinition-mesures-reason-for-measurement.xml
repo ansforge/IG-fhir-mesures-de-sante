@@ -14,7 +14,7 @@ Texte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholest�
   <version value="3.0.1"/>
   <name value="MesReasonForMeasurement"/>
   <status value="active"/>
-  <date value="2023-11-17T15:47:06+00:00"/>
+  <date value="2023-11-28T13:04:19+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -136,7 +136,7 @@ Texte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholest�
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
     </element>
     <element id="Extension.url">

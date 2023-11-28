@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2023-11-17T15:47:06+00:00",
+  "date" : "2023-11-28T13:04:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -870,6 +870,17 @@
         "reference" : "StructureDefinition/mesures-fr-observation-heartrate"
       },
       "name" : "MesFrObservationHeartrate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-fr-observation-oxygen-sat"
+      },
+      "name" : "MesFrObservationOxygenSat",
       "exampleBoolean" : false
     },
     {
