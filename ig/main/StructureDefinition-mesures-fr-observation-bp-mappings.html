@@ -416,7 +416,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;method</td><td>CE/CNE/CWE, OBX-17</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>SPM segment</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>OBX-17 / PRT -10</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;referenceRange</td><td>OBX.7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low</td><td>SN (see also Range) or CQ, OBX-7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high</td><td>SN (see also Range) or CQ, OBX-7</td> </tr>
@@ -567,12 +566,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;method</td><td>n/a, CD, methodCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), participation[typeCode=SPC].specimen</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), participation[typeCode=DEV]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reference</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT], .identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>n/a, N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;referenceRange</td><td>n/a, outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
@@ -806,7 +799,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 28, 2023 13:07+0000">2023-11-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 28, 2023 13:18+0000">2023-11-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
