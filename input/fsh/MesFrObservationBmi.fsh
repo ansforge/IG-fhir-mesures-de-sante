@@ -2,8 +2,8 @@
 Profile: MesFrObservationBmi
 Parent: $FrObservationBmi
 Id: mesures-fr-observation-bmi
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
-* meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+
+* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

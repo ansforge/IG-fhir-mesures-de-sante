@@ -3,8 +3,8 @@ Profile: MesFrObservationBp
 Parent: $FrObservationBp
 Id: mesures-fr-observation-bp
 Description: "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé"
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
-* meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource."
+
+* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
 * extension contains
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and

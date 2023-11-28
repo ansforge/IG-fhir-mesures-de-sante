@@ -1,8 +1,8 @@
 Profile: MesObservationStepsByDay
 Parent: $vitalsigns
 Id: mesures-observation-steps-by-day
+
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
-* meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
