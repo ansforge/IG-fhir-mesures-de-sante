@@ -2,8 +2,8 @@ Profile: MesObservationPainSeverity
 Parent: $vitalsigns
 Id: mesures-observation-pain-severity
 Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé"
+
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
-* meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
@@ -29,10 +29,5 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 
 * bodySite ^short = "Lieu de la douleur - Texte libre"
 
-* method from $JDV-J159-MethodPainSeverity-MES (required)
-* method.coding.system 1..
-* method.coding.code 1..
-
-* device only Reference($PhdDevice)
-* device ^short = "Dispositif utilisé pour l'observation"
-* device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire\r\nhttp://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
+* method MS
+* method from $JDV-J159-MethodPainSeverity-MES (extensible)

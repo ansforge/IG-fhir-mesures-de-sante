@@ -1,8 +1,8 @@
 Profile: MesObservationStepsByDay
 Parent: $vitalsigns
 Id: mesures-observation-steps-by-day
+
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
-* meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
@@ -27,10 +27,8 @@ Id: mesures-observation-steps-by-day
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* method from $JDV-J158-MethodStepsByDay-MES (required)
-* method ^binding.description = $JDV-J158-MethodStepsByDay-MES
-* method.coding.system 1..
-* method.coding.code 1..
+* method MS
+* method from $JDV-J158-MethodStepsByDay-MES (extensible)
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"

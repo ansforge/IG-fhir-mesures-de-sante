@@ -3,8 +3,8 @@ Profile: MesFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
 Id: mesures-fr-observation-body-weight
 Description: "Poids du patient"
+
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
-* meta.source ^definition = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 
 * extension contains mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
@@ -19,8 +19,9 @@ Description: "Poids du patient"
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
-* method from $JDV-J145-MethodBodyWeight-MES (required)
-* method ^binding.description = $JDV-J145-MethodBodyWeight-MES
+
+* method MS
+* method from $JDV-J145-MethodBodyWeight-MES (extensible)
 
 * device only Reference($PhdDevice)
 * device ^short = "Dispositif utilisé pour l'observation"
