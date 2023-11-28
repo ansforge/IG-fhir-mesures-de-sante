@@ -1,4 +1,3 @@
-
 Profile: MesFrObservationBodyTemperature
 Parent: $FrObservationBodyTemperature
 Id: mesures-fr-observation-body-temperature
@@ -26,8 +25,8 @@ Id: mesures-fr-observation-body-temperature
 * method from $JDV-J152-MethodBodyTemperature-MES (extensible)
 
 * device only Reference($PhdDevice)
-* device ^short = "Dispositif utilisé pour l'observation"
-* device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\r\n=>cette référence est obligatoire\r\nhttp://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
+* device MS
+* device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\r\n, cette référence est obligatoire"
 
 
 * interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)

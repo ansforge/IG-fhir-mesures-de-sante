@@ -1,4 +1,3 @@
-
 Profile: MesFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
 Id: mesures-fr-observation-body-weight
@@ -24,8 +23,8 @@ Description: "Poids du patient"
 * method from $JDV-J145-MethodBodyWeight-MES (extensible)
 
 * device only Reference($PhdDevice)
-* device ^short = "Dispositif utilisé pour l'observation"
-* device ^definition = "Dispositif utilisé pour l'observation\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\n=>cette référence est obligatoire"
+* device MS
+* device ^short = "Dispositif utilisé pour l'observation\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\n, cette référence est obligatoire"
 
 
 * interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)

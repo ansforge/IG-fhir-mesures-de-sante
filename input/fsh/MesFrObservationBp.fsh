@@ -1,4 +1,3 @@
-
 Profile: MesFrObservationBp
 Parent: $FrObservationBp
 Id: mesures-fr-observation-bp
@@ -29,8 +28,8 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 * method from $JDV-J150-MethodBP-MES (extensible)
 
 * device only Reference($PhdDevice)
-* device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice) =>cette référence est obligatoire"
-* device.reference 1..
+* device MS
+* device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
 
 * referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
 * referenceRange.appliesTo ^binding.description = $JDV-J148-ReferenceRangeAppliesTo-CISIS

@@ -31,5 +31,5 @@ Id: mesures-observation-steps-by-day
 * method from $JDV-J158-MethodStepsByDay-MES (extensible)
 
 * device only Reference($PhdDevice)
-* device ^short = "Dispositif utilisé pour l'observation"
-* device ^definition = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice)\r\n=>cette référence est obligatoire"
+* device MS
+* device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
