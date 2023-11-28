@@ -15,6 +15,8 @@
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBodyWeight001.json: line 48, col 8, Info - Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED' could not be found so the code cannot be validated (UNKNOWN)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationBodyWeight001.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationHeartrate001.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrOxygenSat.json: line 15, col 35, Error - Value is 'Vital Signs' but must be 'vital-signs' (VALUE)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrOxygenSat.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json: line 34, col 12, Info - Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc' could not be found so the code cannot be validated (UNKNOWN)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json: line 32, col 8, Warning - ValueSet https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS not found (CODEINVALID)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json: line 44, col 8, Warning - ValueSet https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS not found (CODEINVALID)
@@ -67,7 +69,6 @@
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-oxygen-sat.json: line 0, col 0, Warning - The valueSet reference http://www.interopsante.org/fhir/structuredefinition/observation/fr-obervation-interpretation on element Observation.interpretation could not be resolved (BUSINESSRULE)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-oxygen-sat.json: line 0, col 0, Warning - The valueSet reference http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-sPO2BodyLocationVS.html on element Observation.bodySite could not be resolved (BUSINESSRULE)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-oxygen-sat.json: line 0, col 0, Warning - The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J147-MethodHeartrate-ENS/FHIR/JDV-J147-MethodHeartrate-ENS on element Observation.method could not be resolved (BUSINESSRULE)
-/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-oxygen-sat.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-number-of-days.json: line 0, col 0, Warning - The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS on element Extension.value[x] could not be resolved (BUSINESSRULE)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-number-of-days.json: line 0, col 0, Warning - The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS on element Extension.value[x] could not be resolved (BUSINESSRULE)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-glucose.json: line 0, col 0, Warning - The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J157-MomentGlucose-ENS/FHIR/JDV-J157-MomentGlucose-ENS on element Observation.extension.value[x] could not be resolved (BUSINESSRULE)
@@ -89,6 +90,6 @@
 Mesures : Validation Results
 =========================================
 
-err = 4, warn = 101, info = 9
+err = 5, warn = 102, info = 9
 IG Publisher Version: 1.5.5
-Generated Tue Nov 28 12:48:05 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+Generated Tue Nov 28 13:11:09 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
