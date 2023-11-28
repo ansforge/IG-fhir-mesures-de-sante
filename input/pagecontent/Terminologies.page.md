@@ -12,3 +12,11 @@ Les ressources Mesures de santé utilisent les terminologies suivantes :
 | TA\_ASIP|divers|<https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs> |
 | UCUM|Unités de mesures|<https://smt.esante.gouv.fr/terminologie-UCUM/> |
 | MDC | terminologie complète pour les modèles d'appareils | <https://www.hl7.org/fhir/R4/mdc.html/> |
+
+# Description de la nomenclature MDC
+
+Les codes de la nomenclature MDC (Médical Device Communication) sont issus de la norme de nomenclature ISO/IEEE 11073-10101. Elle contient les codes utilisés dans les dispositifs « Personal Health Devices » (PHD) et autres dispositifs médicaux pour l'identification des mesures physiologiques ainsi que pour les alarmes et de nombreuses conditions techniques telles que l'état d'étalonnage et l'état de la batterie.
+
+Les codes MDC utilisés dans le profil « PhdDevice » caractérisent les PHD. Cela se traduit par l’utilisation d’un codeable concept pour coder les éléments d’un PHD (MDC code system entry : Fixed Value: 65573).
+
+Dans le profil PhdDevice, l'attribut System-Type-Spec-List contient une liste de spécialisations auxquelles le PHD est conforme. Ces éléments de cette liste indiquent non seulement la fonction du PHD, mais également ses spécificités et la version du dispositif. L’ensemble de ces informations est présent au niveau du profil PhdDevice.
