@@ -12,7 +12,10 @@ Description: "Pression artérielle - profil créé pour l'alimentation de l'Espa
 
 * category[VSCat] ^sliceName = "VSCat"
 * category[VSCat].coding.display = "Signes vitaux" 
+
 * subject only Reference($fr-patient)
+* subject 1..1
+
 * effective[x] only dateTime
 
 
