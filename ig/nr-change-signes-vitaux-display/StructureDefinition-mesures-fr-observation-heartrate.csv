@@ -26,7 +26,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
 "Observation.meta.source","Observation.meta.source","","","",0,1,"","","Y","uri {[]} {[]}
-","Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »","Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »","In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. 
+","Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »","A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.","In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. 
 
 This element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL.","","","","","","","","",,,,,"",,,,"Meta.source",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -79,8 +79,7 @@ user content","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/St
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Observation.extension:MesMomentOfMeasurement","Observation.extension","MesMomentOfMeasurement","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement]]} {[]}
-","Moment de la mesure","Moment de la mesure
-Texte libre","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Moment de la mesure","Moment de la mesure","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.modifierExtension","Observation.modifierExtension","","extensions
@@ -360,8 +359,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this","n/a","./originalText[mediaType/code=""text/plain""]/data"
-"Observation.method","Observation.method","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Méthode de la mesure","Méthode de la mesure","Only used if not implicit in code for Observation.code.","In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results.","","","","","","","",,"required","https://mos.esante.gouv.fr/NOS/JDV_J147-MethodHeartrate-ENS/FHIR/JDV-J147-MethodHeartrate-ENS","https://mos.esante.gouv.fr/NOS/JDV_J147-MethodHeartrate-ENS/FHIR/JDV-J147-MethodHeartrate-ENS","",,,,"Observation.method",0,1,"ele-1
+"Observation.method","Observation.method","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
+","Méthode de la mesure","Indicates the mechanism used to perform the observation.","Only used if not implicit in code for Observation.code.","In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results.","","","","","","","",,"extensible","","https://mos.esante.gouv.fr/NOS/JDV_J147-MethodHeartrate-ENS/FHIR/JDV-J147-MethodHeartrate-ENS","",,,,"Observation.method",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CE/CNE/CWE","OBX-17","n/a","CD","methodCode"
 "Observation.method.id","Observation.method.id","","","",0,1,"","","","string {[]} {[]}
