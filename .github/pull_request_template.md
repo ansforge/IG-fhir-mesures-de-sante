@@ -6,6 +6,6 @@
 
 ## Preview
 
-https://ansforge.github.io/IG-fhir-annuaire/ig/[ajouter_nom_de_la_branche] 
+https://ansforge.github.io/IG-fhir-mesures-de-sante/ig/[ajouter_nom_de_la_branche] 
 
 ## Impact API MES
