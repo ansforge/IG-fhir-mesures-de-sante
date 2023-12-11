@@ -70,8 +70,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Observation.extension:MesReasonForMeasurement","Observation.extension","MesReasonForMeasurement","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement]]} {[]}
-","Motif de la mesure","Motif de la mesure
-Texte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Motif de la mesure","Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:MesMomentOfMeasurement","Observation.extension","MesMomentOfMeasurement","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement]]} {[]}
@@ -136,7 +135,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this","n/a","./originalText[mediaType/code=""text/plain""]/data"
 "Observation.extension:MesNumberOfDays","Observation.extension","MesNumberOfDays","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days]]} {[]}
-","Nombre de jours","Nombre de jours. 
+","Nombre de jours","Extension sur le Nombre de jours. 
 Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

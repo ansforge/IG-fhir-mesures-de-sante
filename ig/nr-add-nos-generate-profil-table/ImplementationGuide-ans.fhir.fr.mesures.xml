@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2023-12-11T15:13:34+00:00"/>
+  <date value="2023-12-11T15:58:18+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -638,8 +638,8 @@
       <reference>
         <reference value="StructureDefinition/mesures-fr-observation-heartrate"/>
       </reference>
-      <name value="Fréquence Cardiaque (FC ou HR)"/>
-      <description value="Profil de la ressource Observation pour définir une Fréquence Cardiaque (FC ou HR)"/>
+      <name value="Fréquence Cardiaque"/>
+      <description value="Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -660,18 +660,8 @@
       <reference>
         <reference value="StructureDefinition/mesures-fr-observation-bmi"/>
       </reference>
-      <name value="Indice de Masse Corporelle (IMC ou BMI)"/>
-      <description value="Profil de la ressource Observation pour définir un Indice de Masse Corporelle (IMC ou BMI)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mesures-diabetis-type"/>
-      </reference>
-      <name value="MesDiabetisType"/>
+      <name value="Indice de Masse Corporelle"/>
+      <description value="Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -681,30 +671,8 @@
       <reference>
         <reference value="StructureDefinition/mesures-moment-of-measurement"/>
       </reference>
-      <name value="MesMomentOfMeasurement"/>
+      <name value="Moment de la mesure"/>
       <description value="Moment de la mesure.&#xA;Peut être exprimé par un texte libre ou un code."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mesures-number-of-days"/>
-      </reference>
-      <name value="MesNumberOfDays"/>
-      <description value="Nombre de jours"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mesures-reason-for-measurement"/>
-      </reference>
-      <name value="MesReasonForMeasurement"/>
-      <description value="Motif de la mesure.&#xA;Exprimé en texte libre."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -727,6 +695,17 @@
       </reference>
       <name value="Niveau de douleur"/>
       <description value="Profil de la ressource Observation pour définir un niveau de douleur"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mesures-number-of-days"/>
+      </reference>
+      <name value="Nombre de jours"/>
+      <description value="Extension sur le Nombre de jours. &#xD;&#xA;Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -768,8 +747,8 @@
       <reference>
         <reference value="StructureDefinition/mesures-fr-observation-bp"/>
       </reference>
-      <name value="Pression Artérielle (PA ou BP)"/>
-      <description value="Profil de la ressource Observation pour définir une Pression Artérielle (PA ou BP)"/>
+      <name value="Pression Artérielle"/>
+      <description value="Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -785,13 +764,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mesures-reason-for-measurement"/>
+      </reference>
+      <name value="Raison de la mesure"/>
+      <description value="Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/mesures-fr-observation-oxygen-sat"/>
       </reference>
-      <name value="Saturation en Oxygène (SPO2)"/>
-      <description value="Profil de la ressource Observation pour définir une Saturation en Oxygène (SPO2)"/>
+      <name value="Saturation en Oxygène"/>
+      <description value="Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -825,6 +815,17 @@
       </reference>
       <name value="Tour de taille"/>
       <description value="Profil de la ressource Observation pour définir une taille en cm"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mesures-diabetis-type"/>
+      </reference>
+      <name value="Type de diabète"/>
+      <description value="Extension sur le type de diabète"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

@@ -33,9 +33,9 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
   <url value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"/>
   <version value="3.0.1"/>
   <name value="MesFrObservationBp"/>
-  <title value="Pression Artérielle (PA ou BP)"/>
+  <title value="Pression Artérielle"/>
   <status value="active"/>
-  <date value="2023-12-11T15:13:34+00:00"/>
+  <date value="2023-12-11T15:58:18+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -44,7 +44,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <description value="Profil de la ressource Observation pour définir une Pression Artérielle (PA ou BP)"/>
+  <description value="Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP)"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -794,7 +794,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
       <path value="Observation.extension"/>
       <sliceName value="MesReasonForMeasurement"/>
       <short value="Motif de la mesure"/>
-      <definition value="Motif de la mesure&#xD;&#xA;Texte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"/>
+      <definition value="Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)."/>
       <min value="0"/>
       <max value="1"/>
       <base>

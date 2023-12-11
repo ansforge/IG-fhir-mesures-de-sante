@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-12-11T15:13:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-11T15:58:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -769,8 +769,8 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate> ;
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-heartrate" ]
        ] ;
-       fhir:name [ fhir:v "Fréquence Cardiaque (FC ou HR)" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Fréquence Cardiaque (FC ou HR)" ] ;
+       fhir:name [ fhir:v "Fréquence Cardiaque" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -793,19 +793,8 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi> ;
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bmi" ]
        ] ;
-       fhir:name [ fhir:v "Indice de Masse Corporelle (IMC ou BMI)" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un Indice de Masse Corporelle (IMC ou BMI)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diabetis-type> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-diabetis-type" ]
-       ] ;
-       fhir:name [ fhir:v "MesDiabetisType" ] ;
+       fhir:name [ fhir:v "Indice de Masse Corporelle" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -816,32 +805,8 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement> ;
          fhir:reference [ fhir:v "StructureDefinition/mesures-moment-of-measurement" ]
        ] ;
-       fhir:name [ fhir:v "MesMomentOfMeasurement" ] ;
+       fhir:name [ fhir:v "Moment de la mesure" ] ;
        fhir:description [ fhir:v "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-number-of-days" ]
-       ] ;
-       fhir:name [ fhir:v "MesNumberOfDays" ] ;
-       fhir:description [ fhir:v "Nombre de jours" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-reason-for-measurement" ]
-       ] ;
-       fhir:name [ fhir:v "MesReasonForMeasurement" ] ;
-       fhir:description [ fhir:v "Motif de la mesure.\nExprimé en texte libre." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -866,6 +831,18 @@
        ] ;
        fhir:name [ fhir:v "Niveau de douleur" ] ;
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir un niveau de douleur" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-number-of-days" ]
+       ] ;
+       fhir:name [ fhir:v "Nombre de jours" ] ;
+       fhir:description [ fhir:v "Extension sur le Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -911,8 +888,8 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp> ;
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bp" ]
        ] ;
-       fhir:name [ fhir:v "Pression Artérielle (PA ou BP)" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Pression Artérielle (PA ou BP)" ] ;
+       fhir:name [ fhir:v "Pression Artérielle" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -929,14 +906,26 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-reason-for-measurement" ]
+       ] ;
+       fhir:name [ fhir:v "Raison de la mesure" ] ;
+       fhir:description [ fhir:v "Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat> ;
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-oxygen-sat" ]
        ] ;
-       fhir:name [ fhir:v "Saturation en Oxygène (SPO2)" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Saturation en Oxygène (SPO2)" ] ;
+       fhir:name [ fhir:v "Saturation en Oxygène" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -973,6 +962,18 @@
        ] ;
        fhir:name [ fhir:v "Tour de taille" ] ;
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une taille en cm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diabetis-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-diabetis-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type de diabète" ] ;
+       fhir:description [ fhir:v "Extension sur le type de diabète" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

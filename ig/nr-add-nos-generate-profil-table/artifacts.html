@@ -245,10 +245,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-mesures-fr-observation-heartrate.html"
-                     title="StructureDefinition/mesures-fr-observation-heartrate">Fréquence Cardiaque (FC ou HR)</a>
+                     title="StructureDefinition/mesures-fr-observation-heartrate">Fréquence Cardiaque</a>
                </td>
                <td>
-<p>Profil de la ressource Observation pour définir une Fréquence Cardiaque (FC ou HR)</p>
+<p>Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR)</p>
 </td>
             </tr>
             <tr>
@@ -275,10 +275,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-mesures-fr-observation-bmi.html"
-                     title="StructureDefinition/mesures-fr-observation-bmi">Indice de Masse Corporelle (IMC ou BMI)</a>
+                     title="StructureDefinition/mesures-fr-observation-bmi">Indice de Masse Corporelle</a>
                </td>
                <td>
-<p>Profil de la ressource Observation pour définir un Indice de Masse Corporelle (IMC ou BMI)</p>
+<p>Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI)</p>
 </td>
             </tr>
             <tr>
@@ -311,10 +311,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-mesures-fr-observation-bp.html"
-                     title="StructureDefinition/mesures-fr-observation-bp">Pression Artérielle (PA ou BP)</a>
+                     title="StructureDefinition/mesures-fr-observation-bp">Pression Artérielle</a>
                </td>
                <td>
-<p>Profil de la ressource Observation pour définir une Pression Artérielle (PA ou BP)</p>
+<p>Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP)</p>
 </td>
             </tr>
             <tr>
@@ -329,10 +329,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-mesures-fr-observation-oxygen-sat.html"
-                     title="StructureDefinition/mesures-fr-observation-oxygen-sat">Saturation en Oxygène (SPO2)</a>
+                     title="StructureDefinition/mesures-fr-observation-oxygen-sat">Saturation en Oxygène</a>
                </td>
                <td>
-<p>Profil de la ressource Observation pour définir une Saturation en Oxygène (SPO2)</p>
+<p>Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)</p>
 </td>
             </tr>
             <tr>
@@ -376,17 +376,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-mesures-diabetis-type.html"
-                     title="StructureDefinition/mesures-diabetis-type">MesDiabetisType</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-mesures-moment-of-measurement.html"
-                     title="StructureDefinition/mesures-moment-of-measurement">MesMomentOfMeasurement</a>
+                     title="StructureDefinition/mesures-moment-of-measurement">Moment de la mesure</a>
                </td>
                <td>
 <p>Moment de la mesure.
@@ -396,20 +387,29 @@ Peut être exprimé par un texte libre ou un code.</p>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-mesures-number-of-days.html"
-                     title="StructureDefinition/mesures-number-of-days">MesNumberOfDays</a>
+                     title="StructureDefinition/mesures-number-of-days">Nombre de jours</a>
                </td>
                <td>
-<p>Nombre de jours</p>
+<p>Extension sur le Nombre de jours. 
+Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-mesures-reason-for-measurement.html"
-                     title="StructureDefinition/mesures-reason-for-measurement">MesReasonForMeasurement</a>
+                     title="StructureDefinition/mesures-reason-for-measurement">Raison de la mesure</a>
                </td>
                <td>
-<p>Motif de la mesure.
-Exprimé en texte libre.</p>
+<p>Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-mesures-diabetis-type.html"
+                     title="StructureDefinition/mesures-diabetis-type">Type de diabète</a>
+               </td>
+               <td>
+<p>Extension sur le type de diabète</p>
 </td>
             </tr>
          </tbody>
@@ -584,7 +584,7 @@ Exprimé en texte libre.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 11, 2023 15:13+0000">2023-12-11</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 11, 2023 15:58+0000">2023-12-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

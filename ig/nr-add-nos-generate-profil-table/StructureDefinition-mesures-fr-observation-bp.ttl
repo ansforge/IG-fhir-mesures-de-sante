@@ -15,9 +15,9 @@
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.0.1"] ; # 
   fhir:name [ fhir:v "MesFrObservationBp"] ; # 
-  fhir:title [ fhir:v "Pression Artérielle (PA ou BP)"] ; # 
+  fhir:title [ fhir:v "Pression Artérielle"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-12-11T15:13:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-11T15:58:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://esante.gouv.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Pression Artérielle (PA ou BP)"] ; # 
+  fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP)"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
@@ -834,7 +834,7 @@
        fhir:path [ fhir:v "Observation.extension" ] ;
        fhir:sliceName [ fhir:v "MesReasonForMeasurement" ] ;
        fhir:short [ fhir:v "Motif de la mesure" ] ;
-       fhir:definition [ fhir:v "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)" ] ;
+       fhir:definition [ fhir:v "Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
