@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2023-12-11T14:55:17+00:00",
+  "date" : "2023-12-11T15:07:49+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -653,7 +653,7 @@
         "reference" : "StructureDefinition/mesures-bundle-flux-alimentation"
       },
       "name" : "Bundle d'alimentation",
-      "description" : "Bundle du flux d'alimentation à envoyer au serveur",
+      "description" : "Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur",
       "exampleBoolean" : false
     },
     {
@@ -819,7 +819,7 @@
         "reference" : "StructureDefinition/mesures-fr-observation-heartrate"
       },
       "name" : "Fréquence Cardiaque (FC ou HR)",
-      "description" : "Observation de la Fréquence Cardiaque (FC ou HR)",
+      "description" : "Profil de la ressource Observation pour définir une Fréquence Cardiaque (FC ou HR)",
       "exampleBoolean" : false
     },
     {
@@ -831,7 +831,7 @@
         "reference" : "StructureDefinition/mesures-observation-glucose"
       },
       "name" : "Glycémie",
-      "description" : "Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+      "description" : "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
       "exampleBoolean" : false
     },
     {
@@ -843,7 +843,7 @@
         "reference" : "StructureDefinition/mesures-fr-observation-bmi"
       },
       "name" : "Indice de Masse Corporelle (IMC ou BMI)",
-      "description" : "Observation de l'Indice de Masse Corporelle (IMC ou BMI)",
+      "description" : "Profil de la ressource Observation pour définir un Indice de Masse Corporelle (IMC ou BMI)",
       "exampleBoolean" : false
     },
     {
@@ -914,7 +914,7 @@
         "reference" : "StructureDefinition/mesures-observation-pain-severity"
       },
       "name" : "Niveau de douleur",
-      "description" : "Observation du niveau de douleur",
+      "description" : "Profil de la ressource Observation pour définir un niveau de douleur",
       "exampleBoolean" : false
     },
     {
@@ -926,7 +926,7 @@
         "reference" : "StructureDefinition/mesures-observation-steps-by-day"
       },
       "name" : "Nombre de pas par jour",
-      "description" : "Observation du nombre de pas par jour",
+      "description" : "Profil de la ressource Observation pour définir un nombre de pas par jour",
       "exampleBoolean" : false
     },
     {
@@ -949,7 +949,7 @@
         "reference" : "StructureDefinition/mesures-fr-observation-body-weight"
       },
       "name" : "Poids",
-      "description" : "Observation du poids",
+      "description" : "Profil de la ressource Observation pour définir un poids",
       "exampleBoolean" : false
     },
     {
@@ -961,7 +961,7 @@
         "reference" : "StructureDefinition/mesures-fr-observation-bp"
       },
       "name" : "Pression Artérielle (PA ou BP)",
-      "description" : "Observation de la Pression Artérielle (PA ou BP)",
+      "description" : "Profil de la ressource Observation pour définir une Pression Artérielle (PA ou BP)",
       "exampleBoolean" : false
     },
     {
@@ -973,7 +973,7 @@
         "reference" : "StructureDefinition/mesures-observation-head-circumference"
       },
       "name" : "Périmètre Crânien",
-      "description" : "Observation du Périmètre Crânien",
+      "description" : "Profil de la ressource Observation pour définir un Périmètre Crânien",
       "exampleBoolean" : false
     },
     {
@@ -985,7 +985,7 @@
         "reference" : "StructureDefinition/mesures-fr-observation-oxygen-sat"
       },
       "name" : "Saturation en Oxygène (SPO2)",
-      "description" : "Observation de la Saturation en Oxygène (SPO2)",
+      "description" : "Profil de la ressource Observation pour définir une Saturation en Oxygène (SPO2)",
       "exampleBoolean" : false
     },
     {
@@ -997,7 +997,7 @@
         "reference" : "StructureDefinition/mesures-fr-observation-bodyheight"
       },
       "name" : "Taille",
-      "description" : "Observation de la taille",
+      "description" : "Profil de la ressource Observation pour définir une taille",
       "exampleBoolean" : false
     },
     {
@@ -1009,7 +1009,7 @@
         "reference" : "StructureDefinition/mesures-fr-observation-body-temperature"
       },
       "name" : "Température",
-      "description" : "Observation de la température",
+      "description" : "Profil de la ressource Observation pour définir une température",
       "exampleBoolean" : false
     },
     {
@@ -1021,7 +1021,7 @@
         "reference" : "StructureDefinition/mesures-observation-waist-circumference"
       },
       "name" : "Tour de taille",
-      "description" : "Observation du tour de taille en cm",
+      "description" : "Profil de la ressource Observation pour définir une taille en cm",
       "exampleBoolean" : false
     }],
     "page" : {

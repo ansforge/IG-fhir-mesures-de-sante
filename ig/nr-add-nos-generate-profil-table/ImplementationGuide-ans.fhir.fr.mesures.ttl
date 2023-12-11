@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-12-11T14:55:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-11T15:07:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -568,7 +568,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-bundle-flux-alimentation" ]
        ] ;
        fhir:name [ fhir:v "Bundle d'alimentation" ] ;
-       fhir:description [ fhir:v "Bundle du flux d'alimentation à envoyer au serveur" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -770,7 +770,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-heartrate" ]
        ] ;
        fhir:name [ fhir:v "Fréquence Cardiaque (FC ou HR)" ] ;
-       fhir:description [ fhir:v "Observation de la Fréquence Cardiaque (FC ou HR)" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Fréquence Cardiaque (FC ou HR)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -782,7 +782,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-observation-glucose" ]
        ] ;
        fhir:name [ fhir:v "Glycémie" ] ;
-       fhir:description [ fhir:v "Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin." ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -794,7 +794,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bmi" ]
        ] ;
        fhir:name [ fhir:v "Indice de Masse Corporelle (IMC ou BMI)" ] ;
-       fhir:description [ fhir:v "Observation de l'Indice de Masse Corporelle (IMC ou BMI)" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un Indice de Masse Corporelle (IMC ou BMI)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -865,7 +865,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-observation-pain-severity" ]
        ] ;
        fhir:name [ fhir:v "Niveau de douleur" ] ;
-       fhir:description [ fhir:v "Observation du niveau de douleur" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un niveau de douleur" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -877,7 +877,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-observation-steps-by-day" ]
        ] ;
        fhir:name [ fhir:v "Nombre de pas par jour" ] ;
-       fhir:description [ fhir:v "Observation du nombre de pas par jour" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un nombre de pas par jour" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -900,7 +900,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-body-weight" ]
        ] ;
        fhir:name [ fhir:v "Poids" ] ;
-       fhir:description [ fhir:v "Observation du poids" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un poids" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -912,7 +912,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bp" ]
        ] ;
        fhir:name [ fhir:v "Pression Artérielle (PA ou BP)" ] ;
-       fhir:description [ fhir:v "Observation de la Pression Artérielle (PA ou BP)" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Pression Artérielle (PA ou BP)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -924,7 +924,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-observation-head-circumference" ]
        ] ;
        fhir:name [ fhir:v "Périmètre Crânien" ] ;
-       fhir:description [ fhir:v "Observation du Périmètre Crânien" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un Périmètre Crânien" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -936,7 +936,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-oxygen-sat" ]
        ] ;
        fhir:name [ fhir:v "Saturation en Oxygène (SPO2)" ] ;
-       fhir:description [ fhir:v "Observation de la Saturation en Oxygène (SPO2)" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Saturation en Oxygène (SPO2)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -948,7 +948,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bodyheight" ]
        ] ;
        fhir:name [ fhir:v "Taille" ] ;
-       fhir:description [ fhir:v "Observation de la taille" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une taille" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -960,7 +960,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-body-temperature" ]
        ] ;
        fhir:name [ fhir:v "Température" ] ;
-       fhir:description [ fhir:v "Observation de la température" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une température" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -972,7 +972,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-observation-waist-circumference" ]
        ] ;
        fhir:name [ fhir:v "Tour de taille" ] ;
-       fhir:description [ fhir:v "Observation du tour de taille en cm" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une taille en cm" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
