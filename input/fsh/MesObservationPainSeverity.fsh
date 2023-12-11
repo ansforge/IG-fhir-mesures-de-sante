@@ -2,7 +2,7 @@ Profile: MesObservationPainSeverity
 Parent: $vitalsigns
 Id: mesures-observation-pain-severity
 Title: "Niveau de douleur"
-Description: "Observation du niveau de douleur"
+Description: "Profil de la ressource Observation pour définir un niveau de douleur"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 

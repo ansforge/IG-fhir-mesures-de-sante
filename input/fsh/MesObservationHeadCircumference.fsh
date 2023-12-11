@@ -2,7 +2,7 @@ Profile: MesObservationHeadCircumference
 Parent: $vitalsigns
 Id: mesures-observation-head-circumference
 Title: "Périmètre Crânien"
-Description: "Observation du Périmètre Crânien"
+Description: "Profil de la ressource Observation pour définir un Périmètre Crânien"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 

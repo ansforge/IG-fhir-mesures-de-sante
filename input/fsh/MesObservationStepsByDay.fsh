@@ -2,7 +2,7 @@ Profile: MesObservationStepsByDay
 Parent: $vitalsigns
 Id: mesures-observation-steps-by-day
 Title: "Nombre de pas par jour"
-Description: "Observation du nombre de pas par jour"
+Description: "Profil de la ressource Observation pour définir un nombre de pas par jour"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 

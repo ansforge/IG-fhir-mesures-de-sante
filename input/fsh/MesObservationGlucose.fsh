@@ -2,7 +2,7 @@ Profile: MesObservationGlucose
 Parent: $vitalsigns
 Id: mesures-observation-glucose
 Title: "Glycémie"
-Description: """Glycémie
+Description: """Profil de la ressource Observation pour définir une Glycémie
 
 Ce profil permet de gérer 4 types d'indicateurs de glycémie:
 - le taux de glucose sanguin, mesuré en mg/dl

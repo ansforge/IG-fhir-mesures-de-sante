@@ -2,7 +2,7 @@ Profile: MesFrObservationOxygenSat
 Parent: http://interopsante.org/fhir/StructureDefinition/FrObservationOxygenSaturation
 Id: mesures-fr-observation-oxygen-sat
 Title: "Saturation en Oxygène (SPO2)"
-Description: "Observation de la Saturation en Oxygène (SPO2)"
+Description: "Profil de la ressource Observation pour définir une Saturation en Oxygène (SPO2)"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 

@@ -2,7 +2,7 @@ Profile: MesBundleFluxAlimentation
 Parent: Bundle
 Id: mesures-bundle-flux-alimentation
 Title: "Bundle d'alimentation"
-Description: "Bundle du flux d'alimentation à envoyer au serveur"
+Description: "Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur"
 
 * type = #transaction
 

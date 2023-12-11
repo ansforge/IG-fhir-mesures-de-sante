@@ -2,7 +2,7 @@ Profile: MesObservationWaistCircumference
 Parent: $vitalsigns
 Id: mesures-observation-waist-circumference
 Title: "Tour de taille"
-Description: "Observation du tour de taille en cm"
+Description: "Profil de la ressource Observation pour définir une taille en cm"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
