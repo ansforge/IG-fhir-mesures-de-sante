@@ -14,7 +14,11 @@ Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
 
 ### Liste des profils définis
 
-{% SELECT Title, Description, Url FROM Resources WHERE Type = 'StructureDefinition' and Description like "%Profil%"; %}
+{% sql SELECT Title, Description, Url FROM Resources WHERE Type = 'StructureDefinition' and Description like "%Profil%"; %}
+<!-- like "%Profil%" rajouté car induit une erreur -->
+
+{% sql SELECT '[' || Title || '](' || Url || ')', Description FROM Resources WHERE Type = 'StructureDefinition' and Description like "%Profil%"; %}
+
 
 Cette liste pourra être complétée par d’autres mesures jugées pertinentes (Ex. Fréquence Respiratoire (FR)).  
   
