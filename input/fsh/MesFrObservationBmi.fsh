@@ -2,6 +2,8 @@
 Profile: MesFrObservationBmi
 Parent: $FrObservationBmi
 Id: mesures-fr-observation-bmi
+Title: "Indice de Masse Corporelle (IMC ou BMI)"
+Description: "Observation de l'Indice de Masse Corporelle (IMC ou BMI)"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 

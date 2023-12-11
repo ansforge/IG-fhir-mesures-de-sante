@@ -1,7 +1,8 @@
 Profile: MesFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
 Id: mesures-fr-observation-body-weight
-Description: "Poids du patient"
+Title: "Poids"
+Description: "Observation du poids"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 

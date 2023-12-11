@@ -1,19 +1,4 @@
-Le guide ***mesures de santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager : 
-
-* Fréquence cardiaque
-* Pression artérielle (systolique / diastolique)
-* Saturation en oxygène
-* Nombre de pas
-* Niveau de douleur
-* IMC
-* Poids
-* Taille
-* Température
-* Glycémie
-* Tour de taille
-* Périmètre cranien
-
-Cette liste pourra être complétée par d’autres mesures jugées pertinentes (Ex. Fréquence Respiratoire (FR)).  
+Le guide ***mesures de santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager. 
 
 Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre ces fonctions d'alimentation et de consultation des mesures de santé d'un usager.  
 
@@ -25,7 +10,13 @@ Les spécifications techniques de ce guide s’appuient:
   
 Pour les opérations sur les ressources, l’API REST définie par le standard HL7 FHIR est mise en œuvre notamment la logique de la transaction PCH-01 du profil IHE « Personal Health Device Observation Upload (POU) » pour l’alimentation.  
 
-Le lecteur doit être familier de ces concepts pour les mettre en œuvre. 
+Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
+
+### Liste des profils définis
+
+{% sql select Title, Name, Url from Resources where type = 'StructureDefinition' %}
+
+Cette liste pourra être complétée par d’autres mesures jugées pertinentes (Ex. Fréquence Respiratoire (FR)).  
   
 ### Contexte métier
 

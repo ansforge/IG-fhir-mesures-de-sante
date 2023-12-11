@@ -1,6 +1,8 @@
 Profile: MesFrObservationBodyHeight
 Parent: $FrObservationBodyHeight
 Id: mesures-fr-observation-bodyheight
+Title: "Taille"
+Description: "Observation de la taille"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 

@@ -1,7 +1,8 @@
 Profile: MesObservationGlucose
 Parent: $vitalsigns
 Id: mesures-observation-glucose
-Description: """Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.
+Title: "Glycémie"
+Description: """Glycémie
 
 Ce profil permet de gérer 4 types d'indicateurs de glycémie:
 - le taux de glucose sanguin, mesuré en mg/dl

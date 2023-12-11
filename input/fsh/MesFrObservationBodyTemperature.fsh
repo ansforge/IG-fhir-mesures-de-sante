@@ -1,6 +1,9 @@
 Profile: MesFrObservationBodyTemperature
 Parent: $FrObservationBodyTemperature
 Id: mesures-fr-observation-body-temperature
+Title: "Température"
+Description: "Observation de la température"
+
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 

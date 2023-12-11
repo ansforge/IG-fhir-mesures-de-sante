@@ -1,7 +1,8 @@
 Profile: MesFrObservationBp
 Parent: $FrObservationBp
 Id: mesures-fr-observation-bp
-Description: "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé"
+Title: "Pression Artérielle (PA ou BP)"
+Description: "Observation de la Pression Artérielle (PA ou BP)"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 

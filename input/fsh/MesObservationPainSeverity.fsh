@@ -1,7 +1,8 @@
 Profile: MesObservationPainSeverity
 Parent: $vitalsigns
 Id: mesures-observation-pain-severity
-Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé"
+Title: "Niveau de douleur"
+Description: "Observation du niveau de douleur"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
