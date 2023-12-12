@@ -14,7 +14,15 @@ Description: "Profil de la ressource Observation pour définir un niveau de doul
 
 * category[VSCat].coding.display = "vital-signs" 
 
-* code = http://loinc.org#72514-3
+
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "code"
+* code.coding ^slicing.discriminator[+].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.rules = #open
+
+* code.coding contains painServerCode 1..1
+* code.coding[painServerCode] = http://loinc.org#72514-3
 
 * effective[x] only dateTime
 

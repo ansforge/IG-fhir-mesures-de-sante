@@ -28,9 +28,8 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * category[VSCat].coding.display = "vital-signs" 
 
 * code from $JDV-J154-TypeGlucose-MES (extensible)
-* code ^short = "Types de glycémie"
-* code ^definition = "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Hémoglobine glyquée (HbA1c)\r\n• Index de gestion de glycémie (IGG)"
-* code ^binding.description = "Glucose sanguin ou intersticiel"
+* code ^short = "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Hémoglobine glyquée (HbA1c)\r\n• Index de gestion de glycémie (IGG)"
+
 * code.coding.system 1..
 * code.coding.code 1..
 

@@ -12,7 +12,15 @@ Description: "Profil de la ressource Observation pour définir une taille en cm"
 
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. surpoids ou obésité, diabète, maladie du cœur et des vaisseaux, tabac…)"
-* code = http://loinc.org#8280-0 
+
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "code"
+* code.coding ^slicing.discriminator[+].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.rules = #open
+
+* code.coding contains waistCircumCode 1..1
+* code.coding[waistCircumCode] = http://loinc.org#8280-0 
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
