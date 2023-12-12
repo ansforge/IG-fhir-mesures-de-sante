@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -100,9 +100,6 @@
       </li>
       <li>
         <a href="Les-profils-utilises-pour-les-mesures-de-sante.page.html">Les profils utilisés pour les mesures de santé</a>
-      </li>
-      <li>
-        <a href="Les-profils-utilises-pour-les-dispositifs-connectes.page.html">Les profils utilisés pour les dispositifs connectés</a>
       </li>
       <li>
         <a href="Le-profil-FHIR-des-objets-connectes.page.html">Le profil FHIR des objets connectés</a>
@@ -214,7 +211,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>A utiliser lorsque la mesure est faite par un objet connecté conforme aux normes ISO / IEEE 11073 (standards PHD) pour les dispositifs de santé personnels (PHD) tels que les balances, les tensiomètres, les lecteurs de glycémie, etc.</p>
 
-<p>Le profil PhdDevice est spécifié par IHE dans le profil POU : <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html</a>.</p>
+<p>En complément des ressources utilisées pour les mesures de santé , c’est le profil « Personal Health Device (PHD) » défini par le profil IHE « Personal Health Device Observation Upload (POU) » Rev 1.1, qui est utilisé pour réprésenter les dispositifs connectés.</p>
+
+<p>Le profil « PHD » porte les concepts du dispositif connecté. Ce profil est basé sur la ressource standard « Device ».</p>
 
 <table class="grid">
   <thead>
@@ -278,7 +277,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 12, 2023 14:34+0000">2023-12-12</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 12, 2023 16:43+0000">2023-12-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
