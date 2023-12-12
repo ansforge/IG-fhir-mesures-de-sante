@@ -177,6 +177,7 @@ Instance: ExampleMesObservationHeadCircumference001
 InstanceOf: MesObservationHeadCircumference
 Usage: #example
 * status = #final
+* code = http://loinc.org#8287-5 
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient" 
 * effectiveDateTime = "2022-11-06"
