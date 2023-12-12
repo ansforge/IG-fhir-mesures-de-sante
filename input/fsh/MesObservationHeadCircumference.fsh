@@ -19,7 +19,7 @@ Description: "Profil de la ressource Observation pour définir un Périmètre Cr
 * code.coding ^slicing.rules = #open
 
 * code.coding contains headCircumCode 1..1
-* code.coding[headCircumCode] = http://loinc.org#8287-5 
+* code.coding[headCircumCode] = http://loinc.org#8287-5
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
