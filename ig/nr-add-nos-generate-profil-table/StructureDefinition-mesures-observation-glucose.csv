@@ -224,11 +224,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","C*E.9. But note many systems use C*E.2 for this","n/a","./originalText[mediaType/code=""text/plain""]/data"
 "Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Types de glycémie","Types de glycémie:
+","Types de glycémie:
 • Glucose sanguin
 • Glucose interstitiel
 • Hémoglobine glyquée (HbA1c)
-• Index de gestion de glycémie (IGG)","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","","","","",,"extensible","Glucose sanguin ou intersticiel","https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS","",,,,"Observation.code",1,1,"ele-1
+• Index de gestion de glycémie (IGG)","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","","","","",,"extensible","","https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS","",,,,"Observation.code",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","CE/CNE/CWE","OBX-3","n/a","CD","code","FiveWs.what[x]","116680003 |Is a|"
 "Observation.code.id","Observation.code.id","","","",0,1,"","","","string {[]} {[]}

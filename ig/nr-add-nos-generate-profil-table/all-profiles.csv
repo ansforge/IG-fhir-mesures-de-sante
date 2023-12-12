@@ -4473,11 +4473,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mesures-observation-glucose","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Types de glycémie","Types de glycémie:
+","Types de glycémie:
 • Glucose sanguin
 • Glucose interstitiel
 • Hémoglobine glyquée (HbA1c)
-• Index de gestion de glycémie (IGG)","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","","","","",,"extensible","Glucose sanguin ou intersticiel","https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS","",,,,"Observation.code",1,1,"ele-1
+• Index de gestion de glycémie (IGG)","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","","","","",,"extensible","","https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS","",,,,"Observation.code",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-glucose","Observation.code.id","Observation.code.id","","","",0,1,"","","","string {[]} {[]}
@@ -4951,12 +4951,31 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mesures-observation-head-circumference","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Coded Responses from C-CDA Vital Sign Results","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""8287-5""/>
-  </coding>
-</valueCodeableConcept>","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"ele-1
+","Coded Responses from C-CDA Vital Sign Results","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-head-circumference","Observation.code.id","Observation.code.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"mesures-observation-head-circumference","Observation.code.extension","Observation.code.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"mesures-observation-head-circumference","Observation.code.coding","Observation.code.coding","","","",1,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:code}
+value:system}","",,"open","CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-head-circumference","Observation.code.coding:headCircumCode","Observation.code.coding","headCircumCode","","",1,1,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
+  <code value=""8287-5""/>
+</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-head-circumference","Observation.code.text","Observation.code.text","","","",0,1,"","","Y","string {[]} {[]}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-head-circumference","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]}
@@ -5297,12 +5316,31 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mesures-observation-pain-severity","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Coded Responses from C-CDA Vital Sign Results","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""72514-3""/>
-  </coding>
-</valueCodeableConcept>","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"ele-1
+","Coded Responses from C-CDA Vital Sign Results","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-pain-severity","Observation.code.id","Observation.code.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"mesures-observation-pain-severity","Observation.code.extension","Observation.code.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"mesures-observation-pain-severity","Observation.code.coding","Observation.code.coding","","","",1,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:code}
+value:system}","",,"open","CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-pain-severity","Observation.code.coding:painServerCode","Observation.code.coding","painServerCode","","",1,1,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
+  <code value=""72514-3""/>
+</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-pain-severity","Observation.code.text","Observation.code.text","","","",0,1,"","","Y","string {[]} {[]}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-pain-severity","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
@@ -5687,12 +5725,31 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mesures-observation-steps-by-day","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Coded Responses from C-CDA Vital Sign Results","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""41950-7""/>
-  </coding>
-</valueCodeableConcept>","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"ele-1
+","Coded Responses from C-CDA Vital Sign Results","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-steps-by-day","Observation.code.id","Observation.code.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"mesures-observation-steps-by-day","Observation.code.extension","Observation.code.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"mesures-observation-steps-by-day","Observation.code.coding","Observation.code.coding","","","",1,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:code}
+value:system}","",,"open","CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-steps-by-day","Observation.code.coding:stepsBDCode","Observation.code.coding","stepsBDCode","","",1,1,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
+  <code value=""41950-7""/>
+</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-steps-by-day","Observation.code.text","Observation.code.text","","","",0,1,"","","Y","string {[]} {[]}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-steps-by-day","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]}
@@ -6081,12 +6138,31 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mesures-observation-waist-circumference","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Coded Responses from C-CDA Vital Sign Results","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""8280-0""/>
-  </coding>
-</valueCodeableConcept>","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"ele-1
+","Coded Responses from C-CDA Vital Sign Results","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-waist-circumference","Observation.code.id","Observation.code.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"mesures-observation-waist-circumference","Observation.code.extension","Observation.code.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"mesures-observation-waist-circumference","Observation.code.coding","Observation.code.coding","","","",1,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:code}
+value:system}","",,"open","CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-waist-circumference","Observation.code.coding:waistCircumCode","Observation.code.coding","waistCircumCode","","",1,1,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
+  <code value=""8280-0""/>
+</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"mesures-observation-waist-circumference","Observation.code.text","Observation.code.text","","","",0,1,"","","Y","string {[]} {[]}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-waist-circumference","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrPatient]]}

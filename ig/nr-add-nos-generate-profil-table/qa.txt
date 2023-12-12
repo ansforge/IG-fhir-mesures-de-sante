@@ -1,9 +1,9 @@
 ﻿Mesures : Validation Results
 =========================================
 
-err = 5, warn = 48, info = 3
+err = 9, warn = 48, info = 7
 IG Publisher Version: 1.5.5
-Generated Tue Dec 12 14:03:27 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+Generated Tue Dec 12 14:37:55 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 0 / 18 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mesures : 0 / 0 / 1
@@ -15,10 +15,10 @@ Generated Tue Dec 12 14:03:27 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesur
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrObservationHeartrate001 : 0 / 1 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesFrOxygenSat : 1 / 1 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationGlucose001 : 1 / 1 / 2
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001 : 1 / 2 / 3
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001 : 0 / 1 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001 : 0 / 1 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleObservationWaistCircumference001 : 0 / 1 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001 : 2 / 2 / 4
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001 : 1 / 1 / 2
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001 : 1 / 1 / 2
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Observation-ExampleObservationWaistCircumference001 : 1 / 1 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Patient-ExamplefrPatient001 : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Practitioner-ExampleFrPractitionner001 : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-bundle-flux-alimentation : 0 / 1 / 1
@@ -88,15 +88,23 @@ ERROR: Observation/ExampleMesObservationGlucose001: Observation.extension[3].val
 INFORMATION: Observation/ExampleMesObservationGlucose001: Observation.extension[3].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih' could not be found so the code cannot be validated
 WARNING: Observation/ExampleMesObservationGlucose001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001.json ==
+ERROR: Observation/ExampleMesObservationHeadCircumference001: Observation.code.coding[0]: Slicing cannot be evaluated: Could not match any discriminators ([code, system]) for slice Observation.code.coding:headCircumCode in profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference|3.0.1 - None of the 2 discriminators [code, system] have fixed value, binding or existence assertions
+INFORMATION: Observation/ExampleMesObservationHeadCircumference001: Observation.code: Observation.code.coding:headCircumCode: Found 0 matches, but unable to check minimum required (Observation.code.coding) due to lack of slicing validation (from https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference|3.0.1)
 WARNING: Observation/ExampleMesObservationHeadCircumference001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 INFORMATION: Observation/ExampleMesObservationHeadCircumference001: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/headcircum|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/ExampleMesObservationHeadCircumference001: Observation.code: Observation.code.coding:HeadCircumCode: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/headcircum|4.0.1)
 WARNING: Observation/ExampleMesObservationHeadCircumference001: Observation.value.ofType(Quantity).code: Resolved system http://unitsofmeasure.org, but the definition is not complete, so assuming value set include is correct
 == fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001.json ==
+ERROR: Observation/ExampleMesObservationPainSeverity001: Observation.code.coding[0]: Slicing cannot be evaluated: Could not match any discriminators ([code, system]) for slice Observation.code.coding:painServerCode in profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity|3.0.1 - None of the 2 discriminators [code, system] have fixed value, binding or existence assertions
+INFORMATION: Observation/ExampleMesObservationPainSeverity001: Observation.code: Observation.code.coding:painServerCode: Found 0 matches, but unable to check minimum required (Observation.code.coding) due to lack of slicing validation (from https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity|3.0.1)
 WARNING: Observation/ExampleMesObservationPainSeverity001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001.json ==
+ERROR: Observation/ExampleMesObservationStepsByDay001: Observation.code.coding[0]: Slicing cannot be evaluated: Could not match any discriminators ([code, system]) for slice Observation.code.coding:stepsBDCode in profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day|3.0.1 - None of the 2 discriminators [code, system] have fixed value, binding or existence assertions
+INFORMATION: Observation/ExampleMesObservationStepsByDay001: Observation.code: Observation.code.coding:stepsBDCode: Found 0 matches, but unable to check minimum required (Observation.code.coding) due to lack of slicing validation (from https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day|3.0.1)
 WARNING: Observation/ExampleMesObservationStepsByDay001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleObservationWaistCircumference001.json ==
+ERROR: Observation/ExampleObservationWaistCircumference001: Observation.code.coding[0]: Slicing cannot be evaluated: Could not match any discriminators ([code, system]) for slice Observation.code.coding:waistCircumCode in profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference|3.0.1 - None of the 2 discriminators [code, system] have fixed value, binding or existence assertions
+INFORMATION: Observation/ExampleObservationWaistCircumference001: Observation.code: Observation.code.coding:waistCircumCode: Found 0 matches, but unable to check minimum required (Observation.code.coding) due to lack of slicing validation (from https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference|3.0.1)
 WARNING: Observation/ExampleObservationWaistCircumference001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Patient-ExamplefrPatient001.json ==
 == fsh-generated/resources/Practitioner-ExampleFrPractitionner001.json ==
