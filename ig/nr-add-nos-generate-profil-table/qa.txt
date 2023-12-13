@@ -1,9 +1,9 @@
 ﻿Mesures : Validation Results
 =========================================
 
-err = 9, warn = 48, info = 7
+err = 10, warn = 52, info = 7
 IG Publisher Version: 1.5.5
-Generated Tue Dec 12 16:47:13 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+Generated Wed Dec 13 09:59:47 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 0 / 18 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mesures : 0 / 0 / 1
@@ -30,6 +30,7 @@ Generated Tue Dec 12 16:47:13 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesur
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-bp : 0 / 3 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-heartrate : 0 / 4 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-oxygen-sat : 0 / 2 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-resp-rate : 1 / 4 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-moment-of-measurement : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-number-of-days : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-observation-glucose : 0 / 0 / 1
@@ -129,6 +130,12 @@ WARNING: StructureDefinition/mesures-fr-observation-heartrate: StructureDefiniti
 == fsh-generated/resources/StructureDefinition-mesures-fr-observation-oxygen-sat.json ==
 WARNING: StructureDefinition/mesures-fr-observation-oxygen-sat: StructureDefinition.snapshot.element[71].binding: The valueSet reference http://www.interopsante.org/fhir/structuredefinition/observation/fr-obervation-interpretation on element Observation.interpretation could not be resolved
 WARNING: StructureDefinition/mesures-fr-observation-oxygen-sat: StructureDefinition.snapshot.element[73].binding: The valueSet reference http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-sPO2BodyLocationVS.html on element Observation.bodySite could not be resolved
+== fsh-generated/resources/StructureDefinition-mesures-fr-observation-resp-rate.json ==
+ERROR: StructureDefinition.snapshot.element[41]: The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
+WARNING: StructureDefinition/mesures-fr-observation-resp-rate: StructureDefinition.snapshot.element[56].type[0].targetProfile[0]: Unable to resolve profile http://www.interopsante.org/fhir/structuredefinition/fr-practitioner-role
+WARNING: StructureDefinition/mesures-fr-observation-resp-rate: StructureDefinition.snapshot.element[67].binding: The valueSet reference http://www.interopsante.org/fhir/structuredefinition/observation/fr-obervation-interpretation on element Observation.interpretation could not be resolved
+WARNING: StructureDefinition/mesures-fr-observation-resp-rate: StructureDefinition.snapshot.element[70].binding: The valueSet reference http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-respiratoryRateMeasMethodVS.html on element Observation.method could not be resolved
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-mesures-moment-of-measurement.json ==
 == fsh-generated/resources/StructureDefinition-mesures-number-of-days.json ==
 == fsh-generated/resources/StructureDefinition-mesures-observation-glucose.json ==

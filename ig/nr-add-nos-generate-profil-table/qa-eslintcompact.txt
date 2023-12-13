@@ -43,11 +43,16 @@
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-heartrate.json: line 0, col 0, Warning - The valueSet reference http://interopsante.org/fhir/valueset/fr-heart-rate-method on element Observation.method.coding could not be resolved (BUSINESSRULE)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-oxygen-sat.json: line 0, col 0, Warning - The valueSet reference http://www.interopsante.org/fhir/structuredefinition/observation/fr-obervation-interpretation on element Observation.interpretation could not be resolved (BUSINESSRULE)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-oxygen-sat.json: line 0, col 0, Warning - The valueSet reference http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-sPO2BodyLocationVS.html on element Observation.bodySite could not be resolved (BUSINESSRULE)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-resp-rate.json: line 0, col 0, Error - The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1 (VALUE)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-resp-rate.json: line 0, col 0, Warning - Unable to resolve profile http://www.interopsante.org/fhir/structuredefinition/fr-practitioner-role (EXCEPTION)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-resp-rate.json: line 0, col 0, Warning - The valueSet reference http://www.interopsante.org/fhir/structuredefinition/observation/fr-obervation-interpretation on element Observation.interpretation could not be resolved (BUSINESSRULE)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-resp-rate.json: line 0, col 0, Warning - The valueSet reference http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-respiratoryRateMeasMethodVS.html on element Observation.method could not be resolved (BUSINESSRULE)
+/home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/StructureDefinition-mesures-fr-observation-resp-rate.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ValueSet-method-glucose-vs.json: line 1, col 1322, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
 
 Mesures : Validation Results
 =========================================
 
-err = 9, warn = 48, info = 7
+err = 10, warn = 52, info = 7
 IG Publisher Version: 1.5.5
-Generated Tue Dec 12 16:47:13 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+Generated Wed Dec 13 09:59:47 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
