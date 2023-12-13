@@ -19,10 +19,9 @@ parameters:
 
 
 dependencies:
-  hl7.fhir.fr.core: 
-    uri: https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download
-    version: 1.1.0
+  hl7.fhir.fr.core: 1.1.0
   hl7.fhir.uv.phd: 1.0.0
+  ans.fr.nos: 1.1.0
 
 
 pages:
@@ -32,10 +31,6 @@ pages:
       title: Le flux d'alimentation des mesures de santé
     Les-profils-utilises-pour-les-mesures-de-sante.page.md:
       title: Les profils utilisés pour les mesures de santé
-    Les-profils-utilises-pour-les-dispositifs-connectes.page.md:
-      title: Les profils utilisés pour les dispositifs connectés
-    Liste-des-profils.page.md:
-      title: Liste des profils
     Terminologies.page.md:
       title: Terminologies
     Jeux-de-valeurs.page.md:
@@ -51,19 +46,6 @@ menu:
   Les profils Mesures:
     Flux d'alimentation des mesures : Le-flux-d-alimentation-des-mesures.html
     Les profils utilisés pour les mesures de santé: Les-profils-utilises-pour-les-mesures-de-sante.page.html
-    Les profils utilisés pour les dispositifs connectés: Les-profils-utilises-pour-les-dispositifs-connectes.page.html
-    Liste des profils MES: Liste-des-profils.page.html
-    MesFrObservationBodyWeight - Poids: StructureDefinition-mesures-fr-observation-body-weight.html
-    MesFrObservationBodyHeight - Taille: StructureDefinition-mesures-fr-observation-bodyheight.html
-    MesFrObservationBodyTemperature - Temperature: StructureDefinition-mesures-fr-observation-body-temperature.html
-    MesFrObservationBp - Pression-arterielle: StructureDefinition-mesures-fr-observation-bp.html
-    MesObservationGlucose - Glycemie: StructureDefinition-mesures-observation-glucose.html
-    MesFrObservationBmi - Indice-de-masse-corporelle: StructureDefinition-mesures-fr-observation-bmi.html
-    MesObservationWaistCircumference - Tour-de-taille: StructureDefinition-mesures-observation-waist-circumference.html
-    MesObservationStepsByDay - Nombre-de-pas-quotidien: StructureDefinition-mesures-observation-steps-by-day.html
-    MesObservationPainSeverity - Niveau-de-douleur: StructureDefinition-mesures-observation-pain-severity.html
-    MesObservationHeadCircumference - Perimetre-cranien: StructureDefinition-mesures-observation-head-circumference.html
-    MesObservationHeartrate - Frequence-cardiaque: StructureDefinition-mesures-fr-observation-heartrate.html
     Le profil FHIR des objets connectés: Le-profil-FHIR-des-objets-connectes.page.html
   Les extensions Mesures:
     MesDiabetisType - Types de diabète: StructureDefinition-mesures-diabetis-type.html

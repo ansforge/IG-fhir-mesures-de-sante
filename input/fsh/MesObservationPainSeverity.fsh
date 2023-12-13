@@ -1,7 +1,8 @@
 Profile: MesObservationPainSeverity
 Parent: $vitalsigns
 Id: mesures-observation-pain-severity
-Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé"
+Title: "Niveau de douleur"
+Description: "Profil de la ressource Observation pour définir un niveau de douleur"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
@@ -13,7 +14,15 @@ Description: "Niveau de douleur - profil créé pour l'alimentation de l'Espace 
 
 * category[VSCat].coding.display = "vital-signs" 
 
-* code = http://loinc.org#72514-3
+
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "code"
+* code.coding ^slicing.discriminator[+].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.rules = #open
+
+* code.coding contains painServerCode 1..1
+* code.coding[painServerCode] = http://loinc.org#72514-3
 
 * effective[x] only dateTime
 

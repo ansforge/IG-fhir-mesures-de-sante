@@ -1,6 +1,8 @@
 Profile: MesFrObservationHeartrate
 Parent: $FrObservationHeartrate
 Id: mesures-fr-observation-heartrate
+Title: "Fréquence Cardiaque"
+Description: "Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR)"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 

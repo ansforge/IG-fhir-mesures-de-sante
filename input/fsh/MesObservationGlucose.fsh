@@ -1,7 +1,8 @@
 Profile: MesObservationGlucose
 Parent: $vitalsigns
 Id: mesures-observation-glucose
-Description: """Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.
+Title: "Glycémie"
+Description: """Profil de la ressource Observation pour définir une Glycémie
 
 Ce profil permet de gérer 4 types d'indicateurs de glycémie:
 - le taux de glucose sanguin, mesuré en mg/dl
@@ -27,9 +28,8 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * category[VSCat].coding.display = "vital-signs" 
 
 * code from $JDV-J154-TypeGlucose-MES (extensible)
-* code ^short = "Types de glycémie"
-* code ^definition = "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Hémoglobine glyquée (HbA1c)\r\n• Index de gestion de glycémie (IGG)"
-* code ^binding.description = "Glucose sanguin ou intersticiel"
+* code ^short = "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Hémoglobine glyquée (HbA1c)\r\n• Index de gestion de glycémie (IGG)"
+
 * code.coding.system 1..
 * code.coding.code 1..
 

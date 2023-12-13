@@ -1,6 +1,8 @@
 Profile: MesObservationStepsByDay
 Parent: $vitalsigns
 Id: mesures-observation-steps-by-day
+Title: "Nombre de pas par jour"
+Description: "Profil de la ressource Observation pour définir un nombre de pas par jour"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
@@ -12,7 +14,15 @@ Id: mesures-observation-steps-by-day
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
 
-* code.coding = http://loinc.org#41950-7
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "code"
+* code.coding ^slicing.discriminator[+].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.rules = #open
+
+* code.coding contains stepsBDCode 1..1
+* code.coding[stepsBDCode] = http://loinc.org#41950-7
+
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
 * performer only Reference(CareTeam or RelatedPerson or $fr-practitioner or PractitionerRole or $fr-organization or $fr-patient)

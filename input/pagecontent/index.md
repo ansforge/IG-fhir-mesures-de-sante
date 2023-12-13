@@ -1,19 +1,4 @@
-Le guide ***mesures de santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager : 
-
-* Fréquence cardiaque
-* Pression artérielle (systolique / diastolique)
-* Saturation en oxygène
-* Nombre de pas
-* Niveau de douleur
-* IMC
-* Poids
-* Taille
-* Température
-* Glycémie
-* Tour de taille
-* Périmètre cranien
-
-Cette liste pourra être complétée par d’autres mesures jugées pertinentes (Ex. Fréquence Respiratoire (FR)).  
+Le guide ***mesures de santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager. 
 
 Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre ces fonctions d'alimentation et de consultation des mesures de santé d'un usager.  
 
@@ -25,7 +10,17 @@ Les spécifications techniques de ce guide s’appuient:
   
 Pour les opérations sur les ressources, l’API REST définie par le standard HL7 FHIR est mise en œuvre notamment la logique de la transaction PCH-01 du profil IHE « Personal Health Device Observation Upload (POU) » pour l’alimentation.  
 
-Le lecteur doit être familier de ces concepts pour les mettre en œuvre. 
+Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
+
+### Liste des profils définis
+
+{% sql SELECT '[' || Title || '](' || Url || ')' as "Titre du profil", Description, json_extract(Json, '$.baseDefinition') as "Parent" FROM Resources WHERE Type = 'StructureDefinition' and Description like "%Profil%" %}
+<!-- like "%Profil%" rajouté car induit une erreur si vide -->
+
+Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.
+  
+Pour chaque ressource, le lien vers la spécification technique InteropSanté (sur Simplifier) est indiqué.
+Cette liste pourra être complétée par d’autres mesures jugées pertinentes (Ex. Fréquence Respiratoire (FR)).  
   
 ### Contexte métier
 

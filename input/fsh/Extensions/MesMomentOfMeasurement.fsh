@@ -1,5 +1,6 @@
 Extension: MesMomentOfMeasurement
 Id: mesures-moment-of-measurement
+Title: "Moment de la mesure"
 Description: """Moment de la mesure.
 Peut être exprimé par un texte libre ou un code."""
 * ^context.type = #element

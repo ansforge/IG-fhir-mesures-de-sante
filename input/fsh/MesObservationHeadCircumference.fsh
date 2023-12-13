@@ -1,6 +1,8 @@
 Profile: MesObservationHeadCircumference
 Parent: $vitalsigns
 Id: mesures-observation-head-circumference
+Title: "Périmètre Crânien"
+Description: "Profil de la ressource Observation pour définir un Périmètre Crânien"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 
@@ -17,10 +19,7 @@ Id: mesures-observation-head-circumference
 * code.coding ^slicing.rules = #open
 
 * code.coding contains headCircumCode 1..1
-* code.coding[headCircumCode].system 1..
-* code.coding[headCircumCode].system = "http://loinc.org" 
-* code.coding[headCircumCode].code 1..
-* code = http://loinc.org#8287-5 
+* code.coding[headCircumCode] = http://loinc.org#8287-5
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
