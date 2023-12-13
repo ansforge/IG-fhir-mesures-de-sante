@@ -213,3 +213,11 @@ Usage: #example
 * effectiveDateTime = "2022-11-06"
 * valueQuantity.value = 117
 * extension[MesReasonForMeasurement].valueString = "Prise de masse importante récente (confinement)"
+
+Instance: ExampleMesFrRespRate
+InstanceOf: MesFrObservationRespiratoryRate
+Usage: #example
+* status = #final
+* subject = Reference(ExamplefrPatient001) "Pierre Durand"
+* effectiveDateTime = "2023-07-02"
+* valueQuantity = 18 '/min' "/min"
