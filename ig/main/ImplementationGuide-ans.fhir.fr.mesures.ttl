@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-12-08T09:30:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-13T10:33:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -63,8 +63,8 @@
   ] [
      fhir:id [ fhir:v "hl7_fhir_fr_core" ] ;
      fhir:uri [
-       fhir:v "https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download"^^xsd:anyURI ;
-       fhir:link <https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download>
+       fhir:v "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.fr.core" ] ;
      fhir:version [ fhir:v "1.1.0" ]
@@ -76,6 +76,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.phd" ] ;
      fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "ans_fr_nos" ] ;
+     fhir:uri [
+       fhir:v "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos>
+     ] ;
+     fhir:packageId [ fhir:v "ans.fr.nos" ] ;
+     fhir:version [ fhir:v "1.1.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -553,6 +561,18 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-bundle-flux-alimentation" ]
+       ] ;
+       fhir:name [ fhir:v "Bundle d'alimentation" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
@@ -746,90 +766,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-bundle-flux-alimentation" ]
-       ] ;
-       fhir:name [ fhir:v "MesBundleFluxAlimentation" ] ;
-       fhir:description [ fhir:v "Bundle du flux d'alimentation à envoyer au serveur" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diabetis-type> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-diabetis-type" ]
-       ] ;
-       fhir:name [ fhir:v "MesDiabetisType" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bmi" ]
-       ] ;
-       fhir:name [ fhir:v "MesFrObservationBmi" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bodyheight" ]
-       ] ;
-       fhir:name [ fhir:v "MesFrObservationBodyHeight" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-body-temperature" ]
-       ] ;
-       fhir:name [ fhir:v "MesFrObservationBodyTemperature" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-body-weight" ]
-       ] ;
-       fhir:name [ fhir:v "MesFrObservationBodyWeight" ] ;
-       fhir:description [ fhir:v "Poids du patient" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bp" ]
-       ] ;
-       fhir:name [ fhir:v "MesFrObservationBp" ] ;
-       fhir:description [ fhir:v "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate> ;
          fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-heartrate" ]
        ] ;
-       fhir:name [ fhir:v "MesFrObservationHeartrate" ] ;
+       fhir:name [ fhir:v "Fréquence Cardiaque" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -837,34 +778,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-oxygen-sat" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-resp-rate" ]
        ] ;
-       fhir:name [ fhir:v "MesFrObservationOxygenSat" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-moment-of-measurement" ]
-       ] ;
-       fhir:name [ fhir:v "MesMomentOfMeasurement" ] ;
-       fhir:description [ fhir:v "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-number-of-days" ]
-       ] ;
-       fhir:name [ fhir:v "MesNumberOfDays" ] ;
-       fhir:description [ fhir:v "Nombre de jours" ] ;
+       fhir:name [ fhir:v "Fréquence respiratoire" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -875,8 +793,8 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose> ;
          fhir:reference [ fhir:v "StructureDefinition/mesures-observation-glucose" ]
        ] ;
-       fhir:name [ fhir:v "MesObservationGlucose" ] ;
-       fhir:description [ fhir:v "Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin." ] ;
+       fhir:name [ fhir:v "Glycémie" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -884,44 +802,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-observation-head-circumference" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bmi" ]
        ] ;
-       fhir:name [ fhir:v "MesObservationHeadCircumference" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-observation-pain-severity" ]
-       ] ;
-       fhir:name [ fhir:v "MesObservationPainSeverity" ] ;
-       fhir:description [ fhir:v "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-observation-steps-by-day" ]
-       ] ;
-       fhir:name [ fhir:v "MesObservationStepsByDay" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-observation-waist-circumference" ]
-       ] ;
-       fhir:name [ fhir:v "MesObservationWaistCircumference" ] ;
+       fhir:name [ fhir:v "Indice de Masse Corporelle" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -929,11 +814,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement> ;
-         fhir:reference [ fhir:v "StructureDefinition/mesures-reason-for-measurement" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-moment-of-measurement" ]
        ] ;
-       fhir:name [ fhir:v "MesReasonForMeasurement" ] ;
-       fhir:description [ fhir:v "Motif de la mesure.\nExprimé en texte libre." ] ;
+       fhir:name [ fhir:v "Moment de la mesure" ] ;
+       fhir:description [ fhir:v "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -950,6 +835,42 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-observation-pain-severity" ]
+       ] ;
+       fhir:name [ fhir:v "Niveau de douleur" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un niveau de douleur" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-number-of-days" ]
+       ] ;
+       fhir:name [ fhir:v "Nombre de jours" ] ;
+       fhir:description [ fhir:v "Extension sur le Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-observation-steps-by-day" ]
+       ] ;
+       fhir:name [ fhir:v "Nombre de pas par jour" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un nombre de pas par jour" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Device" ]
        ] ) ;
        fhir:reference [
@@ -958,6 +879,114 @@
        ] ;
        fhir:name [ fhir:v "phd-74E8FFFEFF051C00" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-body-weight" ]
+       ] ;
+       fhir:name [ fhir:v "Poids" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un poids" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bp" ]
+       ] ;
+       fhir:name [ fhir:v "Pression Artérielle" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-observation-head-circumference" ]
+       ] ;
+       fhir:name [ fhir:v "Périmètre Crânien" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir un Périmètre Crânien" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-reason-for-measurement" ]
+       ] ;
+       fhir:name [ fhir:v "Raison de la mesure" ] ;
+       fhir:description [ fhir:v "Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-oxygen-sat" ]
+       ] ;
+       fhir:name [ fhir:v "Saturation en Oxygène" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-bodyheight" ]
+       ] ;
+       fhir:name [ fhir:v "Taille" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une taille" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-fr-observation-body-temperature" ]
+       ] ;
+       fhir:name [ fhir:v "Température" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une température" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-observation-waist-circumference" ]
+       ] ;
+       fhir:name [ fhir:v "Tour de taille" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une taille en cm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diabetis-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-diabetis-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type de diabète" ] ;
+       fhir:description [ fhir:v "Extension sur le type de diabète" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -990,22 +1019,6 @@
          ] ) ;
          fhir:name [ fhir:v "Les-profils-utilises-pour-les-mesures-de-sante.page.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Les profils utilisés pour les mesures de santé" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Les-profils-utilises-pour-les-dispositifs-connectes.page.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "Les-profils-utilises-pour-les-dispositifs-connectes.page.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Les profils utilisés pour les dispositifs connectés" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Liste-des-profils.page.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "Liste-des-profils.page.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Liste des profils" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

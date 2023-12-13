@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MesFrObservationBmi - Definitions - Guide d'implémentation FHIR - Mesures de santé v3.0.1</title>
+    <title>Indice de Masse Corporelle - Definitions - Guide d'implémentation FHIR - Mesures de santé v3.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.2"}
-    h3,h4,h5,h6{--heading-prefix:"10.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.5"}
+    h3,h4,h5,h6{--heading-prefix:"8.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -106,45 +106,6 @@
         <a href="Les-profils-utilises-pour-les-mesures-de-sante.page.html">Les profils utilisés pour les mesures de santé</a>
       </li>
       <li>
-        <a href="Les-profils-utilises-pour-les-dispositifs-connectes.page.html">Les profils utilisés pour les dispositifs connectés</a>
-      </li>
-      <li>
-        <a href="Liste-des-profils.page.html">Liste des profils MES</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-fr-observation-body-weight.html">MesFrObservationBodyWeight - Poids</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-fr-observation-bodyheight.html">MesFrObservationBodyHeight - Taille</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-fr-observation-body-temperature.html">MesFrObservationBodyTemperature - Temperature</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-fr-observation-bp.html">MesFrObservationBp - Pression-arterielle</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-observation-glucose.html">MesObservationGlucose - Glycemie</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-fr-observation-bmi.html">MesFrObservationBmi - Indice-de-masse-corporelle</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-observation-waist-circumference.html">MesObservationWaistCircumference - Tour-de-taille</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-observation-steps-by-day.html">MesObservationStepsByDay - Nombre-de-pas-quotidien</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-observation-pain-severity.html">MesObservationPainSeverity - Niveau-de-douleur</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-observation-head-circumference.html">MesObservationHeadCircumference - Perimetre-cranien</a>
-      </li>
-      <li>
-        <a href="StructureDefinition-mesures-fr-observation-heartrate.html">MesObservationHeartrate - Frequence-cardiaque</a>
-      </li>
-      <li>
         <a href="Le-profil-FHIR-des-objets-connectes.page.html">Le profil FHIR des objets connectés</a>
       </li>
     </ul>
@@ -202,7 +163,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MesFrObservationBmi</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Indice de Masse Corporelle</b></li>
 
           <span style="float:right;">
 
@@ -308,7 +269,7 @@
         
           Active
           
-            as of 2023-12-08
+            as of 2023-12-13
           
         
       </td>
@@ -361,7 +322,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice)
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Observation.referenceRange">  </a><span style="color: grey">18</span><b>. Observation.referenceRange</b><a href="#diff_Observation.referenceRange" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Observation.referenceRange.appliesTo">  </a><span style="color: grey">20</span><b>. Observation.referenceRange.appliesTo</b><a href="#diff_Observation.referenceRange.appliesTo" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span>The codes SHALL be taken from  <a href="https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS">https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS</a></span><br/><p style="font-size: 11px">JDV_J148-ReferenceRangeAppliesTo-CISIS</p>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Observation.referenceRange.appliesTo">  </a><span style="color: grey">20</span><b>. Observation.referenceRange.appliesTo</b><a href="#diff_Observation.referenceRange.appliesTo" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span>The codes SHALL be taken from  <a href="https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J148-ReferenceRangeAppliesTo-CISIS.html">JDV_J148-ReferenceRangeAppliesTo-CISIS</a></span><br/><p style="font-size: 11px">JDV_J148-ReferenceRangeAppliesTo-CISIS</p>
 </td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Observation.referenceRange.appliesTo.coding">  </a><span style="color: grey">22</span><b>. Observation.referenceRange.appliesTo.coding</b><a href="#diff_Observation.referenceRange.appliesTo.coding" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr>
@@ -1003,7 +964,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice)
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Observation.referenceRange.appliesTo">  </a><span style="color: grey">176</span><b>. Observation.referenceRange.appliesTo</b><a href="#Observation.referenceRange.appliesTo" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.  Multiple <code>appliesTo</code>  are interpreted as an "AND" of the target populations.  For example, to represent a target population of African American females, both a code of female and a code for African American would be used.</p>
 </td></tr><tr><td style="white-space: nowrap">Short</td><td>Reference range population</td></tr><tr><td style="white-space: nowrap">Comments</td><td><p style="font-size: 11px">This SHOULD be populated if there is more than one range.  If this element is not present then the normal population is assumed.</p>
-</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*<br/>This element is affected by the following invariants: ele-1</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span>The codes SHALL be taken from  <a href="https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS">https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS/FHIR/JDV-J148-ReferenceRangeAppliesTo-CISIS</a></span><br/><p>JDV_J148-ReferenceRangeAppliesTo-CISIS</p>
+</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*<br/>This element is affected by the following invariants: ele-1</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span>The codes SHALL be taken from  <a href="https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J148-ReferenceRangeAppliesTo-CISIS.html">JDV_J148-ReferenceRangeAppliesTo-CISIS</a></span><br/><p>JDV_J148-ReferenceRangeAppliesTo-CISIS</p>
 </td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="font-size: 11px">Need to be able to identify the target population for proper interpretation.</p>
 </td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (<code>hasValue() or (children().count() &gt; id.count())</code>)</td></tr>
 
@@ -1202,7 +1163,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice)
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 8, 2023 09:30+0000">2023-12-08</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 13, 2023 10:33+0000">2023-12-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

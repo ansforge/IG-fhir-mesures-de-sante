@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2023-12-08T09:30:07+00:00",
+  "date" : "2023-12-13T10:33:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -51,7 +51,7 @@
   },
   {
     "id" : "hl7_fhir_fr_core",
-    "uri" : "https://simplifier.net/packages/hl7.fhir.fr.core/1.1.0/snapshots/$download",
+    "uri" : "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core",
     "packageId" : "hl7.fhir.fr.core",
     "version" : "1.1.0"
   },
@@ -60,6 +60,12 @@
     "uri" : "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd",
     "packageId" : "hl7.fhir.uv.phd",
     "version" : "1.0.0"
+  },
+  {
+    "id" : "ans_fr_nos",
+    "uri" : "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos",
+    "packageId" : "ans.fr.nos",
+    "version" : "1.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -641,6 +647,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-bundle-flux-alimentation"
+      },
+      "name" : "Bundle d'alimentation",
+      "description" : "Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -798,89 +816,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mesures-bundle-flux-alimentation"
-      },
-      "name" : "MesBundleFluxAlimentation",
-      "description" : "Bundle du flux d'alimentation à envoyer au serveur",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-diabetis-type"
-      },
-      "name" : "MesDiabetisType",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-fr-observation-bmi"
-      },
-      "name" : "MesFrObservationBmi",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-fr-observation-bodyheight"
-      },
-      "name" : "MesFrObservationBodyHeight",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-fr-observation-body-temperature"
-      },
-      "name" : "MesFrObservationBodyTemperature",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-fr-observation-body-weight"
-      },
-      "name" : "MesFrObservationBodyWeight",
-      "description" : "Poids du patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-fr-observation-bp"
-      },
-      "name" : "MesFrObservationBp",
-      "description" : "Pression artérielle - profil créé pour l'alimentation de l'Espace Numérique de Santé",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mesures-fr-observation-heartrate"
       },
-      "name" : "MesFrObservationHeartrate",
+      "name" : "Fréquence Cardiaque",
+      "description" : "Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR)",
       "exampleBoolean" : false
     },
     {
@@ -889,33 +828,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mesures-fr-observation-oxygen-sat"
+        "reference" : "StructureDefinition/mesures-fr-observation-resp-rate"
       },
-      "name" : "MesFrObservationOxygenSat",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-moment-of-measurement"
-      },
-      "name" : "MesMomentOfMeasurement",
-      "description" : "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-number-of-days"
-      },
-      "name" : "MesNumberOfDays",
-      "description" : "Nombre de jours",
+      "name" : "Fréquence respiratoire",
+      "description" : "Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR)",
       "exampleBoolean" : false
     },
     {
@@ -926,8 +842,8 @@
       "reference" : {
         "reference" : "StructureDefinition/mesures-observation-glucose"
       },
-      "name" : "MesObservationGlucose",
-      "description" : "Glycémie - profil créé pour l'alimentation de l'Espace Numérique de Santé.\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+      "name" : "Glycémie",
+      "description" : "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
       "exampleBoolean" : false
     },
     {
@@ -936,43 +852,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mesures-observation-head-circumference"
+        "reference" : "StructureDefinition/mesures-fr-observation-bmi"
       },
-      "name" : "MesObservationHeadCircumference",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-observation-pain-severity"
-      },
-      "name" : "MesObservationPainSeverity",
-      "description" : "Niveau de douleur - profil créé pour l'alimentation de l'Espace Numérique de Santé",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-observation-steps-by-day"
-      },
-      "name" : "MesObservationStepsByDay",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-observation-waist-circumference"
-      },
-      "name" : "MesObservationWaistCircumference",
+      "name" : "Indice de Masse Corporelle",
+      "description" : "Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI)",
       "exampleBoolean" : false
     },
     {
@@ -981,10 +864,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mesures-reason-for-measurement"
+        "reference" : "StructureDefinition/mesures-moment-of-measurement"
       },
-      "name" : "MesReasonForMeasurement",
-      "description" : "Motif de la mesure.\nExprimé en texte libre.",
+      "name" : "Moment de la mesure",
+      "description" : "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code.",
       "exampleBoolean" : false
     },
     {
@@ -1002,6 +885,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-pain-severity"
+      },
+      "name" : "Niveau de douleur",
+      "description" : "Profil de la ressource Observation pour définir un niveau de douleur",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-number-of-days"
+      },
+      "name" : "Nombre de jours",
+      "description" : "Extension sur le Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-steps-by-day"
+      },
+      "name" : "Nombre de pas par jour",
+      "description" : "Profil de la ressource Observation pour définir un nombre de pas par jour",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Device"
       }],
       "reference" : {
@@ -1009,6 +928,114 @@
       },
       "name" : "phd-74E8FFFEFF051C00",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-fr-observation-body-weight"
+      },
+      "name" : "Poids",
+      "description" : "Profil de la ressource Observation pour définir un poids",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-fr-observation-bp"
+      },
+      "name" : "Pression Artérielle",
+      "description" : "Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-head-circumference"
+      },
+      "name" : "Périmètre Crânien",
+      "description" : "Profil de la ressource Observation pour définir un Périmètre Crânien",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-reason-for-measurement"
+      },
+      "name" : "Raison de la mesure",
+      "description" : "Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-fr-observation-oxygen-sat"
+      },
+      "name" : "Saturation en Oxygène",
+      "description" : "Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-fr-observation-bodyheight"
+      },
+      "name" : "Taille",
+      "description" : "Profil de la ressource Observation pour définir une taille",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-fr-observation-body-temperature"
+      },
+      "name" : "Température",
+      "description" : "Profil de la ressource Observation pour définir une température",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-waist-circumference"
+      },
+      "name" : "Tour de taille",
+      "description" : "Profil de la ressource Observation pour définir une taille en cm",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-diabetis-type"
+      },
+      "name" : "Type de diabète",
+      "description" : "Extension sur le type de diabète",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -1043,24 +1070,6 @@
         }],
         "nameUrl" : "Les-profils-utilises-pour-les-mesures-de-sante.page.html",
         "title" : "Les profils utilisés pour les mesures de santé",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Les-profils-utilises-pour-les-dispositifs-connectes.page.html"
-        }],
-        "nameUrl" : "Les-profils-utilises-pour-les-dispositifs-connectes.page.html",
-        "title" : "Les profils utilisés pour les dispositifs connectés",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Liste-des-profils.page.html"
-        }],
-        "nameUrl" : "Liste-des-profils.page.html",
-        "title" : "Liste des profils",
         "generation" : "markdown"
       },
       {

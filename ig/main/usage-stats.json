@@ -6,14 +6,14 @@
   "extensions": [
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diabetis-type",
-      "title": "MesDiabetisType",
+      "title": "Type de diabète",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement",
-      "title": "MesMomentOfMeasurement",
+      "title": "Moment de la mesure",
       "types": [
         "CodeableConcept",
         "string",
@@ -31,14 +31,14 @@
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days",
-      "title": "MesNumberOfDays",
+      "title": "Nombre de jours",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
-      "title": "MesReasonForMeasurement",
+      "title": "Raison de la mesure",
       "types": [
         "string"
       ]
@@ -48,57 +48,61 @@
     "Bundle": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation",
-        "title": "MesBundleFluxAlimentation"
+        "title": "Bundle d\u0027alimentation"
       }
     ],
     "Observation": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi",
-        "title": "MesFrObservationBmi"
+        "title": "Indice de Masse Corporelle"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature",
-        "title": "MesFrObservationBodyTemperature"
+        "title": "Température"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight",
-        "title": "MesFrObservationBodyWeight"
+        "title": "Poids"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight",
-        "title": "MesFrObservationBodyHeight"
+        "title": "Taille"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp",
-        "title": "MesFrObservationBp"
+        "title": "Pression Artérielle"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate",
-        "title": "MesFrObservationHeartrate"
+        "title": "Fréquence Cardiaque"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat",
-        "title": "MesFrObservationOxygenSat"
+        "title": "Saturation en Oxygène"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate",
+        "title": "Fréquence respiratoire"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose",
-        "title": "MesObservationGlucose"
+        "title": "Glycémie"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference",
-        "title": "MesObservationHeadCircumference"
+        "title": "Périmètre Crânien"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity",
-        "title": "MesObservationPainSeverity"
+        "title": "Niveau de douleur"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day",
-        "title": "MesObservationStepsByDay"
+        "title": "Nombre de pas par jour"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference",
-        "title": "MesObservationWaistCircumference"
+        "title": "Tour de taille"
       }
     ]
   },
