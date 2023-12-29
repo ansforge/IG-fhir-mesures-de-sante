@@ -10,7 +10,7 @@
   "name" : "MesFrObservationBodyHeight",
   "title" : "Taille",
   "status" : "active",
-  "date" : "2023-12-13T10:33:05+00:00",
+  "date" : "2023-12-29T10:04:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1009,7 +1009,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1071,7 +1071,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2609,7 +2609,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "mustSupport" : true,
       "isSummary" : true,
@@ -2674,7 +2674,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2736,7 +2736,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2907,7 +2907,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4192,7 +4192,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -4251,7 +4251,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "mustSupport" : true,
       "mapping" : [{
@@ -4493,7 +4493,7 @@
         "human" : "If a code for the unit is present, the system SHALL also be present",
         "expression" : "code.empty() or system.exists()",
         "xpath" : "not(exists(f:code)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       },
       {
         "key" : "sqty-1",
@@ -4558,7 +4558,7 @@
         "human" : "If a code for the unit is present, the system SHALL also be present",
         "expression" : "code.empty() or system.exists()",
         "xpath" : "not(exists(f:code)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       },
       {
         "key" : "sqty-1",
@@ -4841,7 +4841,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4898,7 +4898,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Encounter"
       }],
       "isSummary" : true,
       "mapping" : [{
