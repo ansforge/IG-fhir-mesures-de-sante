@@ -1,5 +1,5 @@
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
-<b>Vital Signs</b><br>
+<b>Vital Signs Implementation Guide</b><br>
 This implementation guide contains the profiles to share vital-signs for the French ecosystem.
 </p>
 
