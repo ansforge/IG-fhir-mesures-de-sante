@@ -12,7 +12,7 @@ This implementation guide contains the profiles to share vital-signs for the Fre
 </blockquote>
 
 <div class="figure" style="width:65%;">
-    <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
+    <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
 </div>
 
 Le guide ***mesures de santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager.
