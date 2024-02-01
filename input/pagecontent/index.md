@@ -5,9 +5,7 @@ This implementation guide contains the profiles to share vital-signs for the Fre
 
 <blockquote class="stu-note">
 <p>
-  <b>Attention !</b>
-  <br>
- Cet Implementation Guide est actuellement en concertation.
+  <b>Attention !</b> Cet Implementation Guide n'est pas la version courante. La version courante est ici : https://interop.esante.gouv.fr/ig/fhir/mesures
 </p>
 </blockquote>
 
