@@ -34,8 +34,8 @@ Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
 
 Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.
   
-Pour chaque ressource, le lien vers la spécification technique InteropSanté (sur Simplifier) est indiqué. 
-Cette liste pourra être complétée par d’autres mesures jugées pertinentes.  
+Pour chaque ressource, le lien vers la spécification technique InteropSanté (sur Simplifier) est indiqué.
+Cette liste pourra être complétée par d’autres mesures jugées pertinentes (Ex. Fréquence Respiratoire (FR)).  
   
 ### Contexte métier
 
