@@ -1,6 +1,5 @@
 Instance: phd-74E8FFFEFF051C00
-InstanceOf: Device
-Usage: #example
+InstanceOf: PhdDevice
 * meta.profile = "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
 * identifier[0].type = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers#SYSID
 * identifier[=].system = "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"
