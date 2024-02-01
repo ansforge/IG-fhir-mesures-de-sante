@@ -1,4 +1,19 @@
-Le guide ***mesures de santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager. 
+<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
+<b>Vital Signs Implementation Guide</b><br>
+This implementation guide contains the profiles to share vital-signs for the French ecosystem.
+</p>
+
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b> Cet Implementation Guide n'est pas la version courante. La version courante est ici : https://interop.esante.gouv.fr/ig/fhir/mesures
+</p>
+</blockquote>
+
+<div class="figure" style="width:65%;">
+    <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
+</div>
+
+Le guide ***mesures de santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager.
 
 Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre ces fonctions d'alimentation et de consultation des mesures de santé d'un usager.  
 
@@ -8,7 +23,7 @@ Les spécifications techniques de ce guide s’appuient:
 * sur les profils français de la ressource Observation (Profls Interop'Santé ou ANS)
 * sur le profil PHD de la ressource Device profilé dans l'Implementation Guide PHD et dont l'usage est défini dans le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif connecté ayant effectué la mesure.  
   
-Pour les opérations sur les ressources, l’API REST définie par le standard HL7 FHIR est mise en œuvre notamment la logique de la transaction PCH-01 du profil IHE « Personal Health Device Observation Upload (POU) » pour l’alimentation.  
+Pour les opérations sur les ressources, l’API REST définie par le standard HL7 FHIR met en œuvre la logique de la transaction PCH-01 du profil IHE « Personal Health Device Observation Upload (POU) » pour l’alimentation.  
 
 Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
 
