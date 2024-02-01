@@ -1,4 +1,21 @@
-Le guide ***mesures de santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager. 
+<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
+<b>Vital Signs</b><br>
+This implementation guide contains the profiles to share vital-signs for the French ecosystem.
+</p>
+
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b>
+  <br>
+ Cet Implementation Guide est actuellement en concertation.
+</p>
+</blockquote>
+
+<div class="figure" style="width:65%;">
+    <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
+</div>
+
+Le guide ***mesures de santé*** propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager.
 
 Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre ces fonctions d'alimentation et de consultation des mesures de santé d'un usager.  
 
