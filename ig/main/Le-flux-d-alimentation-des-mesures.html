@@ -207,21 +207,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Le flux d’alimentation unitaire d’une constante reprend la logique de la transaction “PCH 01” (Communicate FHIR PHD data) du profil “IHE POU“ (Personal Health Device Observation Upload).</p>
 
-<p>Ce profil et cette transaction sont détaillés dans la documentation IHE .</p>
-
-<p>Ce profil se base sur l’interaction “transaction”  de l’API REST de FHIR. Il s’agit d’une requête http POST dont le corps est une ressource “Bundle”  de type “transaction”.</p>
+<p>Ce profil et cette transaction sont détaillés dans la documentation IHE.
+Ce profil se base sur l’interaction “transaction”  de l’API REST de FHIR. Il s’agit d’une requête http POST dont le corps est une ressource “Bundle”  de type “transaction”.</p>
 
 <h3 id="contenu-de-la-requête-dalimentation">Contenu de la requête d’alimentation</h3>
 
-<p>Le corps de cette requête contient un “Bundle” conforme au profil <a href="StructureDefinition-mesures-bundle-flux-alimentation.html">MesBundleFluxAlimentation</a> qui empaquette deux ressources:</p>
+<p>Le corps de cette requête contient un “Bundle” conforme au profil <a href="StructureDefinition-mesures-bundle-flux-alimentation.html">MesBundleFluxAlimentation</a> qui peut empaquetter jusqu’à deux ressources:</p>
 
 <ul>
   <li>Une ressource “Observation” suivant un profil MES défini dans ce guide.</li>
-  <li>Une ressource “Device” suivant le profil “PhdDevice” (<a href="https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html">https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html</a>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”</li>
+  <li>Une ressource “Device” (optionnelle) suivant le profil “PhdDevice” (<a href="https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html">https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html</a>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis l’attribut “device” de la ressource “Observation” : “Observation.device”</li>
 </ul>
 
-<p>Ces 2 ressources sont incorporées dans la liste (“array”) de Bundle.entry. <br />
-Chaque élément de cette liste est un objet contenant 2 sous-objets : une ressource et la requête http associée. Dans le cas classique de l’écriture d’une observation et du “device” utilisé pour la réaliser, cette liste contient donc 4 objets.</p>
+<p>Ces 2 ressources sont incorporées dans la liste (“array”) de Bundle.entry.
+Chaque élément de cette liste est un objet contenant 2 sous-objets : une ressource et la requête HTTP associée. Dans le cas classique de l’écriture d’une observation et du “device” utilisé pour la réaliser, cette liste contient donc 4 objets.</p>
 
 <p>Ci-dessous, la structure d’un “bundle” au format JSON contenant des ressources “Observation” et “Device” dans l’attribut Bundle.entry:</p>
 
@@ -270,7 +269,7 @@ Chaque élément de cette liste est un objet contenant 2 sous-objets : une resso
 </span><span class="p">}</span><span class="w">  
 </span></code></pre></div></div>
 
-<p>Le champ “type” du “bundle” doit être fixé à “transaction”, l’attribut “request” doit être présent avec la method POST et l’url avec le resourceType.</p>
+<p>Le champs “type” du “bundle” doit être fixé à “transaction”, l’attribut “request” doit être présent avec la method POST et l’url avec le resourceType.</p>
 
 <p>A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation.</p>
 
@@ -296,6 +295,7 @@ Ainsi, il doit contenir le préfixe « Device/ » et le l’identifiant du Devic
 Le champ source contient le code du système (qui correspond à l’issuer lors de l’enregistrement de la donnée).</p>
 
 <p>Ce champ est facultatif :</p>
+
 <ul>
   <li>S’il est envoyé, il est validé,</li>
   <li>S’il n’est pas fourni, il est positionné à partir de l’oid stocké côté référentiel MES</li>
@@ -306,13 +306,15 @@ Le champ source contient le code du système (qui correspond à l’issuer lors 
 <p>L’Observation et le Device doivent renseigner l’url canonique du profil dans le champs meta.profile.<br />
 Cette information est nécessaire, elle permet de valider la conformité des ressources Device avec le profil PhdDevice ainsi que celle des ressources Observation avec l’un des 11 profils des mesures de santé.</p>
 
-<p> </p>
 <h3 id="exemple-dappel">Exemple d’appel</h3>
 
-<p>Ci-dessous, un exemple de “Bundle” complet  qui doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :</p>
+<p>Un <a href="Bundle-bundle-example.html">exemple complet</a> d’instance de Bundle a été constitué au sein du guide. Celui-ci doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :</p>
+
 <ul>
   <li>Une ressource Observation MesFrObservationBodyWeight</li>
-  <li>Une ressource Device responsable de la mesure avec :
+  <li>
+    <p>Une ressource Device responsable de la mesure avec :</p>
+
     <ul>
       <li>
         <table>
@@ -329,149 +331,24 @@ Cette information est nécessaire, elle permet de valider la conformité des res
   </li>
 </ul>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"transaction"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"entry"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3bc44de3-069d-442d-829b-f3ef68cae371"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                        </span><span class="s2">"http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"</span><span class="w">
-                    </span><span class="p">]</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"generated"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"div"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;div xmlns=</span><span class="se">\"</span><span class="s2">http://www.w3.org/1999/xhtml</span><span class="se">\"</span><span class="s2">&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: example&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 345675&lt;/p&gt;&lt;/div&gt;"</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                            </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                                </span><span class="p">{</span><span class="w">
-                                    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"</span><span class="p">,</span><span class="w">
-                                    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SYSID"</span><span class="w">
-                                </span><span class="p">}</span><span class="w">
-                            </span><span class="p">]</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
-                        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FE-ED-AB-AA-DE-AD-77-C5"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                </span><span class="p">],</span><span class="w">
-                </span><span class="nl">"manufacturer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OMRONHEALTHCARE"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"modelNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HEM-9200T"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"deviceName"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ma balance"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient-reported-name"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                </span><span class="p">],</span><span class="w">
-                </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                        </span><span class="p">{</span><span class="w">
-                            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
-                            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"65573"</span><span class="w">
-                        </span><span class="p">}</span><span class="w">
-                    </span><span class="p">]</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"specialization"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"systemType"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                            </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                                </span><span class="p">{</span><span class="w">
-                                    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
-                                    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"528457"</span><span class="w">
-                                </span><span class="p">}</span><span class="w">
-                            </span><span class="p">]</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
-                        </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.3"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                </span><span class="p">]</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POST"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"ifNoneExist"</span><span class="p">:</span><span class="w"> </span><span class="s2">"identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-AB-AA-DE-AD-77-C5"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"fullUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3bc44de3-069d-442d-829b-f3ef68cae372"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                        </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"</span><span class="w">
-                    </span><span class="p">]</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                            </span><span class="p">{</span><span class="w">
-                                </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/observation-category"</span><span class="p">,</span><span class="w">
-                                </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vital-signs"</span><span class="p">,</span><span class="w">
-                                </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Signes vitaux"</span><span class="w">
-                            </span><span class="p">}</span><span class="w">
-                        </span><span class="p">]</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                </span><span class="p">],</span><span class="w">
-                </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                        </span><span class="p">{</span><span class="w">
-                            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
-                            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"29463-7"</span><span class="p">,</span><span class="w">
-                            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Poids corporel"</span><span class="w">
-                        </span><span class="p">}</span><span class="w">
-                    </span><span class="p">]</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"device"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device/3bc44de3-069d-442d-829b-f3ef68cae371"</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-08-22T01:56:16+01:00"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">71</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kg"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kg"</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mon nouveau poids !"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                </span><span class="p">]</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POST"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
+<p>L’oid de <strong><em>Device.identifier.system</em></strong> est celui de la solution éditeur gérant le device. On le retrouve (ou un sous oid) dans l’attribut ifNoneExist afin d’identifier le device de manière unique au sein de l’entrepôt FHIR de MES.</p>
 
-</span></code></pre></div></div>
-
-<p>L’oid de <strong><em>Device.identifier.system</em></strong> est celui de la solution éditeur gérant le device. On le retrouve (ou un sous oid) dans l’attribut ifNoneExist afin d’identifier le device de manière unique au sein de l’entrepôt FHIR de MES.
- </p>
 <h3 id="réponse-à-la-requête-dalimentation">Réponse à la requête d’alimentation</h3>
 
-<p>En cas de succès, le code http 200 OK est retourné. 
+<p>En cas de succès, le code http 200 OK est retourné.
 Le corps de la réponse contient une ressource Bundle de type « transaction-response » avec la liste des réponses pour chaque ressource envoyée. Chacune de ces réponses contient :</p>
+
 <ul>
   <li>Un http Status code :
-o	Le status « 201 Created » pour les ressources créées sur MES. Pour rappel, si le Device identifié via l’attribut ifNoneExist du bundle n’existe pas dans l’entrepôt FHIR, il est créé et le statut « 201 Created » est renvoyé pour la ressource Device. 
-o	Le statut « 200 Success » est renvoyé si le Device est déjà existant</li>
-  <li>Un attribut location contenant la localisation de la ressource
-Voici un exemple de retour à la suite de la création d’une Observation et d’un nouveau Device :</li>
+    <ul>
+      <li>Le status « 201 Created » pour les ressources créées sur MES. Pour rappel, si le Device identifié via l’attribut ifNoneExist du bundle n’existe pas dans l’entrepôt FHIR, il est créé et le statut « 201 Created » est renvoyé pour la ressource Device.</li>
+      <li>Le statut « 200 Success » est renvoyé si le Device est déjà existant</li>
+    </ul>
+  </li>
+  <li>Un attribut location contenant la localisation de la ressource</li>
 </ul>
+
+<p>Voici un exemple de retour à la suite de la création d’une Observation et d’un nouveau Device :</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
@@ -847,7 +724,7 @@ Pour chacune des ressources à valider, il sera toujours retourné un code HTTP 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 1, 2024 14:29+0000">2024-02-01</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 1, 2024 16:04+0000">2024-02-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

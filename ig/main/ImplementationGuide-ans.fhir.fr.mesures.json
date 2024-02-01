@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2024-02-01T14:29:51+00:00",
+  "date" : "2024-02-01T16:04:25+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -655,6 +655,17 @@
       "name" : "Bundle d'alimentation",
       "description" : "Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/bundle-example"
+      },
+      "name" : "bundle-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"
     },
     {
       "extension" : [{
