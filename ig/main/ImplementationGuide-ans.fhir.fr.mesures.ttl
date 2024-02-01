@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-02-01T13:56:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-01T14:29:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1029,10 +1029,18 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Les-profils-utilises-pour-les-mesures-de-sante.page.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "Les-profils-utilises-pour-les-mesures-de-sante.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "Les-profils-utilises-pour-les-mesures-de-sante.page.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "Les-profils-utilises-pour-les-mesures-de-sante.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Les profils utilisés pour les mesures de santé" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Le-profil-FHIR-des-objets-connectes.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "Le-profil-FHIR-des-objets-connectes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Le profil FHIR des objets connectés" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
