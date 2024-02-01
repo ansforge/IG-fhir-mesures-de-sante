@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2024-02-01T13:57:52+00:00",
+  "date" : "2024-02-01T14:01:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -761,6 +761,17 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/ExampleMesFrRespRate"
+      },
+      "name" : "ExampleMesFrRespRate",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/ExampleMesObservationGlucose001"
       },
       "name" : "ExampleMesObservationGlucose001",
@@ -1070,6 +1081,15 @@
         }],
         "nameUrl" : "Les-profils-utilises-pour-les-mesures-de-sante.html",
         "title" : "Les profils utilisés pour les mesures de santé",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Le-profil-FHIR-des-objets-connectes.html"
+        }],
+        "nameUrl" : "Le-profil-FHIR-des-objets-connectes.html",
+        "title" : "Le profil FHIR des objets connectés",
         "generation" : "markdown"
       },
       {
