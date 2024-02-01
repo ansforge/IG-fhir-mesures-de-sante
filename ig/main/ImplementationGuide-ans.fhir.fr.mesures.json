@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2024-02-01T13:55:30+00:00",
+  "date" : "2024-02-01T13:56:11+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -754,6 +754,17 @@
       },
       "name" : "ExampleMesFrOxygenSat",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleMesFrRespRate"
+      },
+      "name" : "ExampleMesFrRespRate",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate"
     },
     {
       "extension" : [{
