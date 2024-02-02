@@ -1,24 +1,20 @@
 
-
 Le flux d’alimentation unitaire d’une constante reprend la logique de la transaction “PCH 01” (Communicate FHIR PHD data) du profil “IHE POU“ (Personal Health Device Observation Upload). 
   
-Ce profil et cette transaction sont détaillés dans la documentation IHE .  
+Ce profil et cette transaction sont détaillés dans la documentation IHE.
+Ce profil se base sur l’interaction “transaction"  de l’API REST de FHIR. Il s’agit d’une requête http POST dont le corps est une ressource “Bundle”  de type “transaction”.
   
-Ce profil se base sur l’interaction “transaction"  de l’API REST de FHIR. Il s’agit d’une requête http POST dont le corps est une ressource “Bundle”  de type “transaction”.  
-  
-###  Contenu de la requête d’alimentation  
+### Contenu de la requête d’alimentation  
 
-Le corps de cette requête contient un “Bundle” conforme au profil [MesBundleFluxAlimentation](StructureDefinition-mesures-bundle-flux-alimentation.html) qui empaquette deux ressources:  
+Le corps de cette requête contient un “Bundle” conforme au profil [MesBundleFluxAlimentation](StructureDefinition-mesures-bundle-flux-alimentation.html) qui peut empaquetter jusqu'à deux ressources:  
 
 * Une ressource “Observation” suivant un profil MES défini dans ce guide.
-* Une ressource “Device” suivant le profil “PhdDevice” (<https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis “device” de la ressource “Observation” : “Observation.device”  
-  
-	
-Ces 2 ressources sont incorporées dans la liste (“array”) de Bundle.entry.   
-Chaque élément de cette liste est un objet contenant 2 sous-objets : une ressource et la requête http associée. Dans le cas classique de l’écriture d’une observation et du “device” utilisé pour la réaliser, cette liste contient donc 4 objets.  
-   
+* Une ressource “Device” (optionnelle) suivant le profil “PhdDevice” (<https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis l'attribut “device” de la ressource “Observation” : “Observation.device”  
+
+Ces 2 ressources sont incorporées dans la liste (“array”) de Bundle.entry.
+Chaque élément de cette liste est un objet contenant 2 sous-objets : une ressource et la requête HTTP associée. Dans le cas classique de l’écriture d’une observation et du “device” utilisé pour la réaliser, cette liste contient donc 4 objets.  
+
 Ci-dessous, la structure d’un “bundle” au format JSON contenant des ressources “Observation” et “Device” dans l’attribut Bundle.entry:  
-  
 
 ~~~~~~~~
 {  
@@ -66,195 +62,64 @@ Ci-dessous, la structure d’un “bundle” au format JSON contenant des ressou
 }  
 ~~~~~~~~
 {: .language-json}
-  
-  
-Le champ “type” du “bundle” doit être fixé à “transaction”, l’attribut “request” doit être présent avec la method POST et l’url avec le resourceType.  
+
+Le champs “type” du “bundle” doit être fixé à “transaction”, l’attribut “request” doit être présent avec la method POST et l’url avec le resourceType.  
   
 A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation.  
 
-###  L’attribut « ifNoneExist »
+### L’attribut « ifNoneExist »
   
 L’attribut ifNoneExist contenant l’oid du device (« sous oid » de la solution éditeur) et son identifier est obligatoire pour la ressource Device. Cet attribut permet d’exécuter la transaction « conditional create »  pour les Devices :
 
 * Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné).  
 * S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.
   
-A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation.   
+A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation.
 
-###  Référence de la ressource Observation vers la ressource Device (Observation.device)
+### Référence de la ressource Observation vers la ressource Device (Observation.device)
 
 La ressource Device peut être référencée dans l’attribut Observation.device.reference.  
 Ainsi, il doit contenir le préfixe « Device/ » et le l'identifiant du Device doit contenir uniquement l’uuid.  
   
-
 ### L’attribut « Observation.meta.source »
 
 Le système source de la donnée est indiqué dans le champ meta de l’observation.  
 Le champ source contient le code du système (qui correspond à l’issuer lors de l’enregistrement de la donnée).
 
 Ce champ est facultatif :
--	S’il est envoyé, il est validé, 
--	S’il n’est pas fourni, il est positionné à partir de l’oid stocké côté référentiel MES
+
+* S’il est envoyé, il est validé,
+* S’il n’est pas fourni, il est positionné à partir de l’oid stocké côté référentiel MES
   
-###  L’attribut « meta.profile »
+### L’attribut « meta.profile »
 
 L’Observation et le Device doivent renseigner l’url canonique du profil dans le champs meta.profile.  
 Cette information est nécessaire, elle permet de valider la conformité des ressources Device avec le profil PhdDevice ainsi que celle des ressources Observation avec l’un des 11 profils des mesures de santé.  
 
- 
-###  Exemple d’appel  
+### Exemple d’appel  
 
-Ci-dessous, un exemple de “Bundle” complet  qui doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :  
--	Une ressource Observation MesFrObservationBodyWeight
--	Une ressource Device responsable de la mesure avec : 
-    *	comme identifiant unique au sein de MES :  urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-AB-AA-DE-AD-77-C5
-    *   la spécialisation Generic 20601 Device (code 528457)
+Un [exemple complet](Bundle-bundle-example.html) d'instance de Bundle a été constitué au sein du guide. Celui-ci doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” : 
 
-~~~~~~~~
-{
-    "resourceType": "Bundle",
-    "type": "transaction",
-    "entry": [
-        {
-            "resource": {
-                "resourceType": "Device",
-                "id": "3bc44de3-069d-442d-829b-f3ef68cae371",
-                "meta": {
-                    "profile": [
-                        "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
-                    ]
-                },
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 345675</p></div>"
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers",
-                                    "code": "SYSID"
-                                }
-                            ]
-                        },
-                        "system": "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680",
-                        "value": "FE-ED-AB-AA-DE-AD-77-C5"
-                    }
-                ],
-                "manufacturer": "OMRONHEALTHCARE",
-                "modelNumber": "HEM-9200T",
-                "deviceName": [
-                    {
-                        "name": "Ma balance",
-                        "type": "patient-reported-name"
-                    }
-                ],
-                "type": {
-                    "coding": [
-                        {
-                            "system": "urn:iso:std:iso:11073:10101",
-                            "code": "65573"
-                        }
-                    ]
-                },
-                "specialization": [
-                    {
-                        "systemType": {
-                            "coding": [
-                                {
-                                    "system": "urn:iso:std:iso:11073:10101",
-                                    "code": "528457"
-                                }
-                            ]
-                        },
-                        "version": "2.3"
-                    }
-                ]
-            },
-            "request": {
-                "method": "POST",
-                "url": "Device",
-                "ifNoneExist": "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-AB-AA-DE-AD-77-C5"
-            }
-        },
-        {
-            "fullUrl": "3bc44de3-069d-442d-829b-f3ef68cae372",
-            "resource": {
-                "resourceType": "Observation",
-                "meta": {
-                    "profile": [
-                        "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"
-                    ]
-                },
-                "status": "final",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "vital-signs",
-                                "display": "Signes vitaux"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://loinc.org",
-                            "code": "29463-7",
-                            "display": "Poids corporel"
-                        }
-                    ]
-                },
-                "subject": {
-                    "identifier": {
-                        "system": "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560",
-                        "value": "{{idPe}}"
-                    }
-                },
-                "device": {
-                    "reference": "Device/3bc44de3-069d-442d-829b-f3ef68cae371"
-                },
-                "effectiveDateTime": "2022-08-22T01:56:16+01:00",
-                "valueQuantity": {
-                    "value": 71,
-                    "unit": "kg",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "kg"
-                },
-                "extension": [
-                    {
-                        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement",
-                        "valueString": "Mon nouveau poids !"
-                    }
-                ]
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
-            }
-        }
-    ]
-}
+* Une ressource Observation MesFrObservationBodyWeight
+* Une ressource Device responsable de la mesure avec :
 
-~~~~~~~~
-{: .language-json}
-  
-  
+  * comme identifiant unique au sein de MES :  urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-AB-AA-DE-AD-77-C5
+  * la spécialisation Generic 20601 Device (code 528457)
+
 L’oid de ***Device.identifier.system*** est celui de la solution éditeur gérant le device. On le retrouve (ou un sous oid) dans l’attribut ifNoneExist afin d’identifier le device de manière unique au sein de l’entrepôt FHIR de MES.
- 
-###  Réponse à la requête d’alimentation
 
-En cas de succès, le code http 200 OK est retourné. 
-Le corps de la réponse contient une ressource Bundle de type « transaction-response » avec la liste des réponses pour chaque ressource envoyée. Chacune de ces réponses contient : 
--	Un http Status code :
-    o	Le status « 201 Created » pour les ressources créées sur MES. Pour rappel, si le Device identifié via l’attribut ifNoneExist du bundle n’existe pas dans l’entrepôt FHIR, il est créé et le statut « 201 Created » est renvoyé pour la ressource Device. 
-    o	Le statut « 200 Success » est renvoyé si le Device est déjà existant
--	Un attribut location contenant la localisation de la ressource
+### Réponse à la requête d’alimentation
+
+En cas de succès, le code http 200 OK est retourné.
+Le corps de la réponse contient une ressource Bundle de type « transaction-response » avec la liste des réponses pour chaque ressource envoyée. Chacune de ces réponses contient :
+
+* Un http Status code :
+  * Le status « 201 Created » pour les ressources créées sur MES. Pour rappel, si le Device identifié via l’attribut ifNoneExist du bundle n’existe pas dans l’entrepôt FHIR, il est créé et le statut « 201 Created » est renvoyé pour la ressource Device. 
+  * Le statut « 200 Success » est renvoyé si le Device est déjà existant
+* Un attribut location contenant la localisation de la ressource
+
 Voici un exemple de retour à la suite de la création d’une Observation et d’un nouveau Device :
-   
+
 ~~~~~~
 {
     "resourceType": "Bundle",
@@ -279,7 +144,6 @@ Voici un exemple de retour à la suite de la création d’une Observation et d�
 
 Dans le cas d’une erreur rencontrée, un code erreur HTTP est retourné :
 
-
 | Statut | Error                                        | Message                                                                                                                             | Précision                                                                       |
 | ------ |
 | 400    | Bad Request                                  | HTTP code 400 : Bad request -> The ID_TOKEN value is not valid (invalid JWT)                                                        |                                                                                 |
@@ -288,11 +152,8 @@ Dans le cas d’une erreur rencontrée, un code erreur HTTP est retourné :
 | 403    | Consent not given, access refused.           |                                                                                                                                     | L’usager n’a pas donné son consente-ment pour l’opération d’écriture de-mandée. |
 | 422    | Unprocessable Entity                         | No bundle provided.                                                                                                                 |
 | 409    | Conflict                                     | HTTP code 409 :OID conflict between the one from id_token and the one in the system -> OID different between id_token and ecosystem |                                                                                 |
-{: .grid }       
+{: .grid }
 
-  
-  	
-			
 Le corps de la réponse contient une ressource Bundle de type « transaction-response ».   
 Cette ressource  contient le détail des erreurs et avertissements résultants du traitement de la requête transmise par MES.  
 Pour chacune des ressources à valider, il sera toujours retourné un code HTTP « 422 Unprocessable Entity » accompagné d’une ou plusieurs OperationOutcome de niveau « Error » dont voici la liste :
