@@ -9,15 +9,17 @@ Usage: #example
 * entry[0].resource = device-example
 * entry[=].request.method = #POST
 * entry[=].request.url = "Device"
-* entry[=].request.ifNoneExist = "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-AB-AA-DE-AD-77-C5"
-* entry[+].fullUrl = "3bc44de3-069d-442d-829b-f3ef68cae372"
-* entry[=].resource = body-weight-example
+* entry[=].fullUrl = "urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575" //created using random generator
+
+* entry[+].resource = body-weight-example
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
+* entry[=].fullUrl = "urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a" //created using random generator
 
 Instance: device-example
 InstanceOf: PhdDevice
 Usage: #inline
+* id = "d36bfdb6-b1b1-4efd-9cb9-d217a8696575"
 * meta.profile = "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
 * identifier.type = $ContinuaDeviceIdentifiers#SYSID
 * identifier.system = "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"
@@ -33,14 +35,14 @@ Usage: #inline
 Instance: body-weight-example
 InstanceOf: MesFrObservationBodyWeight
 Usage: #inline
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-body-weight"
+* id = "5138af77-df7e-4b9d-ba17-07ba3ebb950a"
+* meta.profile = Canonical(mesures-fr-observation-body-weight)
 * status = #final
-* category = $observation-category#vital-signs "Signes vitaux"
-* code = $loinc#29463-7 "Poids corporel"
+* code = $loinc#29463-7 "Body weight"
 * subject.identifier.system = "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560"
 * subject.identifier.value = "id-value"
-* device = Reference(3bc44de3-069d-442d-829b-f3ef68cae371)
+* device = Reference(d36bfdb6-b1b1-4efd-9cb9-d217a8696575)
 * effectiveDateTime = "2022-08-22T01:56:16+01:00"
 * valueQuantity = 71 'kg' "kg"
-* extension.url = "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-reason-for-measurement"
-* extension.valueString = "Mon nouveau poids !"
+* extension[0].url = Canonical(mesures-reason-for-measurement)
+* extension[0].valueString = "Mon nouveau poids !"

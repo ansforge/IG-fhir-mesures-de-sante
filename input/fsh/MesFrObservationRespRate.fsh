@@ -8,6 +8,8 @@ Description: "Profil de la ressource Observation pour définir une fréquence re
 
 * extension contains mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 
+* code 1..1
+
 * value[x] ^slicing.rules = #closed
 
 * category[VSCat].coding.display = "vital-signs" 

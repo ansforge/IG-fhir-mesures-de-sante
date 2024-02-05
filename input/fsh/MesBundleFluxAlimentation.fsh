@@ -6,7 +6,7 @@ Description: "Profil de la ressource Bundle du flux d'alimentation à envoyer au
 
 * type = #transaction
 
-* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.type = #pattern
 * entry ^slicing.discriminator.path = "request.url"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slice based on the request.url pattern"
