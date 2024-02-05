@@ -74,7 +74,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-bundle-flux-alimentation","Bundle.entry","Bundle.entry","","","",1,*,"","","Y","BackboneElement {[]} {[]}
-","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"","profile:request.url}
+","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"","pattern:request.url}
 ","Slice based on the request.url pattern",,"open","Bundle.entry",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}"
@@ -6143,8 +6143,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mesures-observation-steps-by-day","Observation.code.coding","Observation.code.coding","","","",1,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:code}
-value:system}","",,"open","CodeableConcept.coding",0,*,"ele-1
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:code}
+pattern:system}","",,"open","CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-observation-steps-by-day","Observation.code.coding:stepsBDCode","Observation.code.coding","stepsBDCode","","",1,1,"","","Y","Coding {[]} {[]}
