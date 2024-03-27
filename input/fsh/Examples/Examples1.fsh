@@ -95,7 +95,7 @@ InstanceOf: MesFrObservationOxygenSat
 Usage: #example
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
-* category = $observation-category#vital-signs "vital-signs"
+* category = $observation-category#vital-signs "Vital Signs"
 * category.text = "Vital Signs"
 * code.coding[0] = $loinc#2708-6 "Oxygen saturation in Arterial blood"
 * code.text = "oxygen_saturation"
