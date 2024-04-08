@@ -1,0 +1,363 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class MesBundleFluxAlimentation{
+
+             Bundle.type => [None..None]
+             Bundle.entry => [1..None]
+             Bundle.entry:mes-observation => [1..1]
+             Bundle.entry:mes-observation.resource => [None..None]
+             Bundle.entry:mes-observation.request => [1..None]
+             Bundle.entry:mes-observation.request.method => [None..None]
+             Bundle.entry:mes-observation.request.url => [None..None]
+             Bundle.entry:mes-device => [0..1]
+             Bundle.entry:mes-device.resource => [None..None]
+             Bundle.entry:mes-device.request => [1..None]
+             Bundle.entry:mes-device.request.method => [None..None]
+             Bundle.entry:mes-device.request.url => [None..None]
+        } 
+
+        class MesFrObservationBmi{
+
+             Observation.meta.source => [None..None]
+             Observation.dataAbsentReason.coding.system => [1..None]
+             Observation.dataAbsentReason.coding.code => [1..None]
+             Observation.interpretation => [None..None]
+             Observation.device => [None..None]
+             Observation.referenceRange.appliesTo => [None..None]
+             Observation.referenceRange.appliesTo.coding.system => [1..None]
+             Observation.referenceRange.appliesTo.coding.code => [1..None]
+        } 
+
+        class MesFrObservationBodyTemperature{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:levelOfExertion => <&plus>[None..None]
+             Observation.extension:MesReasonForMeasurement => <&plus>[0..1]
+             Observation.value[x] => [None..None]
+             Observation.value[x]:valueQuantity => [None..None]
+             Observation.dataAbsentReason.coding.system => [1..None]
+             Observation.dataAbsentReason.coding.code => [1..None]
+             Observation.interpretation => [None..None]
+             Observation.bodySite => [None..None]
+             Observation.bodySite.coding.system => [1..None]
+             Observation.bodySite.coding.code => [1..None]
+             Observation.method => [None..None]
+             Observation.device => [None..None]
+        } 
+
+        class MesFrObservationBodyWeight{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:MesReasonForMeasurement => <&plus>[0..1]
+             Observation.value[x] => [None..None]
+             Observation.value[x]:valueQuantity => [None..None]
+             Observation.value[x]:valueQuantity.code => [None..None]
+             Observation.dataAbsentReason.coding.system => [1..None]
+             Observation.dataAbsentReason.coding.code => [1..None]
+             Observation.interpretation => [None..None]
+             Observation.method => [None..None]
+             Observation.device => [None..None]
+        } 
+
+        class MesFrObservationBodyHeight{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:bodyposition => <&plus>[None..None]
+             Observation.value[x] => [None..None]
+             Observation.value[x]:valueQuantity => [None..None]
+             Observation.dataAbsentReason.coding.system => [1..None]
+             Observation.dataAbsentReason.coding.code => [1..None]
+             Observation.interpretation => [None..None]
+             Observation.method => [None..None]
+             Observation.device => [None..None]
+        } 
+
+        class MesFrObservationBp{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:MesReasonForMeasurement => <&plus>[0..1]
+             Observation.extension:MesMomentOfMeasurement => <&plus>[0..1]
+             Observation.category:VSCat => [None..None]
+             Observation.category:VSCat.coding.display => [None..None]
+             Observation.subject => [1..None]
+             Observation.effective[x] => [None..None]
+             Observation.interpretation => [None..None]
+             Observation.bodySite => [None..None]
+             Observation.bodySite.coding.system => [1..None]
+             Observation.bodySite.coding.code => [1..None]
+             Observation.method => [None..None]
+             Observation.device => [None..None]
+             Observation.referenceRange.appliesTo => [None..None]
+             Observation.referenceRange.appliesTo.coding.system => [1..None]
+             Observation.referenceRange.appliesTo.coding.code => [1..None]
+             Observation.component => [None..None]
+             Observation.component.referenceRange => [None..None]
+        } 
+
+        class MesFrObservationHeartrate{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:levelOfExertion => <&plus>[None..None]
+             Observation.extension:bodyPosition => <&plus>[None..None]
+             Observation.extension:MesMomentOfMeasurement => <&plus>[0..1]
+             Observation.value[x] => [None..None]
+             Observation.dataAbsentReason.coding.system => [1..None]
+             Observation.dataAbsentReason.coding.code => [1..None]
+             Observation.interpretation => [None..None]
+             Observation.method => [None..None]
+             Observation.device => [None..None]
+             Observation.referenceRange.appliesTo => [None..None]
+             Observation.referenceRange.appliesTo.coding.system => [1..None]
+             Observation.referenceRange.appliesTo.coding.code => [1..None]
+        } 
+
+        class MesFrObservationOxygenSat{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:MesMomentOfMeasurement => <&plus>[0..1]
+             Observation.category:VSCat => [None..None]
+             Observation.category:VSCat.coding.display => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.method => [None..None]
+             Observation.method.coding.system => [1..None]
+             Observation.method.coding.code => [1..None]
+             Observation.device => [None..None]
+        } 
+
+        class MesFrObservationRespiratoryRate{
+
+             Observation => [None..None]
+             Observation.meta.source => [None..None]
+             Observation.extension:MesMomentOfMeasurement => <&plus>[0..1]
+             Observation.category:VSCat => [None..None]
+             Observation.category:VSCat.coding.display => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.device => [None..None]
+        } 
+
+        class MesObservationGlucose{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.extension:MesReasonForMeasurement => <&plus>[0..1]
+             Observation.extension:MesMomentOfMeasurement => <&plus>[0..1]
+             Observation.extension:MesMomentOfMeasurement.value[x] => <&plus>[None..None]
+             Observation.extension:MesNumberOfDays => <&plus>[0..1]
+             Observation.extension:MesDiabetisType => <&plus>[0..1]
+             Observation.category:VSCat => [None..None]
+             Observation.category:VSCat.coding.display => [None..None]
+             Observation.code => [None..None]
+             Observation.code.coding.system => [1..None]
+             Observation.code.coding.code => [1..None]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.effective[x] => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.value[x].value => [None..None]
+             Observation.value[x].system => [1..None]
+             Observation.value[x].code => [1..None]
+             Observation.dataAbsentReason.coding.system => [1..None]
+             Observation.dataAbsentReason.coding.code => [1..None]
+             Observation.method => [None..None]
+             Observation.device => [None..None]
+             Observation.referenceRange.appliesTo => [None..None]
+             Observation.referenceRange.appliesTo.coding.system => [1..None]
+             Observation.referenceRange.appliesTo.coding.code => [1..None]
+        } 
+
+        class MesObservationHeadCircumference{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.extension:MesReasonForMeasurement => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.code.coding:headCircumCode => [1..1]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.value[x].value => [1..None]
+             Observation.value[x].unit => [1..None]
+             Observation.value[x].system => [None..None]
+             Observation.value[x].code => [1..None]
+        } 
+
+        class MesObservationPainSeverity{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.extension:MesReasonForMeasurement => <&plus>[0..1]
+             Observation.category:VSCat => [None..None]
+             Observation.category:VSCat.coding.display => [None..None]
+             Observation.code.coding => [1..None]
+             Observation.code.coding:painServerCode => [1..1]
+             Observation.effective[x] => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.value[x].unit => [1..None]
+             Observation.value[x].system => [None..None]
+             Observation.value[x].code => [1..None]
+             Observation.dataAbsentReason.coding.system => [1..None]
+             Observation.dataAbsentReason.coding.code => [1..None]
+             Observation.bodySite => [None..None]
+             Observation.method => [None..None]
+        } 
+
+        class MesObservationStepsByDay{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.extension:MesReasonForMeasurement => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.code.coding:stepsBDCode => [1..1]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.value[x].unit => [1..None]
+             Observation.value[x].system => [1..None]
+             Observation.value[x].code => [1..None]
+             Observation.dataAbsentReason.coding.system => [1..None]
+             Observation.dataAbsentReason.coding.code => [1..None]
+             Observation.method => [None..None]
+             Observation.device => [None..None]
+        } 
+
+        class MesObservationWaistCircumference{
+
+             Observation.meta.source => [None..None]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.extension:MesReasonForMeasurement => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.code.coding:waistCircumCode => [1..1]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.value[x].system => [1..None]
+             Observation.value[x].code => [1..None]
+             Observation.dataAbsentReason.coding.system => [1..None]
+             Observation.dataAbsentReason.coding.code => [1..None]
+             Observation.device => [None..None]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     MesFrObservationBodyTemperature -[#black,dashed,thickness=2]-> MesReasonForMeasurement
+     MesFrObservationBodyWeight -[#black,dashed,thickness=2]-> MesReasonForMeasurement
+     MesFrObservationBp -[#black,dashed,thickness=2]-> MesReasonForMeasurement
+     MesFrObservationBp -[#black,dashed,thickness=2]-> MesMomentOfMeasurement
+     MesFrObservationHeartrate -[#black,dashed,thickness=2]-> MesMomentOfMeasurement
+     MesFrObservationOxygenSat -[#black,dashed,thickness=2]-> MesMomentOfMeasurement
+     MesFrObservationRespiratoryRate -[#black,dashed,thickness=2]-> MesMomentOfMeasurement
+     MesObservationGlucose -[#black,dashed,thickness=2]-> MesReasonForMeasurement
+     MesObservationGlucose -[#black,dashed,thickness=2]-> MesMomentOfMeasurement
+     MesObservationGlucose -[#black,dashed,thickness=2]-> MesNumberOfDays
+     MesObservationGlucose -[#black,dashed,thickness=2]-> MesDiabetisType
+     MesObservationHeadCircumference -[#black,dashed,thickness=2]-> MesReasonForMeasurement
+     MesObservationPainSeverity -[#black,dashed,thickness=2]-> MesReasonForMeasurement
+     MesObservationStepsByDay -[#black,dashed,thickness=2]-> MesReasonForMeasurement
+     MesObservationWaistCircumference -[#black,dashed,thickness=2]-> MesReasonForMeasurement
+
+        class MesDiabetisType{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MesMomentOfMeasurement{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+          Extension.value[x].coding => [None..1]
+          Extension.value[x].coding.system => [1..None]
+          Extension.value[x].coding.code => [1..None]
+        } 
+        class MesNumberOfDays{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class MesReasonForMeasurement{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+         }
+     }
+     package valueset #PaleVioletRed{
+
+        class MethodeGlucoseVS  
+
+     MesObservationGlucose -[#black,dotted,thickness=2]-> MethodeGlucoseVS
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "Bundle" as  class94c51f19c37f96ed231f5a0ae512b2a8 
+
+    class94c51f19c37f96ed231f5a0ae512b2a8 --> MesBundleFluxAlimentation
+
+ class "http://interopsante.org/fhir/StructureDefinition/FrObservationBmi" as  class70200b3ac0dd01f8acf56ef2624bd1d3 
+
+    class70200b3ac0dd01f8acf56ef2624bd1d3 --> MesFrObservationBmi
+
+ class "http://interopsante.org/fhir/StructureDefinition/FrObservationBodyTemperature" as  class46bc762d1f2bf3e8090369e20dc5e10a 
+
+    class46bc762d1f2bf3e8090369e20dc5e10a --> MesFrObservationBodyTemperature
+
+ class "http://interopsante.org/fhir/StructureDefinition/FrObservationBodyWeight" as  class4dde77e8a39bd88efcf6d7cbce0f0ec1 
+
+    class4dde77e8a39bd88efcf6d7cbce0f0ec1 --> MesFrObservationBodyWeight
+
+ class "http://interopsante.org/fhir/StructureDefinition/FrObservationBodyHeight" as  class64cc69f8e19b50b5ccade5fd29647cf5 
+
+    class64cc69f8e19b50b5ccade5fd29647cf5 --> MesFrObservationBodyHeight
+
+ class "http://interopsante.org/fhir/StructureDefinition/FrObservationBp" as  class1ccb4ad929b44ca50fa79f2507e901f2 
+
+    class1ccb4ad929b44ca50fa79f2507e901f2 --> MesFrObservationBp
+
+ class "http://interopsante.org/fhir/StructureDefinition/FrObservationHeartrate" as  classcc47867a1be81d6b98fb7498934ade06 
+
+    classcc47867a1be81d6b98fb7498934ade06 --> MesFrObservationHeartrate
+
+ class "http://interopsante.org/fhir/StructureDefinition/FrObservationOxygenSaturation" as  class42a4cf766204aff7bd6e462858ce1e62 
+
+    class42a4cf766204aff7bd6e462858ce1e62 --> MesFrObservationOxygenSat
+
+ class "http://interopsante.org/fhir/StructureDefinition/FrOservationRespRate" as  class31fe24eb3cc14495419b98f34dfc569e 
+
+    class31fe24eb3cc14495419b98f34dfc569e --> MesFrObservationRespiratoryRate
+
+ class "vitalsigns" as  classbc3e6f566d4b627eb1169a15f6c63afa 
+
+    classbc3e6f566d4b627eb1169a15f6c63afa --> MesObservationGlucose
+
+ class "vitalsigns" as  classbc3e6f566d4b627eb1169a15f6c63afa 
+
+    classbc3e6f566d4b627eb1169a15f6c63afa --> MesObservationHeadCircumference
+
+ class "vitalsigns" as  classbc3e6f566d4b627eb1169a15f6c63afa 
+
+    classbc3e6f566d4b627eb1169a15f6c63afa --> MesObservationPainSeverity
+
+ class "vitalsigns" as  classbc3e6f566d4b627eb1169a15f6c63afa 
+
+    classbc3e6f566d4b627eb1169a15f6c63afa --> MesObservationStepsByDay
+
+ class "vitalsigns" as  classbc3e6f566d4b627eb1169a15f6c63afa 
+
+    classbc3e6f566d4b627eb1169a15f6c63afa --> MesObservationWaistCircumference
+}
+@enduml
