@@ -1,9 +1,9 @@
 Mesures : Validation Results
 =========================================
 
-err = 10, warn = 46, info = 34
+err = 9, warn = 46, info = 34
 IG Publisher Version: 1.6.4
-Generated Mon Apr 08 12:56:47 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+Generated Mon Apr 08 13:05:44 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 0 / 29 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Bundle-bundle-example : 0 / 3 / 12
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 14
@@ -16,7 +16,7 @@ Generated Mon Apr 08 12:56:47 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.mesur
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesFrObservationHeartrate001 : 0 / 1 / 3
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesFrOxygenSat : 1 / 1 / 3
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesFrRespRate : 0 / 1 / 3
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationGlucose001 : 1 / 1 / 2
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationGlucose001 : 0 / 1 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001 : 2 / 2 / 4
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001 : 1 / 1 / 3
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001 : 1 / 1 / 3
@@ -124,13 +124,12 @@ INFORMATION: Observation/ExampleMesFrObservationHeartrate001: Observation.catego
 WARNING: Observation/ExampleMesFrObservationHeartrate001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesFrOxygenSat.json ==
 INFORMATION: Observation/ExampleMesFrOxygenSat: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|4.0.1
-ERROR: Observation/ExampleMesFrOxygenSat: Observation.category[0].coding[0].display: Wrong Display Name 'vital-signs' for http://terminology.hl7.org/CodeSystem/observation-category#vital-signs. Valid display is 'Vital Signs' (for the language(s) '--')
+ERROR: Observation/ExampleMesFrOxygenSat: Observation.category[0].coding[0].display: Value is 'Vital Signs' but must be 'vital-signs'
 WARNING: Observation/ExampleMesFrOxygenSat: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesFrRespRate.json ==
 INFORMATION: Observation/ExampleMesFrRespRate: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|4.0.1
 WARNING: Observation/ExampleMesFrRespRate: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json ==
-ERROR: Observation/ExampleMesObservationGlucose001: Observation.extension[3].value.ofType(CodeableConcept): None of the codings provided are in the value set 'JDV_J153-TypeDiabete-ENS' (https://mos.esante.gouv.fr/NOS/JDV_J153-TypeDiabete-ENS/FHIR/JDV-J153-TypeDiabete-ENS|1.2.0), and a coding from this value set is required) (codes = https://mos.esante.gouv.fr/NOS/TRE_R310-CIM10ATIH/FHIR/TRE-R310-CIM10ATIH#E11.38)
 INFORMATION: Observation/ExampleMesObservationGlucose001: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|4.0.1
 WARNING: Observation/ExampleMesObservationGlucose001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001.json ==
