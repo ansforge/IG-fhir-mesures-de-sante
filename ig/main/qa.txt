@@ -2,9 +2,9 @@ Mesures : Validation Results
 =========================================
 
 err = 9, warn = 46, info = 34
-IG Publisher Version: 1.5.16
-Generated Mon Feb 12 14:57:06 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
- Build Errors : 0 / 20 / 0
+IG Publisher Version: 1.6.4
+Generated Mon Apr 08 08:18:32 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+ Build Errors : 0 / 29 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Bundle-bundle-example : 0 / 3 / 12
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 14
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mesures : 0 / 0 / 1
@@ -61,6 +61,15 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ExamplefrPatient001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/bundle-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/phd-74E8FFFEFF051C00.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/output/Terminologies.html#/html/body/div/div/div/div/div/table/tr/td/div/p/a at Line 268, column 202: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate' for "Fréquence Cardiaque" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/output/Terminologies.html#/html/body/div/div/div/div/div/table/tr/td/div/p/a at Line 269, column 105: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate' for "Fréquence respiratoire" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/output/Terminologies.html#/html/body/div/div/div/div/div/table/tr/td/div/p/a at Line 270, column 105: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose' for "Glycémie" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/output/Terminologies.html#/html/body/div/div/div/div/div/table/tr/td/div/p/a at Line 271, column 72: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi' for "Indice de Masse Corporelle" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/output/Terminologies.html#/html/body/div/div/div/div/div/table/tr/td/div/p/a at Line 272, column 106: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight' for "Poids" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/output/Terminologies.html#/html/body/div/div/div/div/div/table/tr/td/div/p/a at Line 273, column 106: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp' for "Pression Artérielle" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/output/Terminologies.html#/html/body/div/div/div/div/div/table/tr/td/div/p/a at Line 274, column 106: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat' for "Saturation en Oxygène" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/output/Terminologies.html#/html/body/div/div/div/div/div/table/tr/td/div/p/a at Line 275, column 105: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight' for "Taille" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/output/Terminologies.html#/html/body/div/div/div/div/div/table/tr/td/div/p/a at Line 276, column 105: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature' for "Température" is a canonical link and is therefore unsafe with regard to versions
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide

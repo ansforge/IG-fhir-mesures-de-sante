@@ -10,7 +10,7 @@
   "name" : "MesBundleFluxAlimentation",
   "title" : "Bundle d'alimentation",
   "status" : "active",
-  "date" : "2024-02-12T14:53:29+00:00",
+  "date" : "2024-04-08T08:01:20+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -2104,78 +2104,6 @@
         "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference",
         "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"]
       }],
-      "constraint" : [{
-        "key" : "dom-2",
-        "severity" : "error",
-        "human" : "If the resource is contained in another resource, it SHALL NOT contain nested Resources",
-        "expression" : "contained.contained.empty()",
-        "xpath" : "not(parent::f:contained and f:contained)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "dom-4",
-        "severity" : "error",
-        "human" : "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
-        "expression" : "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()",
-        "xpath" : "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "dom-3",
-        "severity" : "error",
-        "human" : "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
-        "expression" : "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
-        "xpath" : "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
-          "valueBoolean" : true
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation",
-          "valueMarkdown" : "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
-        }],
-        "key" : "dom-6",
-        "severity" : "warning",
-        "human" : "A resource should have narrative for robust management",
-        "expression" : "text.`div`.exists()",
-        "xpath" : "exists(f:text/h:div)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "dom-5",
-        "severity" : "error",
-        "human" : "If a resource is contained in another resource, it SHALL NOT have a security label",
-        "expression" : "contained.meta.security.empty()",
-        "xpath" : "not(exists(f:contained/*/f:meta/f:security))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "obs-7",
-        "severity" : "error",
-        "human" : "If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present",
-        "expression" : "value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()",
-        "xpath" : "not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
-      },
-      {
-        "key" : "obs-6",
-        "severity" : "error",
-        "human" : "dataAbsentReason SHALL only be present if Observation.value[x] is not present",
-        "expression" : "dataAbsentReason.empty() or value.empty()",
-        "xpath" : "not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
-      },
-      {
-        "key" : "vs-2",
-        "severity" : "error",
-        "human" : "If there is no component or hasMember element then either a value[x] or a data absent reason must be present.",
-        "expression" : "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())",
-        "xpath" : "f:component or f:memberOF or f:*[starts-with(local-name(.), 'value')] or f:dataAbsentReason",
-        "source" : "http://hl7.org/fhir/StructureDefinition/vitalsigns"
-      }],
       "mapping" : [{
         "identity" : "rim",
         "map" : "Entity. Role, or Act"
@@ -3350,54 +3278,6 @@
       "type" : [{
         "code" : "Device",
         "profile" : ["http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"]
-      }],
-      "constraint" : [{
-        "key" : "dom-2",
-        "severity" : "error",
-        "human" : "If the resource is contained in another resource, it SHALL NOT contain nested Resources",
-        "expression" : "contained.contained.empty()",
-        "xpath" : "not(parent::f:contained and f:contained)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "dom-3",
-        "severity" : "error",
-        "human" : "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
-        "expression" : "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
-        "xpath" : "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "dom-4",
-        "severity" : "error",
-        "human" : "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
-        "expression" : "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()",
-        "xpath" : "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "key" : "dom-5",
-        "severity" : "error",
-        "human" : "If a resource is contained in another resource, it SHALL NOT have a security label",
-        "expression" : "contained.meta.security.empty()",
-        "xpath" : "not(exists(f:contained/*/f:meta/f:security))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
-          "valueBoolean" : true
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation",
-          "valueMarkdown" : "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
-        }],
-        "key" : "dom-6",
-        "severity" : "warning",
-        "human" : "A resource should have narrative for robust management",
-        "expression" : "text.`div`.exists()",
-        "xpath" : "exists(f:text/h:div)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "isModifier" : false,
       "isSummary" : false,

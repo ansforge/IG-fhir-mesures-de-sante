@@ -13,18 +13,6 @@
       "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
     },
     {
-      "url" : "http://hl7.org/fhir/fhir-types",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "FHIRTypes",
-      "title" : "All FHIR Types",
-      "description" : "One of the types defined as part of this version of FHIR.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
-    },
-    {
       "url" : "http://hl7.org/fhir/http-verb",
       "version" : "4.0.1",
       "status" : "active",
@@ -61,6 +49,17 @@
       "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
     },
     {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
       "url" : "http://hl7.org/fhir/search-entry-mode",
       "version" : "4.0.1",
       "status" : "active",
@@ -95,9 +94,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods"
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -169,10 +168,10 @@
       "oids" : ["2.16.840.1.113883.6.8"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
-      "http://hl7.org/fhir/R4/valueset-ucum-bodytemp.html" : "Body Temperature Units",
+      "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
       "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units",
-      "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units"
+      "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
+      "http://hl7.org/fhir/R4/valueset-ucum-bodytemp.html" : "Body Temperature Units"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc",
@@ -221,8 +220,8 @@
       "oids" : ["1.2.250.1.213.2.65"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J152-MethodBodyTemperature-ENS.html" : "JDV_J152-MethodBodyTemperature-ENS",
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147-MethodHeartrate-ENS"
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147-MethodHeartrate-ENS",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J152-MethodBodyTemperature-ENS.html" : "JDV_J152-MethodBodyTemperature-ENS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT",
@@ -234,11 +233,11 @@
       "oids" : ["2.16.840.1.113883.3.26.1.1"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J150-MethodBP-ENS.html" : "JDV_J150-MethodBP-ENS",
       "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J159-MethodPainSeverity-ENS.html" : "JDV_J159-MethodPainSeverity-ENS",
       "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J146-MethodBodyHeight-ENS.html" : "JDV_J146-MethodBodyHeight-ENS",
-      "ValueSet-method-glucose-vs.html" : "Méthode de mesures de glycémie sanguine ou interstitielle",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J150-MethodBP-ENS.html" : "JDV_J150-MethodBP-ENS",
       "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147-MethodHeartrate-ENS",
+      "ValueSet-method-glucose-vs.html" : "Méthode de mesures de glycémie sanguine ou interstitielle",
       "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J158-MethodStepsByDay-ENS.html" : "JDV_J158-MethodStepsByDay-ENS"
     },
     {
@@ -251,11 +250,11 @@
       "oids" : ["1.2.250.1.213.1.1.4.322"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J150-MethodBP-ENS.html" : "JDV_J150-MethodBP-ENS",
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J154-TypeGlucose-ENS.html" : "JDV_J154-TypeGlucose-ENS",
-      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J153-TypeDiabete-ENS.html" : "JDV_J153-TypeDiabete-ENS",
       "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J146-MethodBodyHeight-ENS.html" : "JDV_J146-MethodBodyHeight-ENS",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J154-TypeGlucose-ENS.html" : "JDV_J154-TypeGlucose-ENS",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J150-MethodBP-ENS.html" : "JDV_J150-MethodBP-ENS",
       "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147-MethodHeartrate-ENS",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J153-TypeDiabete-ENS.html" : "JDV_J153-TypeDiabete-ENS",
       "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J164-GlucoseNumberOfDays-ENS.html" : "JDV_J164-GlucoseNumberOfDays-ENS"
     },
     {
