@@ -95,7 +95,7 @@ InstanceOf: MesFrObservationOxygenSat
 Usage: #example
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
-* category = $observation-category#vital-signs "vital-signs"
+* category = $observation-category#vital-signs "Vital Signs"
 * category.text = "Vital Signs"
 * code.coding[0] = $loinc#2708-6 "Oxygen saturation in Arterial blood"
 * code.text = "oxygen_saturation"
@@ -169,7 +169,7 @@ Usage: #example
 * extension[MesReasonForMeasurement].valueString = "Malaise du patient"
 * extension[MesMomentOfMeasurement].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#16915-1 "Glucose post prandial"
 * extension[MesNumberOfDays].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP#GEN-275 "7j"
-* extension[MesDiabetisType].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R310-CIM10ATIH/FHIR/TRE-R310-CIM10ATIH#E11.38
+* extension[MesDiabetisType].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R310-CIM10ATIH/FHIR/TRE-R310-CIM10ATIH#E10
 
 
 
