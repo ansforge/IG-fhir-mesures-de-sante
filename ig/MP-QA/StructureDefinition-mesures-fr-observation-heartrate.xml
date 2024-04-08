@@ -30,7 +30,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
   <name value="MesFrObservationHeartrate"/>
   <title value="Fréquence Cardiaque"/>
   <status value="active"/>
-  <date value="2024-04-03T15:17:50+00:00"/>
+  <date value="2024-04-08T08:34:46+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1068,7 +1068,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1129,7 +1129,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2520,7 +2520,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -2584,7 +2584,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2645,7 +2645,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2813,7 +2813,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -4415,7 +4415,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -4473,7 +4473,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <mustSupport value="true"/>
       <mapping>
@@ -5522,7 +5522,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -5578,7 +5578,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>

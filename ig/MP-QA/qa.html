@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Mesures</h1>
- <p>Generated Wed Apr 03 15:21:20 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Mon Apr 08 08:38:18 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.0.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.3</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.4</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.mesures, Canonical = https://interop.esante.gouv.fr/ig/fhir/mesures</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Publication Request:</td><td><ul><li>Version 3.0.1 has already been published <img src="icon-warning.png" height="16px" width="16px"/></li>
@@ -82,13 +82,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (13 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
  (13 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
  (13 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
- (13 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
- (81 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (80 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
  (12 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
  (12 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
  (12 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
  (12 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
- (32 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
  (25 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-display-hint.html">display-hint</a>
  (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
  (26 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-translatable.html">translatable</a>
@@ -109,11 +109,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-ucum-bodylength.html">BodyLengthUnits</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
  (4 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
  (50 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (9 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a>
+ (20 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
  (1 uses)
   </li>
   <li>
@@ -362,7 +364,7 @@ hl7.terminology.r4#3.1.0:     <a href="http://terminology.hl7.org/3.1.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Device&#8203;/d36bfdb6-b1b1-4efd-9cb9-d217a8696575*&#8203;/&#8203;.identifier[0]&#8203;.type (l27&#8203;/c14)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0</b></td>
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Device&#8203;/d36bfdb6-b1b1-4efd-9cb9-d217a8696575*&#8203;/&#8203;.identifier[0]&#8203;.type (l27&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Device&#8203;/d36bfdb6-b1b1-4efd-9cb9-d217a8696575*&#8203;/&#8203;.type (l38&#8203;/c10)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
@@ -393,10 +395,10 @@ hl7.terminology.r4#3.1.0:     <a href="http://terminology.hl7.org/3.1.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Device.identifier[0].type (l12/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0</b></td>
+     <td><b>Device.identifier[0].type (l12/c8)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Device.identifier[1].type (l23/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0</b></td>
+     <td><b>Device.identifier[1].type (l23/c8)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Device.type (l35/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
@@ -420,10 +422,10 @@ hl7.terminology.r4#3.1.0:     <a href="http://terminology.hl7.org/3.1.0/CodeSyst
      <td><b>Device.property[0].type (l113/c8)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Device&#8203;.property[0]&#8203;.valueCode[0] (l123&#8203;/c10)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD|1.0.0</b></td>
+     <td><b>Device&#8203;.property[0]&#8203;.valueCode[0] (l123&#8203;/c10)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Device.property[1].type (l134/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
+     <td><b>Device.property[1].type (l134/c8)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Device.property[2].type (l156/c8)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
@@ -1016,6 +1018,26 @@ hl7.terminology.r4#3.1.0:     <a href="http://terminology.hl7.org/3.1.0/CodeSyst
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Observation-ExampleObservationWaistCircumference001.html">fsh-generated/resources/Observation-ExampleObservationWaistCircumference001.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_EXPERIMENTAL"> </a>
+<h2>MSG_EXPERIMENTAL</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-bundle-example.html">fsh-generated/resources/Bundle-bundle-example.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Device-phd-74E8FFFEFF051C00.html">fsh-generated/resources/Device-phd-74E8FFFEFF051C00.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Device-phd-74E8FFFEFF051C00.html">fsh-generated/resources/Device-phd-74E8FFFEFF051C00.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Device-phd-74E8FFFEFF051C00.html">fsh-generated/resources/Device-phd-74E8FFFEFF051C00.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Device-phd-74E8FFFEFF051C00.html">fsh-generated/resources/Device-phd-74E8FFFEFF051C00.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
    </tr>
 </table>
 <hr/>

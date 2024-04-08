@@ -29,7 +29,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
   <name value="MesObservationHeadCircumference"/>
   <title value="Périmètre Crânien"/>
   <status value="active"/>
-  <date value="2024-04-03T15:17:50+00:00"/>
+  <date value="2024-04-08T08:34:46+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -973,7 +973,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1034,7 +1034,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2152,7 +2152,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -2216,7 +2216,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2277,7 +2277,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2445,7 +2445,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -3143,7 +3143,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -3202,7 +3202,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -3435,7 +3435,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="If a code for the unit is present, the system SHALL also be present"/>
         <expression value="code.empty() or system.exists()"/>
         <xpath value="not(exists(f:code)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Dosage"/>
       </constraint>
       <constraint>
         <key value="sqty-1"/>
@@ -3443,7 +3443,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="The comparator is not used on a SimpleQuantity"/>
         <expression value="comparator.empty()"/>
         <xpath value="not(exists(f:comparator))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Dosage"/>
       </constraint>
       <isModifier value="false"/>
       <mapping>
@@ -3499,7 +3499,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="If a code for the unit is present, the system SHALL also be present"/>
         <expression value="code.empty() or system.exists()"/>
         <xpath value="not(exists(f:code)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Dosage"/>
       </constraint>
       <constraint>
         <key value="sqty-1"/>
@@ -3507,7 +3507,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="The comparator is not used on a SimpleQuantity"/>
         <expression value="comparator.empty()"/>
         <xpath value="not(exists(f:comparator))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Dosage"/>
       </constraint>
       <isModifier value="false"/>
       <mapping>
@@ -3775,7 +3775,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -3831,7 +3831,7 @@ L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »</td></tr>
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
