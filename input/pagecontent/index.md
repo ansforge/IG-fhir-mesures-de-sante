@@ -60,3 +60,9 @@ Il vise à promouvoir l’utilisation de ces standards entre les organisations d
 ### Dépendances
 
 {% include dependency-table.xhtml %}
+
+
+### Globals Table
+
+
+{% include globals-table.xhtml %}

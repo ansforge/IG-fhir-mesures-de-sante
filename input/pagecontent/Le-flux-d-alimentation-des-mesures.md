@@ -28,7 +28,7 @@ Ci-dessous, la structure d’un “bundle” au format JSON contenant des ressou
                   "meta": {  
                        "source": "<OID de la solution éditeur>",  
                        "profile": [  
-                      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mes-fr-observation-bp"  
+                      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"  
                       ]  
                   },  
                 {...}  
