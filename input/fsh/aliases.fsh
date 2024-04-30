@@ -1,6 +1,6 @@
 Alias: $UCUM = http://unitsofmeasure.org
 
-// --- HL7 ---
+// --- HL7 international ---
 
 Alias: $bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
@@ -9,13 +9,15 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 
 // --- fr-core ---
 
-
 Alias: $fr-patient = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient
 Alias: $fr-encounter = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter
 Alias: $fr-practitioner = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner
 Alias: $fr-organization = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization
 Alias: $levelOfExertion = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion
+Alias: $MesBodyPosition = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position
 
+
+// --- fr-core Observation ---
 
 Alias: $FrObservationBodyWeight = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight
 Alias: $FrObservationBodyHeight = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height
@@ -26,12 +28,8 @@ Alias: $FrObservationHeartrate = https://hl7.fr/ig/fhir/core/StructureDefinition
 Alias: $FrObservationOxygenSat = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen
 Alias: $FrObservationRespRate = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate
 
-// --- ANS-core ---
 
-
-Alias: $MesBodyPosition = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position
-
-// JDV
+// --- JDV NOS ---
 Alias: $JDV-J145-MethodBodyWeight-MES = https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS
 Alias: $JDV-J146-MethodBodyHeight-MES = https://mos.esante.gouv.fr/NOS/JDV_J146-MethodBodyHeight-ENS/FHIR/JDV-J146-MethodBodyHeight-ENS
 Alias: $JDV-J147-MethodHeartrate-MES = https://mos.esante.gouv.fr/NOS/JDV_J147-MethodHeartrate-ENS/FHIR/JDV-J147-MethodHeartrate-ENS
