@@ -1,5 +1,5 @@
 Profile: MesFrObservationOxygenSat
-Parent: http://interopsante.org/fhir/StructureDefinition/FrObservationOxygenSaturation
+Parent: $FrObservationOxygenSat
 Id: mesures-fr-observation-oxygen-sat
 Title: "Saturation en Oxygène"
 Description: "Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)"

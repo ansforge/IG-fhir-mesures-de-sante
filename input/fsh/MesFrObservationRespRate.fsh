@@ -1,5 +1,5 @@
 Profile: MesFrObservationRespiratoryRate
-Parent: http://interopsante.org/fhir/StructureDefinition/FrOservationRespRate
+Parent: $FrObservationRespRate
 Id: mesures-fr-observation-resp-rate
 Title: "Fréquence respiratoire"
 Description: "Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR)"

@@ -10,25 +10,26 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 // --- fr-core ---
 
 
-Alias: $fr-patient = http://interopsante.org/fhir/StructureDefinition/FrPatient
-Alias: $fr-encounter = http://interopsante.org/fhir/StructureDefinition/FrEncounter
-Alias: $fr-practitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
-Alias: $fr-organization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
-Alias: $fr-core-weight-measurement-method = http://interopsante.org/fhir/valueset/fr-core-weight-measurement-method
-Alias: $levelOfExertion = http://interopsante.org/fhir/StructureDefinition/FrObservationLevelOfExertion
+Alias: $fr-patient = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient
+Alias: $fr-encounter = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter
+Alias: $fr-practitioner = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner
+Alias: $fr-organization = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization
+Alias: $levelOfExertion = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion
 
 
-Alias: $FrObservationBodyWeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyWeight
-Alias: $FrObservationBodyHeight = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyHeight
-Alias: $FrObservationBp = http://interopsante.org/fhir/StructureDefinition/FrObservationBp
-Alias: $FrObservationBmi = http://interopsante.org/fhir/StructureDefinition/FrObservationBmi
-Alias: $FrObservationBodyTemperature = http://interopsante.org/fhir/StructureDefinition/FrObservationBodyTemperature
-Alias: $FrObservationHeartrate = http://interopsante.org/fhir/StructureDefinition/FrObservationHeartrate
+Alias: $FrObservationBodyWeight = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight
+Alias: $FrObservationBodyHeight = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height
+Alias: $FrObservationBp = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp
+Alias: $FrObservationBmi = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi
+Alias: $FrObservationBodyTemperature = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature
+Alias: $FrObservationHeartrate = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate
+Alias: $FrObservationOxygenSat = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen
+Alias: $FrObservationRespRate = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate
 
 // --- ANS-core ---
 
 
-Alias: $MesBodyPosition = http://interopsante.org/fhir/StructureDefinition/FrObservationHeightBodyPosition
+Alias: $MesBodyPosition = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position
 
 // JDV
 Alias: $JDV-J145-MethodBodyWeight-MES = https://mos.esante.gouv.fr/NOS/JDV_J145-MethodBodyWeight-ENS/FHIR/JDV-J145-MethodBodyWeight-ENS

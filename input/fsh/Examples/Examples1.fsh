@@ -95,10 +95,7 @@ InstanceOf: MesFrObservationOxygenSat
 Usage: #example
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
-* category = $observation-category#vital-signs "vital-signs"
-* category.text = "Vital Signs"
-* code.coding[0] = $loinc#2708-6 "Oxygen saturation in Arterial blood"
-* code.text = "oxygen_saturation"
+* code[0].coding[OxygenSatCode][0] = $loinc#2708-6 "Oxygen saturation in Arterial blood"
 * effectiveDateTime = "1999-07-02"
 * valueQuantity = 99 '%' "%O2"
 
@@ -114,18 +111,18 @@ Usage: #example
 * interpretation.text = "Below low normal"
 * bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
 
-// Systoic BP
-* component[0].code = http://loinc.org#8480-6 "Systolic blood pressure"
-* component[0].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
-* component[0].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
-* component[0].interpretation.text = "Normal"
+// Systolic BP
+* component[SystolicBP][0].code = http://loinc.org#8480-6 "Systolic blood pressure"
+* component[SystolicBP][0].valueQuantity = 107 'mm[Hg]' "mm[Hg]"
+* component[SystolicBP][0].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
+* component[SystolicBP][0].interpretation.text = "Normal"
 
 
 // Diastolic BP
-* component[1].code = http://loinc.org#8462-4 "Diastolic blood pressure"
-* component[1].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
-* component[1].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
-* component[1].interpretation.text = "En dessous de la normale"
+* component[DiastolicBP][0].code = http://loinc.org#8462-4 "Diastolic blood pressure"
+* component[DiastolicBP][0].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
+* component[DiastolicBP][0].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
+* component[DiastolicBP][0].interpretation.text = "En-dessous de la normale"
 
 
 Instance: ExampleMesFrObservationBmi001
