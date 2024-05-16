@@ -6,24 +6,24 @@ Instance: bundle-example
 InstanceOf: MesBundleFluxAlimentation
 Usage: #example
 * type = #transaction
-* entry[0].resource = device-example
-* entry[=].request.method = #POST
-* entry[=].request.url = "Device"
-* entry[=].fullUrl = "urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575" //created using random generator
+* entry[mes-device][0].resource = device-example
+* entry[mes-device][=].request.method = #POST
+* entry[mes-device][=].request.url = "Device"
+* entry[mes-device][=].fullUrl = "urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575" //created using random generator
 
-* entry[+].resource = body-weight-example
-* entry[=].request.method = #POST
-* entry[=].request.url = "Observation"
-* entry[=].fullUrl = "urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a" //created using random generator
+* entry[mes-observation][0].resource = body-weight-example
+* entry[mes-observation][=].request.method = #POST
+* entry[mes-observation][=].request.url = "Observation"
+* entry[mes-observation][=].fullUrl = "urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a" //created using random generator
 
 Instance: device-example
 InstanceOf: PhdDevice
 Usage: #inline
 * id = "d36bfdb6-b1b1-4efd-9cb9-d217a8696575"
-* meta.profile = "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
-* identifier.type = $ContinuaDeviceIdentifiers#SYSID
-* identifier.system = "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"
-* identifier.value = "FE-ED-AB-AA-DE-AD-77-C5"
+* meta.profile[phdProfile][0] = "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
+* identifier[systemIdIdentifier][0].type = $ContinuaDeviceIdentifiers#SYSID
+* identifier[systemIdIdentifier][=].system = "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"
+* identifier[systemIdIdentifier][=].value = "FE-ED-AB-AA-DE-AD-77-C5"
 * manufacturer = "OMRONHEALTHCARE"
 * modelNumber = "HEM-9200T"
 * deviceName.name = "Ma balance"

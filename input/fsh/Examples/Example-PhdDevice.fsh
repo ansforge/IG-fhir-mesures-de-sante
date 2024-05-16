@@ -1,12 +1,12 @@
 Instance: phd-74E8FFFEFF051C00
 InstanceOf: PhdDevice
-* meta.profile = "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
-* identifier[0].type = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers#SYSID
-* identifier[=].system = "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"
-* identifier[=].value = "74-E8-FF-FE-FF-05-1C-00"
-* identifier[+].type = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers#BTMAC
-* identifier[=].system = "http://hl7.org/fhir/sid/eui-48/bluetooth"
-* identifier[=].value = "00-1C-05-FF-E8-74"
+* meta.profile[phdProfile][0] = "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
+* identifier[systemIdIdentifier][0].type = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers#SYSID
+* identifier[systemIdIdentifier][=].system = "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"
+* identifier[systemIdIdentifier][=].value = "74-E8-FF-FE-FF-05-1C-00"
+* identifier[btmacAddressIdentifier][0].type = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers#BTMAC
+* identifier[btmacAddressIdentifier][=].system = "http://hl7.org/fhir/sid/eui-48/bluetooth"
+* identifier[btmacAddressIdentifier][=].value = "00-1C-05-FF-E8-74"
 * manufacturer = "Nonin_Medical_Inc."
 * serialNumber = "501900083"
 * modelNumber = "Model 3230"

@@ -19,7 +19,7 @@ parameters:
 
 
 dependencies:
-  hl7.fhir.fr.core: 1.1.0
+  hl7.fhir.fr.core: 2.0.1
   hl7.fhir.uv.phd: 1.0.0
   ans.fr.nos: 1.1.0
 
@@ -35,7 +35,8 @@ pages:
       title: Le profil FHIR des objets connectés
     Terminologies.md:
       title: Terminologies
-
+      downloads.md:
+          title: Téléchargements et usages
 
 
 menu:
@@ -51,6 +52,10 @@ menu:
     MesNumberOfDays - Nombre de jours: StructureDefinition-mesures-number-of-days.html
   Ressources de conformité: artifacts.html
   Terminologies: Terminologies.html
+  Autres ressources:
+      Téléchargements et usages: downloads.html
+      "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
+      "Site de l'ANS ": new-tab https://esante.gouv.fr
   Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
 
 
