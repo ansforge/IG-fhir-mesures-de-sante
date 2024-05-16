@@ -68,7 +68,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.extension:supportingInfo","Observation.extension","supportingInfo","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo]]} {[]}
 ","Other information that may be relevant to this event.","Other resources *from the patient record* that may be relevant to the event.  The information from these resources was either used to create the instance or is provided to help with its interpretation.  This extension **should not** be used if more specific  inline elements  or extensions are available.  For example, use `Observation.hasMember`  instead of supportingInformation for  representing the members of an Observation panel.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:MesReasonForMeasurement","Observation.extension","MesReasonForMeasurement","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement]]} {[]}
 ","Motif de la mesure","Motif de la mesure
 Texte libre","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1

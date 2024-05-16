@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "MesBundleFluxAlimentation"] ; # 
   fhir:title [ fhir:v "Bundle d'alimentation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-04-25T09:06:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-16T08:04:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2216,6 +2216,8 @@
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat>
          ] )
        ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]

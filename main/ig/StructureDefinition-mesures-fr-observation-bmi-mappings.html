@@ -135,6 +135,22 @@
   <li>
     <a href="Terminologies.html">Terminologies</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements et usages</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr">Site de l&apos;ANS </a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
@@ -158,7 +174,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-mesures-fr-observation-bmi-examples.html">next&gt;</a>
+          | <a href="StructureDefinition-mesures-fr-observation-bmi-testing.html">next&gt;</a>
 
           </span>
 
@@ -256,7 +272,7 @@
         
           Active
           
-            as of 2024-04-25
+            as of 2024-05-16
           
         
       </td>
@@ -307,25 +323,22 @@
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>MesFrObservationBmi</b></td></tr>
  <tr><td>Observation</td><td>OBX</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;security</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL), OBX.21  For OBX segments from systems without OBX-21 support a combination of ORC/OBR and OBX must be negotiated between trading partners to uniquely identify the OBX segment. Depending on how V2 has been implemented each of these may be an option: 1) OBR-3 + OBX-3 + OBX-4 or 2) OBR-3 + OBR-4 + OBX-3 + OBX-4 or 2) some other way to uniquely ID the OBR/ORC + OBX-3 + OBX-4.</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>OBX.21  For OBX segments from systems without OBX-21 support a combination of ORC/OBR and OBX must be negotiated between trading partners to uniquely identify the OBX segment. Depending on how V2 has been implemented each of these may be an option: 1) OBR-3 + OBX-3 + OBX-4 or 2) OBR-3 + OBR-4 + OBX-3 + OBX-4 or 2) some other way to uniquely ID the OBR/ORC + OBX-3 + OBX-4.</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>ORC</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>Varies by domain</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>OBX-11</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>CE/CNE/CWE</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category (VSCat)</td><td>CE/CNE/CWE</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6, C*E.1-8, C*E.10-22</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (VSCat)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>C*E.3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>C*E.7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>C*E.1</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>C*E.2 - but note this is not well followed</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>Sometimes implied by being first</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>CE/CNE/CWE, OBX-3</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6, C*E.1-8, C*E.10-22</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding (BMICode)</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6, C*E.1-8, C*E.10-22</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>OBX-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding (BMICode)</td><td>C*E.1-8, C*E.10-22</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>C*E.3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>C*E.7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>C*E.1</td> </tr>
@@ -345,7 +358,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unit</td><td>(see OBX.6 etc.) / CQ.2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>(see OBX.6 etc.) / CQ.2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>(see OBX.6 etc.) / CQ.2</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>CE/CNE/CWE, N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6, C*E.1-8, C*E.10-22</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>C*E.3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>C*E.7</td> </tr>
@@ -353,17 +366,17 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>C*E.2 - but note this is not well followed</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>Sometimes implied by being first</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>CE/CNE/CWE, OBX-8</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>N/A, NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>CE/CNE/CWE, OBX-20</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;method</td><td>CE/CNE/CWE, OBX-17</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>OBX-8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>OBX-20</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;method</td><td>OBX-17</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>SPM segment</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>OBX-17 / PRT -10</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;referenceRange</td><td>OBX.7</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low</td><td>SN (see also Range) or CQ, OBX-7</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high</td><td>SN (see also Range) or CQ, OBX-7</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CE/CNE/CWE, OBX-10</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appliesTo</td><td>CE/CNE/CWE, OBX-10</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low</td><td>OBX-7</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high</td><td>OBX-7</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>OBX-10</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appliesTo</td><td>OBX-10</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6, C*E.1-8, C*E.10-22</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>C*E.3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>C*E.7</td> </tr>
@@ -371,42 +384,71 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>C*E.2 - but note this is not well followed</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>Sometimes implied by being first</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age</td><td>NR and also possibly SN (but see also quantity)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>OBX-7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;hasMember</td><td>Relationships established by OBX-4 usage</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;derivedFrom</td><td>Relationships established by OBX-4 usage</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;component</td><td>containment by OBX-4?</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>CE/CNE/CWE, OBX-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>OBX-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>OBX.2, OBX.5, OBX.6</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>CE/CNE/CWE, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interpretation</td><td>CE/CNE/CWE, OBX-8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interpretation</td><td>OBX-8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;referenceRange</td><td>OBX.7</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>MesFrObservationBmi</b></td></tr>
  <tr><td>Observation</td><td>Entity. Role, or Act, Observation[classCode=OBS, moodCode=EVN]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td>n/a, N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;versionId</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lastUpdated</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;source</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;profile</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;security</td><td>n/a, CV</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>n/a, CV</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;implicitRules</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;language</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>n/a, N/A, Act.text?</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>Entity. Role, or Act, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (supportingInfo)</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT], id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), .inboundRelationship[typeCode=COMP].source[moodCode=EVN]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), .outboundRelationship[typeCode=FLFS].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>n/a, status  Amended &amp; Final are differentiated by whether it is the subject of a ControlAct event with a type of &quot;revise&quot;</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>n/a, CD, .outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;EVN&quot;].code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category (VSCat)</td><td>n/a, CD, .outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;EVN&quot;].code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>.inboundRelationship[typeCode=COMP].source[moodCode=EVN]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>.outboundRelationship[typeCode=FLFS].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>status  Amended &amp; Final are differentiated by whether it is the subject of a ControlAct event with a type of &quot;revise&quot;</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;EVN&quot;].code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (VSCat)</td><td>.outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;EVN&quot;].code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./codeSystem</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>./codeSystemVersion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>./code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>CV.displayName</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>CD.codingRationale</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding (BMICode)</td><td>union(., ./translation)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./codeSystem</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>./codeSystemVersion</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>./code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>CV.displayName</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>CD.codingRationale</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>participation[typeCode=RTGT]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;focus</td><td>participation[typeCode=SBJ]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;issued</td><td>participation[typeCode=AUT].time</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>participation[typeCode=PRF]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueQuantity)</td><td>value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comparator</td><td>IVL properties</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unit</td><td>PQ.unit</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>CO.codeSystem, PQ.translation.codeSystem</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>PQ.code, MO.currency, PQ.translation.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>value.nullFlavor</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>n/a, CV, union(., ./translation)</td> </tr>
@@ -418,60 +460,20 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>n/a, CV.displayName</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>n/a, CD.codingRationale</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>n/a, ./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>n/a, CD, code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>interpretationCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>subjectOf.observationEvent[code=&quot;annotation&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>targetSiteCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;method</td><td>methodCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>participation[typeCode=SPC].specimen</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>participation[typeCode=DEV]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;referenceRange</td><td>outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>n/a, CV, union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding (BMICode)</td><td>n/a, CV, union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>n/a, ./codeSystem</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>n/a, ./codeSystemVersion</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>n/a, ./code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>n/a, CV.displayName</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>n/a, CD.codingRationale</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>n/a, ./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), participation[typeCode=RTGT]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;focus</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), participation[typeCode=SBJ]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>n/a, effectiveTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;issued</td><td>n/a, participation[typeCode=AUT].time</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), participation[typeCode=PRF]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>n/a, value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueQuantity)</td><td>n/a, value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>n/a, PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comparator</td><td>n/a, IVL properties</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unit</td><td>n/a, PQ.unit</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>n/a, CO.codeSystem, PQ.translation.codeSystem</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>n/a, PQ.code, MO.currency, PQ.translation.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>n/a, CD, value.nullFlavor</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>n/a, CV, union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>n/a, ./codeSystem</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>n/a, ./codeSystemVersion</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>n/a, ./code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>n/a, CV.displayName</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>n/a, CD.codingRationale</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>n/a, ./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>n/a, CD, interpretationCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>n/a, Act, subjectOf.observationEvent[code=&quot;annotation&quot;].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>n/a, CD, targetSiteCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;method</td><td>n/a, CD, methodCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), participation[typeCode=SPC].specimen</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), participation[typeCode=DEV]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;referenceRange</td><td>n/a, outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low</td><td>n/a, PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values, value:IVL_PQ.low</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high</td><td>n/a, PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values, value:IVL_PQ.high</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>n/a, CD, interpretationCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appliesTo</td><td>n/a, CD, interpretationCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low</td><td>value:IVL_PQ.low</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high</td><td>value:IVL_PQ.high</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>interpretationCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appliesTo</td><td>interpretationCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>n/a, CV, union(., ./translation)</td> </tr>
@@ -483,18 +485,18 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>n/a, CV.displayName</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>n/a, CD.codingRationale</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>n/a, ./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age</td><td>n/a, IVL&lt;QTY[not(type=&quot;TS&quot;)]&gt; [lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]or URG&lt;QTY[not(type=&quot;TS&quot;)]&gt;, outboundRelationship[typeCode=PRCN].targetObservationCriterion[code=&quot;age&quot;].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>n/a, value:ST</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;hasMember</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), outBoundRelationship</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;derivedFrom</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), .targetObservation</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;component</td><td>n/a, outBoundRelationship[typeCode=COMP]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age</td><td>outboundRelationship[typeCode=PRCN].targetObservationCriterion[code=&quot;age&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>value:ST</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;hasMember</td><td>outBoundRelationship</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;derivedFrom</td><td>.targetObservation</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;component</td><td>outBoundRelationship[typeCode=COMP]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>n/a, CD, code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>n/a, value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>n/a, CD, value.nullFlavor</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interpretation</td><td>n/a, CD, interpretationCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>value.nullFlavor</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interpretation</td><td>interpretationCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;referenceRange</td><td>outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
@@ -545,36 +547,9 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
@@ -593,7 +568,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-mesures-fr-observation-bmi-examples.html">next&gt;</a>
+                <a href="StructureDefinition-mesures-fr-observation-bmi-testing.html">next&gt;</a>
 
               </td>
             </tr>
@@ -603,7 +578,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 25, 2024 09:06+0000">2024-04-25</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 16, 2024 08:04+0000">2024-05-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
@@ -638,20 +613,8 @@
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
   <!-- Fin ajout ANS -->
 
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-  
-
-
-
-<!-- / feedback form  -->
 
   <!-- Analytics Below
   ================================================== -->

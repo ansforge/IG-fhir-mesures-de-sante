@@ -86,7 +86,7 @@ package IG #DDDDDD{
              Observation.extension:MesMomentOfMeasurement => <&plus>[0..1]
              Observation.category:VSCat => [None..None]
              Observation.category:VSCat.coding.display => [None..None]
-             Observation.subject => [1..None]
+             Observation.subject => [None..None]
              Observation.effective[x] => [None..None]
              Observation.interpretation => [None..None]
              Observation.bodySite => [None..None]
@@ -97,8 +97,6 @@ package IG #DDDDDD{
              Observation.referenceRange.appliesTo => [None..None]
              Observation.referenceRange.appliesTo.coding.system => [1..None]
              Observation.referenceRange.appliesTo.coding.code => [1..None]
-             Observation.component => [None..None]
-             Observation.component.referenceRange => [None..None]
         } 
 
         class MesFrObservationHeartrate{
@@ -107,7 +105,6 @@ package IG #DDDDDD{
              Observation.extension:levelOfExertion => <&plus>[None..None]
              Observation.extension:bodyPosition => <&plus>[None..None]
              Observation.extension:MesMomentOfMeasurement => <&plus>[0..1]
-             Observation.value[x] => [None..None]
              Observation.dataAbsentReason.coding.system => [1..None]
              Observation.dataAbsentReason.coding.code => [1..None]
              Observation.interpretation => [None..None]
@@ -124,7 +121,6 @@ package IG #DDDDDD{
              Observation.extension:MesMomentOfMeasurement => <&plus>[0..1]
              Observation.category:VSCat => [None..None]
              Observation.category:VSCat.coding.display => [None..None]
-             Observation.value[x] => [None..None]
              Observation.method => [None..None]
              Observation.method.coding.system => [1..None]
              Observation.method.coding.code => [1..None]
@@ -138,7 +134,6 @@ package IG #DDDDDD{
              Observation.extension:MesMomentOfMeasurement => <&plus>[0..1]
              Observation.category:VSCat => [None..None]
              Observation.category:VSCat.coding.display => [None..None]
-             Observation.value[x] => [None..None]
              Observation.device => [None..None]
         } 
 
@@ -308,37 +303,37 @@ package "Ressources de base" #palegreen {
 
     class94c51f19c37f96ed231f5a0ae512b2a8 --> MesBundleFluxAlimentation
 
- class "http://interopsante.org/fhir/StructureDefinition/FrObservationBmi" as  class70200b3ac0dd01f8acf56ef2624bd1d3 
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi" as  class4b43d46c025adbdf652998cf707e8583 
 
-    class70200b3ac0dd01f8acf56ef2624bd1d3 --> MesFrObservationBmi
+    class4b43d46c025adbdf652998cf707e8583 --> MesFrObservationBmi
 
- class "http://interopsante.org/fhir/StructureDefinition/FrObservationBodyTemperature" as  class46bc762d1f2bf3e8090369e20dc5e10a 
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature" as  classa4e4b887f7805f0cdd7edd1ed3ba7199 
 
-    class46bc762d1f2bf3e8090369e20dc5e10a --> MesFrObservationBodyTemperature
+    classa4e4b887f7805f0cdd7edd1ed3ba7199 --> MesFrObservationBodyTemperature
 
- class "http://interopsante.org/fhir/StructureDefinition/FrObservationBodyWeight" as  class4dde77e8a39bd88efcf6d7cbce0f0ec1 
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight" as  classc8b21e89ab62ff3d9818309cab0e5443 
 
-    class4dde77e8a39bd88efcf6d7cbce0f0ec1 --> MesFrObservationBodyWeight
+    classc8b21e89ab62ff3d9818309cab0e5443 --> MesFrObservationBodyWeight
 
- class "http://interopsante.org/fhir/StructureDefinition/FrObservationBodyHeight" as  class64cc69f8e19b50b5ccade5fd29647cf5 
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height" as  classa7b24c74714e989353d398afa73cd810 
 
-    class64cc69f8e19b50b5ccade5fd29647cf5 --> MesFrObservationBodyHeight
+    classa7b24c74714e989353d398afa73cd810 --> MesFrObservationBodyHeight
 
- class "http://interopsante.org/fhir/StructureDefinition/FrObservationBp" as  class1ccb4ad929b44ca50fa79f2507e901f2 
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp" as  class7f705e400ab6436896a90b8831dba724 
 
-    class1ccb4ad929b44ca50fa79f2507e901f2 --> MesFrObservationBp
+    class7f705e400ab6436896a90b8831dba724 --> MesFrObservationBp
 
- class "http://interopsante.org/fhir/StructureDefinition/FrObservationHeartrate" as  classcc47867a1be81d6b98fb7498934ade06 
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate" as  class1cf8cb6cc515af65eaab4e2d7c742fc6 
 
-    classcc47867a1be81d6b98fb7498934ade06 --> MesFrObservationHeartrate
+    class1cf8cb6cc515af65eaab4e2d7c742fc6 --> MesFrObservationHeartrate
 
- class "http://interopsante.org/fhir/StructureDefinition/FrObservationOxygenSaturation" as  class42a4cf766204aff7bd6e462858ce1e62 
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen" as  class8b0f2e03065f2c5c35b34bc933c17639 
 
-    class42a4cf766204aff7bd6e462858ce1e62 --> MesFrObservationOxygenSat
+    class8b0f2e03065f2c5c35b34bc933c17639 --> MesFrObservationOxygenSat
 
- class "http://interopsante.org/fhir/StructureDefinition/FrOservationRespRate" as  class31fe24eb3cc14495419b98f34dfc569e 
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate" as  class1007bbff74f35a51250cefd06f5f20d7 
 
-    class31fe24eb3cc14495419b98f34dfc569e --> MesFrObservationRespiratoryRate
+    class1007bbff74f35a51250cefd06f5f20d7 --> MesFrObservationRespiratoryRate
 
  class "vitalsigns" as  classbc3e6f566d4b627eb1169a15f6c63afa 
 

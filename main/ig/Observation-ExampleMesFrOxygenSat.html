@@ -131,6 +131,22 @@
   <li>
     <a href="Terminologies.html">Terminologies</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements et usages</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr">Site de l&apos;ANS </a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
@@ -226,7 +242,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ExampleMesFrOxygenSat"> </a><a name="hcExampleMesFrOxygenSat"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ExampleMesFrOxygenSat&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mesures-fr-observation-oxygen-sat.html">Saturation en Oxygène</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs &quot;vital-signs&quot;)</span></p><p><b>code</b>: oxygen_saturation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#2708-6 &quot;Oxygen saturation in Arterial blood&quot;)</span></p><p><b>subject</b>: <a href="Patient-ExamplefrPatient001.html">Patient/ExamplefrPatient001: Pierre Durand</a> &quot; DURAND&quot;</p><p><b>effective</b>: 1999-07-02</p><p><b>value</b>: 99 %O2<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ExampleMesFrOxygenSat"> </a><a name="hcExampleMesFrOxygenSat"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;ExampleMesFrOxygenSat&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mesures-fr-observation-oxygen-sat.html">Saturation en Oxygène</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Oxygen saturation in Arterial blood <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#2708-6)</span></p><p><b>subject</b>: <a href="Patient-ExamplefrPatient001.html">Patient/ExamplefrPatient001: Pierre Durand</a> &quot; DURAND&quot;</p><p><b>effective</b>: 1999-07-02</p><p><b>value</b>: 99 %O2<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></div>
 
   
 
@@ -244,13 +260,7 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
@@ -279,7 +289,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 25, 2024 09:06+0000">2024-04-25</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 16, 2024 08:04+0000">2024-05-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
@@ -314,20 +324,8 @@
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
   <!-- Fin ajout ANS -->
 
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-  
-
-
-
-<!-- / feedback form  -->
 
   <!-- Analytics Below
   ================================================== -->

@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2024-04-25T09:06:15+00:00",
+  "date" : "2024-05-16T08:04:49+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -47,13 +47,13 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "1.0.0"
+    "version" : "5.1.0"
   },
   {
     "id" : "hl7_fhir_fr_core",
-    "uri" : "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core",
+    "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
     "packageId" : "hl7.fhir.fr.core",
-    "version" : "1.1.0"
+    "version" : "2.0.1"
   },
   {
     "id" : "hl7_fhir_uv_phd",
@@ -1110,7 +1110,16 @@
         }],
         "nameUrl" : "Terminologies.html",
         "title" : "Terminologies",
-        "generation" : "markdown"
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "downloads.html"
+          }],
+          "nameUrl" : "downloads.html",
+          "title" : "Téléchargements et usages",
+          "generation" : "markdown"
+        }]
       }]
     },
     "parameter" : [{

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-04-25T09:06:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-16T08:04:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -59,15 +59,15 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "5.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_fr_core" ] ;
      fhir:uri [
-       fhir:v "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core>
+       fhir:v "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"^^xsd:anyURI ;
+       fhir:link <https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.fr.core" ] ;
-     fhir:version [ fhir:v "1.1.0" ]
+     fhir:version [ fhir:v "2.0.1" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_phd" ] ;
      fhir:uri [
@@ -1063,7 +1063,16 @@
          ] ) ;
          fhir:name [ fhir:v "Terminologies.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Terminologies" ] ;
-         fhir:generation [ fhir:v "markdown" ]
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Téléchargements et usages" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
        ] )
      ] ;
      fhir:parameter ( [

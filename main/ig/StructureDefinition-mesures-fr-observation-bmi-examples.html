@@ -135,6 +135,22 @@
   <li>
     <a href="Terminologies.html">Terminologies</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements et usages</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr">Site de l&apos;ANS </a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
@@ -154,7 +170,7 @@
 
           <span style="float:right;">
 
-            <a href="StructureDefinition-mesures-fr-observation-bmi-mappings.html">&lt;prev</a> | 
+            <a href="StructureDefinition-mesures-fr-observation-bmi-testing.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -256,7 +272,7 @@
         
           Active
           
-            as of 2024-04-25
+            as of 2024-05-16
           
         
       </td>
@@ -301,36 +317,9 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
@@ -341,7 +330,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="StructureDefinition-mesures-fr-observation-bmi-mappings.html">&lt;prev</a>
+                <a href="StructureDefinition-mesures-fr-observation-bmi-testing.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -359,7 +348,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 25, 2024 09:06+0000">2024-04-25</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 16, 2024 08:04+0000">2024-05-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
@@ -394,20 +383,8 @@
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
   <!-- Fin ajout ANS -->
 
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-  
-
-
-
-<!-- / feedback form  -->
 
   <!-- Analytics Below
   ================================================== -->
