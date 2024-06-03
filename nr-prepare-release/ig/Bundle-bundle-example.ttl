@@ -1,0 +1,130 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/mesures/Bundle/bundle-example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bundle-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Observation"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Device"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a> a fhir:Observation ;
+  fhir:id [ fhir:v "5138af77-df7e-4b9d-ba17-07ba3ebb950a"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_5138af77-df7e-4b9d-ba17-07ba3ebb950a\"> </a><p><b>Generated Narrative: Observation </b><a name=\"5138af77-df7e-4b9d-ba17-07ba3ebb950a\"> </a><a name=\"hc5138af77-df7e-4b9d-ba17-07ba3ebb950a\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;5138af77-df7e-4b9d-ba17-07ba3ebb950a&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mesures-fr-observation-body-weight.html\">Poids</a></p></div><p><b>Raison de la mesure</b>: Mon nouveau poids !</p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <span><code>urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560</code>/id-value</span></p><p><b>effective</b>: 2022-08-22 01:56:16+0100</p><p><b>value</b>: 71 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>device</b>: See on this page: Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Mon nouveau poids !" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29463-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29463-7" ] ;
+       fhir:display [ fhir:v "Body weight" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "id-value" ]
+     ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-08-22T01:56:16+01:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "71"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "kg" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "kg" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575> ;
+     fhir:reference [ fhir:v "Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575" ]
+  ] . # 
+
+<urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575> a fhir:Device ;
+  fhir:id [ fhir:v "d36bfdb6-b1b1-4efd-9cb9-d217a8696575"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_d36bfdb6-b1b1-4efd-9cb9-d217a8696575\"> </a><p><b>Generated Narrative: Device </b><a name=\"d36bfdb6-b1b1-4efd-9cb9-d217a8696575\"> </a><a name=\"hcd36bfdb6-b1b1-4efd-9cb9-d217a8696575\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceDevice &quot;d36bfdb6-b1b1-4efd-9cb9-d217a8696575&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html\">PhdDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/FE-ED-AB-AA-DE-AD-77-C5</p><p><b>manufacturer</b>: OMRONHEALTHCARE</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Ma balance</td><td>patient-reported-name</td></tr></table><p><b>modelNumber</b>: HEM-9200T</p><p><b>type</b>: MDC_MOC_VMS_MDS_SIMP <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#65573)</span></p><h3>Specializations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style=\"display: none\">*</td><td>MDC_DEV_SPEC_PROFILE_GENERIC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#528457)</span></td><td>2.3</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SYSID" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "FE-ED-AB-AA-DE-AD-77-C5" ]
+  ] ) ; # 
+  fhir:manufacturer [ fhir:v "OMRONHEALTHCARE"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Ma balance" ] ;
+     fhir:type [ fhir:v "patient-reported-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "HEM-9200T"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "65573" ]
+     ] )
+  ] ; # 
+  fhir:specialization ( [
+     fhir:systemType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "528457" ]
+       ] )
+     ] ;
+     fhir:version [ fhir:v "2.3" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

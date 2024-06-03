@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="ExampleFrPractitionner001"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner </b><a name="ExampleFrPractitionner001"> </a><a name="hcExampleFrPractitionner001"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePractitioner &quot;ExampleFrPractitionner001&quot; </p></div><p><b>identifier</b>: <code>http://www.acme.org/practitioners</code>/801234567897</p><p><b>active</b>: true</p><p><b>name</b>: Jean Dupont </p><p><b>telecom</b>: ph: 01 70 88 88 64(WORK)</p><p><b>address</b>: 7 rue Coursier Amiens 80000 (home)</p></div>
+  </text>
+  <identifier>
+    <system value="http://www.acme.org/practitioners"/>
+    <value value="801234567897"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Dupont"/>
+    <given value="Jean"/>
+    <prefix value="Mr"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="01 70 88 88 64"/>
+    <use value="work"/>
+    <rank value="1"/>
+  </telecom>
+  <address>
+    <use value="home"/>
+    <line value="7 rue Coursier"/>
+    <city value="Amiens"/>
+    <postalCode value="80000"/>
+  </address>
+</Practitioner>
