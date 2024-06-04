@@ -29,7 +29,7 @@ Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
 
 ### Liste des profils définis
 
-{% sql SELECT '[' || Title || '](./StructureDefinition-' || id || '.html)' as "Titre du profil", Description, json_extract(Json, '$.baseDefinition') as "Parent" FROM Resources WHERE Type = 'StructureDefinition' and Description like "%Profil%" %}
+{% sql SELECT '[' || Title || '](./StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition' and Description like "%Profil%" %}
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
 
 Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.
