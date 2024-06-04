@@ -1,4 +1,4 @@
-**Release 3.0.2-ballot de l'Implementation Guide Mesures de santé pour usage de MES notamment.**
+**Release 3.1.0-ballot de l'Implementation Guide Mesures de santé pour usage de MES notamment.**
 
 [Modifications apportées dans cette release](https://github.com/ansforge/IG-fhir-mesures-de-sante/milestone/3?closed=1) :
 
