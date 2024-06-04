@@ -3,11 +3,11 @@
 This implementation guide contains the profiles to share vital-signs for the French ecosystem.
 </p>
 
-<blockquote class="stu-note">
+<!-- <blockquote class="stu-note">
 <p>
   <b>Attention !</b> Cet Implementation Guide n'est pas la version courante. La version courante est ici : https://interop.esante.gouv.fr/ig/fhir/mesures
 </p>
-</blockquote>
+</blockquote> -->
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
