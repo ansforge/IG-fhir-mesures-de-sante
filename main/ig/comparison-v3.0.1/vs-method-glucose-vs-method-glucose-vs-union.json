@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8a11378d-ea9f-4aae-8eb9-0c7cefc64ab3-122",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8a11378d-ea9f-4aae-8eb9-0c7cefc64ab3-122",
+  "name" : "UnionMethodeGlucoseVSAndMethodeGlucoseVS",
+  "title" : "Union of Méthode de mesures de glycémie sanguine ou interstitielle And Méthode de mesures de glycémie sanguine ou interstitielle",
+  "status" : "active",
+  "date" : "2024-06-05T13:15:55+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://mos.esante.gouv.fr/NOS/JDV_J155-MethodGlucoseSanguin-ENS/FHIR/JDV-J155-MethodGlucoseSanguin-ENS"]
+    },
+    {
+      "valueSet" : ["https://mos.esante.gouv.fr/NOS/JDV_J156-MethodGlucoseInterstitiel-ENS/FHIR/JDV-J156-MethodGlucoseInterstitiel-ENS"]
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT"
+    }]
+  }
+}

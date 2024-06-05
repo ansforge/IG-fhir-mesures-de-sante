@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8a11378d-ea9f-4aae-8eb9-0c7cefc64ab3-68",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8a11378d-ea9f-4aae-8eb9-0c7cefc64ab3-68",
+  "name" : "Unionfr-location-typeAndFRCoreValueSetLocationType",
+  "title" : "Union of null And FR Core ValueSet Location type",
+  "status" : "active",
+  "date" : "2024-06-05T13:15:55+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "PRSN_NGTV",
+        "display" : "Pression négative"
+      },
+      {
+        "code" : "PRSN_PSTV",
+        "display" : "Pression positive"
+      },
+      {
+        "code" : "CRCRL",
+        "display" : "Carcéral"
+      },
+      {
+        "code" : "CPTN",
+        "display" : "Capitonné"
+      },
+      {
+        "code" : "PNT_CLCT",
+        "display" : "Point de collecte"
+      },
+      {
+        "code" : "PNT_LVRSN",
+        "display" : "Point de livraison"
+      },
+      {
+        "code" : "SL_ATNT",
+        "display" : "Salle d’attente"
+      },
+      {
+        "code" : "SL_RVL",
+        "display" : "Salle réveil"
+      },
+      {
+        "code" : "SL_EXM",
+        "display" : "Salle examen"
+      },
+      {
+        "code" : "SL_RN",
+        "display" : "Salle de réunion"
+      },
+      {
+        "code" : "SL_TRV",
+        "display" : "Salle de travail"
+      },
+      {
+        "code" : "ACC",
+        "display" : "Point d'accueil"
+      }]
+    }]
+  }
+}

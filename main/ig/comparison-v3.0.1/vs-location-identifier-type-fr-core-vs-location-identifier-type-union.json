@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8a11378d-ea9f-4aae-8eb9-0c7cefc64ab3-65",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8a11378d-ea9f-4aae-8eb9-0c7cefc64ab3-65",
+  "name" : "Unionfr-location-identifier-typeAndFRCoreValueSetLocationIdentifierType",
+  "title" : "Union of null And FR Core ValueSet Location identifier type",
+  "status" : "active",
+  "date" : "2024-06-05T13:15:55+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "INTRN",
+        "display" : "Identifiant interne"
+      },
+      {
+        "code" : "EXTRN",
+        "display" : "Identifiant externe"
+      },
+      {
+        "code" : "GLBL",
+        "display" : "Identifiant global"
+      },
+      {
+        "code" : "IDNST",
+        "display" : "Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS"
+      }]
+    }]
+  }
+}

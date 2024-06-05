@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8a11378d-ea9f-4aae-8eb9-0c7cefc64ab3-20",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8a11378d-ea9f-4aae-8eb9-0c7cefc64ab3-20",
+  "name" : "UnionMarital Status CodesAndFRCoreValueSetMaritalStatus",
+  "title" : "Union of MaritalStatus And FR Core ValueSet Patient gender INS ValueSet",
+  "status" : "active",
+  "date" : "2024-06-05T13:15:55+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      
+    },
+    {
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "unknown"
+      }]
+    },
+    {
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status"
+    }]
+  }
+}
