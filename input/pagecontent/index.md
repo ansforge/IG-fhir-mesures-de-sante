@@ -3,11 +3,11 @@
 This implementation guide contains the profiles to share vital-signs for the French ecosystem.
 </p>
 
-<blockquote class="stu-note">
+<!-- <blockquote class="stu-note">
 <p>
   <b>Attention !</b> Cet Implementation Guide n'est pas la version courante. La version courante est ici : https://interop.esante.gouv.fr/ig/fhir/mesures
 </p>
-</blockquote>
+</blockquote> -->
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
@@ -29,7 +29,7 @@ Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
 
 ### Liste des profils définis
 
-{% sql SELECT '[' || Title || '](./StructureDefinition-' || id || '.html)' as "Titre du profil", Description, json_extract(Json, '$.baseDefinition') as "Parent" FROM Resources WHERE Type = 'StructureDefinition' and Description like "%Profil%" %}
+{% sql SELECT '[' || Title || '](./StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition' and Description like "%Profil%" %}
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
 
 Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.
