@@ -11,6 +11,7 @@ Description: "Profil de la ressource Observation pour définir une température"
 * extension[levelOfExertion] ^short = "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 
 * extension contains mesures-reason-for-measurement named MesReasonForMeasurement 0..1
+
 * value[x] ^slicing.rules = #open
 * value[x] only Quantity
 * valueQuantity = $UCUM#Cel

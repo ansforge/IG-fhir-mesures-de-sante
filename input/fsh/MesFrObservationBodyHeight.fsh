@@ -10,6 +10,9 @@ Description: "Profil de la ressource Observation pour définir une taille"
 * extension[bodyposition] ^short = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 * extension[bodyposition] ^definition = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 
+
+* extension contains mesures-reason-for-measurement named MesReasonForMeasurement 0..1
+
 * value[x] ^slicing.rules = #open
 * value[x] only Quantity
 * valueQuantity = $UCUM#cm
