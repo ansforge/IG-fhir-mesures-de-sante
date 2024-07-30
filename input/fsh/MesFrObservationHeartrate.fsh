@@ -16,14 +16,11 @@ Description: "Profil de la ressource Observation pour définir une Fréquence Ca
     $workflow-supportingInfo named supportingInfo 0..1 MS and
     mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 
-
-
 * extension[levelOfExertion] ^short = "Cette extension permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 * extension[levelOfExertion] ^definition = "Cette extension permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
 
 * extension[bodyPosition] ^short = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 * extension[bodyPosition] ^definition = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
-
 
 * code.coding 1..
 

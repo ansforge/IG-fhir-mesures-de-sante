@@ -26,10 +26,9 @@ Description: "Profil de la ressource Observation pour définir une taille"
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile)
-* method from $ValueSet-heightLengthMeasMethodVS (example)
 
-* value[x] ^slicing.rules = #open
-
+* method MS
+* method from $JDV-J146-MethodBodyHeight-MES (extensible)
 
 * value[x] ^slicing.rules = #open
 * value[x] only Quantity
@@ -40,8 +39,6 @@ Description: "Profil de la ressource Observation pour définir une taille"
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* method MS
-* method from $JDV-J146-MethodBodyHeight-MES (extensible)
 
 * device only Reference($PhdDevice)
 * device MS

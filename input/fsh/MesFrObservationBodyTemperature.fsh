@@ -27,8 +27,6 @@ Description: "Profil de la ressource Observation pour définir une température"
 
 * value[x] ^slicing.rules = #open
 
-
-* value[x] ^slicing.rules = #open
 * value[x] only Quantity
 * valueQuantity = $UCUM#Cel
 * valueQuantity.system 1..

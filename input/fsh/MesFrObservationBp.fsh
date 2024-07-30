@@ -15,6 +15,7 @@ Description: "Profil de la ressource Observation pour définir une Pression Art�
     mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 
 * category[VSCat].coding.display = "vital-signs" 
+
 * subject only Reference($fr-patient)
 * subject 1..1
 
@@ -40,7 +41,6 @@ Description: "Profil de la ressource Observation pour définir une Pression Art�
 * bodySite.coding.code 1..
 
 
-
 * device only Reference($PhdDevice)
 * device MS
 * device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
@@ -51,7 +51,6 @@ Description: "Profil de la ressource Observation pour définir une Pression Art�
 * referenceRange.appliesTo.coding.code 1..
 
 * interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)
-
 
 
 

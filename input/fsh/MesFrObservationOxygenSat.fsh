@@ -14,8 +14,6 @@ Description: "Profil de la ressource Observation pour définir une Saturation en
     mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 
 
-
-
 * code.coding 1..
 
 * partOf ..1 MS
