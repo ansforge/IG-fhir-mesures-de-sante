@@ -25,7 +25,6 @@ Description: "Profil de la ressource Observation pour définir une Fréquence Ca
 * extension[bodyPosition] ^definition = "La position du corps au moment de l'observation, par exemple debout, assis. A n'utiliser que lorsque la position du corps n'est pas pré-coordonnée dans le code d'observation."
 
 
-
 * code.coding 1..
 
 * subject only Reference(FRCorePatientProfile)
@@ -33,14 +32,10 @@ Description: "Profil de la ressource Observation pour définir une Fréquence Ca
 * performer only Reference(CareTeam or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile)
 
 * bodySite from $ValueSet-heartRateMeasBodyLocationPrecoordVS (example)
-* bodySite.coding from $fr-core-heart-rate-body-position (example)
 
-* method from $ValueSet-heartRateMeasMethodVS (example)
-* method ^binding.description = "Methods for heartrate observations."
-* method.coding from $fr-core-heart-rate-method (example)
-
-* value[x] ^slicing.rules = #open
-
+* method MS
+* method from $JDV-J147-MethodHeartrate-MES (extensible)
+* method ^short = "Méthode de la mesure"
 
 * value[x] only Quantity
 * value[x] ^slicing.rules = #closed
@@ -48,9 +43,6 @@ Description: "Profil de la ressource Observation pour définir une Fréquence Ca
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* method MS
-* method from $JDV-J147-MethodHeartrate-MES (extensible)
-* method ^short = "Méthode de la mesure"
 
 * device only Reference($PhdDevice)
 * device MS

@@ -1,5 +1,5 @@
 Profile: MesFrObservationOxygenSat
-Parent: $$oxygensat
+Parent: $oxygensat
 Id: mesures-fr-observation-oxygen-sat
 Title: "Saturation en Oxygène"
 Description: "Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)"
@@ -26,12 +26,10 @@ Description: "Profil de la ressource Observation pour définir une Saturation en
 * subject only Reference(Patient or FRCorePatientProfile)
 * encounter only Reference(Encounter or FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile)
+
 * bodySite from $ValueSet-sPO2BodyLocationVS (example)
 * bodySite ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * bodySite ^binding.extension.valueString = "BodySite"
-
-* value[x] ^slicing.rules = #open
-
 
 * value[x] ^slicing.rules = #closed
 

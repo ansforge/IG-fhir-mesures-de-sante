@@ -19,7 +19,6 @@ Description: "Profil de la ressource Observation pour définir un poids"
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile)
 
-* method from $fr-core-weight-measurement-method (example)
 
 * value[x] ^slicing.rules = #open
 * value[x] only Quantity

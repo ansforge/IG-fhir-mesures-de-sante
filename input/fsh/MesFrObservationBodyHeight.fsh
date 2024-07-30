@@ -7,13 +7,12 @@ Description: "Profil de la ressource Observation pour définir une taille"
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
 
-
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 
 * extension contains
-    MesHeightBodyPositionExtension named bodyposition 0..1 and
+    mes-body-position-ext named bodyposition 0..1 and
     $workflow-supportingInfo named supportingInfo 0..1 MS and
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
@@ -30,7 +29,6 @@ Description: "Profil de la ressource Observation pour définir une taille"
 * method from $ValueSet-heightLengthMeasMethodVS (example)
 
 * value[x] ^slicing.rules = #open
-
 
 
 * value[x] ^slicing.rules = #open

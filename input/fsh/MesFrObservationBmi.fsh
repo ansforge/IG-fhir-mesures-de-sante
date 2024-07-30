@@ -5,6 +5,9 @@ Id: mesures-fr-observation-bmi
 Title: "Indice de Masse Corporelle"
 Description: "Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI)"
 
+
+* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -19,8 +22,6 @@ Description: "Profil de la ressource Observation pour définir un Indice de Mass
 * value[x] ^slicing.description = "sclicing description"
 * value[x] ^slicing.rules = #open
 
-
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

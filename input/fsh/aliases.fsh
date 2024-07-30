@@ -13,8 +13,6 @@ Alias: $fr-patient = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-pat
 Alias: $fr-encounter = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter
 Alias: $fr-practitioner = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner
 Alias: $fr-organization = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization
-Alias: $levelOfExertion = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion
-Alias: $MesBodyPosition = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position
 
 Alias: $bmi = http://hl7.org/fhir/StructureDefinition/bmi
 Alias: $bodytemp = http://hl7.org/fhir/StructureDefinition/bodytemp
@@ -27,17 +25,6 @@ Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/human
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
-
-// --- fr-core Observation ---
-
-Alias: $FrObservationBodyWeight = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight
-Alias: $FrObservationBodyHeight = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height
-Alias: $FrObservationBp = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp
-Alias: $FrObservationBmi = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi
-Alias: $FrObservationBodyTemperature = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature
-Alias: $FrObservationHeartrate = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate
-Alias: $FrObservationOxygenSat = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen
-Alias: $FrObservationRespRate = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate
 
 
 // --- JDV NOS ---
@@ -68,3 +55,5 @@ Alias: $ValueSet-bodyPositionVS = http://hl7.org/fhir/hspc/ValueSet/bodyPosition
 Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS
 Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS
 Alias: $ValueSet-heightLengthMeasMethodVS = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS
+
+

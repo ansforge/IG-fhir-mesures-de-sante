@@ -24,17 +24,36 @@ Description: "Profil de la ressource Observation pour définir une Pression Art�
 * code.coding 1..
 
 * encounter only Reference(FRCoreEncounterProfile)
-* effective[x] 1..
-* effective[x] only dateTime or Period
-* effective[x] ^short = "Often just a dateTime for Vital Signs"
-* effective[x] ^definition = "Often just a dateTime for Vital Signs"
+
 * performer only Reference(CareTeam or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCoreRelatedPersonProfile)
 
 * value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 * value[x] ..0
 
-* bodySite from $bpMeasBodyLocationPrecoordVS (example)
-* method from $fr-core-bp-measurement-method (example)
+* method MS
+* method from $JDV-J150-MethodBP-MES (extensible)
+
+
+* bodySite from $JDV-J149-BodySiteBP-MES (required)
+* bodySite ^binding.description = $JDV-J149-BodySiteBP-MES
+* bodySite.coding.system 1..
+* bodySite.coding.code 1..
+
+
+
+* device only Reference($PhdDevice)
+* device MS
+* device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
+
+* referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
+* referenceRange.appliesTo ^binding.description = $JDV-J148-ReferenceRangeAppliesTo-CISIS
+* referenceRange.appliesTo.coding.system 1..
+* referenceRange.appliesTo.coding.code 1..
+
+* interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)
+
+
+
 
 * component ^slicing.discriminator[0].type = #value
 * component ^slicing.discriminator[=].path = "code.coding.code"
@@ -42,6 +61,8 @@ Description: "Profil de la ressource Observation pour définir une Pression Art�
 * component ^slicing.discriminator[=].path = "code.coding.system"
 * component ^slicing.rules = #open
 * component ^short = "Used when reporting systolic and diastolic blood pressure."
+
+* component.referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 
 * component contains
     MeanBP 0..1
@@ -73,23 +94,3 @@ Description: "Profil de la ressource Observation pour définir une Pression Art�
 * component[MeanBP].code.coding[MBPCode].code ^short = "Mean blood pressure"
 * component[MeanBP].code.coding[MBPCode].code ^definition = "Mean blood pressure"
 * component[MeanBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
-
-* bodySite from $JDV-J149-BodySiteBP-MES (required)
-* bodySite ^binding.description = $JDV-J149-BodySiteBP-MES
-* bodySite.coding.system 1..
-* bodySite.coding.code 1..
-
-* method MS
-* method from $JDV-J150-MethodBP-MES (extensible)
-
-* device only Reference($PhdDevice)
-* device MS
-* device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
-
-* referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
-* referenceRange.appliesTo ^binding.description = $JDV-J148-ReferenceRangeAppliesTo-CISIS
-* referenceRange.appliesTo.coding.system 1..
-* referenceRange.appliesTo.coding.code 1..
-* component.referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
-
-* interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)
