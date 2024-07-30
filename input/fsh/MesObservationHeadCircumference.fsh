@@ -1,12 +1,15 @@
 Profile: MesObservationHeadCircumference
-Parent: $vitalsigns
+Parent: $headcircum
 Id: mesures-observation-head-circumference
 Title: "Périmètre Crânien"
 Description: "Profil de la ressource Observation pour définir un Périmètre Crânien"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 
-* extension contains
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains $workflow-supportingInfo named supportingInfo 0..1 MS a,d
     $workflow-supportingInfo named supportingInfo 0..1 and
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
@@ -20,6 +23,16 @@ Description: "Profil de la ressource Observation pour définir un Périmètre Cr
 
 * code.coding contains headCircumCode 1..1
 * code.coding[headCircumCode] = http://loinc.org#8287-5
+
+* code.coding 1..
+
+* subject only Reference(FRCorePatientProfile)
+* encounter only Reference(FRCoreEncounterProfile)
+* performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or PractitionerRole or FRCorePatientProfile or FRCoreOrganizationProfile)
+
+* value[x] ^slicing.rules = #open
+
+
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)

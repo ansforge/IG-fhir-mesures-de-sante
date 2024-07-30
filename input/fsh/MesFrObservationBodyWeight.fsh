@@ -1,13 +1,25 @@
 Profile: MesFrObservationBodyWeight
-Parent: $FrObservationBodyWeight
+Parent: $bodyweight
 Id: mesures-fr-observation-body-weight
 Title: "Poids"
 Description: "Profil de la ressource Observation pour définir un poids"
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
 
-* extension contains mesures-reason-for-measurement named MesReasonForMeasurement 0..1
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains $workflow-supportingInfo named supportingInfo 0..1 and 
+    mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
+
+* code.coding 1..
+
+* subject only Reference(FRCorePatientProfile)
+* encounter only Reference(FRCoreEncounterProfile)
+* performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile)
+
+* method from $fr-core-weight-measurement-method (example)
 
 * value[x] ^slicing.rules = #open
 * value[x] only Quantity

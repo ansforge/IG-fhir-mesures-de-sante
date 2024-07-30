@@ -1,9 +1,24 @@
 
 Profile: MesFrObservationBmi
-Parent: $FrObservationBmi
+Parent: $bmi
 Id: mesures-fr-observation-bmi
 Title: "Indice de Masse Corporelle"
 Description: "Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI)"
+
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains $workflow-supportingInfo named supportingInfo 0..1
+
+* code.coding 1..
+
+* subject only Reference(FRCorePatientProfile)
+* encounter only Reference(FRCoreEncounterProfile)
+* performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile)
+
+* value[x] ^slicing.description = "sclicing description"
+* value[x] ^slicing.rules = #open
+
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
 
