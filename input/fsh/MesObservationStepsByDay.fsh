@@ -11,8 +11,7 @@ Description: "Profil de la ressource Observation pour définir un nombre de pas 
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
 * extension[supportingInfo] ^definition = "Autres ressources pertinentes *du dossier patient*"
-* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
+* extension[MesReasonForMeasurement] ^short = "Motif de la mesure en texte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
 
 * code.coding ^slicing.discriminator[0].type = #pattern
 * code.coding ^slicing.discriminator[=].path = "code"
