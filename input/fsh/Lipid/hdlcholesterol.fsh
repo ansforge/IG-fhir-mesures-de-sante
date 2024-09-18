@@ -29,10 +29,7 @@ Description: "Profil de la ressource Observation pour échanger la mesure de cho
 * referenceRange 1..1 MS
 * referenceRange.low 1..1
 * referenceRange.low only SimpleQuantity
-* referenceRange.low ^definition = ">1.5 mmol/L."
-* referenceRange.low ^fixedQuantity.value = 1.5
 * referenceRange.high 0..0
-* referenceRange.high ^comment = "Per Australian NHF Recommendations."
 * referenceRange.type 0..0
 * referenceRange.type only CodeableConcept
 * referenceRange.appliesTo 0..0

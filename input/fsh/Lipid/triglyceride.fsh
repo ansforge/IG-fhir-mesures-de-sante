@@ -22,8 +22,6 @@ Description: "Profil de la ressource Observation pour échanger la mesure de tri
 * referenceRange 1..1 MS
 * referenceRange.low 0..0
 * referenceRange.high 1..1
-* referenceRange.high ^comment = "Per Australian NHF Recommendations."
-* referenceRange.high ^requirements = "<2.0 mmol/L."
 * referenceRange.type 0..0
 * referenceRange.type only CodeableConcept
 * referenceRange.appliesTo 0..0
