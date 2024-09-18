@@ -1,7 +1,7 @@
 // Inspiré du profil https://www.hl7.org/fhir/R4/cholesterol.html en draft
 Profile: MesFrObservationCholesterolTotal
 Parent: Observation
-Id: mesures-fr-observation-cholesterol-total
+Id: mesures-fr-cholesterol-total
 Title: "Cholestérol total"
 Description: "Profil de la ressource Observation pour échanger la mesure de cholestérol total"
 
