@@ -2,12 +2,12 @@
 
 Profile: MesFrObservationLDL
 Parent: Observation
-Id: mesures-fr-observation-ldl
+Id: mesures-fr-cholesterol-ldl
 Title: "LDL Cholesterol"
-Description: "Profil de la ressource Observation pour définir le cholestérol LDL"
+Description: "Profil de la ressource Observation pour échanger la mesure de cholestérol LDL"
 
 * code MS
-* code from http://hl7.org/fhir/ValueSet/ldlcholesterol-codes|4.0.1 (required)
+* code = $loinc#13457-7 "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation" 
 * code ^short = "LDL Cholesterol -measured or calculated per code"
 * code ^definition = "LDL Cholesterol -measured or calculated per code."
 

@@ -2,9 +2,9 @@
 
 Profile: MesFrObservationHDL
 Parent: Observation
-Id: mesures-fr-observation-hdl
+Id: mesures-fr-cholesterol-hdl
 Title: "HDL Cholesterol"
-Description: "Profil de la ressource Observation pour définir le cholestérol HDL"
+Description: "Profil de la ressource Observation pour échanger la mesure de cholestérol HDL"
 
 * code MS
 * code = $loinc#2085-9 "HDL Cholesterol" 

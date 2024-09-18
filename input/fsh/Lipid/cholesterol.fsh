@@ -3,7 +3,7 @@ Profile: MesFrObservationCholesterolTotal
 Parent: Observation
 Id: mesures-fr-observation-cholesterol-total
 Title: "Cholestérol total"
-Description: "Profil de la ressource Observation pour définir le cholestérol total"
+Description: "Profil de la ressource Observation pour échanger la mesure de cholestérol total"
 
 * code MS
 * code = $loinc#35200-5 "Cholesterol [Moles/​volume] in Serum or Plasma"

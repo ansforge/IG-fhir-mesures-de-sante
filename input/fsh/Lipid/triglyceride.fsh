@@ -1,8 +1,8 @@
 Profile: MesFrObservationTriglycerides
 Parent: Observation
-Id: mesures-fr-observation-triglycerides
+Id: mesures-fr-cholesterol-triglycerides
 Title: "Triglycerides"
-Description: "Profil de la ressource Observation pour définir les triglycerides"
+Description: "Profil de la ressource Observation pour échanger la mesure de triglycérides"
 
 * code MS
 * code = $loinc#35217-9 "Triglyceride [Moles/​volume] in Serum or Plasma"

@@ -1,6 +1,6 @@
 Profile: MesBundleFluxAlimentationLipid
 Parent: Bundle
-Id: mesures-bundle-flux-alimentationLipid
+Id: mesures-bundle-flux-alimentation-lipid
 Title: "Bundle d'alimentation"
 Description: "Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur"
 
@@ -13,7 +13,7 @@ Description: "Profil de la ressource Bundle du flux d'alimentation à envoyer au
 
 * entry contains mes-observation 4..4 and mes-device 0..1
 
-* entry[mes-observation].resource only mesures-fr-observation-hdl or mesures-fr-observation-ldl or mesures-fr-observation-cholesterol-total or mesures-fr-observation-triglycerides
+* entry[mes-observation].resource only mesures-fr-cholesterol-hdl or mesures-fr-cholesterol-ldl or mesures-fr-cholesterol-total or mesures-fr-cholesterol-triglycerides
 
 * entry[mes-observation].request 1..1
 * entry[mes-observation].request.method = #POST
