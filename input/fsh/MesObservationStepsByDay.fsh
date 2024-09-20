@@ -42,4 +42,4 @@ Description: "Profil de la ressource Observation pour définir un nombre de pas 
 
 * device only Reference($PhdDevice)
 * device MS
-* device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
+* device ^short = "Dispositif utilisé pour récolter l'information. Ce dispositif peut être l'application permettant de renseigner la valeur. \r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"

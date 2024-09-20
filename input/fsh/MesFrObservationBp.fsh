@@ -28,7 +28,7 @@ Description: "Profil de la ressource Observation pour définir une Pression Art�
 
 * device only Reference($PhdDevice)
 * device MS
-* device ^short = "Dispositif utilisé pour l'observation\r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
+* device ^short = "Dispositif utilisé pour récolter l'information. Ce dispositif peut être l'application permettant de renseigner la valeur. \r\nSi la mesure a été faite par un objet connecté (Profil PhdDevice), cette référence est obligatoire"
 
 * referenceRange.appliesTo from $JDV-J148-ReferenceRangeAppliesTo-CISIS (required)
 * referenceRange.appliesTo ^binding.description = $JDV-J148-ReferenceRangeAppliesTo-CISIS
