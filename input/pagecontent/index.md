@@ -56,8 +56,12 @@ HL7 (Health Level Seven) est un organisme à but non lucratif accrédité par l�
 Il regroupe des experts de l’informatique de santé qui collaborent pour créer un cadre et des standards connexes pour l’échange, l’intégration, le partage et l’accès à des données de santé.  
 
 Il vise à promouvoir l’utilisation de ces standards entre les organisations de santé et au sein d’une même organisation.  
-  
+
+### Problématique connue
+
+Les profils mesures de santé sont optionnellement liés à un device qui doivent hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l'international par le guide d'implémentation PoCD.
+En cas de besoins allant dans ce sens, merci de le spécifier dans une [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
+
 ### Dépendances
 
 {% include dependency-table.xhtml %}
-
