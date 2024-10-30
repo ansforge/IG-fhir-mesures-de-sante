@@ -11,7 +11,7 @@ Quatre profils cholestérol ont été définis pour leur échanges
 
 
 {% sql {
-  "query" : " select name as Name, Description, Web from Resources  WHERE Type = 'StructureDefinition' and Description like "%cholesterol%"",
+  "query" : " select name as Name, Description, Web from Resources  WHERE Type = 'StructureDefinition' and Description like "%cholesterol%",
   "class" : "lines",
   "columns" : [
     { "name" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
