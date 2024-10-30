@@ -96,5 +96,5 @@ Usage: #example
 
 * entry[mes-diagnostic-report][+].resource = cholesterol-dr
 * entry[mes-diagnostic-report][=].request.method = #POST
-* entry[mes-diagnostic-report][=].request.url = "Observation"
+* entry[mes-diagnostic-report][=].request.url = "DiagnosticReport"
 * entry[mes-diagnostic-report][=].fullUrl = "urn:uuid:25207dab-e2f1-4513-a499-48e508847382" //created using random generator
