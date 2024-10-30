@@ -6,16 +6,13 @@ Quatre profils cholestérol ont été définis pour leur échanges
     <p>{% include cholesterol-overview.svg %}</p>
 </div>
 
-
 {% sql {
   "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition'",
   "class" : "lines",
   "columns" : [
     { "name" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
     { "name" : "Description", "type" : "markdown", "source" : "Description"}
-
   ]
-
 } %}
 
 and Description like "%cholestérol%
