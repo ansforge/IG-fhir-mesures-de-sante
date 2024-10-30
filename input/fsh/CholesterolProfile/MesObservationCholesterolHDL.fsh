@@ -11,7 +11,7 @@ Description: "Profil de la ressource Observation pour définir le cholestérol H
 
 * code = http://loinc.org#2085-9 "HDL Cholesterol"
 
-* referenceRange 1..1 MS
+* referenceRange 0..1 MS
 * referenceRange.low 1..1
 * referenceRange.low only SimpleQuantity
 * referenceRange.high 0..0
@@ -24,3 +24,11 @@ Description: "Profil de la ressource Observation pour définir le cholestérol H
 
 * hasMember 0..0
 * derivedFrom 0..0
+
+* value[x] only Quantity
+* valueQuantity.unit 1..
+* valueQuantity.unit = "g/L"
+* valueQuantity.value 1..
+* valueQuantity.system = $UCUM
+* valueQuantity.code 1..
+* valueQuantity.code = #g/L

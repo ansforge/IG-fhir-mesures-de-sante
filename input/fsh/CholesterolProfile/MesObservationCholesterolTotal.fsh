@@ -13,13 +13,16 @@ Description: "Profil de la ressource Observation pour définir le cholestérol t
 
 
 * value[x] only Quantity
+* valueQuantity.unit 1..
 * valueQuantity.unit = "g/L"
 * valueQuantity.value 1..
 * valueQuantity.system = $UCUM
 * valueQuantity.code 1..
+* valueQuantity.code = #g/L
 
-* referenceRange 1..1 MS
-* referenceRange.low 0..0
+
+* referenceRange 0..1 MS
+* referenceRange.low 0..1
 * referenceRange.high 1..1
 * referenceRange.high only SimpleQuantity
 * referenceRange.type 0..0
