@@ -1,0 +1,23 @@
+
+@startuml
+
+
+artifact "DiagnosticReport" as dr
+artifact "Total Cholesterol" as ct
+artifact "HDL Cholesterol" as chdl
+artifact "Trigycerides" as trigly
+artifact "LDL Cholesterol" as cldl
+
+url of dr is  [[StructureDefinition-as-device.html]]
+url of ct is  [[StructureDefinition-as-healthcareservice-healthcare-activity.html]]
+url of chdl is  [[StructureDefinition-as-healthcareservice-social-equipment.html]]
+url of trigly [[StructureDefinition-as-organization.html]]
+url of cldl [[StructureDefinition-as-person.html]]
+
+dr --> ct : result 1..1
+dr --> chdl : result 1..1
+dr --> trigly : result 1..1
+dr --> cldl : result 1..1
+
+
+@enduml
