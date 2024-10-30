@@ -67,7 +67,7 @@ Usage: #example
 
 
 Instance: bundle-example-lipids
-InstanceOf: MesBundleFluxAlimentation
+InstanceOf: MesBundleFluxAlimentationCholesterol
 Usage: #example
 * type = #transaction
 
