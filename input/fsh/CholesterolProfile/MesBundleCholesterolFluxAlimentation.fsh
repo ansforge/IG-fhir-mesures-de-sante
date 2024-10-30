@@ -11,7 +11,7 @@ Description: "Profil de la ressource Bundle du flux d'alimentation à envoyer au
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slice based on the request.url pattern"
 
-* entry contains mes-observation-ldl 1..1 and mes-observation-hdl 1..1 and mes-observation-trigly 1..1 and mes-observation-total 1..1 andmes-diagnostic-report 1..1
+* entry contains mes-observation-ldl 1..1 and mes-observation-hdl 1..1 and mes-observation-trigly 1..1 and mes-observation-total 1..1 and mes-diagnostic-report 1..1
 
 // LDL
 * entry[mes-observation-ldl].resource only mesures-observation-cholesterol-ldl
