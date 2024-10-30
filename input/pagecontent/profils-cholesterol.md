@@ -1,5 +1,5 @@
 
-Quatre profils cholestérol ont été définis pour leur échanges
+Quatre profils cholestérol ont été établis, associés par une ressource DiagnosticReport, pour permettre leur échange
 
 
 <div class="figure" style="width:100%;">

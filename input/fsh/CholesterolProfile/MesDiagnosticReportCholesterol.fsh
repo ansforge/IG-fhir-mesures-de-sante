@@ -6,6 +6,9 @@ Title: "DiagnosticReport mesures cholestérol"
 Description: "Profil de la ressource DiagnosticReport pour définir un rapport sur les mesures de cholestérol"
 
 
+* code = http://loinc.org#57698-3 "Lipid panel with direct LDL - Serum or Plasma"
+
+
 * result ^slicing.discriminator.type = #profile
 * result ^slicing.discriminator.path = "resolve()"
 * result ^slicing.rules = #open
