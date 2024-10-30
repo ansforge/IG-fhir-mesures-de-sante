@@ -10,8 +10,8 @@ Quatre profils cholestérol ont été établis, associés par une ressource Diag
   "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like '%cholestérol%'",
   "class" : "lines",
   "columns" : [
-    { "name" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
-    { "name" : "Description", "type" : "markdown", "source" : "Description"}
+    { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
+    { "title" : "Description", "type" : "markdown", "source" : "Description"}
   ]
 } %}
 
