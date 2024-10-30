@@ -73,7 +73,7 @@ Usage: #example
 
 * entry[mes-observation-ldl][0].resource = cholesterol-ldl-example
 * entry[mes-observation-ldl][=].request.method = #POST
-* entry[mes-observation-ldl][=].request.url = "Device"
+* entry[mes-observation-ldl][=].request.url = "Observation"
 * entry[mes-observation-ldl][=].fullUrl = "urn:uuid:0f6a9f7f-d307-4497-b7e3-2059dc7344d4" //created using random generator
 
 * entry[mes-observation-hdl][+].resource = cholesterol-hdl-example
