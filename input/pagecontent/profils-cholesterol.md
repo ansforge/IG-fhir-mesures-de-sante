@@ -15,4 +15,4 @@ Quatre profils cholestérol ont été définis pour leur échanges
   ]
 } %}
 
-Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlimentationLipid](./StructureDefinition-mesures-bundle-flux-alimentation-lipid.html) pour permettre leur échange de manière groupée.
+Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlimentationLipid](./StructureDefinition-mesures-bundle-flux-alimentation-cholesterol.html) pour permettre leur échange de manière groupée.

@@ -1,8 +1,8 @@
-Profile: MesBundleFluxAlimentationLipid
+Profile: MesBundleFluxAlimentationCholesterol
 Parent: Bundle
-Id: mesures-bundle-flux-alimentation-lipid
-Title: "Bundle d'alimentation"
-Description: "Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur"
+Id: mesures-bundle-flux-alimentation-cholesterol
+Title: "Bundle d'alimentation des mesures de cholestérol"
+Description: "Profil de la ressource Bundle du flux d'alimentation des mesures de cholestérolà envoyer au serveur"
 
 * type = #transaction
 
