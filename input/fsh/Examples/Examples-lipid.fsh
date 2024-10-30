@@ -66,7 +66,7 @@ Usage: #example
 * result[trigly-cholesterol] = Reference(cholesterol-trigly-example)
 
 
-Instance: bundle-example
+Instance: bundle-example-lipids
 InstanceOf: MesBundleFluxAlimentation
 Usage: #example
 * type = #transaction

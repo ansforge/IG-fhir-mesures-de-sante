@@ -2,7 +2,7 @@ Alias: $ContinuaDeviceIdentifiers = http://hl7.org/fhir/uv/phd/CodeSystem/Contin
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $loinc = http://loinc.org
 
-Instance: bundle-example
+Instance: bundle-example-body-weight
 InstanceOf: MesBundleFluxAlimentation
 Usage: #example
 * type = #transaction
