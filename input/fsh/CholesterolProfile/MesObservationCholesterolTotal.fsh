@@ -21,7 +21,7 @@ Description: "Profil de la ressource Observation pour définir le cholestérol t
 * valueQuantity.code = #g/L
 
 
-* referenceRange 0..1 MS
+* referenceRange 1..1 MS
 * referenceRange.low 0..1
 * referenceRange.high 1..1
 * referenceRange.high only SimpleQuantity
