@@ -11,7 +11,8 @@ Description: "Profil de la ressource Observation pour définir le cholestérol H
 
 * code = http://loinc.org#2085-9 "HDL Cholesterol"
 
-* referenceRange 1..1 MS
+* referenceRange 0..1 MS
+* referenceRange obeys mes-ir
 * referenceRange.low 1..1
 * referenceRange.low only SimpleQuantity
 * referenceRange.high 0..0

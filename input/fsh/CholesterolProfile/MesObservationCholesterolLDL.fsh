@@ -21,7 +21,8 @@ Description: "Profil de la ressource Observation pour définir le cholestérol L
 * valueQuantity.code = #g/L
 
 
-* referenceRange 1..1 MS // Cardinalité min passée de 1 à 0, A DISCUTER
+* referenceRange 0..1 MS
+* referenceRange obeys mes-ir
 * referenceRange.low 0..0
 * referenceRange.high 1..1
 * referenceRange.high only SimpleQuantity

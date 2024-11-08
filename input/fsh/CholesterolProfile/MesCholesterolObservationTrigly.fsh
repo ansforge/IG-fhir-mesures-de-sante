@@ -19,7 +19,8 @@ Description: "Profil de la ressource Observation pour définir le cholestérol t
 * valueQuantity.code 1..
 * valueQuantity.code = #g/L
 
-* referenceRange 1..1 MS
+* referenceRange 0..1 MS
+* referenceRange obeys mes-ir
 * referenceRange.low 0..1 // A DISCUTER, changé de 0..0 à 0..1
 * referenceRange.high 1..1
 * referenceRange.type 0..0
@@ -31,3 +32,5 @@ Description: "Profil de la ressource Observation pour définir le cholestérol t
 
 * hasMember 0..0
 * derivedFrom 0..0
+
+
