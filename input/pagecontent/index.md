@@ -57,3 +57,7 @@ En cas de besoins allant dans ce sens, merci de le spécifier dans une [issue Gi
 ### Dépendances
 
 {% include dependency-table.xhtml %}
+
+### Propriété intelectuelle
+
+{% include ip-statements.xhtml %}
