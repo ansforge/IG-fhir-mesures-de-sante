@@ -20,8 +20,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
     $workflow-supportingInfo named supportingInfo 0..1 and
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and
     mesures-moment-of-measurement named MesMomentOfMeasurement 0..1 and
-    mesures-number-of-days named MesNumberOfDays 0..1 and
-    mesures-diabetis-type named MesDiabetisType 0..1
+    mesures-number-of-days named MesNumberOfDays 0..1
 
 * extension[MesMomentOfMeasurement].value[x] from $JDV-J157-MomentGlucose-MES (required)
 
