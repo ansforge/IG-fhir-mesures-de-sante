@@ -5,13 +5,13 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2024-10-15"
-* valueQuantity.value = 2.10
-* valueQuantity.unit = "g/L"
-* valueQuantity.code = #g/L
+* valueQuantity.value = 0.4
+* valueQuantity.unit = "mmol/L"
+* valueQuantity.code = #mmol/L
 * valueQuantity.system = $UCUM
 
-* referenceRange.low = 0.50 'g/L' "g/L"
-* referenceRange.high = 2.00 'g/L' "g/L"
+* referenceRange.low = 2.80 'mmol/L' "mmol/L"
+* referenceRange.high = 11.10 'mmol/L' "mmol/L"
 
 Instance: cholesterol-hdl-example
 InstanceOf: MesFrObservationCholesterolHDL
@@ -20,12 +20,12 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2024-10-15"
-* valueQuantity.value = 0.52
-* valueQuantity.unit = "g/L"
-* valueQuantity.code = #g/L
+* valueQuantity.value = 2.8
+* valueQuantity.unit = "mmol/L"
+* valueQuantity.code = #mmol/L
 * valueQuantity.system = $UCUM
 
-* referenceRange.low = 0.55 'g/L' "g/L"
+* referenceRange.low = 3.1 'mmol/L' "mmol/L"
 
 
 Instance: cholesterol-ldl-example
@@ -35,9 +35,9 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2024-10-15"
-* valueQuantity.value = 1.39
-* valueQuantity.unit = "g/L"
-* valueQuantity.code = #g/L
+* valueQuantity.value = 7.8
+* valueQuantity.unit = "mmol/L"
+* valueQuantity.code = #mmol/L
 * valueQuantity.system = $UCUM
 
 Instance: cholesterol-trigly-example
@@ -47,13 +47,13 @@ Usage: #example
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2024-10-15"
-* valueQuantity.value = 0.96
-* valueQuantity.unit = "g/L"
-* valueQuantity.code = #g/L
+* valueQuantity.value = 5.6
+* valueQuantity.unit = "mmol/L"
+* valueQuantity.code = #mmol/L
 * valueQuantity.system = $UCUM
 
-* referenceRange.low = 0.50 'g/L' "g/L"
-* referenceRange.high = 1.50 'g/L' "g/L"
+* referenceRange.low = 2.80 'mmol/L' "mmol/L"
+* referenceRange.high = 21.1 'mmol/L' "mmol/L"
 
 
 Instance: cholesterol-dr
