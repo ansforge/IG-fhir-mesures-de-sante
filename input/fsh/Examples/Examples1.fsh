@@ -166,8 +166,6 @@ Usage: #example
 * extension[MesReasonForMeasurement].valueString = "Malaise du patient"
 * extension[MesMomentOfMeasurement].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#16915-1 "Glucose post prandial"
 * extension[MesNumberOfDays].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP#GEN-275 "7j"
-* extension[MesDiabetisType].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R311-CIM10Atih/FHIR/TRE-R311-CIM10Atih#E11.x0
-
 
 
 Instance: ExampleMesObservationHeadCircumference001
