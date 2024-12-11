@@ -1,6 +1,15 @@
 
-Quatre profils cholestérol ont été établis, associés par une ressource DiagnosticReport, pour permettre leur échange
+Quatre profils cholestérol ont été établis, associés par une ressource DiagnosticReport, pour permettre leur échange. 
+Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlimentationLipid](./StructureDefinition-mesures-bundle-flux-alimentation-cholesterol.html) pour permettre leur échange de manière groupée.
 
+### Choix effectués
+
+* L'unité choisie pour les profils cholestérol est "mmol/L" pour correspondre au système international.
+
+* Ces profils cholestérol étant liés par une ressource DiagnosticReport, ceux-ci sont utilisés uniquement pour partager les résultats d'un compte rendu de biologie. Une
+
+
+### Liste des profils
 
 <div class="figure" style="width:100%;">
     <p>{% include cholesterol-overview.svg %}</p>
@@ -14,9 +23,3 @@ Quatre profils cholestérol ont été établis, associés par une ressource Diag
     { "title" : "Description", "type" : "markdown", "source" : "Description"}
   ]
 } %}
-
-Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlimentationLipid](./StructureDefinition-mesures-bundle-flux-alimentation-cholesterol.html) pour permettre leur échange de manière groupée.
-
-L'unité choisie pour les profils cholestérol est "mmol/L" pour correspondre au système international.
-
-Ces profils cholestérol étant liés par une ressource DiagnosticReport, ceux-ci sont utilisés uniquement pour partager les résultats d'un compte rendu de biologie.
