@@ -13,11 +13,11 @@ Description: "Profil de la ressource Observation pour définir le cholestérol t
 
 * value[x] only Quantity
 * valueQuantity.unit 1..
-* valueQuantity.unit = "g/L"
+* valueQuantity.unit = "mmol/L"
 * valueQuantity.value 1..
 * valueQuantity.system = $UCUM
 * valueQuantity.code 1..
-* valueQuantity.code = #g/L
+* valueQuantity.code = #mmol/L
 
 * referenceRange 0..1 MS
 * referenceRange obeys mes-ir
