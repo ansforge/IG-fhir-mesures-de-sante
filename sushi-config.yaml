@@ -18,6 +18,7 @@ jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
 
 parameters:
   shownav: 'true'
+  i18n-default-lang: 'fr'
 
 dependencies:
   hl7.fhir.fr.core: 2.0.1
@@ -63,3 +64,6 @@ menu:
 
 
   
+
+
+# java -jar /Library/WebServer/Documents/FIG_ans-ig-release/publisher.jar -go-publish -source /Users/nicolasriss/Desktop/ANSFORGE_ans-ig/FIG_ans-ig-mesures -web /Library/WebServer/Documents/FIG_ans-ig-release/www/ig/fhir -registry /Library/WebServer/Documents/FIG_ans-ig-release/ig-registry/fhir-ig-list.json -history /Library/WebServer/Documents/FIG_ans-ig-release/fhir-ig-history-template -templates /Library/WebServer/Documents/FIG_ans-ig-release/templates -temp /Library/WebServer/Documents/tmp
