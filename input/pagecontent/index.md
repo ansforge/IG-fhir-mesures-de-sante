@@ -51,7 +51,15 @@ Ces spécifications techniques se basent sur le standard HL7 FHIR R4 (4.0.1), fa
 
 ### Problématique connue
 
-Les profils mesures de santé sont optionnellement liés à un device qui doit hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l'international par le guide d'implémentation PoCD.
+Un certain nombre de problématiques connues ont été identifiées. Si vous souhaitez réagir par rapport à ces problématiques connues, merci de commenter dans une [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
+
+1/ Les profils mesures de santé sont optionnellement liés à un device qui doivent hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l'international par le guide d'implémentation PoCD.
+
+2/ Dans le cadre des mesures biologiques (glycémie, cholestérol), l'intervalle de référence n'est pas rendu techniquement obligatoire dans les profils FHIR contrairement aux [profils internationaux](https://www.hl7.org/fhir/R4/lipid-report.html). Cet intervalle peut varier en fonction de nombreux facteurs tel que l'âge, le sexe, les antécédents... Ceux-ci doivent être nécessairement indiqués si la donnée provient d'un compte rendu de biologie.
+Pour l'heure, les données usager sont considérées comme pouvant être interprétées sans intervalle de référence.
+
+3/ Il y a une incohérence entre l'unité de la glycémie qui est actuellement en "g/L" et les unités du cholestérol actuellement en "mmol/L", faut-il faire la modification pour uniformiser et respecter l'unité du système international, c'est à dire en "mmol/L"?
+
 En cas de besoins allant dans ce sens, merci de le spécifier dans une [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
 
 ### Dépendances
