@@ -21,7 +21,7 @@ Description: "Profil de la ressource Observation pour définir le cholestérol L
 * valueQuantity.code = #mmol/L
 
 
-* referenceRange 0..1 MS
+* referenceRange 1..1 MS
 * referenceRange obeys mes-ir
 * referenceRange.low 0..0
 * referenceRange.high 1..1
