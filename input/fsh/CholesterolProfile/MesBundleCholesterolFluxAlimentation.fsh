@@ -6,8 +6,8 @@ Description: "Profil de la ressource Bundle du flux d'alimentation des mesures d
 
 * type = #transaction
 
-* entry ^slicing.discriminator.type = #pattern
-* entry ^slicing.discriminator.path = "request.url"
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slice based on the request.url pattern"
 
