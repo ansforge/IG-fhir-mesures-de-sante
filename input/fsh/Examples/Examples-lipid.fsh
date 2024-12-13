@@ -40,6 +40,8 @@ Usage: #example
 * valueQuantity.code = #mmol/L
 * valueQuantity.system = $UCUM
 
+* referenceRange.high = 2.6 'mmol/L' "mmol/L"
+
 Instance: cholesterol-trigly-example
 InstanceOf: MesFrObservationCholesterolTrigly
 Usage: #example
