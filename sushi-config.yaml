@@ -25,36 +25,39 @@ dependencies:
   ans.fr.nos: 1.2.0
 
 pages:
-    index.md: 
-      title: Accueil
-    Le-flux-d-alimentation-des-mesures.md:
-      title: Le flux d'alimentation des mesures de santé
-    Les-profils-utilises-pour-les-mesures-de-sante.md:
-      title: Les profils utilisés pour les mesures de santé
-    Le-profil-FHIR-des-objets-connectes.md:
-      title: Le profil FHIR des objets connectés
-    Terminologies.md:
-      title: Terminologies
-    downloads.md:
-        title: Téléchargements et usages
+  index.md: 
+    title: Accueil
+  Le-flux-d-alimentation-des-mesures.md:
+    title: Le flux d'alimentation des mesures de santé
+  Les-profils-utilises-pour-les-mesures-de-sante.md:
+    title: Les profils utilisés pour les mesures de santé
+  Le-profil-FHIR-des-objets-connectes.md:
+    title: Le profil FHIR des objets connectés
+  profils-cholesterol.md:
+    title: Les profils cholestérol
+  Terminologies.md:
+    title: Terminologies
+  downloads.md:
+    title: Téléchargements et usages
 
 
 menu:
   Accueil: index.html
   Les profils Mesures:
     Flux d'alimentation des mesures : Le-flux-d-alimentation-des-mesures.html
-    Les profils utilisés pour les mesures de santé: Les-profils-utilises-pour-les-mesures-de-sante.html
+    Les profils FHIR des mesures de santé: Les-profils-utilises-pour-les-mesures-de-sante.html
+    Les profils FHIR du cholestérol: profils-cholesterol.html
     Le profil FHIR des objets connectés: Le-profil-FHIR-des-objets-connectes.html
   Les extensions Mesures:
     MesReasonForMeasurement - Motif de la mesure: StructureDefinition-mesures-reason-for-measurement.html
     MesMomentOfMeasurement - Moment de la mesure: StructureDefinition-mesures-moment-of-measurement.html
     MesNumberOfDays - Nombre de jours: StructureDefinition-mesures-number-of-days.html
   Ressources de conformité: artifacts.html
-  Terminologies: Terminologies.html
   Autres ressources:
-      Téléchargements et usages: downloads.html
-      "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
-      "Site de l'ANS ": new-tab https://esante.gouv.fr
+    Terminologies: Terminologies.html
+    Téléchargements et usages: downloads.html
+    "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
+    "Site de l'ANS ": new-tab https://esante.gouv.fr
   Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
 
 
