@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="phd-74E8FFFEFF051C00"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device phd-74E8FFFEFF051C00</b></p><a name="phd-74E8FFFEFF051C00"> </a><a name="hcphd-74E8FFFEFF051C00"> </a><a name="phd-74E8FFFEFF051C00-fr-FR"> </a><p><b>identifier</b>: IEEE 11073 System Identifier/74-E8-FF-FE-FF-05-1C-00, Bluetooth MAC address/00-1C-05-FF-E8-74</p><p><b>manufacturer</b>: Nonin_Medical_Inc.</p><p><b>serialNumber</b>: 501900083</p><p><b>modelNumber</b>: Model 3230</p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 65573}">MDC_MOC_VMS_MDS_SIMP</span></p><h3>Specializations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:iso:std:iso:11073:10101 528388}">MDC_DEV_SPEC_PROFILE_PULS_OXIM: Pulse Oximeter</span></td><td>1</td></tr></table><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 531976}">MDC_ID_PROD_SPEC_FW: Firmware revision</span></p><p><b>value</b>: r2.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 531975}">MDC_ID_PROD_SPEC_SW: Software revision</span></p><p><b>value</b>: r1.5 9.7</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 531974}">MDC_ID_PROD_SPEC_HW: Hardware revision</span></p><p><b>value</b>: r1.0</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 532352}">MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version</span></p><p><b>value</b>: 6.0</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 532353}">MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: certified device list as transport-specialization combo</span></p><p><b>valueCode</b>: <span title="Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD 32772}">BTLE Pulse Oximeter certified</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 532354.0}">regulation-status</span></p><p><b>valueCode</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}">Device is Regulated</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 68220}">MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol</span></p><p><b>valueCode</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 532224}">MDC_TIME_SYNC_NONE:</span></p></blockquote></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"/>
+        <code value="SYSID"/>
+      </coding>
+    </type>
+    <system value="urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"/>
+    <value value="74-E8-FF-FE-FF-05-1C-00"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"/>
+        <code value="BTMAC"/>
+      </coding>
+    </type>
+    <system value="http://hl7.org/fhir/sid/eui-48/bluetooth"/>
+    <value value="00-1C-05-FF-E8-74"/>
+  </identifier>
+  <manufacturer value="Nonin_Medical_Inc."/>
+  <serialNumber value="501900083"/>
+  <modelNumber value="Model 3230"/>
+  <type>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="65573"/>
+    </coding>
+    <text value="MDC_MOC_VMS_MDS_SIMP"/>
+  </type>
+  <specialization>
+    <systemType>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="528388"/>
+      </coding>
+      <text value="MDC_DEV_SPEC_PROFILE_PULS_OXIM: Pulse Oximeter"/>
+    </systemType>
+    <version value="1"/>
+  </specialization>
+  <version>
+    <type>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="531976"/>
+      </coding>
+      <text value="MDC_ID_PROD_SPEC_FW: Firmware revision"/>
+    </type>
+    <value value="r2.1"/>
+  </version>
+  <version>
+    <type>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="531975"/>
+      </coding>
+      <text value="MDC_ID_PROD_SPEC_SW: Software revision"/>
+    </type>
+    <value value="r1.5 9.7"/>
+  </version>
+  <version>
+    <type>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="531974"/>
+      </coding>
+      <text value="MDC_ID_PROD_SPEC_HW: Hardware revision"/>
+    </type>
+    <value value="r1.0"/>
+  </version>
+  <version>
+    <type>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="532352"/>
+      </coding>
+      <text value="MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version"/>
+    </type>
+    <value value="6.0"/>
+  </version>
+  <property>
+    <type>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="532353"/>
+      </coding>
+      <text value="MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: certified device list as transport-specialization combo"/>
+    </type>
+    <valueCode>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"/>
+        <code value="32772"/>
+      </coding>
+    </valueCode>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"/>
+        <code value="532354.0"/>
+      </coding>
+      <text value="regulation-status"/>
+    </type>
+    <valueCode>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+        <code value="N"/>
+      </coding>
+      <text value="Device is Regulated"/>
+    </valueCode>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="68220"/>
+      </coding>
+      <text value="MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"/>
+    </type>
+    <valueCode>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="532224"/>
+      </coding>
+      <text value="MDC_TIME_SYNC_NONE:"/>
+    </valueCode>
+  </property>
+</Device>

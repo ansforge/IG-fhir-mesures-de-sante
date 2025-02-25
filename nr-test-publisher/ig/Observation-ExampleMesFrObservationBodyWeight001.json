@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleMesFrObservationBodyWeight001",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleMesFrObservationBodyWeight001</b></p><a name=\"ExampleMesFrObservationBodyWeight001\"> </a><a name=\"hcExampleMesFrObservationBodyWeight001\"> </a><a name=\"ExampleMesFrObservationBodyWeight001-fr-FR\"> </a><p><b>Raison de la mesure</b>: Calcul IMC</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 96 Kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>method</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED K50BI02}\">Balance</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
+    "valueString" : "Calcul IMC"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29463-7"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplefrPatient001",
+    "type" : "Patient",
+    "display" : "Pierre Durand"
+  },
+  "effectiveDateTime" : "2022-11-06",
+  "valueQuantity" : {
+    "value" : 96,
+    "unit" : "Kg",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kg"
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED",
+      "code" : "K50BI02"
+    }]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleMesObservationHeadCircumference001",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleMesObservationHeadCircumference001</b></p><a name=\"ExampleMesObservationHeadCircumference001\"> </a><a name=\"hcExampleMesObservationHeadCircumference001\"> </a><a name=\"ExampleMesObservationHeadCircumference001-fr-FR\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8287-5}\">Head Occipital-frontal circumference by Tape measure</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 61 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8287-5"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplefrPatient001",
+    "type" : "Patient",
+    "display" : "Pierre Durand"
+  },
+  "effectiveDateTime" : "2022-11-06",
+  "valueQuantity" : {
+    "value" : 61,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "cm"
+  }
+}

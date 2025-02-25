@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleObservationWaistCircumference001",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleObservationWaistCircumference001</b></p><a name=\"ExampleObservationWaistCircumference001\"> </a><a name=\"hcExampleObservationWaistCircumference001\"> </a><a name=\"ExampleObservationWaistCircumference001-fr-FR\"> </a><p><b>Raison de la mesure</b>: Prise de masse importante récente (confinement)</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8280-0}\">Waist Circumference at umbilicus by Tape measure</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 117 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
+    "valueString" : "Prise de masse importante récente (confinement)"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8280-0"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplefrPatient001",
+    "type" : "Patient",
+    "display" : "Pierre Durand"
+  },
+  "effectiveDateTime" : "2022-11-06",
+  "valueQuantity" : {
+    "value" : 117,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "cm"
+  }
+}

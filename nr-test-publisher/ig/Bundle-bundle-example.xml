@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"/>
+  </meta>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a"/>
+    <resource>
+      <Observation>
+        <id value="5138af77-df7e-4b9d-ba17-07ba3ebb950a"/>
+        <meta>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><p class="res-header-id"><b>Generated Narrative: Observation 5138af77-df7e-4b9d-ba17-07ba3ebb950a</b></p><a name="5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><a name="hc5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><a name="5138af77-df7e-4b9d-ba17-07ba3ebb950a-fr-FR"> </a><p><b>Raison de la mesure</b>: Mon nouveau poids !</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: Identifier: <code>urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560</code>/id-value</p><p><b>effective</b>: 2022-08-22 01:56:16+0100</p><p><b>value</b>: 71 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p><p><b>device</b>: <a href="Bundle-bundle-example.html#Device_d36bfdb6-b1b1-4efd-9cb9-d217a8696575">Bundle: type = transaction</a></p></div>
+        </text>
+        <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement">
+          <valueString value="Mon nouveau poids !"/>
+        </extension>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </coding>
+        </code>
+        <subject>
+          <identifier>
+            <system value="urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560"/>
+            <value value="id-value"/>
+          </identifier>
+        </subject>
+        <effectiveDateTime value="2022-08-22T01:56:16+01:00"/>
+        <valueQuantity>
+          <value value="71"/>
+          <unit value="kg"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="kg"/>
+        </valueQuantity>
+        <device>
+          <reference value="Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575"/>
+        </device>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575"/>
+    <resource>
+      <Device>
+        <id value="d36bfdb6-b1b1-4efd-9cb9-d217a8696575"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><p class="res-header-id"><b>Generated Narrative: Device d36bfdb6-b1b1-4efd-9cb9-d217a8696575</b></p><a name="d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><a name="hcd36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><a name="d36bfdb6-b1b1-4efd-9cb9-d217a8696575-fr-FR"> </a><p><b>identifier</b>: IEEE 11073 System Identifier/FE-ED-AB-AA-DE-AD-77-C5</p><p><b>manufacturer</b>: OMRONHEALTHCARE</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Ma balance</td><td>Patient Reported name</td></tr></table><p><b>modelNumber</b>: HEM-9200T</p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 65573}">MDC_MOC_VMS_MDS_SIMP</span></p><h3>Specializations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:iso:std:iso:11073:10101 528457}">MDC_DEV_SPEC_PROFILE_GENERIC</span></td><td>2.3</td></tr></table></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"/>
+              <code value="SYSID"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"/>
+          <value value="FE-ED-AB-AA-DE-AD-77-C5"/>
+        </identifier>
+        <manufacturer value="OMRONHEALTHCARE"/>
+        <deviceName>
+          <name value="Ma balance"/>
+          <type value="patient-reported-name"/>
+        </deviceName>
+        <modelNumber value="HEM-9200T"/>
+        <type>
+          <coding>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="65573"/>
+          </coding>
+        </type>
+        <specialization>
+          <systemType>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="528457"/>
+            </coding>
+          </systemType>
+          <version value="2.3"/>
+        </specialization>
+      </Device>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Device"/>
+    </request>
+  </entry>
+</Bundle>

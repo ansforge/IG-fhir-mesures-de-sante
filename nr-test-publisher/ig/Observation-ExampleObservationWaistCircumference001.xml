@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleObservationWaistCircumference001"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ExampleObservationWaistCircumference001</b></p><a name="ExampleObservationWaistCircumference001"> </a><a name="hcExampleObservationWaistCircumference001"> </a><a name="ExampleObservationWaistCircumference001-fr-FR"> </a><p><b>Raison de la mesure</b>: Prise de masse importante récente (confinement)</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8280-0}">Waist Circumference at umbilicus by Tape measure</span></p><p><b>subject</b>: <a href="Patient-ExamplefrPatient001.html">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 117 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></div>
+  </text>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement">
+    <valueString value="Prise de masse importante récente (confinement)"/>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8280-0"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplefrPatient001"/>
+    <type value="Patient"/>
+    <display value="Pierre Durand"/>
+  </subject>
+  <effectiveDateTime value="2022-11-06"/>
+  <valueQuantity>
+    <value value="117"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="cm"/>
+  </valueQuantity>
+</Observation>

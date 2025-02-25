@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Patient",
+  "id" : "ExamplefrPatient001",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ExamplefrPatient001</b></p><a name=\"ExamplefrPatient001\"> </a><a name=\"hcExamplefrPatient001\"> </a><a name=\"ExamplefrPatient001-fr-FR\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Pierre Jean Durand (official) Male, DoB: 1974-12-25 ( urn:oid:1.2.250.1.213.1.4.8#123456789012244\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 01 23 24 67 89(Home)</li><li>ph: 01 99 88 77 66(Work)</li><li>ph: 06 80 55 34 33(Mobile)</li><li>367 rue Troussier, 45100 Orléans, France(home)</li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:oid:1.2.250.1.213.1.4.8",
+    "value" : "123456789012244"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "family" : "Durand",
+    "given" : ["Pierre",
+    "Jean"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "01 23 24 67 89",
+    "use" : "home"
+  },
+  {
+    "system" : "phone",
+    "value" : "01 99 88 77 66",
+    "use" : "work",
+    "rank" : 1
+  },
+  {
+    "system" : "phone",
+    "value" : "06 80 55 34 33",
+    "use" : "mobile",
+    "rank" : 2
+  }],
+  "gender" : "male",
+  "birthDate" : "1974-12-25",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "use" : "home",
+    "type" : "both",
+    "text" : "367 rue Troussier, 45100 Orléans, France",
+    "line" : ["367 rue Troussier"],
+    "city" : "Orléans",
+    "postalCode" : "45100",
+    "period" : {
+      "start" : "2018-06-01"
+    }
+  }]
+}

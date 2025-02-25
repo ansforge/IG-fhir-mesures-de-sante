@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleMesFrRespRate",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleMesFrRespRate</b></p><a name=\"ExampleMesFrRespRate\"> </a><a name=\"hcExampleMesFrRespRate\"> </a><a name=\"ExampleMesFrRespRate-fr-FR\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9279-1}\">Respiratory rate</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2023-07-02</p><p><b>value</b>: 18 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "9279-1"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplefrPatient001",
+    "display" : "Pierre Durand"
+  },
+  "effectiveDateTime" : "2023-07-02",
+  "valueQuantity" : {
+    "value" : 18,
+    "unit" : "/min",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "/min"
+  }
+}
