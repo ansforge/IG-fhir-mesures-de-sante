@@ -10,7 +10,7 @@
   "name" : "MesBundleFluxAlimentation",
   "title" : "Bundle d'alimentation",
   "status" : "active",
-  "date" : "2025-01-27T13:41:42+00:00",
+  "date" : "2025-02-27T09:48:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -54,6 +54,10 @@
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle",
   "derivation" : "constraint",
   "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "4.0.1"
+    }],
     "element" : [{
       "id" : "Bundle",
       "path" : "Bundle",

@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -16,11 +17,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleMesObservationGlucose001</b></p><a name=\"ExampleMesObservationGlucose001\"> </a><a name=\"hcExampleMesObservationGlucose001\"> </a><a name=\"ExampleMesObservationGlucose001-fr-FR\"> </a><p><b>Raison de la mesure</b>: Malaise du patient</p><p><b>Moment de la mesure</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 16915-1}\">Glucose post prandial</span></p><p><b>Nombre de jours</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP GEN-275}\">7j</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\">Hémoglobine A1c %</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 92 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>70 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>100 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleMesObservationGlucose001</b></p><a name=\"ExampleMesObservationGlucose001\"> </a><a name=\"hcExampleMesObservationGlucose001\"> </a><a name=\"ExampleMesObservationGlucose001-fr-FR\"> </a><p><b>Raison de la mesure</b>: Malaise du patient</p><p><b>Moment de la mesure</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 16915-1}\">Glucose post prandial</span></p><p><b>Nombre de jours</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP GEN-275}\">7j</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\">Hémoglobine A1c %</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 92 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>70 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>100 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "Malaise du patient" ]
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Malaise du patient"
+     ]
   ] [
      fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement"^^xsd:anyURI ] ;
      fhir:value [
@@ -61,7 +65,10 @@
      fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
      fhir:display [ fhir:v "Pierre Durand" ]
   ] ; # 
-  fhir:effective [ fhir:v "2022-11-06"^^xsd:date] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-11-06"^^xsd:date
+  ] ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "92"^^xsd:decimal ] ;

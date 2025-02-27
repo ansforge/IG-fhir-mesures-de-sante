@@ -28,7 +28,7 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
   <name value="MesFrObservationBodyHeight"/>
   <title value="Taille"/>
   <status value="active"/>
-  <date value="2025-01-27T13:41:42+00:00"/>
+  <date value="2025-02-27T09:48:09+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -82,6 +82,9 @@ Si la mesure a été faite par un objet connecté (Profil PhdDevice), cette réf
   <baseDefinition value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height"/>
   <derivation value="constraint"/>
   <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="2.1.0"/>
+    </extension>
     <element id="Observation">
       <path value="Observation"/>
       <short value="French Body Height Profile based on FHIR Body height profile"/>

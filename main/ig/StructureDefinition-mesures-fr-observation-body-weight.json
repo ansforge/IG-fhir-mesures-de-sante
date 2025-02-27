@@ -10,7 +10,7 @@
   "name" : "MesFrObservationBodyWeight",
   "title" : "Poids",
   "status" : "active",
-  "date" : "2025-01-27T13:41:42+00:00",
+  "date" : "2025-02-27T09:48:09+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -64,6 +64,10 @@
   "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight",
   "derivation" : "constraint",
   "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "2.1.0"
+    }],
     "element" : [{
       "id" : "Observation",
       "path" : "Observation",

@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,11 +18,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleObservationWaistCircumference001</b></p><a name=\"ExampleObservationWaistCircumference001\"> </a><a name=\"hcExampleObservationWaistCircumference001\"> </a><a name=\"ExampleObservationWaistCircumference001-fr-FR\"> </a><p><b>Raison de la mesure</b>: Prise de masse importante récente (confinement)</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8280-0}\">Waist Circumference at umbilicus by Tape measure</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 117 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleObservationWaistCircumference001</b></p><a name=\"ExampleObservationWaistCircumference001\"> </a><a name=\"hcExampleObservationWaistCircumference001\"> </a><a name=\"ExampleObservationWaistCircumference001-fr-FR\"> </a><p><b>Raison de la mesure</b>: Prise de masse importante récente (confinement)</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8280-0}\">Waist Circumference at umbilicus by Tape measure</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 117 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "Prise de masse importante récente (confinement)" ]
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Prise de masse importante récente (confinement)"
+     ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
@@ -43,7 +47,10 @@
      fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
      fhir:display [ fhir:v "Pierre Durand" ]
   ] ; # 
-  fhir:effective [ fhir:v "2022-11-06"^^xsd:date] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-11-06"^^xsd:date
+  ] ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "117"^^xsd:decimal ] ;

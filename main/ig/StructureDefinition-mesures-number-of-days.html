@@ -40,7 +40,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"7.16"}
     h3,h4,h5,h6{--heading-prefix:"7.16"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -51,7 +52,12 @@
   </div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
     <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
+
+  <div id="ig-search">
+ </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FHIR - Mesures de santé</span>
@@ -271,7 +277,7 @@
         
           Active
           
-            as of 2025-01-27
+            as of 2025-02-27
           
         
       </td>
@@ -294,14 +300,9 @@ Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestio
   <p><b>Context of Use</b></p>
   <p>This extension may be used on the following  element(s):</p>
   <ul>
-  <p>This extension may be used on the following element(s):</p>
-<ul>
-  <li>
-Element ID:     <code>
-<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>    </code>
-  </li>
-</ul>
-
+    
+    <li>Element ID Observation</li>
+    
   </ul>
 
   <!-- insert intro if present -->
@@ -326,6 +327,9 @@ Element ID:     <code>
   <div id="tabs">
     <ul>
       <li>
+        <a href="#tabs-summ">Text Summary</a>
+      </li>
+      <li>
         <a href="#tabs-diff">Differential Table</a>
       </li>
       <li>
@@ -347,12 +351,25 @@ Element ID:     <code>
       </li>-->
 
       <li>
-        <a href="#tabs-summ">Statistics/References</a>
-      </li>
-      <li>
         <a href="#tabs-all">All</a>
       </li>
     </ul>
+    <a name="tabs-summ"> </a>
+    <div id="tabs-summ">
+      <div id="tbl-summ">
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
+        </p>
+        <div id="tbl-summ-inner">
+          <a name="summary"> </a>
+          <a name="s-summary"> </a>
+<p><b>
+Summary
+</b></p>
+<p>Simple Extension of type CodeableConcept: Extension sur le Nombre de jours.
+Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.</p>
+        </div>
+      </div>
+    </div>
     <a name="tabs-diff"> </a>
     <div id="tabs-diff">
       <div id="tbl-diff">
@@ -467,14 +484,13 @@ Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestio
       </div>
     </div>-->
 
-    <a name="tabs-summ"> </a>
-    <div id="tabs-summ">
-      <div id="tbl-summ">
+    <a name="tabs-all"> </a>
+    <div id="tabs-all">
+      <div id="all-summ">
         <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
         </p>
-        <div id="tbl-summ-inner">
-          <a name="summary"> </a>
-          <a name="s-summary"> </a>
+        <div id="all-summ-inner">
+          <a name="a-summary"> </a>
 <p><b>
 Summary
 </b></p>
@@ -482,9 +498,6 @@ Summary
 Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.</p>
         </div>
       </div>
-    </div>
-    <a name="tabs-all"> </a>
-    <div id="tabs-all">
       <div id="all-tbl-diff">
         <p>
           <b>Differential View</b>
@@ -599,18 +612,6 @@ Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestio
         </div>
       </div>-->
 
-      <div id="all-summ">
-        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
-        </p>
-        <div id="all-summ-inner">
-          <a name="a-summary"> </a>
-<p><b>
-Summary
-</b></p>
-<p>Simple Extension of type CodeableConcept: Extension sur le Nombre de jours.
-Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.</p>
-        </div>
-      </div>
     </div>
   </div>
   <p>&#160;</p>
@@ -685,7 +686,7 @@ Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestio
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 27, 2025 13:41+0000">2025-01-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 27, 2025 09:49+0000">2025-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
