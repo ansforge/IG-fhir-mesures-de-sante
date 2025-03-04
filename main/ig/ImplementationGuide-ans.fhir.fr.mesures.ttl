@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "ans.fhir.fr.mesures"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.mesures</b></p><a name=\"ans.fhir.fr.mesures\"> </a><a name=\"hcans.fhir.fr.mesures\"> </a><a name=\"ans.fhir.fr.mesures-fr-FR\"> </a><h2>Mesures</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.mesures</b></p><a name=\"ans.fhir.fr.mesures\"> </a><a name=\"hcans.fhir.fr.mesures\"> </a><a name=\"ans.fhir.fr.mesures-fr-FR\"> </a><h2>Mesures</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.1.0"] ; # 
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-02-27T09:48:09+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-04T08:17:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -896,7 +896,7 @@
        fhir:description [ fhir:v "Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -931,7 +931,7 @@
        fhir:name [ fhir:v "ExamplefrPatient001" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -948,7 +948,7 @@
        fhir:name [ fhir:v "ExampleFrPractitionner001" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -1200,7 +1200,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1218,7 +1218,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1236,7 +1236,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1254,7 +1254,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1272,7 +1272,7 @@
        fhir:description [ fhir:v "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1290,7 +1290,7 @@
        fhir:description [ fhir:v "Méthode de mesures de glycémie sanguine ou interstitielle." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1308,7 +1308,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir un niveau de douleur" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1326,7 +1326,7 @@
        fhir:description [ fhir:v "Extension sur le Nombre de jours. \r\nUtilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1344,7 +1344,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir un nombre de pas par jour" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1361,7 +1361,7 @@
        fhir:name [ fhir:v "phd-74E8FFFEFF051C00" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -1379,7 +1379,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir un poids" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1397,7 +1397,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1415,7 +1415,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir un Périmètre Crânien" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1433,7 +1433,7 @@
        fhir:description [ fhir:v "Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1451,7 +1451,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1469,7 +1469,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une taille" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1487,7 +1487,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une température" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1505,7 +1505,7 @@
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une taille en cm" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] ) ;
      fhir:page [
