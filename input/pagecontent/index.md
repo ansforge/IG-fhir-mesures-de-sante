@@ -6,7 +6,7 @@ This implementation guide contains the profiles to share vital-signs for the Fre
 {% if site.data.info.releaselabel == 'ci-build' %}
 <blockquote class="stu-note">
 <p>
-  <b>Attention !</b> Cet Implementation Guide n'est pas la version courante. La version courante est ici : https://interop.esante.gouv.fr/ig/fhir/mesures
+  <b>Attention !</b> Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante et publiée à utiliser est accessible à l'adresse https://interop.esante.gouv.fr/ig/fhir/mesures
 </p>
 </blockquote>
 {% endif %}
