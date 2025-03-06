@@ -252,18 +252,8 @@
     </footer>
     <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
     <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
-    <script language="javascript">
-      $( document ).ready(function() {
-          $("#searchForm").submit(function(e){ 
-              e.preventDefault(); 
-              urlSearch = "https://search.brave.com/search?q=site:";
-              hrefurl=$(location).attr("href");
-              urlSearch += hrefurl.substr(0,hrefurl.lastIndexOf('/') + 1);
-              urlSearch += "+" + $("#q").val();
-              window.open(urlSearch, '_blank');
-          });
-        });
-      </script>
+    <script src="assets/js/ans-ig-addings.js" type="text/javascript"> </script>
+
       
   <script src="assets/js/window-hash.js" type="text/javascript"> </script>
 </body>
