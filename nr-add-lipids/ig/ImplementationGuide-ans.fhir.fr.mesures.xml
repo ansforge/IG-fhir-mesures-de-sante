@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2025-03-04T08:19:08+00:00"/>
+  <date value="2025-03-27T13:15:18+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -270,7 +270,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.4.1"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -485,6 +485,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/mesures-observation-cholesterol-aspect"/>
+      </reference>
+      <name value="Aspect du cholestérol"/>
+      <description value="Profil biologie de la ressource Observation pour définir l'aspect du cholestérol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/mesures-bundle-flux-alimentation"/>
       </reference>
       <name value="Bundle d'alimentation"/>
@@ -496,10 +507,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mesures-bundle-flux-alimentation-cholesterol"/>
+        <reference value="StructureDefinition/mesures-bundle-flux-alimentation-biologie"/>
       </reference>
-      <name value="Bundle d'alimentation des mesures de cholestérol"/>
-      <description value="Profil de la ressource Bundle du flux d'alimentation des mesures de cholestérolà envoyer au serveur"/>
+      <name value="Bundle d'alimentation des mesures de biologie"/>
+      <description value="Profil de la ressource Bundle du flux d'alimentation des mesures de biologie à envoyer au serveur"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -520,7 +531,7 @@
         <reference value="Bundle/bundle-example-lipids"/>
       </reference>
       <name value="bundle-example-lipids"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-cholesterol"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -530,7 +541,7 @@
         <reference value="DiagnosticReport/cholesterol-dr"/>
       </reference>
       <name value="cholesterol-dr"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-cholesterol-diagnostic-report"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -580,7 +591,7 @@
         <reference value="StructureDefinition/mesures-observation-cholesterol-hdl"/>
       </reference>
       <name value="Cholestérol HDL"/>
-      <description value="Profil de la ressource Observation pour définir le cholestérol HDL"/>
+      <description value="Profil biologie de la ressource Observation pour définir le cholestérol HDL"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -592,6 +603,17 @@
       </reference>
       <name value="Cholestérol LDL"/>
       <description value="Profil de la ressource Observation pour définir le cholestérol LDL"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mesures-observation-cholesterol-ratio"/>
+      </reference>
+      <name value="Cholestérol Ratio"/>
+      <description value="Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -613,7 +635,7 @@
         <reference value="StructureDefinition/mesures-observation-cholesterol-trigly"/>
       </reference>
       <name value="Cholestérol triglycerides"/>
-      <description value="Profil de la ressource Observation pour définir le cholestérol triglycerides"/>
+      <description value="Profil biologie de la ressource Observation pour définir le cholestérol triglycerides"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -621,10 +643,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mesures-cholesterol-diagnostic-report"/>
+        <reference value="StructureDefinition/mesures-diagnostic-report"/>
       </reference>
-      <name value="DiagnosticReport mesures cholestérol"/>
-      <description value="Profil de la ressource DiagnosticReport pour définir un rapport sur les mesures de cholestérol"/>
+      <name value="DiagnosticReport mesures biologie"/>
+      <description value="Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1015,10 +1037,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="profils-cholesterol.html"/>
+          <valueUrl value="profils-biologie.html"/>
         </extension>
-        <nameUrl value="profils-cholesterol.html"/>
-        <title value="Les profils cholestérol"/>
+        <nameUrl value="profils-biologie.html"/>
+        <title value="Les profils biologie"/>
         <generation value="markdown"/>
       </page>
       <page>

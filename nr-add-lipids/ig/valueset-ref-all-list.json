@@ -13,18 +13,20 @@
       "uses" : {
       },
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
       "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
       "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -38,8 +40,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
-      "StructureDefinition-mesures-bundle-flux-alimentation-cholesterol.html" : "Bundle d'alimentation des mesures de cholestérol",
-      "StructureDefinition-mesures-bundle-flux-alimentation.html" : "Bundle d'alimentation"
+      "StructureDefinition-mesures-bundle-flux-alimentation.html" : "Bundle d'alimentation",
+      "StructureDefinition-mesures-bundle-flux-alimentation-biologie.html" : "Bundle d'alimentation des mesures de biologie"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -53,7 +55,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.232"],
       "uses" : {
       },
-      "StructureDefinition-mesures-cholesterol-diagnostic-report.html" : "DiagnosticReport mesures cholestérol"
+      "StructureDefinition-mesures-diagnostic-report.html" : "DiagnosticReport mesures biologie"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -67,19 +69,19 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
-      "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
-      "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
-      "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
-      "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
+      "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
       "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
+      "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
+      "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -93,23 +95,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
+      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
       "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
       "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
-      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
@@ -123,7 +127,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.235"],
       "uses" : {
       },
-      "StructureDefinition-mesures-cholesterol-diagnostic-report.html" : "DiagnosticReport mesures cholestérol"
+      "StructureDefinition-mesures-diagnostic-report.html" : "DiagnosticReport mesures biologie"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
@@ -137,7 +141,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.234"],
       "uses" : {
       },
-      "StructureDefinition-mesures-cholesterol-diagnostic-report.html" : "DiagnosticReport mesures cholestérol"
+      "StructureDefinition-mesures-diagnostic-report.html" : "DiagnosticReport mesures biologie"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -151,8 +155,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.624"],
       "uses" : {
       },
-      "StructureDefinition-mesures-bundle-flux-alimentation-cholesterol.html" : "Bundle d'alimentation des mesures de cholestérol",
-      "StructureDefinition-mesures-bundle-flux-alimentation.html" : "Bundle d'alimentation"
+      "StructureDefinition-mesures-bundle-flux-alimentation.html" : "Bundle d'alimentation",
+      "StructureDefinition-mesures-bundle-flux-alimentation-biologie.html" : "Bundle d'alimentation des mesures de biologie"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -166,26 +170,28 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-mesures-cholesterol-diagnostic-report.html" : "DiagnosticReport mesures cholestérol",
+      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
+      "StructureDefinition-mesures-diagnostic-report.html" : "DiagnosticReport mesures biologie",
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-bundle-flux-alimentation.html" : "Bundle d'alimentation",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
       "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-bundle-flux-alimentation-cholesterol.html" : "Bundle d'alimentation des mesures de cholestérol",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-bundle-flux-alimentation.html" : "Bundle d'alimentation",
+      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
       "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
-      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
+      "StructureDefinition-mesures-bundle-flux-alimentation-biologie.html" : "Bundle d'alimentation des mesures de biologie",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -199,23 +205,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
+      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
       "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
       "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
-      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -230,6 +238,8 @@
       "uses" : {
       },
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
       "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides"
@@ -248,23 +258,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
+      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
       "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
       "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
-      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -278,13 +290,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
       "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
+      "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides"
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -298,23 +312,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
+      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
       "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
       "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
-      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
@@ -328,19 +344,19 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
       "uses" : {
       },
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
-      "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
-      "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
-      "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
-      "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
+      "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
       "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
+      "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
+      "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
@@ -354,23 +370,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
+      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
       "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
       "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
-      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -387,23 +405,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
+      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
       "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
       "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
-      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -419,23 +439,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
+      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-cholesterol-hdl.html" : "Cholestérol HDL",
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
       "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-observation-cholesterol-ldl.html" : "Cholestérol LDL",
       "StructureDefinition-mesures-observation-cholesterol-total.html" : "Cholestérol total",
+      "StructureDefinition-mesures-observation-cholesterol-trigly.html" : "Cholestérol triglycerides",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
       "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-cholesterol-aspect.html" : "Aspect du cholestérol",
+      "StructureDefinition-mesures-observation-cholesterol-ratio.html" : "Cholestérol Ratio",
       "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
-      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
       "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
-      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/report-codes",
@@ -449,7 +471,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.233"],
       "uses" : {
       },
-      "StructureDefinition-mesures-cholesterol-diagnostic-report.html" : "DiagnosticReport mesures cholestérol"
+      "StructureDefinition-mesures-diagnostic-report.html" : "DiagnosticReport mesures biologie"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -477,8 +499,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.622"],
       "uses" : {
       },
-      "StructureDefinition-mesures-bundle-flux-alimentation-cholesterol.html" : "Bundle d'alimentation des mesures de cholestérol",
-      "StructureDefinition-mesures-bundle-flux-alimentation.html" : "Bundle d'alimentation"
+      "StructureDefinition-mesures-bundle-flux-alimentation.html" : "Bundle d'alimentation",
+      "StructureDefinition-mesures-bundle-flux-alimentation-biologie.html" : "Bundle d'alimentation des mesures de biologie"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -498,19 +520,19 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
-      "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
-      "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
-      "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
-      "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
+      "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
       "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
+      "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
+      "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-bodylength",
@@ -566,19 +588,19 @@
       "sources" : ["2.16.840.1.113883.4.642.3.955"],
       "uses" : {
       },
-      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
-      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille",
-      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
-      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
-      "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
-      "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
-      "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
-      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
       "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température",
-      "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
+      "StructureDefinition-mesures-fr-observation-body-weight.html" : "Poids",
       "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
-      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie"
+      "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle",
+      "StructureDefinition-mesures-fr-observation-resp-rate.html" : "Fréquence respiratoire",
+      "StructureDefinition-mesures-observation-glucose.html" : "Glycémie",
+      "StructureDefinition-mesures-observation-steps-by-day.html" : "Nombre de pas par jour",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
+      "StructureDefinition-mesures-fr-observation-bmi.html" : "Indice de Masse Corporelle",
+      "StructureDefinition-mesures-observation-pain-severity.html" : "Niveau de douleur",
+      "StructureDefinition-mesures-observation-head-circumference.html" : "Périmètre Crânien",
+      "StructureDefinition-mesures-fr-observation-bodyheight.html" : "Taille",
+      "StructureDefinition-mesures-observation-waist-circumference.html" : "Tour de taille"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs",
@@ -641,8 +663,8 @@
       "sources" : ["1.2.250.1.213.1.1.5.602"],
       "uses" : {
       },
-      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène",
-      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque"
+      "StructureDefinition-mesures-fr-observation-heartrate.html" : "Fréquence Cardiaque",
+      "StructureDefinition-mesures-fr-observation-oxygen-sat.html" : "Saturation en Oxygène"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J149-BodySiteBP-ENS/FHIR/JDV-J149-BodySiteBP-ENS",
@@ -671,20 +693,6 @@
       "uses" : {
       },
       "StructureDefinition-mesures-fr-observation-bp.html" : "Pression Artérielle"
-    },
-    {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J151-BodySiteBodyTemperature-ENS/FHIR/JDV-J151-BodySiteBodyTemperature-ENS",
-      "version" : "20240927120000",
-      "status" : "active",
-      "name" : "JDV_J151_BodySiteBodyTemperature_ENS",
-      "title" : null,
-      "description" : "JDV de localisation de la mesure de la température",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["1.2.250.1.213.1.1.5.606"],
-      "sources" : ["1.2.250.1.213.1.1.5.606"],
-      "uses" : {
-      },
-      "StructureDefinition-mesures-fr-observation-body-temperature.html" : "Température"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J152-MethodBodyTemperature-ENS/FHIR/JDV-J152-MethodBodyTemperature-ENS",

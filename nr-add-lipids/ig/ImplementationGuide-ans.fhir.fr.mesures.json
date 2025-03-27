@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2025-03-04T08:19:08+00:00",
+  "date" : "2025-03-27T13:15:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -356,7 +356,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.4.1"
     },
     {
       "extension" : [{
@@ -650,6 +650,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-cholesterol-aspect"
+      },
+      "name" : "Aspect du cholestérol",
+      "description" : "Profil biologie de la ressource Observation pour définir l'aspect du cholestérol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/mesures-bundle-flux-alimentation"
       },
       "name" : "Bundle d'alimentation",
@@ -662,10 +674,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mesures-bundle-flux-alimentation-cholesterol"
+        "reference" : "StructureDefinition/mesures-bundle-flux-alimentation-biologie"
       },
-      "name" : "Bundle d'alimentation des mesures de cholestérol",
-      "description" : "Profil de la ressource Bundle du flux d'alimentation des mesures de cholestérolà envoyer au serveur",
+      "name" : "Bundle d'alimentation des mesures de biologie",
+      "description" : "Profil de la ressource Bundle du flux d'alimentation des mesures de biologie à envoyer au serveur",
       "exampleBoolean" : false
     },
     {
@@ -688,7 +700,7 @@
         "reference" : "Bundle/bundle-example-lipids"
       },
       "name" : "bundle-example-lipids",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-cholesterol"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"
     },
     {
       "extension" : [{
@@ -699,7 +711,7 @@
         "reference" : "DiagnosticReport/cholesterol-dr"
       },
       "name" : "cholesterol-dr",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-cholesterol-diagnostic-report"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"
     },
     {
       "extension" : [{
@@ -754,7 +766,7 @@
         "reference" : "StructureDefinition/mesures-observation-cholesterol-hdl"
       },
       "name" : "Cholestérol HDL",
-      "description" : "Profil de la ressource Observation pour définir le cholestérol HDL",
+      "description" : "Profil biologie de la ressource Observation pour définir le cholestérol HDL",
       "exampleBoolean" : false
     },
     {
@@ -767,6 +779,18 @@
       },
       "name" : "Cholestérol LDL",
       "description" : "Profil de la ressource Observation pour définir le cholestérol LDL",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-cholesterol-ratio"
+      },
+      "name" : "Cholestérol Ratio",
+      "description" : "Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL",
       "exampleBoolean" : false
     },
     {
@@ -790,7 +814,7 @@
         "reference" : "StructureDefinition/mesures-observation-cholesterol-trigly"
       },
       "name" : "Cholestérol triglycerides",
-      "description" : "Profil de la ressource Observation pour définir le cholestérol triglycerides",
+      "description" : "Profil biologie de la ressource Observation pour définir le cholestérol triglycerides",
       "exampleBoolean" : false
     },
     {
@@ -799,10 +823,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mesures-cholesterol-diagnostic-report"
+        "reference" : "StructureDefinition/mesures-diagnostic-report"
       },
-      "name" : "DiagnosticReport mesures cholestérol",
-      "description" : "Profil de la ressource DiagnosticReport pour définir un rapport sur les mesures de cholestérol",
+      "name" : "DiagnosticReport mesures biologie",
+      "description" : "Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie",
       "exampleBoolean" : false
     },
     {
@@ -1232,10 +1256,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "profils-cholesterol.html"
+          "valueUrl" : "profils-biologie.html"
         }],
-        "nameUrl" : "profils-cholesterol.html",
-        "title" : "Les profils cholestérol",
+        "nameUrl" : "profils-biologie.html",
+        "title" : "Les profils biologie",
         "generation" : "markdown"
       },
       {
