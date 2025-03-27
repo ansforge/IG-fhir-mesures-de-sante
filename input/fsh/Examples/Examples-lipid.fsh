@@ -59,17 +59,18 @@ Usage: #example
 
 
 Instance: cholesterol-dr
-InstanceOf: MesCholesterolDiagnosticReport
+InstanceOf: MesDiagnosticReport
 Usage: #example
 * status = #final
 * result[total-cholesterol] = Reference(cholesterol-total-example)
 * result[hdl-cholesterol] = Reference(cholesterol-hdl-example)
 * result[ldl-cholesterol] = Reference(cholesterol-ldl-example)
 * result[trigly-cholesterol] = Reference(cholesterol-trigly-example)
+// TODO : add gly, aspect, ratio
 
 
 Instance: bundle-example-lipids
-InstanceOf: MesBundleFluxAlimentationCholesterol
+InstanceOf: MesBundleFluxAlimentationBiologie
 Usage: #example
 * type = #transaction
 
@@ -100,3 +101,6 @@ Usage: #example
 * entry[mes-diagnostic-report][=].request.method = #POST
 * entry[mes-diagnostic-report][=].request.url = "DiagnosticReport"
 * entry[mes-diagnostic-report][=].fullUrl = "urn:uuid:25207dab-e2f1-4513-a499-48e508847382" //created using random generator
+
+
+// TODO : add gly, aspect, ratio

@@ -1,9 +1,9 @@
 
-Profile: MesCholesterolDiagnosticReport
+Profile: MesDiagnosticReport
 Parent: DiagnosticReport
-Id: mesures-cholesterol-diagnostic-report
-Title: "DiagnosticReport mesures cholestérol"
-Description: "Profil de la ressource DiagnosticReport pour définir un rapport sur les mesures de cholestérol"
+Id: mesures-diagnostic-report
+Title: "DiagnosticReport mesures biologie"
+Description: "Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie"
 
 
 * code = http://loinc.org#57698-3 "Lipid panel with direct LDL - Serum or Plasma"
@@ -13,12 +13,16 @@ Description: "Profil de la ressource DiagnosticReport pour définir un rapport s
 * result ^slicing.discriminator.path = "resolve()"
 * result ^slicing.rules = #open
 
-* result contains ldl-cholesterol 1..1 MS and hdl-cholesterol 1..1 MS and total-cholesterol 1..1 MS and trigly-cholesterol 1..1 MS
+* result contains ldl-cholesterol 1..1 MS and hdl-cholesterol 1..1 MS and total-cholesterol 1..1 MS and trigly-cholesterol 1..1 MS and cholesterol-ratio 0..1 MS and cholesterol-aspect 0..1 MS and glycemie 0..1 MS
 
 * result[ldl-cholesterol] only Reference(mesures-observation-cholesterol-ldl)
 * result[hdl-cholesterol] only Reference(mesures-observation-cholesterol-hdl)
 * result[total-cholesterol] only Reference(mesures-observation-cholesterol-total)
-* result[trigly-cholesterol] only Reference(mesures-observation-cholesterol-trigly)
+* result[cholesterol-ratio] only Reference(mesures-observation-cholesterol-ratio)
+* result[cholesterol-aspect] only Reference(mesures-observation-cholesterol-aspect)
+
+
+* result[glycemie] only Reference(mesures-observation-glucose)
 
 
 Invariant:   mes-ir

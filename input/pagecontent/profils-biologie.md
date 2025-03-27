@@ -12,11 +12,11 @@ Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlime
 ### Liste des profils
 
 <div class="figure" style="width:100%;">
-    <p>{% include cholesterol-overview.svg %}</p>
+    <p>{% include bio-overview.svg %}</p>
 </div>
 
 {% sql {
-  "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like '%cholestérol%'",
+  "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like '%biologie%'",
   "class" : "lines",
   "columns" : [
     { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
