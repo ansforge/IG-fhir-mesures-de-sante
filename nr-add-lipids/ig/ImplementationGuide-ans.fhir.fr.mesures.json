@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2025-03-27T15:45:03+00:00",
+  "date" : "2025-03-27T15:47:29+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -650,18 +650,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mesures-observation-cholesterol-aspect"
-      },
-      "name" : "Aspect du cholestérol",
-      "description" : "Profil biologie de la ressource Observation pour définir l'aspect du cholestérol",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mesures-bundle-flux-alimentation"
       },
       "name" : "Bundle d'alimentation",
@@ -763,9 +751,21 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-cholesterol-aspect"
+      },
+      "name" : "Cholestérol - aspect",
+      "description" : "Profil biologie de la ressource Observation pour définir l'aspect du cholestérol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/mesures-observation-cholesterol-hdl"
       },
-      "name" : "Cholestérol HDL",
+      "name" : "Cholestérol - HDL",
       "description" : "Profil biologie de la ressource Observation pour définir le cholestérol HDL",
       "exampleBoolean" : false
     },
@@ -777,7 +777,7 @@
       "reference" : {
         "reference" : "StructureDefinition/mesures-observation-cholesterol-ldl"
       },
-      "name" : "Cholestérol LDL",
+      "name" : "Cholestérol - LDL",
       "description" : "Profil de la ressource Observation pour définir le cholestérol LDL",
       "exampleBoolean" : false
     },
@@ -789,7 +789,7 @@
       "reference" : {
         "reference" : "StructureDefinition/mesures-observation-cholesterol-ratio"
       },
-      "name" : "Cholestérol Ratio",
+      "name" : "Cholestérol - Ratio LDL/HDL",
       "description" : "Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL",
       "exampleBoolean" : false
     },
@@ -801,7 +801,7 @@
       "reference" : {
         "reference" : "StructureDefinition/mesures-observation-cholesterol-total"
       },
-      "name" : "Cholestérol total",
+      "name" : "Cholestérol - total",
       "description" : "Profil de la ressource Observation pour définir le cholestérol total",
       "exampleBoolean" : false
     },
@@ -813,7 +813,7 @@
       "reference" : {
         "reference" : "StructureDefinition/mesures-observation-cholesterol-trigly"
       },
-      "name" : "Cholestérol triglycerides",
+      "name" : "Cholestérol - triglycerides",
       "description" : "Profil biologie de la ressource Observation pour définir le cholestérol triglycerides",
       "exampleBoolean" : false
     },

@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2025-03-27T15:45:03+00:00"/>
+  <date value="2025-03-27T15:47:29+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -485,17 +485,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mesures-observation-cholesterol-aspect"/>
-      </reference>
-      <name value="Aspect du cholestérol"/>
-      <description value="Profil biologie de la ressource Observation pour définir l'aspect du cholestérol"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mesures-bundle-flux-alimentation"/>
       </reference>
       <name value="Bundle d'alimentation"/>
@@ -588,9 +577,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/mesures-observation-cholesterol-aspect"/>
+      </reference>
+      <name value="Cholestérol - aspect"/>
+      <description value="Profil biologie de la ressource Observation pour définir l'aspect du cholestérol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/mesures-observation-cholesterol-hdl"/>
       </reference>
-      <name value="Cholestérol HDL"/>
+      <name value="Cholestérol - HDL"/>
       <description value="Profil biologie de la ressource Observation pour définir le cholestérol HDL"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -601,7 +601,7 @@
       <reference>
         <reference value="StructureDefinition/mesures-observation-cholesterol-ldl"/>
       </reference>
-      <name value="Cholestérol LDL"/>
+      <name value="Cholestérol - LDL"/>
       <description value="Profil de la ressource Observation pour définir le cholestérol LDL"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -612,7 +612,7 @@
       <reference>
         <reference value="StructureDefinition/mesures-observation-cholesterol-ratio"/>
       </reference>
-      <name value="Cholestérol Ratio"/>
+      <name value="Cholestérol - Ratio LDL/HDL"/>
       <description value="Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -623,7 +623,7 @@
       <reference>
         <reference value="StructureDefinition/mesures-observation-cholesterol-total"/>
       </reference>
-      <name value="Cholestérol total"/>
+      <name value="Cholestérol - total"/>
       <description value="Profil de la ressource Observation pour définir le cholestérol total"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -634,7 +634,7 @@
       <reference>
         <reference value="StructureDefinition/mesures-observation-cholesterol-trigly"/>
       </reference>
-      <name value="Cholestérol triglycerides"/>
+      <name value="Cholestérol - triglycerides"/>
       <description value="Profil biologie de la ressource Observation pour définir le cholestérol triglycerides"/>
       <exampleBoolean value="false"/>
     </resource>
