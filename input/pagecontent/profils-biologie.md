@@ -11,7 +11,8 @@ Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlime
 
 ### Liste des profils
 
-<div class="figure" style="width:100%;">
+
+<div class="figure" style="width:100%; overflow:auto">
     <p>{% include bio-overview.svg %}</p>
 </div>
 
