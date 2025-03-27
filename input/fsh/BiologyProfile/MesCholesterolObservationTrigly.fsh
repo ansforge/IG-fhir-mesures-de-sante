@@ -2,7 +2,7 @@
 Profile: MesFrObservationCholesterolTrigly
 Parent: Observation
 Id: mesures-observation-cholesterol-trigly
-Title: "Cholestérol triglycerides"
+Title: "Cholestérol - triglycerides"
 Description: "Profil biologie de la ressource Observation pour définir le cholestérol triglycerides"
 
 * dataAbsentReason.coding.system 1..

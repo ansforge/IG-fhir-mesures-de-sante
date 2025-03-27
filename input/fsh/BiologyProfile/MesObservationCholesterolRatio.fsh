@@ -2,7 +2,7 @@
 Profile: MesFrObservationCholesterolRatio
 Parent: Observation
 Id: mesures-observation-cholesterol-ratio
-Title: "Cholestérol Ratio"
+Title: "Cholestérol - Ratio LDL/HDL"
 Description: "Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL"
 
 

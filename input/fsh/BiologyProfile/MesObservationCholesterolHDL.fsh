@@ -2,7 +2,7 @@
 Profile: MesFrObservationCholesterolHDL
 Parent: Observation
 Id: mesures-observation-cholesterol-hdl
-Title: "Cholestérol HDL"
+Title: "Cholestérol - HDL"
 Description: "Profil biologie de la ressource Observation pour définir le cholestérol HDL"
 
 
