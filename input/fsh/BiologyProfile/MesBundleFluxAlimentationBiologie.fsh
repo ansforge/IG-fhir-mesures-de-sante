@@ -2,7 +2,7 @@ Profile: MesBundleFluxAlimentationBiologie
 Parent: Bundle
 Id: mesures-bundle-flux-alimentation-biologie
 Title: "Bundle d'alimentation des mesures de biologie"
-Description: "Profil de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre"
+Description: "Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre"
 
 * type = #transaction
 

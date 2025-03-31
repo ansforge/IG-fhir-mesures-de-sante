@@ -29,7 +29,7 @@ Pour les opérations sur les ressources, l’API REST définie par le standard H
 
 Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
 
-### Liste des profils 
+### Liste des profils
 
 Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.
   
@@ -62,7 +62,7 @@ Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
   
 ### Contexte métier
 
-Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS (Agence du Numérique en Santé).
+Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS (Agence du Numérique en Santé) et sur les recommandations de la SFIL (Société Française d'Informatique de Laboratoire).
   
 ### Standards utilisés
 
