@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-03-31T07:48:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-31T11:47:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1521,7 +1521,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-moment-of-measurement" ]
        ] ;
        fhir:name [ fhir:v "Moment de la mesure" ] ;
-       fhir:description [ fhir:v "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code." ] ;
+       fhir:description [ fhir:v "Extension pour indiquer le moment de la mesure" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
