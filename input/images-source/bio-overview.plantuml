@@ -22,14 +22,14 @@ url of cr [[StructureDefinition-mesures-observation-cholesterol-ratio.html]]
 url of ca [[StructureDefinition-mesures-observation-cholesterol-aspect.html]]
 url of gly [[StructureDefinition-mesures-observation-glucose.html]]
 
-dr --> ct : result 1..1
-dr --> chdl : result 1..1
-dr --> trigly : result 1..1
-dr --> cldl : result 1..1
+dr --> ct : result 0..1
+dr --> chdl : result 0..1
+dr --> trigly : result 0..1
+dr --> cldl : result 0..1
 
-dr --> cr : result 1..1
-dr --> ca : result 1..1
-dr --> gly : result 1..1
+dr --> cr : result 0..1
+dr --> ca : result 0..1
+dr --> gly : result 0..1
 
 
 @enduml

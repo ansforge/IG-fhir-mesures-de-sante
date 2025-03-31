@@ -3,7 +3,7 @@ Profile: MesFrObservationCholesterolLDL
 Parent: Observation
 Id: mesures-observation-cholesterol-ldl
 Title: "Cholestérol - LDL"
-Description: "Profil de la ressource Observation pour définir le cholestérol LDL"
+Description: "Profil biologie de la ressource Observation pour définir le cholestérol LDL"
 
 
 * dataAbsentReason.coding.system 1..

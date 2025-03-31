@@ -3,7 +3,7 @@ Profile: MesFrObservationCholesterolTotal
 Parent: Observation
 Id: mesures-observation-cholesterol-total
 Title: "Cholestérol - total"
-Description: "Profil de la ressource Observation pour définir le cholestérol total"
+Description: "Profil biologie de la ressource Observation pour définir le cholestérol total"
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

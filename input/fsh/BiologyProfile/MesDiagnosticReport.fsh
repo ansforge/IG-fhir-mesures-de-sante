@@ -6,14 +6,14 @@ Title: "DiagnosticReport mesures biologie"
 Description: "Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie"
 
 
-* code = http://loinc.org#57698-3 "Lipid panel with direct LDL - Serum or Plasma"
+// * code = http://loinc.org#57698-3 "Lipid panel with direct LDL - Serum or Plasma"
 
 
 * result ^slicing.discriminator.type = #profile
 * result ^slicing.discriminator.path = "resolve()"
 * result ^slicing.rules = #open
 
-* result contains ldl-cholesterol 1..1 MS and hdl-cholesterol 1..1 MS and total-cholesterol 1..1 MS and trigly-cholesterol 1..1 MS and cholesterol-ratio 0..1 MS and cholesterol-aspect 0..1 MS and glycemie 0..1 MS
+* result contains ldl-cholesterol 0..1 MS and hdl-cholesterol 0..1 MS and total-cholesterol 0..1 MS and trigly-cholesterol 0..1 MS and cholesterol-ratio 0..1 MS and cholesterol-aspect 0..1 MS and glycemie 0..1 MS
 
 * result[ldl-cholesterol] only Reference(mesures-observation-cholesterol-ldl)
 * result[hdl-cholesterol] only Reference(mesures-observation-cholesterol-hdl)
