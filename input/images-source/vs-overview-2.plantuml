@@ -7,12 +7,20 @@ skinparam shadowing false
 skinparam packageBackgroundColor LightBlue
 skinparam packageBorderColor DarkBlue
 
+[HL7 FHIR VitalSigns] 
+
 package "Profils Mesures Santé de l'ANS héritant de VitalSigns" as PMSB #26474E {
-    [HL7 FHIR VitalSigns] --> [MesObservationPainSeverity]
-    [HL7 FHIR VitalSigns] --> [MesObservationWaistCircumference]
-    [HL7 FHIR VitalSigns] --> [MesObservationStepsByDay]
-    [HL7 FHIR VitalSigns] --> [MesObservationGlucose]
-    [HL7 FHIR VitalSigns] --> [MesObservationHeadCircumference]
+    [MesObservationPainSeverity]
+    [MesObservationWaistCircumference]
+    [MesObservationStepsByDay]
+    [MesObservationGlucose]
+    [MesObservationHeadCircumference]
 }
+
+[HL7 FHIR VitalSigns] --> [MesObservationPainSeverity]
+[HL7 FHIR VitalSigns] --> [MesObservationWaistCircumference]
+[HL7 FHIR VitalSigns] --> [MesObservationStepsByDay]
+[HL7 FHIR VitalSigns] --> [MesObservationGlucose]
+[HL7 FHIR VitalSigns] --> [MesObservationHeadCircumference]
 
 @enduml
