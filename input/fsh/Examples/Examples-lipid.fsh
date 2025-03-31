@@ -61,6 +61,7 @@ Usage: #example
 Instance: cholesterol-dr
 InstanceOf: MesDiagnosticReport
 Usage: #example
+* code = http://loinc.org#57698-3
 * status = #final
 * result[total-cholesterol] = Reference(cholesterol-total-example)
 * result[hdl-cholesterol] = Reference(cholesterol-hdl-example)
