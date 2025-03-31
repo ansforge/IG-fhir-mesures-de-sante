@@ -29,11 +29,18 @@ Pour les opérations sur les ressources, l’API REST définie par le standard H
 
 Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
 
-### Liste des profils définis
+### Liste des profils 
+
+Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.
+  
+Pour chaque ressource, le lien vers la spécification technique InteropSanté est indiqué.
+Cette liste pourra être complétée par d’autres mesures jugées pertinentes.  
+
+#### Liste des signes vitaux
 
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
 {% sql {
-    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like '%Profil%' ",
+    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description not like '%Profil biologie%' ",
     "class" : "lines",
     "columns" : [
         { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
@@ -41,10 +48,17 @@ Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
     ]
 } %}
 
-Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.
-  
-Pour chaque ressource, le lien vers la spécification technique InteropSanté est indiqué.
-Cette liste pourra être complétée par d’autres mesures jugées pertinentes.  
+#### Liste des données biologiques
+
+<!-- like "%Profil%" rajouté car induit une erreur si vide -->
+{% sql {
+    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like '%Profil biologie%' ",
+    "class" : "lines",
+    "columns" : [
+        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "title" : "Description", "type" : "markdown", "source" : "Description"}
+    ]
+} %}
   
 ### Contexte métier
 
