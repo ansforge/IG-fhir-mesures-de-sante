@@ -21,12 +21,12 @@ Le schema ci-dessous illustre la hiérarchie des profils des mesures de santé M
 </style>
 
 
-<div class="figure" style="width:100%; overflow:auto">
+<div class="figure" style="width:100%; overflow:auto; max-height: 50vh;">
     {% include vs-overview.svg %}
 </div>
 
 ### Profils héritant de HL7 FHIR
 
-<div class="figure" style="width:100%; overflow:auto">
+<div class="figure" style="width:100%; overflow:auto; max-height: 50vh;">
    {% include vs-overview-2.svg %}
 </div>
