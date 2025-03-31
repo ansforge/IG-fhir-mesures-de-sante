@@ -256,9 +256,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#liste-des-profils" id="markdown-toc-liste-des-profils">Liste des profils</a></li>
-  <li><a href="#contexte-métier" id="markdown-toc-contexte-métier">Contexte métier</a></li>
-  <li><a href="#standards-utilisés" id="markdown-toc-standards-utilisés">Standards utilisés</a></li>
   <li><a href="#problématique-connue" id="markdown-toc-problématique-connue">Problématique connue</a></li>
+  <li><a href="#contributeurs" id="markdown-toc-contributeurs">Contributeurs</a></li>
   <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
   <li><a href="#propriété-intellectuelle" id="markdown-toc-propriété-intellectuelle">Propriété intellectuelle</a></li>
 </ul>
@@ -348,18 +347,6 @@ Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestio
 <p>L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.</p>
 </div></td></tr></table>
 
-<h3 id="contexte-métier">Contexte métier</h3>
-
-<p>Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS (Agence du Numérique en Santé) et sur les recommandations de la SFIL (Société Française d’Informatique de Laboratoire).</p>
-
-<h3 id="standards-utilisés">Standards utilisés</h3>
-
-<p>FHIR (Fast Healthcare Interoperability Resources) est un standard élaboré par HL7 qui décrit un ensemble de formats de données et d’éléments, appelés ressources, ainsi qu’une API (Application Programming Interface) pour l’échange des informations de santé.</p>
-
-<p>HL7 (Health Level Seven) est un organisme à but non lucratif accrédité par l’ANSI (American National Standards Institute) et impliqué dans le développement de standards d’interopérabilité internationaux pour l’informatique de santé. Il regroupe des experts de l’informatique de santé qui collaborent pour créer un cadre et des standards connexes pour l’échange, l’intégration, le partage et l’accès à des données de santé, visant à promouvoir l’utilisation de ces standards entre les organisations de santé et au sein d’une même organisation.</p>
-
-<p>Ces spécifications techniques se basent sur le standard HL7 FHIR R4 (4.0.1), faisant référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basée sur le protocole HTTP. La syntaxe retenue pour les échanges est la syntaxe JSON.</p>
-
 <h3 id="problématique-connue">Problématique connue</h3>
 
 <p>Un certain nombre de problématiques connues ont été identifiées. Si vous souhaitez réagir par rapport à ces problématiques connues, merci de commenter dans une <a href="https://github.com/ansforge/IG-fhir-mesures-de-sante">issue GitHub</a>.</p>
@@ -372,6 +359,10 @@ Pour l’heure, les données usager sont considérées comme pouvant être inter
 <p>3/ Il y a une incohérence entre l’unité de la glycémie qui est actuellement en “g/L” et les unités du cholestérol actuellement en “mmol/L”, faut-il faire la modification pour uniformiser et respecter l’unité du système international, c’est à dire en “mmol/L”?</p>
 
 <p>En cas de besoins allant dans ce sens, merci de le spécifier dans une <a href="https://github.com/ansforge/IG-fhir-mesures-de-sante">issue GitHub</a>.</p>
+
+<h3 id="contributeurs">Contributeurs</h3>
+
+<p>Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées par l’ANS (Agence du Numérique en Santé) à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS et sur les recommandations de la SFIL (Société Française d’Informatique de Laboratoire).</p>
 
 <h3 id="dépendances">Dépendances</h3>
 
@@ -482,7 +473,7 @@ Pour l’heure, les données usager sont considérées comme pouvant être inter
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 31, 2025 07:45+0000">2025-03-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 31, 2025 07:49+0000">2025-03-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
