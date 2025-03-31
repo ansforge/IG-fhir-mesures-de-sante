@@ -11,6 +11,14 @@ Le schema ci-dessous illustre la hiérarchie des profils des mesures de santé M
     <img style="height: auto; width: 100%;" src="schemaProfilsMES.png" alt="SchemaProfilsMES" title="SchemaProfilsMES">
 </div> -->
 
+### Profils héritant de FrCore
+
 <div class="figure" style="width:100%; overflow:auto">
-    <p>{% include bio-overview.svg %}</p>
+    <p>{% include vs-overview.svg %}</p>
+</div>
+
+### Profils héritant de HL7 FHIR
+
+<div class="figure" style="width:100%; overflow:auto">
+    <p>{% include vs-overview-2.svg %}</p>
 </div>

@@ -1,0 +1,18 @@
+@startuml
+
+skinparam linetype ortho
+skinparam dpi 150
+skinparam boxPadding 10
+skinparam shadowing false
+skinparam packageBackgroundColor LightBlue
+skinparam packageBorderColor DarkBlue
+
+package "Profils Mesures Santé de l'ANS héritant de VitalSigns" as PMSB #26474E {
+    [HL7 FHIR VitalSigns] --> [MesObservationPainSeverity]
+    [HL7 FHIR VitalSigns] --> [MesObservationWaistCircumference]
+    [HL7 FHIR VitalSigns] --> [MesObservationStepsByDay]
+    [HL7 FHIR VitalSigns] --> [MesObservationGlucose]
+    [HL7 FHIR VitalSigns] --> [MesObservationHeadCircumference]
+}
+
+@enduml
