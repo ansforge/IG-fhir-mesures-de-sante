@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2025-03-31T11:46:38+00:00",
+  "date" : "2025-03-31T14:05:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1238,10 +1238,19 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Les-profils-utilises-pour-les-mesures-de-sante.html"
+          "valueUrl" : "profils-signes-vitaux.html"
         }],
-        "nameUrl" : "Les-profils-utilises-pour-les-mesures-de-sante.html",
-        "title" : "Les profils utilisés pour les mesures de santé",
+        "nameUrl" : "profils-signes-vitaux.html",
+        "title" : "Les profils FHIR des signes vitaux",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "profils-biologie.html"
+        }],
+        "nameUrl" : "profils-biologie.html",
+        "title" : "Les profils FHIR des paramètres biologiques",
         "generation" : "markdown"
       },
       {
@@ -1251,15 +1260,6 @@
         }],
         "nameUrl" : "Le-profil-FHIR-des-objets-connectes.html",
         "title" : "Le profil FHIR des objets connectés",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "profils-biologie.html"
-        }],
-        "nameUrl" : "profils-biologie.html",
-        "title" : "Les profils biologie",
         "generation" : "markdown"
       },
       {

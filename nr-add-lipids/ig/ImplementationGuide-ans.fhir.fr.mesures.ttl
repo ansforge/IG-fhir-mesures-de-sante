@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-03-31T11:46:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-31T14:05:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1807,14 +1807,28 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:url ;
-             fhir:v "Les-profils-utilises-pour-les-mesures-de-sante.html"^^xsd:anyURI
+             fhir:v "profils-signes-vitaux.html"^^xsd:anyURI
            ]
          ] ) ;
          fhir:name [
            a fhir:url ;
-           fhir:v "Les-profils-utilises-pour-les-mesures-de-sante.html"^^xsd:anyURI
+           fhir:v "profils-signes-vitaux.html"^^xsd:anyURI
          ] ;
-         fhir:title [ fhir:v "Les profils utilisés pour les mesures de santé" ] ;
+         fhir:title [ fhir:v "Les profils FHIR des signes vitaux" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "profils-biologie.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "profils-biologie.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Les profils FHIR des paramètres biologiques" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -1829,20 +1843,6 @@
            fhir:v "Le-profil-FHIR-des-objets-connectes.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Le profil FHIR des objets connectés" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "profils-biologie.html"^^xsd:anyURI
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:url ;
-           fhir:v "profils-biologie.html"^^xsd:anyURI
-         ] ;
-         fhir:title [ fhir:v "Les profils biologie" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
