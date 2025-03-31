@@ -48,7 +48,7 @@ Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
     ]
 } %}
 
-#### Liste des données biologiques
+#### Liste des données de biologie
 
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
 {% sql {
