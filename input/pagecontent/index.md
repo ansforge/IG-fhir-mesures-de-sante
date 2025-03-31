@@ -40,7 +40,7 @@ Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
 
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
 {% sql {
-    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description not like '%Profil biologie%' ",
+    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description not like '%Profil biologie%' and Description like '%Profil%'",
     "class" : "lines",
     "columns" : [
         { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
