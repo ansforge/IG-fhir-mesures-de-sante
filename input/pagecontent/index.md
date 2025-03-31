@@ -36,7 +36,7 @@ Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observat
 Pour chaque ressource, le lien vers la spécification technique InteropSanté est indiqué.
 Cette liste pourra être complétée par d’autres mesures jugées pertinentes.  
 
-#### Liste des signes vitaux
+#### Liste des profils signes vitaux
 
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
 {% sql {
@@ -48,7 +48,7 @@ Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
     ]
 } %}
 
-#### Liste des données de biologie
+#### Liste des profils biologie
 
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
 {% sql {
