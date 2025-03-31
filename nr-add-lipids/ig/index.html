@@ -229,7 +229,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2025-03-27
+            as of 2025-03-31
           
         
       </td>
@@ -255,7 +255,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#liste-des-profils-définis" id="markdown-toc-liste-des-profils-définis">Liste des profils définis</a></li>
+  <li><a href="#liste-des-profils" id="markdown-toc-liste-des-profils">Liste des profils</a></li>
   <li><a href="#contexte-métier" id="markdown-toc-contexte-métier">Contexte métier</a></li>
   <li><a href="#standards-utilisés" id="markdown-toc-standards-utilisés">Standards utilisés</a></li>
   <li><a href="#problématique-connue" id="markdown-toc-problématique-connue">Problématique connue</a></li>
@@ -295,12 +295,17 @@ This implementation guide contains the profiles to share vital-signs for the Fre
 
 <p>Le lecteur doit être familier de ces concepts pour les mettre en œuvre.</p>
 
-<h3 id="liste-des-profils-définis">Liste des profils définis</h3>
+<h3 id="liste-des-profils">Liste des profils</h3>
+
+<p>Les profils FHIR pour les mesures de santé s’appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.</p>
+
+<p>Pour chaque ressource, le lien vers la spécification technique InteropSanté est indiqué.
+Cette liste pourra être complétée par d’autres mesures jugées pertinentes.</p>
+
+<h4 id="liste-des-signes-vitaux">Liste des signes vitaux</h4>
 
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
-<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-mesures-bundle-flux-alimentation-biologie.html">MesBundleFluxAlimentationBiologie</a></td><td><div><p>Profil de la ressource Bundle du flux d'alimentation des mesures de biologie à envoyer au serveur</p>
-</div></td></tr><tr><td><a href="StructureDefinition-mesures-bundle-flux-alimentation.html">MesBundleFluxAlimentation</a></td><td><div><p>Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur</p>
-</div></td></tr><tr><td><a href="StructureDefinition-mesures-diagnostic-report.html">MesDiagnosticReport</a></td><td><div><p>Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie</p>
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-mesures-bundle-flux-alimentation.html">MesBundleFluxAlimentation</a></td><td><div><p>Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur</p>
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-fr-observation-bmi.html">MesFrObservationBmi</a></td><td><div><p>Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI)</p>
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-fr-observation-body-temperature.html">MesFrObservationBodyTemperature</a></td><td><div><p>Profil de la ressource Observation pour définir une température</p>
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-fr-observation-body-weight.html">MesFrObservationBodyWeight</a></td><td><div><p>Profil de la ressource Observation pour définir un poids</p>
@@ -309,13 +314,29 @@ This implementation guide contains the profiles to share vital-signs for the Fre
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-fr-observation-heartrate.html">MesFrObservationHeartrate</a></td><td><div><p>Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR)</p>
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-fr-observation-oxygen-sat.html">MesFrObservationOxygenSat</a></td><td><div><p>Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)</p>
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-fr-observation-resp-rate.html">MesFrObservationRespiratoryRate</a></td><td><div><p>Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR)</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-moment-of-measurement.html">MesMomentOfMeasurement</a></td><td><div><p>Moment de la mesure.
+Peut être exprimé par un texte libre ou un code.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-number-of-days.html">MesNumberOfDays</a></td><td><div><p>Extension sur le Nombre de jours.
+Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-head-circumference.html">MesObservationHeadCircumference</a></td><td><div><p>Profil de la ressource Observation pour définir un Périmètre Crânien</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-pain-severity.html">MesObservationPainSeverity</a></td><td><div><p>Profil de la ressource Observation pour définir un niveau de douleur</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-steps-by-day.html">MesObservationStepsByDay</a></td><td><div><p>Profil de la ressource Observation pour définir un nombre de pas par jour</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-waist-circumference.html">MesObservationWaistCircumference</a></td><td><div><p>Profil de la ressource Observation pour définir une taille en cm</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-reason-for-measurement.html">MesReasonForMeasurement</a></td><td><div><p>Extension du Motif de la mesure, exprimé en texte libre.</p>
+</div></td></tr></table>
+
+<h4 id="liste-des-données-biologiques">Liste des données biologiques</h4>
+
+<!-- like "%Profil%" rajouté car induit une erreur si vide -->
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-mesures-bundle-flux-alimentation-biologie.html">MesBundleFluxAlimentationBiologie</a></td><td><div><p>Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-diagnostic-report.html">MesDiagnosticReport</a></td><td><div><p>Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie</p>
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-aspect.html">MesFrObservationCholesterolAspect</a></td><td><div><p>Profil biologie de la ressource Observation pour définir l'aspect du cholestérol</p>
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-hdl.html">MesFrObservationCholesterolHDL</a></td><td><div><p>Profil biologie de la ressource Observation pour définir le cholestérol HDL</p>
-</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-ldl.html">MesFrObservationCholesterolLDL</a></td><td><div><p>Profil de la ressource Observation pour définir le cholestérol LDL</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-ldl.html">MesFrObservationCholesterolLDL</a></td><td><div><p>Profil biologie de la ressource Observation pour définir le cholestérol LDL</p>
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-ratio.html">MesFrObservationCholesterolRatio</a></td><td><div><p>Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL</p>
-</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-total.html">MesFrObservationCholesterolTotal</a></td><td><div><p>Profil de la ressource Observation pour définir le cholestérol total</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-total.html">MesFrObservationCholesterolTotal</a></td><td><div><p>Profil biologie de la ressource Observation pour définir le cholestérol total</p>
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-trigly.html">MesFrObservationCholesterolTrigly</a></td><td><div><p>Profil biologie de la ressource Observation pour définir le cholestérol triglycerides</p>
-</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-glucose.html">MesObservationGlucose</a></td><td><div><p>Profil de la ressource Observation pour définir une Glycémie</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-glucose.html">MesObservationGlucose</a></td><td><div><p>Profil biologie de la ressource Observation pour définir une Glycémie</p>
 <p>Ce profil permet de gérer 4 types d'indicateurs de glycémie:</p>
 <ul>
 <li>le taux de glucose sanguin, mesuré en mg/dl</li>
@@ -325,20 +346,11 @@ This implementation guide contains the profiles to share vital-signs for the Fre
 </ul>
 <p>L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .</p>
 <p>L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-head-circumference.html">MesObservationHeadCircumference</a></td><td><div><p>Profil de la ressource Observation pour définir un Périmètre Crânien</p>
-</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-pain-severity.html">MesObservationPainSeverity</a></td><td><div><p>Profil de la ressource Observation pour définir un niveau de douleur</p>
-</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-steps-by-day.html">MesObservationStepsByDay</a></td><td><div><p>Profil de la ressource Observation pour définir un nombre de pas par jour</p>
-</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-waist-circumference.html">MesObservationWaistCircumference</a></td><td><div><p>Profil de la ressource Observation pour définir une taille en cm</p>
 </div></td></tr></table>
-
-<p>Les profils FHIR pour les mesures de santé s’appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.</p>
-
-<p>Pour chaque ressource, le lien vers la spécification technique InteropSanté est indiqué.
-Cette liste pourra être complétée par d’autres mesures jugées pertinentes.</p>
 
 <h3 id="contexte-métier">Contexte métier</h3>
 
-<p>Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS (Agence du Numérique en Santé).</p>
+<p>Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS (Agence du Numérique en Santé) et sur les recommandations de la SFIL (Société Française d’Informatique de Laboratoire).</p>
 
 <h3 id="standards-utilisés">Standards utilisés</h3>
 
@@ -412,7 +424,7 @@ Pour l’heure, les données usager sont considérées comme pouvant être inter
 </div></li>
 <li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div id="ipp_3" onclick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
 <ul>
-<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="Bundle-bundle-example-body-weight.html">Bundle/bundle-example-body-weight</a>, <a href="Bundle-bundle-example-lipids.html">Bundle/bundle-example-lipids</a><span id="ips_3" onclick="document.getElementById('ips_3').innerHTML = document.getElementById('ips2_3').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 28 more</span></span><span id="ips2_3" style="display: none">, <a href="DiagnosticReport-cholesterol-dr.html">DiagnosticReport/cholesterol-dr</a>, <a href="StructureDefinition-mesures-diagnostic-report.html">MesDiagnosticReport</a>, <a href="StructureDefinition-mesures-observation-cholesterol-aspect.html">MesFrObservationCholesterolAspect</a>, <a href="StructureDefinition-mesures-observation-cholesterol-hdl.html">MesFrObservationCholesterolHDL</a>, <a href="StructureDefinition-mesures-observation-cholesterol-ldl.html">MesFrObservationCholesterolLDL</a>, <a href="StructureDefinition-mesures-observation-cholesterol-ratio.html">MesFrObservationCholesterolRatio</a>, <a href="StructureDefinition-mesures-observation-cholesterol-total.html">MesFrObservationCholesterolTotal</a>, <a href="StructureDefinition-mesures-observation-cholesterol-trigly.html">MesFrObservationCholesterolTrigly</a>, <a href="StructureDefinition-mesures-observation-head-circumference.html">MesObservationHeadCircumference</a>, <a href="StructureDefinition-mesures-observation-pain-severity.html">MesObservationPainSeverity</a>, <a href="StructureDefinition-mesures-observation-steps-by-day.html">MesObservationStepsByDay</a>, <a href="StructureDefinition-mesures-observation-waist-circumference.html">MesObservationWaistCircumference</a>, <a href="Observation-ExampleMesFrObservationBP001.html">Observation/ExampleMesFrObservationBP001</a>, <a href="Observation-ExampleMesFrObservationBmi001.html">Observation/ExampleMesFrObservationBmi001</a>, <a href="Observation-ExampleMesFrObservationBodyHeight001.html">Observation/ExampleMesFrObservationBodyHeight001</a>, <a href="Observation-ExampleMesFrObservationBodyTemperature001.html">Observation/ExampleMesFrObservationBodyTemperature001</a>, <a href="Observation-ExampleMesFrObservationBodyWeight001.html">Observation/ExampleMesFrObservationBodyWeight001</a>, <a href="Observation-ExampleMesFrObservationHeartrate001.html">Observation/ExampleMesFrObservationHeartrate001</a>, <a href="Observation-ExampleMesFrOxygenSat.html">Observation/ExampleMesFrOxygenSat</a>, <a href="Observation-ExampleMesFrRespRate.html">Observation/ExampleMesFrRespRate</a>, <a href="Observation-ExampleMesObservationHeadCircumference001.html">Observation/ExampleMesObservationHeadCircumference001</a>, <a href="Observation-ExampleMesObservationPainSeverity001.html">Observation/ExampleMesObservationPainSeverity001</a>, <a href="Observation-ExampleMesObservationStepsByDay001.html">Observation/ExampleMesObservationStepsByDay001</a>, <a href="Observation-ExampleObservationWaistCircumference001.html">Observation/ExampleObservationWaistCircumference001</a>, <a href="Observation-cholesterol-hdl-example.html">Observation/cholesterol-hdl-example</a>, <a href="Observation-cholesterol-ldl-example.html">Observation/cholesterol-ldl-example</a>, <a href="Observation-cholesterol-total-example.html">Observation/cholesterol-total-example</a> and <a href="Observation-cholesterol-trigly-example.html">Observation/cholesterol-trigly-example</a></span></li>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="Bundle-bundle-example-body-weight.html">Bundle/bundle-example-body-weight</a>, <a href="Bundle-bundle-example-lipids.html">Bundle/bundle-example-lipids</a><span id="ips_3" onclick="document.getElementById('ips_3').innerHTML = document.getElementById('ips2_3').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 27 more</span></span><span id="ips2_3" style="display: none">, <a href="DiagnosticReport-cholesterol-dr.html">DiagnosticReport/cholesterol-dr</a>, <a href="StructureDefinition-mesures-observation-cholesterol-aspect.html">MesFrObservationCholesterolAspect</a>, <a href="StructureDefinition-mesures-observation-cholesterol-hdl.html">MesFrObservationCholesterolHDL</a>, <a href="StructureDefinition-mesures-observation-cholesterol-ldl.html">MesFrObservationCholesterolLDL</a>, <a href="StructureDefinition-mesures-observation-cholesterol-ratio.html">MesFrObservationCholesterolRatio</a>, <a href="StructureDefinition-mesures-observation-cholesterol-total.html">MesFrObservationCholesterolTotal</a>, <a href="StructureDefinition-mesures-observation-cholesterol-trigly.html">MesFrObservationCholesterolTrigly</a>, <a href="StructureDefinition-mesures-observation-head-circumference.html">MesObservationHeadCircumference</a>, <a href="StructureDefinition-mesures-observation-pain-severity.html">MesObservationPainSeverity</a>, <a href="StructureDefinition-mesures-observation-steps-by-day.html">MesObservationStepsByDay</a>, <a href="StructureDefinition-mesures-observation-waist-circumference.html">MesObservationWaistCircumference</a>, <a href="Observation-ExampleMesFrObservationBP001.html">Observation/ExampleMesFrObservationBP001</a>, <a href="Observation-ExampleMesFrObservationBmi001.html">Observation/ExampleMesFrObservationBmi001</a>, <a href="Observation-ExampleMesFrObservationBodyHeight001.html">Observation/ExampleMesFrObservationBodyHeight001</a>, <a href="Observation-ExampleMesFrObservationBodyTemperature001.html">Observation/ExampleMesFrObservationBodyTemperature001</a>, <a href="Observation-ExampleMesFrObservationBodyWeight001.html">Observation/ExampleMesFrObservationBodyWeight001</a>, <a href="Observation-ExampleMesFrObservationHeartrate001.html">Observation/ExampleMesFrObservationHeartrate001</a>, <a href="Observation-ExampleMesFrOxygenSat.html">Observation/ExampleMesFrOxygenSat</a>, <a href="Observation-ExampleMesFrRespRate.html">Observation/ExampleMesFrRespRate</a>, <a href="Observation-ExampleMesObservationHeadCircumference001.html">Observation/ExampleMesObservationHeadCircumference001</a>, <a href="Observation-ExampleMesObservationPainSeverity001.html">Observation/ExampleMesObservationPainSeverity001</a>, <a href="Observation-ExampleMesObservationStepsByDay001.html">Observation/ExampleMesObservationStepsByDay001</a>, <a href="Observation-ExampleObservationWaistCircumference001.html">Observation/ExampleObservationWaistCircumference001</a>, <a href="Observation-cholesterol-hdl-example.html">Observation/cholesterol-hdl-example</a>, <a href="Observation-cholesterol-ldl-example.html">Observation/cholesterol-ldl-example</a>, <a href="Observation-cholesterol-total-example.html">Observation/cholesterol-total-example</a> and <a href="Observation-cholesterol-trigly-example.html">Observation/cholesterol-trigly-example</a></span></li>
 </ul>
 </div></li>
 <li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div id="ipp_4" onclick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_4" style="display: none">
@@ -470,7 +482,7 @@ Pour l’heure, les données usager sont considérées comme pouvant être inter
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 27, 2025 15:48+0000">2025-03-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 31, 2025 07:45+0000">2025-03-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

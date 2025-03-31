@@ -61,7 +61,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mesures-bundle-flux-alimentation-biologie","Bundle.link.url","Bundle.link.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","Reference details for the link","The reference details for the link.","","","","","","","","","",,,,,"",,,,"Bundle.link.url",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mesures-bundle-flux-alimentation-biologie","Bundle.entry","Bundle.entry","","","",5,*,"","","Y","BackboneElement {[]} {[]}
+"mesures-bundle-flux-alimentation-biologie","Bundle.entry","Bundle.entry","","","",1,*,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"","profile:resource}
 ","Slice based on the request.url pattern",,"open","Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
@@ -179,7 +179,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-ldl","Bundle.entry","mes-observation-ldl","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-ldl","Bundle.entry","mes-observation-ldl","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-ldl.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -297,7 +297,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-hdl","Bundle.entry","mes-observation-hdl","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-hdl","Bundle.entry","mes-observation-hdl","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-hdl.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -415,7 +415,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-trigly","Bundle.entry","mes-observation-trigly","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-trigly","Bundle.entry","mes-observation-trigly","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-trigly.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -533,7 +533,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-total","Bundle.entry","mes-observation-total","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-total","Bundle.entry","mes-observation-total","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "mesures-bundle-flux-alimentation-biologie","Bundle.entry:mes-observation-total.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -1595,13 +1595,7 @@ Sub-departmentServiceDiscipline","",0,*,"","","Y","CodeableConcept {[]} {[]}
 "
 "mesures-diagnostic-report","DiagnosticReport.code","DiagnosticReport.code","","Type
 ","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Name/Code for this diagnostic report","A code or name that describes this diagnostic report.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""57698-3""/>
-    <display value=""Lipid panel with direct LDL - Serum or Plasma""/>
-  </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes that describe Diagnostic Reports.","http://hl7.org/fhir/ValueSet/report-codes","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Name/Code for this diagnostic report","A code or name that describes this diagnostic report.","","","","","","","","","",,"preferred","Codes that describe Diagnostic Reports.","http://hl7.org/fhir/ValueSet/report-codes","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-diagnostic-report","DiagnosticReport.subject","DiagnosticReport.subject","","Patient
 ","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
@@ -1631,24 +1625,24 @@ Reported by","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhi
 ","Specimens this report is based on","Details about the specimens on which this diagnostic report is based.","If the specimen is sufficiently specified with a code in the test result name, then this additional data may be redundant. If there are multiple specimens, these may be represented per observation or group.","Need to be able to report information about the collected specimens on which the report is based.","","","","","","","",,,,,"",,,,"DiagnosticReport.specimen",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-diagnostic-report","DiagnosticReport.result","DiagnosticReport.result","","Data
-Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",4,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
 ","Observations","[Observations](http://hl7.org/fhir/R4/observation.html)  that are part of this diagnostic report.","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"","profile:resolve()}
 ","",,"open","DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-diagnostic-report","DiagnosticReport.result:ldl-cholesterol","DiagnosticReport.result","ldl-cholesterol","Data
-Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl]]}
+Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl]]}
 ","Observations","[Observations](http://hl7.org/fhir/R4/observation.html)  that are part of this diagnostic report.","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-diagnostic-report","DiagnosticReport.result:hdl-cholesterol","DiagnosticReport.result","hdl-cholesterol","Data
-Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl]]}
+Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl]]}
 ","Observations","[Observations](http://hl7.org/fhir/R4/observation.html)  that are part of this diagnostic report.","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-diagnostic-report","DiagnosticReport.result:total-cholesterol","DiagnosticReport.result","total-cholesterol","Data
-Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total]]}
+Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total]]}
 ","Observations","[Observations](http://hl7.org/fhir/R4/observation.html)  that are part of this diagnostic report.","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-diagnostic-report","DiagnosticReport.result:trigly-cholesterol","DiagnosticReport.result","trigly-cholesterol","Data
-Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
 ","Observations","[Observations](http://hl7.org/fhir/R4/observation.html)  that are part of this diagnostic report.","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mesures-diagnostic-report","DiagnosticReport.result:cholesterol-ratio","DiagnosticReport.result","cholesterol-ratio","Data

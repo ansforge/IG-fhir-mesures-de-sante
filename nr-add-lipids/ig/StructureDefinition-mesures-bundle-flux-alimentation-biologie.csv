@@ -61,7 +61,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.link.url","Bundle.link.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","Reference details for the link","The reference details for the link.","","","","","","","","","",,,,,"",,,,"Bundle.link.url",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry","Bundle.entry","","","",5,*,"","","Y","BackboneElement {[]} {[]}
+"Bundle.entry","Bundle.entry","","","",1,*,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"","profile:resource}
 ","Slice based on the request.url pattern",,"open","Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
@@ -179,7 +179,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"Bundle.entry:mes-observation-ldl","Bundle.entry","mes-observation-ldl","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"Bundle.entry:mes-observation-ldl","Bundle.entry","mes-observation-ldl","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "Bundle.entry:mes-observation-ldl.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -297,7 +297,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"Bundle.entry:mes-observation-hdl","Bundle.entry","mes-observation-hdl","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"Bundle.entry:mes-observation-hdl","Bundle.entry","mes-observation-hdl","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "Bundle.entry:mes-observation-hdl.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -415,7 +415,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"Bundle.entry:mes-observation-trigly","Bundle.entry","mes-observation-trigly","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"Bundle.entry:mes-observation-trigly","Bundle.entry","mes-observation-trigly","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "Bundle.entry:mes-observation-trigly.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -533,7 +533,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"Bundle.entry:mes-observation-total","Bundle.entry","mes-observation-total","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"Bundle.entry:mes-observation-total","Bundle.entry","mes-observation-total","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "Bundle.entry:mes-observation-total.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}

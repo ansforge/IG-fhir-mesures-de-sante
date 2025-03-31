@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2025-03-27T15:47:29+00:00",
+  "date" : "2025-03-31T07:44:46+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -665,7 +665,7 @@
         "reference" : "StructureDefinition/mesures-bundle-flux-alimentation-biologie"
       },
       "name" : "Bundle d'alimentation des mesures de biologie",
-      "description" : "Profil de la ressource Bundle du flux d'alimentation des mesures de biologie à envoyer au serveur",
+      "description" : "Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre",
       "exampleBoolean" : false
     },
     {
@@ -778,7 +778,7 @@
         "reference" : "StructureDefinition/mesures-observation-cholesterol-ldl"
       },
       "name" : "Cholestérol - LDL",
-      "description" : "Profil de la ressource Observation pour définir le cholestérol LDL",
+      "description" : "Profil biologie de la ressource Observation pour définir le cholestérol LDL",
       "exampleBoolean" : false
     },
     {
@@ -802,7 +802,7 @@
         "reference" : "StructureDefinition/mesures-observation-cholesterol-total"
       },
       "name" : "Cholestérol - total",
-      "description" : "Profil de la ressource Observation pour définir le cholestérol total",
+      "description" : "Profil biologie de la ressource Observation pour définir le cholestérol total",
       "exampleBoolean" : false
     },
     {
@@ -1027,7 +1027,7 @@
         "reference" : "StructureDefinition/mesures-observation-glucose"
       },
       "name" : "Glycémie",
-      "description" : "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+      "description" : "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
       "exampleBoolean" : false
     },
     {

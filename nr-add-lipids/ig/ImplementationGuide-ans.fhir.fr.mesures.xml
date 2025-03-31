@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2025-03-27T15:47:29+00:00"/>
+  <date value="2025-03-31T07:44:46+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -499,7 +499,7 @@
         <reference value="StructureDefinition/mesures-bundle-flux-alimentation-biologie"/>
       </reference>
       <name value="Bundle d'alimentation des mesures de biologie"/>
-      <description value="Profil de la ressource Bundle du flux d'alimentation des mesures de biologie à envoyer au serveur"/>
+      <description value="Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -602,7 +602,7 @@
         <reference value="StructureDefinition/mesures-observation-cholesterol-ldl"/>
       </reference>
       <name value="Cholestérol - LDL"/>
-      <description value="Profil de la ressource Observation pour définir le cholestérol LDL"/>
+      <description value="Profil biologie de la ressource Observation pour définir le cholestérol LDL"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -624,7 +624,7 @@
         <reference value="StructureDefinition/mesures-observation-cholesterol-total"/>
       </reference>
       <name value="Cholestérol - total"/>
-      <description value="Profil de la ressource Observation pour définir le cholestérol total"/>
+      <description value="Profil biologie de la ressource Observation pour définir le cholestérol total"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -829,7 +829,7 @@
         <reference value="StructureDefinition/mesures-observation-glucose"/>
       </reference>
       <name value="Glycémie"/>
-      <description value="Profil de la ressource Observation pour définir une Glycémie&#xA;&#xA;Ce profil permet de gérer 4 types d'indicateurs de glycémie:&#xA;- le taux de glucose sanguin, mesuré en mg/dl&#xA;- le taux de glucose interstitiel, mesuré en mg/dl&#xA;- l’hémoglobine glyquée (Hb1Ac) mesurée en %&#xA;- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %&#xA;&#xA;L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .&#xA;&#xA;L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."/>
+      <description value="Profil biologie de la ressource Observation pour définir une Glycémie&#xA;&#xA;Ce profil permet de gérer 4 types d'indicateurs de glycémie:&#xA;- le taux de glucose sanguin, mesuré en mg/dl&#xA;- le taux de glucose interstitiel, mesuré en mg/dl&#xA;- l’hémoglobine glyquée (Hb1Ac) mesurée en %&#xA;- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %&#xA;&#xA;L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .&#xA;&#xA;L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
