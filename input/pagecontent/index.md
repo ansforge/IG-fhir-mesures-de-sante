@@ -60,9 +60,6 @@ Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
     ]
 } %}
   
-### Contexte métier
-
-Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS (Agence du Numérique en Santé) et sur les recommandations de la SFIL (Société Française d'Informatique de Laboratoire).
   
 ### Standards utilisés
 
@@ -84,6 +81,10 @@ Pour l'heure, les données usager sont considérées comme pouvant être interpr
 3/ Il y a une incohérence entre l'unité de la glycémie qui est actuellement en "g/L" et les unités du cholestérol actuellement en "mmol/L", faut-il faire la modification pour uniformiser et respecter l'unité du système international, c'est à dire en "mmol/L"?
 
 En cas de besoins allant dans ce sens, merci de le spécifier dans une [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
+
+### Contributeurs
+
+Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées par l'ANS (Agence du Numérique en Santé) à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS et sur les recommandations de la SFIL (Société Française d'Informatique de Laboratoire).
 
 ### Dépendances
 
