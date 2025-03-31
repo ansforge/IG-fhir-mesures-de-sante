@@ -1,58 +1,58 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>Les profils FHIR des signes vitaux - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3"}
     h3,h4,h5,h6{--heading-prefix:"3"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
   </div>
-  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
-    <a no-external="true" id="hl7-logo" href="https://esante.gouv.fr/"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
-    <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
 
   <div id="ig-search">
@@ -60,39 +60,39 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guide d'implémentation FHIR - Mesures de santé</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FHIR - Mesures de santé</span>
             <br/>
             <span style="display:inline-block;">3.1.0 - ci-build
 
 
 
-  <img src="assets/images/fra.svg" alt="France flag" title="France" height="16"/>
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Accueil</a>
   </li>
@@ -102,7 +102,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Le-flux-d-alimentation-des-mesures.html">Flux d'alimentation des mesures</a>
+        <a href="Le-flux-d-alimentation-des-mesures.html">Flux d&apos;alimentation des mesures</a>
       </li>
       <li>
         <a href="profils-signes-vitaux.html">Les profils FHIR des signes vitaux</a>
@@ -146,29 +146,29 @@
         <a href="downloads.html">Téléchargements et usages</a>
       </li>
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
       </li>
       <li>
-        <a href="https://esante.gouv.fr" target="_blank">Site de l'ANS </a>
+        <a target="_blank" href="https://esante.gouv.fr">Site de l&apos;ANS </a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Les profils FHIR des signes vitaux</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Les profils FHIR des signes vitaux</b></li>
 
           <span style="float:right;">
 
@@ -181,12 +181,12 @@
           </span>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -198,7 +198,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Les profils FHIR des signes vitaux</h2>
   
 
@@ -213,9 +213,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#profils-héritant-de-frcore" id="markdown-toc-profils-héritant-de-frcore">Profils héritant de FrCore</a></li>
+  <li><a href="#profils-héritant-de-hl7-fhir" id="markdown-toc-profils-héritant-de-hl7-fhir">Profils héritant de HL7 FHIR</a></li>
+</ul>
+
 </div>
 
 <p>Les profils spécifiques (préfixés “Mes”) spécifiés pour les mesures de santé sont basés sur la ressource FHIR standard “Observation”.</p>
@@ -226,35 +230,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Le schema ci-dessous illustre la hiérarchie des profils des mesures de santé MES :</p>
 
-  <!-- <div class="figure" style="width:100%;">
+<!-- <div class="figure" style="width:100%;">
     <img style="height: auto; width: 100%;" src="schemaProfilsMES.png" alt="SchemaProfilsMES" title="SchemaProfilsMES">
 </div> -->
 
-<div style="width:100%; overflow:auto" class="figure">
-    <p>  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 1172 168" zoomAndPan="magnify" preserveAspectRatio="none" width="1172px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:1172px;height:168px;background:#FFFFFF;" version="1.1" height="168px"><defs></defs><g>  <!-- entity dr --><g id="elem_dr"><a name="l394">​</a><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-mesures-cholesterol-diagnostic-report.html" href="StructureDefinition-mesures-cholesterol-diagnostic-report.html" xlink:actuate="onRequest" title="StructureDefinition-mesures-cholesterol-diagnostic-report.html" xlink:href="StructureDefinition-mesures-cholesterol-diagnostic-report.html" target="_top"><rect rx="2.5" ry="2.5" width="150" x="508.5" y="7" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="39.2969"></rect><polygon style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" points="641.5,12,641.5,26,653.5,26,653.5,18,647.5,12,641.5,12"></polygon><line y1="12" x1="647.5" y2="18" style="stroke:#181818;stroke-width:0.5;" x2="647.5"></line><line y1="18" x1="653.5" y2="18" style="stroke:#181818;stroke-width:0.5;" x2="647.5"></line><text lengthAdjust="spacing" x="518.5" font-size="14" textLength="120" y="32.9951" font-family="sans-serif" fill="#000000">DiagnosticReport</text></a></g>  <!-- entity ct --><g id="elem_ct"><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-total.html" href="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:actuate="onRequest" title="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:href="StructureDefinition-mesures-observation-cholesterol-total.html" target="_top"><rect rx="2.5" ry="2.5" width="147" x="7" y="123" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="39.2969"></rect><polygon style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" points="137,128,137,142,149,142,149,134,143,128,137,128"></polygon><line y1="128" x1="143" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="143"></line><line y1="134" x1="149" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="143"></line><text lengthAdjust="spacing" x="17" font-size="14" textLength="117" y="148.9951" font-family="sans-serif" fill="#000000">Total Cholesterol</text></a></g>  <!-- entity chdl --><g id="elem_chdl"><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-hdl.html" href="StructureDefinition-mesures-observation-cholesterol-hdl.html" xlink:actuate="onRequest" title="StructureDefinition-mesures-observation-cholesterol-hdl.html" xlink:href="StructureDefinition-mesures-observation-cholesterol-hdl.html" target="_top"><rect rx="2.5" ry="2.5" width="141" x="189" y="123" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="39.2969"></rect><polygon style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" points="313,128,313,142,325,142,325,134,319,128,313,128"></polygon><line y1="128" x1="319" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="319"></line><line y1="134" x1="325" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="319"></line><text lengthAdjust="spacing" x="199" font-size="14" textLength="111" y="148.9951" font-family="sans-serif" fill="#000000">HDL Cholesterol</text></a></g>  <!-- entity trigly --><g id="elem_trigly"><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-trigly.html" href="StructureDefinition-mesures-observation-cholesterol-trigly.html" xlink:actuate="onRequest" title="StructureDefinition-mesures-observation-cholesterol-trigly.html" xlink:href="StructureDefinition-mesures-observation-cholesterol-trigly.html" target="_top"><rect rx="2.5" ry="2.5" width="114" x="365.5" y="123" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="39.2969"></rect><polygon style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" points="462.5,128,462.5,142,474.5,142,474.5,134,468.5,128,462.5,128"></polygon><line y1="128" x1="468.5" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="468.5"></line><line y1="134" x1="474.5" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="468.5"></line><text lengthAdjust="spacing" x="375.5" font-size="14" textLength="84" y="148.9951" font-family="sans-serif" fill="#000000">Trigycerides</text></a></g>  <!-- entity cldl --><g id="elem_cldl"><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-total.html" href="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:actuate="onRequest" title="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:href="StructureDefinition-mesures-observation-cholesterol-total.html" target="_top"><rect rx="2.5" ry="2.5" width="138" x="514.5" y="123" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="39.2969"></rect><polygon style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" points="635.5,128,635.5,142,647.5,142,647.5,134,641.5,128,635.5,128"></polygon><line y1="128" x1="641.5" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="641.5"></line><line y1="134" x1="647.5" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="641.5"></line><text lengthAdjust="spacing" x="524.5" font-size="14" textLength="108" y="148.9951" font-family="sans-serif" fill="#000000">LDL Cholesterol</text></a></g>  <!-- entity cr --><g id="elem_cr"><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-ratio.html" href="StructureDefinition-mesures-observation-cholesterol-ratio.html" xlink:actuate="onRequest" title="StructureDefinition-mesures-observation-cholesterol-ratio.html" xlink:href="StructureDefinition-mesures-observation-cholesterol-ratio.html" target="_top"><rect rx="2.5" ry="2.5" width="148" x="687.5" y="123" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="39.2969"></rect><polygon style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" points="818.5,128,818.5,142,830.5,142,830.5,134,824.5,128,818.5,128"></polygon><line y1="128" x1="824.5" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="824.5"></line><line y1="134" x1="830.5" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="824.5"></line><text lengthAdjust="spacing" x="697.5" font-size="14" textLength="118" y="148.9951" font-family="sans-serif" fill="#000000">Ratio Cholesterol</text></a></g>  <!-- entity ca --><g id="elem_ca"><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-aspect.html" href="StructureDefinition-mesures-observation-cholesterol-aspect.html" xlink:actuate="onRequest" title="StructureDefinition-mesures-observation-cholesterol-aspect.html" xlink:href="StructureDefinition-mesures-observation-cholesterol-aspect.html" target="_top"><rect rx="2.5" ry="2.5" width="161" x="871" y="123" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="39.2969"></rect><polygon style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" points="1015,128,1015,142,1027,142,1027,134,1021,128,1015,128"></polygon><line y1="128" x1="1021" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="1021"></line><line y1="134" x1="1027" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="1021"></line><text lengthAdjust="spacing" x="881" font-size="14" textLength="131" y="148.9951" font-family="sans-serif" fill="#000000">Aspect Cholesterol</text></a></g>  <!-- entity gly --><g id="elem_gly"><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-glucose.html" href="StructureDefinition-mesures-observation-glucose.html" xlink:actuate="onRequest" title="StructureDefinition-mesures-observation-glucose.html" xlink:href="StructureDefinition-mesures-observation-glucose.html" target="_top"><rect rx="2.5" ry="2.5" width="93" x="1067" y="123" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="39.2969"></rect><polygon style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" points="1143,128,1143,142,1155,142,1155,134,1149,128,1143,128"></polygon><line y1="128" x1="1149" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="1149"></line><line y1="134" x1="1155" y2="134" style="stroke:#181818;stroke-width:0.5;" x2="1149"></line><text lengthAdjust="spacing" x="1077" font-size="14" textLength="63" y="148.9951" font-family="sans-serif" fill="#000000">Glycemie</text></a></g>  <!-- link dr to ct --><g id="link_dr_ct"><path d="M508.32,37.62 C450.34,46.06 368.35,59.37 297.5,76 C243.64,88.64 183.5,107.15 140.21,121.27 " style="stroke:#181818;stroke-width:1.0;" id="dr-to-ct" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="135.28,122.89,145.0787,123.883,140.0305,121.3303,142.5832,116.2822,135.28,122.89"></polygon><text lengthAdjust="spacing" x="298.5" font-size="13" textLength="64" y="89.0669" font-family="sans-serif" fill="#000000">result 0..1</text></g>  <!-- link dr to chdl --><g id="link_dr_chdl"><path d="M511.77,46.03 C481.49,54.38 446.01,64.86 414.5,76 C376.85,89.3 335.22,107.07 304.59,120.75 " style="stroke:#181818;stroke-width:1.0;" id="dr-to-chdl" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="299.77,122.91,309.6188,122.8785,304.3325,120.8647,306.3464,115.5785,299.77,122.91"></polygon><text lengthAdjust="spacing" x="415.5" font-size="13" textLength="64" y="89.0669" font-family="sans-serif" fill="#000000">result 0..1</text></g>  <!-- link dr to trigly --><g id="link_dr_trigly"><path d="M554.03,46.19 C540.35,55.02 523.95,65.84 509.5,76 C489.54,90.03 467.59,106.56 450.73,119.51 " style="stroke:#181818;stroke-width:1.0;" id="dr-to-trigly" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="446.56,122.72,456.1369,120.4214,450.529,119.679,451.2713,114.0711,446.56,122.72"></polygon><text lengthAdjust="spacing" x="510.5" font-size="13" textLength="64" y="89.0669" font-family="sans-serif" fill="#000000">result 0..1</text></g>  <!-- link dr to cldl --><g id="link_dr_cldl"><path d="M583.5,46.07 C583.5,65.61 583.5,96.44 583.5,117.74 " style="stroke:#181818;stroke-width:1.0;" id="dr-to-cldl" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="583.5,122.94,587.5,113.94,583.5,117.94,579.5,113.94,583.5,122.94"></polygon><text lengthAdjust="spacing" x="584.5" font-size="13" textLength="64" y="89.0669" font-family="sans-serif" fill="#000000">result 0..1</text></g>  <!-- link dr to cr --><g id="link_dr_cr"><path d="M612.49,46.07 C644.17,66.36 694.83,98.8 728.14,120.13 " style="stroke:#181818;stroke-width:1.0;" id="dr-to-cr" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="732.52,122.94,727.0997,114.7168,728.3099,120.2427,722.7841,121.4529,732.52,122.94"></polygon><text lengthAdjust="spacing" x="684.5" font-size="13" textLength="64" y="89.0669" font-family="sans-serif" fill="#000000">result 0..1</text></g>  <!-- link dr to ca --><g id="link_dr_ca"><path d="M653.18,46 C685.09,54.71 723.33,65.48 757.5,76 C803.67,90.22 855.49,107.8 893.95,121.17 " style="stroke:#181818;stroke-width:1.0;" id="dr-to-ca" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="899.05,122.94,891.8612,116.2079,894.3269,121.2991,889.2357,123.7648,899.05,122.94"></polygon><text lengthAdjust="spacing" x="807.5" font-size="13" textLength="64" y="89.0669" font-family="sans-serif" fill="#000000">result 0..1</text></g>  <!-- link dr to gly --><g id="link_dr_gly"><path d="M658.69,37.46 C718.99,46 805.62,59.53 880.5,76 C956.64,92.75 974.5,101.73 1049.5,123 C1053.5,124.13 1057.64,125.31 1061.79,126.51 " style="stroke:#181818;stroke-width:1.0;" id="dr-to-gly" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="1066.68,127.91,1059.1252,121.5914,1061.8724,126.5364,1056.9274,129.2836,1066.68,127.91"></polygon><text lengthAdjust="spacing" x="949.5" font-size="13" textLength="64" y="89.0669" font-family="sans-serif" fill="#000000">result 0..1</text></g></g></svg></p>
+<h3 id="profils-héritant-de-frcore">Profils héritant de FrCore</h3>
+
+<div class="figure" style="width:100%; overflow:auto">
+    <p><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="840.625px" preserveAspectRatio="none" style="width:3557px;height:840px;background:#FFFFFF;" version="1.1" viewBox="0 0 3557 840" width="3557.8125px" zoomAndPan="magnify"><defs /><g><!--cluster HL7--><g id="cluster_HL7"><path d="M253.9063,9.375 L700.7813,9.375 A5.8594,5.8594 0 0 1 704.6875,13.2813 L715.625,44.2139 L3438.2813,44.2139 A3.9063,3.9063 0 0 1 3442.1875,48.1201 L3442.1875,347.6563 A3.9063,3.9063 0 0 1 3438.2813,351.5625 L253.9063,351.5625 A3.9063,3.9063 0 0 1 250,347.6563 L250,13.2813 A3.9063,3.9063 0 0 1 253.9063,9.375 " fill="#F9968B" style="stroke:#00008B;stroke-width:2.34375;" /><line style="stroke:#00008B;stroke-width:2.34375;" x1="250" x2="715.625" y1="44.2139" y2="44.2139" /><text fill="#000000" font-family="sans-serif" font-size="21.875" font-weight="bold" lengthAdjust="spacing" textLength="445.3125" x="256.25" y="32.8049">Profils Mesures de sant&#233; d'HL7 FHIR</text></g><!--cluster PI--><g id="cluster_PI"><path d="M250.7813,414.0625 L749.2188,414.0625 A5.8594,5.8594 0 0 1 753.125,417.9688 L764.0625,448.9014 L3350.7813,448.9014 A3.9063,3.9063 0 0 1 3354.6875,452.8076 L3354.6875,586.7188 A3.9063,3.9063 0 0 1 3350.7813,590.625 L250.7813,590.625 A3.9063,3.9063 0 0 1 246.875,586.7188 L246.875,417.9688 A3.9063,3.9063 0 0 1 250.7813,414.0625 " fill="#F27438" style="stroke:#00008B;stroke-width:2.34375;" /><line style="stroke:#00008B;stroke-width:2.34375;" x1="246.875" x2="764.0625" y1="448.9014" y2="448.9014" /><text fill="#000000" font-family="sans-serif" font-size="21.875" font-weight="bold" lengthAdjust="spacing" textLength="496.875" x="253.125" y="437.4924">Profils Mesures de sant&#233; d'InteropSant&#233;</text></g><!--cluster PMSB--><g id="cluster_PMSB"><path d="M13.2813,653.125 L394.5313,653.125 A5.8594,5.8594 0 0 1 398.4375,657.0313 L409.375,687.9639 L3542.9688,687.9639 A3.9063,3.9063 0 0 1 3546.875,691.8701 L3546.875,825.7813 A3.9063,3.9063 0 0 1 3542.9688,829.6875 L13.2813,829.6875 A3.9063,3.9063 0 0 1 9.375,825.7813 L9.375,657.0313 A3.9063,3.9063 0 0 1 13.2813,653.125 " fill="#26474E" style="stroke:#00008B;stroke-width:2.34375;" /><line style="stroke:#00008B;stroke-width:2.34375;" x1="9.375" x2="409.375" y1="687.9639" y2="687.9639" /><text fill="#000000" font-family="sans-serif" font-size="21.875" font-weight="bold" lengthAdjust="spacing" textLength="379.6875" x="15.625" y="676.5549">Profils Mesures Sant&#233; de l'ANS</text></g><!--entity VitalSigns--><g id="elem_VitalSigns"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="165.625" x="1612.5" y="76.5625" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1746.875" y="84.375" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1743.75" y="87.5" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1743.75" y="93.75" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="103.125" x="1635.9375" y="128.1174">VitalSigns</text></g><!--entity Observation-body-height--><g id="elem_Observation-body-height"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="329.6875" x="288.2813" y="242.1875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="586.7188" y="250" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="583.5938" y="253.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="583.5938" y="259.375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="267.1875" x="311.7188" y="293.7424">Observation-body-height</text></g><!--entity Observation-body-weight--><g id="elem_Observation-body-weight"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="332.8125" x="672.6563" y="242.1875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="974.2188" y="250" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="971.0938" y="253.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="971.0938" y="259.375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="270.3125" x="696.0938" y="293.7424">Observation-body-weight</text></g><!--entity Observation-bmi--><g id="elem_Observation-bmi"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="239.0625" x="1060.1563" y="242.1875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1267.9688" y="250" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1264.8438" y="253.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1264.8438" y="259.375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="176.5625" x="1083.5938" y="293.7424">Observation-bmi</text></g><!--entity Observation-heartrate--><g id="elem_Observation-heartrate"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="298.4375" x="1353.9063" y="242.1875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1621.0938" y="250" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1617.9688" y="253.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1617.9688" y="259.375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="235.9375" x="1377.3438" y="293.7424">Observation-heartrate</text></g><!--entity Observation-respiratory-rate--><g id="elem_Observation-respiratory-rate"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="364.0625" x="1707.0313" y="242.1875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2039.8438" y="250" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2036.7188" y="253.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2036.7188" y="259.375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="301.5625" x="1730.4688" y="293.7424">Observation-respiratory-rate</text></g><!--entity Observation-blood-pressure--><g id="elem_Observation-blood-pressure"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="365.625" x="2126.5625" y="242.1875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2460.9375" y="250" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2457.8125" y="253.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2457.8125" y="259.375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="303.125" x="2150" y="293.7424">Observation-blood-pressure</text></g><!--entity Observation-body-temperature--><g id="elem_Observation-body-temperature"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="395.3125" x="2547.6563" y="242.1875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2911.7188" y="250" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2908.5938" y="253.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2908.5938" y="259.375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="332.8125" x="2571.0938" y="293.7424">Observation-body-temperature</text></g><!--entity Observation-oxygen-saturation--><g id="elem_Observation-oxygen-saturation"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="393.75" x="2998.4375" y="242.1875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="3360.9375" y="250" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="3357.8125" y="253.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="3357.8125" y="259.375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="331.25" x="3021.875" y="293.7424">Observation-oxygen-saturation</text></g><!--entity FrObservationBmi--><g id="elem_FrObservationBmi"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="253.125" x="1075" y="481.25" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1296.875" y="489.0625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1293.75" y="492.1875" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1293.75" y="498.4375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="190.625" x="1098.4375" y="532.8049">FrObservationBmi</text></g><!--entity FrObservationHeartrate--><g id="elem_FrObservationHeartrate"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="312.5" x="1382.8125" y="481.25" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1664.0625" y="489.0625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1660.9375" y="492.1875" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1660.9375" y="498.4375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="250" x="1406.25" y="532.8049">FrObservationHeartrate</text></g><!--entity FrObservationBodyWeight--><g id="elem_FrObservationBodyWeight"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="342.1875" x="677.3438" y="481.25" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="988.2813" y="489.0625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="985.1563" y="492.1875" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="985.1563" y="498.4375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="279.6875" x="700.7813" y="532.8049">FrObservationBodyWeight</text></g><!--entity FrObservationBodyHeight--><g id="elem_FrObservationBodyHeight"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="337.5" x="284.375" y="481.25" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="590.625" y="489.0625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="587.5" y="492.1875" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="587.5" y="498.4375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="275" x="307.8125" y="532.8049">FrObservationBodyHeight</text></g><!--entity FrObservationBodyTemperature--><g id="elem_FrObservationBodyTemperature"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="407.8125" x="2421.0938" y="481.25" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2797.6563" y="489.0625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2794.5313" y="492.1875" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2794.5313" y="498.4375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="345.3125" x="2444.5313" y="532.8049">FrObservationBodyTemperature</text></g><!--entity FrObservationBP--><g id="elem_FrObservationBP"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="242.1875" x="2124.2188" y="481.25" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2335.1563" y="489.0625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2332.0313" y="492.1875" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2332.0313" y="498.4375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="179.6875" x="2147.6563" y="532.8049">FrObservationBP</text></g><!--entity FrObservationOxygenSaturation--><g id="elem_FrObservationOxygenSaturation"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="403.125" x="2884.375" y="481.25" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="3256.25" y="489.0625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="3253.125" y="492.1875" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="3253.125" y="498.4375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="340.625" x="2907.8125" y="532.8049">FrObservationOxygenSaturation</text></g><!--entity FrObservationRespRate--><g id="elem_FrObservationRespRate"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="318.75" x="1750" y="481.25" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2037.5" y="489.0625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2034.375" y="492.1875" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2034.375" y="498.4375" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="256.25" x="1773.4375" y="532.8049">FrObservationRespRate</text></g><!--entity FrMesObservationBmi--><g id="elem_FrMesObservationBmi"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="298.4375" x="928.9063" y="720.3125" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1196.0938" y="728.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1192.9688" y="731.25" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1192.9688" y="737.5" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="235.9375" x="952.3438" y="771.8674">FrMesObservationBmi</text></g><!--entity FrMesObservationHeartrate--><g id="elem_FrMesObservationHeartrate"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="357.8125" x="1282.0313" y="720.3125" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1608.5938" y="728.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1605.4688" y="731.25" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1605.4688" y="737.5" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="295.3125" x="1305.4688" y="771.8674">FrMesObservationHeartrate</text></g><!--entity FrMesObservationBodyWeight--><g id="elem_FrMesObservationBodyWeight"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="387.5" x="485.9375" y="720.3125" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="842.1875" y="728.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="839.0625" y="731.25" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="839.0625" y="737.5" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="325" x="509.375" y="771.8674">FrMesObservationBodyWeight</text></g><!--entity FrMesObservationBodyHeight--><g id="elem_FrMesObservationBodyHeight"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="382.8125" x="47.6563" y="720.3125" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="399.2188" y="728.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="396.0938" y="731.25" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="396.0938" y="737.5" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="320.3125" x="71.0938" y="771.8674">FrMesObservationBodyHeight</text></g><!--entity FrMesObservationBodyTemperature--><g id="elem_FrMesObservationBodyTemperature"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="453.125" x="2521.875" y="720.3125" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2943.75" y="728.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2940.625" y="731.25" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2940.625" y="737.5" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="390.625" x="2545.3125" y="771.8674">FrMesObservationBodyTemperature</text></g><!--entity FrMesObservationBP--><g id="elem_FrMesObservationBP"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="287.5" x="2179.6875" y="720.3125" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2435.9375" y="728.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2432.8125" y="731.25" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2432.8125" y="737.5" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="225" x="2203.125" y="771.8674">FrMesObservationBP</text></g><!--entity FrMesObservationOxygenSaturation--><g id="elem_FrMesObservationOxygenSaturation"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="448.4375" x="3030.4688" y="720.3125" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="3447.6563" y="728.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="3444.5313" y="731.25" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="3444.5313" y="737.5" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="385.9375" x="3053.9063" y="771.8674">FrMesObservationOxygenSaturation</text></g><!--entity FrMesObservationRespiratoryRate--><g id="elem_FrMesObservationRespiratoryRate"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="429.6875" x="1694.5313" y="720.3125" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2092.9688" y="728.125" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2089.8438" y="731.25" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2089.8438" y="737.5" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="367.1875" x="1717.9688" y="771.8674">FrMesObservationRespiratoryRate</text></g><!--link VitalSigns to Observation-body-height--><g id="link_VitalSigns_Observation-body-height"><path d="M1612.3594,95.3125 C1334.3906,95.3125 453.125,95.3125 453.125,95.3125 C453.125,95.3125 453.125,234.1875 453.125,234.1875 " fill="none" id="VitalSigns-to-Observation-body-height" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="453.125,242,459.375,227.9375,453.125,234.1875,446.875,227.9375,453.125,242" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link VitalSigns to Observation-body-weight--><g id="link_VitalSigns_Observation-body-weight"><path d="M1612.4375,112.5 C1397.5469,112.5 839.0625,112.5 839.0625,112.5 C839.0625,112.5 839.0625,234.375 839.0625,234.375 " fill="none" id="VitalSigns-to-Observation-body-weight" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="839.0625,242.1875,845.3125,228.125,839.0625,234.375,832.8125,228.125,839.0625,242.1875" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link VitalSigns to Observation-bmi--><g id="link_VitalSigns_Observation-bmi"><path d="M1612.4688,131.25 C1466.7188,131.25 1179.6875,131.25 1179.6875,131.25 C1179.6875,131.25 1179.6875,234 1179.6875,234 " fill="none" id="VitalSigns-to-Observation-bmi" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1179.6875,241.8125,1185.9375,227.75,1179.6875,234,1173.4375,227.75,1179.6875,241.8125" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link VitalSigns to Observation-heartrate--><g id="link_VitalSigns_Observation-heartrate"><path d="M1632.4219,148.4375 C1632.4219,148.4375 1632.4219,233.875 1632.4219,233.875 " fill="none" id="VitalSigns-to-Observation-heartrate" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1632.4219,241.6875,1638.6719,227.625,1632.4219,233.875,1626.1719,227.625,1632.4219,241.6875" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link VitalSigns to Observation-respiratory-rate--><g id="link_VitalSigns_Observation-respiratory-rate"><path d="M1742.5781,148.4375 C1742.5781,148.4375 1742.5781,233.875 1742.5781,233.875 " fill="none" id="VitalSigns-to-Observation-respiratory-rate" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1742.5781,241.6875,1748.8281,227.625,1742.5781,233.875,1736.3281,227.625,1742.5781,241.6875" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link VitalSigns to Observation-blood-pressure--><g id="link_VitalSigns_Observation-blood-pressure"><path d="M1778.125,140.625 C1945.7344,140.625 2309.375,140.625 2309.375,140.625 C2309.375,140.625 2309.375,234.1875 2309.375,234.1875 " fill="none" id="VitalSigns-to-Observation-blood-pressure" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="2309.375,242,2315.625,227.9375,2309.375,234.1875,2303.125,227.9375,2309.375,242" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link VitalSigns to Observation-body-temperature--><g id="link_VitalSigns_Observation-body-temperature"><path d="M1778.1406,131.25 C2026.0781,131.25 2745.3125,131.25 2745.3125,131.25 C2745.3125,131.25 2745.3125,234 2745.3125,234 " fill="none" id="VitalSigns-to-Observation-body-temperature" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="2745.3125,241.8125,2751.5625,227.75,2745.3125,234,2739.0625,227.75,2745.3125,241.8125" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link VitalSigns to Observation-oxygen-saturation--><g id="link_VitalSigns_Observation-oxygen-saturation"><path d="M1778.6406,123.4375 C2093.8125,123.4375 3195.3125,123.4375 3195.3125,123.4375 C3195.3125,123.4375 3195.3125,234.0469 3195.3125,234.0469 " fill="none" id="VitalSigns-to-Observation-oxygen-saturation" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="3195.3125,241.8594,3201.5625,227.7969,3195.3125,234.0469,3189.0625,227.7969,3195.3125,241.8594" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link Observation-bmi to FrObservationBmi--><g id="link_Observation-bmi_FrObservationBmi"><path d="M1187.1094,314.4375 C1187.1094,314.4375 1187.1094,472.7187 1187.1094,472.7187 " fill="none" id="Observation-bmi-to-FrObservationBmi" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1187.1094,480.5312,1193.3594,466.4687,1187.1094,472.7187,1180.8594,466.4687,1187.1094,480.5312" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link Observation-heartrate to FrObservationHeartrate--><g id="link_Observation-heartrate_FrObservationHeartrate"><path d="M1517.5781,314.4375 C1517.5781,314.4375 1517.5781,472.7187 1517.5781,472.7187 " fill="none" id="Observation-heartrate-to-FrObservationHeartrate" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1517.5781,480.5312,1523.8281,466.4687,1517.5781,472.7187,1511.3281,466.4687,1517.5781,480.5312" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link Observation-body-weight to FrObservationBodyWeight--><g id="link_Observation-body-weight_FrObservationBodyWeight"><path d="M841.4063,314.4375 C841.4063,314.4375 841.4063,472.7187 841.4063,472.7187 " fill="none" id="Observation-body-weight-to-FrObservationBodyWeight" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="841.4063,480.5312,847.6563,466.4687,841.4063,472.7187,835.1563,466.4687,841.4063,480.5312" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link Observation-body-height to FrObservationBodyHeight--><g id="link_Observation-body-height_FrObservationBodyHeight"><path d="M453.125,314.4375 C453.125,314.4375 453.125,472.7187 453.125,472.7187 " fill="none" id="Observation-body-height-to-FrObservationBodyHeight" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="453.125,480.5312,459.375,466.4687,453.125,472.7187,446.875,466.4687,453.125,480.5312" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link Observation-body-temperature to FrObservationBodyTemperature--><g id="link_Observation-body-temperature_FrObservationBodyTemperature"><path d="M2688.2813,314.4375 C2688.2813,314.4375 2688.2813,472.7187 2688.2813,472.7187 " fill="none" id="Observation-body-temperature-to-FrObservationBodyTemperature" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="2688.2813,480.5312,2694.5313,466.4687,2688.2813,472.7187,2682.0313,466.4687,2688.2813,480.5312" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link Observation-blood-pressure to FrObservationBP--><g id="link_Observation-blood-pressure_FrObservationBP"><path d="M2246.4844,314.4375 C2246.4844,314.4375 2246.4844,472.7187 2246.4844,472.7187 " fill="none" id="Observation-blood-pressure-to-FrObservationBP" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="2246.4844,480.5312,2252.7344,466.4687,2246.4844,472.7187,2240.2344,466.4687,2246.4844,480.5312" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link Observation-oxygen-saturation to FrObservationOxygenSaturation--><g id="link_Observation-oxygen-saturation_FrObservationOxygenSaturation"><path d="M3142.9688,314.4375 C3142.9688,314.4375 3142.9688,472.7187 3142.9688,472.7187 " fill="none" id="Observation-oxygen-saturation-to-FrObservationOxygenSaturation" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="3142.9688,480.5312,3149.2188,466.4687,3142.9688,472.7187,3136.7188,466.4687,3142.9688,480.5312" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link Observation-respiratory-rate to FrObservationRespRate--><g id="link_Observation-respiratory-rate_FrObservationRespRate"><path d="M1909.375,314.4375 C1909.375,314.4375 1909.375,472.7187 1909.375,472.7187 " fill="none" id="Observation-respiratory-rate-to-FrObservationRespRate" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1909.375,480.5312,1915.625,466.4687,1909.375,472.7187,1903.125,466.4687,1909.375,480.5312" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link FrObservationBmi to FrMesObservationBmi--><g id="link_FrObservationBmi_FrMesObservationBmi"><path d="M1151.1719,553.5 C1151.1719,553.5 1151.1719,711.7813 1151.1719,711.7813 " fill="none" id="FrObservationBmi-to-FrMesObservationBmi" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1151.1719,719.5938,1157.4219,705.5313,1151.1719,711.7813,1144.9219,705.5313,1151.1719,719.5938" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link FrObservationHeartrate to FrMesObservationHeartrate--><g id="link_FrObservationHeartrate_FrMesObservationHeartrate"><path d="M1511.3281,553.5 C1511.3281,553.5 1511.3281,711.7813 1511.3281,711.7813 " fill="none" id="FrObservationHeartrate-to-FrMesObservationHeartrate" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1511.3281,719.5938,1517.5781,705.5313,1511.3281,711.7813,1505.0781,705.5313,1511.3281,719.5938" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link FrObservationBodyWeight to FrMesObservationBodyWeight--><g id="link_FrObservationBodyWeight_FrMesObservationBodyWeight"><path d="M775.3906,553.5 C775.3906,553.5 775.3906,711.7813 775.3906,711.7813 " fill="none" id="FrObservationBodyWeight-to-FrMesObservationBodyWeight" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="775.3906,719.5938,781.6406,705.5313,775.3906,711.7813,769.1406,705.5313,775.3906,719.5938" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link FrObservationBodyHeight to FrMesObservationBodyHeight--><g id="link_FrObservationBodyHeight_FrMesObservationBodyHeight"><path d="M357.4219,553.5 C357.4219,553.5 357.4219,711.7813 357.4219,711.7813 " fill="none" id="FrObservationBodyHeight-to-FrMesObservationBodyHeight" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="357.4219,719.5938,363.6719,705.5313,357.4219,711.7813,351.1719,705.5313,357.4219,719.5938" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link FrObservationBodyTemperature to FrMesObservationBodyTemperature--><g id="link_FrObservationBodyTemperature_FrMesObservationBodyTemperature"><path d="M2675.3906,553.5 C2675.3906,553.5 2675.3906,711.7813 2675.3906,711.7813 " fill="none" id="FrObservationBodyTemperature-to-FrMesObservationBodyTemperature" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="2675.3906,719.5938,2681.6406,705.5313,2675.3906,711.7813,2669.1406,705.5313,2675.3906,719.5938" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link FrObservationBP to FrMesObservationBP--><g id="link_FrObservationBP_FrMesObservationBP"><path d="M2273.0469,553.5 C2273.0469,553.5 2273.0469,711.7813 2273.0469,711.7813 " fill="none" id="FrObservationBP-to-FrMesObservationBP" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="2273.0469,719.5938,2279.2969,705.5313,2273.0469,711.7813,2266.7969,705.5313,2273.0469,719.5938" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link FrObservationOxygenSaturation to FrMesObservationOxygenSaturation--><g id="link_FrObservationOxygenSaturation_FrMesObservationOxygenSaturation"><path d="M3158.9844,553.5 C3158.9844,553.5 3158.9844,711.7813 3158.9844,711.7813 " fill="none" id="FrObservationOxygenSaturation-to-FrMesObservationOxygenSaturation" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="3158.9844,719.5938,3165.2344,705.5313,3158.9844,711.7813,3152.7344,705.5313,3158.9844,719.5938" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link FrObservationRespRate to FrMesObservationRespiratoryRate--><g id="link_FrObservationRespRate_FrMesObservationRespiratoryRate"><path d="M1909.375,553.5 C1909.375,553.5 1909.375,711.7813 1909.375,711.7813 " fill="none" id="FrObservationRespRate-to-FrMesObservationRespiratoryRate" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1909.375,719.5938,1915.625,705.5313,1909.375,711.7813,1903.125,705.5313,1909.375,719.5938" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link PMSB to PI--><g id="link_PMSB_PI"><path d="M3534.375,652.7858 C3534.375,645.607 3534.375,638.3494 3534.375,631.1191 C3534.375,573.2773 3534.375,517.1875 3534.375,517.1875 C3534.375,517.1875 3490.7266,517.1875 3445.0332,517.1875 C3422.1865,517.1875 3398.8286,517.1875 3380.1599,517.1875 C3370.8256,517.1875 3362.6635,517.1875 3356.3238,517.1875 C3355.9276,517.1875 3355.5385,517.1875 3355.1566,517.1875 " fill="none" id="PMSB-to-PI" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="3355.1566,517.1875,3369.2191,523.4375,3362.9691,517.1875,3369.2191,510.9375,3355.1566,517.1875" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link PI to HL7--><g id="link_PI_HL7"><path d="M3342.1875,414.0301 C3342.1875,413.8749 3342.1875,413.7206 3342.1875,413.5672 C3342.1875,412.9536 3342.1875,412.3546 3342.1875,411.7709 C3342.1875,410.6036 3342.1875,409.4976 3342.1875,408.4594 C3342.1875,406.3829 3342.1875,404.5772 3342.1875,403.0925 C3342.1875,400.123 3342.1875,398.4375 3342.1875,398.4375 C3342.1875,398.4375 3429.6875,398.4375 3429.6875,398.4375 C3429.6875,398.4375 3429.6875,381.666 3429.6875,356.2466 C3429.6875,355.4522 3429.6875,354.6494 3429.6875,353.8384 C3429.6875,353.4329 3429.6875,353.0254 3429.6875,352.6158 " fill="none" id="PI-to-HL7" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="3429.6875,352.6158,3423.4375,366.6783,3429.6875,360.4283,3435.9375,366.6783,3429.6875,352.6158" style="stroke:#181818;stroke-width:1.5625;" /></g></g></svg></p>
+</div>
+
+<h3 id="profils-héritant-de-hl7-fhir">Profils héritant de HL7 FHIR</h3>
+
+<div class="figure" style="width:100%; overflow:auto">
+    <p><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="337.5px" preserveAspectRatio="none" style="width:2256px;height:337px;background:#FFFFFF;" version="1.1" viewBox="0 0 2256 337" width="2256.25px" zoomAndPan="magnify"><defs /><g><!--cluster PMSB--><g id="cluster_PMSB"><path d="M13.2813,9.375 L666.4063,9.375 A5.8594,5.8594 0 0 1 670.3125,13.2813 L681.25,44.2139 L2241.4063,44.2139 A3.9063,3.9063 0 0 1 2245.3125,48.1201 L2245.3125,322.6563 A3.9063,3.9063 0 0 1 2241.4063,326.5625 L13.2813,326.5625 A3.9063,3.9063 0 0 1 9.375,322.6563 L9.375,13.2813 A3.9063,3.9063 0 0 1 13.2813,9.375 " fill="#26474E" style="stroke:#00008B;stroke-width:2.34375;" /><line style="stroke:#00008B;stroke-width:2.34375;" x1="9.375" x2="681.25" y1="44.2139" y2="44.2139" /><text fill="#000000" font-family="sans-serif" font-size="21.875" font-weight="bold" lengthAdjust="spacing" textLength="651.5625" x="15.625" y="32.8049">Profils Mesures Sant&#233; de l'ANS h&#233;ritant de VitalSigns</text></g><!--entity HL7 FHIR VitalSigns--><g id="elem_HL7 FHIR VitalSigns"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="267.1875" x="1016.4063" y="64.0625" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1252.3438" y="71.875" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1249.2188" y="75" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1249.2188" y="81.25" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="204.6875" x="1039.8438" y="115.6174">HL7 FHIR VitalSigns</text></g><!--entity MesObservationPainSeverity--><g id="elem_MesObservationPainSeverity"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="367.1875" x="35.1563" y="229.6875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="371.0938" y="237.5" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="367.9688" y="240.625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="367.9688" y="246.875" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="304.6875" x="58.5938" y="281.2424">MesObservationPainSeverity</text></g><!--entity MesObservationWaistCircumference--><g id="elem_MesObservationWaistCircumference"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="453.125" x="457.8125" y="229.6875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="879.6875" y="237.5" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="876.5625" y="240.625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="876.5625" y="246.875" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="390.625" x="481.25" y="281.2424">MesObservationWaistCircumference</text></g><!--entity MesObservationStepsByDay--><g id="elem_MesObservationStepsByDay"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="367.1875" x="966.4063" y="229.6875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1302.3438" y="237.5" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1299.2188" y="240.625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1299.2188" y="246.875" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="304.6875" x="989.8438" y="281.2424">MesObservationStepsByDay</text></g><!--entity MesObservationGlucose--><g id="elem_MesObservationGlucose"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="326.5625" x="1388.2813" y="229.6875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="1683.5938" y="237.5" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1680.4688" y="240.625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="1680.4688" y="246.875" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="264.0625" x="1411.7188" y="281.2424">MesObservationGlucose</text></g><!--entity MesObservationHeadCircumference--><g id="elem_MesObservationHeadCircumference"><rect fill="#F1F1F1" height="72.3389" rx="3.9063" ry="3.9063" style="stroke:#181818;stroke-width:0.78125;" width="451.5625" x="1769.5313" y="229.6875" /><rect fill="#F1F1F1" height="15.625" style="stroke:#181818;stroke-width:0.78125;" width="23.4375" x="2189.8438" y="237.5" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2186.7188" y="240.625" /><rect fill="#F1F1F1" height="3.125" style="stroke:#181818;stroke-width:0.78125;" width="6.25" x="2186.7188" y="246.875" /><text fill="#000000" font-family="sans-serif" font-size="21.875" lengthAdjust="spacing" textLength="389.0625" x="1792.9688" y="281.2424">MesObservationHeadCircumference</text></g><!--link HL7 FHIR VitalSigns to MesObservationPainSeverity--><g id="link_HL7 FHIR VitalSigns_MesObservationPainSeverity"><path d="M1016.0781,89.0625 C758.3906,89.0625 218.75,89.0625 218.75,89.0625 C218.75,89.0625 218.75,221.6563 218.75,221.6563 " fill="none" id="HL7 FHIR VitalSigns-to-MesObservationPainSeverity" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="218.75,229.4688,225,215.4063,218.75,221.6563,212.5,215.4063,218.75,229.4688" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link HL7 FHIR VitalSigns to MesObservationWaistCircumference--><g id="link_HL7 FHIR VitalSigns_MesObservationWaistCircumference"><path d="M1015.9531,112.5 C878.3906,112.5 684.375,112.5 684.375,112.5 C684.375,112.5 684.375,221.5313 684.375,221.5313 " fill="none" id="HL7 FHIR VitalSigns-to-MesObservationWaistCircumference" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="684.375,229.3438,690.625,215.2813,684.375,221.5313,678.125,215.2813,684.375,229.3438" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link HL7 FHIR VitalSigns to MesObservationStepsByDay--><g id="link_HL7 FHIR VitalSigns_MesObservationStepsByDay"><path d="M1150,135.9375 C1150,135.9375 1150,221.375 1150,221.375 " fill="none" id="HL7 FHIR VitalSigns-to-MesObservationStepsByDay" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1150,229.1875,1156.25,215.125,1150,221.375,1143.75,215.125,1150,229.1875" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link HL7 FHIR VitalSigns to MesObservationGlucose--><g id="link_HL7 FHIR VitalSigns_MesObservationGlucose"><path d="M1283.7188,112.5 C1400.5313,112.5 1551.5625,112.5 1551.5625,112.5 C1551.5625,112.5 1551.5625,221.5313 1551.5625,221.5313 " fill="none" id="HL7 FHIR VitalSigns-to-MesObservationGlucose" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1551.5625,229.3438,1557.8125,215.2813,1551.5625,221.5313,1545.3125,215.2813,1551.5625,229.3438" style="stroke:#181818;stroke-width:1.5625;" /></g><!--link HL7 FHIR VitalSigns to MesObservationHeadCircumference--><g id="link_HL7 FHIR VitalSigns_MesObservationHeadCircumference"><path d="M1283.9375,89.0625 C1522.2969,89.0625 1995.3125,89.0625 1995.3125,89.0625 C1995.3125,89.0625 1995.3125,221.6563 1995.3125,221.6563 " fill="none" id="HL7 FHIR VitalSigns-to-MesObservationHeadCircumference" style="stroke:#181818;stroke-width:1.5625;" /><polygon fill="#181818" points="1995.3125,229.4688,2001.5625,215.4063,1995.3125,221.6563,1989.0625,215.4063,1995.3125,229.4688" style="stroke:#181818;stroke-width:1.5625;" /></g></g></svg></p>
 </div>
 
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-<script src="assets/js/window-hash.js" type="text/javascript"> </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div style="background-color:var(--footer-nav-bg-color)">
         <table style="width:100%">
           <tbody>
             <tr>
-              <td style="text-align:left">&nbsp;
+              <td style="text-align:left">&#xA0;
 
                 <a href="Le-flux-d-alimentation-des-mesures.html">&lt;prev</a>
 
@@ -262,7 +274,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               <td style="text-align:center">
                 <a href="#top">top</a>
               </td>
-              <td style="text-align:right">&nbsp;
+              <td style="text-align:right">&#xA0;
 
                 <a href="profils-biologie.html">next&gt;</a>
 
@@ -274,50 +286,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 31, 2025 15:51+0000">2025-03-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 31, 2025 15:56+0000">2025-03-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html" target="_blank">Historique des versions </a>
- | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new" target="_blank">New Issue</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new">New Issue</a>
 
-          
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
 
-    <!-- Ajout ANS -->
+  <!-- Ajout ANS -->
   <script src="assets/js/app.js" type="text/javascript"> </script>
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
-    <!-- Fin ajout ANS -->
+  <!-- Fin ajout ANS -->
 
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
 
 
-    <!-- AJOUT ANS -->
+  <!-- AJOUT ANS -->
 
-<footer role="contentinfo" class="footer footer-principal">
+<footer class="footer footer-principal" role="contentinfo">
   <div class="footer__region1">
     <div class="container">
       <div class="row">
@@ -325,17 +337,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <div class="col-md-6 col-lg-4 text-center text-md-left">
           <div class="logos">        
             <div class="logo logo--0">
-              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
                 
-                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
                 
               </a>
             </div>
         
             <div class="logo logo--1">
-              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
                 
-                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
               </a>
             </div>
           </div>
@@ -345,7 +357,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <p class="footer__title">Agence du Numérique en Santé</p>
           <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
 
-            <!-- <div class="m-social">
+          <!-- <div class="m-social">
             <ul class="m-social__list">        
               <li class="m-social__item">
                 <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
@@ -387,11 +399,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <ul class="footer-list">
             <li class="footer-list__item footer-list__item--hasIcon">
               <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
-                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
               </li>
-                <!-- <li class="footer-list__item">
+              <!-- <li class="footer-list__item">
                 <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
-              </li> -->
+              </li>
+               -->
             </ul>
           </div>
 
@@ -399,7 +412,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </div>
     </div>
     
-      <!-- <div class="footer__region2">
+    <!-- <div class="footer__region2">
       <div class="container">
         <div class="footer-contentinfo">
           <ul class="footer-list footer-list--inline">
@@ -411,3 +424,4 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </footer>
   </body>
 </html>
+
