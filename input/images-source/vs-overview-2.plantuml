@@ -7,7 +7,10 @@ skinparam shadowing false
 skinparam packageBackgroundColor LightBlue
 skinparam packageBorderColor DarkBlue
 
-[HL7 FHIR VitalSigns] 
+package "Profils Mesures de santé d'HL7 FHIR" as HL7 #F9968B {
+    [VitalSigns]
+}
+
 
 package "Profils Mesures Santé de l'ANS héritant de VitalSigns" as PMSB #26474E {
     [MesObservationPainSeverity]

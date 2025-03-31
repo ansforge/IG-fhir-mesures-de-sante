@@ -13,6 +13,13 @@ Le schema ci-dessous illustre la hiérarchie des profils des mesures de santé M
 
 ### Profils héritant de FrCore
 
+<style>
+    div p svg {
+        scale: 0.5
+    }
+</style>
+
+
 <div class="figure" style="width:100%; overflow:auto">
     <p>{% include vs-overview.svg %}</p>
 </div>
