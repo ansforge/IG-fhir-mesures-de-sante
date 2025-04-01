@@ -48,7 +48,7 @@ Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
     ]
 } %}
 
-#### Liste des profils biologie
+#### Liste des profils de paramètres biologiques
 
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
 {% sql {
