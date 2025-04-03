@@ -11,6 +11,8 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 
 * code = http://loinc.org#2089-1 "LDL Cholesterol"
 
+* method 1..1
+* method ^short = "La méthode de mesure du cholestérol LDL est obligatoire pour déterminer si des résultats sont comparables et ainsi utiliser cette donnée."
 
 * value[x] only Quantity
 * valueQuantity.unit 1..

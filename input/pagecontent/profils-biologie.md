@@ -5,11 +5,11 @@ Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlime
 
 ### Choix effectués sur le cholestérol
 
-* Six profils cholestérol (Aspect, HDL, LDL, Ratio, Trigly, total) ont été établis, associés par une ressource DiagnosticReport, pour permettre leur échange.
-
-* Le cas échéant, l'unité choisie pour les profils cholestérol est "mmol/L" pour correspondre au système international.
+* L'unité privilégiée pour les profils cholestérol est "mmol/L" pour correspondre au système international.
 
 * Ces profils cholestérol étant liés par une ressource DiagnosticReport, ceux-ci sont utilisés uniquement pour partager les résultats d'un compte rendu de biologie.
+
+* Les données pouvant être remplies par un patient (recopie de son CR-bio) se limitent aux mesures de l'aspect, du cholestérol total et des triglycérides. Les mesures d'HDL et de LDL nécessitent la méthode pour être comparée, demandant ainsi trop de détails à l'utilisateur.
 
 ### Liste des profils
 

@@ -71,6 +71,8 @@ Pour l'heure, les données usager sont considérées comme pouvant être interpr
 
 3/ Il y a une incohérence entre l'unité de la glycémie qui est actuellement en "g/L" et les unités du cholestérol actuellement en "mmol/L", faut-il faire la modification pour uniformiser et respecter l'unité du système international, c'est à dire en "mmol/L"?
 
+4/ Il y a actuellement un certain nombre de profils de paramètres biologiques. La question de la multiplicité des profils biologiques se pose - est-ce que le profilage de l'ensemble des données bio a un sens ? Est-ce que le jeu de valeurs circuit de la biologie est suffisant ?
+
 En cas de besoins allant dans ce sens, merci de le spécifier dans une [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
 
 ### Contributeurs
