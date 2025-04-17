@@ -10,6 +10,8 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 
 * code = http://loinc.org#2093-3 "LDL Cholesterol"
 
+* method from https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 (extensible)
+
 
 
 * value[x] only Quantity

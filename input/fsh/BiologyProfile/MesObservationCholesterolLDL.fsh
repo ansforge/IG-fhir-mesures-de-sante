@@ -13,6 +13,7 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 
 * method 1..1
 * method ^short = "La méthode de mesure du cholestérol LDL est obligatoire pour déterminer si des résultats sont comparables et ainsi utiliser cette donnée."
+* method from https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 (extensible)
 
 * value[x] only Quantity
 * valueQuantity.unit 1..

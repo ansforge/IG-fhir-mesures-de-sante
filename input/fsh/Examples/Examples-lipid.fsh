@@ -27,6 +27,8 @@ Usage: #example
 
 * referenceRange.low = 3.1 'mmol/L' "mmol/L"
 
+* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEN
+
 
 Instance: cholesterol-ldl-example
 InstanceOf: MesFrObservationCholesterolLDL
@@ -41,6 +43,8 @@ Usage: #example
 * valueQuantity.system = $UCUM
 
 * referenceRange.high = 2.6 'mmol/L' "mmol/L"
+
+* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEN
 
 Instance: cholesterol-trigly-example
 InstanceOf: MesFrObservationCholesterolTrigly
