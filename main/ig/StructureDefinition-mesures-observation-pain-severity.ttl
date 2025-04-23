@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "MesObservationPainSeverity"] ; # 
   fhir:title [ fhir:v "Niveau de douleur"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-03-07T13:06:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-23T14:15:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -769,7 +769,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v false ]
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "Observation.extension:MesReasonForMeasurement" ] ;
        fhir:path [ fhir:v "Observation.extension" ] ;
@@ -812,7 +813,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v false ]
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "Observation.modifierExtension" ] ;
        fhir:path [ fhir:v "Observation.modifierExtension" ] ;
