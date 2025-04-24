@@ -5,9 +5,7 @@ Id: mesures-diagnostic-report
 Title: "DiagnosticReport mesures biologie"
 Description: "Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie"
 
-
-// * code = http://loinc.org#57698-3 "Lipid panel with direct LDL - Serum or Plasma"
-
+* code = http://loinc.org#11502-2 "Compte rendu du laboratoire [Recherche] Patient ; Document"
 
 * result ^slicing.discriminator.type = #profile
 * result ^slicing.discriminator.path = "resolve()"
