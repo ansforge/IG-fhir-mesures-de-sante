@@ -66,19 +66,39 @@ Usage: #example
 * method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
 
 
+Instance: glycemia-example
+InstanceOf: MesObservationGlucose
+Usage: #example
+* status = #final
+* subject = Reference(ExamplefrPatient001) "Pierre Durand"
+  * type = "Patient"
+* effectiveDateTime = "2022-11-06"
+* code = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#4548-4
+* valueQuantity = 92 'mg/dL' "milligramme par décilitre"
+* referenceRange.low = 70 'mg/dL' "milligramme par décilitre"
+* referenceRange.high = 100 'mg/dL' "milligramme par décilitre"
+* extension[MesReasonForMeasurement].valueString = "Malaise du patient"
+* extension[MesMomentOfMeasurement].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#16915-1 "Glucose post prandial"
+* extension[MesNumberOfDays].valueCodeableConcept.coding = https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP#GEN-275 "7j"
+
+
 Instance: cholesterol-dr
 InstanceOf: MesDiagnosticReport
 Usage: #example
-* code = http://loinc.org#57698-3
+* code = http://loinc.org#11502-2
 * status = #final
 * result[total-cholesterol] = Reference(cholesterol-total-example)
 * result[hdl-cholesterol] = Reference(cholesterol-hdl-example)
 * result[ldl-cholesterol] = Reference(cholesterol-ldl-example)
 * result[trigly-cholesterol] = Reference(cholesterol-trigly-example)
-// TODO : add gly, aspect, ratio
+* result[trigly-cholesterol] = Reference(cholesterol-trigly-example)
+// TODO : add aspect, ratio
+
+* result[glycemie] = Reference(glycemia-example)
 
 
-Instance: bundle-example-lipids
+
+Instance: bundle-example-bio
 InstanceOf: MesBundleFluxAlimentationBiologie
 Usage: #example
 * type = #transaction
