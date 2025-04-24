@@ -33,6 +33,7 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 * hasMember 0..0
 * derivedFrom 0..0
 
+* method 1..1
 * method from https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 (extensible)
 
 

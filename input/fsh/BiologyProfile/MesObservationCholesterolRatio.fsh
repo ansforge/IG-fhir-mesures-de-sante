@@ -10,6 +10,7 @@ Description: "Profil biologie de la ressource Observation pour définir le ratio
 * dataAbsentReason.coding.code 1..
 
 * code = http://loinc.org#11054-4 "Cholestérol LDL/cholestérol HDL [Masse ratio] Sérum/Plasma ; Numérique"
+
 * method from https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 (extensible)
 
 * referenceRange 1..1 MS
