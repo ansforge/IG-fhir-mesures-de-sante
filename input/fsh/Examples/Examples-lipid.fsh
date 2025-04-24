@@ -13,6 +13,8 @@ Usage: #example
 * referenceRange.low = 2.80 'mmol/L' "mmol/L"
 * referenceRange.high = 11.10 'mmol/L' "mmol/L"
 
+* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
+
 Instance: cholesterol-hdl-example
 InstanceOf: MesFrObservationCholesterolHDL
 Usage: #example
@@ -27,7 +29,7 @@ Usage: #example
 
 * referenceRange.low = 3.1 'mmol/L' "mmol/L"
 
-* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEN
+* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
 
 
 Instance: cholesterol-ldl-example
@@ -44,7 +46,7 @@ Usage: #example
 
 * referenceRange.high = 2.6 'mmol/L' "mmol/L"
 
-* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEN
+* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
 
 Instance: cholesterol-trigly-example
 InstanceOf: MesFrObservationCholesterolTrigly
@@ -60,6 +62,8 @@ Usage: #example
 
 * referenceRange.low = 2.80 'mmol/L' "mmol/L"
 * referenceRange.high = 21.1 'mmol/L' "mmol/L"
+
+* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
 
 
 Instance: cholesterol-dr
