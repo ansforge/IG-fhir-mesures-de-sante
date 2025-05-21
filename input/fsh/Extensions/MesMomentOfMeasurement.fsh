@@ -1,8 +1,7 @@
 Extension: MesMomentOfMeasurement
 Id: mesures-moment-of-measurement
 Title: "Moment de la mesure"
-Description: """Moment de la mesure.
-Peut être exprimé par un texte libre ou un code."""
+Description: """Extension pour indiquer le moment de la mesure"""
 * ^context.type = #element
 * ^context.expression = "Observation"
 * . ^short = "Moment de la mesure"

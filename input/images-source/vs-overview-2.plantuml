@@ -1,0 +1,29 @@
+@startuml
+
+skinparam linetype ortho
+skinparam dpi 150
+skinparam boxPadding 10
+skinparam shadowing false
+skinparam packageBackgroundColor LightBlue
+skinparam packageBorderColor DarkBlue
+
+package "Profils Mesures de santé d'HL7 FHIR" as HL7 #F9968B {
+    [HL7 FHIR VitalSigns]
+}
+
+
+package "Profils Mesures Santé de l'ANS héritant de VitalSigns" as PMSB #76CDCD {
+    [MesObservationPainSeverity]
+    [MesObservationWaistCircumference]
+    [MesObservationStepsByDay]
+    [MesObservationGlucose]
+    [MesObservationHeadCircumference]
+}
+
+[HL7 FHIR VitalSigns] --> [MesObservationPainSeverity]
+[HL7 FHIR VitalSigns] --> [MesObservationWaistCircumference]
+[HL7 FHIR VitalSigns] --> [MesObservationStepsByDay]
+[HL7 FHIR VitalSigns] --> [MesObservationGlucose]
+[HL7 FHIR VitalSigns] --> [MesObservationHeadCircumference]
+
+@enduml
