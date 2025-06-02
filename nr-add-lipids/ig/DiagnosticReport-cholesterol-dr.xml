@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="cholesterol-dr"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : DiagnosticReport cholesterol-dr</b></p><a name="cholesterol-dr"> </a><a name="hccholesterol-dr"> </a><a name="cholesterol-dr-fr-FR"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-mesures-diagnostic-report.html">DiagnosticReport mesures biologie</a></p></div><h2><span title="Codes:{http://loinc.org 11502-2}">Compte rendu du laboratoire [Recherche] Patient ; Document</span> </h2><table class="grid"/><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Valeur</b></td><td><b>Reference Range</b></td><td><b>Drapeaux</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-cholesterol-total-example.html"><span title="Codes:{http://loinc.org 2093-3}">Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique</span></a></td><td>0.4 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>2.8 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span> - 11.1 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>Final</td><td>2024-10-15</td></tr><tr><td><a href="Observation-cholesterol-hdl-example.html"><span title="Codes:{http://loinc.org 2085-9}">HDL Cholesterol</span></a></td><td>2.8 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>&gt;3.1 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>Final</td><td>2024-10-15</td></tr><tr><td><a href="Observation-cholesterol-ldl-example.html"><span title="Codes:{http://loinc.org 2089-1}">LDL Cholesterol</span></a></td><td>7.8 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>&lt;2.6 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>Final</td><td>2024-10-15</td></tr><tr><td><a href="Observation-cholesterol-trigly-example.html"><span title="Codes:{http://loinc.org 2571-8}">LDL Cholesterol</span></a></td><td>5.6 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>2.8 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span> - 21.1 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>Final</td><td>2024-10-15</td></tr><tr><td><a href="Observation-glycemia-example.html"><span title="Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}">Hémoglobine A1c %</span></a></td><td>92 milligramme par décilitre<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>70 milligramme par décilitre<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dL = 'mg/dL')</span> - 100 milligramme par décilitre<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>Final</td><td>2022-11-06</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11502-2"/>
+      <display value="Compte rendu du laboratoire [Recherche] Patient ; Document"/>
+    </coding>
+  </code>
+  <result>
+    <reference value="Observation/cholesterol-total-example"/>
+  </result>
+  <result>
+    <reference value="Observation/cholesterol-hdl-example"/>
+  </result>
+  <result>
+    <reference value="Observation/cholesterol-ldl-example"/>
+  </result>
+  <result>
+    <reference value="Observation/cholesterol-trigly-example"/>
+  </result>
+  <result>
+    <reference value="Observation/glycemia-example"/>
+  </result>
+</DiagnosticReport>

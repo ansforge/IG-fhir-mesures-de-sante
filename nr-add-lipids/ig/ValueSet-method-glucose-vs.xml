@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="method-glucose-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ValueSet method-glucose-vs</b></p><a name="method-glucose-vs"> </a><a name="hcmethod-glucose-vs"> </a><a name="method-glucose-vs-fr-FR"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/ig/nos/1.3.0/CodeSystem-TRE-R312-LPP.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP</code></a></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/ig/nos/1.3.0/CodeSystem-TRE-R307-NCIT.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT</code></a></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs"/>
+  <version value="3.1.0"/>
+  <name value="MethodeGlucoseVS"/>
+  <title value="Méthode de mesures de glycémie sanguine ou interstitielle"/>
+  <status value="active"/>
+  <date value="2025-06-02T12:26:08+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Méthode de mesures de glycémie sanguine ou interstitielle."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP"/>
+    </include>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT"/>
+    </include>
+  </compose>
+</ValueSet>

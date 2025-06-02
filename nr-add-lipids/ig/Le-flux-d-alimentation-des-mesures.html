@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Le flux d'alimentation des mesures de santé - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+  </div>
+  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
+    <a no-external="true" id="hl7-logo" href="https://esante.gouv.fr/"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
+    <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guide d'implémentation FHIR - Mesures de santé</span>
+            <br/>
+            <span style="display:inline-block;">3.1.0 - ci-build
+
+
+
+  <img src="assets/images/fra.svg" alt="France flag" title="France" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Les profils Mesures
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Le-flux-d-alimentation-des-mesures.html">Flux d'alimentation des mesures</a>
+      </li>
+      <li>
+        <a href="profils-signes-vitaux.html">Les profils FHIR des signes vitaux</a>
+      </li>
+      <li>
+        <a href="profils-biologie.html">Les profils FHIR des paramètres biologiques</a>
+      </li>
+      <li>
+        <a href="Le-profil-FHIR-des-objets-connectes.html">Le profil FHIR des objets connectés</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Les extensions Mesures
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-mesures-reason-for-measurement.html">MesReasonForMeasurement - Motif de la mesure</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-mesures-moment-of-measurement.html">MesMomentOfMeasurement - Moment de la mesure</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-mesures-number-of-days.html">MesNumberOfDays - Nombre de jours</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Terminologies.html">Terminologies</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usages</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a href="https://esante.gouv.fr" target="_blank">Site de l'ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Le flux d'alimentation des mesures de santé</b></li>
+
+          <span style="float:right;">
+
+            <a href="index.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="profils-signes-vitaux.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Le flux d'alimentation des mesures de santé</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#contenu-de-la-requête-dalimentation" id="markdown-toc-contenu-de-la-requête-dalimentation">Contenu de la requête d’alimentation</a></li>
+  <li><a href="#lattribut--ifnoneexist-" id="markdown-toc-lattribut--ifnoneexist-">L’attribut « ifNoneExist »</a></li>
+  <li><a href="#référence-de-la-ressource-observation-vers-la-ressource-device-observationdevice" id="markdown-toc-référence-de-la-ressource-observation-vers-la-ressource-device-observationdevice">Référence de la ressource Observation vers la ressource Device (Observation.device)</a></li>
+  <li><a href="#lattribut--observationmetasource-" id="markdown-toc-lattribut--observationmetasource-">L’attribut « Observation.meta.source »</a></li>
+  <li><a href="#lattribut--metaprofile-" id="markdown-toc-lattribut--metaprofile-">L’attribut « meta.profile »</a></li>
+  <li><a href="#exemple-dappel" id="markdown-toc-exemple-dappel">Exemple d’appel</a></li>
+  <li><a href="#réponse-à-la-requête-dalimentation" id="markdown-toc-réponse-à-la-requête-dalimentation">Réponse à la requête d’alimentation</a></li>
+</ul>
+
+</div>
+
+<p>Le flux d’alimentation unitaire d’une constante reprend la logique de la transaction “PCH 01” (Communicate FHIR PHD data) du profil “IHE POU“ (Personal Health Device Observation Upload).</p>
+
+<p>Ce profil et cette transaction sont détaillés dans la documentation IHE.
+Ce profil se base sur l’interaction “transaction"  de l’API REST de FHIR. Il s’agit d’une requête http POST dont le corps est une ressource “Bundle”  de type “transaction”.</p>
+
+<h3 id="contenu-de-la-requête-dalimentation">Contenu de la requête d’alimentation</h3>
+
+<p>Le corps de cette requête contient un “Bundle” conforme au profil <a href="StructureDefinition-mesures-bundle-flux-alimentation.html">MesBundleFluxAlimentation</a> qui peut empaquetter jusqu'à deux ressources:</p>
+
+<ul>
+  <li>Une ressource “Observation” suivant un profil MES défini dans ce guide.</li>
+  <li>Une ressource “Device” (optionnelle) suivant le profil “PhdDevice” (<a href="https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html">https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html</a>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis l'attribut “device” de la ressource “Observation” : “Observation.device”</li>
+</ul>
+
+<p>Ces 2 ressources sont incorporées dans la liste (“array”) de Bundle.entry.
+Chaque élément de cette liste est un objet contenant 2 sous-objets : une ressource et la requête HTTP associée. Dans le cas classique de l’écriture d’une observation et du “device” utilisé pour la réaliser, cette liste contient donc 4 objets.</p>
+
+<p>Ci-dessous, la structure d’un “bundle” au format JSON contenant des ressources “Observation” et “Device” dans l’attribut Bundle.entry:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">  
+    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">  
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"transaction"</span><span class="p">,</span><span class="w">  
+    </span><span class="nl">"entry"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">  
+        </span><span class="p">{</span><span class="w">  
+            </span><span class="nl">"fullUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11234563-069d-112d-829b-f01234567892"</span><span class="p">,</span><span class="w">  
+            </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
+                  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">  
+                  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
+                       </span><span class="nl">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;OID de la solution éditeur&gt;"</span><span class="p">,</span><span class="w">  
+                       </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">  
+                      </span><span class="s2">"https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"</span><span class="w">  
+                      </span><span class="p">]</span><span class="w">  
+                  </span><span class="p">},</span><span class="w">  
+                </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">  
+                </span><span class="nl">"device"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
+                    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device/3bc44de3-069d-442d-829b-f3ef68cae372"</span><span class="w">  
+                </span><span class="p">}</span><span class="w">  
+            </span><span class="p">},</span><span class="w">  
+            </span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
+                </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POST"</span><span class="p">,</span><span class="w">  
+                </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="w">  
+            </span><span class="p">}</span><span class="w">  
+        </span><span class="p">},</span><span class="w">  
+        </span><span class="p">{</span><span class="w">  
+            </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">   
+                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device"</span><span class="p">,</span><span class="w">  
+                </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
+                    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">  
+                        </span><span class="s2">"http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"</span><span class="w">  
+                    </span><span class="p">]</span><span class="w">  
+                </span><span class="p">},</span><span class="w">  
+                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3bc44de3-069d-442d-829b-f3ef68cae372"</span><span class="p">,</span><span class="w">  
+                </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">  
+            </span><span class="p">},</span><span class="w">  
+            </span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
+                </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POST"</span><span class="p">,</span><span class="w">  
+                </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device"</span><span class="p">,</span><span class="w">  
+                </span><span class="nl">"ifNoneExist"</span><span class="p">:</span><span class="w"> </span><span class="s2">"identifier=urn:oid:&lt;OID du PHD|Identifier PHD&gt;"</span><span class="w">  
+            </span><span class="p">}</span><span class="w">  
+        </span><span class="p">}</span><span class="w">  
+    </span><span class="p">]</span><span class="w">  
+</span><span class="p">}</span><span class="w">  
+</span></code></pre></div></div>
+
+<p>Le champs “type” du “bundle” doit être fixé à “transaction”, l’attribut “request” doit être présent avec la method POST et l’url avec le resourceType.</p>
+
+<p>A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation.</p>
+
+<h3 id="lattribut--ifnoneexist-">L’attribut « ifNoneExist »</h3>
+
+<p>L’attribut ifNoneExist contenant l’oid du device (« sous oid » de la solution éditeur) et son identifier est obligatoire pour la ressource Device. Cet attribut permet d’exécuter la transaction « conditional create »  pour les Devices :</p>
+
+<ul>
+  <li>Si le device existe déjà dans l’entrepôt de MES identifié par le couple oid/identifier, il n’est pas recréé (code 200 Success retourné).</li>
+  <li>S’il n’existe pas, il sera créé (code 201 Created retourné) avec comme identifiant unique le couple oid + identifier.</li>
+</ul>
+
+<p>A noter que la validation FHIR requiert l’incorporation d’un champ “fullUrl” pour l’observation.</p>
+
+<h3 id="référence-de-la-ressource-observation-vers-la-ressource-device-observationdevice">Référence de la ressource Observation vers la ressource Device (Observation.device)</h3>
+
+<p>La ressource Device peut être référencée dans l’attribut Observation.device.reference.<br/>
+Ainsi, il doit contenir le préfixe « Device/ » et le l'identifiant du Device doit contenir uniquement l’uuid.</p>
+
+<h3 id="lattribut--observationmetasource-">L’attribut « Observation.meta.source »</h3>
+
+<p>Le système source de la donnée est indiqué dans le champ meta de l’observation.<br/>
+Le champ source contient le code du système (qui correspond à l’issuer lors de l’enregistrement de la donnée).</p>
+
+<p>Ce champ est facultatif :</p>
+
+<ul>
+  <li>S’il est envoyé, il est validé,</li>
+  <li>S’il n’est pas fourni, il est positionné à partir de l’oid stocké côté référentiel MES</li>
+</ul>
+
+<h3 id="lattribut--metaprofile-">L’attribut « meta.profile »</h3>
+
+<p>L’Observation et le Device doivent renseigner l’url canonique du profil dans le champs meta.profile.<br/>
+Cette information est nécessaire, elle permet de valider la conformité des ressources Device avec le profil PhdDevice ainsi que celle des ressources Observation avec l’un des 11 profils des mesures de santé.</p>
+
+<h3 id="exemple-dappel">Exemple d’appel</h3>
+
+<p><a name="l840">​</a>Un <a href="Bundle-bundle-example.html">exemple complet</a> d'instance de Bundle a été constitué au sein du guide. Celui-ci doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :</p>
+
+<ul>
+  <li>Une ressource Observation MesFrObservationBodyWeight</li>
+  <li>
+    <p>Une ressource Device responsable de la mesure avec :</p>
+
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>comme identifiant unique au sein de MES :  urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680</td>
+              <td>FE-ED-AB-AA-DE-AD-77-C5</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>la spécialisation Generic 20601 Device (code 528457)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>L’oid de <strong><em>Device.identifier.system</em></strong> est celui de la solution éditeur gérant le device. On le retrouve (ou un sous oid) dans l’attribut ifNoneExist afin d’identifier le device de manière unique au sein de l’entrepôt FHIR de MES.</p>
+
+<h3 id="réponse-à-la-requête-dalimentation">Réponse à la requête d’alimentation</h3>
+
+<p>En cas de succès, le code http 200 OK est retourné.
+Le corps de la réponse contient une ressource Bundle de type « transaction-response » avec la liste des réponses pour chaque ressource envoyée. Chacune de ces réponses contient :</p>
+
+<ul>
+  <li>Un http Status code :
+    <ul>
+      <li>Le status « 201 Created » pour les ressources créées sur MES. Pour rappel, si le Device identifié via l’attribut ifNoneExist du bundle n’existe pas dans l’entrepôt FHIR, il est créé et le statut « 201 Created » est renvoyé pour la ressource Device.</li>
+      <li>Le statut « 200 Success » est renvoyé si le Device est déjà existant</li>
+    </ul>
+  </li>
+  <li>Un attribut location contenant la localisation de la ressource</li>
+</ul>
+
+<p>Voici un exemple de retour à la suite de la création d’une Observation et d’un nouveau Device :</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"transaction-response"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"entry"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"response"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"201 Created"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation/urn:oid:&lt;OID-MES&gt;|29680733-6158-4e22-ab7e-eb6825dcdb13"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"response"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"201 Created"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device/urn:oid:&lt;OID-DEVICE&gt;|FE-ED-AB-AA-DE-AD-77-C4"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Dans le cas d’une erreur rencontrée, un code erreur HTTP est retourné :</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Statut</th>
+      <th>Error</th>
+      <th>Message</th>
+      <th>Précision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>400</td>
+      <td>Bad Request</td>
+      <td>HTTP code 400 : Bad request -&gt; The ID_TOKEN value is not valid (invalid JWT)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>401</td>
+      <td>Unauthorized</td>
+      <td>&nbsp;</td>
+      <td>L’access_token est invalide</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td>idPe requested do not match authorized idPe.</td>
+      <td>&nbsp;</td>
+      <td>idPe dans la request ne correspond pas à l’idPe de l’id_token</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td>Consent not given, access refused.</td>
+      <td>&nbsp;</td>
+      <td>L’usager n’a pas donné son consente-ment pour l’opération d’écriture de-mandée.</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Unprocessable Entity</td>
+      <td>No bundle provided.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>409</td>
+      <td>Conflict</td>
+      <td>HTTP code 409 :OID conflict between the one from id_token and the one in the system -&gt; OID different between id_token and ecosystem</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Le corps de la réponse contient une ressource Bundle de type « transaction-response ». <br/>
+Cette ressource  contient le détail des erreurs et avertissements résultants du traitement de la requête transmise par MES.<br/>
+Pour chacune des ressources à valider, il sera toujours retourné un code HTTP « 422 Unprocessable Entity » accompagné d’une ou plusieurs OperationOutcome de niveau « Error » dont voici la liste :</p>
+
+<blockquote>
+
+  <p><strong><em>Erreur de structure du bundle</em></strong></p>
+
+</blockquote>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Code HTTP</th>
+      <th>Message</th>
+      <th>Outcome type</th>
+      <th>Outcome diagnostic</th>
+      <th>Précision</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>422</td>
+      <td>Bundle not valid.</td>
+      <td>NOTSUPPORTED</td>
+      <td>Resource of type &lt;&gt; is not acceptable with method &lt;&gt;.</td>
+      <td>L’API ne prend en charge que les ressources Observation ou De-vice en POST.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Bundle not valid.</td>
+      <td>INVALID</td>
+      <td>Bundle must contains one conditional creation of a device (POST + ifNoneExist)</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Bundle not valid.</td>
+      <td>INVALID</td>
+      <td>Device request must have a valid IfNoneEx-ist attribute : identifi-er=urn:oid:<OID></OID></td>
+      <td><DEVICE ID="null"></DEVICE></td>
+      <td>L'identifier du device présent dans l’attribut « ifNoneExist » doit respecter la regex suivante : identifier=urn:oid:([0-9]+[.[0-9]+]+)|([a-zA-Z0-9]+[-[a-zA-Z0-9]+]+)</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Bundle not valid.</td>
+      <td>INVALID</td>
+      <td>Bundle must contains one observation crea-tion (POST)</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+
+  <p><strong><em>Erreur sur le lien entre l’observation et le device</em></strong></p>
+
+</blockquote>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Code HTTP</th>
+      <th>Message</th>
+      <th>Outcome type</th>
+      <th>Outcome diagnostic</th>
+      <th>Précision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>422</td>
+      <td>Observation and Device link not valid.</td>
+      <td>INVALID</td>
+      <td>Observa-tion.device.reference is mandatory.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Observation and Device link not valid.</td>
+      <td>INVALID</td>
+      <td>Observation and de-vice not linked by id (Observa-tion.device.reference &lt;-&gt; Device.id)</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+
+  <p><strong><em>Erreur sur l’observation</em></strong></p>
+
+</blockquote>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Code HTTP</th>
+      <th>Message</th>
+      <th>Outcome type</th>
+      <th>Outcome diagnostic</th>
+      <th>Précision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>422</td>
+      <td>Observation resource not valid.</td>
+      <td>INVALID</td>
+      <td>Observation must provide meta.profile value.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Observation resource not valid.</td>
+      <td>VALUE</td>
+      <td>Solution oid contains in Observa-tion.meta.source don't belong to root editor oid (<OID>).</OID></td>
+      <td>Si cet attribut est fourni, il est validé. S’il n’est pas fourni, MES le renseigne avec les données issues du référentiel.</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Observation resource not valid.</td>
+      <td>VALUE</td>
+      <td>Observation value quantity not provided.</td>
+      <td>Dans MES, des observations sans valeur sont refusées</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Observation resource not valid.</td>
+      <td>NOTSUPPORTED</td>
+      <td>Bmi observation can-not be created.</td>
+      <td>Les observations IMC sont calculées à la volée et ne peuvent donc pas être créées.</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Observation resource not valid.</td>
+      <td>INVALID</td>
+      <td>Observation.subject.identifier is mandatory.</td>
+      <td>Ce champ doit contenir le couple oid/IDPE</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Observation resource not valid.</td>
+      <td>INCOMPLETE</td>
+      <td>Observation.extension.moment is mandatory.</td>
+      <td>Se référer au chapitre sur le Cas particulier de la glycémie</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Observation resource not valid.</td>
+      <td>INVALID</td>
+      <td>Observation.extension.numberOfDays cannot be added.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Observation resource not valid.</td>
+      <td>INVALID</td>
+      <td>Observation.extension.moment cannot be added.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>Observation resource not valid.</td>
+      <td>INCOMPLETE</td>
+      <td>Observation.extension.numberOfDays is mandatory.</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+
+  <p><strong><em>Erreur sur le device</em></strong></p>
+
+</blockquote>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Code HTTP</th>
+      <th>Message</th>
+      <th>Outcome type</th>
+      <th>Outcome diagnostic</th>
+      <th>Précision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>422</td>
+      <td>Device resource not valid.</td>
+      <td>INVALID</td>
+      <td>Device must provide meta.profile value.</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Cette ressource OperationOutcome (<a href="https://www.hl7.org/fhir/operationoutcome.html">https://www.hl7.org/fhir/operationoutcome.html</a>) contient le détail des erreurs et avertissements résultants du traitement de la requête transmise par MES.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Niveau</th>
+      <th>Elément</th>
+      <th>Card</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>OperationOutcome</td>
+      <td>0..1</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Issue</td>
+      <td>1..*</td>
+      <td>BackboneEle-ment</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Severity</td>
+      <td>1..1</td>
+      <td>Code</td>
+      <td>Criticité de l’erreur (<a href="http://hl7.org/fhir/ValueSet/issue-severity">http://hl7.org/fhir/ValueSet/issue-severity</a>)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Code</td>
+      <td>1..1</td>
+      <td>Code	Type d’erreur (<a href="http://www.hl7.org/fhir/valueset-issue-type.html">http://www.hl7.org/fhir/valueset-issue-type.html</a>)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Diagnostics</td>
+      <td>0..1</td>
+      <td>String</td>
+      <td>Informations complémentaires sur l’erreur</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Seul les niveaux « fatal » et « error » provoquent un retour avec un code http d’erreur.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+<script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="index.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="profils-signes-vitaux.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 2, 2025 12:27+0000">2025-06-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html" target="_blank">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new" target="_blank">New Issue</a>
+
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+
+    <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+    <!-- Fin ajout ANS -->
+
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+
+    <!-- Analytics Below
+  ================================================== -->
+
+
+    <!-- AJOUT ANS -->
+
+<footer role="contentinfo" class="footer footer-principal">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+            <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+                <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li> -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+      <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
