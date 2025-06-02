@@ -1,4 +1,3 @@
-
 Profile: MesFrObservationBmi
 Parent: $FrObservationBmi
 Id: mesures-fr-observation-bmi

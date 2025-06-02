@@ -1,0 +1,35 @@
+
+@startuml
+
+
+artifact "DiagnosticReport" as dr
+artifact "Total Cholesterol" as ct
+artifact "HDL Cholesterol" as chdl
+artifact "Trigycerides" as trigly
+artifact "LDL Cholesterol" as cldl
+
+artifact "Ratio Cholesterol" as cr
+artifact "Aspect Cholesterol" as ca
+artifact "Glycemie" as gly
+
+url of dr is  [[StructureDefinition-mesures-cholesterol-diagnostic-report.html]]
+url of ct is  [[StructureDefinition-mesures-observation-cholesterol-total.html]]
+url of chdl is  [[StructureDefinition-mesures-observation-cholesterol-hdl.html]]
+url of trigly [[StructureDefinition-mesures-observation-cholesterol-trigly.html]]
+url of cldl [[StructureDefinition-mesures-observation-cholesterol-total.html]]
+
+url of cr [[StructureDefinition-mesures-observation-cholesterol-ratio.html]]
+url of ca [[StructureDefinition-mesures-observation-cholesterol-aspect.html]]
+url of gly [[StructureDefinition-mesures-observation-glucose.html]]
+
+dr --> ct : result 0..1
+dr --> chdl : result 0..1
+dr --> trigly : result 0..1
+dr --> cldl : result 0..1
+
+dr --> cr : result 0..1
+dr --> ca : result 0..1
+dr --> gly : result 0..1
+
+
+@enduml

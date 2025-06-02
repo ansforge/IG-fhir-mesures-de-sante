@@ -2,7 +2,7 @@ Alias: $ContinuaDeviceIdentifiers = http://hl7.org/fhir/uv/phd/CodeSystem/Contin
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $loinc = http://loinc.org
 
-Instance: bundle-example
+Instance: bundle-example-body-weight
 InstanceOf: MesBundleFluxAlimentation
 Usage: #example
 * type = #transaction
@@ -11,7 +11,7 @@ Usage: #example
 * entry[mes-device][=].request.url = "Device"
 * entry[mes-device][=].fullUrl = "urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575" //created using random generator
 
-* entry[mes-observation][0].resource = body-weight-example
+* entry[mes-observation][+].resource = body-weight-example
 * entry[mes-observation][=].request.method = #POST
 * entry[mes-observation][=].request.url = "Observation"
 * entry[mes-observation][=].fullUrl = "urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a" //created using random generator

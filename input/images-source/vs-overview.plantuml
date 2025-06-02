@@ -1,0 +1,48 @@
+@startuml
+
+skinparam linetype ortho
+skinparam dpi 150
+skinparam boxPadding 10
+skinparam shadowing false
+skinparam packageBackgroundColor LightBlue
+skinparam packageBorderColor DarkBlue
+
+package "Profils Mesures de santé d'HL7 FHIR" as HL7 #F9968B {
+    [VitalSigns] --> [Observation-body-height]
+    [VitalSigns] --> [Observation-body-weight]
+    [VitalSigns] --> [Observation-bmi]
+    [VitalSigns] --> [Observation-heartrate]
+    [VitalSigns] --> [Observation-respiratory-rate]
+    [VitalSigns] --> [Observation-blood-pressure]
+    [VitalSigns] --> [Observation-body-temperature]
+    [VitalSigns] --> [Observation-oxygen-saturation]
+}
+
+package "Profils Mesures de santé d'InteropSanté" as PI #F27438 {
+    [Observation-bmi] --> [FrObservationBmi]
+    [Observation-heartrate] --> [FrObservationHeartrate]
+    [Observation-body-weight] --> [FrObservationBodyWeight]
+    [Observation-body-height] --> [FrObservationBodyHeight]
+    [Observation-body-temperature] --> [FrObservationBodyTemperature]
+    [Observation-blood-pressure] --> [FrObservationBP]
+    [Observation-oxygen-saturation] --> [FrObservationOxygenSaturation]
+    [Observation-respiratory-rate] --> [FrObservationRespRate]
+}
+
+package "Profils Mesures Santé de l'ANS" as PMSB #76CDCD {
+    [FrObservationBmi] --> [FrMesObservationBmi]
+    [FrObservationHeartrate] --> [FrMesObservationHeartrate]
+    [FrObservationBodyWeight] --> [FrMesObservationBodyWeight]
+    [FrObservationBodyHeight] --> [FrMesObservationBodyHeight]
+    [FrObservationBodyTemperature] --> [FrMesObservationBodyTemperature]
+    [FrObservationBP] --> [FrMesObservationBP]
+    [FrObservationOxygenSaturation] --> [FrMesObservationOxygenSaturation]
+    [FrObservationRespRate] --> [FrMesObservationRespiratoryRate]
+    
+
+}
+
+PMSB --> PI
+PI --> HL7
+
+@enduml
