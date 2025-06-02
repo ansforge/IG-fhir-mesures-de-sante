@@ -195,7 +195,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Le flux d&#39;alimentation des mesures de santé</h2>
   
 
@@ -227,15 +227,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Le flux d’alimentation unitaire d’une constante reprend la logique de la transaction “PCH 01” (Communicate FHIR PHD data) du profil “IHE POU“ (Personal Health Device Observation Upload).</p>
 
 <p>Ce profil et cette transaction sont détaillés dans la documentation IHE.
-Ce profil se base sur l’interaction “transaction”  de l’API REST de FHIR. Il s’agit d’une requête http POST dont le corps est une ressource “Bundle”  de type “transaction”.</p>
+Ce profil se base sur l’interaction “transaction"  de l’API REST de FHIR. Il s’agit d’une requête http POST dont le corps est une ressource “Bundle”  de type “transaction”.</p>
 
 <h3 id="contenu-de-la-requête-dalimentation">Contenu de la requête d’alimentation</h3>
 
-<p>Le corps de cette requête contient un “Bundle” conforme au profil <a href="StructureDefinition-mesures-bundle-flux-alimentation.html">MesBundleFluxAlimentation</a> qui peut empaquetter jusqu’à deux ressources:</p>
+<p>Le corps de cette requête contient un “Bundle” conforme au profil <a href="StructureDefinition-mesures-bundle-flux-alimentation.html">MesBundleFluxAlimentation</a> qui peut empaquetter jusqu'à deux ressources:</p>
 
 <ul>
   <li>Une ressource “Observation” suivant un profil MES défini dans ce guide.</li>
-  <li>Une ressource “Device” (optionnelle) suivant le profil “PhdDevice” (<a href="https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html">https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html</a>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis l’attribut “device” de la ressource “Observation” : “Observation.device”</li>
+  <li>Une ressource “Device” (optionnelle) suivant le profil “PhdDevice” (<a href="https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html">https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html</a>), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis l'attribut “device” de la ressource “Observation” : “Observation.device”</li>
 </ul>
 
 <p>Ces 2 ressources sont incorporées dans la liste (“array”) de Bundle.entry.
@@ -306,7 +306,7 @@ Chaque élément de cette liste est un objet contenant 2 sous-objets : une resso
 <h3 id="référence-de-la-ressource-observation-vers-la-ressource-device-observationdevice">Référence de la ressource Observation vers la ressource Device (Observation.device)</h3>
 
 <p>La ressource Device peut être référencée dans l’attribut Observation.device.reference.<br />
-Ainsi, il doit contenir le préfixe « Device/ » et le l’identifiant du Device doit contenir uniquement l’uuid.</p>
+Ainsi, il doit contenir le préfixe « Device/ » et le l'identifiant du Device doit contenir uniquement l’uuid.</p>
 
 <h3 id="lattribut--observationmetasource-">L’attribut « Observation.meta.source »</h3>
 
@@ -327,7 +327,7 @@ Cette information est nécessaire, elle permet de valider la conformité des res
 
 <h3 id="exemple-dappel">Exemple d’appel</h3>
 
-<p>Un <a href="Bundle-bundle-example.html">exemple complet</a> d’instance de Bundle a été constitué au sein du guide. Celui-ci doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :</p>
+<p>Un <a href="Bundle-bundle-example.html">exemple complet</a> d'instance de Bundle a été constitué au sein du guide. Celui-ci doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :</p>
 
 <ul>
   <li>Une ressource Observation MesFrObservationBodyWeight</li>
@@ -484,7 +484,7 @@ Pour chacune des ressources à valider, il sera toujours retourné un code HTTP 
       <td>INVALID</td>
       <td>Device request must have a valid IfNoneEx-ist attribute : identifi-er=urn:oid:<OID></OID></td>
       <td><DEVICE ID=""></DEVICE></td>
-      <td>L’identifier du device présent dans l’attribut « ifNoneExist » doit respecter la regex suivante : identifier=urn:oid:([0-9]+[.[0-9]+]+)|([a-zA-Z0-9]+[-[a-zA-Z0-9]+]+)</td>
+      <td>L'identifier du device présent dans l’attribut « ifNoneExist » doit respecter la regex suivante : identifier=urn:oid:([0-9]+[.[0-9]+]+)|([a-zA-Z0-9]+[-[a-zA-Z0-9]+]+)</td>
     </tr>
     <tr>
       <td>422</td>
@@ -559,7 +559,7 @@ Pour chacune des ressources à valider, il sera toujours retourné un code HTTP 
       <td>422</td>
       <td>Observation resource not valid.</td>
       <td>VALUE</td>
-      <td>Solution oid contains in Observa-tion.meta.source don’t belong to root editor oid (<OID>).</OID></td>
+      <td>Solution oid contains in Observa-tion.meta.source don't belong to root editor oid (<OID>).</OID></td>
       <td>Si cet attribut est fourni, il est validé. S’il n’est pas fourni, MES le renseigne avec les données issues du référentiel.</td>
     </tr>
     <tr>
@@ -737,12 +737,13 @@ Pour chacune des ressources à valider, il sera toujours retourné un code HTTP 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 28, 2025 14:19+0000">2025-05-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 2, 2025 12:27+0000">2025-06-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions </a>
+            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new">New Issue</a>
 
           </span>
