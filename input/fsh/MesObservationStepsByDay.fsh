@@ -4,15 +4,7 @@ Id: mesures-observation-steps-by-day
 Title: "Nombre de pas par jour"
 Description: "Profil de la ressource Observation pour définir un nombre de pas par jour"
 
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
-
-* extension contains
-    $workflow-supportingInfo named supportingInfo 0..1 and
-    mesures-reason-for-measurement named MesReasonForMeasurement 0..1
-
-* extension[supportingInfo] ^definition = "Autres ressources pertinentes *du dossier patient*"
-* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)"
+* insert ObservationResultsMesures
 
 * code.coding ^slicing.discriminator[0].type = #pattern
 * code.coding ^slicing.discriminator[=].path = "code"

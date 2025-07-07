@@ -4,7 +4,7 @@ Id: mesures-fr-observation-resp-rate
 Title: "Fréquence respiratoire"
 Description: "Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR)"
 
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+* insert ObservationResultsMesures
 
 * extension contains mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 

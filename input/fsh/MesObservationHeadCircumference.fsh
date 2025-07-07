@@ -4,13 +4,7 @@ Id: mesures-observation-head-circumference
 Title: "Périmètre Crânien"
 Description: "Profil de la ressource Observation pour définir un Périmètre Crânien"
 
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
-
-* extension contains
-    $workflow-supportingInfo named supportingInfo 0..1 and
-    mesures-reason-for-measurement named MesReasonForMeasurement 0..1
-
-* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
+* insert ObservationResultsMesures
 
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "code"
