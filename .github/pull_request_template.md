@@ -9,4 +9,6 @@
 https://build.fhir.org/ig/ansforge/IG-fhir-mesures-de-sante/branches/[nom-branche]
 https://ansforge.github.io/IG-fhir-mesures-de-sante/[nom-branche]/ig/
 
+FHIR IG builds dashboard : https://fhir.github.io/auto-ig-builder
+
 ## Impact API MES
