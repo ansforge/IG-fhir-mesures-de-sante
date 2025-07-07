@@ -4,7 +4,7 @@ Id: mesures-observation-glucose
 Title: "Glycémie"
 Description: """Profil de la ressource Observation pour définir une Glycémie
 
-Ce profil permet de gérer 4 types d'indicateurs de glycémie:
+Ce profil permet de gérer 3 types d'indicateurs de glycémie:
 - le taux de glucose sanguin, mesuré en mg/dl
 - le taux de glucose interstitiel, mesuré en mg/dl
 - l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
