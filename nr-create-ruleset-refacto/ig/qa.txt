@@ -3,7 +3,7 @@ Mesures : Validation Results
 
 err = 60, warn = 101, info = 69
 IG Publisher Version: 2.0.8
-Generated Mon Jul 07 16:01:24 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
+Generated Mon Jul 07 16:14:17 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mesures#3.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 10 / 28 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Bundle-bundle-example : 48 / 15 / 41
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Device-phd-74E8FFFEFF051C00 : 0 / 0 / 14
@@ -16,7 +16,7 @@ Generated Mon Jul 07 16:01:24 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mesur
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesFrObservationHeartrate001 : 0 / 1 / 3
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesFrOxygenSat : 1 / 1 / 3
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesFrRespRate : 0 / 1 / 3
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationGlucose001 : 0 / 1 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationGlucose001 : 0 / 2 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001 : 3 / 1 / 3
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001 : 1 / 1 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001 : 1 / 1 / 2
@@ -39,7 +39,7 @@ Generated Mon Jul 07 16:01:24 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mesur
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-observation-pain-severity : 0 / 4 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-observation-steps-by-day : 0 / 4 / 3
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-observation-waist-circumference : 0 / 2 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-origin-of-data : 0 / 1 / 1
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-origin-of-data : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-reason-for-measurement : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/ValueSet-method-glucose-vs : 0 / 3 / 1
 </table>
@@ -228,6 +228,7 @@ WARNING: Observation/ExampleMesFrOxygenSat: Observation: Best Practice Recommend
 INFORMATION: Observation/ExampleMesFrRespRate: Observation.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate|3.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Observation/ExampleMesFrRespRate: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationGlucose001.json ==
+WARNING: Observation/ExampleMesObservationGlucose001: Observation.extension[0].extension[1].value.ofType(Identifier).system: No definition could be found for URL value 'http://system-dmp-example.fr'
 WARNING: Observation/ExampleMesObservationGlucose001: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ExampleMesObservationHeadCircumference001.json ==
 ERROR: Observation/ExampleMesObservationHeadCircumference001: Observation.code.coding[0]: Slicing cannot be evaluated: Could not match any of the 2 discriminators for slice Observation.code.coding:headCircumCode in profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference|3.1.0 - None of the code|system discriminators [code, system] have fixed value, binding or existence assertions
@@ -324,7 +325,6 @@ INFORMATION: StructureDefinition/mesures-observation-steps-by-day: StructureDefi
 WARNING: StructureDefinition/mesures-observation-waist-circumference: StructureDefinition.snapshot.element[16].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo' to 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo|5.2.0'
 WARNING: StructureDefinition/mesures-observation-waist-circumference: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo' to 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo|5.2.0'
 == fsh-generated/resources/StructureDefinition-mesures-origin-of-data.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-mesures-reason-for-measurement.json ==
 == fsh-generated/resources/ValueSet-method-glucose-vs.json ==
 WARNING: ValueSet/method-glucose-vs: ValueSet.compose.include[0]: There are multiple different potential matches for the url 'https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '1.3.0', found versions: 1.2.0, 1.3.0. Suggested fix: change the canonical reference from 'https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP' to 'https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP|1.3.0'
