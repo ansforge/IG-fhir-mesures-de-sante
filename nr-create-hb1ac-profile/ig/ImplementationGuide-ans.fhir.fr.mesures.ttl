@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-07T09:24:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-07T15:51:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1189,6 +1189,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/exemple-observation-hb1ac> ;
+         fhir:reference [ fhir:v "Observation/exemple-observation-hb1ac" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure Hb1Ac" ] ;
+       fhir:description [ fhir:v "Observation d'une hémoglobine glyquée mesurée à 6.5 %" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1233,7 +1252,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-observation-glucose" ]
        ] ;
        fhir:name [ fhir:v "Glycémie" ] ;
-       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin." ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 3 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2025-07-07T09:24:06+00:00"/>
+  <date value="2025-07-07T15:51:26+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -653,6 +653,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/exemple-observation-hb1ac"/>
+      </reference>
+      <name value="Exemple de mesure Hb1Ac"/>
+      <description value="Observation d'une hémoglobine glyquée mesurée à 6.5 %"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -681,7 +692,7 @@
         <reference value="StructureDefinition/mesures-observation-glucose"/>
       </reference>
       <name value="Glycémie"/>
-      <description value="Profil de la ressource Observation pour définir une Glycémie&#xA;&#xA;Ce profil permet de gérer 4 types d'indicateurs de glycémie:&#xA;- le taux de glucose sanguin, mesuré en mg/dl&#xA;- le taux de glucose interstitiel, mesuré en mg/dl&#xA;- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %&#xA;&#xA;L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .&#xA;&#xA;L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."/>
+      <description value="Profil de la ressource Observation pour définir une Glycémie&#xA;&#xA;Ce profil permet de gérer 3 types d'indicateurs de glycémie:&#xA;- le taux de glucose sanguin, mesuré en mg/dl&#xA;- le taux de glucose interstitiel, mesuré en mg/dl&#xA;- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %&#xA;&#xA;L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .&#xA;&#xA;L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

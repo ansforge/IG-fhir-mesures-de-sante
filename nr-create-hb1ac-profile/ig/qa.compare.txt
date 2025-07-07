@@ -1,7 +1,7 @@
 Mesures : Validation Results
 =========================================
 
-err = 60, warn = 101, info = 74
+err = 62, warn = 101, info = 75
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.mesures#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
  Build Errors : 10 / 28 / 0
@@ -21,6 +21,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.mesures#$-- (canonical = https:/
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationPainSeverity001 : 1 / 1 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleMesObservationStepsByDay001 : 1 / 1 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-ExampleObservationWaistCircumference001 : 1 / 1 / 2
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Observation-exemple-observation-hb1ac : 2 / 1 / 2
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Patient-ExamplefrPatient001 : 0 / 1 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Practitioner-ExampleFrPractitionner001 : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-bundle-flux-alimentation : 0 / 0 / 4
@@ -35,7 +36,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.mesures#$-- (canonical = https:/
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-moment-of-measurement : 0 / 0 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-number-of-days : 0 / 2 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-observation-glucose : 0 / 8 / 1
- /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-observation-hb1ac : 0 / 3 / 3
+ /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-observation-hb1ac : 0 / 2 / 3
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-observation-head-circumference : 1 / 2 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-observation-pain-severity : 0 / 4 / 1
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/StructureDefinition-mesures-observation-steps-by-day : 0 / 4 / 3
@@ -179,25 +180,25 @@ ERROR: Bundle/bundle-example: Bundle.entry[0].resource/*Observation/5138af77-df7
 ERROR: Bundle/bundle-example: Bundle.entry[0].resource/*Observation/5138af77-df7e-4b9d-ba17-07ba3ebb950a*/.value.ofType(Quantity).code: Value is 'kg' but is fixed to 'cm' in the profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference|3.1.0#Observation.value[x] (validating against https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference|3.1.0 [MesObservationWaistCircumference])
 INFORMATION: Bundle/bundle-example: Bundle.entry[0].resource/*Observation/5138af77-df7e-4b9d-ba17-07ba3ebb950a*/.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight|3.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-example: Bundle.entry[1].resource/*Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575*/.identifier[0].type: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0
-INFORMATION: Bundle/bundle-example: Bundle.entry[1].resource/*Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575*/.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
-INFORMATION: Bundle/bundle-example: Bundle.entry[1].resource/*Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575*/.specialization[0].systemType: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
+INFORMATION: Bundle/bundle-example: Bundle.entry[1].resource/*Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575*/.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
+INFORMATION: Bundle/bundle-example: Bundle.entry[1].resource/*Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575*/.specialization[0].systemType: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
 WARNING: Bundle/bundle-example: Bundle.entry[0].resource: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Device-phd-74E8FFFEFF051C00.json ==
 INFORMATION: Device/phd-74E8FFFEFF051C00: Device.identifier[0].type: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0
 INFORMATION: Device/phd-74E8FFFEFF051C00: Device.identifier[1].type: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0
-INFORMATION: Device/phd-74E8FFFEFF051C00: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
-INFORMATION: Device/phd-74E8FFFEFF051C00: Device.specialization[0].systemType: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
-INFORMATION: Device/phd-74E8FFFEFF051C00: Device.version[0].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
-INFORMATION: Device/phd-74E8FFFEFF051C00: Device.version[1].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
-INFORMATION: Device/phd-74E8FFFEFF051C00: Device.version[2].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
-INFORMATION: Device/phd-74E8FFFEFF051C00: Device.version[3].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
-INFORMATION: Device/phd-74E8FFFEFF051C00: Device.property[0].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
+INFORMATION: Device/phd-74E8FFFEFF051C00: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
+INFORMATION: Device/phd-74E8FFFEFF051C00: Device.specialization[0].systemType: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
+INFORMATION: Device/phd-74E8FFFEFF051C00: Device.version[0].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
+INFORMATION: Device/phd-74E8FFFEFF051C00: Device.version[1].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
+INFORMATION: Device/phd-74E8FFFEFF051C00: Device.version[2].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
+INFORMATION: Device/phd-74E8FFFEFF051C00: Device.version[3].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
+INFORMATION: Device/phd-74E8FFFEFF051C00: Device.property[0].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
 INFORMATION: Device/phd-74E8FFFEFF051C00: Device.property[0].valueCode[0]: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD|1.0.0
 INFORMATION: Device/phd-74E8FFFEFF051C00: Device.property[1].type: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0
-INFORMATION: Device/phd-74E8FFFEFF051C00: Device.property[2].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
-INFORMATION: Device/phd-74E8FFFEFF051C00: Device.property[2].valueCode[0]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.29.0
+INFORMATION: Device/phd-74E8FFFEFF051C00: Device.property[2].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
+INFORMATION: Device/phd-74E8FFFEFF051C00: Device.property[2].valueCode[0]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.30.0
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mesures.json ==
-WARNING: ImplementationGuide/ans.fhir.fr.mesures: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.uv.phd#1.0.0 released on 2022-05-12, but the most recent appropriate version is 1.1.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/ans.fhir.fr.mesures: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.uv.phd#1.0.0 released on 2022-05-12, but the most recent appropriate version is 2.0.0-ballot. This reference is getting old and the more recent version should be considered
 WARNING: ImplementationGuide/ans.fhir.fr.mesures: ImplementationGuide.dependsOn[4]: The ImplementationGuide uses package ans.fr.nos#1.2.0 released on 2024-02-28, but the most recent appropriate version is 1.5.0. This reference is getting old and the more recent version should be considered
 == fsh-generated/resources/Observation-ExampleMesFrObservationBP001.json ==
 INFORMATION: Observation/ExampleMesFrObservationBP001: Observation.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp|3.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -250,6 +251,11 @@ WARNING: Observation/ExampleMesObservationStepsByDay001: Observation: Best Pract
 ERROR: Observation/ExampleObservationWaistCircumference001: Observation.code.coding[0]: Slicing cannot be evaluated: Could not match any of the 2 discriminators for slice Observation.code.coding:waistCircumCode in profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference|3.1.0 - None of the code|system discriminators [code, system] have fixed value, binding or existence assertions
 INFORMATION: Observation/ExampleObservationWaistCircumference001: Observation.code: Observation.code.coding:waistCircumCode: Found 0 match, but unable to check minimum required (Observation.code.coding) due to lack of slicing validation (from https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference|3.1.0)
 WARNING: Observation/ExampleObservationWaistCircumference001: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-exemple-observation-hb1ac.json ==
+ERROR: Observation/exemple-observation-hb1ac: Observation.code.coding[0]: Slicing cannot be evaluated: Could not match any of the 2 discriminators for slice Observation.code.coding:HB1AC in profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac|3.1.0 - None of the code|system discriminators [code, system] have fixed value, binding or existence assertions
+INFORMATION: Observation/exemple-observation-hb1ac: Observation.code: Observation.code.coding:HB1AC: Found 0 match, but unable to check minimum required (Observation.code.coding) due to lack of slicing validation (from https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac|3.1.0)
+WARNING: Observation/exemple-observation-hb1ac: Observation.method.coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/ValueSet/method-glucose-vs' could not be found, so the code cannot be validated
+ERROR: Observation/exemple-observation-hb1ac: Observation.method.coding[0].system: No definition could be found for URL value 'http://hl7.org/fhir/ValueSet/method-glucose-vs'
 == fsh-generated/resources/Patient-ExamplefrPatient001.json ==
 WARNING: Patient/ExamplefrPatient001: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
 == fsh-generated/resources/Practitioner-ExampleFrPractitionner001.json ==
@@ -310,7 +316,6 @@ WARNING: StructureDefinition/mesures-observation-hb1ac: StructureDefinition.snap
 WARNING: StructureDefinition/mesures-observation-hb1ac: StructureDefinition.differential.element[3].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo' to 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo|5.2.0'
 INFORMATION: StructureDefinition/mesures-observation-hb1ac: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/mesures-observation-hb1ac: StructureDefinition.snapshot.element[39].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-mesures-observation-head-circumference.json ==
 WARNING: StructureDefinition/mesures-observation-head-circumference: StructureDefinition.snapshot.element[16].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo' to 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo|5.2.0'
 WARNING: StructureDefinition/mesures-observation-head-circumference: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo' to 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo|5.2.0'
