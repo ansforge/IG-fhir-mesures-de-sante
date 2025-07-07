@@ -14,7 +14,7 @@ L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesu
 
 L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin."""
 
-* insert ObservationResultsMesures
+* insert ObservationResultsBiologyMesures
 
 * extension contains
     mesures-moment-of-measurement named MesMomentOfMeasurement 0..1 and

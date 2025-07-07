@@ -4,7 +4,8 @@ RuleSet: ObservationResultsMesures
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mesures-reason-for-measurement named MesReasonForMeasurement 0..1
+    mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and
+    mesures-origin-of-data named MesOriginOfData 0..1
 
 
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
