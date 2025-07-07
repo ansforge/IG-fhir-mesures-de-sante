@@ -10,7 +10,6 @@ Description: """Profil de la ressource Observation pour définir l’hémoglobin
     $workflow-supportingInfo named supportingInfo 0..1 and
     mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
-
 * category[VSCat].coding.display = "vital-signs" 
 
 
