@@ -2,7 +2,7 @@ Profile: MesFrObservationBodyWeight
 Parent: $FrObservationBodyWeight
 Id: mesures-fr-observation-body-weight
 Title: "Poids"
-Description: "Profil de la ressource Observation pour définir un poids"s
+Description: "Profil de la ressource Observation pour définir un poids"
 
 * insert ObservationResultsMesures
 
