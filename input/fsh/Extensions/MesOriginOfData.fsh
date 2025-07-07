@@ -11,7 +11,7 @@ Description: "Extension pour tracer l'origine de la donnée issue d'un compte re
 * extension contains
     hasBeenConverted 1..1 and
     documentId 1..1 and
-    originalLoincCode 1..1
+    originalCode 1..1
 
 * extension[hasBeenConverted].value[x] only boolean
 * extension[hasBeenConverted] ^short = "Indication permettant de savoir si la valeur a été convertie."
