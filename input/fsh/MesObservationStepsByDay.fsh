@@ -15,9 +15,7 @@ Description: "Profil de la ressource Observation pour définir un nombre de pas 
 * code.coding contains stepsBDCode 1..1
 * code.coding[stepsBDCode] = http://loinc.org#41950-7
 
-* subject only Reference($fr-patient)
-* encounter only Reference($fr-encounter)
-* performer only Reference(CareTeam or RelatedPerson or $fr-practitioner or PractitionerRole or $fr-organization or $fr-patient)
+
 
 * value[x] only Quantity
 * valueQuantity.unit 1..

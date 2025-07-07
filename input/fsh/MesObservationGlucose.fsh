@@ -30,10 +30,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * code.coding.system 1..
 * code.coding.code 1..
 
-* subject only Reference($fr-patient)
-* encounter only Reference($fr-encounter)
 * effective[x] only dateTime
-* performer only Reference(CareTeam or RelatedPerson or $fr-practitioner or PractitionerRole or $fr-organization or $fr-patient)
 
 * value[x] only Quantity
 * valueQuantity.value ^short = "Valeur mesurée"

@@ -15,9 +15,6 @@ Description: "Profil de la ressource Observation pour définir un Périmètre Cr
 * code.coding contains headCircumCode 1..1
 * code.coding[headCircumCode] = http://loinc.org#8287-5
 
-* subject only Reference($fr-patient)
-* encounter only Reference($fr-encounter)
-* performer only Reference(CareTeam or RelatedPerson or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)
 
 * value[x] only Quantity
 * valueQuantity.unit = "cm"

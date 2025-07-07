@@ -12,3 +12,7 @@ RuleSet: ObservationResultsMesures
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)"
 
 * extension[supportingInfo] ^definition = "Autres ressources pertinentes *du dossier patient*"
+
+* subject only Reference($fr-patient)
+* encounter only Reference($fr-encounter)
+* performer only Reference(CareTeam or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)

@@ -10,7 +10,6 @@ Description: "Profil de la ressource Observation pour d√©finir une Pression Art√
     mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 
 * category[VSCat].coding.display = "vital-signs" 
-* subject only Reference($fr-patient)
 * subject 1..1
 
 * effective[x] only dateTime

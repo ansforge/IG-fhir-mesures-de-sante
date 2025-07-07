@@ -16,10 +16,6 @@ Description: "Profil de la ressource Observation pour définir une taille en cm"
 * code.coding contains waistCircumCode 1..1
 * code.coding[waistCircumCode] = http://loinc.org#8280-0 
 
-* subject only Reference($fr-patient)
-* encounter only Reference($fr-encounter)
-* performer only Reference(CareTeam or RelatedPerson or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)
-
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#cm
 * valueQuantity.system 1..

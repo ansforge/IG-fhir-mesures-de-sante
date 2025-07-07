@@ -16,7 +16,6 @@ Description: "Profil de la ressource Observation pour définir une Saturation en
 * method.coding.system 1..
 * method.coding.code 1..
 
-
 * category[VSCat].coding.display = "vital-signs" 
 
 * device only Reference($PhdDevice)
