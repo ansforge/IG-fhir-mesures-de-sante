@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2025-07-07T10:00:28+00:00",
+  "date" : "2025-07-07T12:38:35+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -938,6 +938,18 @@
       },
       "name" : "Nombre de pas par jour",
       "description" : "Profil de la ressource Observation pour définir un nombre de pas par jour",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-origin-of-data"
+      },
+      "name" : "Origine de la donnée",
+      "description" : "Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio).",
       "exampleBoolean" : false
     },
     {
