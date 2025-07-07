@@ -4,6 +4,9 @@ Id: mesures-bundle-flux-alimentation-biologie
 Title: "Bundle d'alimentation des mesures de biologie"
 Description: "Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre"
 
+* obeys mesures-inv-1
+* obeys mesures-inv-2
+
 * type = #transaction
 
 * entry ^slicing.discriminator.type = #profile
@@ -73,3 +76,16 @@ Description: "Profil biologie de la ressource Bundle du flux d'alimentation des 
 * entry[mes-diagnostic-report].request 1..1
 * entry[mes-diagnostic-report].request.method = #POST
 * entry[mes-diagnostic-report].request.url = "DiagnosticReport"  
+
+
+// code HDL : 2085-9
+// code chol total : 2093-3
+Invariant:   mesures-inv-1
+Description: "Si le cholestérol HDL est présent, alors le cholestérol total doit également être présent."
+* severity = #error
+* expression = "entry.resource.where(code = '2085-9').exists() implies entry.resource.where(code = '2093-3').exists()"
+
+Invariant:   mesures-inv-2
+Description: "Si le cholestérol total est présent, alors le cholestérol hdl doit également être présent."
+* severity = #error
+* expression = "entry.resource.where(code = '2093-3').exists() implies entry.resource.where(code = '2085-9').exists()"
