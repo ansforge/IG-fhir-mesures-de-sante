@@ -1,7 +1,7 @@
-Profile: MesObservationGlucose
+Profile: MesObservationHb1Ac
 Parent: $vitalsigns
-Id: mesures-observation-glucose
-Title: "Glycémie"
+Id: mesures-observation-hb1ac
+Title: "Hémoglobine glyquée (Hb1Ac)"
 Description: """Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %."""
 
 * meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
