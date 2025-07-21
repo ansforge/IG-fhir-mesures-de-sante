@@ -48,11 +48,11 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
   </div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
 
   <div id="ig-search">
@@ -276,16 +276,16 @@ This implementation guide contains the profiles to share vital-signs for the Fre
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" />
 </div>
 
-<p>Le guide <strong><em>mesures de santé</em></strong> propose la mise en place des fonctions d'alimentation et de consultation des mesures de santé d’un usager.</p>
+<p>Le guide <strong><em>mesures de santé</em></strong> propose la mise en place des fonctions d’alimentation et de consultation des mesures de santé d’un usager.</p>
 
-<p>Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre ces fonctions d'alimentation et de consultation des mesures de santé d'un usager.</p>
+<p>Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre ces fonctions d’alimentation et de consultation des mesures de santé d’un usager.</p>
 
 <p>Les spécifications techniques de ce guide s’appuient:</p>
 
 <ul>
   <li>sur le standard HL7 FHIR et plus particulièrement sur un sous-ensemble des ressources définies par ce standard ainsi que sur la notion d’extension et de profilage des ressources.</li>
-  <li>sur les profils français de la ressource Observation (Profls Interop'Santé ou ANS)</li>
-  <li>sur le profil PHD de la ressource Device profilé dans l'Implementation Guide PHD et dont l'usage est défini dans le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif connecté ayant effectué la mesure.</li>
+  <li>sur les profils français de la ressource Observation (Profls Interop’Santé ou ANS)</li>
+  <li>sur le profil PHD de la ressource Device profilé dans l’Implementation Guide PHD et dont l’usage est défini dans le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif connecté ayant effectué la mesure.</li>
 </ul>
 
 <p>Pour les opérations sur les ressources, l’API REST définie par le standard HL7 FHIR met en œuvre la logique de la transaction PCH-01 du profil IHE « Personal Health Device Observation Upload (POU) » pour l’alimentation.</p>
@@ -320,7 +320,7 @@ This implementation guide contains the profiles to share vital-signs for the Fre
 </div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-waist-circumference.html">MesObservationWaistCircumference</a></td><td><div><p>Profil de la ressource Observation pour définir une taille en cm</p>
 </div></td></tr></table>
 
-<p>Les profils FHIR pour les mesures de santé s'appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.</p>
+<p>Les profils FHIR pour les mesures de santé s’appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.</p>
 
 <p>Pour chaque ressource, le lien vers la spécification technique InteropSanté est indiqué.
 Cette liste pourra être complétée par d’autres mesures jugées pertinentes.</p>
@@ -335,11 +335,11 @@ Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
 
 <p>HL7 (Health Level Seven) est un organisme à but non lucratif accrédité par l’ANSI (American National Standards Institute) et impliqué dans le développement de standards d’interopérabilité internationaux pour l’informatique de santé. Il regroupe des experts de l’informatique de santé qui collaborent pour créer un cadre et des standards connexes pour l’échange, l’intégration, le partage et l’accès à des données de santé, visant à promouvoir l’utilisation de ces standards entre les organisations de santé et au sein d’une même organisation.</p>
 
-<p>Ces spécifications techniques se basent sur le standard HL7 FHIR R4 (4.0.1), faisant référence à un certain nombre de ressources du standard ainsi qu'aux spécifications de l'API REST FHIR, basée sur le protocole HTTP. La syntaxe retenue pour les échanges est la syntaxe JSON.</p>
+<p>Ces spécifications techniques se basent sur le standard HL7 FHIR R4 (4.0.1), faisant référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basée sur le protocole HTTP. La syntaxe retenue pour les échanges est la syntaxe JSON.</p>
 
 <h3 id="problématique-connue">Problématique connue</h3>
 
-<p>Les profils mesures de santé sont optionnellement liés à un device qui doit hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l'international par le guide d'implémentation PoCD.
+<p>Les profils mesures de santé sont optionnellement liés à un device qui doit hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l’international par le guide d’implémentation PoCD.
 En cas de besoins allant dans ce sens, merci de le spécifier dans une <a href="https://github.com/ansforge/IG-fhir-mesures-de-sante">issue GitHub</a>.</p>
 
 <h3 id="dépendances">Dépendances</h3>
@@ -456,13 +456,12 @@ En cas de besoins allant dans ce sens, merci de le spécifier dans une <a href="
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 21, 2025 09:33+0000">2025-07-21</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 21, 2025 12:03+0000">2025-07-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions </a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new">New Issue</a>
 
           </span>
