@@ -2,10 +2,10 @@ Alias: $UCUM = http://unitsofmeasure.org
 
 // --- HL7 international ---
 
-Alias: $bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
+Alias: $FHIRCoreHeadCircumference = http://hl7.org/fhir/StructureDefinition/headcircum
 
 // --- fr-core ---
 
