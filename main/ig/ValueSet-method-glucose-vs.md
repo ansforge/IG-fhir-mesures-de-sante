@@ -57,7 +57,7 @@ Ce jeu de valeur (ValueSet) contient 18 concepts
   "name" : "MethodeGlucoseVS",
   "title" : "Méthode de mesures de glycémie sanguine ou interstitielle",
   "status" : "active",
-  "date" : "2025-10-13T07:29:09+00:00",
+  "date" : "2025-10-13T07:29:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

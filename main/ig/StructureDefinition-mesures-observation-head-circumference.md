@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationHeadCircumference",
   "title" : "Périmètre Crânien",
   "status" : "active",
-  "date" : "2025-10-13T07:29:09+00:00",
+  "date" : "2025-10-13T07:29:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -110,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       {
         "id" : "Observation.meta.source",
         "path" : "Observation.meta.source",
-        "short" : "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+        "short" : "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
       },
       {
         "id" : "Observation.extension",
@@ -130,6 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.extension:supportingInfo",
         "path" : "Observation.extension",
         "sliceName" : "supportingInfo",
+        "definition" : "Autres ressources pertinentes *du dossier patient*",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -146,6 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "path" : "Observation.extension",
         "sliceName" : "MesReasonForMeasurement",
         "short" : "Motif de la mesure",
+        "definition" : "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -153,6 +155,21 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "code" : "Extension",
             "profile" : [
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.extension:MesOriginOfData",
+        "path" : "Observation.extension",
+        "sliceName" : "MesOriginOfData",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
             ]
           }
         ]
@@ -218,7 +235,6 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "code" : "Reference",
             "targetProfile" : [
               "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",

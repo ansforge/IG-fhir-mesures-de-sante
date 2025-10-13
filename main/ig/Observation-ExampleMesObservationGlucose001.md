@@ -8,6 +8,11 @@
 
 Profil: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
 
+> **Origine de la donnée**
+* hasBeenConverted: true
+* documentId: `http://system-dmp-example.fr`/6f9b7d72-2a8e-4a35-b95a-c2d31b279c7b
+* originalCode: Glucose [Masse/Volume] Sérum/Plasma ; Numérique
+
 **Raison de la mesure**: Malaise du patient
 
 **Moment de la mesure**: Glucose post prandial
@@ -47,6 +52,33 @@ Profil: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
     ]
   },
   "extension" : [
+    {
+      "extension" : [
+        {
+          "url" : "hasBeenConverted",
+          "valueBoolean" : true
+        },
+        {
+          "url" : "documentId",
+          "valueIdentifier" : {
+            "system" : "http://system-dmp-example.fr",
+            "value" : "6f9b7d72-2a8e-4a35-b95a-c2d31b279c7b"
+          }
+        },
+        {
+          "url" : "originalCode",
+          "valueCodeableConcept" : {
+            "coding" : [
+              {
+                "system" : "http://loinc.org",
+                "code" : "2345-7"
+              }
+            ]
+          }
+        }
+      ],
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+    },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
       "valueString" : "Malaise du patient"

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationBodyTemperature",
   "title" : "Température",
   "status" : "active",
-  "date" : "2025-10-13T07:29:09+00:00",
+  "date" : "2025-10-13T07:29:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -119,9 +119,17 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
         "short" : "Permet de définir le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire"
       },
       {
+        "id" : "Observation.extension:supportingInfo",
+        "path" : "Observation.extension",
+        "sliceName" : "supportingInfo",
+        "definition" : "Autres ressources pertinentes *du dossier patient*"
+      },
+      {
         "id" : "Observation.extension:MesReasonForMeasurement",
         "path" : "Observation.extension",
         "sliceName" : "MesReasonForMeasurement",
+        "short" : "Motif de la mesure",
+        "definition" : "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -129,6 +137,37 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
             "code" : "Extension",
             "profile" : [
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.extension:MesOriginOfData",
+        "path" : "Observation.extension",
+        "sliceName" : "MesOriginOfData",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.performer",
+        "path" : "Observation.performer",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
             ]
           }
         ]

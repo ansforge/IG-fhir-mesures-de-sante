@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationPainSeverity",
   "title" : "Niveau de douleur",
   "status" : "active",
-  "date" : "2025-10-13T07:29:09+00:00",
+  "date" : "2025-10-13T07:29:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -130,6 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.extension:supportingInfo",
         "path" : "Observation.extension",
         "sliceName" : "supportingInfo",
+        "definition" : "Autres ressources pertinentes *du dossier patient*",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -146,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "path" : "Observation.extension",
         "sliceName" : "MesReasonForMeasurement",
         "short" : "Motif de la mesure",
-        "definition" : "Motif de la mesure\r\nTexte libre",
+        "definition" : "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -154,6 +155,21 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "code" : "Extension",
             "profile" : [
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.extension:MesOriginOfData",
+        "path" : "Observation.extension",
+        "sliceName" : "MesOriginOfData",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
             ]
           }
         ]
@@ -198,11 +214,51 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         }
       },
       {
+        "id" : "Observation.subject",
+        "path" : "Observation.subject",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.encounter",
+        "path" : "Observation.encounter",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"
+            ]
+          }
+        ]
+      },
+      {
         "id" : "Observation.effective[x]",
         "path" : "Observation.effective[x]",
         "type" : [
           {
             "code" : "dateTime"
+          }
+        ]
+      },
+      {
+        "id" : "Observation.performer",
+        "path" : "Observation.performer",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+            ]
           }
         ]
       },

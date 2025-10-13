@@ -23,7 +23,7 @@ This extension may be used on the following element(s):
 
 **Usages:**
 
-* Use this Extension: [Température](StructureDefinition-mesures-fr-observation-body-temperature.md), [Poids](StructureDefinition-mesures-fr-observation-body-weight.md), [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md), [Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md)...Show 5 more,[Glycémie](StructureDefinition-mesures-observation-glucose.md),[Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md),[Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md),[Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md)and[Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
+* Use this Extension: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-bmi.md), [Température](StructureDefinition-mesures-fr-observation-body-temperature.md), [Poids](StructureDefinition-mesures-fr-observation-body-weight.md), [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md)...Show 9 more,[Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md),[Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartrate.md),[Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxygen-sat.md),[Fréquence respiratoire](StructureDefinition-mesures-fr-observation-resp-rate.md),[Glycémie](StructureDefinition-mesures-observation-glucose.md),[Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md),[Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md),[Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md)and[Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
 * Examples for this Extension: [Bundle/bundle-example](Bundle-bundle-example.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md), [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md)...Show 2 more,[Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md)and[Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-reason-for-measurement)
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-reason-for-m
   "name" : "MesReasonForMeasurement",
   "title" : "Raison de la mesure",
   "status" : "active",
-  "date" : "2025-10-13T07:29:09+00:00",
+  "date" : "2025-10-13T07:29:03+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

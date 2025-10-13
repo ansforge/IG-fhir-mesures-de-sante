@@ -40,6 +40,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | :--- | :--- |
 | [Moment de la mesure](StructureDefinition-mesures-moment-of-measurement.md) | Moment de la mesure. Peut être exprimé par un texte libre ou un code. |
 | [Nombre de jours](StructureDefinition-mesures-number-of-days.md) | Extension sur le Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie. |
+| [Origine de la donnée](StructureDefinition-mesures-origin-of-data.md) | Extension pour tracer l’origine de la donnée issue d’un compte rendu de biologie (CR-Bio). |
 | [Raison de la mesure](StructureDefinition-mesures-reason-for-measurement.md) | Extension du Motif de la mesure, exprimé en texte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…). |
 
 ### Terminology: Value Sets 
