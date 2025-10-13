@@ -4,13 +4,7 @@ Id: mesures-observation-pain-severity
 Title: "Niveau de douleur"
 Description: "Profil de la ressource Observation pour définir un niveau de douleur"
 
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
-
-* extension contains
-    $workflow-supportingInfo named supportingInfo 0..1 and
-    mesures-reason-for-measurement named MesReasonForMeasurement 0..1
-* extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
-* extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre"
+* insert ObservationResultsMesures
 
 * category[VSCat].coding.display = "vital-signs" 
 
