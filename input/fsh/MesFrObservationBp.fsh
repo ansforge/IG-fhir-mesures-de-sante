@@ -4,14 +4,12 @@ Id: mesures-fr-observation-bp
 Title: "Pression Artérielle"
 Description: "Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP)"
 
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
+* insert ObservationResultsMesures
 
 * extension contains
-    mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and
     mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 
 * category[VSCat].coding.display = "vital-signs" 
-* subject only Reference($fr-patient)
 * subject 1..1
 
 * effective[x] only dateTime

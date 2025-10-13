@@ -4,10 +4,7 @@ Id: mesures-fr-observation-body-weight
 Title: "Poids"
 Description: "Profil de la ressource Observation pour définir un poids"
 
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
-
-* extension contains mesures-reason-for-measurement named MesReasonForMeasurement 0..1
-
+* insert ObservationResultsMesures
 
 * value[x] ^slicing.rules = #open
 * value[x] only Quantity
