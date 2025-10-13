@@ -298,7 +298,7 @@
         
           Active
           
-            as of 2025-07-21
+            as of 2025-10-13
           
         
       </td>
@@ -329,7 +329,7 @@
 <ul>
  <li>Examples for this Profile: <a href="Bundle-bundle-example.html">Bundle/bundle-example</a></li>
 </ul>
-
+<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-bundle-flux-alimentation">usages in the FHIR IG Statistics</a></p>
 
   <!-- no uri -->
   <a name="profile"> </a>
@@ -442,7 +442,7 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">URL for HTTP equivalent of this entry</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">Device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33da94fc-957b-48ae-8ba5-685caa7baaad
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ea50e405-dc9b-46db-8f5c-196d76a01a1c
 document.getElementById('cbmesures-bundle-flux-alimentationD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-bundle-flux-alimentationD'), 'binding', document.getElementById('cbmesures-bundle-flux-alimentationD-binding').checked, document.getElementById('ppmesures-bundle-flux-alimentationD'));
 document.getElementById('cbmesures-bundle-flux-alimentationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -575,7 +575,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">URL for HTTP equivalent of this entry<br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">Device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33da94fc-957b-48ae-8ba5-685caa7baaad
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ea50e405-dc9b-46db-8f5c-196d76a01a1c
 document.getElementById('cbmesures-bundle-flux-alimentationK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-bundle-flux-alimentationK'), 'binding', document.getElementById('cbmesures-bundle-flux-alimentationK-binding').checked, document.getElementById('ppmesures-bundle-flux-alimentationK'));
 document.getElementById('cbmesures-bundle-flux-alimentationK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -585,11 +585,72 @@ filterDesc(document.getElementById('mesures-bundle-flux-alimentationK'), 'obliga
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Bundle.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Indicates the purpose of a bundle - how it is intended to be used.">Pattern Value: transaction<div><code>http://hl7.org/fhir/ValueSet/bundle-type|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/bundle-type|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-observation.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">Pattern Value: POST<div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-device.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">Pattern Value: POST<div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Indicates the purpose of a bundle - how it is intended to be used.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-bundle-type.html">BundleType</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/bundle-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-observation.​request.method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-device.​request.method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -599,21 +660,145 @@ filterDesc(document.getElementById('mesures-bundle-flux-alimentationK'), 'obliga
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>bdl-1</td><td>error</td><td>Bundle</td><td>total only when a search or history<br/>: total.empty() or (type = 'searchset') or (type = 'history')</td><td></td></tr>
-<tr><td>bdl-2</td><td>error</td><td>Bundle</td><td>entry.search only when a search<br/>: entry.search.empty() or (type = 'searchset')</td><td></td></tr>
-<tr><td>bdl-3</td><td>error</td><td>Bundle</td><td>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/>: entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-4</td><td>error</td><td>Bundle</td><td>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/>: entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-7</td><td>error</td><td>Bundle</td><td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/>: (type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&amp;resource.meta.versionId).isDistinct()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>bdl-9</td><td>error</td><td>Bundle</td><td>A document must have an identifier with a system and a value<br/>: type = 'document' implies (identifier.system.exists() and identifier.value.exists())</td><td></td></tr>
-<tr><td>bdl-10</td><td>error</td><td>Bundle</td><td>A document must have a date<br/>: type = 'document' implies (timestamp.hasValue())</td><td></td></tr>
-<tr><td>bdl-11</td><td>error</td><td>Bundle</td><td>A document must have a Composition as the first resource<br/>: type = 'document' implies entry.first().resource.is(Composition)</td><td></td></tr>
-<tr><td>bdl-12</td><td>error</td><td>Bundle</td><td>A message must have a MessageHeader as the first resource<br/>: type = 'message' implies entry.first().resource.is(MessageHeader)</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-1</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>total only when a search or history</td>
+    <td>
+      <code>total.empty() or (type = 'searchset') or (type = 'history')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-2</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.search only when a search</td>
+    <td>
+      <code>entry.search.empty() or (type = 'searchset')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-3</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.request mandatory for batch/transaction/history, otherwise prohibited</td>
+    <td>
+      <code>entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-4</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited</td>
+    <td>
+      <code>entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-5</td>
+    <td>error</td>
+    <td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td>
+    <td>must be a resource unless there's a request or response</td>
+    <td>
+      <code>resource.exists() or request.exists() or response.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-7</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)</td>
+    <td>
+      <code>(type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&amp;resource.meta.versionId).isDistinct()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-8</td>
+    <td>error</td>
+    <td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td>
+    <td>fullUrl cannot be a version specific reference</td>
+    <td>
+      <code>fullUrl.contains('/_history/').not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-9</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have an identifier with a system and a value</td>
+    <td>
+      <code>type = 'document' implies (identifier.system.exists() and identifier.value.exists())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-10</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have a date</td>
+    <td>
+      <code>type = 'document' implies (timestamp.hasValue())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-11</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have a Composition as the first resource</td>
+    <td>
+      <code>type = 'document' implies entry.first().resource.is(Composition)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-12</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A message must have a MessageHeader as the first resource</td>
+    <td>
+      <code>type = 'message' implies entry.first().resource.is(MessageHeader)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1225,7 +1410,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Digital Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33da94fc-957b-48ae-8ba5-685caa7baaad
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ea50e405-dc9b-46db-8f5c-196d76a01a1c
 document.getElementById('cbmesures-bundle-flux-alimentationS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-bundle-flux-alimentationS'), 'binding', document.getElementById('cbmesures-bundle-flux-alimentationS-binding').checked, document.getElementById('ppmesures-bundle-flux-alimentationS'));
 document.getElementById('cbmesures-bundle-flux-alimentationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1235,32 +1420,147 @@ filterDesc(document.getElementById('mesures-bundle-flux-alimentationS'), 'obliga
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Bundle.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Bindings Additionnels</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">But</td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Bundle.language</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Un binding requis, à utiliser lorsque la force de binding est 'extensible' ou 'preferred'">Binding Max</a>
+    <td title="A human language.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Bundle.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Indicates the purpose of a bundle - how it is intended to be used.">Pattern Value: transaction<div><code>http://hl7.org/fhir/ValueSet/bundle-type|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/bundle-type|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry.search.mode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a><div><code>http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a><div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-observation.search.mode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a><div><code>http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-observation.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">Pattern Value: POST<div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-device.search.mode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a><div><code>http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-device.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">Pattern Value: POST<div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+  <tr>
+    <td>Bundle.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Indicates the purpose of a bundle - how it is intended to be used.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-bundle-type.html">BundleType</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/bundle-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry.search.​mode</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry.request.​method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-observation.​search.mode</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-observation.​request.method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-device.​search.mode</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-device.​request.method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1270,21 +1570,145 @@ filterDesc(document.getElementById('mesures-bundle-flux-alimentationS'), 'obliga
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>bdl-1</td><td>error</td><td>Bundle</td><td>total only when a search or history<br/>: total.empty() or (type = 'searchset') or (type = 'history')</td><td></td></tr>
-<tr><td>bdl-2</td><td>error</td><td>Bundle</td><td>entry.search only when a search<br/>: entry.search.empty() or (type = 'searchset')</td><td></td></tr>
-<tr><td>bdl-3</td><td>error</td><td>Bundle</td><td>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/>: entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-4</td><td>error</td><td>Bundle</td><td>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/>: entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-7</td><td>error</td><td>Bundle</td><td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/>: (type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&amp;resource.meta.versionId).isDistinct()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>bdl-9</td><td>error</td><td>Bundle</td><td>A document must have an identifier with a system and a value<br/>: type = 'document' implies (identifier.system.exists() and identifier.value.exists())</td><td></td></tr>
-<tr><td>bdl-10</td><td>error</td><td>Bundle</td><td>A document must have a date<br/>: type = 'document' implies (timestamp.hasValue())</td><td></td></tr>
-<tr><td>bdl-11</td><td>error</td><td>Bundle</td><td>A document must have a Composition as the first resource<br/>: type = 'document' implies entry.first().resource.is(Composition)</td><td></td></tr>
-<tr><td>bdl-12</td><td>error</td><td>Bundle</td><td>A message must have a MessageHeader as the first resource<br/>: type = 'message' implies entry.first().resource.is(MessageHeader)</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-1</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>total only when a search or history</td>
+    <td>
+      <code>total.empty() or (type = 'searchset') or (type = 'history')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-2</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.search only when a search</td>
+    <td>
+      <code>entry.search.empty() or (type = 'searchset')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-3</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.request mandatory for batch/transaction/history, otherwise prohibited</td>
+    <td>
+      <code>entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-4</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited</td>
+    <td>
+      <code>entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-5</td>
+    <td>error</td>
+    <td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td>
+    <td>must be a resource unless there's a request or response</td>
+    <td>
+      <code>resource.exists() or request.exists() or response.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-7</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)</td>
+    <td>
+      <code>(type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&amp;resource.meta.versionId).isDistinct()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-8</td>
+    <td>error</td>
+    <td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td>
+    <td>fullUrl cannot be a version specific reference</td>
+    <td>
+      <code>fullUrl.contains('/_history/').not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-9</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have an identifier with a system and a value</td>
+    <td>
+      <code>type = 'document' implies (identifier.system.exists() and identifier.value.exists())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-10</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have a date</td>
+    <td>
+      <code>type = 'document' implies (timestamp.hasValue())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-11</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have a Composition as the first resource</td>
+    <td>
+      <code>type = 'document' implies entry.first().resource.is(Composition)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-12</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A message must have a MessageHeader as the first resource</td>
+    <td>
+      <code>type = 'message' implies entry.first().resource.is(MessageHeader)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1531,7 +1955,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">URL for HTTP equivalent of this entry</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">Device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33da94fc-957b-48ae-8ba5-685caa7baaad
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ea50e405-dc9b-46db-8f5c-196d76a01a1c
 document.getElementById('cbmesures-bundle-flux-alimentationDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-bundle-flux-alimentationDA'), 'binding', document.getElementById('cbmesures-bundle-flux-alimentationDA-binding').checked, document.getElementById('ppmesures-bundle-flux-alimentationDA'));
 document.getElementById('cbmesures-bundle-flux-alimentationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1663,7 +2087,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">URL for HTTP equivalent of this entry<br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">Device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33da94fc-957b-48ae-8ba5-685caa7baaad
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ea50e405-dc9b-46db-8f5c-196d76a01a1c
 document.getElementById('cbmesures-bundle-flux-alimentationKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-bundle-flux-alimentationKA'), 'binding', document.getElementById('cbmesures-bundle-flux-alimentationKA-binding').checked, document.getElementById('ppmesures-bundle-flux-alimentationKA'));
 document.getElementById('cbmesures-bundle-flux-alimentationKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1673,11 +2097,72 @@ filterDesc(document.getElementById('mesures-bundle-flux-alimentationKA'), 'oblig
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Bundle.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Indicates the purpose of a bundle - how it is intended to be used.">Pattern Value: transaction<div><code>http://hl7.org/fhir/ValueSet/bundle-type|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/bundle-type|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-observation.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">Pattern Value: POST<div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-device.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">Pattern Value: POST<div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Indicates the purpose of a bundle - how it is intended to be used.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-bundle-type.html">BundleType</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/bundle-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-observation.​request.method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-device.​request.method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1687,21 +2172,145 @@ filterDesc(document.getElementById('mesures-bundle-flux-alimentationKA'), 'oblig
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>bdl-1</td><td>error</td><td>Bundle</td><td>total only when a search or history<br/>: total.empty() or (type = 'searchset') or (type = 'history')</td><td></td></tr>
-<tr><td>bdl-2</td><td>error</td><td>Bundle</td><td>entry.search only when a search<br/>: entry.search.empty() or (type = 'searchset')</td><td></td></tr>
-<tr><td>bdl-3</td><td>error</td><td>Bundle</td><td>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/>: entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-4</td><td>error</td><td>Bundle</td><td>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/>: entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-7</td><td>error</td><td>Bundle</td><td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/>: (type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&amp;resource.meta.versionId).isDistinct()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>bdl-9</td><td>error</td><td>Bundle</td><td>A document must have an identifier with a system and a value<br/>: type = 'document' implies (identifier.system.exists() and identifier.value.exists())</td><td></td></tr>
-<tr><td>bdl-10</td><td>error</td><td>Bundle</td><td>A document must have a date<br/>: type = 'document' implies (timestamp.hasValue())</td><td></td></tr>
-<tr><td>bdl-11</td><td>error</td><td>Bundle</td><td>A document must have a Composition as the first resource<br/>: type = 'document' implies entry.first().resource.is(Composition)</td><td></td></tr>
-<tr><td>bdl-12</td><td>error</td><td>Bundle</td><td>A message must have a MessageHeader as the first resource<br/>: type = 'message' implies entry.first().resource.is(MessageHeader)</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-1</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>total only when a search or history</td>
+    <td>
+      <code>total.empty() or (type = 'searchset') or (type = 'history')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-2</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.search only when a search</td>
+    <td>
+      <code>entry.search.empty() or (type = 'searchset')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-3</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.request mandatory for batch/transaction/history, otherwise prohibited</td>
+    <td>
+      <code>entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-4</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited</td>
+    <td>
+      <code>entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-5</td>
+    <td>error</td>
+    <td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td>
+    <td>must be a resource unless there's a request or response</td>
+    <td>
+      <code>resource.exists() or request.exists() or response.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-7</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)</td>
+    <td>
+      <code>(type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&amp;resource.meta.versionId).isDistinct()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-8</td>
+    <td>error</td>
+    <td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td>
+    <td>fullUrl cannot be a version specific reference</td>
+    <td>
+      <code>fullUrl.contains('/_history/').not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-9</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have an identifier with a system and a value</td>
+    <td>
+      <code>type = 'document' implies (identifier.system.exists() and identifier.value.exists())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-10</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have a date</td>
+    <td>
+      <code>type = 'document' implies (timestamp.hasValue())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-11</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have a Composition as the first resource</td>
+    <td>
+      <code>type = 'document' implies entry.first().resource.is(Composition)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-12</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A message must have a MessageHeader as the first resource</td>
+    <td>
+      <code>type = 'message' implies entry.first().resource.is(MessageHeader)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -2313,7 +2922,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Digital Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33da94fc-957b-48ae-8ba5-685caa7baaad
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ea50e405-dc9b-46db-8f5c-196d76a01a1c
 document.getElementById('cbmesures-bundle-flux-alimentationSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-bundle-flux-alimentationSA'), 'binding', document.getElementById('cbmesures-bundle-flux-alimentationSA-binding').checked, document.getElementById('ppmesures-bundle-flux-alimentationSA'));
 document.getElementById('cbmesures-bundle-flux-alimentationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2323,32 +2932,147 @@ filterDesc(document.getElementById('mesures-bundle-flux-alimentationSA'), 'oblig
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Bundle.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Bindings Additionnels</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">But</td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Bundle.language</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Un binding requis, à utiliser lorsque la force de binding est 'extensible' ou 'preferred'">Binding Max</a>
+    <td title="A human language.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Bundle.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Indicates the purpose of a bundle - how it is intended to be used.">Pattern Value: transaction<div><code>http://hl7.org/fhir/ValueSet/bundle-type|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/bundle-type|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry.search.mode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a><div><code>http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a><div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-observation.search.mode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a><div><code>http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-observation.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">Pattern Value: POST<div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-device.search.mode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a><div><code>http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Bundle.entry:mes-device.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">Pattern Value: POST<div><code>http://hl7.org/fhir/ValueSet/http-verb|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+  <tr>
+    <td>Bundle.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Indicates the purpose of a bundle - how it is intended to be used.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-bundle-type.html">BundleType</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/bundle-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry.search.​mode</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry.request.​method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-observation.​search.mode</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-observation.​request.method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-device.​search.mode</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/search-entry-mode|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Bundle.entry:mes-device.​request.method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/http-verb|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -2358,21 +3082,145 @@ filterDesc(document.getElementById('mesures-bundle-flux-alimentationSA'), 'oblig
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>bdl-1</td><td>error</td><td>Bundle</td><td>total only when a search or history<br/>: total.empty() or (type = 'searchset') or (type = 'history')</td><td></td></tr>
-<tr><td>bdl-2</td><td>error</td><td>Bundle</td><td>entry.search only when a search<br/>: entry.search.empty() or (type = 'searchset')</td><td></td></tr>
-<tr><td>bdl-3</td><td>error</td><td>Bundle</td><td>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/>: entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-4</td><td>error</td><td>Bundle</td><td>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/>: entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-7</td><td>error</td><td>Bundle</td><td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/>: (type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&amp;resource.meta.versionId).isDistinct()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>bdl-9</td><td>error</td><td>Bundle</td><td>A document must have an identifier with a system and a value<br/>: type = 'document' implies (identifier.system.exists() and identifier.value.exists())</td><td></td></tr>
-<tr><td>bdl-10</td><td>error</td><td>Bundle</td><td>A document must have a date<br/>: type = 'document' implies (timestamp.hasValue())</td><td></td></tr>
-<tr><td>bdl-11</td><td>error</td><td>Bundle</td><td>A document must have a Composition as the first resource<br/>: type = 'document' implies entry.first().resource.is(Composition)</td><td></td></tr>
-<tr><td>bdl-12</td><td>error</td><td>Bundle</td><td>A message must have a MessageHeader as the first resource<br/>: type = 'message' implies entry.first().resource.is(MessageHeader)</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-1</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>total only when a search or history</td>
+    <td>
+      <code>total.empty() or (type = 'searchset') or (type = 'history')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-2</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.search only when a search</td>
+    <td>
+      <code>entry.search.empty() or (type = 'searchset')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-3</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.request mandatory for batch/transaction/history, otherwise prohibited</td>
+    <td>
+      <code>entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-4</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited</td>
+    <td>
+      <code>entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-5</td>
+    <td>error</td>
+    <td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td>
+    <td>must be a resource unless there's a request or response</td>
+    <td>
+      <code>resource.exists() or request.exists() or response.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-7</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)</td>
+    <td>
+      <code>(type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&amp;resource.meta.versionId).isDistinct()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-8</td>
+    <td>error</td>
+    <td>Bundle.entry, Bundle.entry:mes-observation, Bundle.entry:mes-device</td>
+    <td>fullUrl cannot be a version specific reference</td>
+    <td>
+      <code>fullUrl.contains('/_history/').not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-9</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have an identifier with a system and a value</td>
+    <td>
+      <code>type = 'document' implies (identifier.system.exists() and identifier.value.exists())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-10</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have a date</td>
+    <td>
+      <code>type = 'document' implies (timestamp.hasValue())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-11</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A document must have a Composition as the first resource</td>
+    <td>
+      <code>type = 'document' implies entry.first().resource.is(Composition)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>bdl-12</td>
+    <td>error</td>
+    <td>Bundle</td>
+    <td>A message must have a MessageHeader as the first resource</td>
+    <td>
+      <code>type = 'message' implies entry.first().resource.is(MessageHeader)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -2594,7 +3442,7 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 21, 2025 12:32+0000">2025-07-21</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 07:30+0000">2025-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

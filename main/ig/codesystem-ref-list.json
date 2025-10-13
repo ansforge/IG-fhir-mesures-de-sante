@@ -10,12 +10,12 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J154-TypeGlucose-ENS.html" : "JDV_J154_TypeGlucose_ENS",
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J157-MomentGlucose-ENS.html" : "JDV_J157_MomentGlucose_ENS"
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J157-MomentGlucose-ENS.html" : "JDV_J157_MomentGlucose_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J154-TypeGlucose-ENS.html" : "JDV_J154_TypeGlucose_ENS"
     },
     {
       "url" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250601",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
       "status" : "active",
       "name" : "SNOMED_CT",
       "title" : "SNOMED CT core",
@@ -23,9 +23,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J151-BodySiteBodyTemperature-ENS.html" : "JDV_J151_BodySiteBodyTemperature_ENS",
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J149-BodySiteBP-ENS.html" : "JDV_J149_BodySiteBP_ENS",
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147_MethodHeartrate_ENS"
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J151-BodySiteBodyTemperature-ENS.html" : "JDV_J151_BodySiteBodyTemperature_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147_MethodHeartrate_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J149-BodySiteBP-ENS.html" : "JDV_J149_BodySiteBP_ENS"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -49,7 +49,7 @@
       "oids" : ["2.16.840.1.113883.6.8"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J163-GlucoseUnits-ENS.html" : "JDV_J163_GlucoseUnits_ENS"
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J163-GlucoseUnits-ENS.html" : "JDV_J163_GlucoseUnits_ENS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT",
@@ -76,21 +76,35 @@
       "ValueSet-method-glucose-vs.html" : "Méthode de mesures de glycémie sanguine ou interstitielle"
     },
     {
+      "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+      "version" : "202505190000",
+      "status" : "active",
+      "name" : "TerminologieCISIS",
+      "title" : "TerminologieCISIS - Terminologie des concepts non trouvés dans les autres terminologies",
+      "description" : "Terminologie multi-domaines créée et maintenue par l'ANS contenant les termes non trouvés dans les autres terminologies internationales ou nationales.",
+      "oids" : ["1.2.250.1.213.1.1.4.322"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J157-MomentGlucose-ENS.html" : "JDV_J157_MomentGlucose_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J154-TypeGlucose-ENS.html" : "JDV_J154_TypeGlucose_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J164-GlucoseNumberOfDays-ENS.html" : "JDV_J164_GlucoseNumberOfDays_ENS"
+    },
+    {
       "url" : "https://smt.esante.gouv.fr/terminologie-emdn",
       "version" : "v1.2",
       "status" : "active",
       "name" : "EMDN",
       "title" : "European Medical device nomenclature",
-      "description" : null,
+      "description" : "",
       "oids" : ["1.2.250.1.213.2.68"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J145-MethodBodyWeight-ENS.html" : "JDV_J145_MethodBodyWeight_ENS",
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J152-MethodBodyTemperature-ENS.html" : "JDV_J152_MethodBodyTemperature_ENS",
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J150-MethodBP-ENS.html" : "JDV_J150_MethodBP_ENS",
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147_MethodHeartrate_ENS",
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J146-MethodBodyHeight-ENS.html" : "JDV_J146_MethodBodyHeight_ENS",
-      "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J158-MethodStepsByDay-ENS.html" : "JDV_J158_MethodStepsByDay_ENS"
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147_MethodHeartrate_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J145-MethodBodyWeight-ENS.html" : "JDV_J145_MethodBodyWeight_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J158-MethodStepsByDay-ENS.html" : "JDV_J158_MethodStepsByDay_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J152-MethodBodyTemperature-ENS.html" : "JDV_J152_MethodBodyTemperature_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J146-MethodBodyHeight-ENS.html" : "JDV_J146_MethodBodyHeight_ENS",
+      "https://interop.esante.gouv.fr/terminologies/1.2.0/ValueSet-JDV-J150-MethodBP-ENS.html" : "JDV_J150_MethodBP_ENS"
     }
   ]
 }
