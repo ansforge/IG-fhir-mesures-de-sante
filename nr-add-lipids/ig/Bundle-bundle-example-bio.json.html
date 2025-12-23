@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>bundle-example-bio - JSON Representation - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
+    <title>bundle-example-bio - JSON Representation - Guide d&#39;implémentation FHIR - Mesures de santé v3.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,6 +20,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
@@ -48,6 +49,7 @@
     h3,h4,h5,h6{--heading-prefix:"8.27"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
     <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
@@ -191,9 +193,8 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -249,10 +250,10 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "bundle-example-bio",
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">meta</a>" : {
+  "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a>" : "bundle-example-bio",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
       <a href="StructureDefinition-mesures-bundle-flux-alimentation-biologie.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"
     ]
@@ -263,15 +264,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:25207dab-e2f1-4513-a499-48e508847382",
       "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html">resourceType</a>" : "DiagnosticReport",
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.id">id</a>" : "cholesterol-dr",
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.id">id</a>" : "cholesterol-dr",
+        "<a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-mesures-diagnostic-report.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#DiagnosticReport.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;DiagnosticReport_cholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : RapportDiagnostique cholesterol-dr&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-diagnostic-report.html\&quot;&gt;DiagnosticReport mesures biologie&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;span title=\&quot;Codes:{http://loinc.org 11502-2}\&quot;&gt;Compte rendu du laboratoire [Recherche] Patient ; Document&lt;/span&gt; &lt;/h2&gt;&lt;table class=\&quot;grid\&quot;/&gt;&lt;p&gt;&lt;b&gt;Report Details&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Valeur&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Reference Range&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Drapeaux&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;When For&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-total-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{http://loinc.org 2093-3}\&quot;&gt;Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;0.4 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt; - 11.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-hdl-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{http://loinc.org 2085-9}\&quot;&gt;HDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&amp;gt;3.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-ldl-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{http://loinc.org 2089-1}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;7.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&amp;lt;2.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-trigly-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{http://loinc.org 2571-8}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;5.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt; - 21.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-glycemia-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\&quot;&gt;Hémoglobine A1c %&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;92 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;70 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg/dL = 'mg/dL')&lt;/span&gt; - 100 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2022-11-06&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;DiagnosticReport_cholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : RapportDiagnostique cholesterol-dr&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-diagnostic-report.html\&quot;&gt;DiagnosticReport mesures biologie&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;span title=\&quot;Codes :{http://loinc.org 11502-2}\&quot;&gt;Compte rendu du laboratoire [Recherche] Patient ; Document&lt;/span&gt; &lt;/h2&gt;&lt;table class=\&quot;grid\&quot;/&gt;&lt;p&gt;&lt;b&gt;Détails du rapport&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Valeur&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Plage de référence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Drapeaux&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;When For&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-total-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{http://loinc.org 2093-3}\&quot;&gt;Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;0.4 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt; - 11.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-hdl-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{http://loinc.org 2085-9}\&quot;&gt;HDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&amp;gt;3.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-ldl-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{http://loinc.org 2089-1}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;7.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&amp;lt;2.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-trigly-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{http://loinc.org 2571-8}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;5.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt; - 21.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-glycemia-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\&quot;&gt;Hémoglobine A1c %&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;92 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;70 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmg/dL = 'mg/dL')&lt;/span&gt; - 100 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2022-11-06&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.code">code</a>" : {
@@ -310,15 +311,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:0f6a9f7f-d307-4497-b7e3-2059dc7344d4",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "cholesterol-ldl-example",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "cholesterol-ldl-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-mesures-observation-cholesterol-ldl.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_cholesterol-ldl-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation cholesterol-ldl-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-ldl-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-ldl-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-cholesterol-ldl.html\&quot;&gt;Cholestérol - LDL&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 2089-1}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-10-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 7.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\&quot;&gt;DEG&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_cholesterol-ldl-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation cholesterol-ldl-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-ldl-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-ldl-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-cholesterol-ldl.html\&quot;&gt;Cholestérol - LDL&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{http://loinc.org 2089-1}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-10-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 7.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\&quot;&gt;DEG&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
@@ -335,8 +336,8 @@
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a>" : "Patient",
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pierre Durand"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2024-10-15",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2024-10-15",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 7.8,
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -353,10 +354,10 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange">referenceRange</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange.high">high</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 2.6,
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "mmol/L",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mmol/L"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 2.6,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mmol/L"
             }
           }
         ]
@@ -370,15 +371,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:7375171a-805e-440d-aa55-eb0ced35625c",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "cholesterol-hdl-example",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "cholesterol-hdl-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-mesures-observation-cholesterol-hdl.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_cholesterol-hdl-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation cholesterol-hdl-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-hdl-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-hdl-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-cholesterol-hdl.html\&quot;&gt;Cholestérol - HDL&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 2085-9}\&quot;&gt;HDL Cholesterol&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-10-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\&quot;&gt;DEG&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;3.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_cholesterol-hdl-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation cholesterol-hdl-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-hdl-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-hdl-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-cholesterol-hdl.html\&quot;&gt;Cholestérol - HDL&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{http://loinc.org 2085-9}\&quot;&gt;HDL Cholesterol&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-10-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\&quot;&gt;DEG&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;3.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
@@ -395,8 +396,8 @@
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a>" : "Patient",
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pierre Durand"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2024-10-15",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2024-10-15",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 2.8,
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -413,10 +414,10 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange">referenceRange</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange.low">low</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 3.1,
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "mmol/L",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mmol/L"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 3.1,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mmol/L"
             }
           }
         ]
@@ -430,15 +431,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:1cd043f1-996c-49e8-bb03-b02a865505af",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "cholesterol-trigly-example",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "cholesterol-trigly-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-mesures-observation-cholesterol-trigly.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_cholesterol-trigly-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation cholesterol-trigly-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-trigly-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-trigly-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-cholesterol-trigly.html\&quot;&gt;Cholestérol - triglycerides&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 2571-8}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-10-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 5.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\&quot;&gt;DEG&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;21.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_cholesterol-trigly-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation cholesterol-trigly-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-trigly-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-trigly-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-cholesterol-trigly.html\&quot;&gt;Cholestérol - triglycerides&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{http://loinc.org 2571-8}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-10-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 5.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\&quot;&gt;DEG&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;21.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
@@ -455,8 +456,8 @@
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a>" : "Patient",
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pierre Durand"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2024-10-15",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2024-10-15",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 5.6,
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -473,16 +474,16 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange">referenceRange</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange.low">low</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 2.8,
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "mmol/L",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mmol/L"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 2.8,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mmol/L"
             },
             "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange.high">high</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 21.1,
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "mmol/L",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mmol/L"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 21.1,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mmol/L"
             }
           }
         ]
@@ -496,15 +497,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:91bc2d03-5406-490c-89f5-23cce837494d",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "cholesterol-total-example",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "cholesterol-total-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-mesures-observation-cholesterol-total.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_cholesterol-total-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation cholesterol-total-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-total-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-total-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-cholesterol-total.html\&quot;&gt;Cholestérol - total&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 2093-3}\&quot;&gt;Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-10-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 0.4 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\&quot;&gt;DEG&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;11.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_cholesterol-total-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation cholesterol-total-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-total-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-total-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-cholesterol-total.html\&quot;&gt;Cholestérol - total&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{http://loinc.org 2093-3}\&quot;&gt;Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-10-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 0.4 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\&quot;&gt;DEG&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;11.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
@@ -521,8 +522,8 @@
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a>" : "Patient",
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pierre Durand"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2024-10-15",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2024-10-15",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 0.4,
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -539,16 +540,16 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange">referenceRange</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange.low">low</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 2.8,
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "mmol/L",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mmol/L"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 2.8,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mmol/L"
             },
             "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange.high">high</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 11.1,
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "mmol/L",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mmol/L"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 11.1,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mmol/L"
             }
           }
         ]
@@ -562,24 +563,24 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:eae3dfd3-ccc1-438e-b8fe-fe725dce7947",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "glycemia-example",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "glycemia-example",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-mesures-observation-glucose.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_glycemia-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation glycemia-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;glycemia-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcglycemia-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-glucose.html\&quot;&gt;Glycémie&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Raison de la mesure&lt;/b&gt;: Malaise du patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;Moment de la mesure&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 16915-1}\&quot;&gt;Glucose post prandial&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Nombre de jours&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP GEN-275}\&quot;&gt;7j&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\&quot;&gt;Hémoglobine A1c %&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2022-11-06&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 92 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg/dL = 'mg/dL')&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;70 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;100 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_glycemia-example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation glycemia-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;glycemia-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcglycemia-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-observation-glucose.html\&quot;&gt;Glycémie&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Raison de la mesure&lt;/b&gt;: Malaise du patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;Moment de la mesure&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 16915-1}\&quot;&gt;Glucose post prandial&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Nombre de jours&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP GEN-275}\&quot;&gt;7j&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\&quot;&gt;Hémoglobine A1c %&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplefrPatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2022-11-06&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 92 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmg/dL = 'mg/dL')&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;70 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;100 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.extension">extension</a>" : [
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.extension">extension</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Malaise du patient"
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Malaise du patient"
           },
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                 {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc",
@@ -591,7 +592,7 @@
           },
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                 {
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP",
@@ -626,8 +627,8 @@
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a>" : "Patient",
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pierre Durand"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2022-11-06",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2022-11-06",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 92,
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "milligramme par décilitre",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -636,16 +637,16 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange">referenceRange</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange.low">low</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 70,
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "milligramme par décilitre",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mg/dL"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 70,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "milligramme par décilitre",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mg/dL"
             },
             "<a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange.high">high</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 100,
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "milligramme par décilitre",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "mg/dL"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 100,
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "milligramme par décilitre",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mg/dL"
             }
           }
         ]
@@ -702,7 +703,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 7, 2025 09:51+0000">2025-07-07</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 23, 2025 16:18+0000">2025-12-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

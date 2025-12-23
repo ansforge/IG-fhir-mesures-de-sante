@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>bundle-example-body-weight - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
+    <title>bundle-example-body-weight - Guide d&#39;implémentation FHIR - Mesures de santé v3.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,6 +18,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
@@ -46,6 +47,7 @@
     h3,h4,h5,h6{--heading-prefix:"8.28"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
     <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
@@ -189,9 +191,8 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
   
 
@@ -248,8 +249,8 @@
 
 
 
-  <div><p class="res-header-id"/><a name="bundle-example-body-weight"> </a><a name="hcbundle-example-body-weight"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-mesures-bundle-flux-alimentation.html">Bundle d'alimentation</a></p></div><p>Bundle bundle-example-body-weight de type transaction</p><a name="urn-uuid-5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><a name="Observation_5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><a name="hcObservation_5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><hr/><p>Entry 1 - fullUrl = urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a</p><p>Ressource Observation :</p><blockquote><p class="res-header-id"/><a name="bundle-example-body-weight/5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><a name="hcbundle-example-body-weight/5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-mesures-fr-observation-body-weight.html">Poids</a></p></div><p><b>Raison de la mesure</b>: Mon nouveau poids !</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: Identifier: <code>urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560</code>/id-value</p><p><b>effective</b>: 2022-08-22 01:56:16+0100</p><p><b>value</b>: 71 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p><p><b>device</b>: <a href="Bundle-bundle-example-body-weight.html#Device_d36bfdb6-b1b1-4efd-9cb9-d217a8696575">Bundle : type = transaction</a></p></blockquote><p>Requête :</p><pre>POST Observation
-</pre><a name="urn-uuid-d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><a name="Device_d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><a name="hcDevice_d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><hr/><p>Entry 2 - fullUrl = urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575</p><p>Ressource Device :</p><blockquote><p class="res-header-id"/><a name="bundle-example-body-weight/d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><a name="hcbundle-example-body-weight/d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/FE-ED-AB-AA-DE-AD-77-C5</p><p><b>manufacturer</b>: OMRONHEALTHCARE</p><p><b>modelNumber</b>: HEM-9200T</p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 65573}">MDC_MOC_VMS_MDS_SIMP</span></p></blockquote><p>Requête :</p><pre>POST Device
+  <div data-fhir="generated"><p class="res-header-id"/><a name="bundle-example-body-weight"> </a><a name="hcbundle-example-body-weight"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-mesures-bundle-flux-alimentation.html">Bundle d'alimentation</a></p></div><p>Bundle bundle-example-body-weight de type transaction</p><a name="urn-uuid-5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><a name="Observation_5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><a name="hcObservation_5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><hr/><p>Entrée 1 - fullUrl = urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a</p><p>Ressource Observation :</p><blockquote><p class="res-header-id"/><a name="bundle-example-body-weight/5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><a name="hcbundle-example-body-weight/5138af77-df7e-4b9d-ba17-07ba3ebb950a"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-mesures-fr-observation-body-weight.html">Poids</a></p></div><p><b>Raison de la mesure</b>: Mon nouveau poids !</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes :{http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: Identifier: <code>urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560</code>/id-value</p><p><b>effective</b>: 2022-08-22 01:56:16+0100</p><p><b>value</b>: 71 kg<span style="background: LightGoldenRodYellow"> (Détails : code UCUMkg = 'kg')</span></p><p><b>device</b>: <a href="Bundle-bundle-example-body-weight.html#Device_d36bfdb6-b1b1-4efd-9cb9-d217a8696575">Device : identifier = IEEE 11073 System Identifier; manufacturer = OMRONHEALTHCARE; modelNumber = HEM-9200T; type = MDC_MOC_VMS_MDS_SIMP</a></p></blockquote><p>Requête :</p><pre>POST Observation
+</pre><a name="urn-uuid-d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><a name="Device_d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><a name="hcDevice_d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><hr/><p>Entrée 2 - fullUrl = urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575</p><p>Ressource Device :</p><blockquote><p class="res-header-id"/><a name="bundle-example-body-weight/d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><a name="hcbundle-example-body-weight/d36bfdb6-b1b1-4efd-9cb9-d217a8696575"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/FE-ED-AB-AA-DE-AD-77-C5</p><p><b>manufacturer</b>: OMRONHEALTHCARE</p><p><b>modelNumber</b>: HEM-9200T</p><p><b>type</b>: <span title="Codes :{urn:iso:std:iso:11073:10101 65573}">MDC_MOC_VMS_MDS_SIMP</span></p></blockquote><p>Requête :</p><pre>POST Device
 </pre></div>
 
   
@@ -297,7 +298,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 7, 2025 09:51+0000">2025-07-07</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 23, 2025 16:18+0000">2025-12-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

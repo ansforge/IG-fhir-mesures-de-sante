@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>cholesterol-dr - TTL Representation - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
+    <title>cholesterol-dr - TTL Representation - Guide d&#39;implémentation FHIR - Mesures de santé v3.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,6 +20,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
@@ -48,6 +49,7 @@
     h3,h4,h5,h6{--heading-prefix:"8.29"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
     <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
@@ -191,9 +193,8 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -249,7 +250,7 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix loinc: &lt;https://loinc.org/rdf/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
@@ -261,33 +262,40 @@
 
  a fhir:DiagnosticReport ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;cholesterol-dr&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.meta">fhir:meta</a> [
+  <a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;cholesterol-dr&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report&gt;     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:l</a> &lt;https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report&gt;     ] )
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.text">fhir:text</a> [
+  <a href="http://hl7.org/fhir/R4/domainresource.html#DiagnosticReport.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : RapportDiagnostique cholesterol-dr&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-diagnostic-report.html\&quot;&gt;DiagnosticReport mesures biologie&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;span title=\&quot;Codes:{http://loinc.org 11502-2}\&quot;&gt;Compte rendu du laboratoire [Recherche] Patient ; Document&lt;/span&gt; &lt;/h2&gt;&lt;table class=\&quot;grid\&quot;/&gt;&lt;p&gt;&lt;b&gt;Report Details&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Valeur&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Reference Range&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Drapeaux&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;When For&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-total-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{http://loinc.org 2093-3}\&quot;&gt;Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;0.4 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt; - 11.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-hdl-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{http://loinc.org 2085-9}\&quot;&gt;HDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&amp;gt;3.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-ldl-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{http://loinc.org 2089-1}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;7.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&amp;lt;2.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-trigly-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{http://loinc.org 2571-8}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;5.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt; - 21.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-glycemia-example.html\&quot;&gt;&lt;span title=\&quot;Codes:{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\&quot;&gt;Hémoglobine A1c %&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;92 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;70 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg/dL = 'mg/dL')&lt;/span&gt; - 100 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2022-11-06&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : RapportDiagnostique cholesterol-dr&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccholesterol-dr\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-mesures-diagnostic-report.html\&quot;&gt;DiagnosticReport mesures biologie&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;span title=\&quot;Codes :{http://loinc.org 11502-2}\&quot;&gt;Compte rendu du laboratoire [Recherche] Patient ; Document&lt;/span&gt; &lt;/h2&gt;&lt;table class=\&quot;grid\&quot;/&gt;&lt;p&gt;&lt;b&gt;Détails du rapport&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Valeur&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Plage de référence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Drapeaux&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;When For&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-total-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{http://loinc.org 2093-3}\&quot;&gt;Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;0.4 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt; - 11.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-hdl-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{http://loinc.org 2085-9}\&quot;&gt;HDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&amp;gt;3.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-ldl-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{http://loinc.org 2089-1}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;7.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&amp;lt;2.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-cholesterol-trigly-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{http://loinc.org 2571-8}\&quot;&gt;LDL Cholesterol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;5.6 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2.8 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt; - 21.1 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2024-10-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;Observation-glycemia-example.html\&quot;&gt;&lt;span title=\&quot;Codes :{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\&quot;&gt;Hémoglobine A1c %&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;92 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;70 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmg/dL = 'mg/dL')&lt;/span&gt; - 100 milligramme par décilitre&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMmg/dL = 'mg/dL')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2022-11-06&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.code">fhir:code</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
 a loinc:11502-2 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://loinc.org&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;11502-2&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Compte rendu du laboratoire [Recherche] Patient ; Document&quot; ]     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">fhir:result</a> ( [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/cholesterol-total-example ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/cholesterol-total-example&quot; ]
   ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/cholesterol-hdl-example ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/cholesterol-hdl-example&quot; ]
   ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/cholesterol-ldl-example ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/cholesterol-ldl-example&quot; ]
   ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/cholesterol-trigly-example ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/cholesterol-trigly-example&quot; ]
   ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/glycemia-example ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/glycemia-example&quot; ]
   ] ) . # 
 
@@ -338,7 +346,7 @@ a loinc:11502-2 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 7, 2025 09:51+0000">2025-07-07</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 23, 2025 16:18+0000">2025-12-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
