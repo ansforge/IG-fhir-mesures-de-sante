@@ -1,5 +1,5 @@
 
-Les mesures de biologie peuvent se transmettre accompagnée d'une ressource DiagnosticReport permettant d'indiquer le contexte du rapport.
+Les mesures de biologie peuvent se transmettre accompagnées d'une ressource DiagnosticReport permettant d'indiquer le contexte du rapport.
 
 Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlimentationBiologie](./StructureDefinition-mesures-bundle-flux-alimentation-biologie.html) pour permettre leur échange de manière groupée.
 
