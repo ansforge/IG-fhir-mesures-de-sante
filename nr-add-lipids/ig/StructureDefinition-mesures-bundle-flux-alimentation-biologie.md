@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "name" : "MesBundleFluxAlimentationBiologie",
   "title" : "Bundle d'alimentation des mesures de biologie",
   "status" : "active",
-  "date" : "2026-01-06T09:57:05+00:00",
+  "date" : "2026-01-06T10:01:17+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -110,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
           {
             "key" : "mesures-inv-2",
             "severity" : "error",
-            "human" : "Si le cholestérol total est présent, alors le cholestérol hdl doit également être présent.",
+            "human" : "Si le cholestérol total est présent, alors le cholestérol HDL doit également être présent.",
             "expression" : "entry.resource.where(code = '2093-3').exists() implies entry.resource.where(code = '2085-9').exists()",
             "source" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"
           }

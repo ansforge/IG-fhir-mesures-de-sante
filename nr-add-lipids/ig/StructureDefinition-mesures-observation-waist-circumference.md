@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationWaistCircumference",
   "title" : "Tour de taille",
   "status" : "active",
-  "date" : "2026-01-06T09:57:05+00:00",
+  "date" : "2026-01-06T10:01:17+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
