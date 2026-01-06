@@ -86,6 +86,6 @@ Description: "Si le cholestérol HDL est présent, alors le cholestérol total d
 * expression = "entry.resource.where(code = '2085-9').exists() implies entry.resource.where(code = '2093-3').exists()"
 
 Invariant:   mesures-inv-2
-Description: "Si le cholestérol total est présent, alors le cholestérol hdl doit également être présent."
+Description: "Si le cholestérol total est présent, alors le cholestérol HDL doit également être présent."
 * severity = #error
 * expression = "entry.resource.where(code = '2093-3').exists() implies entry.resource.where(code = '2085-9').exists()"
