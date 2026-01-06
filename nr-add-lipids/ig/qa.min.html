@@ -47,9 +47,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Mesures</h1>
- <p>Generated Tue Dec 23 16:23:34 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Tue Jan 06 10:02:14 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v2.0.29. The latest official release version is unknown <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.29</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.mesures, Canonical = https://interop.esante.gouv.fr/ig/fhir/mesures</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
@@ -531,12 +531,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.code&#8203;.coding[0]&#8203;.display (l67&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2089-1. Valid display is 'Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l49">log</a>, or see <a href="#vmi432" onClick="document.getElementById('vmi432').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi432" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#2089-1 ("LDL Cholesterol")]"
-15 0    : 0ms  : Check "http://loinc.org#2089-1"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#2089-1 ("LDL Cholesterol")]"
+16 0    : 0ms  : Check "http://loinc.org#2089-1"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -581,12 +581,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;.code&#8203;.coding[0]&#8203;.display (l179&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2571-8. Valid display is 'Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l52">log</a>, or see <a href="#vmi444" onClick="document.getElementById('vmi444').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi444" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
-0 0     : 0ms  : Check "http://loinc.org#2571-8"
-0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
+16 0    : 0ms  : Check "http://loinc.org#2571-8"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -631,15 +631,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi455" onClick="document.getElementById('vmi455').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi455" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -689,15 +689,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi471" onClick="document.getElementById('vmi471').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi471" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -726,15 +726,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi480" onClick="document.getElementById('vmi480').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi480" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -769,15 +769,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi491" onClick="document.getElementById('vmi491').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi491" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -791,15 +791,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi495" onClick="document.getElementById('vmi495').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi495" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -825,15 +825,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi503" onClick="document.getElementById('vmi503').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi503" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -853,15 +853,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi509" onClick="document.getElementById('vmi509').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi509" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -890,15 +890,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi518" onClick="document.getElementById('vmi518').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi518" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -912,15 +912,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi522" onClick="document.getElementById('vmi522').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi522" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -940,15 +940,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi528" onClick="document.getElementById('vmi528').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi528" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -974,15 +974,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi536" onClick="document.getElementById('vmi536').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi536" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -999,15 +999,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Observation&#8203;/5138af77-df7e-4b9d-ba17-07ba3ebb950a*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l34&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Body weight' for http://loinc.org#29463-7. Valid display is 'Poids corporel [Masse] Patient ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l59">log</a>, or see <a href="#vmi541" onClick="document.getElementById('vmi541').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi541" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
-16 0    : 0ms  : Check "http://loinc.org#29463-7"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "29463-7" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#29463-7 ("Body weight")]"
+0 0     : 0ms  : Check "http://loinc.org#29463-7"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "29463-7" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1118,12 +1118,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
 0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-15 15   : 15ms : CodeSystem found: "http://loinc.org|2.81"
-15 0    : 15ms : Validate "[http://loinc.org#8462-4 ("Diastolic blood pressure")]"
-15 0    : 15ms : Check "http://loinc.org#8462-4"
-15 0    : 15ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-15 0    : 15ms : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-15 0    : 15ms : Code "8462-4" found in http://loinc.org|2.81
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#8462-4 ("Diastolic blood pressure")]"
+0 0     : 0ms  : Check "http://loinc.org#8462-4"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "8462-4" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1386,12 +1386,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.display (l9&#8203;/c4)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2089-1. Valid display is 'Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l49">log</a>, or see <a href="#vmi601" onClick="document.getElementById('vmi601').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi601" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#2089-1 ("LDL Cholesterol")]"
-15 0    : 0ms  : Check "http://loinc.org#2089-1"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#2089-1 ("LDL Cholesterol")]"
+16 0    : 0ms  : Check "http://loinc.org#2089-1"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1446,12 +1446,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.display (l9&#8203;/c4)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2571-8. Valid display is 'Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l52">log</a>, or see <a href="#vmi612" onClick="document.getElementById('vmi612').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi612" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
-0 0     : 0ms  : Check "http://loinc.org#2571-8"
-0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
+16 0    : 0ms  : Check "http://loinc.org#2571-8"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1776,12 +1776,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c75820)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2089-1. Valid display is 'Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l49">log</a>, or see <a href="#vmi665" onClick="document.getElementById('vmi665').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi665" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#2089-1 ("LDL Cholesterol")]"
-15 0    : 0ms  : Check "http://loinc.org#2089-1"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#2089-1 ("LDL Cholesterol")]"
+16 0    : 0ms  : Check "http://loinc.org#2089-1"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1792,12 +1792,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[0]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c151921)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2089-1. Valid display is 'Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l49">log</a>, or see <a href="#vmi668" onClick="document.getElementById('vmi668').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi668" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#2089-1 ("LDL Cholesterol")]"
-15 0    : 0ms  : Check "http://loinc.org#2089-1"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#2089-1 ("LDL Cholesterol")]"
+16 0    : 0ms  : Check "http://loinc.org#2089-1"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1883,12 +1883,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c73759)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2571-8. Valid display is 'Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l52">log</a>, or see <a href="#vmi686" onClick="document.getElementById('vmi686').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi686" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
-0 0     : 0ms  : Check "http://loinc.org#2571-8"
-0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
+16 0    : 0ms  : Check "http://loinc.org#2571-8"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1899,12 +1899,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[0]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c149593)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2571-8. Valid display is 'Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l52">log</a>, or see <a href="#vmi689" onClick="document.getElementById('vmi689').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi689" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
-0 0     : 0ms  : Check "http://loinc.org#2571-8"
-0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
+16 0    : 0ms  : Check "http://loinc.org#2571-8"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
