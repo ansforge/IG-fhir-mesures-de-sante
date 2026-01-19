@@ -4,7 +4,7 @@ Id: mesures-fr-observation-oxygen-sat
 Title: "Saturation en Oxygène"
 Description: "Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2)"
 
-* meta.source ^short = "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+* insert ObservationResultsMesures
 
 * extension contains mesures-moment-of-measurement named MesMomentOfMeasurement 0..1
 
@@ -15,7 +15,6 @@ Description: "Profil de la ressource Observation pour définir une Saturation en
 * method from $JDV-J147-MethodHeartrate-MES (required)
 * method.coding.system 1..
 * method.coding.code 1..
-
 
 * category[VSCat].coding.display = "vital-signs" 
 
