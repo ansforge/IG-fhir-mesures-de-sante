@@ -25,3 +25,35 @@ Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlime
     { "title" : "Description", "type" : "markdown", "source" : "Description"}
   ]
 } %}
+
+### Exemples de requêtes FHIR
+
+#### Récupérer toutes les mesures de cholestérol associées à un DiagnosticReport
+
+##### Requête 1 : Récupérer un DiagnosticReport avec ses Observations incluses
+
+```http
+GET [base]/DiagnosticReport/[id]?_include=DiagnosticReport:result
+```
+
+Cette requête récupère le DiagnosticReport spécifié et inclut toutes les ressources Observation référencées dans `DiagnosticReport.result`.
+
+##### Requête 2 : Récupérer uniquement les observations de cholestérol liées à un DiagnosticReport
+
+```http
+GET [base]/Observation?_has:DiagnosticReport:result:_id=[id]&code=http://loinc.org|2093-3,http://loinc.org|2085-9,http://loinc.org|2089-1
+```
+
+Cette requête utilise le reverse chaining (`_has`) pour rechercher les Observations référencées par un DiagnosticReport spécifique via `DiagnosticReport.result`, et filtre sur les codes LOINC du cholestérol :
+
+* `2093-3` : Cholesterol [Mass/volume] in Serum or Plasma
+* `2085-9` : Cholesterol in HDL [Mass/volume] in Serum or Plasma
+* `2089-1` : Cholesterol in LDL [Mass/volume] in Serum or Plasma
+
+##### Requête 3 : Récupérer toutes les observations de cholestérol avec leur DiagnosticReport associé
+
+```http
+GET [base]/Observation?code=http://loinc.org|2093-3,http://loinc.org|2085-9,http://loinc.org|2089-1&_revinclude=DiagnosticReport:result
+```
+
+Cette requête recherche toutes les observations de cholestérol et inclut les DiagnosticReports qui les référencent.
