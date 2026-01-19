@@ -13,9 +13,7 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 * code = http://loinc.org#2093-3 "Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique"
 
 * method 1..1
-* method from https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 (extensible)
-
-
+* method  ^short = "La méthode de mesure du cholestérol total est obligatoire pour déterminer si des résultats sont comparables et ainsi utiliser cette donnée."
 
 * value[x] only Quantity
 * valueQuantity.unit 1..

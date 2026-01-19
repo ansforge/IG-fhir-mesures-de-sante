@@ -12,8 +12,6 @@ Description: "Profil biologie de la ressource Observation pour définir le ratio
 
 * code = http://loinc.org#11054-4 "Cholestérol LDL/cholestérol HDL [Masse ratio] Sérum/Plasma ; Numérique"
 
-* method from https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 (extensible)
-
 * referenceRange 1..1 MS
 * referenceRange ^short = "L'intervalle de référence est obligatoire pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ..."
 * referenceRange obeys mes-ir
