@@ -273,10 +273,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="requête-1--récupérer-un-diagnosticreport-avec-ses-observations-incluses">Requête 1 : Récupérer un DiagnosticReport avec ses Observations incluses</h5>
 
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/DiagnosticReport/[id]?_include=DiagnosticReport:result
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/DiagnosticReport?_id=[id]&amp;_include=DiagnosticReport:result
 </span></code></pre></div></div>
 
 <p>Cette requête récupère le DiagnosticReport spécifié et inclut toutes les ressources Observation référencées dans <code class="language-plaintext highlighter-rouge">DiagnosticReport.result</code>.</p>
+
+  <!-- Exemple HAPI fonctionnel au 19.01.2026 https://hapi.fhir.org/baseR4/DiagnosticReport?_id=45020507&_include=DiagnosticReport:result -->
 
 <h5 id="requête-2--récupérer-uniquement-les-observations-de-cholestérol-liées-à-un-diagnosticreport">Requête 2 : Récupérer uniquement les observations de cholestérol liées à un DiagnosticReport</h5>
 
@@ -291,10 +293,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">2089-1</code> : Cholesterol in LDL [Mass/volume] in Serum or Plasma</li>
 </ul>
 
+  <!-- Exemple HAPI fonctionnel au 19.01.2026 https://hapi.fhir.org/baseR4/Observation?_has:DiagnosticReport:result:_id=45020507&code=Culture%20Blood%20-%20Central%20Line -->
+
 <h5 id="requête-3--récupérer-toutes-les-observations-de-cholestérol-avec-leur-diagnosticreport-associé">Requête 3 : Récupérer toutes les observations de cholestérol avec leur DiagnosticReport associé</h5>
 
 <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/Observation?code=http://loinc.org|2093-3,http://loinc.org|2085-9,http://loinc.org|2089-1&amp;_revinclude=DiagnosticReport:result
 </span></code></pre></div></div>
+
+  <!-- Exemple HAPI fonctionnel au 19.01.2026  https://hapi.fhir.org/baseR4/Observation?_revinclude=DiagnosticReport:result&code=Culture%20Blood%20-%20Central%20Line -->
 
 <p>Cette requête recherche toutes les observations de cholestérol et inclut les DiagnosticReports qui les référencent.</p>
 
@@ -339,7 +345,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 19, 2026 09:39+0000">2026-01-19</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 19, 2026 09:47+0000">2026-01-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

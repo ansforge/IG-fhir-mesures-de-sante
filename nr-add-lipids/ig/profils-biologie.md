@@ -42,7 +42,7 @@ L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesu
 ##### Requête 1 : Récupérer un DiagnosticReport avec ses Observations incluses
 
 ```
-GET [base]/DiagnosticReport/[id]?_include=DiagnosticReport:result
+GET [base]/DiagnosticReport?_id=[id]&_include=DiagnosticReport:result
 
 ```
 
