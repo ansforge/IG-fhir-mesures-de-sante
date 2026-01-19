@@ -15,6 +15,13 @@
 
 > **Attention !**Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante et publiée à utiliser est accessible à l'adresse https://interop.esante.gouv.fr/ig/fhir/mesures
 
+> **📖 Guide de lecture**
+
+Ce guide d'implémentation est destiné à**tous les profils**(métier et technique) :
+
+* **Professionnels de santé et chefs de projet métier** : Consultez les sections d'introduction, les problématiques connues et les cas d'usage pour comprendre le contexte et les besoins métiers.
+* **Développeurs et intégrateurs** : Consultez la liste des profils, les spécifications techniques détaillées et les exemples d'implémentation pour intégrer les mesures de santé dans vos solutions.
+
 Le guide ****mesures de santé**** propose la mise en place des fonctions d’alimentation et de consultation des mesures de santé d’un usager.
 
 Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre ces fonctions d’alimentation et de consultation des mesures de santé d’un usager.
@@ -22,7 +29,7 @@ Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre 
 Les spécifications techniques de ce guide s’appuient:
 
 * sur le standard HL7 FHIR et plus particulièrement sur un sous-ensemble des ressources définies par ce standard ainsi que sur la notion d’extension et de profilage des ressources.
-* sur les profils français de la ressource Observation (Profls Interop’Santé ou ANS)
+* sur les profils français de la ressource Observation (Profils Interop’Santé ou ANS)
 * sur le profil PHD de la ressource Device profilé dans l’Implementation Guide PHD et dont l’usage est défini dans le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif connecté ayant effectué la mesure.
 
 Pour les opérations sur les ressources, l’API REST définie par le standard HL7 FHIR met en œuvre la logique de la transaction PCH-01 du profil IHE « Personal Health Device Observation Upload (POU) » pour l’alimentation.
@@ -73,19 +80,31 @@ Pour chaque ressource, le lien vers la spécification technique InteropSanté es
 * l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
 L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin. |
 
-### Problématique connue
+### Problématiques connues
 
-Un certain nombre de problématiques connues ont été identifiées. Si vous souhaitez réagir par rapport à ces problématiques connues, merci de commenter dans une [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
+> **⚠️ Discussions en cours**
 
-1/ Les profils mesures de santé sont optionnellement liés à un device qui doivent hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l’international par le guide d’implémentation PoCD.
+Un certain nombre de problématiques connues ont été identifiées. Vos retours et contributions sont les bienvenus via les[issues GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante/issues).
 
-2/ Dans le cadre des mesures biologiques (glycémie, cholestérol), l’intervalle de référence n’est pas rendu techniquement obligatoire dans les profils FHIR contrairement aux [profils internationaux](https://www.hl7.org/fhir/R4/lipid-report.html). Cet intervalle peut varier en fonction de nombreux facteurs tel que l’âge, le sexe, les antécédents… Ceux-ci doivent être nécessairement indiqués si la donnée provient d’un compte rendu de biologie. Pour l’heure, les données usager sont considérées comme pouvant être interprétées sans intervalle de référence.
+#### 1. Dispositifs médicaux : PHD vs PoCD
 
-3/ Il y a une incohérence entre l’unité de la glycémie qui est actuellement en “g/L” et les unités du cholestérol actuellement en “mmol/L”, faut-il faire la modification pour uniformiser et respecter l’unité du système international, c’est à dire en “mmol/L”?
+Les profils mesures de santé sont optionnellement liés à un device qui doivent hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l’international par le guide d’implémentation PoCD.
 
-4/ Il y a actuellement un certain nombre de profils de paramètres biologiques. La question de la multiplicité des profils biologiques se pose - est-ce que le profilage de l’ensemble des données bio a un sens ? Est-ce que le jeu de valeurs circuit de la biologie est suffisant ?
+#### 2. Intervalles de référence en biologie
 
-En cas de besoins allant dans ce sens, merci de le spécifier dans une [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
+Dans le cadre des mesures biologiques (glycémie, cholestérol), l’intervalle de référence n’est pas rendu techniquement obligatoire dans les profils FHIR contrairement aux [profils internationaux](https://www.hl7.org/fhir/R4/lipid-report.html). Cet intervalle peut varier en fonction de nombreux facteurs tel que l’âge, le sexe, les antécédents… Ceux-ci doivent être nécessairement indiqués si la donnée provient d’un compte rendu de biologie.
+
+Pour l’heure, les données usager sont considérées comme pouvant être interprétées sans intervalle de référence.
+
+#### 3. Harmonisation des unités
+
+Il y a une incohérence entre l’unité de la glycémie qui est actuellement en “g/L” et les unités du cholestérol actuellement en “mmol/L”, faut-il faire la modification pour uniformiser et respecter l’unité du système international, c’est à dire en “mmol/L”?
+
+#### 4. Multiplicité des profils biologiques
+
+Il y a actuellement un certain nombre de profils de paramètres biologiques. La question de la multiplicité des profils biologiques se pose - est-ce que le profilage de l’ensemble des données bio a un sens ? Est-ce que le jeu de valeurs circuit de la biologie est suffisant ?
+
+Toutes précisions sur les besoins des utilisations de la spécification sont les bienvenues et communiquables via les [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
 
 ### Contributeurs
 
@@ -153,7 +172,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-01-19T09:56:13+00:00",
+  "date" : "2026-01-19T10:07:50+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

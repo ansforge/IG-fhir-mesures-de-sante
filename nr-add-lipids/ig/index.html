@@ -256,7 +256,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#liste-des-profils" id="markdown-toc-liste-des-profils">Liste des profils</a></li>
-  <li><a href="#problématique-connue" id="markdown-toc-problématique-connue">Problématique connue</a></li>
+  <li><a href="#problématiques-connues" id="markdown-toc-problématiques-connues">Problématiques connues</a></li>
   <li><a href="#contributeurs" id="markdown-toc-contributeurs">Contributeurs</a></li>
   <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
   <li><a href="#propriété-intellectuelle" id="markdown-toc-propriété-intellectuelle">Propriété intellectuelle</a></li>
@@ -278,6 +278,17 @@ This implementation guide contains the profiles to share vital-signs for the Fre
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" />
 </div>
 
+<blockquote class="stu-note" style="background-color: #fff9e6; border-left: 4px solid #ff9800;">
+<p>
+<b>📖 Guide de lecture</b><br /><br />
+Ce guide d'implémentation est destiné à <b>tous les profils</b> (métier et technique) :<br />
+<ul>
+<li><b>Professionnels de santé et chefs de projet métier</b> : Consultez les sections d'introduction, les problématiques connues et les cas d'usage pour comprendre le contexte et les besoins métiers.</li>
+<li><b>Développeurs et intégrateurs</b> : Consultez la liste des profils, les spécifications techniques détaillées et les exemples d'implémentation pour intégrer les mesures de santé dans vos solutions.</li>
+</ul>
+</p>
+</blockquote>
+
 <p>Le guide <strong><em>mesures de santé</em></strong> propose la mise en place des fonctions d’alimentation et de consultation des mesures de santé d’un usager.</p>
 
 <p>Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre ces fonctions d’alimentation et de consultation des mesures de santé d’un usager.</p>
@@ -286,7 +297,7 @@ This implementation guide contains the profiles to share vital-signs for the Fre
 
 <ul>
   <li>sur le standard HL7 FHIR et plus particulièrement sur un sous-ensemble des ressources définies par ce standard ainsi que sur la notion d’extension et de profilage des ressources.</li>
-  <li>sur les profils français de la ressource Observation (Profls Interop’Santé ou ANS)</li>
+  <li>sur les profils français de la ressource Observation (Profils Interop’Santé ou ANS)</li>
   <li>sur le profil PHD de la ressource Device profilé dans l’Implementation Guide PHD et dont l’usage est défini dans le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif connecté ayant effectué la mesure.</li>
 </ul>
 
@@ -342,20 +353,34 @@ Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
 <p>L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.</p>
 </div></td></tr></table>
 
-<h3 id="problématique-connue">Problématique connue</h3>
+<h3 id="problématiques-connues">Problématiques connues</h3>
 
-<p>Un certain nombre de problématiques connues ont été identifiées. Si vous souhaitez réagir par rapport à ces problématiques connues, merci de commenter dans une <a href="https://github.com/ansforge/IG-fhir-mesures-de-sante">issue GitHub</a>.</p>
+<blockquote class="stu-note" style="background-color: #fff9e6; border-left: 4px solid #ff9800;">
+<p>
+<b>⚠️ Discussions en cours</b><br /><br />
+Un certain nombre de problématiques connues ont été identifiées. Vos retours et contributions sont les bienvenus via les <a href="https://github.com/ansforge/IG-fhir-mesures-de-sante/issues">issues GitHub</a>.
+</p>
+</blockquote>
 
-<p>1/ Les profils mesures de santé sont optionnellement liés à un device qui doivent hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l’international par le guide d’implémentation PoCD.</p>
+<h4 id="1-dispositifs-médicaux--phd-vs-pocd">1. Dispositifs médicaux : PHD vs PoCD</h4>
 
-<p>2/ Dans le cadre des mesures biologiques (glycémie, cholestérol), l’intervalle de référence n’est pas rendu techniquement obligatoire dans les profils FHIR contrairement aux <a href="https://www.hl7.org/fhir/R4/lipid-report.html">profils internationaux</a>. Cet intervalle peut varier en fonction de nombreux facteurs tel que l’âge, le sexe, les antécédents… Ceux-ci doivent être nécessairement indiqués si la donnée provient d’un compte rendu de biologie.
-Pour l’heure, les données usager sont considérées comme pouvant être interprétées sans intervalle de référence.</p>
+<p>Les profils mesures de santé sont optionnellement liés à un device qui doivent hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l’international par le guide d’implémentation PoCD.</p>
 
-<p>3/ Il y a une incohérence entre l’unité de la glycémie qui est actuellement en “g/L” et les unités du cholestérol actuellement en “mmol/L”, faut-il faire la modification pour uniformiser et respecter l’unité du système international, c’est à dire en “mmol/L”?</p>
+<h4 id="2-intervalles-de-référence-en-biologie">2. Intervalles de référence en biologie</h4>
 
-<p>4/ Il y a actuellement un certain nombre de profils de paramètres biologiques. La question de la multiplicité des profils biologiques se pose - est-ce que le profilage de l’ensemble des données bio a un sens ? Est-ce que le jeu de valeurs circuit de la biologie est suffisant ?</p>
+<p>Dans le cadre des mesures biologiques (glycémie, cholestérol), l’intervalle de référence n’est pas rendu techniquement obligatoire dans les profils FHIR contrairement aux <a href="https://www.hl7.org/fhir/R4/lipid-report.html">profils internationaux</a>. Cet intervalle peut varier en fonction de nombreux facteurs tel que l’âge, le sexe, les antécédents… Ceux-ci doivent être nécessairement indiqués si la donnée provient d’un compte rendu de biologie.</p>
 
-<p>En cas de besoins allant dans ce sens, merci de le spécifier dans une <a href="https://github.com/ansforge/IG-fhir-mesures-de-sante">issue GitHub</a>.</p>
+<p>Pour l’heure, les données usager sont considérées comme pouvant être interprétées sans intervalle de référence.</p>
+
+<h4 id="3-harmonisation-des-unités">3. Harmonisation des unités</h4>
+
+<p>Il y a une incohérence entre l’unité de la glycémie qui est actuellement en “g/L” et les unités du cholestérol actuellement en “mmol/L”, faut-il faire la modification pour uniformiser et respecter l’unité du système international, c’est à dire en “mmol/L”?</p>
+
+<h4 id="4-multiplicité-des-profils-biologiques">4. Multiplicité des profils biologiques</h4>
+
+<p>Il y a actuellement un certain nombre de profils de paramètres biologiques. La question de la multiplicité des profils biologiques se pose - est-ce que le profilage de l’ensemble des données bio a un sens ? Est-ce que le jeu de valeurs circuit de la biologie est suffisant ?</p>
+
+<p>Toutes précisions sur les besoins des utilisations de la spécification sont les bienvenues et communiquables via les <a href="https://github.com/ansforge/IG-fhir-mesures-de-sante">issue GitHub</a>.</p>
 
 <h3 id="contributeurs">Contributeurs</h3>
 
@@ -487,7 +512,7 @@ Pour l’heure, les données usager sont considérées comme pouvant être inter
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 19, 2026 09:56+0000">2026-01-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 19, 2026 10:07+0000">2026-01-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
