@@ -47,3 +47,4 @@ Alias: $JDV-J158-MethodStepsByDay-MES = https://mos.esante.gouv.fr/NOS/JDV_J158-
 Alias: $JDV-J159-MethodPainSeverity-MES = https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS
 Alias: $JDV-J163-GlucoseUnits-MES = https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS
 Alias: $JDV-J164-GlucoseNumberOfDays-MES = https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS
+Alias: $jdv-technique-biologie-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-technique-biologie-cisis
