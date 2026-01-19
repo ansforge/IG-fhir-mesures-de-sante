@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolLDL",
   "title" : "Cholestérol - LDL",
   "status" : "active",
-  "date" : "2026-01-19T09:23:14+00:00",
+  "date" : "2026-01-19T09:39:10+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
