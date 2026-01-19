@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolAspect",
   "title" : "Cholestérol - aspect",
   "status" : "active",
-  "date" : "2026-01-19T09:47:31+00:00",
+  "date" : "2026-01-19T09:54:18+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -251,10 +251,9 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       {
         "id" : "Observation.method",
         "path" : "Observation.method",
-        "min" : 1,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789"
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-technique-biologie-cisis"
         }
       },
       {

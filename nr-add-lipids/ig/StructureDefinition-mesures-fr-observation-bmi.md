@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationBmi",
   "title" : "Indice de Masse Corporelle",
   "status" : "active",
-  "date" : "2026-01-19T09:47:31+00:00",
+  "date" : "2026-01-19T09:54:18+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
