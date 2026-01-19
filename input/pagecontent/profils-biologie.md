@@ -33,10 +33,12 @@ Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlime
 ##### Requête 1 : Récupérer un DiagnosticReport avec ses Observations incluses
 
 ```http
-GET [base]/DiagnosticReport/[id]?_include=DiagnosticReport:result
+GET [base]/DiagnosticReport?_id=[id]&_include=DiagnosticReport:result
 ```
 
 Cette requête récupère le DiagnosticReport spécifié et inclut toutes les ressources Observation référencées dans `DiagnosticReport.result`.
+
+<!-- Exemple HAPI fonctionnel au 19.01.2026 https://hapi.fhir.org/baseR4/DiagnosticReport?_id=45020507&_include=DiagnosticReport:result -->
 
 ##### Requête 2 : Récupérer uniquement les observations de cholestérol liées à un DiagnosticReport
 
@@ -50,10 +52,14 @@ Cette requête utilise le reverse chaining (`_has`) pour rechercher les Observat
 * `2085-9` : Cholesterol in HDL [Mass/volume] in Serum or Plasma
 * `2089-1` : Cholesterol in LDL [Mass/volume] in Serum or Plasma
 
+<!-- Exemple HAPI fonctionnel au 19.01.2026 https://hapi.fhir.org/baseR4/Observation?_has:DiagnosticReport:result:_id=45020507&code=Culture%20Blood%20-%20Central%20Line -->
+
 ##### Requête 3 : Récupérer toutes les observations de cholestérol avec leur DiagnosticReport associé
 
 ```http
 GET [base]/Observation?code=http://loinc.org|2093-3,http://loinc.org|2085-9,http://loinc.org|2089-1&_revinclude=DiagnosticReport:result
 ```
+
+<!-- Exemple HAPI fonctionnel au 19.01.2026  https://hapi.fhir.org/baseR4/Observation?_revinclude=DiagnosticReport:result&code=Culture%20Blood%20-%20Central%20Line -->
 
 Cette requête recherche toutes les observations de cholestérol et inclut les DiagnosticReports qui les référencent.
