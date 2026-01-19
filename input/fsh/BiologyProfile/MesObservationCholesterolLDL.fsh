@@ -5,6 +5,7 @@ Id: mesures-observation-cholesterol-ldl
 Title: "Cholestérol - LDL"
 Description: "Profil biologie de la ressource Observation pour définir le cholestérol LDL"
 
+* insert ObservationResultsBiologyMesures
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

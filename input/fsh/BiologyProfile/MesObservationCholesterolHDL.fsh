@@ -5,6 +5,7 @@ Id: mesures-observation-cholesterol-hdl
 Title: "Cholestérol - HDL"
 Description: "Profil biologie de la ressource Observation pour définir le cholestérol HDL"
 
+* insert ObservationResultsBiologyMesures
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..

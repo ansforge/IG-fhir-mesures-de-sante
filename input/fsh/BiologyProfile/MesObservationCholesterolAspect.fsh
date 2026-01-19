@@ -5,6 +5,8 @@ Id: mesures-observation-cholesterol-aspect
 Title: "Cholestérol - aspect"
 Description: "Profil biologie de la ressource Observation pour définir l'aspect du cholestérol"
 
+* insert ObservationResultsBiologyMesures
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 

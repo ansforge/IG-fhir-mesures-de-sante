@@ -5,6 +5,8 @@ Id: mesures-observation-cholesterol-total
 Title: "Cholestérol - total"
 Description: "Profil biologie de la ressource Observation pour définir le cholestérol total"
 
+* insert ObservationResultsBiologyMesures
+
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 

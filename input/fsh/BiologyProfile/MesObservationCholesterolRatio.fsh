@@ -5,6 +5,7 @@ Id: mesures-observation-cholesterol-ratio
 Title: "Cholestérol - Ratio LDL/HDL"
 Description: "Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL"
 
+* insert ObservationResultsBiologyMesures
 
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
