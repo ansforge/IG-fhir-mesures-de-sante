@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolHDL",
   "title" : "Cholestérol - HDL",
   "status" : "active",
-  "date" : "2026-01-19T09:54:18+00:00",
+  "date" : "2026-01-19T09:56:13+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
