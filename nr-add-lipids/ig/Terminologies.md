@@ -9,22 +9,22 @@ Les ressources Mesures de santé utilisent les terminologies suivantes :
 
 | | | |
 | :--- | :--- | :--- |
-| CIM-10 | Type de diabète | [https://smt.esante.gouv.fr/terminologie-cim-10/](https://smt.esante.gouv.fr/terminologie-cim-10/) |
+| CIM10FRPMSI | Type de diabète | [https://smt.esante.gouv.fr/terminologie-cim-10/](https://smt.esante.gouv.fr/terminologie-cim-10/) |
 | EMDN | Dispositif médical | [https://smt.esante.gouv.fr/terminologie-emdn/](https://smt.esante.gouv.fr/terminologie-emdn/) |
 | LOINC | Code de la mesure | [https://smt.esante.gouv.fr/terminologie-loinc-international/](https://smt.esante.gouv.fr/terminologie-loinc-international/) |
 | NCIT | Méthode utilisée pour la mesure | [https://smt.esante.gouv.fr/terminologie-ncit/](https://smt.esante.gouv.fr/terminologie-ncit/) |
-| SNOMED-CT | Localisation anatomique | [https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs) |
-| TA_ASIP | divers | [https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs) |
+| SNOMED_CT | Localisation anatomique | [https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs) |
+| TerminologieCISIS | divers | [https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs](https://esante.gouv.fr/annexe-vocabulaire-et-jeux-de-valeurs) |
 | UCUM | Unités de mesures | [https://smt.esante.gouv.fr/terminologie-UCUM/](https://smt.esante.gouv.fr/terminologie-UCUM/) |
-| MDC | terminologie complète pour les modèles d'appareils | [https://www.hl7.org/fhir/R4/mdc.html/](https://www.hl7.org/fhir/R4/mdc.html/) |
+| MDC | terminologie complète pour les modèles d’appareils | [https://www.hl7.org/fhir/R4/mdc.html/](https://www.hl7.org/fhir/R4/mdc.html/) |
 
 ### Description de la nomenclature MDC
 
 Les codes MDC caractérisent le type de dispositifs utilisés. Dans ce volet les mesures sont issues des dispositifs PHD dont le type est définit uniquement par la valeur 65573.
 
-Dans le profil PhdDevice, l'attribut System-Type-Spec-List contient une liste de spécialisations auxquelles le PHD est conforme. Ces éléments de cette liste indiquent non seulement la fonction du PHD, mais également ses spécificités et la version du dispositif. L’ensemble de ces informations est présent au niveau du profil PhdDevice.
+Dans le profil PhdDevice, l’attribut System-Type-Spec-List contient une liste de spécialisations auxquelles le PHD est conforme. Ces éléments de cette liste indiquent non seulement la fonction du PHD, mais également ses spécificités et la version du dispositif. L’ensemble de ces informations est présent au niveau du profil PhdDevice.
 
-Les codes de la nomenclature MDC (Médical Device Communication) sont issus de la norme de nomenclature ISO/IEEE 11073-10101. Elle contient également les codes utilisés dans les dispositifs « Personal Health Devices » (PHD) et autres dispositifs médicaux pour l'identification des mesures physiologiques ainsi que pour les alarmes et de nombreuses conditions techniques telles que l'état d'étalonnage et l'état de la batterie.
+Les codes de la nomenclature MDC (Médical Device Communication) sont issus de la norme de nomenclature ISO/IEEE 11073-10101. Elle contient également les codes utilisés dans les dispositifs « Personal Health Devices » (PHD) et autres dispositifs médicaux pour l’identification des mesures physiologiques ainsi que pour les alarmes et de nombreuses conditions techniques telles que l’état d’étalonnage et l’état de la batterie.
 
 ### Liste des codes des observations
 
@@ -37,6 +37,7 @@ Les codes de la nomenclature MDC (Médical Device Communication) sont issus de l
 | [Indice de Masse Corporelle](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi) | 39156-5 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Poids](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight) | 29463-7 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Pression Artérielle](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp) | 85354-9 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
+| [Périmètre Crânien](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference) | 9843-4 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Saturation en Oxygène](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat) | 2708-6 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Taille](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight) | 8302-2 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Température](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature) | 8310-5 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |

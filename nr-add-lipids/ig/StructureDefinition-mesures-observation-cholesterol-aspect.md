@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect | *Version*:3.1.0 |
-| Active as of 2026-01-06 | *Computable Name*:MesFrObservationCholesterolAspect |
+| Active as of 2026-01-19 | *Computable Name*:MesFrObservationCholesterolAspect |
 
  
-Profil biologie de la ressource Observation pour définir l'aspect du cholestérol 
+Profil biologie de la ressource Observation pour définir l’aspect du cholestérol 
 
 **Utilisations:**
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolAspect",
   "title" : "Cholestérol - aspect",
   "status" : "active",
-  "date" : "2026-01-06T10:01:17+00:00",
+  "date" : "2026-01-19T08:51:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

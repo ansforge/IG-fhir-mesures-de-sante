@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-01-06T10:01:17+00:00",
+  "date" : "2026-01-19T08:51:58+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -62,10 +62,10 @@
     "version" : "1.0.0"
   },
   {
-    "id" : "ans_fr_nos",
-    "uri" : "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos",
-    "packageId" : "ans.fr.nos",
-    "version" : "1.2.0"
+    "id" : "ans_fr_terminologies",
+    "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
+    "packageId" : "ans.fr.terminologies",
+    "version" : "1.4.0"
   }],
   "definition" : {
     "extension" : [{
@@ -945,6 +945,17 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/ExampleMesObservationGlucose001"
+      },
+      "name" : "ExampleMesObservationGlucose001",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/ExampleMesObservationHeadCircumference001"
       },
       "name" : "ExampleMesObservationHeadCircumference001",
@@ -982,6 +993,18 @@
       },
       "name" : "ExampleObservationWaistCircumference001",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/exemple-observation-hb1ac"
+      },
+      "name" : "Exemple de mesure Hb1Ac",
+      "description" : "Observation d'une hémoglobine glyquée mesurée à 6.5 %",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"
     },
     {
       "extension" : [{
@@ -1027,7 +1050,19 @@
         "reference" : "StructureDefinition/mesures-observation-glucose"
       },
       "name" : "Glycémie",
-      "description" : "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+      "description" : "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 3 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-hb1ac"
+      },
+      "name" : "Hémoglobine glyquée (Hb1Ac)",
+      "description" : "Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %.",
       "exampleBoolean" : false
     },
     {
@@ -1100,6 +1135,18 @@
       },
       "name" : "Nombre de pas par jour",
       "description" : "Profil de la ressource Observation pour définir un nombre de pas par jour",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-origin-of-data"
+      },
+      "name" : "Origine de la donnée",
+      "description" : "Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio).",
       "exampleBoolean" : false
     },
     {

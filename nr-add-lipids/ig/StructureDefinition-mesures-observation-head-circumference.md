@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference | *Version*:3.1.0 |
-| Active as of 2026-01-06 | *Computable Name*:MesObservationHeadCircumference |
+| Active as of 2026-01-19 | *Computable Name*:MesObservationHeadCircumference |
 
  
 Profil de la ressource Observation pour définir un Périmètre Crânien 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationHeadCircumference",
   "title" : "Périmètre Crânien",
   "status" : "active",
-  "date" : "2026-01-06T10:01:17+00:00",
+  "date" : "2026-01-19T08:51:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -103,14 +103,14 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/vitalsigns",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/headcircum",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Observation.meta.source",
         "path" : "Observation.meta.source",
-        "short" : "Uri identifiant les systèmes tiers ayant envoyé la ressource.\r\nL’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+        "short" : "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
       },
       {
         "id" : "Observation.extension",
@@ -130,6 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.extension:supportingInfo",
         "path" : "Observation.extension",
         "sliceName" : "supportingInfo",
+        "definition" : "Autres ressources pertinentes *du dossier patient*",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -146,6 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "path" : "Observation.extension",
         "sliceName" : "MesReasonForMeasurement",
         "short" : "Motif de la mesure",
+        "definition" : "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -158,22 +160,24 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         ]
       },
       {
+        "id" : "Observation.extension:MesOriginOfData",
+        "path" : "Observation.extension",
+        "sliceName" : "MesOriginOfData",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+            ]
+          }
+        ]
+      },
+      {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "code"
-            },
-            {
-              "type" : "value",
-              "path" : "system"
-            }
-          ],
-          "rules" : "open"
-        },
-        "min" : 1
+        "min" : 2
       },
       {
         "id" : "Observation.code.coding:headCircumCode",
@@ -218,7 +222,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "code" : "Reference",
             "targetProfile" : [
               "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
@@ -231,8 +235,20 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
           "rules" : "open"
-        },
+        }
+      },
+      {
+        "id" : "Observation.value[x]:valueQuantity",
+        "path" : "Observation.value[x]",
+        "sliceName" : "valueQuantity",
         "type" : [
           {
             "code" : "Quantity"
@@ -240,24 +256,14 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         ]
       },
       {
-        "id" : "Observation.value[x].value",
-        "path" : "Observation.value[x].value",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.value[x].unit",
+        "id" : "Observation.value[x]:valueQuantity.unit",
         "path" : "Observation.value[x].unit",
         "patternString" : "cm"
       },
       {
-        "id" : "Observation.value[x].system",
-        "path" : "Observation.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      },
-      {
-        "id" : "Observation.value[x].code",
+        "id" : "Observation.value[x]:valueQuantity.code",
         "path" : "Observation.value[x].code",
-        "min" : 1
+        "patternCode" : "cm"
       },
       {
         "id" : "Observation.device",

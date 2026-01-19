@@ -9,18 +9,22 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement | *Version*:3.1.0 |
-| Active as of 2026-01-06 | *Computable Name*:MesMomentOfMeasurement |
+| Active as of 2026-01-19 | *Computable Name*:MesMomentOfMeasurement |
 
 Extension pour indiquer le moment de la mesure
 
 **Context of Use**
+
+This extension may be used on the following element(s):
+
+* Element ID Observation
 
 **Usage info**
 
 **Utilisations:**
 
 * Utiliser ce Extension: [Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md), [Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartrate.md), [Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxygen-sat.md), [Fréquence respiratoire](StructureDefinition-mesures-fr-observation-resp-rate.md) and [Glycémie](StructureDefinition-mesures-observation-glucose.md)
-* Exemples pour ce Extension: [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
+* Exemples pour ce Extension: [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-moment-of-measurement)
 
@@ -47,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-moment-of-me
   "name" : "MesMomentOfMeasurement",
   "title" : "Moment de la mesure",
   "status" : "active",
-  "date" : "2026-01-06T10:01:17+00:00",
+  "date" : "2026-01-19T08:51:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

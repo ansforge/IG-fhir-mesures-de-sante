@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Guide d&#39;implémentation FHIR - Mesures de santé v3.1.0</title>
+    <title>Artifacts Summary - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,7 +18,6 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
@@ -47,14 +46,13 @@
     h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
   </div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
 
   <div id="ig-search">
@@ -191,6 +189,7 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -240,7 +239,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/mesures-bundle-flux-alimentation">Bundle d'alimentation</a>
             </td>
             <td>
-<p>Profil de la ressource Bundle du flux d'alimentation à envoyer au serveur</p>
+<p>Profil de la ressource Bundle du flux d’alimentation à envoyer au serveur</p>
 </td>
          </tr>
          <tr>
@@ -249,7 +248,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/mesures-bundle-flux-alimentation-biologie">Bundle d'alimentation des mesures de biologie</a>
             </td>
             <td>
-<p>Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre</p>
+<p>Profil biologie de la ressource Bundle du flux d’alimentation des mesures de biologie à transmettre</p>
 </td>
          </tr>
          <tr>
@@ -285,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/mesures-observation-cholesterol-aspect">Cholestérol - aspect</a>
             </td>
             <td>
-<p>Profil biologie de la ressource Observation pour définir l'aspect du cholestérol</p>
+<p>Profil biologie de la ressource Observation pour définir l’aspect du cholestérol</p>
 </td>
          </tr>
          <tr>
@@ -341,17 +340,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>
 <p>Profil biologie de la ressource Observation pour définir une Glycémie</p>
 
-<p>Ce profil permet de gérer 4 types d'indicateurs de glycémie:</p>
+<p>Ce profil permet de gérer 3 types d’indicateurs de glycémie:</p>
 <ul>
   <li>le taux de glucose sanguin, mesuré en mg/dl</li>
   <li>le taux de glucose interstitiel, mesuré en mg/dl</li>
-  <li>l’hémoglobine glyquée (Hb1Ac) mesurée en %</li>
   <li>l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %</li>
 </ul>
 
-<p>L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .</p>
+<p>L’extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .</p>
 
-<p>L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.</p>
+<p>L’extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mesures-observation-hb1ac.html"
+                  title="StructureDefinition/mesures-observation-hb1ac">Hémoglobine glyquée (Hb1Ac)</a>
+            </td>
+            <td>
+<p>Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %.</p>
 </td>
          </tr>
          <tr>
@@ -473,6 +480,15 @@ Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestio
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-mesures-origin-of-data.html"
+                  title="StructureDefinition/mesures-origin-of-data">Origine de la donnée</a>
+            </td>
+            <td>
+<p>Extension pour tracer l’origine de la donnée issue d’un compte rendu de biologie (CR-Bio).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-mesures-reason-for-measurement.html"
                   title="StructureDefinition/mesures-reason-for-measurement">Raison de la mesure</a>
             </td>
@@ -510,137 +526,224 @@ Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestio
                <a href="Practitioner-ExampleFrPractitionner001.html"
                   title="Practitioner/ExampleFrPractitionner001">ExampleFrPractitionner001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesFrObservationBP001.html"
                   title="Observation/ExampleMesFrObservationBP001">ExampleMesFrObservationBP001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesFrObservationBmi001.html"
                   title="Observation/ExampleMesFrObservationBmi001">ExampleMesFrObservationBmi001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesFrObservationBodyHeight001.html"
                   title="Observation/ExampleMesFrObservationBodyHeight001">ExampleMesFrObservationBodyHeight001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesFrObservationBodyTemperature001.html"
                   title="Observation/ExampleMesFrObservationBodyTemperature001">ExampleMesFrObservationBodyTemperature001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesFrObservationBodyWeight001.html"
                   title="Observation/ExampleMesFrObservationBodyWeight001">ExampleMesFrObservationBodyWeight001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesFrObservationHeartrate001.html"
                   title="Observation/ExampleMesFrObservationHeartrate001">ExampleMesFrObservationHeartrate001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesFrOxygenSat.html"
                   title="Observation/ExampleMesFrOxygenSat">ExampleMesFrOxygenSat</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesFrRespRate.html"
                   title="Observation/ExampleMesFrRespRate">ExampleMesFrRespRate</a>
             </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleMesObservationGlucose001.html"
+                  title="Observation/ExampleMesObservationGlucose001">ExampleMesObservationGlucose001</a>
+            </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesObservationHeadCircumference001.html"
                   title="Observation/ExampleMesObservationHeadCircumference001">ExampleMesObservationHeadCircumference001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesObservationPainSeverity001.html"
                   title="Observation/ExampleMesObservationPainSeverity001">ExampleMesObservationPainSeverity001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleMesObservationStepsByDay001.html"
                   title="Observation/ExampleMesObservationStepsByDay001">ExampleMesObservationStepsByDay001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ExampleObservationWaistCircumference001.html"
                   title="Observation/ExampleObservationWaistCircumference001">ExampleObservationWaistCircumference001</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Patient-ExamplefrPatient001.html"
                   title="Patient/ExamplefrPatient001">ExamplefrPatient001</a>
             </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-exemple-observation-hb1ac.html"
+                  title="Observation/exemple-observation-hb1ac">Exemple de mesure Hb1Ac</a>
+            </td>
+            <td>
+<p>Observation d’une hémoglobine glyquée mesurée à 6.5 %</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Bundle-bundle-example-bio.html" title="Bundle/bundle-example-bio">bundle-example-bio</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Bundle-bundle-example-body-weight.html"
                   title="Bundle/bundle-example-body-weight">bundle-example-body-weight</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="DiagnosticReport-cholesterol-dr.html"
                   title="DiagnosticReport/cholesterol-dr">cholesterol-dr</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-cholesterol-hdl-example.html"
                   title="Observation/cholesterol-hdl-example">cholesterol-hdl-example</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-cholesterol-ldl-example.html"
                   title="Observation/cholesterol-ldl-example">cholesterol-ldl-example</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-cholesterol-total-example.html"
                   title="Observation/cholesterol-total-example">cholesterol-total-example</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-cholesterol-trigly-example.html"
                   title="Observation/cholesterol-trigly-example">cholesterol-trigly-example</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-glycemia-example.html"
                   title="Observation/glycemia-example">glycemia-example</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Device-phd-74E8FFFEFF051C00.html"
                   title="Device/phd-74E8FFFEFF051C00">phd-74E8FFFEFF051C00</a>
             </td>
+            <td>
+
+</td>
          </tr>
       </tbody>
    </table>
@@ -684,13 +787,12 @@ Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestio
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 6, 2026 10:01+0000">2026-01-06</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 19, 2026 08:51+0000">2026-01-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions </a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new">New Issue</a>
 
           </span>

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Moment de la mesure - Guide d&#39;implémentation FHIR - Mesures de santé v3.1.0</title>
+    <title>Moment de la mesure - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,7 +18,6 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
@@ -43,18 +42,17 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.23"}
-    h3,h4,h5,h6{--heading-prefix:"8.23"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.24"}
+    h3,h4,h5,h6{--heading-prefix:"8.24"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
   </div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
 
   <div id="ig-search">
@@ -191,6 +189,7 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
@@ -281,7 +280,7 @@
         
           Active
           
-            as of 2026-01-06
+            as of 2026-01-19
           
         
       </td>
@@ -301,15 +300,11 @@
 
 
   <p><b>Context of Use</b></p>
+  <p>This extension may be used on the following  element(s):</p>
   <ul>
-  <p>Cette extension peut être utilisée sur les éléments suivants</p>
-<ul>
-  <li>
-ID délément:     <code>
-<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>    </code>
-  </li>
-</ul>
-
+    
+    <li>Element ID Observation</li>
+    
   </ul>
 
   <!-- insert intro if present -->
@@ -321,7 +316,7 @@ ID délément:     <code>
   <p><b>Utilisations:</b></p>
 <ul>
  <li>Utiliser ce Extension: <a href="StructureDefinition-mesures-fr-observation-bp.html">Pression Artérielle</a>, <a href="StructureDefinition-mesures-fr-observation-heartrate.html">Fréquence Cardiaque</a>, <a href="StructureDefinition-mesures-fr-observation-oxygen-sat.html">Saturation en Oxygène</a>, <a href="StructureDefinition-mesures-fr-observation-resp-rate.html">Fréquence respiratoire</a> and <a href="StructureDefinition-mesures-observation-glucose.html">Glycémie</a></li>
- <li>Exemples pour ce Extension: <a href="Bundle-bundle-example-bio.html">Bundle/bundle-example-bio</a> and <a href="Observation-glycemia-example.html">Observation/glycemia-example</a></li>
+ <li>Exemples pour ce Extension: <a href="Bundle-bundle-example-bio.html">Bundle/bundle-example-bio</a>, <a href="Observation-ExampleMesObservationGlucose001.html">Observation/ExampleMesObservationGlucose001</a> and <a href="Observation-glycemia-example.html">Observation/glycemia-example</a></li>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-moment-of-measurement">usages in the FHIR IG Statistics</a></p>
 
@@ -333,6 +328,9 @@ ID délément:     <code>
   </p>
   <div id="tabs">
     <ul>
+      <li>
+        <a href="#tabs-summ">Text Summary</a>
+      </li>
       <li>
         <a href="#tabs-diff">Differential Table</a>
       </li>
@@ -355,12 +353,24 @@ ID délément:     <code>
       </li>-->
 
       <li>
-        <a href="#tabs-summ">Statistics/References</a>
-      </li>
-      <li>
         <a href="#tabs-all">All</a>
       </li>
     </ul>
+    <a name="tabs-summ"> </a>
+    <div id="tabs-summ">
+      <div id="tbl-summ">
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
+        </p>
+        <div id="tbl-summ-inner">
+          <a name="summary"> </a>
+          <a name="s-summary"> </a>
+<p><b>
+Résumé
+</b></p>
+<p>Extension simple avec le type CodeableConcept : Extension pour indiquer le moment de la mesure</p>
+        </div>
+      </div>
+    </div>
     <a name="tabs-diff"> </a>
     <div id="tabs-diff">
       <div id="tbl-diff">
@@ -403,7 +413,7 @@ ID délément:     <code>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Symbol in syntax defined by the system</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 6c74e4da-e9a1-4192-bb97-7ea8199efc03
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 5daadd3d-4117-4852-aa98-95be791041f2
 document.getElementById('cbmesures-moment-of-measurementD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-moment-of-measurementD'), 'binding', document.getElementById('cbmesures-moment-of-measurementD-binding').checked, document.getElementById('ppmesures-moment-of-measurementD'));
 document.getElementById('cbmesures-moment-of-measurementD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -499,7 +509,7 @@ filterDesc(document.getElementById('mesures-moment-of-measurementD'), 'obligatio
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 6c74e4da-e9a1-4192-bb97-7ea8199efc03
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 5daadd3d-4117-4852-aa98-95be791041f2
 document.getElementById('cbmesures-moment-of-measurementS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-moment-of-measurementS'), 'binding', document.getElementById('cbmesures-moment-of-measurementS-binding').checked, document.getElementById('ppmesures-moment-of-measurementS'));
 document.getElementById('cbmesures-moment-of-measurementS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -561,23 +571,19 @@ filterDesc(document.getElementById('mesures-moment-of-measurementS'), 'obligatio
       </div>
     </div>-->
 
-    <a name="tabs-summ"> </a>
-    <div id="tabs-summ">
-      <div id="tbl-summ">
+    <a name="tabs-all"> </a>
+    <div id="tabs-all">
+      <div id="all-summ">
         <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
         </p>
-        <div id="tbl-summ-inner">
-          <a name="summary"> </a>
-          <a name="s-summary"> </a>
+        <div id="all-summ-inner">
+          <a name="a-summary"> </a>
 <p><b>
 Résumé
 </b></p>
 <p>Extension simple avec le type CodeableConcept : Extension pour indiquer le moment de la mesure</p>
         </div>
       </div>
-    </div>
-    <a name="tabs-all"> </a>
-    <div id="tabs-all">
       <div id="all-tbl-diff">
         <p>
           <b>Differential View</b>
@@ -621,7 +627,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Symbol in syntax defined by the system</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 6c74e4da-e9a1-4192-bb97-7ea8199efc03
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 5daadd3d-4117-4852-aa98-95be791041f2
 document.getElementById('cbmesures-moment-of-measurementDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-moment-of-measurementDA'), 'binding', document.getElementById('cbmesures-moment-of-measurementDA-binding').checked, document.getElementById('ppmesures-moment-of-measurementDA'));
 document.getElementById('cbmesures-moment-of-measurementDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -717,7 +723,7 @@ filterDesc(document.getElementById('mesures-moment-of-measurementDA'), 'obligati
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 6c74e4da-e9a1-4192-bb97-7ea8199efc03
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 5daadd3d-4117-4852-aa98-95be791041f2
 document.getElementById('cbmesures-moment-of-measurementSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mesures-moment-of-measurementSA'), 'binding', document.getElementById('cbmesures-moment-of-measurementSA-binding').checked, document.getElementById('ppmesures-moment-of-measurementSA'));
 document.getElementById('cbmesures-moment-of-measurementSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -778,17 +784,6 @@ filterDesc(document.getElementById('mesures-moment-of-measurementSA'), 'obligati
         </div>
       </div>-->
 
-      <div id="all-summ">
-        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
-        </p>
-        <div id="all-summ-inner">
-          <a name="a-summary"> </a>
-<p><b>
-Résumé
-</b></p>
-<p>Extension simple avec le type CodeableConcept : Extension pour indiquer le moment de la mesure</p>
-        </div>
-      </div>
     </div>
   </div>
   <p>&#160;</p>
@@ -894,13 +889,12 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 6, 2026 10:01+0000">2026-01-06</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 19, 2026 08:51+0000">2026-01-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions </a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new">New Issue</a>
 
           </span>

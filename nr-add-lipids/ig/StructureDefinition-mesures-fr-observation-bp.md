@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp | *Version*:3.1.0 |
-| Active as of 2026-01-06 | *Computable Name*:MesFrObservationBp |
+| Active as of 2026-01-19 | *Computable Name*:MesFrObservationBp |
 
  
 Profil de la ressource Observation pour définir une Pression Artérielle (acronyme : PA ou BP) 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationBp",
   "title" : "Pression Artérielle",
   "status" : "active",
-  "date" : "2026-01-06T10:01:17+00:00",
+  "date" : "2026-01-19T08:51:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -113,9 +113,17 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
         "short" : "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
       },
       {
+        "id" : "Observation.extension:supportingInfo",
+        "path" : "Observation.extension",
+        "sliceName" : "supportingInfo",
+        "definition" : "Autres ressources pertinentes *du dossier patient*"
+      },
+      {
         "id" : "Observation.extension:MesReasonForMeasurement",
         "path" : "Observation.extension",
         "sliceName" : "MesReasonForMeasurement",
+        "short" : "Motif de la mesure",
+        "definition" : "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -123,6 +131,21 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
             "code" : "Extension",
             "profile" : [
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.extension:MesOriginOfData",
+        "path" : "Observation.extension",
+        "sliceName" : "MesOriginOfData",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
             ]
           }
         ]
@@ -170,6 +193,23 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
         "type" : [
           {
             "code" : "dateTime"
+          }
+        ]
+      },
+      {
+        "id" : "Observation.performer",
+        "path" : "Observation.performer",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+            ]
           }
         ]
       },

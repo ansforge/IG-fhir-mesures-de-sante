@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie | *Version*:3.1.0 |
-| Active as of 2026-01-06 | *Computable Name*:MesBundleFluxAlimentationBiologie |
+| Active as of 2026-01-19 | *Computable Name*:MesBundleFluxAlimentationBiologie |
 
  
-Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre 
+Profil biologie de la ressource Bundle du flux d’alimentation des mesures de biologie à transmettre 
 
 **Utilisations:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "name" : "MesBundleFluxAlimentationBiologie",
   "title" : "Bundle d'alimentation des mesures de biologie",
   "status" : "active",
-  "date" : "2026-01-06T10:01:17+00:00",
+  "date" : "2026-01-19T08:51:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

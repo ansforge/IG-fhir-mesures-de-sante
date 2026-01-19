@@ -9,24 +9,23 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose | *Version*:3.1.0 |
-| Active as of 2026-01-06 | *Computable Name*:MesObservationGlucose |
+| Active as of 2026-01-19 | *Computable Name*:MesObservationGlucose |
 
  
 Profil biologie de la ressource Observation pour définir une Glycémie 
-Ce profil permet de gérer 4 types d'indicateurs de glycémie: 
+Ce profil permet de gérer 3 types d’indicateurs de glycémie: 
 * le taux de glucose sanguin, mesuré en mg/dl
 * le taux de glucose interstitiel, mesuré en mg/dl
-* l’hémoglobine glyquée (Hb1Ac) mesurée en %
 * l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
  
-L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) . 
-L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin. 
+L’extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) . 
+L’extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin. 
 
 **Utilisations:**
 
 * Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
 * Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
-* Exemples pour ce Profil: [Observation/glycemia-example](Observation-glycemia-example.md)
+* Exemples pour ce Profil: [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-glucose)
 
@@ -51,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationGlucose",
   "title" : "Glycémie",
   "status" : "active",
-  "date" : "2026-01-06T10:01:17+00:00",
+  "date" : "2026-01-19T08:51:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -64,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       ]
     }
   ],
-  "description" : "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+  "description" : "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 3 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -119,7 +118,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       {
         "id" : "Observation.meta.source",
         "path" : "Observation.meta.source",
-        "short" : "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’un oid : « urn:oid:xx.xx.xx »"
+        "short" : "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
       },
       {
         "id" : "Observation.extension",
@@ -139,6 +138,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.extension:supportingInfo",
         "path" : "Observation.extension",
         "sliceName" : "supportingInfo",
+        "definition" : "Autres ressources pertinentes *du dossier patient*",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -154,6 +154,8 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.extension:MesReasonForMeasurement",
         "path" : "Observation.extension",
         "sliceName" : "MesReasonForMeasurement",
+        "short" : "Motif de la mesure",
+        "definition" : "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -161,6 +163,21 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "code" : "Extension",
             "profile" : [
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.extension:MesOriginOfData",
+        "path" : "Observation.extension",
+        "sliceName" : "MesOriginOfData",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
             ]
           }
         ]
@@ -216,7 +233,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       {
         "id" : "Observation.code",
         "path" : "Observation.code",
-        "short" : "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Hémoglobine glyquée (HbA1c)\r\n• Index de gestion de glycémie (IGG)",
+        "short" : "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Index de gestion de glycémie (IGG)",
         "binding" : {
           "strength" : "extensible",
           "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS"
@@ -273,11 +290,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "code" : "Reference",
             "targetProfile" : [
               "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
             ]
           }
         ]

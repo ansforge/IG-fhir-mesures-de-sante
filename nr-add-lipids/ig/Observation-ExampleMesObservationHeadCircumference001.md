@@ -49,6 +49,10 @@ Profil: [Périmètre Crânien](StructureDefinition-mesures-observation-head-circ
       {
         "system" : "http://loinc.org",
         "code" : "8287-5"
+      },
+      {
+        "system" : "http://loinc.org",
+        "code" : "9843-4"
       }
     ]
   },
@@ -60,6 +64,7 @@ Profil: [Périmètre Crânien](StructureDefinition-mesures-observation-head-circ
   "effectiveDateTime" : "2022-11-06",
   "valueQuantity" : {
     "value" : 61,
+    "unit" : "cm",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm"
   }

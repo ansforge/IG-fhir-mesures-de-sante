@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-06T10:01:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-19T08:51:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -96,13 +96,13 @@
      fhir:packageId [ fhir:v "hl7.fhir.uv.phd" ] ;
      fhir:version [ fhir:v "1.0.0" ]
   ] [
-     fhir:id [ fhir:v "ans_fr_nos" ] ;
+     fhir:id [ fhir:v "ans_fr_terminologies" ] ;
      fhir:uri [
-       fhir:v "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos>
+       fhir:v "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
-     fhir:packageId [ fhir:v "ans.fr.nos" ] ;
-     fhir:version [ fhir:v "1.2.0" ]
+     fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
+     fhir:version [ fhir:v "1.4.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1919,6 +1919,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesObservationGlucose001> ;
+         fhir:reference [ fhir:v "Observation/ExampleMesObservationGlucose001" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleMesObservationGlucose001" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesObservationHeadCircumference001> ;
          fhir:reference [ fhir:v "Observation/ExampleMesObservationHeadCircumference001" ]
        ] ;
@@ -1999,6 +2020,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/exemple-observation-hb1ac> ;
+         fhir:reference [ fhir:v "Observation/exemple-observation-hb1ac" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure Hb1Ac" ] ;
+       fhir:description [ fhir:v "Observation d'une hémoglobine glyquée mesurée à 6.5 %" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2070,7 +2113,28 @@
          fhir:reference [ fhir:v "StructureDefinition/mesures-observation-glucose" ]
        ] ;
        fhir:name [ fhir:v "Glycémie" ] ;
-       fhir:description [ fhir:v "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin." ] ;
+       fhir:description [ fhir:v "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 3 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-observation-hb1ac" ]
+       ] ;
+       fhir:name [ fhir:v "Hémoglobine glyquée (Hb1Ac)" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2197,6 +2261,27 @@
        ] ;
        fhir:name [ fhir:v "Nombre de pas par jour" ] ;
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir un nombre de pas par jour" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-origin-of-data" ]
+       ] ;
+       fhir:name [ fhir:v "Origine de la donnée" ] ;
+       fhir:description [ fhir:v "Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

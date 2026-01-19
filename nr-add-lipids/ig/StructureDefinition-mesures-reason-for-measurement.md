@@ -9,18 +9,22 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement | *Version*:3.1.0 |
-| Active as of 2026-01-06 | *Computable Name*:MesReasonForMeasurement |
+| Active as of 2026-01-19 | *Computable Name*:MesReasonForMeasurement |
 
 Extension du Motif de la mesure, exprimé en texte libre.
 
 **Context of Use**
 
+This extension may be used on the following element(s):
+
+* Element ID Observation
+
 **Usage info**
 
 **Utilisations:**
 
-* Utiliser ce Extension: [Température](StructureDefinition-mesures-fr-observation-body-temperature.md), [Poids](StructureDefinition-mesures-fr-observation-body-weight.md), [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md), [Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md)...Show 5 more,[Glycémie](StructureDefinition-mesures-observation-glucose.md),[Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md),[Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md),[Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md)and[Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
-* Exemples pour ce Extension: [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md)...Show 3 more,[Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md),[Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md)and[Observation/glycemia-example](Observation-glycemia-example.md)
+* Utiliser ce Extension: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-bmi.md), [Température](StructureDefinition-mesures-fr-observation-body-temperature.md), [Poids](StructureDefinition-mesures-fr-observation-body-weight.md), [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md)...Show 10 more,[Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md),[Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartrate.md),[Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxygen-sat.md),[Fréquence respiratoire](StructureDefinition-mesures-fr-observation-resp-rate.md),[Glycémie](StructureDefinition-mesures-observation-glucose.md),[Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-hb1ac.md),[Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md),[Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md),[Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md)and[Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
+* Exemples pour ce Extension: [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md)...Show 4 more,[Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md),[Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md),[Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md)and[Observation/glycemia-example](Observation-glycemia-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-reason-for-measurement)
 
@@ -47,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-reason-for-m
   "name" : "MesReasonForMeasurement",
   "title" : "Raison de la mesure",
   "status" : "active",
-  "date" : "2026-01-06T10:01:17+00:00",
+  "date" : "2026-01-19T08:51:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

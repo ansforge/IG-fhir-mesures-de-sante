@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ratio | *Version*:3.1.0 |
-| Active as of 2026-01-06 | *Computable Name*:MesFrObservationCholesterolRatio |
+| Active as of 2026-01-19 | *Computable Name*:MesFrObservationCholesterolRatio |
 
  
 Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolRatio",
   "title" : "Cholestérol - Ratio LDL/HDL",
   "status" : "active",
-  "date" : "2026-01-06T10:01:17+00:00",
+  "date" : "2026-01-19T08:51:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

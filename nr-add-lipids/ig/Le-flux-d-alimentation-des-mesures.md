@@ -7,14 +7,14 @@
 
 Le flux d’alimentation unitaire d’une constante reprend la logique de la transaction “PCH 01” (Communicate FHIR PHD data) du profil “IHE POU“ (Personal Health Device Observation Upload).
 
-Ce profil et cette transaction sont détaillés dans la documentation IHE. Ce profil se base sur l’interaction “transaction" de l’API REST de FHIR. Il s’agit d’une requête http POST dont le corps est une ressource “Bundle” de type “transaction”.
+Ce profil et cette transaction sont détaillés dans la documentation IHE. Ce profil se base sur l’interaction “transaction” de l’API REST de FHIR. Il s’agit d’une requête http POST dont le corps est une ressource “Bundle” de type “transaction”.
 
 ### Contenu de la requête d’alimentation
 
-Le corps de cette requête contient un “Bundle” conforme au profil [MesBundleFluxAlimentation](StructureDefinition-mesures-bundle-flux-alimentation.md) qui peut empaquetter jusqu'à deux ressources:
+Le corps de cette requête contient un “Bundle” conforme au profil [MesBundleFluxAlimentation](StructureDefinition-mesures-bundle-flux-alimentation.md) qui peut empaquetter jusqu’à deux ressources:
 
 * Une ressource “Observation” suivant un profil MES défini dans ce guide.
-* Une ressource “Device” (optionnelle) suivant le profil “PhdDevice” ([https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html](https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html)), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis l'attribut “device” de la ressource “Observation” : “Observation.device”
+* Une ressource “Device” (optionnelle) suivant le profil “PhdDevice” ([https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html](https://build.fhir.org/ig/HL7/phd/PhdDeviceProfile.html)), représentant le dispositif ayant effectué la mesure. Elle est référencée depuis l’attribut “device” de la ressource “Observation” : “Observation.device”
 
 Ces 2 ressources sont incorporées dans la liste (“array”) de Bundle.entry. Chaque élément de cette liste est un objet contenant 2 sous-objets : une ressource et la requête HTTP associée. Dans le cas classique de l’écriture d’une observation et du “device” utilisé pour la réaliser, cette liste contient donc 4 objets.
 
@@ -83,7 +83,7 @@ A noter que la validation FHIR requiert l’incorporation d’un champ “fullUr
 ### Référence de la ressource Observation vers la ressource Device (Observation.device)
 
 La ressource Device peut être référencée dans l’attribut Observation.device.reference.
- Ainsi, il doit contenir le préfixe « Device/ » et le l'identifiant du Device doit contenir uniquement l’uuid.
+ Ainsi, il doit contenir le préfixe « Device/ » et le l’identifiant du Device doit contenir uniquement l’uuid.
 
 ### L’attribut « Observation.meta.source »
 
@@ -102,7 +102,7 @@ L’Observation et le Device doivent renseigner l’url canonique du profil dans
 
 ### Exemple d’appel
 
-Un [exemple complet](Bundle-bundle-example.md) d'instance de Bundle a été constitué au sein du guide. Celui-ci doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :
+Un [exemple complet](Bundle-bundle-example.md) d’instance de Bundle a été constitué au sein du guide. Celui-ci doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :
 
 * Une ressource Observation MesFrObservationBodyWeight
 * Une ressource Device responsable de la mesure avec :
@@ -164,7 +164,7 @@ Le corps de la réponse contient une ressource Bundle de type « transaction-res
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 422 | Bundle not valid. | NOTSUPPORTED | Resource of type <> is not acceptable with method <>. | L’API ne prend en charge que les ressources Observation ou De-vice en POST. |   |
 | 422 | Bundle not valid. | INVALID | Bundle must contains one conditional creation of a device (POST + ifNoneExist) |   |   |
-| 422 | Bundle not valid. | INVALID | Device request must have a valid IfNoneEx-ist attribute : identifi-er=urn:oid: |  | L'identifier du device présent dans l’attribut « ifNoneExist » doit respecter la regex suivante : identifier=urn:oid:([0-9]+[.[0-9]+]+)|([a-zA-Z0-9]+[-[a-zA-Z0-9]+]+) |
+| 422 | Bundle not valid. | INVALID | Device request must have a valid IfNoneEx-ist attribute : identifi-er=urn:oid: |  | L’identifier du device présent dans l’attribut « ifNoneExist » doit respecter la regex suivante : identifier=urn:oid:([0-9]+[.[0-9]+]+)|([a-zA-Z0-9]+[-[a-zA-Z0-9]+]+) |
 | 422 | Bundle not valid. | INVALID | Bundle must contains one observation crea-tion (POST) |   |   |
 
 > ****Erreur sur le lien entre l’observation et le device****
@@ -179,7 +179,7 @@ Le corps de la réponse contient une ressource Bundle de type « transaction-res
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | 422 | Observation resource not valid. | INVALID | Observation must provide meta.profile value. |   |
-| 422 | Observation resource not valid. | VALUE | Solution oid contains in Observa-tion.meta.source don't belong to root editor oid (). | Si cet attribut est fourni, il est validé. S’il n’est pas fourni, MES le renseigne avec les données issues du référentiel. |
+| 422 | Observation resource not valid. | VALUE | Solution oid contains in Observa-tion.meta.source don’t belong to root editor oid (). | Si cet attribut est fourni, il est validé. S’il n’est pas fourni, MES le renseigne avec les données issues du référentiel. |
 | 422 | Observation resource not valid. | VALUE | Observation value quantity not provided. | Dans MES, des observations sans valeur sont refusées |
 | 422 | Observation resource not valid. | NOTSUPPORTED | Bmi observation can-not be created. | Les observations IMC sont calculées à la volée et ne peuvent donc pas être créées. |
 | 422 | Observation resource not valid. | INVALID | Observation.subject.identifier is mandatory. | Ce champ doit contenir le couple oid/IDPE |
