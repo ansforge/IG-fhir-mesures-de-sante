@@ -23,8 +23,8 @@ This extension may be used on the following element(s):
 
 **Utilisations:**
 
-* Utiliser ce Extension: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-bmi.md), [Température](StructureDefinition-mesures-fr-observation-body-temperature.md), [Poids](StructureDefinition-mesures-fr-observation-body-weight.md), [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md)...Show 9 more,[Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md),[Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartrate.md),[Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxygen-sat.md),[Fréquence respiratoire](StructureDefinition-mesures-fr-observation-resp-rate.md),[Glycémie](StructureDefinition-mesures-observation-glucose.md),[Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md),[Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md),[Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md)and[Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
-* Exemples pour ce Extension: [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md)
+* Utiliser ce Extension: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-bmi.md), [Température](StructureDefinition-mesures-fr-observation-body-temperature.md), [Poids](StructureDefinition-mesures-fr-observation-body-weight.md), [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md)...Show 15 more,[Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md),[Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartrate.md),[Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxygen-sat.md),[Fréquence respiratoire](StructureDefinition-mesures-fr-observation-resp-rate.md),[Cholestérol - aspect](StructureDefinition-mesures-observation-cholesterol-aspect.md),[Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol-hdl.md),[Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol-ldl.md),[Cholestérol - Ratio LDL/HDL](StructureDefinition-mesures-observation-cholesterol-ratio.md),[Cholestérol - total](StructureDefinition-mesures-observation-cholesterol-total.md),[Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md),[Glycémie](StructureDefinition-mesures-observation-glucose.md),[Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md),[Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md),[Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md)and[Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
+* Exemples pour ce Extension: [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md), [Observation/cholesterol-ldl-example](Observation-cholesterol-ldl-example.md), [Observation/cholesterol-total-example](Observation-cholesterol-total-example.md) and [Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-origin-of-data)
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
   "name" : "MesOriginOfData",
   "title" : "Origine de la donnée",
   "status" : "active",
-  "date" : "2026-01-19T08:51:58+00:00",
+  "date" : "2026-01-19T09:23:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -133,34 +133,8 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
           {
             "code" : "boolean"
           }
-        ]
-      },
-      {
-        "id" : "Extension.extension:documentId",
-        "path" : "Extension.extension",
-        "sliceName" : "documentId",
-        "short" : "Identifiant du document dont est issu la donnée, par exemple le CR-Bio dont est issu une glycémie.",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:documentId.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:documentId.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "documentId"
-      },
-      {
-        "id" : "Extension.extension:documentId.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "Identifier"
-          }
-        ]
+        ],
+        "patternBoolean" : true
       },
       {
         "id" : "Extension.extension:originalCode",
@@ -186,6 +160,33 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
         "type" : [
           {
             "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "Extension.extension:originalValue",
+        "path" : "Extension.extension",
+        "sliceName" : "originalValue",
+        "short" : "Valeur originale | Original value",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Extension.extension:originalValue.extension",
+        "path" : "Extension.extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.extension:originalValue.url",
+        "path" : "Extension.extension.url",
+        "fixedUri" : "originalValue"
+      },
+      {
+        "id" : "Extension.extension:originalValue.value[x]",
+        "path" : "Extension.extension.value[x]",
+        "type" : [
+          {
+            "code" : "Quantity"
           }
         ]
       },

@@ -8,6 +8,11 @@
 
 Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md)
 
+> **Origine de la donnée**
+* hasBeenConverted: true
+* originalCode: Triglyceride [Mass/volume] in Serum or Plasma
+* originalValue: 4.9 g/L(Détails : code UCUMg/L = 'g/L')
+
 **status**: Final
 
 **code**: LDL Cholesterol
@@ -18,9 +23,14 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
 
 **value**: 5.6 mmol/L(Détails : code UCUMmmol/L = 'mmol/L')
 
-**method**: 
+**method**: DEG
 
-**Exception lors de la génération du narratif : Error accessing https://smt.esante.gouv.fr/fhir for https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789: Error fetching the server's capability statement: Error from https://smt.esante.gouv.fr/fhir: Oops ! window.onload=function(){var e=document.getElementById("_alt");document.getElementById("_dt").textContent=new Date().toLocaleString();document.getElementById("_id").textContent.match(/[0-9a-f]{32}/)||e.parentNode.removeChild(e)} body{text-align:center;padding:10%;font:18px Helvetica}h1{font-size:30px}#_svg{fill:#e41a22;width:50%} ul{display:table; text-align:center; margin:0 auto;} li{text-align:left;} li.items_inside_li{ vertical-align:middle;} Requête bloquée par le pare-feu applicatif Claranet WebFence La requête que vous venez d'exécuter a été bloquée par mesure de sécurité. Alerte ID: Date: Afin de vous débloquer rapidement, merci d'envoyer les informations suivantes : * L'identifiant de l'alerte (voir ci-dessus) * L'URL de la page qui a généré le blocage A l'adresse ans-terminologies@esante.gouv.fr (utilisez ce lien pour préremplir le message).**
+### ReferenceRanges
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Low** | **High** |
+| * | 2.8 mmol/L(Détails : code UCUMmmol/L = 'mmol/L') | 21.1 mmol/L(Détails : code UCUMmmol/L = 'mmol/L') |
 
 
 
@@ -35,6 +45,38 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
       "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"
     ]
   },
+  "extension" : [
+    {
+      "extension" : [
+        {
+          "url" : "hasBeenConverted",
+          "valueBoolean" : true
+        },
+        {
+          "url" : "originalCode",
+          "valueCodeableConcept" : {
+            "coding" : [
+              {
+                "system" : "http://loinc.org",
+                "code" : "2571-8",
+                "display" : "Triglyceride [Mass/volume] in Serum or Plasma"
+              }
+            ]
+          }
+        },
+        {
+          "url" : "originalValue",
+          "valueQuantity" : {
+            "value" : 4.9,
+            "unit" : "g/L",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "g/L"
+          }
+        }
+      ],
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+    }
+  ],
   "status" : "final",
   "code" : {
     "coding" : [

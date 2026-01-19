@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationGlucose",
   "title" : "Glycémie",
   "status" : "active",
-  "date" : "2026-01-19T08:51:58+00:00",
+  "date" : "2026-01-19T09:23:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -171,6 +171,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.extension:MesOriginOfData",
         "path" : "Observation.extension",
         "sliceName" : "MesOriginOfData",
+        "short" : "Valeur d'origine de la donnée. Cette extension est présente uniquement si le résultat contenu dans Observation.value provient d'une conversion (par ex. g/L converti en mmol/L)",
         "min" : 0,
         "max" : "1",
         "type" : [

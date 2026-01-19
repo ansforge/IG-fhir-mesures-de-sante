@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationBodyHeight",
   "title" : "Taille",
   "status" : "active",
-  "date" : "2026-01-19T08:51:58+00:00",
+  "date" : "2026-01-19T09:23:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -50,6 +50,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Nombre de jours](StructureDefinition-mesures-number-of-days.md) | Extension sur le Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie. |
 | [Origine de la donnée](StructureDefinition-mesures-origin-of-data.md) | Extension pour tracer l’origine de la donnée issue d’un compte rendu de biologie (CR-Bio). |
 | [Raison de la mesure](StructureDefinition-mesures-reason-for-measurement.md) | Extension du Motif de la mesure, exprimé en texte libre. |
+| [Valeur originale](StructureDefinition-mesures-original-value.md) | Extension sur la valeur originale. Dans le cas où une conversion d’unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif. |
 
 ### Terminology: Value Sets 
 

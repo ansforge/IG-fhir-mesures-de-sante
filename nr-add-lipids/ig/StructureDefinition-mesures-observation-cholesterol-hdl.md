@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolHDL",
   "title" : "Cholestérol - HDL",
   "status" : "active",
-  "date" : "2026-01-19T08:51:58+00:00",
+  "date" : "2026-01-19T09:23:14+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -109,6 +109,74 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "differential" : {
     "element" : [
       {
+        "id" : "Observation.meta.source",
+        "path" : "Observation.meta.source",
+        "short" : "Uri identifiant les systèmes tiers ayant envoyé la ressource. L’uri est sous la forme d’une oid : « urn:oid:xx.xx.xx »"
+      },
+      {
+        "id" : "Observation.extension",
+        "path" : "Observation.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Observation.extension:supportingInfo",
+        "path" : "Observation.extension",
+        "sliceName" : "supportingInfo",
+        "definition" : "Autres ressources pertinentes *du dossier patient*",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.extension:MesReasonForMeasurement",
+        "path" : "Observation.extension",
+        "sliceName" : "MesReasonForMeasurement",
+        "short" : "Motif de la mesure",
+        "definition" : "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.extension:MesOriginOfData",
+        "path" : "Observation.extension",
+        "sliceName" : "MesOriginOfData",
+        "short" : "Valeur d'origine de la donnée. Cette extension est présente uniquement si le résultat contenu dans Observation.value provient d'une conversion (par ex. g/L converti en mmol/L)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+            ]
+          }
+        ]
+      },
+      {
         "id" : "Observation.code",
         "path" : "Observation.code",
         "patternCodeableConcept" : {
@@ -120,6 +188,47 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             }
           ]
         }
+      },
+      {
+        "id" : "Observation.subject",
+        "path" : "Observation.subject",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.encounter",
+        "path" : "Observation.encounter",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.performer",
+        "path" : "Observation.performer",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+            ]
+          }
+        ]
       },
       {
         "id" : "Observation.value[x]",

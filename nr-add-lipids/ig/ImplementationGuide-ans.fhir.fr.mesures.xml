@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2026-01-19T08:51:58+00:00"/>
+  <date value="2026-01-19T09:23:14+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -1037,6 +1037,17 @@
       </reference>
       <name value="Tour de taille"/>
       <description value="Profil de la ressource Observation pour définir une taille en cm"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mesures-original-value"/>
+      </reference>
+      <name value="Valeur originale"/>
+      <description value="Extension sur la valeur originale. &#xD;&#xA;Dans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

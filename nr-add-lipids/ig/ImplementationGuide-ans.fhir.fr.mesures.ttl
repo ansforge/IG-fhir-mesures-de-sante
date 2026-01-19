@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-19T08:51:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-19T09:23:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2470,6 +2470,27 @@
        ] ;
        fhir:name [ fhir:v "Tour de taille" ] ;
        fhir:description [ fhir:v "Profil de la ressource Observation pour définir une taille en cm" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-value> ;
+         fhir:reference [ fhir:v "StructureDefinition/mesures-original-value" ]
+       ] ;
+       fhir:name [ fhir:v "Valeur originale" ] ;
+       fhir:description [ fhir:v "Extension sur la valeur originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

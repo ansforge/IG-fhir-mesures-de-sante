@@ -14,10 +14,10 @@
     <sch:rule context="f:Extension">
       <sch:assert test="count(f:extension[@url = 'hasBeenConverted']) &gt;= 1">extension with URL = 'hasBeenConverted': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'hasBeenConverted']) &lt;= 1">extension with URL = 'hasBeenConverted': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'documentId']) &gt;= 1">extension with URL = 'documentId': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'documentId']) &lt;= 1">extension with URL = 'documentId': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'originalCode']) &gt;= 1">extension with URL = 'originalCode': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'originalCode']) &lt;= 1">extension with URL = 'originalCode': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'originalValue']) &gt;= 1">extension with URL = 'originalValue': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'originalValue']) &lt;= 1">extension with URL = 'originalValue': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
