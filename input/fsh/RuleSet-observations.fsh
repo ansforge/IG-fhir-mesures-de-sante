@@ -15,4 +15,4 @@ RuleSet: ObservationResultsMesures
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
-* performer only Reference(CareTeam or RelatedPerson or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)
+* performer only Reference(CareTeam or $fr-related-person or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)

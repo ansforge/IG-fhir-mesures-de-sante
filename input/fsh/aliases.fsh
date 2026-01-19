@@ -13,6 +13,7 @@ Alias: $fr-patient = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-pat
 Alias: $fr-encounter = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter
 Alias: $fr-practitioner = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner
 Alias: $fr-organization = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization
+Alias: $fr-related-person = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person
 Alias: $levelOfExertion = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion
 Alias: $MesBodyPosition = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position
 

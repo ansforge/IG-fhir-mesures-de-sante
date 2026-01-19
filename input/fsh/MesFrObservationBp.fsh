@@ -14,8 +14,6 @@ Description: "Profil de la ressource Observation pour d√©finir une Pression Art√
 
 * effective[x] only dateTime
 
-
-
 * bodySite from $JDV-J149-BodySiteBP-MES (required)
 * bodySite ^binding.description = $JDV-J149-BodySiteBP-MES
 * bodySite.coding.system 1..
