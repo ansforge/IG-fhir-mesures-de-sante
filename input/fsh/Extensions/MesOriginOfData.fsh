@@ -15,6 +15,7 @@ Description: "Extension pour tracer l'origine de la donnée issue d'un compte re
 
 * extension[hasBeenConverted].value[x] only boolean
 * extension[hasBeenConverted] ^short = "Indication permettant de savoir si la valeur a été convertie."
+* extension[hasBeenConverted].valueBoolean = true
 
 * extension[originalCode].value[x] only CodeableConcept
 * extension[originalCode] ^short = "Code original de la donnée. Il permet notamment d'identifier le niveau de comparabilité des résultats entre eux. Le choix a été fait de ne pas indiquer directement le numéro de comparabilité mais d'indiquer directement le code LOINC d'origine pour identifier le numéro de comparabilité dans le jeu de valeur circuit de la biologie."
