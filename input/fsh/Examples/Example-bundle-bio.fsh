@@ -15,6 +15,13 @@ Usage: #example
 
 * method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
 
+* extension[MesOriginOfData].extension[hasBeenConverted].valueBoolean = true
+* extension[MesOriginOfData].extension[originalCode].valueCodeableConcept = http://loinc.org#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.value = 0.155
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.unit = "g/L"
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.code = #g/L
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.system = $UCUM
+
 Instance: cholesterol-hdl-example
 InstanceOf: MesFrObservationCholesterolHDL
 Usage: #example
@@ -31,6 +38,12 @@ Usage: #example
 
 * method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
 
+* extension[MesOriginOfData].extension[hasBeenConverted].valueBoolean = true
+* extension[MesOriginOfData].extension[originalCode].valueCodeableConcept = http://loinc.org#2085-9 "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.value = 1.08
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.unit = "g/L"
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.code = #g/L
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.system = $UCUM
 
 Instance: cholesterol-ldl-example
 InstanceOf: MesFrObservationCholesterolLDL
@@ -47,6 +60,13 @@ Usage: #example
 * referenceRange.high = 2.6 'mmol/L' "mmol/L"
 
 * method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
+
+* extension[MesOriginOfData].extension[hasBeenConverted].valueBoolean = true
+* extension[MesOriginOfData].extension[originalCode].valueCodeableConcept = http://loinc.org#2089-1 "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.value = 3.02
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.unit = "g/L"
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.code = #g/L
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.system = $UCUM
 
 Instance: cholesterol-trigly-example
 InstanceOf: MesFrObservationCholesterolTrigly
@@ -65,6 +85,12 @@ Usage: #example
 
 * method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
 
+* extension[MesOriginOfData].extension[hasBeenConverted].valueBoolean = true
+* extension[MesOriginOfData].extension[originalCode].valueCodeableConcept = http://loinc.org#2571-8 "Triglyceride [Mass/volume] in Serum or Plasma"
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.value = 4.9
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.unit = "g/L"
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.code = #g/L
+* extension[MesOriginOfData].extension[originalValue].valueQuantity.system = $UCUM
 
 Instance: glycemia-example
 InstanceOf: MesObservationGlucose

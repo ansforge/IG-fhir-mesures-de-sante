@@ -1,4 +1,3 @@
-
 Profile: MesFrObservationCholesterolTrigly
 Parent: Observation
 Id: mesures-observation-cholesterol-trigly
