@@ -11,12 +11,11 @@ Description: "Profil biologie de la ressource DiagnosticReport pour définir un 
 * result ^slicing.discriminator.path = "resolve()"
 * result ^slicing.rules = #open
 
-* result contains ldl-cholesterol 0..1 MS and hdl-cholesterol 0..1 MS and total-cholesterol 0..1 MS and trigly-cholesterol 0..1 MS and cholesterol-ratio 0..1 MS and cholesterol-aspect 0..1 MS and glycemie 0..1 MS
+* result contains ldl-cholesterol 0..1 MS and hdl-cholesterol 0..1 MS and total-cholesterol 0..1 MS and trigly-cholesterol 0..1 MS and cholesterol-aspect 0..1 MS and glycemie 0..1 MS
 
 * result[ldl-cholesterol] only Reference(mesures-observation-cholesterol-ldl)
 * result[hdl-cholesterol] only Reference(mesures-observation-cholesterol-hdl)
 * result[total-cholesterol] only Reference(mesures-observation-cholesterol-total)
-* result[cholesterol-ratio] only Reference(mesures-observation-cholesterol-ratio)
 * result[cholesterol-aspect] only Reference(mesures-observation-cholesterol-aspect)
 
 
