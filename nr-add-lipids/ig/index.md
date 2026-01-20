@@ -94,15 +94,13 @@ Les profils mesures de santé sont optionnellement liés à un device qui doiven
 
 Dans le cadre des mesures biologiques (glycémie, cholestérol), l’intervalle de référence n’est pas rendu techniquement obligatoire dans les profils FHIR contrairement aux [profils internationaux](https://www.hl7.org/fhir/R4/lipid-report.html). Cet intervalle peut varier en fonction de nombreux facteurs tel que l’âge, le sexe, les antécédents… Ceux-ci doivent être nécessairement indiqués si la donnée provient d’un compte rendu de biologie.
 
-Pour l’heure, les données usager sont considérées comme pouvant être interprétées sans intervalle de référence.
-
 #### 3. Harmonisation des unités
 
-Il y a une incohérence entre l’unité de la glycémie qui est actuellement en “g/L” et les unités du cholestérol actuellement en “mmol/L”, faut-il faire la modification pour uniformiser et respecter l’unité du système international, c’est à dire en “mmol/L”?
+Il y a une incohérence entre l’unité de la glycémie qui est actuellement en “g/L” et les unités du cholestérol actuellement en “mmol/L”. Les prochaines versions proposeront une uniformisation pour respecter l’unité du système international, c’est à dire passer les profils glycémie à l’unité “mmol/L”.
 
 #### 4. Multiplicité des profils biologiques
 
-Il y a actuellement un certain nombre de profils de paramètres biologiques. La question de la multiplicité des profils biologiques se pose - est-ce que le profilage de l’ensemble des données bio a un sens ? Est-ce que le jeu de valeurs circuit de la biologie est suffisant ?
+Il y a actuellement un certain nombre de profils de paramètres biologiques. La question de la multiplicité des profils biologiques se pose - comment gérer le profilage sur l’ensemble des données présentes dans le jeu de valeurs circuit de la biologie ?
 
 Toutes précisions sur les besoins des utilisations de la spécification sont les bienvenues et communiquables via les [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
 
@@ -172,7 +170,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-01-20T09:43:53+00:00",
+  "date" : "2026-01-20T09:47:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
