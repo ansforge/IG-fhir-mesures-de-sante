@@ -172,7 +172,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-01-20T09:11:57+00:00",
+  "date" : "2026-01-20T09:43:53+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1686,11 +1686,11 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "Le-flux-d-alimentation-des-mesures.html"
+              "valueUrl" : "flux-alimentation-signes-vitaux.html"
             }
           ],
-          "nameUrl" : "Le-flux-d-alimentation-des-mesures.html",
-          "title" : "Le flux d'alimentation des mesures de santé",
+          "nameUrl" : "flux-alimentation-signes-vitaux.html",
+          "title" : "Le flux d'alimentation des signes vitaux",
           "generation" : "markdown"
         },
         {

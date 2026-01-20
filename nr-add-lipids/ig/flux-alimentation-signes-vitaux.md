@@ -1,9 +1,9 @@
-# Le flux d'alimentation des mesures de santé - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Le flux d'alimentation des signes vitaux - Guide d'implémentation FHIR - Mesures de santé v3.1.0
 
 * [**Table of Contents**](toc.md)
-* **Le flux d'alimentation des mesures de santé**
+* **Le flux d'alimentation des signes vitaux**
 
-## Le flux d'alimentation des mesures de santé
+## Le flux d'alimentation des signes vitaux
 
 Le flux d’alimentation unitaire d’une constante reprend la logique de la transaction “PCH 01” (Communicate FHIR PHD data) du profil “IHE POU“ (Personal Health Device Observation Upload).
 

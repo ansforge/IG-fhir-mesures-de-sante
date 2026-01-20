@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationGlucose",
   "title" : "Glycémie",
   "status" : "active",
-  "date" : "2026-01-20T09:11:57+00:00",
+  "date" : "2026-01-20T09:43:53+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
