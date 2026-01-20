@@ -42,7 +42,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* method MS
+* method  ^short = "La méthode de mesure du cholestérol total est fortement conseillée pour déterminer si des résultats sont comparables et ainsi interpréter cette donnée."
 * method from method-glucose-vs (extensible)
 
 * device only Reference($PhdDevice)

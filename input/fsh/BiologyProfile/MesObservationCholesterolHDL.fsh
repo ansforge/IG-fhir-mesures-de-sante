@@ -13,8 +13,7 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 * code = http://loinc.org#2085-9 "HDL Cholesterol"
 
 
-* method 1..1
-* method ^short = "La méthode de mesure du cholestérol HDL est obligatoire pour déterminer si des résultats sont comparables et ainsi utiliser cette donnée."
+* method ^short = "La méthode de mesure du cholestérol HDL est fortement conseillée pour déterminer si des résultats sont comparables et ainsi utiliser cette donnée."
 
 * referenceRange 1..1 MS
 * referenceRange ^short = "L'intervalle de référence est obligatoire pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ..."
