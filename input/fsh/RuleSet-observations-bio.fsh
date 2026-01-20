@@ -9,3 +9,6 @@ RuleSet: ObservationResultsBiologyMesures
 
 * method MS
 * method from $jdv-technique-biologie-cisis (extensible)
+
+* referenceRange MS
+* referenceRange ^short = "Associer la mesure à l'intervalle de référence est fortement recommandé pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ..."

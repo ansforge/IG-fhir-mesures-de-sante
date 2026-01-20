@@ -15,8 +15,7 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 
 * method ^short = "La méthode de mesure du cholestérol HDL est fortement conseillée pour déterminer si des résultats sont comparables et ainsi utiliser cette donnée."
 
-* referenceRange 1..1 MS
-* referenceRange ^short = "L'intervalle de référence est obligatoire pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ..."
+
 * referenceRange obeys mes-ir
 * referenceRange.low 1..1
 * referenceRange.low only SimpleQuantity
