@@ -8,10 +8,10 @@
 
 Profil: [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol-hdl.md)
 
-> **Origine de la donnée**
-* hasBeenConverted: true
-* originalCode: Cholesterol in HDL [Mass/volume] in Serum or Plasma
-* originalValue: 1.08 g/L(Détails : code UCUMg/L = 'g/L')
+> **Valeur originale**
+* has-been-converted: true
+* original-code: Cholesterol in HDL [Mass/volume] in Serum or Plasma
+* original-value: 1.08 g/L(Détails : code UCUMg/L = 'g/L')
 
 **status**: Final
 
@@ -49,11 +49,11 @@ Profil: [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol
     {
       "extension" : [
         {
-          "url" : "hasBeenConverted",
+          "url" : "has-been-converted",
           "valueBoolean" : true
         },
         {
-          "url" : "originalCode",
+          "url" : "original-code",
           "valueCodeableConcept" : {
             "coding" : [
               {
@@ -65,7 +65,7 @@ Profil: [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol
           }
         },
         {
-          "url" : "originalValue",
+          "url" : "original-value",
           "valueQuantity" : {
             "value" : 1.08,
             "unit" : "g/L",
@@ -74,7 +74,7 @@ Profil: [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol
           }
         }
       ],
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
     }
   ],
   "status" : "final",

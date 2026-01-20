@@ -17,7 +17,6 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md) | Profil biologie de la ressource Bundle du flux d’alimentation des mesures de biologie à transmettre |
 | [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol-hdl.md) | Profil biologie de la ressource Observation pour définir le cholestérol HDL |
 | [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol-ldl.md) | Profil biologie de la ressource Observation pour définir le cholestérol LDL |
-| [Cholestérol - Ratio LDL/HDL](StructureDefinition-mesures-observation-cholesterol-ratio.md) | Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL |
 | [Cholestérol - aspect](StructureDefinition-mesures-observation-cholesterol-aspect.md) | Profil biologie de la ressource Observation pour définir l’aspect du cholestérol |
 | [Cholestérol - total](StructureDefinition-mesures-observation-cholesterol-total.md) | Profil biologie de la ressource Observation pour définir le cholestérol total |
 | [Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md) | Profil biologie de la ressource Observation pour définir le cholestérol triglycerides |
@@ -48,9 +47,8 @@ These define constraints on FHIR data types for systems conforming to this imple
 | :--- | :--- |
 | [Moment de la mesure](StructureDefinition-mesures-moment-of-measurement.md) | Extension pour indiquer le moment de la mesure |
 | [Nombre de jours](StructureDefinition-mesures-number-of-days.md) | Extension sur le Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie. |
-| [Origine de la donnée](StructureDefinition-mesures-origin-of-data.md) | Extension pour tracer l’origine de la donnée issue d’un compte rendu de biologie (CR-Bio). |
 | [Raison de la mesure](StructureDefinition-mesures-reason-for-measurement.md) | Extension du Motif de la mesure, exprimé en texte libre. |
-| [Valeur originale](StructureDefinition-mesures-original-value.md) | Extension sur la valeur originale. Dans le cas où une conversion d’unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif. |
+| [Valeur originale](StructureDefinition-mesures-original-data.md) | Extension permettant de renseigner la donnée originale. Dans le cas où une conversion d’unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif. |
 
 ### Terminology: Value Sets 
 

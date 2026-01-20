@@ -148,13 +148,13 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cholesterol-ldl-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation cholesterol-ldl-example</b></p><a name=\"cholesterol-ldl-example\"> </a><a name=\"hccholesterol-ldl-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-cholesterol-ldl.html\">Cholestérol - LDL</a></p></div><blockquote><p><b>Origine de la donnée</b></p><ul><li>hasBeenConverted: true</li><li>originalCode: <span title=\"Codes :{http://loinc.org 2089-1}\">Cholesterol in LDL [Mass/volume] in Serum or Plasma</span></li><li>originalValue: 3.02 g/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMg/L = 'g/L')</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2089-1}\">LDL Cholesterol</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2024-10-15</p><p><b>value</b>: 7.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></p><p><b>method</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\">DEG</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.6 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cholesterol-ldl-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation cholesterol-ldl-example</b></p><a name=\"cholesterol-ldl-example\"> </a><a name=\"hccholesterol-ldl-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-cholesterol-ldl.html\">Cholestérol - LDL</a></p></div><blockquote><p><b>Valeur originale</b></p><ul><li>has-been-converted: true</li><li>original-code: <span title=\"Codes :{http://loinc.org 2089-1}\">Cholesterol in LDL [Mass/volume] in Serum or Plasma</span></li><li>original-value: 3.02 g/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMg/L = 'g/L')</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2089-1}\">LDL Cholesterol</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2024-10-15</p><p><b>value</b>: 7.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></p><p><b>method</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\">DEG</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.6 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
        fhir:url [
-         fhir:v "hasBeenConverted"^^xsd:anyURI ;
-         fhir:l fhir:hasBeenConverted
+         fhir:v "has-been-converted"^^xsd:anyURI ;
+         fhir:l fhir:has-been-converted
        ] ;
        fhir:value [
          a fhir:Boolean ;
@@ -162,8 +162,8 @@
        ]
      ] [
        fhir:url [
-         fhir:v "originalCode"^^xsd:anyURI ;
-         fhir:l fhir:originalCode
+         fhir:v "original-code"^^xsd:anyURI ;
+         fhir:l fhir:original-code
        ] ;
        fhir:value [
          a fhir:CodeableConcept ;
@@ -179,8 +179,8 @@
        ]
      ] [
        fhir:url [
-         fhir:v "originalValue"^^xsd:anyURI ;
-         fhir:l fhir:originalValue
+         fhir:v "original-value"^^xsd:anyURI ;
+         fhir:l fhir:original-value
        ] ;
        fhir:value [
          a fhir:Quantity ;
@@ -194,8 +194,8 @@
        ]
      ] ) ;
      fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data>
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data>
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
@@ -264,13 +264,13 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cholesterol-hdl-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation cholesterol-hdl-example</b></p><a name=\"cholesterol-hdl-example\"> </a><a name=\"hccholesterol-hdl-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-cholesterol-hdl.html\">Cholestérol - HDL</a></p></div><blockquote><p><b>Origine de la donnée</b></p><ul><li>hasBeenConverted: true</li><li>originalCode: <span title=\"Codes :{http://loinc.org 2085-9}\">Cholesterol in HDL [Mass/volume] in Serum or Plasma</span></li><li>originalValue: 1.08 g/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMg/L = 'g/L')</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2085-9}\">HDL Cholesterol</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2024-10-15</p><p><b>value</b>: 2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></p><p><b>method</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\">DEG</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td></tr><tr><td style=\"display: none\">*</td><td>3.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cholesterol-hdl-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation cholesterol-hdl-example</b></p><a name=\"cholesterol-hdl-example\"> </a><a name=\"hccholesterol-hdl-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-cholesterol-hdl.html\">Cholestérol - HDL</a></p></div><blockquote><p><b>Valeur originale</b></p><ul><li>has-been-converted: true</li><li>original-code: <span title=\"Codes :{http://loinc.org 2085-9}\">Cholesterol in HDL [Mass/volume] in Serum or Plasma</span></li><li>original-value: 1.08 g/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMg/L = 'g/L')</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2085-9}\">HDL Cholesterol</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2024-10-15</p><p><b>value</b>: 2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></p><p><b>method</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\">DEG</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td></tr><tr><td style=\"display: none\">*</td><td>3.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
        fhir:url [
-         fhir:v "hasBeenConverted"^^xsd:anyURI ;
-         fhir:l fhir:hasBeenConverted
+         fhir:v "has-been-converted"^^xsd:anyURI ;
+         fhir:l fhir:has-been-converted
        ] ;
        fhir:value [
          a fhir:Boolean ;
@@ -278,8 +278,8 @@
        ]
      ] [
        fhir:url [
-         fhir:v "originalCode"^^xsd:anyURI ;
-         fhir:l fhir:originalCode
+         fhir:v "original-code"^^xsd:anyURI ;
+         fhir:l fhir:original-code
        ] ;
        fhir:value [
          a fhir:CodeableConcept ;
@@ -295,8 +295,8 @@
        ]
      ] [
        fhir:url [
-         fhir:v "originalValue"^^xsd:anyURI ;
-         fhir:l fhir:originalValue
+         fhir:v "original-value"^^xsd:anyURI ;
+         fhir:l fhir:original-value
        ] ;
        fhir:value [
          a fhir:Quantity ;
@@ -310,8 +310,8 @@
        ]
      ] ) ;
      fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data>
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data>
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
@@ -380,13 +380,13 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cholesterol-trigly-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation cholesterol-trigly-example</b></p><a name=\"cholesterol-trigly-example\"> </a><a name=\"hccholesterol-trigly-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-cholesterol-trigly.html\">Cholestérol - triglycerides</a></p></div><blockquote><p><b>Origine de la donnée</b></p><ul><li>hasBeenConverted: true</li><li>originalCode: <span title=\"Codes :{http://loinc.org 2571-8}\">Triglyceride [Mass/volume] in Serum or Plasma</span></li><li>originalValue: 4.9 g/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMg/L = 'g/L')</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2571-8}\">LDL Cholesterol</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2024-10-15</p><p><b>value</b>: 5.6 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></p><p><b>method</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\">DEG</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>21.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cholesterol-trigly-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation cholesterol-trigly-example</b></p><a name=\"cholesterol-trigly-example\"> </a><a name=\"hccholesterol-trigly-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-cholesterol-trigly.html\">Cholestérol - triglycerides</a></p></div><blockquote><p><b>Valeur originale</b></p><ul><li>has-been-converted: true</li><li>original-code: <span title=\"Codes :{http://loinc.org 2571-8}\">Triglyceride [Mass/volume] in Serum or Plasma</span></li><li>original-value: 4.9 g/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMg/L = 'g/L')</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2571-8}\">LDL Cholesterol</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2024-10-15</p><p><b>value</b>: 5.6 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></p><p><b>method</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\">DEG</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>21.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
        fhir:url [
-         fhir:v "hasBeenConverted"^^xsd:anyURI ;
-         fhir:l fhir:hasBeenConverted
+         fhir:v "has-been-converted"^^xsd:anyURI ;
+         fhir:l fhir:has-been-converted
        ] ;
        fhir:value [
          a fhir:Boolean ;
@@ -394,8 +394,8 @@
        ]
      ] [
        fhir:url [
-         fhir:v "originalCode"^^xsd:anyURI ;
-         fhir:l fhir:originalCode
+         fhir:v "original-code"^^xsd:anyURI ;
+         fhir:l fhir:original-code
        ] ;
        fhir:value [
          a fhir:CodeableConcept ;
@@ -411,8 +411,8 @@
        ]
      ] [
        fhir:url [
-         fhir:v "originalValue"^^xsd:anyURI ;
-         fhir:l fhir:originalValue
+         fhir:v "original-value"^^xsd:anyURI ;
+         fhir:l fhir:original-value
        ] ;
        fhir:value [
          a fhir:Quantity ;
@@ -426,8 +426,8 @@
        ]
      ] ) ;
      fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data>
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data>
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
@@ -505,13 +505,13 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cholesterol-total-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation cholesterol-total-example</b></p><a name=\"cholesterol-total-example\"> </a><a name=\"hccholesterol-total-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-cholesterol-total.html\">Cholestérol - total</a></p></div><blockquote><p><b>Origine de la donnée</b></p><ul><li>hasBeenConverted: true</li><li>originalCode: <span title=\"Codes :{http://loinc.org 2093-3}\">Cholesterol [Mass/volume] in Serum or Plasma</span></li><li>originalValue: 0.155 g/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMg/L = 'g/L')</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2093-3}\">Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2024-10-15</p><p><b>value</b>: 0.4 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></p><p><b>method</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\">DEG</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>11.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_cholesterol-total-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation cholesterol-total-example</b></p><a name=\"cholesterol-total-example\"> </a><a name=\"hccholesterol-total-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-cholesterol-total.html\">Cholestérol - total</a></p></div><blockquote><p><b>Valeur originale</b></p><ul><li>has-been-converted: true</li><li>original-code: <span title=\"Codes :{http://loinc.org 2093-3}\">Cholesterol [Mass/volume] in Serum or Plasma</span></li><li>original-value: 0.155 g/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMg/L = 'g/L')</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2093-3}\">Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique</span></p><p><b>subject</b>: <a href=\"Patient-ExamplefrPatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2024-10-15</p><p><b>value</b>: 0.4 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></p><p><b>method</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789 DEG}\">DEG</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>11.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
        fhir:url [
-         fhir:v "hasBeenConverted"^^xsd:anyURI ;
-         fhir:l fhir:hasBeenConverted
+         fhir:v "has-been-converted"^^xsd:anyURI ;
+         fhir:l fhir:has-been-converted
        ] ;
        fhir:value [
          a fhir:Boolean ;
@@ -519,8 +519,8 @@
        ]
      ] [
        fhir:url [
-         fhir:v "originalCode"^^xsd:anyURI ;
-         fhir:l fhir:originalCode
+         fhir:v "original-code"^^xsd:anyURI ;
+         fhir:l fhir:original-code
        ] ;
        fhir:value [
          a fhir:CodeableConcept ;
@@ -536,8 +536,8 @@
        ]
      ] [
        fhir:url [
-         fhir:v "originalValue"^^xsd:anyURI ;
-         fhir:l fhir:originalValue
+         fhir:v "original-value"^^xsd:anyURI ;
+         fhir:l fhir:original-value
        ] ;
        fhir:value [
          a fhir:Quantity ;
@@ -551,8 +551,8 @@
        ]
      ] ) ;
      fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data>
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data>
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 

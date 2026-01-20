@@ -8,10 +8,10 @@
 
 Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md)
 
-> **Origine de la donnée**
-* hasBeenConverted: true
-* originalCode: Triglyceride [Mass/volume] in Serum or Plasma
-* originalValue: 4.9 g/L(Détails : code UCUMg/L = 'g/L')
+> **Valeur originale**
+* has-been-converted: true
+* original-code: Triglyceride [Mass/volume] in Serum or Plasma
+* original-value: 4.9 g/L(Détails : code UCUMg/L = 'g/L')
 
 **status**: Final
 
@@ -49,11 +49,11 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
     {
       "extension" : [
         {
-          "url" : "hasBeenConverted",
+          "url" : "has-been-converted",
           "valueBoolean" : true
         },
         {
-          "url" : "originalCode",
+          "url" : "original-code",
           "valueCodeableConcept" : {
             "coding" : [
               {
@@ -65,7 +65,7 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
           }
         },
         {
-          "url" : "originalValue",
+          "url" : "original-value",
           "valueQuantity" : {
             "value" : 4.9,
             "unit" : "g/L",
@@ -74,7 +74,7 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
           }
         }
       ],
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
     }
   ],
   "status" : "final",

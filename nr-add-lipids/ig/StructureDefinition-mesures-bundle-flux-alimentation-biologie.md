@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "name" : "MesBundleFluxAlimentationBiologie",
   "title" : "Bundle d'alimentation des mesures de biologie",
   "status" : "active",
-  "date" : "2026-01-20T11:11:06+00:00",
+  "date" : "2026-01-20T12:50:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -278,33 +278,6 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
         "sliceName" : "mes-observation-ratio",
         "min" : 0,
         "max" : "1"
-      },
-      {
-        "id" : "Bundle.entry:mes-observation-ratio.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ratio"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:mes-observation-ratio.request",
-        "path" : "Bundle.entry.request",
-        "min" : 1
-      },
-      {
-        "id" : "Bundle.entry:mes-observation-ratio.request.method",
-        "path" : "Bundle.entry.request.method",
-        "patternCode" : "POST"
-      },
-      {
-        "id" : "Bundle.entry:mes-observation-ratio.request.url",
-        "path" : "Bundle.entry.request.url",
-        "patternUri" : "Observation"
       },
       {
         "id" : "Bundle.entry:mes-observation-aspect",

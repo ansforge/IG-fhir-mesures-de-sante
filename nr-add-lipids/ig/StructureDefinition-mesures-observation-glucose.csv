@@ -60,8 +60,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Texte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.extension:MesOriginOfData","Observation.extension","MesOriginOfData","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data]]} {[]}
-","Valeur d'origine de la donnée. Cette extension est présente uniquement si le résultat contenu dans Observation.value provient d'une conversion (par ex. g/L converti en mmol/L)","Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Observation.extension:mes-original-data","Observation.extension","mes-original-data","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data]]} {[]}
+","Valeur d'origine de la donnée. Cette extension est présente uniquement si le résultat contenu dans Observation.value provient d'une conversion (par ex. g/L converti en mmol/L)","Extension permettant de renseigner la donnée originale. 
+Dans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:MesMomentOfMeasurement","Observation.extension","MesMomentOfMeasurement","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement]]} {[]}

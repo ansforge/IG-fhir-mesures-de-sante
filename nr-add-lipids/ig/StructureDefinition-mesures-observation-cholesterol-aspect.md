@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect | *Version*:3.1.0 |
-| Active as of 2026-01-20 | *Computable Name*:MesFrObservationCholesterolAspect |
+| Active as of 2026-01-20 | *Computable Name*:MesObservationCholesterolAspect |
 
  
 Profil biologie de la ressource Observation pour définir l’aspect du cholestérol 
@@ -39,10 +39,10 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "id" : "mesures-observation-cholesterol-aspect",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect",
   "version" : "3.1.0",
-  "name" : "MesFrObservationCholesterolAspect",
+  "name" : "MesObservationCholesterolAspect",
   "title" : "Cholestérol - aspect",
   "status" : "active",
-  "date" : "2026-01-20T11:11:06+00:00",
+  "date" : "2026-01-20T12:50:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -160,9 +160,9 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         ]
       },
       {
-        "id" : "Observation.extension:MesOriginOfData",
+        "id" : "Observation.extension:mes-original-data",
         "path" : "Observation.extension",
-        "sliceName" : "MesOriginOfData",
+        "sliceName" : "mes-original-data",
         "short" : "Valeur d'origine de la donnée. Cette extension est présente uniquement si le résultat contenu dans Observation.value provient d'une conversion (par ex. g/L converti en mmol/L)",
         "min" : 0,
         "max" : "1",
@@ -170,7 +170,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
             ]
           }
         ]

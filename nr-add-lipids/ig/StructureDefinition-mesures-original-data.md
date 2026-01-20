@@ -1,17 +1,17 @@
-# Origine de la donnée - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Valeur originale - Guide d'implémentation FHIR - Mesures de santé v3.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Origine de la donnée**
+* **Valeur originale**
 
-## Extension: Origine de la donnée 
+## Extension: Valeur originale 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data | *Version*:3.1.0 |
-| Active as of 2026-01-20 | *Computable Name*:MesOriginOfData |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data | *Version*:3.1.0 |
+| Active as of 2026-01-20 | *Computable Name*:MesOriginalData |
 
-Extension pour tracer l’origine de la donnée issue d’un compte rendu de biologie (CR-Bio).
+Extension permettant de renseigner la donnée originale. Dans le cas où une conversion d’unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.
 
 **Context of Use**
 
@@ -23,10 +23,10 @@ This extension may be used on the following element(s):
 
 **Utilisations:**
 
-* Utiliser ce Extension: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-bmi.md), [Température](StructureDefinition-mesures-fr-observation-body-temperature.md), [Poids](StructureDefinition-mesures-fr-observation-body-weight.md), [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md)...Show 15 more,[Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md),[Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartrate.md),[Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxygen-sat.md),[Fréquence respiratoire](StructureDefinition-mesures-fr-observation-resp-rate.md),[Cholestérol - aspect](StructureDefinition-mesures-observation-cholesterol-aspect.md),[Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol-hdl.md),[Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol-ldl.md),[Cholestérol - Ratio LDL/HDL](StructureDefinition-mesures-observation-cholesterol-ratio.md),[Cholestérol - total](StructureDefinition-mesures-observation-cholesterol-total.md),[Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md),[Glycémie](StructureDefinition-mesures-observation-glucose.md),[Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md),[Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md),[Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md)and[Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
+* Utiliser ce Extension: [Cholestérol - aspect](StructureDefinition-mesures-observation-cholesterol-aspect.md), [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol-hdl.md), [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol-ldl.md), [Cholestérol - total](StructureDefinition-mesures-observation-cholesterol-total.md)...Show 2 more,[Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md)and[Glycémie](StructureDefinition-mesures-observation-glucose.md)
 * Exemples pour ce Extension: [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md), [Observation/cholesterol-ldl-example](Observation-cholesterol-ldl-example.md), [Observation/cholesterol-total-example](Observation-cholesterol-total-example.md) and [Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-origin-of-data)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-original-data)
 
 ### Formal Views of Extension Content
 
@@ -34,7 +34,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-data.csv), [Excel](StructureDefinition-mesures-origin-of-data.xlsx), [Schematron](StructureDefinition-mesures-origin-of-data.sch) 
+Other representations of profile: [CSV](StructureDefinition-mesures-original-data.csv), [Excel](StructureDefinition-mesures-original-data.xlsx), [Schematron](StructureDefinition-mesures-original-data.sch) 
 
 #### Contraintes
 
@@ -45,13 +45,13 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "mesures-origin-of-data",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data",
+  "id" : "mesures-original-data",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data",
   "version" : "3.1.0",
-  "name" : "MesOriginOfData",
-  "title" : "Origine de la donnée",
+  "name" : "MesOriginalData",
+  "title" : "Valeur originale",
   "status" : "active",
-  "date" : "2026-01-20T11:11:06+00:00",
+  "date" : "2026-01-20T12:50:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
       ]
     }
   ],
-  "description" : "Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio).",
+  "description" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -100,8 +100,8 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Origine de la donnée",
-        "definition" : "Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio)."
+        "short" : "Nombre de jours",
+        "definition" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif."
       },
       {
         "id" : "Extension.extension",
@@ -109,25 +109,25 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
         "min" : 3
       },
       {
-        "id" : "Extension.extension:hasBeenConverted",
+        "id" : "Extension.extension:has-been-converted",
         "path" : "Extension.extension",
-        "sliceName" : "hasBeenConverted",
+        "sliceName" : "has-been-converted",
         "short" : "Indication permettant de savoir si la valeur a été convertie.",
         "min" : 1,
         "max" : "1"
       },
       {
-        "id" : "Extension.extension:hasBeenConverted.extension",
+        "id" : "Extension.extension:has-been-converted.extension",
         "path" : "Extension.extension.extension",
         "max" : "0"
       },
       {
-        "id" : "Extension.extension:hasBeenConverted.url",
+        "id" : "Extension.extension:has-been-converted.url",
         "path" : "Extension.extension.url",
-        "fixedUri" : "hasBeenConverted"
+        "fixedUri" : "has-been-converted"
       },
       {
-        "id" : "Extension.extension:hasBeenConverted.value[x]",
+        "id" : "Extension.extension:has-been-converted.value[x]",
         "path" : "Extension.extension.value[x]",
         "type" : [
           {
@@ -137,25 +137,25 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
         "patternBoolean" : true
       },
       {
-        "id" : "Extension.extension:originalCode",
+        "id" : "Extension.extension:original-code",
         "path" : "Extension.extension",
-        "sliceName" : "originalCode",
+        "sliceName" : "original-code",
         "short" : "Code original de la donnée. Il permet notamment d'identifier le niveau de comparabilité des résultats entre eux. Le choix a été fait de ne pas indiquer directement le numéro de comparabilité mais d'indiquer directement le code LOINC d'origine pour identifier le numéro de comparabilité dans le jeu de valeur circuit de la biologie.",
         "min" : 1,
         "max" : "1"
       },
       {
-        "id" : "Extension.extension:originalCode.extension",
+        "id" : "Extension.extension:original-code.extension",
         "path" : "Extension.extension.extension",
         "max" : "0"
       },
       {
-        "id" : "Extension.extension:originalCode.url",
+        "id" : "Extension.extension:original-code.url",
         "path" : "Extension.extension.url",
-        "fixedUri" : "originalCode"
+        "fixedUri" : "original-code"
       },
       {
-        "id" : "Extension.extension:originalCode.value[x]",
+        "id" : "Extension.extension:original-code.value[x]",
         "path" : "Extension.extension.value[x]",
         "type" : [
           {
@@ -164,25 +164,25 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
         ]
       },
       {
-        "id" : "Extension.extension:originalValue",
+        "id" : "Extension.extension:original-value",
         "path" : "Extension.extension",
-        "sliceName" : "originalValue",
+        "sliceName" : "original-value",
         "short" : "Valeur originale | Original value",
         "min" : 1,
         "max" : "1"
       },
       {
-        "id" : "Extension.extension:originalValue.extension",
+        "id" : "Extension.extension:original-value.extension",
         "path" : "Extension.extension.extension",
         "max" : "0"
       },
       {
-        "id" : "Extension.extension:originalValue.url",
+        "id" : "Extension.extension:original-value.url",
         "path" : "Extension.extension.url",
-        "fixedUri" : "originalValue"
+        "fixedUri" : "original-value"
       },
       {
-        "id" : "Extension.extension:originalValue.value[x]",
+        "id" : "Extension.extension:original-value.value[x]",
         "path" : "Extension.extension.value[x]",
         "type" : [
           {
@@ -193,7 +193,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+        "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
       },
       {
         "id" : "Extension.value[x]",

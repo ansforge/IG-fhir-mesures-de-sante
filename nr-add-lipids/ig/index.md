@@ -69,12 +69,11 @@ Pour chaque ressource, le lien vers la spécification technique InteropSanté es
 | Titre du profil | Description |
 | [MesBundleFluxAlimentationBiologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md) | Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre |
 | [MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md) | Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie |
-| [MesFrObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md) | Profil biologie de la ressource Observation pour définir l'aspect du cholestérol |
-| [MesFrObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md) | Profil biologie de la ressource Observation pour définir le cholestérol HDL |
-| [MesFrObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md) | Profil biologie de la ressource Observation pour définir le cholestérol LDL |
-| [MesFrObservationCholesterolRatio](StructureDefinition-mesures-observation-cholesterol-ratio.md) | Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL |
-| [MesFrObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md) | Profil biologie de la ressource Observation pour définir le cholestérol total |
-| [MesFrObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md) | Profil biologie de la ressource Observation pour définir le cholestérol triglycerides |
+| [MesObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md) | Profil biologie de la ressource Observation pour définir l'aspect du cholestérol |
+| [MesObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md) | Profil biologie de la ressource Observation pour définir le cholestérol HDL |
+| [MesObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md) | Profil biologie de la ressource Observation pour définir le cholestérol LDL |
+| [MesObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md) | Profil biologie de la ressource Observation pour définir le cholestérol total |
+| [MesObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md) | Profil biologie de la ressource Observation pour définir le cholestérol triglycerides |
 | [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md) | Profil biologie de la ressource Observation pour définir une GlycémieCe profil permet de gérer 3 types d'indicateurs de glycémie:* le taux de glucose sanguin, mesuré en mg/dl
 * le taux de glucose interstitiel, mesuré en mg/dl
 * l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
@@ -133,7 +132,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MesBundleFluxAlimentation](StructureDefinition-mesures-bundle-flux-alimentation.md), [MesBundleFluxAlimentationBiologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)...Show 28 more,[MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md),[MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md),[MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md),[MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md),[MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md),[MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md),[MesFrObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md),[MesFrObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md),[MesFrObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md),[MesFrObservationCholesterolRatio](StructureDefinition-mesures-observation-cholesterol-ratio.md),[MesFrObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md),[MesFrObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md),[MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md),[MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md),[MesFrObservationRespiratoryRate](StructureDefinition-mesures-fr-observation-resp-rate.md),[MesMomentOfMeasurement](StructureDefinition-mesures-moment-of-measurement.md),[MesNumberOfDays](StructureDefinition-mesures-number-of-days.md),[MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md),[MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md),[MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md),[MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md),[MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md),[MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md),[MesOriginOfData](StructureDefinition-mesures-origin-of-data.md),[MesOriginalValue](StructureDefinition-mesures-original-value.md),[MesReasonForMeasurement](StructureDefinition-mesures-reason-for-measurement.md),[Mesures](index.md)and[MethodeGlucoseVS](ValueSet-method-glucose-vs.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MesBundleFluxAlimentation](StructureDefinition-mesures-bundle-flux-alimentation.md), [MesBundleFluxAlimentationBiologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)...Show 26 more,[MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md),[MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md),[MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md),[MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md),[MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md),[MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md),[MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md),[MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md),[MesFrObservationRespiratoryRate](StructureDefinition-mesures-fr-observation-resp-rate.md),[MesMomentOfMeasurement](StructureDefinition-mesures-moment-of-measurement.md),[MesNumberOfDays](StructureDefinition-mesures-number-of-days.md),[MesObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md),[MesObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md),[MesObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md),[MesObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md),[MesObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md),[MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md),[MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md),[MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md),[MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md),[MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md),[MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md),[MesOriginalData](StructureDefinition-mesures-original-data.md),[MesReasonForMeasurement](StructureDefinition-mesures-reason-for-measurement.md),[Mesures](index.md)and[MethodeGlucoseVS](ValueSet-method-glucose-vs.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
@@ -143,7 +142,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)...Show 31 more,[DiagnosticReport/cholesterol-dr](DiagnosticReport-cholesterol-dr.md),[MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md),[MesFrObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md),[MesFrObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md),[MesFrObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md),[MesFrObservationCholesterolRatio](StructureDefinition-mesures-observation-cholesterol-ratio.md),[MesFrObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md),[MesFrObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md),[MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md),[MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md),[MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md),[MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md),[MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md),[MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md),[Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md),[Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md),[Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md),[Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md),[Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md),[Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md),[Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md),[Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md),[Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md),[Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md),[Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md),[Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md),[Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md),[Observation/cholesterol-ldl-example](Observation-cholesterol-ldl-example.md),[Observation/cholesterol-total-example](Observation-cholesterol-total-example.md),[Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md)and[Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md)
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)...Show 30 more,[DiagnosticReport/cholesterol-dr](DiagnosticReport-cholesterol-dr.md),[MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md),[MesObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md),[MesObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md),[MesObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md),[MesObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md),[MesObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md),[MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md),[MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md),[MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md),[MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md),[MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md),[MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md),[Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md),[Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md),[Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md),[Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md),[Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md),[Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md),[Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md),[Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md),[Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md),[Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md),[Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md),[Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md),[Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md),[Observation/cholesterol-ldl-example](Observation-cholesterol-ldl-example.md),[Observation/cholesterol-total-example](Observation-cholesterol-total-example.md),[Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md)and[Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
@@ -170,7 +169,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-01-20T11:11:06+00:00",
+  "date" : "2026-01-20T12:50:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1094,20 +1093,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/mesures-observation-cholesterol-ratio"
-        },
-        "name" : "Cholestérol - Ratio LDL/HDL",
-        "description" : "Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
           "reference" : "StructureDefinition/mesures-observation-cholesterol-total"
         },
         "name" : "Cholestérol - total",
@@ -1508,20 +1493,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/mesures-origin-of-data"
-        },
-        "name" : "Origine de la donnée",
-        "description" : "Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Device"
           }
         ],
@@ -1651,10 +1622,10 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/mesures-original-value"
+          "reference" : "StructureDefinition/mesures-original-data"
         },
         "name" : "Valeur originale",
-        "description" : "Extension sur la valeur originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.",
+        "description" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.",
         "exampleBoolean" : false
       }
     ],

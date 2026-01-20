@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-diagnostic-r
   "name" : "MesDiagnosticReport",
   "title" : "DiagnosticReport mesures biologie",
   "status" : "active",
-  "date" : "2026-01-20T11:11:06+00:00",
+  "date" : "2026-01-20T12:50:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -177,22 +177,6 @@ Other representations of profile: [CSV](StructureDefinition-mesures-diagnostic-r
         "sliceName" : "trigly-cholesterol",
         "min" : 0,
         "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "DiagnosticReport.result:cholesterol-ratio",
-        "path" : "DiagnosticReport.result",
-        "sliceName" : "cholesterol-ratio",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ratio"
-            ]
-          }
-        ],
         "mustSupport" : true
       },
       {

@@ -10,7 +10,7 @@
   <name value="Mesures"/>
   <title value="Guide d'implémentation FHIR - Mesures de santé"/>
   <status value="active"/>
-  <date value="2026-01-20T11:11:06+00:00"/>
+  <date value="2026-01-20T12:50:02+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -610,17 +610,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mesures-observation-cholesterol-ratio"/>
-      </reference>
-      <name value="Cholestérol - Ratio LDL/HDL"/>
-      <description value="Profil biologie de la ressource Observation pour définir le ratio cholestérol LDL/HDL"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mesures-observation-cholesterol-total"/>
       </reference>
       <name value="Cholestérol - total"/>
@@ -932,17 +921,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mesures-origin-of-data"/>
-      </reference>
-      <name value="Origine de la donnée"/>
-      <description value="Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Device"/>
       </extension>
       <reference>
@@ -1044,10 +1022,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mesures-original-value"/>
+        <reference value="StructureDefinition/mesures-original-data"/>
       </reference>
       <name value="Valeur originale"/>
-      <description value="Extension sur la valeur originale. &#xD;&#xA;Dans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif."/>
+      <description value="Extension permettant de renseigner la donnée originale. &#xD;&#xA;Dans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

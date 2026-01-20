@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationPainSeverity",
   "title" : "Niveau de douleur",
   "status" : "active",
-  "date" : "2026-01-20T11:11:06+00:00",
+  "date" : "2026-01-20T12:50:02+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -155,21 +155,6 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "code" : "Extension",
             "profile" : [
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Observation.extension:MesOriginOfData",
-        "path" : "Observation.extension",
-        "sliceName" : "MesOriginOfData",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
             ]
           }
         ]

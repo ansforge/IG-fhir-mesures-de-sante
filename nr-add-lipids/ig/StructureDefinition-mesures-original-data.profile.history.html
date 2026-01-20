@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Origine de la donnée - Testing - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
+    <title> - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +46,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.26"}
-    h3,h4,h5,h6{--heading-prefix:"8.26"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -172,15 +172,11 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Origine de la donnée</b></li>
+          
 
           <span style="float:right;">
 
-            <a href="StructureDefinition-mesures-origin-of-data-mappings.html">&lt;prev</a> | 
-
             <a href="#bottom">bottom</a>
-
-          | <a href="StructureDefinition-mesures-origin-of-data.profile.xml.html">next&gt;</a>
 
           </span>
 
@@ -194,7 +190,8 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 6" class="col-12">
+
+<div style="counter-reset: section 10" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
@@ -211,20 +208,20 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-mesures-origin-of-data.html">Content</a>
+    <a href="StructureDefinition-mesures-original-data.html">Content</a>
   </li>
 
 
 
   <li>
-    <a href="StructureDefinition-mesures-origin-of-data-definitions.html">Detailed Descriptions</a>
+    <a href="StructureDefinition-mesures-original-data-definitions.html">Detailed Descriptions</a>
   </li>
 
 
 
   
     <li>
-      <a href="StructureDefinition-mesures-origin-of-data-mappings.html">Mappings</a>
+      <a href="StructureDefinition-mesures-original-data-mappings.html">Mappings</a>
     </li>
   
 
@@ -236,21 +233,21 @@
 
   
     <li>
-      <a href="StructureDefinition-mesures-origin-of-data.profile.xml.html">XML</a>
+      <a href="StructureDefinition-mesures-original-data.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-mesures-origin-of-data.profile.json.html">JSON</a>
+      <a href="StructureDefinition-mesures-original-data.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-mesures-origin-of-data.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-mesures-original-data.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -259,7 +256,7 @@
 
 
   <a name="root"> </a>
-  <h2 id="root">Extension: MesOriginOfData - Testing</h2>
+  <h2 id="root">Extension: MesOriginalData - Change History</h2>
 
   <table class="colsi">
     <tr>
@@ -276,28 +273,9 @@
     </tr>
   </table>
 
+  <p>Changes in the mesures-original-data extension.</p>
 
-
-
-<!-- insert intro if present -->
-
-
-
-
-<h3>Test Plans</h3>
-
-  <p><b>No test plans are currently available for the  Profile.</b></p>
-
-
-<h3>Test Scripts</h3>
-
-  <p><b>No test scripts are currently available for the  Profile.</b></p>
-
-
-<!-- insert notes if present -->
-
-
-
+  
 
 </div>
 
@@ -322,7 +300,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="StructureDefinition-mesures-origin-of-data-mappings.html">&lt;prev</a>
+                <span style="visibility:hidden">&lt;prev</span>
 
               </td>
               <td style="text-align:center">
@@ -330,7 +308,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-mesures-origin-of-data.profile.xml.html">next&gt;</a>
+                <span style="visibility:hidden">next&gt;</span>
 
               </td>
             </tr>
@@ -340,7 +318,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 20, 2026 11:11+0000">2026-01-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 20, 2026 12:50+0000">2026-01-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
