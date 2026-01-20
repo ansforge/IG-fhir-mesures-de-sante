@@ -1,5 +1,5 @@
 
-Profile: MesFrObservationCholesterolHDL
+Profile: MesObservationCholesterolHDL
 Parent: Observation
 Id: mesures-observation-cholesterol-hdl
 Title: "Cholestérol - HDL"

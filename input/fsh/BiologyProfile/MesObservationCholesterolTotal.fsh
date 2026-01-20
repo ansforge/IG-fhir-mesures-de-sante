@@ -1,5 +1,5 @@
 
-Profile: MesFrObservationCholesterolTotal
+Profile: MesObservationCholesterolTotal
 Parent: Observation
 Id: mesures-observation-cholesterol-total
 Title: "Cholestérol - total"

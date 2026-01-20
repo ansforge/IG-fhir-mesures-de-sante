@@ -1,5 +1,5 @@
 
-Profile: MesFrObservationCholesterolAspect
+Profile: MesObservationCholesterolAspect
 Parent: Observation
 Id: mesures-observation-cholesterol-aspect
 Title: "Cholestérol - aspect"

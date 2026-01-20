@@ -7,16 +7,20 @@ Description: "Extension sur la valeur originale. \r\nDans le cas où une convers
 * . ^short = "Nombre de jours"
 
 
-
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    code 0..1 and
-    value 0..1 
+    hasBeenConverted 1..1 and
+    originalCode 1..1 and
+    originalValue 1..1
 
+* extension[hasBeenConverted].value[x] only boolean
+* extension[hasBeenConverted] ^short = "Indication permettant de savoir si la valeur a été convertie."
+* extension[hasBeenConverted].valueBoolean = true
 
-* extension[code] ^short = "Code LOINC de la valeur originale | LOINC code of the original value"
-* extension[code].value[x] only CodeableConcept
+* extension[originalCode].value[x] only CodeableConcept
+* extension[originalCode] ^short = "Code original de la donnée. Il permet notamment d'identifier le niveau de comparabilité des résultats entre eux. Le choix a été fait de ne pas indiquer directement le numéro de comparabilité mais d'indiquer directement le code LOINC d'origine pour identifier le numéro de comparabilité dans le jeu de valeur circuit de la biologie."
 
-
+* extension[originalValue] ^short = "Valeur originale | Original value"
+* extension[originalValue].value[x] only CodeableConcept

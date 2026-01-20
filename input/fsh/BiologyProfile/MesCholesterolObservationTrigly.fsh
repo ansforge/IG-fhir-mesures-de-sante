@@ -1,4 +1,4 @@
-Profile: MesFrObservationCholesterolTrigly
+Profile: MesObservationCholesterolTrigly
 Parent: Observation
 Id: mesures-observation-cholesterol-trigly
 Title: "Cholestérol - triglycerides"

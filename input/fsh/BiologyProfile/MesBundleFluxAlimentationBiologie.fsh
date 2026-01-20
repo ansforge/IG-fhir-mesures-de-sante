@@ -44,21 +44,12 @@ Description: "Profil biologie de la ressource Bundle du flux d'alimentation des 
 * entry[mes-observation-total].request.method = #POST
 * entry[mes-observation-total].request.url = "Observation"
 
-
-// Ratio
-* entry[mes-observation-ratio].resource only mesures-observation-cholesterol-ratio
-
-* entry[mes-observation-ratio].request 1..1
-* entry[mes-observation-ratio].request.method = #POST
-* entry[mes-observation-ratio].request.url = "Observation"
-
 // Aspect
 * entry[mes-observation-aspect].resource only mesures-observation-cholesterol-aspect
 
 * entry[mes-observation-aspect].request 1..1
 * entry[mes-observation-aspect].request.method = #POST
 * entry[mes-observation-aspect].request.url = "Observation"
-
 
 // mesures-observation-glucose
 * entry[mes-observation-glycemie].resource only mesures-observation-glucose
