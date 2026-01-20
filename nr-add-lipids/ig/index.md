@@ -172,7 +172,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-01-20T07:44:39+00:00",
+  "date" : "2026-01-20T09:11:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

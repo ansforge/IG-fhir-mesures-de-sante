@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolAspect",
   "title" : "Cholestérol - aspect",
   "status" : "active",
-  "date" : "2026-01-20T07:44:39+00:00",
+  "date" : "2026-01-20T09:11:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -256,6 +256,12 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
           "strength" : "extensible",
           "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-technique-biologie-cisis"
         }
+      },
+      {
+        "id" : "Observation.referenceRange",
+        "path" : "Observation.referenceRange",
+        "short" : "Associer la mesure à l'intervalle de référence est fortement recommandé pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ...",
+        "mustSupport" : true
       },
       {
         "id" : "Observation.hasMember",

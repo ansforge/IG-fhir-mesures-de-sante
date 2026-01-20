@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationGlucose",
   "title" : "Glycémie",
   "status" : "active",
-  "date" : "2026-01-20T07:44:39+00:00",
+  "date" : "2026-01-20T09:11:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -360,6 +360,12 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "targetProfile" : ["http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"]
           }
         ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.referenceRange",
+        "path" : "Observation.referenceRange",
+        "short" : "Associer la mesure à l'intervalle de référence est fortement recommandé pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ...",
         "mustSupport" : true
       }
     ]
