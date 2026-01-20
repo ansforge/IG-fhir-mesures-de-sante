@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolHDL",
   "title" : "Cholestérol - HDL",
   "status" : "active",
-  "date" : "2026-01-20T10:06:11+00:00",
+  "date" : "2026-01-20T11:11:06+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -285,6 +285,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.referenceRange",
         "path" : "Observation.referenceRange",
         "short" : "Associer la mesure à l'intervalle de référence est fortement recommandé pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ...",
+        "max" : "1",
         "constraint" : [
           {
             "key" : "mes-ir",

@@ -15,6 +15,7 @@
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:referenceRange) &lt;= 1">referenceRange: maximum cardinality of 'referenceRange' is 1</sch:assert>
       <sch:assert test="count(f:hasMember) &lt;= 0">hasMember: maximum cardinality of 'hasMember' is 0</sch:assert>
       <sch:assert test="count(f:derivedFrom) &lt;= 0">derivedFrom: maximum cardinality of 'derivedFrom' is 0</sch:assert>
     </sch:rule>

@@ -17,6 +17,7 @@
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:referenceRange) &lt;= 1">referenceRange: maximum cardinality of 'referenceRange' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
