@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose | *Version*:3.1.0 |
-| Active as of 2026-01-19 | *Computable Name*:MesObservationGlucose |
+| Active as of 2026-01-20 | *Computable Name*:MesObservationGlucose |
 
  
 Profil biologie de la ressource Observation pour définir une Glycémie 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationGlucose",
   "title" : "Glycémie",
   "status" : "active",
-  "date" : "2026-01-19T10:07:50+00:00",
+  "date" : "2026-01-20T07:44:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -343,6 +343,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       {
         "id" : "Observation.method",
         "path" : "Observation.method",
+        "short" : "La méthode de mesure du cholestérol total est fortement conseillée pour déterminer si des résultats sont comparables et ainsi interpréter cette donnée.",
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",

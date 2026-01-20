@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly | *Version*:3.1.0 |
-| Active as of 2026-01-19 | *Computable Name*:MesFrObservationCholesterolTrigly |
+| Active as of 2026-01-20 | *Computable Name*:MesFrObservationCholesterolTrigly |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol triglycerides 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolTrigly",
   "title" : "Cholestérol - triglycerides",
   "status" : "active",
-  "date" : "2026-01-19T10:07:50+00:00",
+  "date" : "2026-01-20T07:44:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -274,6 +274,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.method",
         "path" : "Observation.method",
         "min" : 1,
+        "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
           "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789"

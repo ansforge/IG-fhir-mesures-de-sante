@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-value | *Version*:3.1.0 |
-| Active as of 2026-01-19 | *Computable Name*:MesOriginalValue |
+| Active as of 2026-01-20 | *Computable Name*:MesOriginalValue |
 
 Extension sur la valeur originale. Dans le cas où une conversion d’unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-original-val
   "name" : "MesOriginalValue",
   "title" : "Valeur originale",
   "status" : "active",
-  "date" : "2026-01-19T10:07:50+00:00",
+  "date" : "2026-01-20T07:44:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data | *Version*:3.1.0 |
-| Active as of 2026-01-19 | *Computable Name*:MesOriginOfData |
+| Active as of 2026-01-20 | *Computable Name*:MesOriginOfData |
 
 Extension pour tracer l’origine de la donnée issue d’un compte rendu de biologie (CR-Bio).
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-origin-of-da
   "name" : "MesOriginOfData",
   "title" : "Origine de la donnée",
   "status" : "active",
-  "date" : "2026-01-19T10:07:50+00:00",
+  "date" : "2026-01-20T07:44:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

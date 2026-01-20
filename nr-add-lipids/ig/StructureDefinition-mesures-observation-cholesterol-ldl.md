@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl | *Version*:3.1.0 |
-| Active as of 2026-01-19 | *Computable Name*:MesFrObservationCholesterolLDL |
+| Active as of 2026-01-20 | *Computable Name*:MesFrObservationCholesterolLDL |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol LDL 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesFrObservationCholesterolLDL",
   "title" : "Cholestérol - LDL",
   "status" : "active",
-  "date" : "2026-01-19T10:07:50+00:00",
+  "date" : "2026-01-20T07:44:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -274,8 +274,8 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       {
         "id" : "Observation.method",
         "path" : "Observation.method",
-        "short" : "La méthode de mesure du cholestérol LDL est obligatoire pour déterminer si des résultats sont comparables et ainsi utiliser cette donnée.",
-        "min" : 1,
+        "short" : "La méthode de mesure du cholestérol LDL est fortement conseillée pour déterminer si des résultats sont comparables et ainsi utiliser cette donnée.",
+        "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
           "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-technique-biologie-cisis"

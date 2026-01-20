@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity | *Version*:3.1.0 |
-| Active as of 2026-01-19 | *Computable Name*:MesObservationPainSeverity |
+| Active as of 2026-01-20 | *Computable Name*:MesObservationPainSeverity |
 
  
 Profil de la ressource Observation pour définir un niveau de douleur 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationPainSeverity",
   "title" : "Niveau de douleur",
   "status" : "active",
-  "date" : "2026-01-19T10:07:50+00:00",
+  "date" : "2026-01-20T07:44:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
