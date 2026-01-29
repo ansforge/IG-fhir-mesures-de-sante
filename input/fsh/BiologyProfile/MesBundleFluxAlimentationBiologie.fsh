@@ -14,7 +14,7 @@ Description: "Profil biologie de la ressource Bundle du flux d'alimentation des 
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slice based on the request.url pattern"
 
-* entry contains mes-observation-ldl 0..1 and mes-observation-hdl 0..1 and mes-observation-trigly 0..1 and mes-observation-total 0..1 and mes-observation-ratio 0..1 and mes-observation-aspect 0..1 and mes-observation-glycemie 0..1 and mes-diagnostic-report 1..1 
+* entry contains mes-observation-ldl 0..1 and mes-observation-hdl 0..1 and mes-observation-trigly 0..1 and mes-observation-total 0..1 and mes-observation-aspect 0..1 and mes-observation-glycemie 0..1 and mes-diagnostic-report 1..1 
 
 // LDL
 * entry[mes-observation-ldl].resource only mesures-observation-cholesterol-ldl

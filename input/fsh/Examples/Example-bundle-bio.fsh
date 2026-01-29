@@ -132,36 +132,36 @@ Usage: #example
 * entry[mes-observation-ldl][0].resource = cholesterol-ldl-example
 * entry[mes-observation-ldl][=].request.method = #POST
 * entry[mes-observation-ldl][=].request.url = "Observation"
-* entry[mes-observation-ldl][=].fullUrl = "urn:uuid:0f6a9f7f-d307-4497-b7e3-2059dc7344d4"
+* entry[mes-observation-ldl][=].fullUrl = "urn:uuid:cholesterol-ldl-example"
 
 * entry[mes-observation-hdl][+].resource = cholesterol-hdl-example
 * entry[mes-observation-hdl][=].request.method = #POST
 * entry[mes-observation-hdl][=].request.url = "Observation"
-* entry[mes-observation-hdl][=].fullUrl = "urn:uuid:7375171a-805e-440d-aa55-eb0ced35625c"
+* entry[mes-observation-hdl][=].fullUrl = "urn:uuid:cholesterol-hdl-example"
 
 
 * entry[mes-observation-trigly][+].resource = cholesterol-trigly-example
 * entry[mes-observation-trigly][=].request.method = #POST
 * entry[mes-observation-trigly][=].request.url = "Observation"
-* entry[mes-observation-trigly][=].fullUrl = "urn:uuid:1cd043f1-996c-49e8-bb03-b02a865505af"
+* entry[mes-observation-trigly][=].fullUrl = "urn:uuid:cholesterol-trigly-example"
 
 
 * entry[mes-observation-total][+].resource = cholesterol-total-example
 * entry[mes-observation-total][=].request.method = #POST
 * entry[mes-observation-total][=].request.url = "Observation"
-* entry[mes-observation-total][=].fullUrl = "urn:uuid:91bc2d03-5406-490c-89f5-23cce837494d"
+* entry[mes-observation-total][=].fullUrl = "urn:uuid:cholesterol-total-example"
 
 
 * entry[mes-observation-glycemie][+].resource = glycemia-example
 * entry[mes-observation-glycemie][=].request.method = #POST
 * entry[mes-observation-glycemie][=].request.url = "Observation"
-* entry[mes-observation-glycemie][=].fullUrl = "urn:uuid:eae3dfd3-ccc1-438e-b8fe-fe725dce7947" 
+* entry[mes-observation-glycemie][=].fullUrl = "urn:uuid:glycemia-example" 
 
 
 * entry[mes-diagnostic-report][+].resource = cholesterol-dr
 * entry[mes-diagnostic-report][=].request.method = #POST
 * entry[mes-diagnostic-report][=].request.url = "DiagnosticReport"
-* entry[mes-diagnostic-report][=].fullUrl = "urn:uuid:25207dab-e2f1-4513-a499-48e508847382"
+* entry[mes-diagnostic-report][=].fullUrl = "urn:uuid:cholesterol-dr"
 
 
 
