@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "name" : "MesBundleFluxAlimentationBiologie",
   "title" : "Bundle d'alimentation des mesures de biologie",
   "status" : "active",
-  "date" : "2026-01-29T16:25:01+00:00",
+  "date" : "2026-01-29T16:26:55+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -271,13 +271,6 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
         "id" : "Bundle.entry:mes-observation-total.request.url",
         "path" : "Bundle.entry.request.url",
         "patternUri" : "Observation"
-      },
-      {
-        "id" : "Bundle.entry:mes-observation-ratio",
-        "path" : "Bundle.entry",
-        "sliceName" : "mes-observation-ratio",
-        "min" : 0,
-        "max" : "1"
       },
       {
         "id" : "Bundle.entry:mes-observation-aspect",

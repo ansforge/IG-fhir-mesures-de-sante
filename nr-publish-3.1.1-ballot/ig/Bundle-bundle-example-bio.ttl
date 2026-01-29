@@ -19,10 +19,10 @@
   fhir:type [ fhir:v "transaction"] ; # 
   fhir:entry ( [
      fhir:fullUrl [
-       fhir:v "urn:uuid:25207dab-e2f1-4513-a499-48e508847382"^^xsd:anyURI ;
-       fhir:l <urn:uuid:25207dab-e2f1-4513-a499-48e508847382>
+       fhir:v "urn:uuid:cholesterol-dr"^^xsd:anyURI ;
+       fhir:l <urn:uuid:cholesterol-dr>
      ] ;
-     fhir:resource ( <urn:uuid:25207dab-e2f1-4513-a499-48e508847382> ) ;
+     fhir:resource ( <urn:uuid:cholesterol-dr> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [
@@ -32,10 +32,10 @@
      ]
   ] [
      fhir:fullUrl [
-       fhir:v "urn:uuid:0f6a9f7f-d307-4497-b7e3-2059dc7344d4"^^xsd:anyURI ;
-       fhir:l <urn:uuid:0f6a9f7f-d307-4497-b7e3-2059dc7344d4>
+       fhir:v "urn:uuid:cholesterol-ldl-example"^^xsd:anyURI ;
+       fhir:l <urn:uuid:cholesterol-ldl-example>
      ] ;
-     fhir:resource ( <urn:uuid:0f6a9f7f-d307-4497-b7e3-2059dc7344d4> ) ;
+     fhir:resource ( <urn:uuid:cholesterol-ldl-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [
@@ -45,10 +45,10 @@
      ]
   ] [
      fhir:fullUrl [
-       fhir:v "urn:uuid:7375171a-805e-440d-aa55-eb0ced35625c"^^xsd:anyURI ;
-       fhir:l <urn:uuid:7375171a-805e-440d-aa55-eb0ced35625c>
+       fhir:v "urn:uuid:cholesterol-hdl-example"^^xsd:anyURI ;
+       fhir:l <urn:uuid:cholesterol-hdl-example>
      ] ;
-     fhir:resource ( <urn:uuid:7375171a-805e-440d-aa55-eb0ced35625c> ) ;
+     fhir:resource ( <urn:uuid:cholesterol-hdl-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [
@@ -58,10 +58,10 @@
      ]
   ] [
      fhir:fullUrl [
-       fhir:v "urn:uuid:1cd043f1-996c-49e8-bb03-b02a865505af"^^xsd:anyURI ;
-       fhir:l <urn:uuid:1cd043f1-996c-49e8-bb03-b02a865505af>
+       fhir:v "urn:uuid:cholesterol-trigly-example"^^xsd:anyURI ;
+       fhir:l <urn:uuid:cholesterol-trigly-example>
      ] ;
-     fhir:resource ( <urn:uuid:1cd043f1-996c-49e8-bb03-b02a865505af> ) ;
+     fhir:resource ( <urn:uuid:cholesterol-trigly-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [
@@ -71,10 +71,10 @@
      ]
   ] [
      fhir:fullUrl [
-       fhir:v "urn:uuid:91bc2d03-5406-490c-89f5-23cce837494d"^^xsd:anyURI ;
-       fhir:l <urn:uuid:91bc2d03-5406-490c-89f5-23cce837494d>
+       fhir:v "urn:uuid:cholesterol-total-example"^^xsd:anyURI ;
+       fhir:l <urn:uuid:cholesterol-total-example>
      ] ;
-     fhir:resource ( <urn:uuid:91bc2d03-5406-490c-89f5-23cce837494d> ) ;
+     fhir:resource ( <urn:uuid:cholesterol-total-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [
@@ -84,10 +84,10 @@
      ]
   ] [
      fhir:fullUrl [
-       fhir:v "urn:uuid:eae3dfd3-ccc1-438e-b8fe-fe725dce7947"^^xsd:anyURI ;
-       fhir:l <urn:uuid:eae3dfd3-ccc1-438e-b8fe-fe725dce7947>
+       fhir:v "urn:uuid:glycemia-example"^^xsd:anyURI ;
+       fhir:l <urn:uuid:glycemia-example>
      ] ;
-     fhir:resource ( <urn:uuid:eae3dfd3-ccc1-438e-b8fe-fe725dce7947> ) ;
+     fhir:resource ( <urn:uuid:glycemia-example> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [
@@ -97,7 +97,7 @@
      ]
   ] ) . # 
 
-<urn:uuid:25207dab-e2f1-4513-a499-48e508847382> a fhir:DiagnosticReport ;
+<urn:uuid:cholesterol-dr> a fhir:DiagnosticReport ;
   fhir:id [ fhir:v "cholesterol-dr"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -138,7 +138,7 @@
      fhir:reference [ fhir:v "Observation/glycemia-example" ]
   ] ) . # 
 
-<urn:uuid:0f6a9f7f-d307-4497-b7e3-2059dc7344d4> a fhir:Observation ;
+<urn:uuid:cholesterol-ldl-example> a fhir:Observation ;
   fhir:id [ fhir:v "cholesterol-ldl-example"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -254,7 +254,7 @@
      ]
   ] ) . # 
 
-<urn:uuid:7375171a-805e-440d-aa55-eb0ced35625c> a fhir:Observation ;
+<urn:uuid:cholesterol-hdl-example> a fhir:Observation ;
   fhir:id [ fhir:v "cholesterol-hdl-example"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -370,7 +370,7 @@
      ]
   ] ) . # 
 
-<urn:uuid:1cd043f1-996c-49e8-bb03-b02a865505af> a fhir:Observation ;
+<urn:uuid:cholesterol-trigly-example> a fhir:Observation ;
   fhir:id [ fhir:v "cholesterol-trigly-example"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -495,7 +495,7 @@
      ]
   ] ) . # 
 
-<urn:uuid:91bc2d03-5406-490c-89f5-23cce837494d> a fhir:Observation ;
+<urn:uuid:cholesterol-total-example> a fhir:Observation ;
   fhir:id [ fhir:v "cholesterol-total-example"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -620,7 +620,7 @@
      ]
   ] ) . # 
 
-<urn:uuid:eae3dfd3-ccc1-438e-b8fe-fe725dce7947> a fhir:Observation ;
+<urn:uuid:glycemia-example> a fhir:Observation ;
   fhir:id [ fhir:v "glycemia-example"] ; # 
   fhir:meta [
      fhir:profile ( [

@@ -22,7 +22,7 @@
   "type" : "transaction",
   "entry" : [
     {
-      "fullUrl" : "urn:uuid:25207dab-e2f1-4513-a499-48e508847382",
+      "fullUrl" : "urn:uuid:cholesterol-dr",
       "resource" : {
         "resourceType" : "DiagnosticReport",
         "id" : "cholesterol-dr",
@@ -69,7 +69,7 @@
       }
     },
     {
-      "fullUrl" : "urn:uuid:0f6a9f7f-d307-4497-b7e3-2059dc7344d4",
+      "fullUrl" : "urn:uuid:cholesterol-ldl-example",
       "resource" : {
         "resourceType" : "Observation",
         "id" : "cholesterol-ldl-example",
@@ -161,7 +161,7 @@
       }
     },
     {
-      "fullUrl" : "urn:uuid:7375171a-805e-440d-aa55-eb0ced35625c",
+      "fullUrl" : "urn:uuid:cholesterol-hdl-example",
       "resource" : {
         "resourceType" : "Observation",
         "id" : "cholesterol-hdl-example",
@@ -253,7 +253,7 @@
       }
     },
     {
-      "fullUrl" : "urn:uuid:1cd043f1-996c-49e8-bb03-b02a865505af",
+      "fullUrl" : "urn:uuid:cholesterol-trigly-example",
       "resource" : {
         "resourceType" : "Observation",
         "id" : "cholesterol-trigly-example",
@@ -351,7 +351,7 @@
       }
     },
     {
-      "fullUrl" : "urn:uuid:91bc2d03-5406-490c-89f5-23cce837494d",
+      "fullUrl" : "urn:uuid:cholesterol-total-example",
       "resource" : {
         "resourceType" : "Observation",
         "id" : "cholesterol-total-example",
@@ -449,7 +449,7 @@
       }
     },
     {
-      "fullUrl" : "urn:uuid:eae3dfd3-ccc1-438e-b8fe-fe725dce7947",
+      "fullUrl" : "urn:uuid:glycemia-example",
       "resource" : {
         "resourceType" : "Observation",
         "id" : "glycemia-example",
