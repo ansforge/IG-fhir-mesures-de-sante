@@ -12,7 +12,7 @@ Profil: [Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxyg
 
 **category**: Vital Signs
 
-**code**: Oxygen saturation in Arterial blood
+**code**: Oxygène saturation [Fraction massique] Sang artériel ; Numérique
 
 **subject**: [Pierre Durand](Patient-ExamplefrPatient001.md)
 
@@ -49,7 +49,7 @@ Profil: [Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxyg
       {
         "system" : "http://loinc.org",
         "code" : "2708-6",
-        "display" : "Oxygen saturation in Arterial blood"
+        "display" : "Oxygène saturation [Fraction massique] Sang artériel ; Numérique"
       }
     ]
   },

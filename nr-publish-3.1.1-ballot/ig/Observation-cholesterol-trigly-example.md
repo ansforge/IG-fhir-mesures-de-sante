@@ -10,7 +10,7 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
 
 > **Valeur originale**
 * has-been-converted: true
-* original-code: Triglyceride [Mass/volume] in Serum or Plasma
+* original-code: Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique
 * original-value: 4.9 g/L (Détails : code UCUMg/L = 'g/L')
 
 **status**: Final
@@ -59,7 +59,7 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
               {
                 "system" : "http://loinc.org",
                 "code" : "2571-8",
-                "display" : "Triglyceride [Mass/volume] in Serum or Plasma"
+                "display" : "Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique"
               }
             ]
           }
@@ -102,7 +102,7 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
   "method" : {
     "coding" : [
       {
-        "system" : "https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789",
+        "system" : "https://smt.esante.gouv.fr/terminologie-tccr",
         "code" : "DEG"
       }
     ]

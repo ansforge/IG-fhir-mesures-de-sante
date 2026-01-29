@@ -102,7 +102,7 @@ Profil: [Cholestérol - total](StructureDefinition-mesures-observation-cholester
   "method" : {
     "coding" : [
       {
-        "system" : "https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789",
+        "system" : "https://smt.esante.gouv.fr/terminologie-tccr",
         "code" : "DEG"
       }
     ]

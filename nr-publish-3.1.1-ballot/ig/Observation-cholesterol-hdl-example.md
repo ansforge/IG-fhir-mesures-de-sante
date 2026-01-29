@@ -10,7 +10,7 @@ Profil: [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol
 
 > **Valeur originale**
 * has-been-converted: true
-* original-code: Cholesterol in HDL [Mass/volume] in Serum or Plasma
+* original-code: Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique
 * original-value: 1.08 g/L (Détails : code UCUMg/L = 'g/L')
 
 **status**: Final
@@ -59,7 +59,7 @@ Profil: [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol
               {
                 "system" : "http://loinc.org",
                 "code" : "2085-9",
-                "display" : "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+                "display" : "Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique"
               }
             ]
           }
@@ -102,7 +102,7 @@ Profil: [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol
   "method" : {
     "coding" : [
       {
-        "system" : "https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789",
+        "system" : "https://smt.esante.gouv.fr/terminologie-tccr",
         "code" : "DEG"
       }
     ]
