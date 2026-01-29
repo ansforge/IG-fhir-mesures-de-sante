@@ -76,8 +76,8 @@ Usage: #example
 
 Instance: example-mes-fr-observation-cholesterol-trigly-003
 InstanceOf: MesObservationCholesterolTrigly
-Title: "Exemple de mesure du cholestérol triglycérides"
-Description: "Exemple de mesure du cholestérol triglycérides"
+Title: "Exemple de mesure du cholestérol triglycérides (003)"
+Description: "Exemple de mesure du cholestérol triglycérides (003)"
 Usage: #example
 * status = #final
 * subject = Reference(example-mes-fr-patient-001) "Pierre Durand"

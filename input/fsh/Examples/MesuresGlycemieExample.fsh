@@ -1,8 +1,8 @@
 Instance: example-mes-fr-observation-glucose-001
 InstanceOf: MesObservationGlucose
-Title: "Exemple de mesure de la glycémie"
+Title: "Exemple de mesure de la glycémie (001)"
 Usage: #example
-Description: "Exemple de mesure de la glycémie"
+Description: "Exemple de mesure de la glycémie (001)"
 * status = #final
 * subject = Reference(example-mes-fr-patient-001) "Pierre Durand"
   * type = "Patient"
