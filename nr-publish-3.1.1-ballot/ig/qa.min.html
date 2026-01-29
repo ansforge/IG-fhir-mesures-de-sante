@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Mesures</h1>
- <p>Generated Thu Jan 29 17:00:55 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.1.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Thu Jan 29 17:19:19 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.1.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.30</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.mesures, Canonical = https://interop.esante.gouv.fr/ig/fhir/mesures</td></tr>
@@ -1197,12 +1197,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.code&#8203;.coding[0]&#8203;.display (l155&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'HDL Cholesterol' for http://loinc.org#2085-9. Valid display is 'Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l54">log</a>, or see <a href="#vmi773" onClick="document.getElementById('vmi773').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi773" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#2085-9 ("HDL Cholesterol")]"
-16 0    : 0ms  : Check "http://loinc.org#2085-9"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://loinc.org#2085-9 ("HDL Cholesterol")]"
+15 0    : 0ms  : Check "http://loinc.org#2085-9"
+15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1222,12 +1222,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;.code&#8203;.coding[0]&#8203;.display (l243&#8203;/c10)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2571-8. Valid display is 'Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l57">log</a>, or see <a href="#vmi779" onClick="document.getElementById('vmi779').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi779" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
-15 0    : 0ms  : Check "http://loinc.org#2571-8"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
+0 0     : 0ms  : Check "http://loinc.org#2571-8"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1402,15 +1402,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Observation&#8203;.component[0]&#8203;.code&#8203;.coding[0]&#8203;.display (l35&#8203;/c8)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#8480-6 for language(s) 'fr-FR'. The display is 'Systolic blood pressure' the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l100">log</a>, or see <a href="#vmi811" onClick="document.getElementById('vmi811').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi811" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Validate "[http://loinc.org#8480-6 ("Systolic blood pressure")]"
-16 0    : 0ms  : Check "http://loinc.org#8480-6"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-16 0    : 0ms  : Code "8480-6" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#8480-6 ("Systolic blood pressure")]"
+0 0     : 0ms  : Check "http://loinc.org#8480-6"
+15 15   : 15ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+15 0    : 15ms : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+15 0    : 15ms : Code "8480-6" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1418,15 +1418,15 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Observation&#8203;.component[1]&#8203;.code&#8203;.coding[0]&#8203;.display (l64&#8203;/c8)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#8462-4 for language(s) 'fr-FR'. The display is 'Diastolic blood pressure' the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l102">log</a>, or see <a href="#vmi813" onClick="document.getElementById('vmi813').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi813" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-15 0    : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
-31 16   : 16ms : CodeSystem found: "http://loinc.org|2.81"
-31 0    : 16ms : Validate "[http://loinc.org#8462-4 ("Diastolic blood pressure")]"
-31 0    : 16ms : Check "http://loinc.org#8462-4"
-62 31   : 47ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-62 0    : 47ms : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
-62 0    : 47ms : Code "8462-4" found in http://loinc.org|2.81
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Validate "[http://loinc.org#8462-4 ("Diastolic blood pressure")]"
+0 0     : 0ms  : Check "http://loinc.org#8462-4"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "8462-4" found in http://loinc.org|2.81
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1444,12 +1444,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.display (l9&#8203;/c4)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'HDL Cholesterol' for http://loinc.org#2085-9. Valid display is 'Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l54">log</a>, or see <a href="#vmi815" onClick="document.getElementById('vmi815').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi815" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#2085-9 ("HDL Cholesterol")]"
-16 0    : 0ms  : Check "http://loinc.org#2085-9"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://loinc.org#2085-9 ("HDL Cholesterol")]"
+15 0    : 0ms  : Check "http://loinc.org#2085-9"
+15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1531,12 +1531,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.display (l9&#8203;/c4)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2571-8. Valid display is 'Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l57">log</a>, or see <a href="#vmi827" onClick="document.getElementById('vmi827').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi827" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
-15 0    : 0ms  : Check "http://loinc.org#2571-8"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
+0 0     : 0ms  : Check "http://loinc.org#2571-8"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -1990,12 +1990,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c105631)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'HDL Cholesterol' for http://loinc.org#2085-9. Valid display is 'Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l54">log</a>, or see <a href="#vmi901" onClick="document.getElementById('vmi901').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi901" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#2085-9 ("HDL Cholesterol")]"
-16 0    : 0ms  : Check "http://loinc.org#2085-9"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://loinc.org#2085-9 ("HDL Cholesterol")]"
+15 0    : 0ms  : Check "http://loinc.org#2085-9"
+15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -2006,12 +2006,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c183218)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'HDL Cholesterol' for http://loinc.org#2085-9. Valid display is 'Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l54">log</a>, or see <a href="#vmi904" onClick="document.getElementById('vmi904').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi904" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#2085-9 ("HDL Cholesterol")]"
-16 0    : 0ms  : Check "http://loinc.org#2085-9"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://loinc.org#2085-9 ("HDL Cholesterol")]"
+15 0    : 0ms  : Check "http://loinc.org#2085-9"
+15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -2114,12 +2114,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c103533)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2571-8. Valid display is 'Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l57">log</a>, or see <a href="#vmi923" onClick="document.getElementById('vmi923').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi923" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
-15 0    : 0ms  : Check "http://loinc.org#2571-8"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
+0 0     : 0ms  : Check "http://loinc.org#2571-8"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -2133,12 +2133,12 @@ hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/Implementati
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c180987)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'LDL Cholesterol' for http://loinc.org#2571-8. Valid display is 'Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique' (fr-FR) (for the language(s) 'fr-FR')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l57">log</a>, or see <a href="#vmi927" onClick="document.getElementById('vmi927').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi927" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
-15 0    : 0ms  : Check "http://loinc.org#2571-8"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=fr-FR, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#2571-8 ("LDL Cholesterol")]"
+0 0     : 0ms  : Check "http://loinc.org#2571-8"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">

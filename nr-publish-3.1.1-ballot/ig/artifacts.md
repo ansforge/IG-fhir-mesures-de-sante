@@ -71,8 +71,8 @@ These are example instances that show what data produced and consumed by systems
 | [Exemple de mesure de l'IMC](Observation-example-mes-fr-observation-bmi-001.md) | Exemple de mesure de l’IMC |
 | [Exemple de mesure de la fréquence cardiaque](Observation-example-mes-fr-observation-heartrate-001.md) | Exemple de mesure de la fréquence cardiaque |
 | [Exemple de mesure de la fréquence respiratoire](Observation-example-mes-fr-observation-resp-rate-001.md) | Exemple de mesure de la fréquence respiratoire |
-| [Exemple de mesure de la glycémie](Observation-example-mes-fr-observation-glucose-001.md) | Exemple de mesure de la glycémie |
 | [Exemple de mesure de la glycémie](Observation-example-mes-fr-observation-glycemia-003.md) | Exemple de mesure de la glycémie |
+| [Exemple de mesure de la glycémie (001)](Observation-example-mes-fr-observation-glucose-001.md) | Exemple de mesure de la glycémie (001) |
 | [Exemple de mesure de la pression artérielle](Observation-example-mes-fr-observation-bp-001.md) | Exemple de mesure de la pression artérielle |
 | [Exemple de mesure de la saturation en oxygène](Observation-example-mes-fr-observation-oxygen-sat-001.md) | Exemple de mesure de la saturation en oxygène |
 | [Exemple de mesure de la sévérité de la douleur](Observation-example-mes-fr-observation-pain-severity-001.md) | Exemple de mesure de la sévérité de la douleur |
@@ -82,7 +82,7 @@ These are example instances that show what data produced and consumed by systems
 | [Exemple de mesure du cholestérol HDL](Observation-example-mes-fr-observation-cholesterol-hdl-003.md) | Exemple de mesure du cholestérol HDL |
 | [Exemple de mesure du cholestérol LDL](Observation-example-mes-fr-observation-cholesterol-ldl-003.md) | Exemple de mesure du cholestérol LDL |
 | [Exemple de mesure du cholestérol total](Observation-example-mes-fr-observation-cholesterol-total-003.md) | Exemple de mesure du cholestérol total |
-| [Exemple de mesure du cholestérol triglycérides](Observation-example-mes-fr-observation-cholesterol-trigly-003.md) | Exemple de mesure du cholestérol triglycérides |
+| [Exemple de mesure du cholestérol triglycérides (003)](Observation-example-mes-fr-observation-cholesterol-trigly-003.md) | Exemple de mesure du cholestérol triglycérides (003) |
 | [Exemple de mesure du nombre de pas par jour](Observation-example-mes-fr-observation-steps-by-day-001.md) | Exemple de mesure du nombre de pas par jour |
 | [Exemple de mesure du périmètre crânien](Observation-example-mes-fr-observation-head-circumference-001.md) | Exemple de mesure du périmètre crânien |
 | [Exemple de mesure du tour de taille](Observation-example-mes-fr-observation-waist-circum-001.md) | Exemple de mesure du tour de taille |

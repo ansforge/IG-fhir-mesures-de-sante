@@ -1,10 +1,10 @@
-# Exemple de mesure de la glycémie - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Exemple de mesure de la glycémie (001) - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Exemple de mesure de la glycémie**
+* **Exemple de mesure de la glycémie (001)**
 
-## Example Observation: Exemple de mesure de la glycémie
+## Example Observation: Exemple de mesure de la glycémie (001)
 
 Profil: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
 

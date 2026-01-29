@@ -1,10 +1,10 @@
-# Exemple de mesure du cholestérol triglycérides - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Exemple de mesure du cholestérol triglycérides (003) - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Exemple de mesure du cholestérol triglycérides**
+* **Exemple de mesure du cholestérol triglycérides (003)**
 
-## Example Observation: Exemple de mesure du cholestérol triglycérides
+## Example Observation: Exemple de mesure du cholestérol triglycérides (003)
 
 Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md)
 
