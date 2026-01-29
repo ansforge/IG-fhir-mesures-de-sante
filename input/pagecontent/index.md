@@ -11,6 +11,17 @@ This implementation guide contains the profiles to share vital-signs for the Fre
 </blockquote>
 {% endif %}
 
+{% if site.data.info.releaselabel == 'ballot' %}
+<div style="width: 65%">
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b> Cette version du guide d'implémentation est en concertation. La version officielle est accessible à l'adresse https://interop.esante.gouv.fr/ig/fhir/mesures</b>
+</p>
+</blockquote>
+</div>
+{% endif %}
+
+
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
 </div>
