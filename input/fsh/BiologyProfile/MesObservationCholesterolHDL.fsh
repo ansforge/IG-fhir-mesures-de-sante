@@ -10,7 +10,7 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* code = http://loinc.org#2085-9 "HDL Cholesterol"
+* code = http://loinc.org#2085-9 "Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique"
 
 
 * method ^short = "La méthode de mesure du cholestérol HDL est fortement conseillée pour déterminer si des résultats sont comparables et ainsi utiliser cette donnée."
