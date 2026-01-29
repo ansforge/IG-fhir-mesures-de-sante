@@ -1,0 +1,83 @@
+# ans.fhir.fr.mesures#3.1.1: Guide d'implémentation FHIR - Mesures de santé
+
+## Pages
+
+* [Accueil](index.md)
+* [Terminologies](Terminologies.md)
+* [Le profil FHIR des objets connectés](Le-profil-FHIR-des-objets-connectes.md)
+* [Les profils FHIR des paramètres biologiques](profils-biologie.md)
+* [Artifacts Summary](artifacts.md)
+* [Le flux d'alimentation des signes vitaux](flux-alimentation-signes-vitaux.md)
+* [Historique des changements](changes.md)
+* [Les profils FHIR des signes vitaux](profils-signes-vitaux.md)
+* [Téléchargements et usages](downloads.md)
+
+## Resources
+
+### ValueSets
+
+* [Méthode de mesures de glycémie sanguine ou interstitielle](ValueSet-method-glucose-vs.md)
+
+### Resource Profiles
+
+* [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
+* [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
+* [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
+* [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-bmi.md)
+* [Température](StructureDefinition-mesures-fr-observation-body-temperature.md)
+* [Poids](StructureDefinition-mesures-fr-observation-body-weight.md)
+* [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md)
+* [Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md)
+* [Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartrate.md)
+* [Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxygen-sat.md)
+* [Fréquence respiratoire](StructureDefinition-mesures-fr-observation-resp-rate.md)
+* [Cholestérol - aspect](StructureDefinition-mesures-observation-cholesterol-aspect.md)
+* [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol-hdl.md)
+* [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol-ldl.md)
+* [Cholestérol - total](StructureDefinition-mesures-observation-cholesterol-total.md)
+* [Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md)
+* [Glycémie](StructureDefinition-mesures-observation-glucose.md)
+* [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-hb1ac.md)
+* [Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md)
+* [Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md)
+* [Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md)
+* [Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
+
+### Extensions
+
+* [Moment de la mesure](StructureDefinition-mesures-moment-of-measurement.md)
+* [Nombre de jours](StructureDefinition-mesures-number-of-days.md)
+* [Valeur originale](StructureDefinition-mesures-original-data.md)
+* [Raison de la mesure](StructureDefinition-mesures-reason-for-measurement.md)
+
+### ImplementationGuides
+
+* [Guide d'implémentation FHIR - Mesures de santé](index.md)
+
+### Examples
+
+* [bundle-example-bio (Bundle)](Bundle-bundle-example-bio.md)
+* [bundle-example-body-weight (Bundle)](Bundle-bundle-example-body-weight.md)
+* [phd-74E8FFFEFF051C00 (Device)](Device-phd-74E8FFFEFF051C00.md)
+* [cholesterol-dr (DiagnosticReport)](DiagnosticReport-cholesterol-dr.md)
+* [ExampleMesFrObservationBP001 (Observation)](Observation-ExampleMesFrObservationBP001.md)
+* [ExampleMesFrObservationBmi001 (Observation)](Observation-ExampleMesFrObservationBmi001.md)
+* [ExampleMesFrObservationBodyHeight001 (Observation)](Observation-ExampleMesFrObservationBodyHeight001.md)
+* [ExampleMesFrObservationBodyTemperature001 (Observation)](Observation-ExampleMesFrObservationBodyTemperature001.md)
+* [ExampleMesFrObservationBodyWeight001 (Observation)](Observation-ExampleMesFrObservationBodyWeight001.md)
+* [ExampleMesFrObservationHeartrate001 (Observation)](Observation-ExampleMesFrObservationHeartrate001.md)
+* [ExampleMesFrOxygenSat (Observation)](Observation-ExampleMesFrOxygenSat.md)
+* [ExampleMesFrRespRate (Observation)](Observation-ExampleMesFrRespRate.md)
+* [ExampleMesObservationGlucose001 (Observation)](Observation-ExampleMesObservationGlucose001.md)
+* [ExampleMesObservationHeadCircumference001 (Observation)](Observation-ExampleMesObservationHeadCircumference001.md)
+* [ExampleMesObservationPainSeverity001 (Observation)](Observation-ExampleMesObservationPainSeverity001.md)
+* [ExampleMesObservationStepsByDay001 (Observation)](Observation-ExampleMesObservationStepsByDay001.md)
+* [ExampleObservationWaistCircumference001 (Observation)](Observation-ExampleObservationWaistCircumference001.md)
+* [cholesterol-hdl-example (Observation)](Observation-cholesterol-hdl-example.md)
+* [cholesterol-ldl-example (Observation)](Observation-cholesterol-ldl-example.md)
+* [cholesterol-total-example (Observation)](Observation-cholesterol-total-example.md)
+* [cholesterol-trigly-example (Observation)](Observation-cholesterol-trigly-example.md)
+* [exemple-observation-hb1ac (Observation)](Observation-exemple-observation-hb1ac.md)
+* [glycemia-example (Observation)](Observation-glycemia-example.md)
+* [ExamplefrPatient001 (Patient)](Patient-ExamplefrPatient001.md)
+* [ExampleFrPractitionner001 (Practitioner)](Practitioner-ExampleFrPractitionner001.md)

@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ca71dd64-3ea5-4152-a2c6-b532b724e2d9-92",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ca71dd64-3ea5-4152-a2c6-b532b724e2d9-92",
+  "name" : "UnionSNOMEDCTBodyStructuresAndSNOMEDCTBodyStructures",
+  "title" : "Union of SNOMED CT Body Structures And SNOMED CT Body Structures",
+  "status" : "draft",
+  "date" : "2026-01-29T14:27:15+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "442083009"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ca71dd64-3ea5-4152-a2c6-b532b724e2d9-102",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ca71dd64-3ea5-4152-a2c6-b532b724e2d9-102",
+  "name" : "IntersectionObservationMethodsAndObservationMethods",
+  "title" : "Intersection of Observation Methods And Observation Methods",
+  "status" : "draft",
+  "date" : "2026-01-29T14:27:15+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "272394005"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "129264002"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "386053000"
+      }]
+    }]
+  }
+}

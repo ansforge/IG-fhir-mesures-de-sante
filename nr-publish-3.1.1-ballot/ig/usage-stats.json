@@ -1,0 +1,265 @@
+{
+  "package": "ans.fhir.fr.mesures",
+  "version": "3.1.1",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "FR",
+  "extensions": [
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement",
+      "title": "Moment de la mesure",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days",
+      "title": "Nombre de jours",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data",
+      "title": "Valeur originale",
+      "types": [
+        "boolean",
+        "CodeableConcept",
+        "Quantity",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
+      "title": "Raison de la mesure",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation",
+        "title": "Bundle d\u0027alimentation"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie",
+        "title": "Bundle d\u0027alimentation des mesures de biologie"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report",
+        "title": "DiagnosticReport mesures biologie"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi",
+        "title": "Indice de Masse Corporelle"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature",
+        "title": "Température"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight",
+        "title": "Poids"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight",
+        "title": "Taille"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp",
+        "title": "Pression Artérielle"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate",
+        "title": "Fréquence Cardiaque"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat",
+        "title": "Saturation en Oxygène"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate",
+        "title": "Fréquence respiratoire"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect",
+        "title": "Cholestérol - aspect"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl",
+        "title": "Cholestérol - HDL"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl",
+        "title": "Cholestérol - LDL"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total",
+        "title": "Cholestérol - total"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly",
+        "title": "Cholestérol - triglycerides"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose",
+        "title": "Glycémie"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac",
+        "title": "Hémoglobine glyquée (Hb1Ac)"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference",
+        "title": "Périmètre Crânien"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity",
+        "title": "Niveau de douleur"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day",
+        "title": "Nombre de pas par jour"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference",
+        "title": "Tour de taille"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext": [
+      "Observation"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position": [
+      "Observation"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion": [
+      "Observation"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement": [
+      "Bundle.entry.resource",
+      "Observation"
+    ]
+  }
+}
