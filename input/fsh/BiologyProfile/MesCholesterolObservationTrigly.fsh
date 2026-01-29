@@ -9,7 +9,7 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* code = http://loinc.org#2571-8 "LDL Cholesterol"
+* code = http://loinc.org#2571-8 "Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique"
 
 
 * value[x] only Quantity
