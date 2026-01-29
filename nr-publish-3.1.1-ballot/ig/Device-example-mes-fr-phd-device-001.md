@@ -1,0 +1,224 @@
+# Exemple de dispositif PHD : un oxymètre Nonin - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Exemple de dispositif PHD : un oxymètre Nonin**
+
+## Example Device: Exemple de dispositif PHD : un oxymètre Nonin
+
+Profil: [PhdDevice](http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html)
+
+**identifier**: IEEE 11073 System Identifier/74-E8-FF-FE-FF-05-1C-00, Bluetooth MAC address/00-1C-05-FF-E8-74
+
+**manufacturer**: Nonin_Medical_Inc.
+
+**serialNumber**: 501900083
+
+**modelNumber**: Model 3230
+
+**type**: MDC_MOC_VMS_MDS_SIMP
+
+### Specializations
+
+| | | |
+| :--- | :--- | :--- |
+| - | **SystemType** | **Version** |
+| * | MDC_DEV_SPEC_PROFILE_PULS_OXIM: Pulse Oximeter | 1 |
+
+> **version****type**: MDC_ID_PROD_SPEC_FW: Firmware revision**value**: r2.1
+
+> **version****type**: MDC_ID_PROD_SPEC_SW: Software revision**value**: r1.5 9.7
+
+> **version****type**: MDC_ID_PROD_SPEC_HW: Hardware revision**value**: r1.0
+
+> **version****type**: MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version**value**: 6.0
+
+> **property****type**: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: certified device list as transport-specialization combo**valueCode**: BTLE Pulse Oximeter certified
+
+> **property****type**: regulation-status**valueCode**: Device is Regulated
+
+> **property****type**: MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol**valueCode**: MDC_TIME_SYNC_NONE:
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Device",
+  "id" : "example-mes-fr-phd-device-001",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"]
+  },
+  "identifier" : [
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers",
+            "code" : "SYSID"
+          }
+        ]
+      },
+      "system" : "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680",
+      "value" : "74-E8-FF-FE-FF-05-1C-00"
+    },
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers",
+            "code" : "BTMAC"
+          }
+        ]
+      },
+      "system" : "http://hl7.org/fhir/sid/eui-48/bluetooth",
+      "value" : "00-1C-05-FF-E8-74"
+    }
+  ],
+  "manufacturer" : "Nonin_Medical_Inc.",
+  "serialNumber" : "501900083",
+  "modelNumber" : "Model 3230",
+  "type" : {
+    "coding" : [
+      {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "65573"
+      }
+    ],
+    "text" : "MDC_MOC_VMS_MDS_SIMP"
+  },
+  "specialization" : [
+    {
+      "systemType" : {
+        "coding" : [
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "528388"
+          }
+        ],
+        "text" : "MDC_DEV_SPEC_PROFILE_PULS_OXIM: Pulse Oximeter"
+      },
+      "version" : "1"
+    }
+  ],
+  "version" : [
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "531976"
+          }
+        ],
+        "text" : "MDC_ID_PROD_SPEC_FW: Firmware revision"
+      },
+      "value" : "r2.1"
+    },
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "531975"
+          }
+        ],
+        "text" : "MDC_ID_PROD_SPEC_SW: Software revision"
+      },
+      "value" : "r1.5 9.7"
+    },
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "531974"
+          }
+        ],
+        "text" : "MDC_ID_PROD_SPEC_HW: Hardware revision"
+      },
+      "value" : "r1.0"
+    },
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "532352"
+          }
+        ],
+        "text" : "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version"
+      },
+      "value" : "6.0"
+    }
+  ],
+  "property" : [
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "532353"
+          }
+        ],
+        "text" : "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: certified device list as transport-specialization combo"
+      },
+      "valueCode" : [
+        {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD",
+              "code" : "32772"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7",
+            "code" : "532354.0"
+          }
+        ],
+        "text" : "regulation-status"
+      },
+      "valueCode" : [
+        {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+              "code" : "N"
+            }
+          ],
+          "text" : "Device is Regulated"
+        }
+      ]
+    },
+    {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "68220"
+          }
+        ],
+        "text" : "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"
+      },
+      "valueCode" : [
+        {
+          "coding" : [
+            {
+              "system" : "urn:iso:std:iso:11073:10101",
+              "code" : "532224"
+            }
+          ],
+          "text" : "MDC_TIME_SYNC_NONE:"
+        }
+      ]
+    }
+  ]
+}
+
+```

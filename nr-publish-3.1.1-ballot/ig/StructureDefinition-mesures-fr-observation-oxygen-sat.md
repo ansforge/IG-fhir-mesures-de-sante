@@ -17,7 +17,7 @@ Profil de la ressource Observation pour définir une Saturation en Oxygène (acr
 **Utilisations:**
 
 * Utiliser ce Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Exemples pour ce Profil: [Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md)
+* Exemples pour ce Profil: [Observation/example-mes-fr-observation-oxygen-sat-001](Observation-example-mes-fr-observation-oxygen-sat-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-oxygen-sat)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationOxygenSat",
   "title" : "Saturation en Oxygène",
   "status" : "active",
-  "date" : "2026-01-29T16:26:55+00:00",
+  "date" : "2026-01-29T16:54:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

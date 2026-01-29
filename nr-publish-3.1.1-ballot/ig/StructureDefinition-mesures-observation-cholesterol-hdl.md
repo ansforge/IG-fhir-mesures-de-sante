@@ -18,7 +18,7 @@ Profil biologie de la ressource Observation pour définir le cholestérol HDL
 
 * Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
 * Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
-* Exemples pour ce Profil: [Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md)
+* Exemples pour ce Profil: [Observation/example-mes-fr-observation-cholesterol-hdl-003](Observation-example-mes-fr-observation-cholesterol-hdl-003.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-hdl)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolHDL",
   "title" : "Cholestérol - HDL",
   "status" : "active",
-  "date" : "2026-01-29T16:26:55+00:00",
+  "date" : "2026-01-29T16:54:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

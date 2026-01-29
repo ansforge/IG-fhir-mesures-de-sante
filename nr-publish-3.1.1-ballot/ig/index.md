@@ -128,7 +128,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * IEEE maintains copyright on all content from IEEE 11073 standards. All rights reserved. Implementers should obtain official copies of all applicable standards documents directly from IEEE. The inclusion of IEEE 11073 terminology codes and definitions in HL7 messages and related implementation guides is permitted under existing agreements. For permission regarding any other usage, please contact IEEE at copyrights@ieee.org.
 
-* [ISO/IEEE 11073 Medical Device Communication Nomenclature](http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html): [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md) and [Device/phd-74E8FFFEFF051C00](Device-phd-74E8FFFEFF051C00.md)
+* [ISO/IEEE 11073 Medical Device Communication Nomenclature](http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html): [Bundle/example-mes-fr-bundle-body-weight](Bundle-example-mes-fr-bundle-body-weight.md) and [Device/example-mes-fr-phd-device-001](Device-example-mes-fr-phd-device-001.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
@@ -138,12 +138,12 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html): [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)... Show 25 more, [MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md), [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md), [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md), [MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md), [Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md), [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md), [Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md), [Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md), [Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md), [Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md), [Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md), [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md), [Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md), [Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md), [Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md), [Observation/cholesterol-ldl-example](Observation-cholesterol-ldl-example.md), [Observation/cholesterol-total-example](Observation-cholesterol-total-example.md), [Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md), [Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html): [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md), [Bundle/example-mes-fr-bundle-body-weight](Bundle-example-mes-fr-bundle-body-weight.md)... Show 25 more, [MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md), [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md), [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md), [MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md), [Observation/example-mes-fr-observation-bmi-001](Observation-example-mes-fr-observation-bmi-001.md), [Observation/example-mes-fr-observation-body-height-001](Observation-example-mes-fr-observation-body-height-001.md), [Observation/example-mes-fr-observation-body-temperature-001](Observation-example-mes-fr-observation-body-temperature-001.md), [Observation/example-mes-fr-observation-body-weight-001](Observation-example-mes-fr-observation-body-weight-001.md), [Observation/example-mes-fr-observation-bp-001](Observation-example-mes-fr-observation-bp-001.md), [Observation/example-mes-fr-observation-cholesterol-hdl-003](Observation-example-mes-fr-observation-cholesterol-hdl-003.md), [Observation/example-mes-fr-observation-cholesterol-ldl-003](Observation-example-mes-fr-observation-cholesterol-ldl-003.md), [Observation/example-mes-fr-observation-cholesterol-total-003](Observation-example-mes-fr-observation-cholesterol-total-003.md), [Observation/example-mes-fr-observation-cholesterol-trigly-003](Observation-example-mes-fr-observation-cholesterol-trigly-003.md), [Observation/example-mes-fr-observation-glucose-001](Observation-example-mes-fr-observation-glucose-001.md), [Observation/example-mes-fr-observation-glycemia-003](Observation-example-mes-fr-observation-glycemia-003.md), [Observation/example-mes-fr-observation-hb1ac-001](Observation-example-mes-fr-observation-hb1ac-001.md), [Observation/example-mes-fr-observation-head-circumference-001](Observation-example-mes-fr-observation-head-circumference-001.md), [Observation/example-mes-fr-observation-heartrate-001](Observation-example-mes-fr-observation-heartrate-001.md), [Observation/example-mes-fr-observation-oxygen-sat-001](Observation-example-mes-fr-observation-oxygen-sat-001.md), [Observation/example-mes-fr-observation-pain-severity-001](Observation-example-mes-fr-observation-pain-severity-001.md), [Observation/example-mes-fr-observation-resp-rate-001](Observation-example-mes-fr-observation-resp-rate-001.md), [Observation/example-mes-fr-observation-steps-by-day-001](Observation-example-mes-fr-observation-steps-by-day-001.md) and [Observation/example-mes-fr-observation-waist-circum-001](Observation-example-mes-fr-observation-waist-circum-001.md)
 
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)... Show 30 more, [DiagnosticReport/cholesterol-dr](DiagnosticReport-cholesterol-dr.md), [MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md), [MesObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md), [MesObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md), [MesObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md), [MesObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md), [MesObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md), [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md), [MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md), [MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md), [MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md), [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md), [MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md), [Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md), [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md), [Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md), [Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md), [Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md), [Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md), [Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md), [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md), [Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md), [Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md), [Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md), [Observation/cholesterol-ldl-example](Observation-cholesterol-ldl-example.md), [Observation/cholesterol-total-example](Observation-cholesterol-total-example.md), [Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md) and [Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md)
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md), [Bundle/example-mes-fr-bundle-body-weight](Bundle-example-mes-fr-bundle-body-weight.md)... Show 30 more, [DiagnosticReport/example-mes-fr-diagnostic-report-cholesterol-003](DiagnosticReport-example-mes-fr-diagnostic-report-cholesterol-003.md), [MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md), [MesObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md), [MesObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md), [MesObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md), [MesObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md), [MesObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md), [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md), [MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md), [MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md), [MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md), [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md), [MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md), [Observation/example-mes-fr-observation-bmi-001](Observation-example-mes-fr-observation-bmi-001.md), [Observation/example-mes-fr-observation-body-height-001](Observation-example-mes-fr-observation-body-height-001.md), [Observation/example-mes-fr-observation-body-temperature-001](Observation-example-mes-fr-observation-body-temperature-001.md), [Observation/example-mes-fr-observation-body-weight-001](Observation-example-mes-fr-observation-body-weight-001.md), [Observation/example-mes-fr-observation-bp-001](Observation-example-mes-fr-observation-bp-001.md), [Observation/example-mes-fr-observation-cholesterol-hdl-003](Observation-example-mes-fr-observation-cholesterol-hdl-003.md), [Observation/example-mes-fr-observation-cholesterol-ldl-003](Observation-example-mes-fr-observation-cholesterol-ldl-003.md), [Observation/example-mes-fr-observation-cholesterol-total-003](Observation-example-mes-fr-observation-cholesterol-total-003.md), [Observation/example-mes-fr-observation-cholesterol-trigly-003](Observation-example-mes-fr-observation-cholesterol-trigly-003.md), [Observation/example-mes-fr-observation-hb1ac-001](Observation-example-mes-fr-observation-hb1ac-001.md), [Observation/example-mes-fr-observation-head-circumference-001](Observation-example-mes-fr-observation-head-circumference-001.md), [Observation/example-mes-fr-observation-heartrate-001](Observation-example-mes-fr-observation-heartrate-001.md), [Observation/example-mes-fr-observation-oxygen-sat-001](Observation-example-mes-fr-observation-oxygen-sat-001.md), [Observation/example-mes-fr-observation-pain-severity-001](Observation-example-mes-fr-observation-pain-severity-001.md), [Observation/example-mes-fr-observation-resp-rate-001](Observation-example-mes-fr-observation-resp-rate-001.md), [Observation/example-mes-fr-observation-steps-by-day-001](Observation-example-mes-fr-observation-steps-by-day-001.md) and [Observation/example-mes-fr-observation-waist-circum-001](Observation-example-mes-fr-observation-waist-circum-001.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
@@ -153,8 +153,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)... Show 15 more, [Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md), [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md), [Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md), [Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md), [Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md), [Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md), [Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md), [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md), [Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md), [Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md), [Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
-* [ObservationInterpretation](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ObservationInterpretation.html): [MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md)... Show 5 more, [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md), [Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md) and [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md), [Bundle/example-mes-fr-bundle-body-weight](Bundle-example-mes-fr-bundle-body-weight.md)... Show 15 more, [Observation/example-mes-fr-observation-bmi-001](Observation-example-mes-fr-observation-bmi-001.md), [Observation/example-mes-fr-observation-body-height-001](Observation-example-mes-fr-observation-body-height-001.md), [Observation/example-mes-fr-observation-body-temperature-001](Observation-example-mes-fr-observation-body-temperature-001.md), [Observation/example-mes-fr-observation-body-weight-001](Observation-example-mes-fr-observation-body-weight-001.md), [Observation/example-mes-fr-observation-bp-001](Observation-example-mes-fr-observation-bp-001.md), [Observation/example-mes-fr-observation-glucose-001](Observation-example-mes-fr-observation-glucose-001.md), [Observation/example-mes-fr-observation-glycemia-003](Observation-example-mes-fr-observation-glycemia-003.md), [Observation/example-mes-fr-observation-hb1ac-001](Observation-example-mes-fr-observation-hb1ac-001.md), [Observation/example-mes-fr-observation-head-circumference-001](Observation-example-mes-fr-observation-head-circumference-001.md), [Observation/example-mes-fr-observation-heartrate-001](Observation-example-mes-fr-observation-heartrate-001.md), [Observation/example-mes-fr-observation-oxygen-sat-001](Observation-example-mes-fr-observation-oxygen-sat-001.md), [Observation/example-mes-fr-observation-pain-severity-001](Observation-example-mes-fr-observation-pain-severity-001.md), [Observation/example-mes-fr-observation-resp-rate-001](Observation-example-mes-fr-observation-resp-rate-001.md), [Observation/example-mes-fr-observation-steps-by-day-001](Observation-example-mes-fr-observation-steps-by-day-001.md) and [Observation/example-mes-fr-observation-waist-circum-001](Observation-example-mes-fr-observation-waist-circum-001.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ObservationInterpretation.html): [MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md)... Show 5 more, [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md), [Observation/example-mes-fr-observation-bmi-001](Observation-example-mes-fr-observation-bmi-001.md) and [Observation/example-mes-fr-observation-bp-001](Observation-example-mes-fr-observation-bp-001.md)
 
 
 
@@ -170,7 +170,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-01-29T16:26:55+00:00",
+  "date" : "2026-01-29T16:54:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -957,97 +957,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Bundle"
-          }
-        ],
-        "reference" : {
-          "reference" : "Bundle/bundle-example-bio"
-        },
-        "name" : "bundle-example-bio",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Bundle"
-          }
-        ],
-        "reference" : {
-          "reference" : "Bundle/bundle-example-body-weight"
-        },
-        "name" : "bundle-example-body-weight",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "DiagnosticReport"
-          }
-        ],
-        "reference" : {
-          "reference" : "DiagnosticReport/cholesterol-dr"
-        },
-        "name" : "cholesterol-dr",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/cholesterol-hdl-example"
-        },
-        "name" : "cholesterol-hdl-example",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/cholesterol-ldl-example"
-        },
-        "name" : "cholesterol-ldl-example",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/cholesterol-total-example"
-        },
-        "name" : "cholesterol-total-example",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/cholesterol-trigly-example"
-        },
-        "name" : "cholesterol-trigly-example",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1132,26 +1041,42 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
+            "valueString" : "Bundle"
           }
         ],
         "reference" : {
-          "reference" : "Patient/ExamplefrPatient001"
+          "reference" : "Bundle/example-mes-fr-bundle-bio-003"
         },
-        "name" : "ExamplefrPatient001",
-        "exampleBoolean" : true
+        "name" : "Exemple de bundle FHIR pour un bilan lipidique et une glycémie",
+        "description" : "Exemple de bundle FHIR pour un bilan lipidique et une glycémie",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"
       },
       {
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Practitioner"
+            "valueString" : "Bundle"
           }
         ],
         "reference" : {
-          "reference" : "Practitioner/ExampleFrPractitionner001"
+          "reference" : "Bundle/example-mes-fr-bundle-body-weight"
         },
-        "name" : "ExampleFrPractitionner001",
+        "name" : "Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD",
+        "description" : "Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/example-mes-fr-phd-device-001"
+        },
+        "name" : "Exemple de dispositif PHD : un oxymètre Nonin",
+        "description" : "Exemple de dispositif PHD : un oxymètre Nonin",
         "exampleBoolean" : true
       },
       {
@@ -1162,9 +1087,10 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "Observation/ExampleMesFrObservationBmi001"
+          "reference" : "Observation/example-mes-fr-observation-bmi-001"
         },
-        "name" : "ExampleMesFrObservationBmi001",
+        "name" : "Exemple de mesure de l'IMC",
+        "description" : "Exemple de mesure de l'IMC",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi"
       },
       {
@@ -1175,61 +1101,10 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "Observation/ExampleMesFrObservationBodyHeight001"
+          "reference" : "Observation/example-mes-fr-observation-heartrate-001"
         },
-        "name" : "ExampleMesFrObservationBodyHeight001",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ExampleMesFrObservationBodyTemperature001"
-        },
-        "name" : "ExampleMesFrObservationBodyTemperature001",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ExampleMesFrObservationBodyWeight001"
-        },
-        "name" : "ExampleMesFrObservationBodyWeight001",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ExampleMesFrObservationBP001"
-        },
-        "name" : "ExampleMesFrObservationBP001",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ExampleMesFrObservationHeartrate001"
-        },
-        "name" : "ExampleMesFrObservationHeartrate001",
+        "name" : "Exemple de mesure de la fréquence cardiaque",
+        "description" : "Exemple de mesure de la fréquence cardiaque",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate"
       },
       {
@@ -1240,22 +1115,10 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "Observation/ExampleMesFrOxygenSat"
+          "reference" : "Observation/example-mes-fr-observation-resp-rate-001"
         },
-        "name" : "ExampleMesFrOxygenSat",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ExampleMesFrRespRate"
-        },
-        "name" : "ExampleMesFrRespRate",
+        "name" : "Exemple de mesure de la fréquence respiratoire",
+        "description" : "Exemple de mesure de la fréquence respiratoire",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate"
       },
       {
@@ -1266,9 +1129,10 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "Observation/ExampleMesObservationGlucose001"
+          "reference" : "Observation/example-mes-fr-observation-glycemia-003"
         },
-        "name" : "ExampleMesObservationGlucose001",
+        "name" : "Exemple de mesure de la glycémie",
+        "description" : "Exemple de mesure de la glycémie",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
       },
       {
@@ -1279,10 +1143,11 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "Observation/ExampleMesObservationHeadCircumference001"
+          "reference" : "Observation/example-mes-fr-observation-glucose-001"
         },
-        "name" : "ExampleMesObservationHeadCircumference001",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"
+        "name" : "Exemple de mesure de la glycémie",
+        "description" : "Exemple de mesure de la glycémie",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
       },
       {
         "extension" : [
@@ -1292,9 +1157,38 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "Observation/ExampleMesObservationPainSeverity001"
+          "reference" : "Observation/example-mes-fr-observation-bp-001"
         },
-        "name" : "ExampleMesObservationPainSeverity001",
+        "name" : "Exemple de mesure de la pression artérielle",
+        "description" : "Exemple de mesure de la pression artérielle",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-oxygen-sat-001"
+        },
+        "name" : "Exemple de mesure de la saturation en oxygène",
+        "description" : "Exemple de mesure de la saturation en oxygène",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-pain-severity-001"
+        },
+        "name" : "Exemple de mesure de la sévérité de la douleur",
+        "description" : "Exemple de mesure de la sévérité de la douleur",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity"
       },
       {
@@ -1305,9 +1199,108 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "Observation/ExampleMesObservationStepsByDay001"
+          "reference" : "Observation/example-mes-fr-observation-body-temperature-001"
         },
-        "name" : "ExampleMesObservationStepsByDay001",
+        "name" : "Exemple de mesure de la température corporelle",
+        "description" : "Exemple de mesure de la température corporelle",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-body-weight-001"
+        },
+        "name" : "Exemple de mesure de poids corporel",
+        "description" : "Exemple de mesure de poids corporel",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-body-height-001"
+        },
+        "name" : "Exemple de mesure de taille corporelle",
+        "description" : "Exemple de mesure de taille corporelle",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-cholesterol-hdl-003"
+        },
+        "name" : "Exemple de mesure du cholestérol HDL",
+        "description" : "Exemple de mesure du cholestérol HDL",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-cholesterol-ldl-003"
+        },
+        "name" : "Exemple de mesure du cholestérol LDL",
+        "description" : "Exemple de mesure du cholestérol LDL",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-cholesterol-total-003"
+        },
+        "name" : "Exemple de mesure du cholestérol total",
+        "description" : "Exemple de mesure du cholestérol total",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-cholesterol-trigly-003"
+        },
+        "name" : "Exemple de mesure du cholestérol triglycérides",
+        "description" : "Exemple de mesure du cholestérol triglycérides",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-steps-by-day-001"
+        },
+        "name" : "Exemple de mesure du nombre de pas par jour",
+        "description" : "Exemple de mesure du nombre de pas par jour",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day"
       },
       {
@@ -1318,9 +1311,24 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "Observation/ExampleObservationWaistCircumference001"
+          "reference" : "Observation/example-mes-fr-observation-head-circumference-001"
         },
-        "name" : "ExampleObservationWaistCircumference001",
+        "name" : "Exemple de mesure du périmètre crânien",
+        "description" : "Exemple de mesure du périmètre crânien",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mes-fr-observation-waist-circum-001"
+        },
+        "name" : "Exemple de mesure du tour de taille",
+        "description" : "Exemple de mesure du tour de taille",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"
       },
       {
@@ -1331,11 +1339,53 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
-          "reference" : "Observation/exemple-observation-hb1ac"
+          "reference" : "Observation/example-mes-fr-observation-hb1ac-001"
         },
         "name" : "Exemple de mesure Hb1Ac",
         "description" : "Observation d'une hémoglobine glyquée mesurée à 6.5 %",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/example-mes-fr-patient-001"
+        },
+        "name" : "Exemple de patient français",
+        "description" : "Exemple de patient français (ressource Patient)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/example-mes-fr-practitionner-001"
+        },
+        "name" : "Exemple de practicien français",
+        "description" : "Exemple de practicien français (ressource Practitioner)",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DiagnosticReport"
+          }
+        ],
+        "reference" : {
+          "reference" : "DiagnosticReport/example-mes-fr-diagnostic-report-cholesterol-003"
+        },
+        "name" : "Exemple de rapport diagnostique de bilan lipidique",
+        "description" : "Exemple de rapport diagnostique de bilan lipidique",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"
       },
       {
         "extension" : [
@@ -1364,19 +1414,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "name" : "Fréquence respiratoire",
         "description" : "Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR)",
         "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/glycemia-example"
-        },
-        "name" : "glycemia-example",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
       },
       {
         "extension" : [
@@ -1489,19 +1526,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "name" : "Nombre de pas par jour",
         "description" : "Profil de la ressource Observation pour définir un nombre de pas par jour",
         "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Device"
-          }
-        ],
-        "reference" : {
-          "reference" : "Device/phd-74E8FFFEFF051C00"
-        },
-        "name" : "phd-74E8FFFEFF051C00",
-        "exampleBoolean" : true
       },
       {
         "extension" : [

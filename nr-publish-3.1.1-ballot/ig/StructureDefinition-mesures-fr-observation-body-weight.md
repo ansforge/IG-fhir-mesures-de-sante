@@ -17,7 +17,7 @@ Profil de la ressource Observation pour définir un poids
 **Utilisations:**
 
 * Utiliser ce Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Exemples pour ce Profil: [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md)
+* Exemples pour ce Profil: [Observation/example-mes-fr-observation-body-weight-001](Observation-example-mes-fr-observation-body-weight-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-body-weight)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationBodyWeight",
   "title" : "Poids",
   "status" : "active",
-  "date" : "2026-01-29T16:26:55+00:00",
+  "date" : "2026-01-29T16:54:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

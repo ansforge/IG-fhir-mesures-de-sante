@@ -1,0 +1,176 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/mesures/Bundle/example-mes-fr-bundle-body-weight> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-mes-fr-bundle-body-weight"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [
+       fhir:v "urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a"^^xsd:anyURI ;
+       fhir:l <urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a>
+     ] ;
+     fhir:resource ( <urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [
+         fhir:v "Observation"^^xsd:anyURI ;
+         fhir:l fhir:Observation
+       ]
+     ]
+  ] [
+     fhir:fullUrl [
+       fhir:v "urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575"^^xsd:anyURI ;
+       fhir:l <urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575>
+     ] ;
+     fhir:resource ( <urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [
+         fhir:v "Device"^^xsd:anyURI ;
+         fhir:l fhir:Device
+       ]
+     ]
+  ] ) . # 
+
+<urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a> a fhir:Observation ;
+  fhir:id [ fhir:v "5138af77-df7e-4b9d-ba17-07ba3ebb950a"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_5138af77-df7e-4b9d-ba17-07ba3ebb950a\"> </a><p class=\"res-header-id\"><b>Narratif généré : Observation 5138af77-df7e-4b9d-ba17-07ba3ebb950a</b></p><a name=\"5138af77-df7e-4b9d-ba17-07ba3ebb950a\"> </a><a name=\"hc5138af77-df7e-4b9d-ba17-07ba3ebb950a\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-fr-observation-body-weight.html\">Poids</a></p></div><p><b>Raison de la mesure</b>: Mon nouveau poids !</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 29463-7}\">Poids corporel [Masse] Patient ; Numérique</span></p><p><b>subject</b>: Identifier: <code>urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560</code>/id-value</p><p><b>effective</b>: 2022-08-22 01:56:16+0100</p><p><b>value</b>: 71 kg<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMkg = 'kg')</span></p><p><b>device</b>: <a href=\"Bundle-example-mes-fr-bundle-body-weight.html#Device_d36bfdb6-b1b1-4efd-9cb9-d217a8696575\">Device : identifier = IEEE 11073 System Identifier; manufacturer = OMRONHEALTHCARE; modelNumber = HEM-9200T; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Mon nouveau poids !"
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29463-7 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "29463-7" ] ;
+       fhir:display [ fhir:v "Poids corporel [Masse] Patient ; Numérique" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [
+         fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2560>
+       ] ;
+       fhir:value [ fhir:v "id-value" ]
+     ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2022-08-22T01:56:16+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "71"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "kg" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "kg" ]
+  ] ; # 
+  fhir:device [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575> ;
+     fhir:reference [ fhir:v "Device/d36bfdb6-b1b1-4efd-9cb9-d217a8696575" ]
+  ] . # 
+
+<urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575> a fhir:Device ;
+  fhir:id [ fhir:v "d36bfdb6-b1b1-4efd-9cb9-d217a8696575"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_d36bfdb6-b1b1-4efd-9cb9-d217a8696575\"> </a><p class=\"res-header-id\"><b>Narratif généré : Dispositif d36bfdb6-b1b1-4efd-9cb9-d217a8696575</b></p><a name=\"d36bfdb6-b1b1-4efd-9cb9-d217a8696575\"> </a><a name=\"hcd36bfdb6-b1b1-4efd-9cb9-d217a8696575\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html\">PhdDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/FE-ED-AB-AA-DE-AD-77-C5</p><p><b>manufacturer</b>: OMRONHEALTHCARE</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Ma balance</td><td>Patient Reported name</td></tr></table><p><b>modelNumber</b>: HEM-9200T</p><p><b>type</b>: <span title=\"Codes :{urn:iso:std:iso:11073:10101 65573}\">MDC_MOC_VMS_MDS_SIMP</span></p><h3>Specializations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{urn:iso:std:iso:11073:10101 528457}\">MDC_DEV_SPEC_PROFILE_GENERIC</span></td><td>2.3</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers>
+         ] ;
+         fhir:code [ fhir:v "SYSID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ;
+       fhir:l <urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680>
+     ] ;
+     fhir:value [ fhir:v "FE-ED-AB-AA-DE-AD-77-C5" ]
+  ] ) ; # 
+  fhir:manufacturer [ fhir:v "OMRONHEALTHCARE"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Ma balance" ] ;
+     fhir:type [ fhir:v "patient-reported-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "HEM-9200T"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
+       fhir:code [ fhir:v "65573" ]
+     ] )
+  ] ; # 
+  fhir:specialization ( [
+     fhir:systemType [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "528457" ]
+       ] )
+     ] ;
+     fhir:version [ fhir:v "2.3" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

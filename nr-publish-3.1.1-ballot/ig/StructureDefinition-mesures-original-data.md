@@ -24,7 +24,7 @@ This extension may be used on the following element(s):
 **Utilisations:**
 
 * Utiliser ce Extension: [Cholestérol - aspect](StructureDefinition-mesures-observation-cholesterol-aspect.md), [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol-hdl.md), [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol-ldl.md), [Cholestérol - total](StructureDefinition-mesures-observation-cholesterol-total.md)... Show 2 more, [Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md) and [Glycémie](StructureDefinition-mesures-observation-glucose.md)
-* Exemples pour ce Extension: [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md), [Observation/cholesterol-ldl-example](Observation-cholesterol-ldl-example.md), [Observation/cholesterol-total-example](Observation-cholesterol-total-example.md) and [Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md)
+* Exemples pour ce Extension: [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md), [Observation/example-mes-fr-observation-cholesterol-hdl-003](Observation-example-mes-fr-observation-cholesterol-hdl-003.md), [Observation/example-mes-fr-observation-cholesterol-ldl-003](Observation-example-mes-fr-observation-cholesterol-ldl-003.md), [Observation/example-mes-fr-observation-cholesterol-total-003](Observation-example-mes-fr-observation-cholesterol-total-003.md) and [Observation/example-mes-fr-observation-cholesterol-trigly-003](Observation-example-mes-fr-observation-cholesterol-trigly-003.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-original-data)
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-original-dat
   "name" : "MesOriginalData",
   "title" : "Valeur originale",
   "status" : "active",
-  "date" : "2026-01-29T16:26:55+00:00",
+  "date" : "2026-01-29T16:54:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

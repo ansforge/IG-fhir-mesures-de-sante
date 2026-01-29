@@ -16,7 +16,7 @@ Profil de la ressource Observation pour définir une fréquence respiratoire (ac
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md)
+* Exemples pour ce Profil: [Observation/example-mes-fr-observation-resp-rate-001](Observation-example-mes-fr-observation-resp-rate-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-resp-rate)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationRespiratoryRate",
   "title" : "Fréquence respiratoire",
   "status" : "active",
-  "date" : "2026-01-29T16:26:55+00:00",
+  "date" : "2026-01-29T16:54:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

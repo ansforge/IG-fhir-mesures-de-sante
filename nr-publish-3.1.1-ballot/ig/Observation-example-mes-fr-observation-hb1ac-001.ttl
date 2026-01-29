@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-hb1ac-001> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-mes-fr-observation-hb1ac-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Observation example-mes-fr-observation-hb1ac-001</b></p><a name=\"example-mes-fr-observation-hb1ac-001\"> </a><a name=\"hcexample-mes-fr-observation-hb1ac-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-hb1ac.html\">Hémoglobine glyquée (Hb1Ac)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 4548-4}\">Hémoglobine A1c/hémoglobine totale [Fraction massique] Sang ; Numérique</span></p><p><b>subject</b>: <a href=\"Patient-example-mes-fr-patient-001.html\">Pierre Jean Durand (official) Male, Date de Naissance :1974-12-25 ( urn:oid:1.2.250.1.213.1.4.8#123456789012244 (use: official, ))</a></p><p><b>effective</b>: 2025-07-07 09:00:00+0200</p><p><b>performer</b>: <a href=\"Practitioner-example-mes-fr-practitionner-001.html\">Jean Dupont</a></p><p><b>value</b>: 6.5 %<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUM% = '%')</span></p><p><b>method</b>: <span title=\"Codes :{http://hl7.org/fhir/ValueSet/method-glucose-vs HPLC}\">High-performance liquid chromatography</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:4548-4 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "4548-4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
+     fhir:reference [ fhir:v "Patient/example-mes-fr-patient-001" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2025-07-07T09:00:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Practitioner/example-mes-fr-practitionner-001> ;
+     fhir:reference [ fhir:v "Practitioner/example-mes-fr-practitionner-001" ] ;
+     fhir:display [ fhir:v "Jean Dupont" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 6.5 ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "%" ]
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/ValueSet/method-glucose-vs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/ValueSet/method-glucose-vs>
+       ] ;
+       fhir:code [ fhir:v "HPLC" ] ;
+       fhir:display [ fhir:v "High-performance liquid chromatography" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

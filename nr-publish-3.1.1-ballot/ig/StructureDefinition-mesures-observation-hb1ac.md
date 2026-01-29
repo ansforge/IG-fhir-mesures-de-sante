@@ -16,7 +16,7 @@ Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1A
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md)
+* Exemples pour ce Profil: [Observation/example-mes-fr-observation-hb1ac-001](Observation-example-mes-fr-observation-hb1ac-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-hb1ac)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationHb1Ac",
   "title" : "Hémoglobine glyquée (Hb1Ac)",
   "status" : "active",
-  "date" : "2026-01-29T16:26:55+00:00",
+  "date" : "2026-01-29T16:54:52+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

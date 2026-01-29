@@ -64,29 +64,29 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [ExampleFrPractitionner001](Practitioner-ExampleFrPractitionner001.md) |  |
-| [ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md) |  |
-| [ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md) |  |
-| [ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md) |  |
-| [ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md) |  |
-| [ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md) |  |
-| [ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md) |  |
-| [ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md) |  |
-| [ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md) |  |
-| [ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md) |  |
-| [ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md) |  |
-| [ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md) |  |
-| [ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md) |  |
-| [ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md) |  |
-| [ExamplefrPatient001](Patient-ExamplefrPatient001.md) |  |
-| [Exemple de mesure Hb1Ac](Observation-exemple-observation-hb1ac.md) | Observation d’une hémoglobine glyquée mesurée à 6.5 % |
-| [bundle-example-bio](Bundle-bundle-example-bio.md) |  |
-| [bundle-example-body-weight](Bundle-bundle-example-body-weight.md) |  |
-| [cholesterol-dr](DiagnosticReport-cholesterol-dr.md) |  |
-| [cholesterol-hdl-example](Observation-cholesterol-hdl-example.md) |  |
-| [cholesterol-ldl-example](Observation-cholesterol-ldl-example.md) |  |
-| [cholesterol-total-example](Observation-cholesterol-total-example.md) |  |
-| [cholesterol-trigly-example](Observation-cholesterol-trigly-example.md) |  |
-| [glycemia-example](Observation-glycemia-example.md) |  |
-| [phd-74E8FFFEFF051C00](Device-phd-74E8FFFEFF051C00.md) |  |
+| [Exemple de bundle FHIR pour un bilan lipidique et une glycémie](Bundle-example-mes-fr-bundle-bio-003.md) | Exemple de bundle FHIR pour un bilan lipidique et une glycémie |
+| [Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD](Bundle-example-mes-fr-bundle-body-weight.md) | Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD |
+| [Exemple de dispositif PHD : un oxymètre Nonin](Device-example-mes-fr-phd-device-001.md) | Exemple de dispositif PHD : un oxymètre Nonin |
+| [Exemple de mesure Hb1Ac](Observation-example-mes-fr-observation-hb1ac-001.md) | Observation d’une hémoglobine glyquée mesurée à 6.5 % |
+| [Exemple de mesure de l'IMC](Observation-example-mes-fr-observation-bmi-001.md) | Exemple de mesure de l’IMC |
+| [Exemple de mesure de la fréquence cardiaque](Observation-example-mes-fr-observation-heartrate-001.md) | Exemple de mesure de la fréquence cardiaque |
+| [Exemple de mesure de la fréquence respiratoire](Observation-example-mes-fr-observation-resp-rate-001.md) | Exemple de mesure de la fréquence respiratoire |
+| [Exemple de mesure de la glycémie](Observation-example-mes-fr-observation-glucose-001.md) | Exemple de mesure de la glycémie |
+| [Exemple de mesure de la glycémie](Observation-example-mes-fr-observation-glycemia-003.md) | Exemple de mesure de la glycémie |
+| [Exemple de mesure de la pression artérielle](Observation-example-mes-fr-observation-bp-001.md) | Exemple de mesure de la pression artérielle |
+| [Exemple de mesure de la saturation en oxygène](Observation-example-mes-fr-observation-oxygen-sat-001.md) | Exemple de mesure de la saturation en oxygène |
+| [Exemple de mesure de la sévérité de la douleur](Observation-example-mes-fr-observation-pain-severity-001.md) | Exemple de mesure de la sévérité de la douleur |
+| [Exemple de mesure de la température corporelle](Observation-example-mes-fr-observation-body-temperature-001.md) | Exemple de mesure de la température corporelle |
+| [Exemple de mesure de poids corporel](Observation-example-mes-fr-observation-body-weight-001.md) | Exemple de mesure de poids corporel |
+| [Exemple de mesure de taille corporelle](Observation-example-mes-fr-observation-body-height-001.md) | Exemple de mesure de taille corporelle |
+| [Exemple de mesure du cholestérol HDL](Observation-example-mes-fr-observation-cholesterol-hdl-003.md) | Exemple de mesure du cholestérol HDL |
+| [Exemple de mesure du cholestérol LDL](Observation-example-mes-fr-observation-cholesterol-ldl-003.md) | Exemple de mesure du cholestérol LDL |
+| [Exemple de mesure du cholestérol total](Observation-example-mes-fr-observation-cholesterol-total-003.md) | Exemple de mesure du cholestérol total |
+| [Exemple de mesure du cholestérol triglycérides](Observation-example-mes-fr-observation-cholesterol-trigly-003.md) | Exemple de mesure du cholestérol triglycérides |
+| [Exemple de mesure du nombre de pas par jour](Observation-example-mes-fr-observation-steps-by-day-001.md) | Exemple de mesure du nombre de pas par jour |
+| [Exemple de mesure du périmètre crânien](Observation-example-mes-fr-observation-head-circumference-001.md) | Exemple de mesure du périmètre crânien |
+| [Exemple de mesure du tour de taille](Observation-example-mes-fr-observation-waist-circum-001.md) | Exemple de mesure du tour de taille |
+| [Exemple de patient français](Patient-example-mes-fr-patient-001.md) | Exemple de patient français (ressource Patient) |
+| [Exemple de practicien français](Practitioner-example-mes-fr-practitionner-001.md) | Exemple de practicien français (ressource Practitioner) |
+| [Exemple de rapport diagnostique de bilan lipidique](DiagnosticReport-example-mes-fr-diagnostic-report-cholesterol-003.md) | Exemple de rapport diagnostique de bilan lipidique |
 
