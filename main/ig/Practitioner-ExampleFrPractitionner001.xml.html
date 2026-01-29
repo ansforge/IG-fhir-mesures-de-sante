@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.22"}
-    h3,h4,h5,h6{--heading-prefix:"7.22"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.36"}
+    h3,h4,h5,h6{--heading-prefix:"8.36"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -104,10 +104,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Le-flux-d-alimentation-des-mesures.html">Flux d&apos;alimentation des mesures</a>
+        <a href="flux-alimentation-signes-vitaux.html">Flux d&apos;alimentation des signes vitaux</a>
       </li>
       <li>
-        <a href="Les-profils-utilises-pour-les-mesures-de-sante.html">Les profils utilisés pour les mesures de santé</a>
+        <a href="profils-signes-vitaux.html">Les profils FHIR des signes vitaux</a>
+      </li>
+      <li>
+        <a href="profils-biologie.html">Les profils FHIR des paramètres biologiques</a>
       </li>
       <li>
         <a href="Le-profil-FHIR-des-objets-connectes.html">Le profil FHIR des objets connectés</a>
@@ -133,14 +136,14 @@
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
   </li>
-  <li>
-    <a href="Terminologies.html">Terminologies</a>
-  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li>
+        <a href="Terminologies.html">Terminologies</a>
+      </li>
       <li>
         <a href="downloads.html">Téléchargements et usages</a>
       </li>
@@ -190,7 +193,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -248,11 +251,11 @@
 
   <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">Practitioner</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ExampleFrPractitionner001&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ExampleFrPractitionner001&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Practitioner.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narratif généré : Praticien ExampleFrPractitionner001&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ExampleFrPractitionner001&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcExampleFrPractitionner001&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://www.acme.org/practitioners&lt;/code&gt;/801234567897&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Jean Dupont &lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: 01 70 88 88 64(Work)&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 7 rue Coursier Amiens 80000 (home)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">text</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Practitioner.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://www.acme.org/practitioners&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;801234567897&quot;/&gt;
@@ -321,7 +324,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 07:30+0000">2025-10-13</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 14:02+0000">2026-01-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

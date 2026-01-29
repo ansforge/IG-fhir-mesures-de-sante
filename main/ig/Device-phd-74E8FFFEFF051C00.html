@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.36"}
-    h3,h4,h5,h6{--heading-prefix:"7.36"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.52"}
+    h3,h4,h5,h6{--heading-prefix:"8.52"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -102,10 +102,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Le-flux-d-alimentation-des-mesures.html">Flux d&apos;alimentation des mesures</a>
+        <a href="flux-alimentation-signes-vitaux.html">Flux d&apos;alimentation des signes vitaux</a>
       </li>
       <li>
-        <a href="Les-profils-utilises-pour-les-mesures-de-sante.html">Les profils utilisés pour les mesures de santé</a>
+        <a href="profils-signes-vitaux.html">Les profils FHIR des signes vitaux</a>
+      </li>
+      <li>
+        <a href="profils-biologie.html">Les profils FHIR des paramètres biologiques</a>
       </li>
       <li>
         <a href="Le-profil-FHIR-des-objets-connectes.html">Le profil FHIR des objets connectés</a>
@@ -131,14 +134,14 @@
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
   </li>
-  <li>
-    <a href="Terminologies.html">Terminologies</a>
-  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li>
+        <a href="Terminologies.html">Terminologies</a>
+      </li>
       <li>
         <a href="downloads.html">Téléchargements et usages</a>
       </li>
@@ -169,7 +172,7 @@
 
           <span style="float:right;">
 
-            <a href="Observation-ExampleObservationWaistCircumference001.ttl.html">&lt;prev</a> | 
+            <a href="Observation-glycemia-example.ttl.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -188,7 +191,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
   
 
@@ -245,7 +248,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><a name="phd-74E8FFFEFF051C00"> </a><a name="hcphd-74E8FFFEFF051C00"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/74-E8-FF-FE-FF-05-1C-00, Bluetooth MAC address/00-1C-05-FF-E8-74</p><p><b>manufacturer</b>: Nonin_Medical_Inc.</p><p><b>serialNumber</b>: 501900083</p><p><b>modelNumber</b>: Model 3230</p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 65573}">MDC_MOC_VMS_MDS_SIMP</span></p><h3>Specializations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:iso:std:iso:11073:10101 528388}">MDC_DEV_SPEC_PROFILE_PULS_OXIM: Pulse Oximeter</span></td><td>1</td></tr></table><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 531976}">MDC_ID_PROD_SPEC_FW: Firmware revision</span></p><p><b>value</b>: r2.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 531975}">MDC_ID_PROD_SPEC_SW: Software revision</span></p><p><b>value</b>: r1.5 9.7</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 531974}">MDC_ID_PROD_SPEC_HW: Hardware revision</span></p><p><b>value</b>: r1.0</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 532352}">MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version</span></p><p><b>value</b>: 6.0</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 532353}">MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: certified device list as transport-specialization combo</span></p><p><b>valueCode</b>: <span title="Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD 32772}">BTLE Pulse Oximeter certified</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 532354.0}">regulation-status</span></p><p><b>valueCode</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}">Device is Regulated</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 68220}">MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol</span></p><p><b>valueCode</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 532224}">MDC_TIME_SYNC_NONE:</span></p></blockquote></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="phd-74E8FFFEFF051C00"> </a><a name="hcphd-74E8FFFEFF051C00"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/74-E8-FF-FE-FF-05-1C-00, Bluetooth MAC address/00-1C-05-FF-E8-74</p><p><b>manufacturer</b>: Nonin_Medical_Inc.</p><p><b>serialNumber</b>: 501900083</p><p><b>modelNumber</b>: Model 3230</p><p><b>type</b>: <span title="Codes :{urn:iso:std:iso:11073:10101 65573}">MDC_MOC_VMS_MDS_SIMP</span></p><h3>Specializations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes :{urn:iso:std:iso:11073:10101 528388}">MDC_DEV_SPEC_PROFILE_PULS_OXIM: Pulse Oximeter</span></td><td>1</td></tr></table><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes :{urn:iso:std:iso:11073:10101 531976}">MDC_ID_PROD_SPEC_FW: Firmware revision</span></p><p><b>value</b>: r2.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes :{urn:iso:std:iso:11073:10101 531975}">MDC_ID_PROD_SPEC_SW: Software revision</span></p><p><b>value</b>: r1.5 9.7</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes :{urn:iso:std:iso:11073:10101 531974}">MDC_ID_PROD_SPEC_HW: Hardware revision</span></p><p><b>value</b>: r1.0</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title="Codes :{urn:iso:std:iso:11073:10101 532352}">MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version</span></p><p><b>value</b>: 6.0</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes :{urn:iso:std:iso:11073:10101 532353}">MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: certified device list as transport-specialization combo</span></p><p><b>valueCode</b>: <span title="Codes :{http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD 32772}">BTLE Pulse Oximeter certified</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes :{http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 532354.0}">regulation-status</span></p><p><b>valueCode</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/v2-0136 N}">Device is Regulated</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes :{urn:iso:std:iso:11073:10101 68220}">MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol</span></p><p><b>valueCode</b>: <span title="Codes :{urn:iso:std:iso:11073:10101 532224}">MDC_TIME_SYNC_NONE:</span></p></blockquote></div>
 
   
 
@@ -274,7 +277,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="Observation-ExampleObservationWaistCircumference001.ttl.html">&lt;prev</a>
+                <a href="Observation-glycemia-example.ttl.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -292,7 +295,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 07:30+0000">2025-10-13</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 14:02+0000">2026-01-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

@@ -12,8 +12,8 @@ Pierre Jean Durand (official) Male, Date de Naissance :1974-12-25 ( urn:oid:1.2.
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| Active: | true | Décédé : | false |
-| Contact Detail | * ph: 01 23 24 67 89(Home)
+| Actif : | true | Décédé : | false |
+| Coordonnées | * ph: 01 23 24 67 89(Home)
 * ph: 01 99 88 77 66(Work)
 * ph: 06 80 55 34 33(Mobile)
 * 367 rue Troussier, 45100 Orléans, France(home)

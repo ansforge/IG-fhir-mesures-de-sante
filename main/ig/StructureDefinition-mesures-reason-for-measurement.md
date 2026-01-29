@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement | *Version*:3.1.0 |
-| Active as of 2025-10-13 | *Computable Name*:MesReasonForMeasurement |
+| Active as of 2026-01-29 | *Computable Name*:MesReasonForMeasurement |
 
-Extension du Motif de la mesure, exprimé en texte libre (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…).
+Extension du Motif de la mesure, exprimé en texte libre.
 
 **Context of Use**
 
@@ -21,10 +21,10 @@ This extension may be used on the following element(s):
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-bmi.md), [Température](StructureDefinition-mesures-fr-observation-body-temperature.md), [Poids](StructureDefinition-mesures-fr-observation-body-weight.md), [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md)...Show 9 more,[Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md),[Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartrate.md),[Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxygen-sat.md),[Fréquence respiratoire](StructureDefinition-mesures-fr-observation-resp-rate.md),[Glycémie](StructureDefinition-mesures-observation-glucose.md),[Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md),[Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md),[Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md)and[Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
-* Examples for this Extension: [Bundle/bundle-example](Bundle-bundle-example.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md), [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md)...Show 2 more,[Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md)and[Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md)
+* Utiliser ce Extension: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-bmi.md), [Température](StructureDefinition-mesures-fr-observation-body-temperature.md), [Poids](StructureDefinition-mesures-fr-observation-body-weight.md), [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md)... Show 15 more, [Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md), [Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartrate.md), [Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxygen-sat.md), [Fréquence respiratoire](StructureDefinition-mesures-fr-observation-resp-rate.md), [Cholestérol - aspect](StructureDefinition-mesures-observation-cholesterol-aspect.md), [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol-hdl.md), [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol-ldl.md), [Cholestérol - total](StructureDefinition-mesures-observation-cholesterol-total.md), [Cholestérol - triglycerides](StructureDefinition-mesures-observation-cholesterol-trigly.md), [Glycémie](StructureDefinition-mesures-observation-glucose.md), [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-hb1ac.md), [Périmètre Crânien](StructureDefinition-mesures-observation-head-circumference.md), [Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md), [Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md) and [Tour de taille](StructureDefinition-mesures-observation-waist-circumference.md)
+* Exemples pour ce Extension: [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md)... Show 4 more, [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md), [Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md), [Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-reason-for-measurement)
 
@@ -36,7 +36,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-mesures-reason-for-measurement.csv), [Excel](StructureDefinition-mesures-reason-for-measurement.xlsx), [Schematron](StructureDefinition-mesures-reason-for-measurement.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-reason-for-m
   "name" : "MesReasonForMeasurement",
   "title" : "Raison de la mesure",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-reason-for-m
       ]
     }
   ],
-  "description" : "Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…).",
+  "description" : "Extension du Motif de la mesure, exprimé en texte libre.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-reason-for-m
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Motif de la mesure",
-        "definition" : "Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…)."
+        "definition" : "Extension du Motif de la mesure, exprimé en texte libre."
       },
       {
         "id" : "Extension.extension",

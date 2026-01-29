@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference | *Version*:3.1.0 |
-| Active as of 2025-10-13 | *Computable Name*:MesObservationHeadCircumference |
+| Active as of 2026-01-29 | *Computable Name*:MesObservationHeadCircumference |
 
  
 Profil de la ressource Observation pour définir un Périmètre Crânien 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Examples for this Profile: [Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md)
+* Utiliser ce Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
+* Exemples pour ce Profil: [Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-head-circumference)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationHeadCircumference",
   "title" : "Périmètre Crânien",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/vitalsigns",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/headcircum",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -160,37 +160,9 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         ]
       },
       {
-        "id" : "Observation.extension:MesOriginOfData",
-        "path" : "Observation.extension",
-        "sliceName" : "MesOriginOfData",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
-            ]
-          }
-        ]
-      },
-      {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "code"
-            },
-            {
-              "type" : "value",
-              "path" : "system"
-            }
-          ],
-          "rules" : "open"
-        },
-        "min" : 1
+        "min" : 2
       },
       {
         "id" : "Observation.code.coding:headCircumCode",
@@ -235,6 +207,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "code" : "Reference",
             "targetProfile" : [
               "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
@@ -247,8 +220,20 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
           "rules" : "open"
-        },
+        }
+      },
+      {
+        "id" : "Observation.value[x]:valueQuantity",
+        "path" : "Observation.value[x]",
+        "sliceName" : "valueQuantity",
         "type" : [
           {
             "code" : "Quantity"
@@ -256,24 +241,14 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         ]
       },
       {
-        "id" : "Observation.value[x].value",
-        "path" : "Observation.value[x].value",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.value[x].unit",
+        "id" : "Observation.value[x]:valueQuantity.unit",
         "path" : "Observation.value[x].unit",
         "patternString" : "cm"
       },
       {
-        "id" : "Observation.value[x].system",
-        "path" : "Observation.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      },
-      {
-        "id" : "Observation.value[x].code",
+        "id" : "Observation.value[x]:valueQuantity.code",
         "path" : "Observation.value[x].code",
-        "min" : 1
+        "patternCode" : "cm"
       },
       {
         "id" : "Observation.device",

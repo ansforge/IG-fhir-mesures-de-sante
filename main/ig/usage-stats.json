@@ -30,12 +30,12 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data",
-      "title": "Origine de la donnée",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data",
+      "title": "Valeur originale",
       "types": [
         "boolean",
-        "Identifier",
         "CodeableConcept",
+        "Quantity",
         "base64Binary",
         "boolean",
         "canonical",
@@ -101,6 +101,16 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation",
         "title": "Bundle d\u0027alimentation"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie",
+        "title": "Bundle d\u0027alimentation des mesures de biologie"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report",
+        "title": "DiagnosticReport mesures biologie"
       }
     ],
     "Observation": [
@@ -137,8 +147,32 @@
         "title": "Fréquence respiratoire"
       },
       {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect",
+        "title": "Cholestérol - aspect"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl",
+        "title": "Cholestérol - HDL"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl",
+        "title": "Cholestérol - LDL"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total",
+        "title": "Cholestérol - total"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly",
+        "title": "Cholestérol - triglycerides"
+      },
+      {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose",
         "title": "Glycémie"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac",
+        "title": "Hémoglobine glyquée (Hb1Ac)"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference",
@@ -212,12 +246,15 @@
       "Observation"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement": [
+      "Bundle.entry.resource",
       "Observation"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days": [
+      "Bundle.entry.resource",
       "Observation"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data": [
+    "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data": [
+      "Bundle.entry.resource",
       "Observation"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement": [

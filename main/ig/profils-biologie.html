@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Les profils FHIR des paramètres biologiques - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FHIR - Mesures de santé</span>
+            <br/>
+            <span style="display:inline-block;">3.1.0 - ci-build
+
+
+
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Les profils Mesures
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flux-alimentation-signes-vitaux.html">Flux d&apos;alimentation des signes vitaux</a>
+      </li>
+      <li>
+        <a href="profils-signes-vitaux.html">Les profils FHIR des signes vitaux</a>
+      </li>
+      <li>
+        <a href="profils-biologie.html">Les profils FHIR des paramètres biologiques</a>
+      </li>
+      <li>
+        <a href="Le-profil-FHIR-des-objets-connectes.html">Le profil FHIR des objets connectés</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Les extensions Mesures
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-mesures-reason-for-measurement.html">MesReasonForMeasurement - Motif de la mesure</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-mesures-moment-of-measurement.html">MesMomentOfMeasurement - Moment de la mesure</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-mesures-number-of-days.html">MesNumberOfDays - Nombre de jours</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Terminologies.html">Terminologies</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usages</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr">Site de l&apos;ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Les profils FHIR des paramètres biologiques</b></li>
+
+          <span style="float:right;">
+
+            <a href="profils-signes-vitaux.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="Le-profil-FHIR-des-objets-connectes.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Les profils FHIR des paramètres biologiques</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#choix-effectués-sur-le-cholestérol" id="markdown-toc-choix-effectués-sur-le-cholestérol">Choix effectués sur le cholestérol</a></li>
+  <li><a href="#liste-des-profils" id="markdown-toc-liste-des-profils">Liste des profils</a></li>
+  <li><a href="#exemples-de-requêtes-fhir" id="markdown-toc-exemples-de-requêtes-fhir">Exemples de requêtes FHIR</a></li>
+</ul>
+
+</div>
+
+<p>Les mesures de biologie peuvent se transmettre accompagnées d’une ressource DiagnosticReport permettant d’indiquer le contexte du rapport.</p>
+
+<p>Ces profils peuvent être associés au sein du profil Bundle <a href="./StructureDefinition-mesures-bundle-flux-alimentation-biologie.html">MesBundleFluxAlimentationBiologie</a> pour permettre leur échange de manière groupée.</p>
+
+<h3 id="choix-effectués-sur-le-cholestérol">Choix effectués sur le cholestérol</h3>
+
+<ul>
+  <li>
+    <p>L’unité privilégiée pour les profils cholestérol est “mmol/L” pour correspondre au système international.</p>
+  </li>
+  <li>
+    <p>Ces profils cholestérol étant liés par une ressource DiagnosticReport, ceux-ci sont utilisés uniquement pour partager les résultats d’un compte rendu de biologie.</p>
+  </li>
+</ul>
+
+<!-- * Les données pouvant être remplies par un patient (recopie de son CR-bio) se limitent aux mesures de l'aspect, du cholestérol total et des triglycérides. Les mesures d'HDL et de LDL nécessitent la méthode pour être comparée, demandant ainsi trop de détails à l'utilisateur. -->
+
+<h3 id="liste-des-profils">Liste des profils</h3>
+
+<div class="figure" style="width:100%; overflow:auto">
+    <p><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="168px" preserveAspectRatio="none" style="width:989px;height:168px;background:#FFFFFF;" version="1.1" viewBox="0 0 989 168" width="989px" zoomAndPan="magnify"><defs /><g><!--entity dr--><g id="elem_dr"><a href="StructureDefinition-mesures-diagnostic-report.html" target="_top" title="StructureDefinition-mesures-diagnostic-report.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-mesures-diagnostic-report.html" xlink:show="new" xlink:title="StructureDefinition-mesures-diagnostic-report.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="150" x="427.5" y="7" /><polygon fill="#F1F1F1" points="560.5,12,560.5,26,572.5,26,572.5,18,566.5,12,560.5,12" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="566.5" x2="566.5" y1="12" y2="18" /><line style="stroke:#181818;stroke-width:0.5;" x1="572.5" x2="566.5" y1="18" y2="18" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="437.5" y="32.9951">DiagnosticReport</text></a></g><!--entity ct--><g id="elem_ct"><a href="StructureDefinition-mesures-observation-cholesterol-total.html" target="_top" title="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="7" y="123" /><polygon fill="#F1F1F1" points="137,128,137,142,149,142,149,134,143,128,137,128" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="143" x2="143" y1="128" y2="134" /><line style="stroke:#181818;stroke-width:0.5;" x1="149" x2="143" y1="134" y2="134" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="17" y="148.9951">Total Cholesterol</text></a></g><!--entity chdl--><g id="elem_chdl"><a href="StructureDefinition-mesures-observation-cholesterol-hdl.html" target="_top" title="StructureDefinition-mesures-observation-cholesterol-hdl.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-mesures-observation-cholesterol-hdl.html" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-hdl.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="189" y="123" /><polygon fill="#F1F1F1" points="313,128,313,142,325,142,325,134,319,128,313,128" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="319" x2="319" y1="128" y2="134" /><line style="stroke:#181818;stroke-width:0.5;" x1="325" x2="319" y1="134" y2="134" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="199" y="148.9951">HDL Cholesterol</text></a></g><!--entity trigly--><g id="elem_trigly"><a href="StructureDefinition-mesures-observation-cholesterol-trigly.html" target="_top" title="StructureDefinition-mesures-observation-cholesterol-trigly.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-mesures-observation-cholesterol-trigly.html" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-trigly.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="114" x="365.5" y="123" /><polygon fill="#F1F1F1" points="462.5,128,462.5,142,474.5,142,474.5,134,468.5,128,462.5,128" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="468.5" x2="468.5" y1="128" y2="134" /><line style="stroke:#181818;stroke-width:0.5;" x1="474.5" x2="468.5" y1="134" y2="134" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="375.5" y="148.9951">Trigycerides</text></a></g><!--entity cldl--><g id="elem_cldl"><a href="StructureDefinition-mesures-observation-cholesterol-total.html" target="_top" title="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-total.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="138" x="514.5" y="123" /><polygon fill="#F1F1F1" points="635.5,128,635.5,142,647.5,142,647.5,134,641.5,128,635.5,128" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="641.5" x2="641.5" y1="128" y2="134" /><line style="stroke:#181818;stroke-width:0.5;" x1="647.5" x2="641.5" y1="134" y2="134" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="524.5" y="148.9951">LDL Cholesterol</text></a></g><!--entity ca--><g id="elem_ca"><a href="StructureDefinition-mesures-observation-cholesterol-aspect.html" target="_top" title="StructureDefinition-mesures-observation-cholesterol-aspect.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-mesures-observation-cholesterol-aspect.html" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-cholesterol-aspect.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="161" x="688" y="123" /><polygon fill="#F1F1F1" points="832,128,832,142,844,142,844,134,838,128,832,128" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="838" x2="838" y1="128" y2="134" /><line style="stroke:#181818;stroke-width:0.5;" x1="844" x2="838" y1="134" y2="134" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="698" y="148.9951">Aspect Cholesterol</text></a></g><!--entity gly--><g id="elem_gly"><a href="StructureDefinition-mesures-observation-glucose.html" target="_top" title="StructureDefinition-mesures-observation-glucose.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-mesures-observation-glucose.html" xlink:show="new" xlink:title="StructureDefinition-mesures-observation-glucose.html" xlink:type="simple"><rect fill="#F1F1F1" height="39.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="884" y="123" /><polygon fill="#F1F1F1" points="960,128,960,142,972,142,972,134,966,128,960,128" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:0.5;" x1="966" x2="966" y1="128" y2="134" /><line style="stroke:#181818;stroke-width:0.5;" x1="972" x2="966" y1="134" y2="134" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="894" y="148.9951">Glycemie</text></a></g><!--link dr to ct--><g id="link_dr_ct"><path d="M427.43,41.43 C383.21,50.18 326.34,62.37 276.5,76 C228.48,89.13 174.92,107.28 135.95,121.14 " fill="none" id="dr-to-ct" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="130.79,122.98,140.612,123.7067,135.4964,121.292,137.9112,116.1764,130.79,122.98" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="277.5" y="89.0669">result 0..1</text></g><!--link dr to chdl--><g id="link_dr_chdl"><path d="M454.41,46.09 C432.83,54.73 407.18,65.42 384.5,76 C354.71,89.89 321.82,107.21 297.25,120.55 " fill="none" id="dr-to-chdl" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="292.77,122.99,302.5884,122.2165,297.1655,120.6067,298.7752,115.1838,292.77,122.99" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="385.5" y="89.0669">result 0..1</text></g><!--link dr to trigly--><g id="link_dr_trigly"><path d="M489.47,46.07 C475.52,65.94 453.39,97.49 438.42,118.81 " fill="none" id="dr-to-trigly" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="435.53,122.94,443.9776,117.8766,438.405,118.8492,437.4324,113.2766,435.53,122.94" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="468.5" y="89.0669">result 0..1</text></g><!--link dr to cldl--><g id="link_dr_cldl"><path d="M518.17,46.02 C525.49,54.91 534.18,65.83 541.5,76 C551.34,89.67 561.56,105.56 569.45,118.27 " fill="none" id="dr-to-cldl" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="572.25,122.8,570.9252,113.0407,569.6231,118.5456,564.1182,117.2436,572.25,122.8" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="553.5" y="89.0669">result 0..1</text></g><!--link dr to ca--><g id="link_dr_ca"><path d="M551.95,46.07 C574.77,54.84 602.15,65.63 626.5,76 C659.91,90.23 697.18,107.47 725.15,120.69 " fill="none" id="dr-to-ca" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="729.9,122.94,723.4655,115.4836,725.3775,120.8076,720.0536,122.7196,729.9,122.94" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="663.5" y="89.0669">result 0..1</text></g><!--link dr to gly--><g id="link_dr_gly"><path d="M577.61,40.67 C623.77,49.35 683.95,61.74 736.5,76 C785.42,89.28 840.04,108.08 878.82,122.14 " fill="none" id="dr-to-gly" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="883.95,124.01,876.8655,117.1682,879.2527,122.2967,874.1242,124.6839,883.95,124.01" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="791.5" y="89.0669">result 0..1</text></g></g></svg></p>
+</div>
+
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-mesures-bundle-flux-alimentation-biologie.html">MesBundleFluxAlimentationBiologie</a></td><td><div><p>Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-diagnostic-report.html">MesDiagnosticReport</a></td><td><div><p>Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-aspect.html">MesObservationCholesterolAspect</a></td><td><div><p>Profil biologie de la ressource Observation pour définir l'aspect du cholestérol</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-hdl.html">MesObservationCholesterolHDL</a></td><td><div><p>Profil biologie de la ressource Observation pour définir le cholestérol HDL</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-ldl.html">MesObservationCholesterolLDL</a></td><td><div><p>Profil biologie de la ressource Observation pour définir le cholestérol LDL</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-total.html">MesObservationCholesterolTotal</a></td><td><div><p>Profil biologie de la ressource Observation pour définir le cholestérol total</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-cholesterol-trigly.html">MesObservationCholesterolTrigly</a></td><td><div><p>Profil biologie de la ressource Observation pour définir le cholestérol triglycerides</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mesures-observation-glucose.html">MesObservationGlucose</a></td><td><div><p>Profil biologie de la ressource Observation pour définir une Glycémie</p>
+<p>Ce profil permet de gérer 3 types d'indicateurs de glycémie:</p>
+<ul>
+<li>le taux de glucose sanguin, mesuré en mg/dl</li>
+<li>le taux de glucose interstitiel, mesuré en mg/dl</li>
+<li>l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %</li>
+</ul>
+<p>L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .</p>
+<p>L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.</p>
+</div></td></tr></table>
+
+<h3 id="exemples-de-requêtes-fhir">Exemples de requêtes FHIR</h3>
+
+<h4 id="récupérer-toutes-les-mesures-de-cholestérol-associées-à-un-diagnosticreport">Récupérer toutes les mesures de cholestérol associées à un DiagnosticReport</h4>
+
+<h5 id="requête-1--récupérer-un-diagnosticreport-avec-ses-observations-incluses">Requête 1 : Récupérer un DiagnosticReport avec ses Observations incluses</h5>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/DiagnosticReport?_id=[id]&amp;_include=DiagnosticReport:result
+</span></code></pre></div></div>
+
+<p>Cette requête récupère le DiagnosticReport spécifié et inclut toutes les ressources Observation référencées dans <code class="language-plaintext highlighter-rouge">DiagnosticReport.result</code>.</p>
+
+<!-- Exemple HAPI fonctionnel au 19.01.2026 https://hapi.fhir.org/baseR4/DiagnosticReport?_id=45020507&_include=DiagnosticReport:result -->
+
+<h5 id="requête-2--récupérer-uniquement-les-observations-de-cholestérol-liées-à-un-diagnosticreport">Requête 2 : Récupérer uniquement les observations de cholestérol liées à un DiagnosticReport</h5>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/Observation?_has:DiagnosticReport:result:_id=[id]&amp;code=http://loinc.org|2093-3,http://loinc.org|2085-9,http://loinc.org|2089-1
+</span></code></pre></div></div>
+
+<p>Cette requête utilise le reverse chaining (<code class="language-plaintext highlighter-rouge">_has</code>) pour rechercher les Observations référencées par un DiagnosticReport spécifique via <code class="language-plaintext highlighter-rouge">DiagnosticReport.result</code>, et filtre sur les codes LOINC du cholestérol :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">2093-3</code> : Cholesterol [Mass/volume] in Serum or Plasma</li>
+  <li><code class="language-plaintext highlighter-rouge">2085-9</code> : Cholesterol in HDL [Mass/volume] in Serum or Plasma</li>
+  <li><code class="language-plaintext highlighter-rouge">2089-1</code> : Cholesterol in LDL [Mass/volume] in Serum or Plasma</li>
+</ul>
+
+<!-- Exemple HAPI fonctionnel au 19.01.2026 https://hapi.fhir.org/baseR4/Observation?_has:DiagnosticReport:result:_id=45020507&code=Culture%20Blood%20-%20Central%20Line -->
+
+<h5 id="requête-3--récupérer-toutes-les-observations-de-cholestérol-avec-leur-diagnosticreport-associé">Requête 3 : Récupérer toutes les observations de cholestérol avec leur DiagnosticReport associé</h5>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/Observation?code=http://loinc.org|2093-3,http://loinc.org|2085-9,http://loinc.org|2089-1&amp;_revinclude=DiagnosticReport:result
+</span></code></pre></div></div>
+
+<!-- Exemple HAPI fonctionnel au 19.01.2026  https://hapi.fhir.org/baseR4/Observation?_revinclude=DiagnosticReport:result&code=Culture%20Blood%20-%20Central%20Line -->
+
+<p>Cette requête recherche toutes les observations de cholestérol et inclut les DiagnosticReports qui les référencent.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="profils-signes-vitaux.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="Le-profil-FHIR-des-objets-connectes.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 14:02+0000">2026-01-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-mesures/issues/new">New Issue</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

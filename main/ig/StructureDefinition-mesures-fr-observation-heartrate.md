@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate | *Version*:3.1.0 |
-| Active as of 2025-10-13 | *Computable Name*:MesFrObservationHeartrate |
+| Active as of 2026-01-29 | *Computable Name*:MesFrObservationHeartrate |
 
  
 Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR) 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Examples for this Profile: [Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md)
+* Utiliser ce Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
+* Exemples pour ce Profil: [Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-heartrate)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationHeartrate",
   "title" : "Fréquence Cardiaque",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -150,21 +150,6 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
         ]
       },
       {
-        "id" : "Observation.extension:MesOriginOfData",
-        "path" : "Observation.extension",
-        "sliceName" : "MesOriginOfData",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
-            ]
-          }
-        ]
-      },
-      {
         "id" : "Observation.extension:MesMomentOfMeasurement",
         "path" : "Observation.extension",
         "sliceName" : "MesMomentOfMeasurement",
@@ -188,6 +173,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
             "code" : "Reference",
             "targetProfile" : [
               "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",

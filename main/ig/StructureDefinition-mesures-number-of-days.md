@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days | *Version*:3.1.0 |
-| Active as of 2025-10-13 | *Computable Name*:MesNumberOfDays |
+| Active as of 2026-01-29 | *Computable Name*:MesNumberOfDays |
 
 Extension sur le Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.
 
@@ -21,10 +21,10 @@ This extension may be used on the following element(s):
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
-* Examples for this Extension: [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md)
+* Utiliser ce Extension: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
+* Exemples pour ce Extension: [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-number-of-days)
 
@@ -36,9 +36,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-mesures-number-of-days.csv), [Excel](StructureDefinition-mesures-number-of-days.xlsx), [Schematron](StructureDefinition-mesures-number-of-days.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-number-of-da
   "name" : "MesNumberOfDays",
   "title" : "Nombre de jours",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

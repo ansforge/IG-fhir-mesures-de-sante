@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation | *Version*:3.1.0 |
-| Active as of 2025-10-13 | *Computable Name*:MesBundleFluxAlimentation |
+| Active as of 2026-01-29 | *Computable Name*:MesBundleFluxAlimentation |
 
  
 Profil de la ressource Bundle du flux d’alimentation à envoyer au serveur 
 
-**Usages:**
+**Utilisations:**
 
-* Examples for this Profile: [Bundle/bundle-example](Bundle-bundle-example.md)
+* Exemples pour ce Profil: [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-bundle-flux-alimentation)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "name" : "MesBundleFluxAlimentation",
   "title" : "Bundle d'alimentation",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -140,7 +140,6 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight",
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp",
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate",
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose",
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference",
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity",
               "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day",

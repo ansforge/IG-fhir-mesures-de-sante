@@ -9,23 +9,23 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose | *Version*:3.1.0 |
-| Active as of 2025-10-13 | *Computable Name*:MesObservationGlucose |
+| Active as of 2026-01-29 | *Computable Name*:MesObservationGlucose |
 
  
-Profil de la ressource Observation pour définir une Glycémie 
-Ce profil permet de gérer 4 types d’indicateurs de glycémie: 
+Profil biologie de la ressource Observation pour définir une Glycémie 
+Ce profil permet de gérer 3 types d’indicateurs de glycémie: 
 * le taux de glucose sanguin, mesuré en mg/dl
 * le taux de glucose interstitiel, mesuré en mg/dl
-* l’hémoglobine glyquée (Hb1Ac) mesurée en %
 * l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
  
 L’extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) . 
 L’extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Examples for this Profile: [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md)
+* Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
+* Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
+* Exemples pour ce Profil: [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-glucose)
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationGlucose",
   "title" : "Glycémie",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       ]
     }
   ],
-  "description" : "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+  "description" : "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 3 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -168,16 +168,17 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         ]
       },
       {
-        "id" : "Observation.extension:MesOriginOfData",
+        "id" : "Observation.extension:mes-original-data",
         "path" : "Observation.extension",
-        "sliceName" : "MesOriginOfData",
+        "sliceName" : "mes-original-data",
+        "short" : "Valeur d'origine de la donnée. Cette extension est présente uniquement si le résultat contenu dans Observation.value provient d'une conversion (par ex. g/L converti en mmol/L)",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
+              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
             ]
           }
         ]
@@ -233,7 +234,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       {
         "id" : "Observation.code",
         "path" : "Observation.code",
-        "short" : "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Hémoglobine glyquée (HbA1c)\r\n• Index de gestion de glycémie (IGG)",
+        "short" : "Types de glycémie:\r\n• Glucose sanguin\r\n• Glucose interstitiel\r\n• Index de gestion de glycémie (IGG)",
         "binding" : {
           "strength" : "extensible",
           "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J154-TypeGlucose-ENS/FHIR/JDV-J154-TypeGlucose-ENS"
@@ -290,6 +291,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "code" : "Reference",
             "targetProfile" : [
               "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
@@ -341,6 +343,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       {
         "id" : "Observation.method",
         "path" : "Observation.method",
+        "short" : "La méthode de mesure du cholestérol total est fortement conseillée pour déterminer si des résultats sont comparables et ainsi interpréter cette donnée.",
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
@@ -357,6 +360,13 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             "targetProfile" : ["http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"]
           }
         ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.referenceRange",
+        "path" : "Observation.referenceRange",
+        "short" : "Associer la mesure à l'intervalle de référence est fortement recommandé pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ...",
+        "max" : "1",
         "mustSupport" : true
       }
     ]

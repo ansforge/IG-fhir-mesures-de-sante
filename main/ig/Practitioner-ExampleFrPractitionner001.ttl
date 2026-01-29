@@ -11,10 +11,13 @@
   fhir:id [ fhir:v "ExampleFrPractitionner001"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Praticien ExampleFrPractitionner001</b></p><a name=\"ExampleFrPractitionner001\"> </a><a name=\"hcExampleFrPractitionner001\"> </a><p><b>identifier</b>: <code>http://www.acme.org/practitioners</code>/801234567897</p><p><b>active</b>: true</p><p><b>name</b>: Jean Dupont </p><p><b>telecom</b>: ph: 01 70 88 88 64(Work)</p><p><b>address</b>: 7 rue Coursier Amiens 80000 (home)</p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Praticien ExampleFrPractitionner001</b></p><a name=\"ExampleFrPractitionner001\"> </a><a name=\"hcExampleFrPractitionner001\"> </a><p><b>identifier</b>: <code>http://www.acme.org/practitioners</code>/801234567897</p><p><b>active</b>: true</p><p><b>name</b>: Jean Dupont </p><p><b>telecom</b>: ph: 01 70 88 88 64(Work)</p><p><b>address</b>: 7 rue Coursier Amiens 80000 (home)</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ;
+       fhir:l <http://www.acme.org/practitioners>
+     ] ;
      fhir:value [ fhir:v "801234567897" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 

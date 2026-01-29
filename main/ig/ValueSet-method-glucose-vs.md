@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs | *Version*:3.1.0 |
-| Active as of 2025-10-13 | *Computable Name*:MethodeGlucoseVS |
+| Active as of 2026-01-29 | *Computable Name*:MethodeGlucoseVS |
 
  
 Méthode de mesures de glycémie sanguine ou interstitielle. 
@@ -17,19 +17,13 @@ Méthode de mesures de glycémie sanguine ou interstitielle.
  **References** 
 
 * [Glycémie](StructureDefinition-mesures-observation-glucose.md)
+* [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-hb1ac.md)
 
-### Logical Definition (CLD)
-
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R312-LPP/FHIR/TRE-R312-LPP`](https://interop.esante.gouv.fr/ig/nos/1.3.0/CodeSystem-TRE-R312-LPP.html) version 📦1.3.0
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT`](https://interop.esante.gouv.fr/ig/nos/1.3.0/CodeSystem-TRE-R307-NCIT.html) version 📦1.3.0
+### Définition logique (CLD)
 
  
 
 ### Expansion
-
-Ce jeu de valeur (ValueSet) contient 18 concepts
 
 -------
 
@@ -57,7 +51,7 @@ Ce jeu de valeur (ValueSet) contient 18 concepts
   "name" : "MethodeGlucoseVS",
   "title" : "Méthode de mesures de glycémie sanguine ou interstitielle",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.21"}
-    h3,h4,h5,h6{--heading-prefix:"7.21"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.35"}
+    h3,h4,h5,h6{--heading-prefix:"8.35"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -104,10 +104,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Le-flux-d-alimentation-des-mesures.html">Flux d&apos;alimentation des mesures</a>
+        <a href="flux-alimentation-signes-vitaux.html">Flux d&apos;alimentation des signes vitaux</a>
       </li>
       <li>
-        <a href="Les-profils-utilises-pour-les-mesures-de-sante.html">Les profils utilisés pour les mesures de santé</a>
+        <a href="profils-signes-vitaux.html">Les profils FHIR des signes vitaux</a>
+      </li>
+      <li>
+        <a href="profils-biologie.html">Les profils FHIR des paramètres biologiques</a>
       </li>
       <li>
         <a href="Le-profil-FHIR-des-objets-connectes.html">Le profil FHIR des objets connectés</a>
@@ -133,14 +136,14 @@
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
   </li>
-  <li>
-    <a href="Terminologies.html">Terminologies</a>
-  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li>
+        <a href="Terminologies.html">Terminologies</a>
+      </li>
       <li>
         <a href="downloads.html">Téléchargements et usages</a>
       </li>
@@ -190,7 +193,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/mesures/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -248,11 +251,11 @@
 
   <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ExamplefrPatient001&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ExamplefrPatient001&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narratif généré : Patient ExamplefrPatient001&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ExamplefrPatient001&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcExamplefrPatient001&quot;&gt; &lt;/a&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Pierre Jean Durand (official) Male, Date de Naissance :1974-12-25 ( urn:oid:1.2.250.1.213.1.4.8#123456789012244 (use: official, ))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Record is active&quot;&gt;Active:&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Statut connu du patient&quot;&gt;Décédé :&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Moyens de contacter le Patient&quot;&gt;Contact Detail&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;ph: 01 23 24 67 89(Home)&lt;/li&gt;&lt;li&gt;ph: 01 99 88 77 66(Work)&lt;/li&gt;&lt;li&gt;ph: 06 80 55 34 33(Mobile)&lt;/li&gt;&lt;li&gt;367 rue Troussier, 45100 Orléans, France(home)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narratif généré : Patient ExamplefrPatient001&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ExamplefrPatient001&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcExamplefrPatient001&quot;&gt; &lt;/a&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Pierre Jean Durand (official) Male, Date de Naissance :1974-12-25 ( urn:oid:1.2.250.1.213.1.4.8#123456789012244 (use: official, ))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Lenregistrement est actif&quot;&gt;Actif :&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Statut connu du patient&quot;&gt;Décédé :&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Moyens de contacter le Patient&quot;&gt;Coordonnées&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;ph: 01 23 24 67 89(Home)&lt;/li&gt;&lt;li&gt;ph: 01 99 88 77 66(Work)&lt;/li&gt;&lt;li&gt;ph: 06 80 55 34 33(Mobile)&lt;/li&gt;&lt;li&gt;367 rue Troussier, 45100 Orléans, France(home)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid:1.2.250.1.213.1.4.8&quot;/&gt;
@@ -284,7 +287,7 @@
   &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;male&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;1974-12-25&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">deceasedBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased_x_">deceasedBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;home&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;both&quot;/&gt;
@@ -342,7 +345,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 07:30+0000">2025-10-13</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 14:02+0000">2026-01-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

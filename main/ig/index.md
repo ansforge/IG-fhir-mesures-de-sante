@@ -8,12 +8,20 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures | *Version*:3.1.0 |
-| Active as of 2025-10-13 | *Computable Name*:Mesures |
+| Active as of 2026-01-29 | *Computable Name*:Mesures |
 
  **Vital Signs Implementation Guide**
  This implementation guide contains the profiles to share vital-signs for the French ecosystem. 
 
-> **Attention !**Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante et publiée à utiliser est accessible à l'adresse https://interop.esante.gouv.fr/ig/fhir/mesures
+>  **Attention !** Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante et publiée à utiliser est accessible à l'adresse https://interop.esante.gouv.fr/ig/fhir/mesures 
+
+>  **📖 Guide de lecture**
+
+ Ce guide d'implémentation est destiné à **tous les profils** (métier et technique) :
+ 
+* **Professionnels de santé et chefs de projet métier** : Consultez les sections d'introduction, les problématiques connues et les cas d'usage pour comprendre le contexte et les besoins métiers.
+* **Développeurs et intégrateurs** : Consultez la liste des profils, les spécifications techniques détaillées et les exemples d'implémentation pour intégrer les mesures de santé dans vos solutions.
+ 
 
 Le guide ****mesures de santé**** propose la mise en place des fonctions d’alimentation et de consultation des mesures de santé d’un usager.
 
@@ -22,14 +30,20 @@ Ce guide s’adresse aux éditeurs de logiciels qui souhaitent mettre en œuvre 
 Les spécifications techniques de ce guide s’appuient:
 
 * sur le standard HL7 FHIR et plus particulièrement sur un sous-ensemble des ressources définies par ce standard ainsi que sur la notion d’extension et de profilage des ressources.
-* sur les profils français de la ressource Observation (Profls Interop’Santé ou ANS)
+* sur les profils français de la ressource Observation (Profils Interop’Santé ou ANS)
 * sur le profil PHD de la ressource Device profilé dans l’Implementation Guide PHD et dont l’usage est défini dans le profil IHE « Personal Health Device Observation Upload (POU) » pour représenter le dispositif connecté ayant effectué la mesure.
 
 Pour les opérations sur les ressources, l’API REST définie par le standard HL7 FHIR met en œuvre la logique de la transaction PCH-01 du profil IHE « Personal Health Device Observation Upload (POU) » pour l’alimentation.
 
 Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
 
-### Liste des profils définis
+### Liste des profils
+
+Les profils FHIR pour les mesures de santé s’appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.
+
+Pour chaque ressource, le lien vers la spécification technique InteropSanté est indiqué. Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
+
+#### Liste des profils signes vitaux
 
 | | |
 | :--- | :--- |
@@ -43,35 +57,56 @@ Le lecteur doit être familier de ces concepts pour les mettre en œuvre.
 | [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md) | Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR) |
 | [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md) | Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2) |
 | [MesFrObservationRespiratoryRate](StructureDefinition-mesures-fr-observation-resp-rate.md) | Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR) |
-| [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md) | Profil de la ressource Observation pour définir une GlycémieCe profil permet de gérer 4 types d'indicateurs de glycémie:* le taux de glucose sanguin, mesuré en mg/dl
-* le taux de glucose interstitiel, mesuré en mg/dl
-* l’hémoglobine glyquée (Hb1Ac) mesurée en %
-* l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
-L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin. |
+| [MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md) | Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %. |
 | [MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md) | Profil de la ressource Observation pour définir un Périmètre Crânien |
 | [MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md) | Profil de la ressource Observation pour définir un niveau de douleur |
 | [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md) | Profil de la ressource Observation pour définir un nombre de pas par jour |
 | [MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md) | Profil de la ressource Observation pour définir une taille en cm |
 
-Les profils FHIR pour les mesures de santé s’appuient sur la ressource Observation définie par le standard HL7 FHIR, en ajoutant quelques contraintes indiquées dans la description détaillée de chaque profil.
+#### Liste des profils de paramètres biologiques
 
-Pour chaque ressource, le lien vers la spécification technique InteropSanté est indiqué. Cette liste pourra être complétée par d’autres mesures jugées pertinentes.
+| | |
+| :--- | :--- |
+| Titre du profil | Description |
+| [MesBundleFluxAlimentationBiologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md) | Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre |
+| [MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md) | Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie |
+| [MesObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md) | Profil biologie de la ressource Observation pour définir l'aspect du cholestérol |
+| [MesObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md) | Profil biologie de la ressource Observation pour définir le cholestérol HDL |
+| [MesObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md) | Profil biologie de la ressource Observation pour définir le cholestérol LDL |
+| [MesObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md) | Profil biologie de la ressource Observation pour définir le cholestérol total |
+| [MesObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md) | Profil biologie de la ressource Observation pour définir le cholestérol triglycerides |
+| [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md) | Profil biologie de la ressource Observation pour définir une GlycémieCe profil permet de gérer 3 types d'indicateurs de glycémie:* le taux de glucose sanguin, mesuré en mg/dl
+* le taux de glucose interstitiel, mesuré en mg/dl
+* l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
+L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin. |
 
-### Contexte métier
+### Problématiques connues
 
-Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS (Agence du Numérique en Santé).
+>  **⚠️ Discussions en cours**
 
-### Standards utilisés
+ Un certain nombre de problématiques connues ont été identifiées. Vos retours et contributions sont les bienvenus via les [issues GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante/issues). 
 
-FHIR (Fast Healthcare Interoperability Resources) est un standard élaboré par HL7 qui décrit un ensemble de formats de données et d’éléments, appelés ressources, ainsi qu’une API (Application Programming Interface) pour l’échange des informations de santé.
+#### 1. Dispositifs médicaux : PHD vs PoCD
 
-HL7 (Health Level Seven) est un organisme à but non lucratif accrédité par l’ANSI (American National Standards Institute) et impliqué dans le développement de standards d’interopérabilité internationaux pour l’informatique de santé. Il regroupe des experts de l’informatique de santé qui collaborent pour créer un cadre et des standards connexes pour l’échange, l’intégration, le partage et l’accès à des données de santé, visant à promouvoir l’utilisation de ces standards entre les organisations de santé et au sein d’une même organisation.
+Les profils mesures de santé sont optionnellement liés à un device qui doivent hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l’international par le guide d’implémentation PoCD.
 
-Ces spécifications techniques se basent sur le standard HL7 FHIR R4 (4.0.1), faisant référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basée sur le protocole HTTP. La syntaxe retenue pour les échanges est la syntaxe JSON.
+#### 2. Intervalles de référence en biologie
 
-### Problématique connue
+Dans le cadre des mesures biologiques (glycémie, cholestérol), l’intervalle de référence n’est pas rendu techniquement obligatoire dans les profils FHIR contrairement aux [profils internationaux](https://www.hl7.org/fhir/R4/lipid-report.html). Cet intervalle peut varier en fonction de nombreux facteurs tel que l’âge, le sexe, les antécédents… Ceux-ci doivent être nécessairement indiqués si la donnée provient d’un compte rendu de biologie.
 
-Les profils mesures de santé sont optionnellement liés à un device qui doit hériter du profil PHD (Personal Health Device), couvrant uniquement les appareils personnels connectés. Des discussions sont en cours pour intégrer les dispositifs médicaux prescrits dans le parcours de soins modélisé à l’international par le guide d’implémentation PoCD. En cas de besoins allant dans ce sens, merci de le spécifier dans une [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
+#### 3. Harmonisation des unités
+
+Il y a une incohérence entre l’unité de la glycémie qui est actuellement en “g/L” et les unités du cholestérol actuellement en “mmol/L”. Les prochaines versions proposeront une uniformisation pour respecter l’unité du système international, c’est à dire passer les profils glycémie à l’unité “mmol/L”.
+
+#### 4. Multiplicité des profils biologiques
+
+Il y a actuellement un certain nombre de profils de paramètres biologiques. La question de la multiplicité des profils biologiques se pose - comment gérer le profilage sur l’ensemble des données présentes dans le jeu de valeurs circuit de la biologie ?
+
+Toutes précisions sur les besoins des utilisations de la spécification sont les bienvenues et communiquables via les [issue GitHub](https://github.com/ansforge/IG-fhir-mesures-de-sante).
+
+### Contributeurs
+
+Les spécifications techniques des Mesures de santé au format FHIR ont été élaborées par l’ANS (Agence du Numérique en Santé) à partir des éléments métiers définis par la CNAM (Caisse Nationale d’Assurance Maladie). Elles s’appuient sur les recommandations sémantiques du CGTS (Centre de Gestion des terminologies de Santé) de l’ANS et sur les recommandations de la SFIL (Société Française d’Informatique de Laboratoire).
 
 ### Dépendances
 
@@ -86,35 +121,40 @@ Les profils mesures de santé sont optionnellement liés à un device qui doit h
 
 Certaines ressources sémantiques de ce guide sont protégées par des droits de propriété intellectuelle couverte par les déclarations ci-dessous. L’utilisation de ces ressources est soumise à l’acceptation et au respect des conditions précisées dans la licence d’utilisation de chacune d’entre elle.
 
+* [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) 
+
+* [European Medical device nomenclature](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-terminologie-emdn.html): [MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md)... Show 5 more, [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md), [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md) and [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md)
+
+
 * IEEE maintains copyright on all content from IEEE 11073 standards. All rights reserved. Implementers should obtain official copies of all applicable standards documents directly from IEEE. The inclusion of IEEE 11073 terminology codes and definitions in HL7 messages and related implementation guides is permitted under existing agreements. For permission regarding any other usage, please contact IEEE at copyrights@ieee.org.
 
-* [ISO/IEEE 11073 Medical Device Communication Nomenclature](http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html): [Bundle/bundle-example](Bundle-bundle-example.md) and [Device/phd-74E8FFFEFF051C00](Device-phd-74E8FFFEFF051C00.md)
+* [ISO/IEEE 11073 Medical Device Communication Nomenclature](http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html): [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md) and [Device/phd-74E8FFFEFF051C00](Device-phd-74E8FFFEFF051C00.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MesBundleFluxAlimentation](StructureDefinition-mesures-bundle-flux-alimentation.md), [MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md)...Show 18 more,[MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md),[MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md),[MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md),[MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md),[MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md),[MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md),[MesFrObservationRespiratoryRate](StructureDefinition-mesures-fr-observation-resp-rate.md),[MesMomentOfMeasurement](StructureDefinition-mesures-moment-of-measurement.md),[MesNumberOfDays](StructureDefinition-mesures-number-of-days.md),[MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md),[MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md),[MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md),[MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md),[MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md),[MesOriginOfData](StructureDefinition-mesures-origin-of-data.md),[MesReasonForMeasurement](StructureDefinition-mesures-reason-for-measurement.md),[Mesures](index.md)and[MethodeGlucoseVS](ValueSet-method-glucose-vs.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MesBundleFluxAlimentation](StructureDefinition-mesures-bundle-flux-alimentation.md), [MesBundleFluxAlimentationBiologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)... Show 26 more, [MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md), [MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md), [MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md), [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md), [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md), [MesFrObservationRespiratoryRate](StructureDefinition-mesures-fr-observation-resp-rate.md), [MesMomentOfMeasurement](StructureDefinition-mesures-moment-of-measurement.md), [MesNumberOfDays](StructureDefinition-mesures-number-of-days.md), [MesObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md), [MesObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md), [MesObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md), [MesObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md), [MesObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md), [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md), [MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md), [MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md), [MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md), [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md), [MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md), [MesOriginalData](StructureDefinition-mesures-original-data.md), [MesReasonForMeasurement](StructureDefinition-mesures-reason-for-measurement.md), [Mesures](index.md) and [MethodeGlucoseVS](ValueSet-method-glucose-vs.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html): [Bundle/bundle-example](Bundle-bundle-example.md), [MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md)...Show 18 more,[MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md),[MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md),[MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md),[MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md),[MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md),[Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md),[Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md),[Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md),[Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md),[Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md),[Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md),[Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md),[Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md),[Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md),[Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md),[Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md),[Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md)and[Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md)
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html): [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)... Show 25 more, [MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md), [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md), [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md), [MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md), [Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md), [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md), [Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md), [Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md), [Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md), [Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md), [Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md), [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md), [Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md), [Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md), [Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md), [Observation/cholesterol-ldl-example](Observation-cholesterol-ldl-example.md), [Observation/cholesterol-total-example](Observation-cholesterol-total-example.md), [Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md), [Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
 
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/bundle-example](Bundle-bundle-example.md), [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md)...Show 17 more,[MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md),[MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md),[MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md),[MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md),[Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md),[Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md),[Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md),[Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md),[Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md),[Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md),[Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md),[Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md),[Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md),[Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md),[Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md),[Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md)and[Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md)
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)... Show 30 more, [DiagnosticReport/cholesterol-dr](DiagnosticReport-cholesterol-dr.md), [MesDiagnosticReport](StructureDefinition-mesures-diagnostic-report.md), [MesObservationCholesterolAspect](StructureDefinition-mesures-observation-cholesterol-aspect.md), [MesObservationCholesterolHDL](StructureDefinition-mesures-observation-cholesterol-hdl.md), [MesObservationCholesterolLDL](StructureDefinition-mesures-observation-cholesterol-ldl.md), [MesObservationCholesterolTotal](StructureDefinition-mesures-observation-cholesterol-total.md), [MesObservationCholesterolTrigly](StructureDefinition-mesures-observation-cholesterol-trigly.md), [MesObservationGlucose](StructureDefinition-mesures-observation-glucose.md), [MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md), [MesObservationHeadCircumference](StructureDefinition-mesures-observation-head-circumference.md), [MesObservationPainSeverity](StructureDefinition-mesures-observation-pain-severity.md), [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md), [MesObservationWaistCircumference](StructureDefinition-mesures-observation-waist-circumference.md), [Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md), [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md), [Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md), [Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md), [Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md), [Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md), [Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md), [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md), [Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md), [Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md), [Observation/cholesterol-hdl-example](Observation-cholesterol-hdl-example.md), [Observation/cholesterol-ldl-example](Observation-cholesterol-ldl-example.md), [Observation/cholesterol-total-example](Observation-cholesterol-total-example.md), [Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md) and [Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-900000000000207008-20250701.html): [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md) and [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-900000000000207008-20251001.html): [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md) and [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [Observation Category Codes](http://terminology.hl7.org/6.5.0/CodeSystem-observation-category.html): [Bundle/bundle-example](Bundle-bundle-example.md), [Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md)...Show 12 more,[Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md),[Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md),[Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md),[Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md),[Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md),[Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md),[Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md),[Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md),[Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md),[Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md),[Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md)and[Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md)
-* [ObservationInterpretation](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html): [MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md), [MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md)...Show 6 more,[MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md),[MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md),[MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md),[MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md),[Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md)and[Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [Bundle/bundle-example-bio](Bundle-bundle-example-bio.md), [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)... Show 15 more, [Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md), [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md), [Observation/ExampleMesFrObservationBodyHeight001](Observation-ExampleMesFrObservationBodyHeight001.md), [Observation/ExampleMesFrObservationBodyTemperature001](Observation-ExampleMesFrObservationBodyTemperature001.md), [Observation/ExampleMesFrObservationBodyWeight001](Observation-ExampleMesFrObservationBodyWeight001.md), [Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md), [Observation/ExampleMesFrOxygenSat](Observation-ExampleMesFrOxygenSat.md), [Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md), [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md), [Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md), [Observation/ExampleMesObservationPainSeverity001](Observation-ExampleMesObservationPainSeverity001.md), [Observation/ExampleMesObservationStepsByDay001](Observation-ExampleMesObservationStepsByDay001.md), [Observation/ExampleObservationWaistCircumference001](Observation-ExampleObservationWaistCircumference001.md), [Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ObservationInterpretation.html): [MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md)... Show 5 more, [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md), [Observation/ExampleMesFrObservationBP001](Observation-ExampleMesFrObservationBP001.md) and [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md)
 
 
 
@@ -130,7 +170,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -168,7 +208,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "6.5.0"
+      "version" : "7.0.1"
     },
     {
       "id" : "hl7ext",
@@ -198,7 +238,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       "id" : "ans_fr_terminologies",
       "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
       "packageId" : "ans.fr.terminologies",
-      "version" : "1.2.0"
+      "version" : "1.4.0"
     }
   ],
   "definition" : {
@@ -543,7 +583,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       },
       {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-        "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+        "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
       },
       {
         "extension" : [
@@ -903,14 +943,190 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mesures-bundle-flux-alimentation-biologie"
+        },
+        "name" : "Bundle d'alimentation des mesures de biologie",
+        "description" : "Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Bundle"
           }
         ],
         "reference" : {
-          "reference" : "Bundle/bundle-example"
+          "reference" : "Bundle/bundle-example-bio"
         },
-        "name" : "bundle-example",
+        "name" : "bundle-example-bio",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/bundle-example-body-weight"
+        },
+        "name" : "bundle-example-body-weight",
         "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DiagnosticReport"
+          }
+        ],
+        "reference" : {
+          "reference" : "DiagnosticReport/cholesterol-dr"
+        },
+        "name" : "cholesterol-dr",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/cholesterol-hdl-example"
+        },
+        "name" : "cholesterol-hdl-example",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/cholesterol-ldl-example"
+        },
+        "name" : "cholesterol-ldl-example",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/cholesterol-total-example"
+        },
+        "name" : "cholesterol-total-example",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/cholesterol-trigly-example"
+        },
+        "name" : "cholesterol-trigly-example",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mesures-observation-cholesterol-aspect"
+        },
+        "name" : "Cholestérol - aspect",
+        "description" : "Profil biologie de la ressource Observation pour définir l'aspect du cholestérol",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mesures-observation-cholesterol-hdl"
+        },
+        "name" : "Cholestérol - HDL",
+        "description" : "Profil biologie de la ressource Observation pour définir le cholestérol HDL",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mesures-observation-cholesterol-ldl"
+        },
+        "name" : "Cholestérol - LDL",
+        "description" : "Profil biologie de la ressource Observation pour définir le cholestérol LDL",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mesures-observation-cholesterol-total"
+        },
+        "name" : "Cholestérol - total",
+        "description" : "Profil biologie de la ressource Observation pour définir le cholestérol total",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mesures-observation-cholesterol-trigly"
+        },
+        "name" : "Cholestérol - triglycerides",
+        "description" : "Profil biologie de la ressource Observation pour définir le cholestérol triglycerides",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mesures-diagnostic-report"
+        },
+        "name" : "DiagnosticReport mesures biologie",
+        "description" : "Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -1111,6 +1327,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/exemple-observation-hb1ac"
+        },
+        "name" : "Exemple de mesure Hb1Ac",
+        "description" : "Observation d'une hémoglobine glyquée mesurée à 6.5 %",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1139,6 +1369,19 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/glycemia-example"
+        },
+        "name" : "glycemia-example",
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1146,7 +1389,21 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "reference" : "StructureDefinition/mesures-observation-glucose"
         },
         "name" : "Glycémie",
-        "description" : "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+        "description" : "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 3 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mesures-observation-hb1ac"
+        },
+        "name" : "Hémoglobine glyquée (Hb1Ac)",
+        "description" : "Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %.",
         "exampleBoolean" : false
       },
       {
@@ -1174,7 +1431,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "reference" : "StructureDefinition/mesures-moment-of-measurement"
         },
         "name" : "Moment de la mesure",
-        "description" : "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code.",
+        "description" : "Extension pour indiquer le moment de la mesure",
         "exampleBoolean" : false
       },
       {
@@ -1231,20 +1488,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Nombre de pas par jour",
         "description" : "Profil de la ressource Observation pour définir un nombre de pas par jour",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/mesures-origin-of-data"
-        },
-        "name" : "Origine de la donnée",
-        "description" : "Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio).",
         "exampleBoolean" : false
       },
       {
@@ -1313,7 +1556,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "reference" : "StructureDefinition/mesures-reason-for-measurement"
         },
         "name" : "Raison de la mesure",
-        "description" : "Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…).",
+        "description" : "Extension du Motif de la mesure, exprimé en texte libre.",
         "exampleBoolean" : false
       },
       {
@@ -1371,6 +1614,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "name" : "Tour de taille",
         "description" : "Profil de la ressource Observation pour définir une taille en cm",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mesures-original-data"
+        },
+        "name" : "Valeur originale",
+        "description" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.",
+        "exampleBoolean" : false
       }
     ],
     "page" : {
@@ -1399,22 +1656,33 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "Le-flux-d-alimentation-des-mesures.html"
+              "valueUrl" : "flux-alimentation-signes-vitaux.html"
             }
           ],
-          "nameUrl" : "Le-flux-d-alimentation-des-mesures.html",
-          "title" : "Le flux d'alimentation des mesures de santé",
+          "nameUrl" : "flux-alimentation-signes-vitaux.html",
+          "title" : "Le flux d'alimentation des signes vitaux",
           "generation" : "markdown"
         },
         {
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "Les-profils-utilises-pour-les-mesures-de-sante.html"
+              "valueUrl" : "profils-signes-vitaux.html"
             }
           ],
-          "nameUrl" : "Les-profils-utilises-pour-les-mesures-de-sante.html",
-          "title" : "Les profils utilisés pour les mesures de santé",
+          "nameUrl" : "profils-signes-vitaux.html",
+          "title" : "Les profils FHIR des signes vitaux",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "profils-biologie.html"
+            }
+          ],
+          "nameUrl" : "profils-biologie.html",
+          "title" : "Les profils FHIR des paramètres biologiques",
           "generation" : "markdown"
         },
         {

@@ -20,7 +20,7 @@ Profil: [Tour de taille](StructureDefinition-mesures-observation-waist-circumfer
 
 **effective**: 2022-11-06
 
-**value**: 117 cm(Details: UCUM codecm = 'cm')
+**value**: 117 cm (Détails : code UCUMcm = 'cm')
 
 
 

@@ -25,19 +25,19 @@ Profil: [PhdDevice](http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevic
 | - | **SystemType** | **Version** |
 | * | MDC_DEV_SPEC_PROFILE_PULS_OXIM: Pulse Oximeter | 1 |
 
-> **version****type**:MDC_ID_PROD_SPEC_FW: Firmware revision**value**: r2.1
+> **version****type**: MDC_ID_PROD_SPEC_FW: Firmware revision**value**: r2.1
 
-> **version****type**:MDC_ID_PROD_SPEC_SW: Software revision**value**: r1.5 9.7
+> **version****type**: MDC_ID_PROD_SPEC_SW: Software revision**value**: r1.5 9.7
 
-> **version****type**:MDC_ID_PROD_SPEC_HW: Hardware revision**value**: r1.0
+> **version****type**: MDC_ID_PROD_SPEC_HW: Hardware revision**value**: r1.0
 
-> **version****type**:MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version**value**: 6.0
+> **version****type**: MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version**value**: 6.0
 
-> **property****type**:MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: certified device list as transport-specialization combo**valueCode**:BTLE Pulse Oximeter certified
+> **property****type**: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: certified device list as transport-specialization combo**valueCode**: BTLE Pulse Oximeter certified
 
-> **property****type**:regulation-status**valueCode**:Device is Regulated
+> **property****type**: regulation-status**valueCode**: Device is Regulated
 
-> **property****type**:MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol**valueCode**:MDC_TIME_SYNC_NONE:
+> **property****type**: MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol**valueCode**: MDC_TIME_SYNC_NONE:
 
 
 

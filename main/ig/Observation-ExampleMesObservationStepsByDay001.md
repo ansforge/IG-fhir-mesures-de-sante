@@ -20,7 +20,7 @@ Profil: [Nombre de pas par jour](StructureDefinition-mesures-observation-steps-b
 
 **effective**: 2022-11-06
 
-**value**: 2500 steps/day(Details: UCUM code1/(24.h) = '1/(24.h)')
+**value**: 2500 steps/day (Détails : code UCUM1/(24.h) = '1/(24.h)')
 
 
 

@@ -37,6 +37,7 @@ Les codes de la nomenclature MDC (Médical Device Communication) sont issus de l
 | [Indice de Masse Corporelle](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi) | 39156-5 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Poids](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight) | 29463-7 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Pression Artérielle](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp) | 85354-9 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
+| [Périmètre Crânien](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference) | 9843-4 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Saturation en Oxygène](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat) | 2708-6 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Taille](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight) | 8302-2 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |
 | [Température](https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature) | 8310-5 | [Logical Observation Identifiers, Names and Codes (LOINC)](http://loinc.org) |

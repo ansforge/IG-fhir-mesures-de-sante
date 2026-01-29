@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi | *Version*:3.1.0 |
-| Active as of 2025-10-13 | *Computable Name*:MesFrObservationBmi |
+| Active as of 2026-01-29 | *Computable Name*:MesFrObservationBmi |
 
  
 Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI) 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Examples for this Profile: [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md)
+* Utiliser ce Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
+* Exemples pour ce Profil: [Observation/ExampleMesFrObservationBmi001](Observation-ExampleMesFrObservationBmi001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-bmi)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationBmi",
   "title" : "Indice de Masse Corporelle",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -136,21 +136,6 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
         ]
       },
       {
-        "id" : "Observation.extension:MesOriginOfData",
-        "path" : "Observation.extension",
-        "sliceName" : "MesOriginOfData",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-origin-of-data"
-            ]
-          }
-        ]
-      },
-      {
         "id" : "Observation.performer",
         "path" : "Observation.performer",
         "type" : [
@@ -158,6 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
             "code" : "Reference",
             "targetProfile" : [
               "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
               "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",

@@ -10,7 +10,7 @@
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2025-10-13T07:29:03+00:00",
+  "date" : "2026-01-29T14:02:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -37,7 +37,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.5.0"
+    "version" : "7.0.1"
   },
   {
     "id" : "hl7ext",
@@ -65,7 +65,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.2.0"
+    "version" : "1.4.0"
   }],
   "definition" : {
     "extension" : [{
@@ -356,7 +356,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
     },
     {
       "extension" : [{
@@ -659,13 +659,163 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-bundle-flux-alimentation-biologie"
+      },
+      "name" : "Bundle d'alimentation des mesures de biologie",
+      "description" : "Profil biologie de la ressource Bundle du flux d'alimentation des mesures de biologie à transmettre",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/bundle-example"
+        "reference" : "Bundle/bundle-example-bio"
       },
-      "name" : "bundle-example",
+      "name" : "bundle-example-bio",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/bundle-example-body-weight"
+      },
+      "name" : "bundle-example-body-weight",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/cholesterol-dr"
+      },
+      "name" : "cholesterol-dr",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/cholesterol-hdl-example"
+      },
+      "name" : "cholesterol-hdl-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/cholesterol-ldl-example"
+      },
+      "name" : "cholesterol-ldl-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/cholesterol-total-example"
+      },
+      "name" : "cholesterol-total-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/cholesterol-trigly-example"
+      },
+      "name" : "cholesterol-trigly-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-cholesterol-aspect"
+      },
+      "name" : "Cholestérol - aspect",
+      "description" : "Profil biologie de la ressource Observation pour définir l'aspect du cholestérol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-cholesterol-hdl"
+      },
+      "name" : "Cholestérol - HDL",
+      "description" : "Profil biologie de la ressource Observation pour définir le cholestérol HDL",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-cholesterol-ldl"
+      },
+      "name" : "Cholestérol - LDL",
+      "description" : "Profil biologie de la ressource Observation pour définir le cholestérol LDL",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-cholesterol-total"
+      },
+      "name" : "Cholestérol - total",
+      "description" : "Profil biologie de la ressource Observation pour définir le cholestérol total",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-cholesterol-trigly"
+      },
+      "name" : "Cholestérol - triglycerides",
+      "description" : "Profil biologie de la ressource Observation pour définir le cholestérol triglycerides",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-diagnostic-report"
+      },
+      "name" : "DiagnosticReport mesures biologie",
+      "description" : "Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -835,6 +985,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/exemple-observation-hb1ac"
+      },
+      "name" : "Exemple de mesure Hb1Ac",
+      "description" : "Observation d'une hémoglobine glyquée mesurée à 6.5 %",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -859,13 +1021,36 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/glycemia-example"
+      },
+      "name" : "glycemia-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/mesures-observation-glucose"
       },
       "name" : "Glycémie",
-      "description" : "Profil de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 4 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’hémoglobine glyquée (Hb1Ac) mesurée en %\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+      "description" : "Profil biologie de la ressource Observation pour définir une Glycémie\n\nCe profil permet de gérer 3 types d'indicateurs de glycémie:\n- le taux de glucose sanguin, mesuré en mg/dl\n- le taux de glucose interstitiel, mesuré en mg/dl\n- l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %\n\nL'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .\n\nL'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-observation-hb1ac"
+      },
+      "name" : "Hémoglobine glyquée (Hb1Ac)",
+      "description" : "Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %.",
       "exampleBoolean" : false
     },
     {
@@ -889,7 +1074,7 @@
         "reference" : "StructureDefinition/mesures-moment-of-measurement"
       },
       "name" : "Moment de la mesure",
-      "description" : "Moment de la mesure.\nPeut être exprimé par un texte libre ou un code.",
+      "description" : "Extension pour indiquer le moment de la mesure",
       "exampleBoolean" : false
     },
     {
@@ -938,18 +1123,6 @@
       },
       "name" : "Nombre de pas par jour",
       "description" : "Profil de la ressource Observation pour définir un nombre de pas par jour",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mesures-origin-of-data"
-      },
-      "name" : "Origine de la donnée",
-      "description" : "Extension pour tracer l'origine de la donnée issue d'un compte rendu de biologie (CR-Bio).",
       "exampleBoolean" : false
     },
     {
@@ -1008,7 +1181,7 @@
         "reference" : "StructureDefinition/mesures-reason-for-measurement"
       },
       "name" : "Raison de la mesure",
-      "description" : "Extension du Motif de la mesure, exprimé en texte libre  (ex. diabète, surpoids, maladie du cœur et des vaisseaux, cholestérol…).",
+      "description" : "Extension du Motif de la mesure, exprimé en texte libre.",
       "exampleBoolean" : false
     },
     {
@@ -1058,6 +1231,18 @@
       "name" : "Tour de taille",
       "description" : "Profil de la ressource Observation pour définir une taille en cm",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mesures-original-data"
+      },
+      "name" : "Valeur originale",
+      "description" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -1079,19 +1264,28 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Le-flux-d-alimentation-des-mesures.html"
+          "valueUrl" : "flux-alimentation-signes-vitaux.html"
         }],
-        "nameUrl" : "Le-flux-d-alimentation-des-mesures.html",
-        "title" : "Le flux d'alimentation des mesures de santé",
+        "nameUrl" : "flux-alimentation-signes-vitaux.html",
+        "title" : "Le flux d'alimentation des signes vitaux",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Les-profils-utilises-pour-les-mesures-de-sante.html"
+          "valueUrl" : "profils-signes-vitaux.html"
         }],
-        "nameUrl" : "Les-profils-utilises-pour-les-mesures-de-sante.html",
-        "title" : "Les profils utilisés pour les mesures de santé",
+        "nameUrl" : "profils-signes-vitaux.html",
+        "title" : "Les profils FHIR des signes vitaux",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "profils-biologie.html"
+        }],
+        "nameUrl" : "profils-biologie.html",
+        "title" : "Les profils FHIR des paramètres biologiques",
         "generation" : "markdown"
       },
       {
