@@ -20,12 +20,12 @@ Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnost
   * **Plage de référence**: 2.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')- 11.1 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
   * **Drapeaux**: Final
   * **When For**: 2024-10-15
-* **Code**: [HDL Cholesterol](Observation-example-mes-fr-observation-cholesterol-hdl-003.md)
+* **Code**: [Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique](Observation-example-mes-fr-observation-cholesterol-hdl-003.md)
   * **Valeur**: 2.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
   * **Plage de référence**: >3.1 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
   * **Drapeaux**: Final
   * **When For**: 2024-10-15
-* **Code**: [LDL Cholesterol](Observation-example-mes-fr-observation-cholesterol-ldl-003.md)
+* **Code**: [Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique](Observation-example-mes-fr-observation-cholesterol-ldl-003.md)
   * **Valeur**: 7.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
   * **Plage de référence**: <2.6 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
   * **Drapeaux**: Final

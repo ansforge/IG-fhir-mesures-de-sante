@@ -15,7 +15,7 @@ Profil: [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol
 
 **status**: Final
 
-**code**: HDL Cholesterol
+**code**: Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique
 
 **subject**: [Pierre Durand](Patient-example-mes-fr-patient-001.md)
 
@@ -83,7 +83,7 @@ Profil: [Cholestérol - HDL](StructureDefinition-mesures-observation-cholesterol
       {
         "system" : "http://loinc.org",
         "code" : "2085-9",
-        "display" : "HDL Cholesterol"
+        "display" : "Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique"
       }
     ]
   },

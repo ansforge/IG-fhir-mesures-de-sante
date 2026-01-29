@@ -15,7 +15,7 @@ Profil: [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol
 
 **status**: Final
 
-**code**: LDL Cholesterol
+**code**: Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique
 
 **subject**: [Pierre Durand](Patient-example-mes-fr-patient-001.md)
 
@@ -83,7 +83,7 @@ Profil: [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol
       {
         "system" : "http://loinc.org",
         "code" : "2089-1",
-        "display" : "LDL Cholesterol"
+        "display" : "Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique"
       }
     ]
   },

@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolHDL",
   "title" : "Cholestérol - HDL",
   "status" : "active",
-  "date" : "2026-01-29T17:13:52+00:00",
+  "date" : "2026-01-29T17:15:24+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -184,7 +184,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             {
               "system" : "http://loinc.org",
               "code" : "2085-9",
-              "display" : "HDL Cholesterol"
+              "display" : "Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique"
             }
           ]
         }
