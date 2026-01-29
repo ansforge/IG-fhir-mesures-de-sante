@@ -30,7 +30,7 @@ Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnost
   * **Plage de référence**: <2.6 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
   * **Drapeaux**: Final
   * **When For**: 2024-10-15
-* **Code**: [LDL Cholesterol](Observation-example-mes-fr-observation-cholesterol-trigly-003.md)
+* **Code**: [Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique](Observation-example-mes-fr-observation-cholesterol-trigly-003.md)
   * **Valeur**: 5.6 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
   * **Plage de référence**: 2.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')- 21.1 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
   * **Drapeaux**: Final

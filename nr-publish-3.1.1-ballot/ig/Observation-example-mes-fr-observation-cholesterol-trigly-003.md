@@ -15,7 +15,7 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
 
 **status**: Final
 
-**code**: LDL Cholesterol
+**code**: Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique
 
 **subject**: [Pierre Durand](Patient-example-mes-fr-patient-001.md)
 
@@ -83,7 +83,7 @@ Profil: [Cholestérol - triglycerides](StructureDefinition-mesures-observation-c
       {
         "system" : "http://loinc.org",
         "code" : "2571-8",
-        "display" : "LDL Cholesterol"
+        "display" : "Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique"
       }
     ]
   },

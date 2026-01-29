@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolTrigly",
   "title" : "Cholestérol - triglycerides",
   "status" : "active",
-  "date" : "2026-01-29T17:15:24+00:00",
+  "date" : "2026-01-29T17:16:08+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -183,7 +183,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             {
               "system" : "http://loinc.org",
               "code" : "2571-8",
-              "display" : "LDL Cholesterol"
+              "display" : "Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique"
             }
           ]
         }
