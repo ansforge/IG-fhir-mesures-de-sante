@@ -13,7 +13,7 @@ Usage: #example
 * referenceRange.low = 2.80 'mmol/L' "mmol/L"
 * referenceRange.high = 11.10 'mmol/L' "mmol/L"
 
-* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
+* method = https://smt.esante.gouv.fr/terminologie-tccr#DEG
 
 * extension[mes-original-data].extension[has-been-converted].valueBoolean = true
 * extension[mes-original-data].extension[original-code].valueCodeableConcept = http://loinc.org#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
@@ -36,10 +36,10 @@ Usage: #example
 
 * referenceRange.low = 3.1 'mmol/L' "mmol/L"
 
-* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
+* method = https://smt.esante.gouv.fr/terminologie-tccr#DEG
 
 * extension[mes-original-data].extension[has-been-converted].valueBoolean = true
-* extension[mes-original-data].extension[original-code].valueCodeableConcept = http://loinc.org#2085-9 "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+* extension[mes-original-data].extension[original-code].valueCodeableConcept = http://loinc.org#2085-9 "Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique"
 * extension[mes-original-data].extension[original-value].valueQuantity.value = 1.08
 * extension[mes-original-data].extension[original-value].valueQuantity.unit = "g/L"
 * extension[mes-original-data].extension[original-value].valueQuantity.code = #g/L
@@ -59,10 +59,10 @@ Usage: #example
 
 * referenceRange.high = 2.6 'mmol/L' "mmol/L"
 
-* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
+* method = https://smt.esante.gouv.fr/terminologie-tccr#DEG
 
 * extension[mes-original-data].extension[has-been-converted].valueBoolean = true
-* extension[mes-original-data].extension[original-code].valueCodeableConcept = http://loinc.org#2089-1 "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+* extension[mes-original-data].extension[original-code].valueCodeableConcept = http://loinc.org#2089-1 "Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique"
 * extension[mes-original-data].extension[original-value].valueQuantity.value = 3.02
 * extension[mes-original-data].extension[original-value].valueQuantity.unit = "g/L"
 * extension[mes-original-data].extension[original-value].valueQuantity.code = #g/L
@@ -83,10 +83,10 @@ Usage: #example
 * referenceRange.low = 2.80 'mmol/L' "mmol/L"
 * referenceRange.high = 21.1 'mmol/L' "mmol/L"
 
-* method = https://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789#DEG
+* method = https://smt.esante.gouv.fr/terminologie-tccr#DEG
 
 * extension[mes-original-data].extension[has-been-converted].valueBoolean = true
-* extension[mes-original-data].extension[original-code].valueCodeableConcept = http://loinc.org#2571-8 "Triglyceride [Mass/volume] in Serum or Plasma"
+* extension[mes-original-data].extension[original-code].valueCodeableConcept = http://loinc.org#2571-8 "Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique"
 * extension[mes-original-data].extension[original-value].valueQuantity.value = 4.9
 * extension[mes-original-data].extension[original-value].valueQuantity.unit = "g/L"
 * extension[mes-original-data].extension[original-value].valueQuantity.code = #g/L

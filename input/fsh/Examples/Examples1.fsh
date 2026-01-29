@@ -95,7 +95,7 @@ InstanceOf: MesFrObservationOxygenSat
 Usage: #example
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
-* code[0].coding[OxygenSatCode][0] = $loinc#2708-6 "Oxygen saturation in Arterial blood"
+* code[0].coding[OxygenSatCode][0] = $loinc#2708-6 "Oxygène saturation [Fraction massique] Sang artériel ; Numérique"
 * effectiveDateTime = "1999-07-02"
 * valueQuantity = 99 '%' "%O2"
 
