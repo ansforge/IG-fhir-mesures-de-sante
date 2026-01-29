@@ -13,6 +13,7 @@ Alias: $fr-patient = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-pat
 Alias: $fr-encounter = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter
 Alias: $fr-practitioner = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner
 Alias: $fr-organization = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization
+Alias: $fr-related-person = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person
 Alias: $levelOfExertion = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion
 Alias: $MesBodyPosition = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position
 
@@ -46,3 +47,4 @@ Alias: $JDV-J158-MethodStepsByDay-MES = https://mos.esante.gouv.fr/NOS/JDV_J158-
 Alias: $JDV-J159-MethodPainSeverity-MES = https://mos.esante.gouv.fr/NOS/JDV_J159-MethodPainSeverity-ENS/FHIR/JDV-J159-MethodPainSeverity-ENS
 Alias: $JDV-J163-GlucoseUnits-MES = https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS
 Alias: $JDV-J164-GlucoseNumberOfDays-MES = https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS
+Alias: $jdv-technique-biologie-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-technique-biologie-cisis

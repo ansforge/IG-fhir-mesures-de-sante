@@ -6,13 +6,6 @@ Description: "Profil de la ressource Observation pour définir un Périmètre Cr
 
 * insert ObservationResultsMesures
 
-
-
-* subject only Reference($fr-patient)
-* encounter only Reference($fr-encounter)
-* performer only Reference(CareTeam or RelatedPerson or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)
-
-
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "code"
 * code.coding ^slicing.discriminator[+].type = #value

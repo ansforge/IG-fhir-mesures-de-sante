@@ -2,7 +2,7 @@ Profile: MesObservationGlucose
 Parent: $vitalsigns
 Id: mesures-observation-glucose
 Title: "Glycémie"
-Description: """Profil de la ressource Observation pour définir une Glycémie
+Description: """Profil biologie de la ressource Observation pour définir une Glycémie
 
 Ce profil permet de gérer 3 types d'indicateurs de glycémie:
 - le taux de glucose sanguin, mesuré en mg/dl
@@ -42,7 +42,7 @@ L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le
 * dataAbsentReason.coding.system 1..
 * dataAbsentReason.coding.code 1..
 
-* method MS
+* method  ^short = "La méthode de mesure du cholestérol total est fortement conseillée pour déterminer si des résultats sont comparables et ainsi interpréter cette donnée."
 * method from method-glucose-vs (extensible)
 
 * device only Reference($PhdDevice)

@@ -150,11 +150,6 @@ Usage: #example
 * effectiveDateTime = "2022-11-06"
 * valueQuantity = 70 '/min' "battements/minute"
 
-
-
-
-
-
 Instance: ExampleMesObservationHeadCircumference001
 InstanceOf: MesObservationHeadCircumference
 Usage: #example

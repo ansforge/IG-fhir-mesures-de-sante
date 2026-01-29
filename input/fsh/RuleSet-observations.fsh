@@ -4,9 +4,7 @@ RuleSet: ObservationResultsMesures
 
 * extension contains
     $workflow-supportingInfo named supportingInfo 0..1 and
-    mesures-reason-for-measurement named MesReasonForMeasurement 0..1 and
-    mesures-origin-of-data named MesOriginOfData 0..1
-
+    mesures-reason-for-measurement named MesReasonForMeasurement 0..1
 
 * extension[MesReasonForMeasurement] ^short = "Motif de la mesure"
 * extension[MesReasonForMeasurement] ^definition = "Motif de la mesure\r\nTexte libre (ex. diabète, surpoids, hypercholestérolémie, risque cardiovasculaire, suivi, ...)"
@@ -15,4 +13,4 @@ RuleSet: ObservationResultsMesures
 
 * subject only Reference($fr-patient)
 * encounter only Reference($fr-encounter)
-* performer only Reference(CareTeam or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)
+* performer only Reference(CareTeam or $fr-related-person or $fr-patient or $fr-practitioner or PractitionerRole or $fr-organization)

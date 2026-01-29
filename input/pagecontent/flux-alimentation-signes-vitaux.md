@@ -228,13 +228,3 @@ Cette ressource OperationOutcome (<https://www.hl7.org/fhir/operationoutcome.htm
   
 
 Seul les niveaux « fatal » et « error » provoquent un retour avec un code http d’erreur.
-
-
-
-
-
-
-	
-			
- 
-

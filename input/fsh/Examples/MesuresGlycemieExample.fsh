@@ -1,10 +1,6 @@
 Instance: ExampleMesObservationGlucose001
 InstanceOf: MesObservationGlucose
 Usage: #example
-* extension[MesOriginOfData].extension[hasBeenConverted].valueBoolean = true
-* extension[MesOriginOfData].extension[documentId].valueIdentifier.system = "http://system-dmp-example.fr"
-* extension[MesOriginOfData].extension[documentId].valueIdentifier.value = "6f9b7d72-2a8e-4a35-b95a-c2d31b279c7b"
-* extension[MesOriginOfData].extension[originalCode].valueCodeableConcept = http://loinc.org#2345-7
 
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
