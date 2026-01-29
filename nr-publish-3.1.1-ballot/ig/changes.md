@@ -37,7 +37,9 @@ Modifications apportées dans la release [3.1.1](https://github.com/ansforge/IG-
 
 ### Release 3.0.1 de l’Implementation Guide Mesures de santé
 
-Rajout de l`onglet ressources de conformité dans le header, suppression de l`obligation de préciser le profil dans meta.profile, mise à jour des exemples
+* Rajout de l’onglet ressources de conformité dans le heade
+* suppression de l’obligation de préciser le profil dans meta.profile
+* mise à jour des exemples
 
 ### Release 3.0.0 de l’Implementation Guide Mesures de santé
 

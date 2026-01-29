@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationPainSeverity",
   "title" : "Niveau de douleur",
   "status" : "active",
-  "date" : "2026-01-29T14:26:05+00:00",
+  "date" : "2026-01-29T16:17:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
