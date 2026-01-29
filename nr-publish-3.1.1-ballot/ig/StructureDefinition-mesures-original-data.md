@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-original-dat
   "name" : "MesOriginalData",
   "title" : "Valeur originale",
   "status" : "active",
-  "date" : "2026-01-29T14:24:01+00:00",
+  "date" : "2026-01-29T14:26:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
