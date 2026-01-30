@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total | *Version*:3.1.1 |
-| Active as of 2026-01-29 | *Computable Name*:MesObservationCholesterolTotal |
+| Active as of 2026-01-30 | *Computable Name*:MesObservationCholesterolTotal |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol total 
@@ -18,7 +18,7 @@ Profil biologie de la ressource Observation pour définir le cholestérol total
 
 * Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
 * Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
-* Exemples pour ce Profil: [Observation/example-mes-fr-observation-cholesterol-total-003](Observation-example-mes-fr-observation-cholesterol-total-003.md)
+* Exemples pour ce Profil: [Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce](Observation-b7a049e3-c07e-4e1c-95a5-909da37f75ce.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-total)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolTotal",
   "title" : "Cholestérol - total",
   "status" : "active",
-  "date" : "2026-01-29T17:16:08+00:00",
+  "date" : "2026-01-30T09:23:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

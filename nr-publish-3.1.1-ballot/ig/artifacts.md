@@ -71,7 +71,7 @@ These are example instances that show what data produced and consumed by systems
 | [Exemple de mesure de l'IMC](Observation-example-mes-fr-observation-bmi-001.md) | Exemple de mesure de l’IMC |
 | [Exemple de mesure de la fréquence cardiaque](Observation-example-mes-fr-observation-heartrate-001.md) | Exemple de mesure de la fréquence cardiaque |
 | [Exemple de mesure de la fréquence respiratoire](Observation-example-mes-fr-observation-resp-rate-001.md) | Exemple de mesure de la fréquence respiratoire |
-| [Exemple de mesure de la glycémie](Observation-example-mes-fr-observation-glycemia-003.md) | Exemple de mesure de la glycémie |
+| [Exemple de mesure de la glycémie](Observation-8057b6ec-1417-4f1f-9a00-b0c46e7e71b1.md) | Exemple de mesure de la glycémie |
 | [Exemple de mesure de la glycémie (001)](Observation-example-mes-fr-observation-glucose-001.md) | Exemple de mesure de la glycémie (001) |
 | [Exemple de mesure de la pression artérielle](Observation-example-mes-fr-observation-bp-001.md) | Exemple de mesure de la pression artérielle |
 | [Exemple de mesure de la saturation en oxygène](Observation-example-mes-fr-observation-oxygen-sat-001.md) | Exemple de mesure de la saturation en oxygène |
@@ -79,10 +79,10 @@ These are example instances that show what data produced and consumed by systems
 | [Exemple de mesure de la température corporelle](Observation-example-mes-fr-observation-body-temperature-001.md) | Exemple de mesure de la température corporelle |
 | [Exemple de mesure de poids corporel](Observation-example-mes-fr-observation-body-weight-001.md) | Exemple de mesure de poids corporel |
 | [Exemple de mesure de taille corporelle](Observation-example-mes-fr-observation-body-height-001.md) | Exemple de mesure de taille corporelle |
-| [Exemple de mesure du cholestérol HDL](Observation-example-mes-fr-observation-cholesterol-hdl-003.md) | Exemple de mesure du cholestérol HDL |
-| [Exemple de mesure du cholestérol LDL](Observation-example-mes-fr-observation-cholesterol-ldl-003.md) | Exemple de mesure du cholestérol LDL |
-| [Exemple de mesure du cholestérol total](Observation-example-mes-fr-observation-cholesterol-total-003.md) | Exemple de mesure du cholestérol total |
-| [Exemple de mesure du cholestérol triglycérides (003)](Observation-example-mes-fr-observation-cholesterol-trigly-003.md) | Exemple de mesure du cholestérol triglycérides (003) |
+| [Exemple de mesure du cholestérol HDL](Observation-7b166d82-27b6-4878-9765-3fe101618edf.md) | Exemple de mesure du cholestérol HDL |
+| [Exemple de mesure du cholestérol LDL](Observation-9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e.md) | Exemple de mesure du cholestérol LDL |
+| [Exemple de mesure du cholestérol total](Observation-b7a049e3-c07e-4e1c-95a5-909da37f75ce.md) | Exemple de mesure du cholestérol total |
+| [Exemple de mesure du cholestérol triglycérides (003)](Observation-645f7341-715f-44fb-87e9-93f2e7d125a5.md) | Exemple de mesure du cholestérol triglycérides (003) |
 | [Exemple de mesure du nombre de pas par jour](Observation-example-mes-fr-observation-steps-by-day-001.md) | Exemple de mesure du nombre de pas par jour |
 | [Exemple de mesure du périmètre crânien](Observation-example-mes-fr-observation-head-circumference-001.md) | Exemple de mesure du périmètre crânien |
 | [Exemple de mesure du tour de taille](Observation-example-mes-fr-observation-waist-circum-001.md) | Exemple de mesure du tour de taille |

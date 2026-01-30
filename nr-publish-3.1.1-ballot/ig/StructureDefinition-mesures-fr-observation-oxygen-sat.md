@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat | *Version*:3.1.1 |
-| Active as of 2026-01-29 | *Computable Name*:MesFrObservationOxygenSat |
+| Active as of 2026-01-30 | *Computable Name*:MesFrObservationOxygenSat |
 
  
 Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2) 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationOxygenSat",
   "title" : "Saturation en Oxygène",
   "status" : "active",
-  "date" : "2026-01-29T17:16:08+00:00",
+  "date" : "2026-01-30T09:23:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

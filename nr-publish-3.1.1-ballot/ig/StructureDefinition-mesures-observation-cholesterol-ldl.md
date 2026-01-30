@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl | *Version*:3.1.1 |
-| Active as of 2026-01-29 | *Computable Name*:MesObservationCholesterolLDL |
+| Active as of 2026-01-30 | *Computable Name*:MesObservationCholesterolLDL |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol LDL 
@@ -18,7 +18,7 @@ Profil biologie de la ressource Observation pour définir le cholestérol LDL
 
 * Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
 * Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
-* Exemples pour ce Profil: [Observation/example-mes-fr-observation-cholesterol-ldl-003](Observation-example-mes-fr-observation-cholesterol-ldl-003.md)
+* Exemples pour ce Profil: [Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e](Observation-9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-ldl)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolLDL",
   "title" : "Cholestérol - LDL",
   "status" : "active",
-  "date" : "2026-01-29T17:16:08+00:00",
+  "date" : "2026-01-30T09:23:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
