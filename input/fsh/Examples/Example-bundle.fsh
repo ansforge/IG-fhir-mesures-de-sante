@@ -8,17 +8,17 @@ Title: "Exemple de bundle FHIR pour une mesure de poids corporel avec un disposi
 Usage: #example
 Description: "Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD"
 * type = #transaction
-* entry[mes-device][0].resource = example-mes-fr-device-002
+* entry[mes-device][0].resource = d36bfdb6-b1b1-4efd-9cb9-d217a8696575
 * entry[mes-device][=].request.method = #POST
 * entry[mes-device][=].request.url = "Device"
 * entry[mes-device][=].fullUrl = "urn:uuid:d36bfdb6-b1b1-4efd-9cb9-d217a8696575" //created using random generator
 
-* entry[mes-observation][+].resource = example-mes-fr-observation-body-weight-002
+* entry[mes-observation][+].resource = 5138af77-df7e-4b9d-ba17-07ba3ebb950a
 * entry[mes-observation][=].request.method = #POST
 * entry[mes-observation][=].request.url = "Observation"
 * entry[mes-observation][=].fullUrl = "urn:uuid:5138af77-df7e-4b9d-ba17-07ba3ebb950a" //created using random generator
 
-Instance: example-mes-fr-device-002
+Instance: d36bfdb6-b1b1-4efd-9cb9-d217a8696575
 InstanceOf: PhdDevice
 Title: "Exemple de dispositif PHD : une balance OMRON"
 Usage: #inline
@@ -36,7 +36,7 @@ Description: "Exemple de dispositif PHD : une balance OMRON"
 * specialization.systemType = urn:iso:std:iso:11073:10101#528457
 * specialization.version = "2.3"
 
-Instance: example-mes-fr-observation-body-weight-002
+Instance: 5138af77-df7e-4b9d-ba17-07ba3ebb950a
 InstanceOf: MesFrObservationBodyWeight
 Title: "Exemple de mesure de poids corporel prise avec une balance PHD" 
 Usage: #inline

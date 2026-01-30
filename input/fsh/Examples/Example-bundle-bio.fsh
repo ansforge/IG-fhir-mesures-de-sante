@@ -1,4 +1,4 @@
-Instance: example-mes-fr-observation-cholesterol-total-003
+Instance: b7a049e3-c07e-4e1c-95a5-909da37f75ce
 InstanceOf: MesObservationCholesterolTotal
 Title: "Exemple de mesure du cholestérol total"
 Usage: #example
@@ -24,7 +24,7 @@ Description: "Exemple de mesure du cholestérol total"
 * extension[mes-original-data].extension[original-value].valueQuantity.code = #g/L
 * extension[mes-original-data].extension[original-value].valueQuantity.system = $UCUM
 
-Instance: example-mes-fr-observation-cholesterol-hdl-003
+Instance: 7b166d82-27b6-4878-9765-3fe101618edf
 InstanceOf: MesObservationCholesterolHDL
 Title:  "Exemple de mesure du cholestérol HDL"
 Usage: #example
@@ -49,7 +49,7 @@ Description: "Exemple de mesure du cholestérol HDL"
 * extension[mes-original-data].extension[original-value].valueQuantity.code = #g/L
 * extension[mes-original-data].extension[original-value].valueQuantity.system = $UCUM
 
-Instance: example-mes-fr-observation-cholesterol-ldl-003
+Instance: 9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e
 InstanceOf: MesObservationCholesterolLDL
 Title: "Exemple de mesure du cholestérol LDL"
 Description: "Exemple de mesure du cholestérol LDL"
@@ -74,7 +74,7 @@ Usage: #example
 * extension[mes-original-data].extension[original-value].valueQuantity.code = #g/L
 * extension[mes-original-data].extension[original-value].valueQuantity.system = $UCUM
 
-Instance: example-mes-fr-observation-cholesterol-trigly-003
+Instance: 645f7341-715f-44fb-87e9-93f2e7d125a5
 InstanceOf: MesObservationCholesterolTrigly
 Title: "Exemple de mesure du cholestérol triglycérides (003)"
 Description: "Exemple de mesure du cholestérol triglycérides (003)"
@@ -100,7 +100,7 @@ Usage: #example
 * extension[mes-original-data].extension[original-value].valueQuantity.code = #g/L
 * extension[mes-original-data].extension[original-value].valueQuantity.system = $UCUM
 
-Instance: example-mes-fr-observation-glycemia-003
+Instance: 8057b6ec-1417-4f1f-9a00-b0c46e7e71b1
 InstanceOf: MesObservationGlucose
 Title: "Exemple de mesure de la glycémie"
 Description: "Exemple de mesure de la glycémie"
@@ -124,13 +124,13 @@ Title: "Exemple de rapport diagnostique de bilan lipidique"
 Description: "Exemple de rapport diagnostique de bilan lipidique"
 Usage: #example
 * status = #final
-* result[total-cholesterol] = Reference(example-mes-fr-observation-cholesterol-total-003)
-* result[hdl-cholesterol] = Reference(example-mes-fr-observation-cholesterol-hdl-003)
-* result[ldl-cholesterol] = Reference(example-mes-fr-observation-cholesterol-ldl-003)
-* result[trigly-cholesterol] = Reference(example-mes-fr-observation-cholesterol-trigly-003)
+* result[total-cholesterol] = Reference(b7a049e3-c07e-4e1c-95a5-909da37f75ce)
+* result[hdl-cholesterol] = Reference(7b166d82-27b6-4878-9765-3fe101618edf)
+* result[ldl-cholesterol] = Reference(9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e)
+* result[trigly-cholesterol] = Reference(645f7341-715f-44fb-87e9-93f2e7d125a5)
 // TODO : add aspect, ratio
 
-* result[glycemie] = Reference(example-mes-fr-observation-glycemia-003)
+* result[glycemie] = Reference(8057b6ec-1417-4f1f-9a00-b0c46e7e71b1)
 
 Instance: example-mes-fr-bundle-bio-003
 InstanceOf: MesBundleFluxAlimentationBiologie
@@ -141,28 +141,28 @@ Usage: #example
 
 //UUIDs have been created using random generator
 
-* entry[mes-observation-ldl][0].resource = example-mes-fr-observation-cholesterol-ldl-003
+* entry[mes-observation-ldl][0].resource = 9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e
 * entry[mes-observation-ldl][=].request.method = #POST
 * entry[mes-observation-ldl][=].request.url = "Observation"
 * entry[mes-observation-ldl][=].fullUrl = "urn:uuid:9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e"
 
-* entry[mes-observation-hdl][+].resource = example-mes-fr-observation-cholesterol-hdl-003
+* entry[mes-observation-hdl][+].resource = 7b166d82-27b6-4878-9765-3fe101618edf
 * entry[mes-observation-hdl][=].request.method = #POST
 * entry[mes-observation-hdl][=].request.url = "Observation"
 * entry[mes-observation-hdl][=].fullUrl = "urn:uuid:7b166d82-27b6-4878-9765-3fe101618edf"
 
-* entry[mes-observation-trigly][+].resource = example-mes-fr-observation-cholesterol-trigly-003
+* entry[mes-observation-trigly][+].resource = 645f7341-715f-44fb-87e9-93f2e7d125a5
 * entry[mes-observation-trigly][=].request.method = #POST
 * entry[mes-observation-trigly][=].request.url = "Observation"
 * entry[mes-observation-trigly][=].fullUrl = "urn:uuid:645f7341-715f-44fb-87e9-93f2e7d125a5"
 
-* entry[mes-observation-total][+].resource = example-mes-fr-observation-cholesterol-total-003
+* entry[mes-observation-total][+].resource = b7a049e3-c07e-4e1c-95a5-909da37f75ce
 * entry[mes-observation-total][=].request.method = #POST
 * entry[mes-observation-total][=].request.url = "Observation"
 * entry[mes-observation-total][=].fullUrl = "urn:uuid:b7a049e3-c07e-4e1c-95a5-909da37f75ce"
 
 
-* entry[mes-observation-glycemie][+].resource = example-mes-fr-observation-glycemia-003
+* entry[mes-observation-glycemie][+].resource = 8057b6ec-1417-4f1f-9a00-b0c46e7e71b1
 * entry[mes-observation-glycemie][=].request.method = #POST
 * entry[mes-observation-glycemie][=].request.url = "Observation"
 * entry[mes-observation-glycemie][=].fullUrl = "urn:uuid:8057b6ec-1417-4f1f-9a00-b0c46e7e71b1" 
