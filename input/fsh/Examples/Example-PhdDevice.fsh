@@ -1,5 +1,8 @@
-Instance: phd-74E8FFFEFF051C00
+Instance: example-mes-fr-phd-device-001
 InstanceOf: PhdDevice
+Title: "Exemple de dispositif PHD : un oxymètre Nonin"
+Description: "Exemple de dispositif PHD : un oxymètre Nonin" 
+Usage: #example
 * meta.profile[phdProfile][0] = "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"
 * identifier[systemIdIdentifier][0].type = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers#SYSID
 * identifier[systemIdIdentifier][=].system = "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"

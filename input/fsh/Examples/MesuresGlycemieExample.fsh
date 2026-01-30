@@ -1,9 +1,10 @@
-Instance: ExampleMesObservationGlucose001
+Instance: example-mes-fr-observation-glucose-001
 InstanceOf: MesObservationGlucose
+Title: "Exemple de mesure de la glycémie (001)"
 Usage: #example
-
+Description: "Exemple de mesure de la glycémie (001)"
 * status = #final
-* subject = Reference(ExamplefrPatient001) "Pierre Durand"
+* subject = Reference(example-mes-fr-patient-001) "Pierre Durand"
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
 * code = https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc#4548-4
