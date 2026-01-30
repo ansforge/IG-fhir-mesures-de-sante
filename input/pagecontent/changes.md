@@ -41,6 +41,6 @@ Modifications apportées dans la release [3.1.1](https://github.com/ansforge/IG-
 * Dans EnsObservationGlucose, le slice sur method (illégal) a été supprimé et remplacé par un binding sur un JDV MethodeGlucoseVS qui inclut les deux JDV,
 * La racine des URL canoniques ANS a été changée en http://interop.esante.gouv.fr/ig/fhir/mesures
 
-### [1.2](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_mesures-de-sante_v1.2_20220805.pdf) de l'Implementation Guide Mesures de santé
+### [Release 1.2](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_mesures-de-sante_v1.2_20220805.pdf) de l'Implementation Guide Mesures de santé
 
 Première version du volet mesures en pdf
