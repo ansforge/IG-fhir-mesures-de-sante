@@ -24,14 +24,14 @@ Profil: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
 
 **effective**: 2022-11-06
 
-**value**: 92 milligramme par décilitre (Détails : code UCUMmg/dL = 'mg/dL')
+**value**: 92 milligramme par décilitre (Détails : code UCUMmg/dL = 'milligram per deciliter')
 
 ### ReferenceRanges
 
 | | | |
 | :--- | :--- | :--- |
 | - | **Low** | **High** |
-| * | 70 milligramme par décilitre (Détails : code UCUMmg/dL = 'mg/dL') | 100 milligramme par décilitre (Détails : code UCUMmg/dL = 'mg/dL') |
+| * | 70 milligramme par décilitre (Détails : code UCUMmg/dL = 'milligram per deciliter') | 100 milligramme par décilitre (Détails : code UCUMmg/dL = 'milligram per deciliter') |
 
 
 

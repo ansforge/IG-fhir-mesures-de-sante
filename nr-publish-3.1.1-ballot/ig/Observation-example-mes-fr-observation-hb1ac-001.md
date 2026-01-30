@@ -20,7 +20,7 @@ Profil: [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-
 
 **performer**: [Jean Dupont](Practitioner-example-mes-fr-practitionner-001.md)
 
-**value**: 6.5 % (Détails : code UCUM% = '%')
+**value**: 6.5 % (Détails : code UCUM% = 'percent')
 
 **method**: High-performance liquid chromatography
 

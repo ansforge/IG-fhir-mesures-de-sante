@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationRespiratoryRate",
   "title" : "Fréquence respiratoire",
   "status" : "active",
-  "date" : "2026-01-30T09:23:26+00:00",
+  "date" : "2026-01-30T09:29:11+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -20,7 +20,7 @@ Profil: [Poids](StructureDefinition-mesures-fr-observation-body-weight.md)
 
 **effective**: 2022-11-06
 
-**value**: 96 Kg (Détails : code UCUMkg = 'kg')
+**value**: 96 Kg (Détails : code UCUMkg = 'kilogram')
 
 **method**: Balance
 

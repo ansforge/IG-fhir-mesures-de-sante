@@ -11,7 +11,7 @@ Profil: [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol
 > **Valeur originale**
 * has-been-converted: true
 * original-code: Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique
-* original-value: 3.02 g/L (Détails : code UCUMg/L = 'g/L')
+* original-value: 3.02 g/L (Détails : code UCUMg/L = 'gram per liter')
 
 **status**: Final
 
@@ -21,7 +21,7 @@ Profil: [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol
 
 **effective**: 2024-10-15
 
-**value**: 7.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
+**value**: 7.8 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
 
 **method**: DEG
 
@@ -30,7 +30,7 @@ Profil: [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol
 | | |
 | :--- | :--- |
 | - | **High** |
-| * | 2.6 mmol/L (Détails : code UCUMmmol/L = 'mmol/L') |
+| * | 2.6 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter') |
 
 
 

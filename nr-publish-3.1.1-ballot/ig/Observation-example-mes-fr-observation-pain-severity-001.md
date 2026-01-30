@@ -20,7 +20,7 @@ Profil: [Niveau de douleur](StructureDefinition-mesures-observation-pain-severit
 
 **effective**: 2022-11-06
 
-**value**: 5 Level (Détails : code UCUM1 = '1')
+**value**: 5 Level (Détails : code UCUM1 = '1*')
 
 
 

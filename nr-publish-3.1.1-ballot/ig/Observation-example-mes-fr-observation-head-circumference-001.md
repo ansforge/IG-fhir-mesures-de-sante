@@ -18,7 +18,7 @@ Profil: [Périmètre Crânien](StructureDefinition-mesures-observation-head-circ
 
 **effective**: 2022-11-06
 
-**value**: 61 cm (Détails : code UCUMcm = 'cm')
+**value**: 61 cm (Détails : code UCUMcm = 'centimeter')
 
 
 

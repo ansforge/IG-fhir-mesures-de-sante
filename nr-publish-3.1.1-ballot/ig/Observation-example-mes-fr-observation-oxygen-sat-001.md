@@ -18,7 +18,7 @@ Profil: [Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxyg
 
 **effective**: 1999-07-02
 
-**value**: 99 %O2 (Détails : code UCUM% = '%')
+**value**: 99 %O2 (Détails : code UCUM% = 'percent')
 
 
 

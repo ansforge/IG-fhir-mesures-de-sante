@@ -24,9 +24,9 @@ Profil: [Pression Artérielle](StructureDefinition-mesures-fr-observation-bp.md)
 
 **bodySite**: Bras
 
-> **component****code**: Systolic blood pressure**value**: 107 mm[Hg] (Détails : code UCUMmm[Hg] = 'mm[Hg]')**interpretation**: Normal
+> **component****code**: Systolic blood pressure**value**: 107 mm[Hg] (Détails : code UCUMmm[Hg] = 'millimeter of mercury')**interpretation**: Normal
 
-> **component****code**: Diastolic blood pressure**value**: 60 mm[Hg] (Détails : code UCUMmm[Hg] = 'mm[Hg]')**interpretation**: En-dessous de la normale
+> **component****code**: Diastolic blood pressure**value**: 60 mm[Hg] (Détails : code UCUMmm[Hg] = 'millimeter of mercury')**interpretation**: En-dessous de la normale
 
 
 

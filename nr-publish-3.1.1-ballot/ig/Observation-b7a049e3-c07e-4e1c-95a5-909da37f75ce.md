@@ -10,8 +10,8 @@ Profil: [Cholestérol - total](StructureDefinition-mesures-observation-cholester
 
 > **Valeur originale**
 * has-been-converted: true
-* original-code: Cholesterol [Mass/volume] in Serum or Plasma
-* original-value: 0.155 g/L (Détails : code UCUMg/L = 'g/L')
+* original-code: Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique
+* original-value: 0.155 g/L (Détails : code UCUMg/L = 'gram per liter')
 
 **status**: Final
 
@@ -21,7 +21,7 @@ Profil: [Cholestérol - total](StructureDefinition-mesures-observation-cholester
 
 **effective**: 2024-10-15
 
-**value**: 0.4 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
+**value**: 0.4 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
 
 **method**: DEG
 
@@ -30,7 +30,7 @@ Profil: [Cholestérol - total](StructureDefinition-mesures-observation-cholester
 | | | |
 | :--- | :--- | :--- |
 | - | **Low** | **High** |
-| * | 2.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L') | 11.1 mmol/L (Détails : code UCUMmmol/L = 'mmol/L') |
+| * | 2.8 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter') | 11.1 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter') |
 
 
 
@@ -59,7 +59,7 @@ Profil: [Cholestérol - total](StructureDefinition-mesures-observation-cholester
               {
                 "system" : "http://loinc.org",
                 "code" : "2093-3",
-                "display" : "Cholesterol [Mass/volume] in Serum or Plasma"
+                "display" : "Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique"
               }
             ]
           }

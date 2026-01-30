@@ -16,28 +16,28 @@ Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnost
 **Détails du rapport**
 
 * **Code**: [Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique](Observation-b7a049e3-c07e-4e1c-95a5-909da37f75ce.md)
-  * **Valeur**: 0.4 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
-  * **Plage de référence**: 2.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')- 11.1 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
+  * **Valeur**: 0.4 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
+  * **Plage de référence**: 2.8 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')- 11.1 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
   * **Drapeaux**: Final
   * **When For**: 2024-10-15
 * **Code**: [Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique](Observation-7b166d82-27b6-4878-9765-3fe101618edf.md)
-  * **Valeur**: 2.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
-  * **Plage de référence**: >3.1 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
+  * **Valeur**: 2.8 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
+  * **Plage de référence**: >3.1 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
   * **Drapeaux**: Final
   * **When For**: 2024-10-15
 * **Code**: [Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique](Observation-9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e.md)
-  * **Valeur**: 7.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
-  * **Plage de référence**: <2.6 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
+  * **Valeur**: 7.8 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
+  * **Plage de référence**: <2.6 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
   * **Drapeaux**: Final
   * **When For**: 2024-10-15
 * **Code**: [Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique](Observation-645f7341-715f-44fb-87e9-93f2e7d125a5.md)
-  * **Valeur**: 5.6 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
-  * **Plage de référence**: 2.8 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')- 21.1 mmol/L (Détails : code UCUMmmol/L = 'mmol/L')
+  * **Valeur**: 5.6 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
+  * **Plage de référence**: 2.8 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')- 21.1 mmol/L (Détails : code UCUMmmol/L = 'millimole per liter')
   * **Drapeaux**: Final
   * **When For**: 2024-10-15
 * **Code**: [Hémoglobine A1c %](Observation-8057b6ec-1417-4f1f-9a00-b0c46e7e71b1.md)
-  * **Valeur**: 92 milligramme par décilitre (Détails : code UCUMmg/dL = 'mg/dL')
-  * **Plage de référence**: 70 milligramme par décilitre (Détails : code UCUMmg/dL = 'mg/dL')- 100 milligramme par décilitre (Détails : code UCUMmg/dL = 'mg/dL')
+  * **Valeur**: 92 milligramme par décilitre (Détails : code UCUMmg/dL = 'milligram per deciliter')
+  * **Plage de référence**: 70 milligramme par décilitre (Détails : code UCUMmg/dL = 'milligram per deciliter')- 100 milligramme par décilitre (Détails : code UCUMmg/dL = 'milligram per deciliter')
   * **Drapeaux**: Final
   * **When For**: 2022-11-06
 
