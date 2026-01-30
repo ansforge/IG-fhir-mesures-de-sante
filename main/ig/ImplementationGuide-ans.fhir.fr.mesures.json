@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.mesures</b></p><a name=\"ans.fhir.fr.mesures\"> </a><a name=\"hcans.fhir.fr.mesures\"> </a><h2>Mesures</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -671,83 +671,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/bundle-example-bio"
-      },
-      "name" : "bundle-example-bio",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/bundle-example-body-weight"
-      },
-      "name" : "bundle-example-body-weight",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DiagnosticReport"
-      }],
-      "reference" : {
-        "reference" : "DiagnosticReport/cholesterol-dr"
-      },
-      "name" : "cholesterol-dr",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/cholesterol-hdl-example"
-      },
-      "name" : "cholesterol-hdl-example",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/cholesterol-ldl-example"
-      },
-      "name" : "cholesterol-ldl-example",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/cholesterol-total-example"
-      },
-      "name" : "cholesterol-total-example",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/cholesterol-trigly-example"
-      },
-      "name" : "cholesterol-trigly-example",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -820,23 +743,37 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
+        "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Patient/ExamplefrPatient001"
+        "reference" : "Bundle/example-mes-fr-bundle-bio-003"
       },
-      "name" : "ExamplefrPatient001",
-      "exampleBoolean" : true
+      "name" : "Exemple de bundle FHIR pour un bilan lipidique et une glycémie",
+      "description" : "Exemple de bundle FHIR pour un bilan lipidique et une glycémie",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
+        "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Practitioner/ExampleFrPractitionner001"
+        "reference" : "Bundle/example-mes-fr-bundle-body-weight"
       },
-      "name" : "ExampleFrPractitionner001",
+      "name" : "Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD",
+      "description" : "Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/example-mes-fr-phd-device-001"
+      },
+      "name" : "Exemple de dispositif PHD : un oxymètre Nonin",
+      "description" : "Exemple de dispositif PHD : un oxymètre Nonin",
       "exampleBoolean" : true
     },
     {
@@ -845,9 +782,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ExampleMesFrObservationBmi001"
+        "reference" : "Observation/example-mes-fr-observation-bmi-001"
       },
-      "name" : "ExampleMesFrObservationBmi001",
+      "name" : "Exemple de mesure de l'IMC",
+      "description" : "Exemple de mesure de l'IMC",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi"
     },
     {
@@ -856,53 +794,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ExampleMesFrObservationBodyHeight001"
+        "reference" : "Observation/example-mes-fr-observation-heartrate-001"
       },
-      "name" : "ExampleMesFrObservationBodyHeight001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ExampleMesFrObservationBodyTemperature001"
-      },
-      "name" : "ExampleMesFrObservationBodyTemperature001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ExampleMesFrObservationBodyWeight001"
-      },
-      "name" : "ExampleMesFrObservationBodyWeight001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ExampleMesFrObservationBP001"
-      },
-      "name" : "ExampleMesFrObservationBP001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ExampleMesFrObservationHeartrate001"
-      },
-      "name" : "ExampleMesFrObservationHeartrate001",
+      "name" : "Exemple de mesure de la fréquence cardiaque",
+      "description" : "Exemple de mesure de la fréquence cardiaque",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate"
     },
     {
@@ -911,20 +806,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ExampleMesFrOxygenSat"
+        "reference" : "Observation/example-mes-fr-observation-resp-rate-001"
       },
-      "name" : "ExampleMesFrOxygenSat",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ExampleMesFrRespRate"
-      },
-      "name" : "ExampleMesFrRespRate",
+      "name" : "Exemple de mesure de la fréquence respiratoire",
+      "description" : "Exemple de mesure de la fréquence respiratoire",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate"
     },
     {
@@ -933,9 +818,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ExampleMesObservationGlucose001"
+        "reference" : "Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1"
       },
-      "name" : "ExampleMesObservationGlucose001",
+      "name" : "Exemple de mesure de la glycémie",
+      "description" : "Exemple de mesure de la glycémie",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
     },
     {
@@ -944,10 +830,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ExampleMesObservationHeadCircumference001"
+        "reference" : "Observation/example-mes-fr-observation-glucose-001"
       },
-      "name" : "ExampleMesObservationHeadCircumference001",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"
+      "name" : "Exemple de mesure de la glycémie (001)",
+      "description" : "Exemple de mesure de la glycémie (001)",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
     },
     {
       "extension" : [{
@@ -955,9 +842,34 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ExampleMesObservationPainSeverity001"
+        "reference" : "Observation/example-mes-fr-observation-bp-001"
       },
-      "name" : "ExampleMesObservationPainSeverity001",
+      "name" : "Exemple de mesure de la pression artérielle",
+      "description" : "Exemple de mesure de la pression artérielle",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-mes-fr-observation-oxygen-sat-001"
+      },
+      "name" : "Exemple de mesure de la saturation en oxygène",
+      "description" : "Exemple de mesure de la saturation en oxygène",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-mes-fr-observation-pain-severity-001"
+      },
+      "name" : "Exemple de mesure de la sévérité de la douleur",
+      "description" : "Exemple de mesure de la sévérité de la douleur",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity"
     },
     {
@@ -966,9 +878,94 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ExampleMesObservationStepsByDay001"
+        "reference" : "Observation/example-mes-fr-observation-body-temperature-001"
       },
-      "name" : "ExampleMesObservationStepsByDay001",
+      "name" : "Exemple de mesure de la température corporelle",
+      "description" : "Exemple de mesure de la température corporelle",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-mes-fr-observation-body-weight-001"
+      },
+      "name" : "Exemple de mesure de poids corporel",
+      "description" : "Exemple de mesure de poids corporel",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-mes-fr-observation-body-height-001"
+      },
+      "name" : "Exemple de mesure de taille corporelle",
+      "description" : "Exemple de mesure de taille corporelle",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/7b166d82-27b6-4878-9765-3fe101618edf"
+      },
+      "name" : "Exemple de mesure du cholestérol HDL",
+      "description" : "Exemple de mesure du cholestérol HDL",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e"
+      },
+      "name" : "Exemple de mesure du cholestérol LDL",
+      "description" : "Exemple de mesure du cholestérol LDL",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce"
+      },
+      "name" : "Exemple de mesure du cholestérol total",
+      "description" : "Exemple de mesure du cholestérol total",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/645f7341-715f-44fb-87e9-93f2e7d125a5"
+      },
+      "name" : "Exemple de mesure du cholestérol triglycérides (003)",
+      "description" : "Exemple de mesure du cholestérol triglycérides (003)",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-mes-fr-observation-steps-by-day-001"
+      },
+      "name" : "Exemple de mesure du nombre de pas par jour",
+      "description" : "Exemple de mesure du nombre de pas par jour",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day"
     },
     {
@@ -977,9 +974,22 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ExampleObservationWaistCircumference001"
+        "reference" : "Observation/example-mes-fr-observation-head-circumference-001"
       },
-      "name" : "ExampleObservationWaistCircumference001",
+      "name" : "Exemple de mesure du périmètre crânien",
+      "description" : "Exemple de mesure du périmètre crânien",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-mes-fr-observation-waist-circum-001"
+      },
+      "name" : "Exemple de mesure du tour de taille",
+      "description" : "Exemple de mesure du tour de taille",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"
     },
     {
@@ -988,11 +998,47 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/exemple-observation-hb1ac"
+        "reference" : "Observation/example-mes-fr-observation-hb1ac-001"
       },
       "name" : "Exemple de mesure Hb1Ac",
       "description" : "Observation d'une hémoglobine glyquée mesurée à 6.5 %",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/example-mes-fr-patient-001"
+      },
+      "name" : "Exemple de patient français",
+      "description" : "Exemple de patient français (ressource Patient)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/example-mes-fr-practitionner-001"
+      },
+      "name" : "Exemple de practicien français",
+      "description" : "Exemple de practicien français (ressource Practitioner)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/example-mes-fr-diagnostic-report-cholesterol-003"
+      },
+      "name" : "Exemple de rapport diagnostique de bilan lipidique",
+      "description" : "Exemple de rapport diagnostique de bilan lipidique",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"
     },
     {
       "extension" : [{
@@ -1017,17 +1063,6 @@
       "name" : "Fréquence respiratoire",
       "description" : "Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR)",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/glycemia-example"
-      },
-      "name" : "glycemia-example",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
     },
     {
       "extension" : [{
@@ -1124,17 +1159,6 @@
       "name" : "Nombre de pas par jour",
       "description" : "Profil de la ressource Observation pour définir un nombre de pas par jour",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Device"
-      }],
-      "reference" : {
-        "reference" : "Device/phd-74E8FFFEFF051C00"
-      },
-      "name" : "phd-74E8FFFEFF051C00",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1313,6 +1337,15 @@
         }],
         "nameUrl" : "downloads.html",
         "title" : "Téléchargements et usages",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "changes.html"
+        }],
+        "nameUrl" : "changes.html",
+        "title" : "Historique des changements",
         "generation" : "markdown"
       }]
     },

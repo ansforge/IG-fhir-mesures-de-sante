@@ -1,4 +1,4 @@
-# Fréquence respiratoire - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Fréquence respiratoire - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate | *Version*:3.1.0 |
-| Active as of 2026-01-29 | *Computable Name*:MesFrObservationRespiratoryRate |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate | *Version*:3.1.1 |
+| Active as of 2026-01-30 | *Computable Name*:MesFrObservationRespiratoryRate |
 
  
 Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR) 
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Observation/ExampleMesFrRespRate](Observation-ExampleMesFrRespRate.md)
+* Exemples pour ce Profil: [Observation/example-mes-fr-observation-resp-rate-001](Observation-example-mes-fr-observation-resp-rate-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-resp-rate)
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "resourceType" : "StructureDefinition",
   "id" : "mesures-fr-observation-resp-rate",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "MesFrObservationRespiratoryRate",
   "title" : "Fréquence respiratoire",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

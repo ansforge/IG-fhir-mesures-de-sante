@@ -1,4 +1,4 @@
-# Glycémie - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Glycémie - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose | *Version*:3.1.0 |
-| Active as of 2026-01-29 | *Computable Name*:MesObservationGlucose |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose | *Version*:3.1.1 |
+| Active as of 2026-01-30 | *Computable Name*:MesObservationGlucose |
 
  
 Profil biologie de la ressource Observation pour définir une Glycémie 
@@ -25,7 +25,7 @@ L’extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans 
 
 * Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
 * Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
-* Exemples pour ce Profil: [Observation/ExampleMesObservationGlucose001](Observation-ExampleMesObservationGlucose001.md) and [Observation/glycemia-example](Observation-glycemia-example.md)
+* Exemples pour ce Profil: [Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1](Observation-8057b6ec-1417-4f1f-9a00-b0c46e7e71b1.md) and [Observation/example-mes-fr-observation-glucose-001](Observation-example-mes-fr-observation-glucose-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-glucose)
 
@@ -46,11 +46,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-glucose",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "MesObservationGlucose",
   "title" : "Glycémie",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

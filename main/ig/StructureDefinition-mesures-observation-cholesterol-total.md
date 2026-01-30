@@ -1,4 +1,4 @@
-# Cholestérol - total - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Cholestérol - total - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total | *Version*:3.1.0 |
-| Active as of 2026-01-29 | *Computable Name*:MesObservationCholesterolTotal |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total | *Version*:3.1.1 |
+| Active as of 2026-01-30 | *Computable Name*:MesObservationCholesterolTotal |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol total 
@@ -18,7 +18,7 @@ Profil biologie de la ressource Observation pour définir le cholestérol total
 
 * Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
 * Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
-* Exemples pour ce Profil: [Observation/cholesterol-total-example](Observation-cholesterol-total-example.md)
+* Exemples pour ce Profil: [Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce](Observation-b7a049e3-c07e-4e1c-95a5-909da37f75ce.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-total)
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-cholesterol-total",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "MesObservationCholesterolTotal",
   "title" : "Cholestérol - total",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Le flux d'alimentation des signes vitaux - Guide d'implémentation FHIR - Mesures de santé v3.1.0</title>
+    <title>Le flux d'alimentation des signes vitaux - Guide d'implémentation FHIR - Mesures de santé v3.1.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -62,7 +62,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guide d'implémentation FHIR - Mesures de santé</span>
             <br/>
-            <span style="display:inline-block;">3.1.0 - ci-build
+            <span style="display:inline-block;">3.1.1 - ci-build
 
 
 
@@ -156,6 +156,9 @@
   <li>
     <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
   </li>
+  <li>
+    <a href="changes.html">Historique</a>
+  </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
           </div>    <!-- /.container -->
@@ -198,7 +201,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Guide d'implémentation FHIR - Mesures de santé - version de développement local (v3.1.1) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
   <h2>Le flux d'alimentation des signes vitaux</h2>
   
 
@@ -330,7 +333,7 @@ Cette information est nécessaire, elle permet de valider la conformité des res
 
 <h3 id="exemple-dappel">Exemple d’appel</h3>
 
-<p><a name="l840">​</a>Un <a href="Bundle-bundle-example.html">exemple complet</a> d’instance de Bundle a été constitué au sein du guide. Celui-ci doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :</p>
+<p><a name="l846">​</a>Un <a href="Bundle-bundle-example.html">exemple complet</a> d’instance de Bundle a été constitué au sein du guide. Celui-ci doit être envoyé dans le corps de la requête d’alimentation. Ce Bundle contient 2 ressources dans l’attribut “entry” :</p>
 
 <ul>
   <li>Une ressource Observation MesFrObservationBodyWeight</li>
@@ -738,7 +741,7 @@ Pour chacune des ressources à valider, il sera toujours retourné un code HTTP 
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 14:02+0000">2026-01-29</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.mesures#3.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 30, 2026 09:35+0000">2026-01-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

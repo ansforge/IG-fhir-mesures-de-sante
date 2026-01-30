@@ -1,4 +1,4 @@
-# Bundle d'alimentation - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Bundle d'alimentation - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation | *Version*:3.1.0 |
-| Active as of 2026-01-29 | *Computable Name*:MesBundleFluxAlimentation |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation | *Version*:3.1.1 |
+| Active as of 2026-01-30 | *Computable Name*:MesBundleFluxAlimentation |
 
  
 Profil de la ressource Bundle du flux d’alimentation à envoyer au serveur 
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Bundle/bundle-example-body-weight](Bundle-bundle-example-body-weight.md)
+* Exemples pour ce Profil: [Bundle/example-mes-fr-bundle-body-weight](Bundle-example-mes-fr-bundle-body-weight.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-bundle-flux-alimentation)
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-bundle-flux-alimentation",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "MesBundleFluxAlimentation",
   "title" : "Bundle d'alimentation",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

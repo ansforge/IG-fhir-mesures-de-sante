@@ -1,4 +1,4 @@
-# Hémoglobine glyquée (Hb1Ac) - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Hémoglobine glyquée (Hb1Ac) - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac | *Version*:3.1.0 |
-| Active as of 2026-01-29 | *Computable Name*:MesObservationHb1Ac |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac | *Version*:3.1.1 |
+| Active as of 2026-01-30 | *Computable Name*:MesObservationHb1Ac |
 
  
 Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %. 
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Observation/exemple-observation-hb1ac](Observation-exemple-observation-hb1ac.md)
+* Exemples pour ce Profil: [Observation/example-mes-fr-observation-hb1ac-001](Observation-example-mes-fr-observation-hb1ac-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-hb1ac)
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-hb1ac",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "MesObservationHb1Ac",
   "title" : "Hémoglobine glyquée (Hb1Ac)",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

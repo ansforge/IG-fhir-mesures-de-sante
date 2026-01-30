@@ -1,4 +1,4 @@
-# Fréquence Cardiaque - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Fréquence Cardiaque - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate | *Version*:3.1.0 |
-| Active as of 2026-01-29 | *Computable Name*:MesFrObservationHeartrate |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate | *Version*:3.1.1 |
+| Active as of 2026-01-30 | *Computable Name*:MesFrObservationHeartrate |
 
  
 Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR) 
@@ -17,7 +17,7 @@ Profil de la ressource Observation pour définir une Fréquence Cardiaque (acron
 **Utilisations:**
 
 * Utiliser ce Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Exemples pour ce Profil: [Observation/ExampleMesFrObservationHeartrate001](Observation-ExampleMesFrObservationHeartrate001.md)
+* Exemples pour ce Profil: [Observation/example-mes-fr-observation-heartrate-001](Observation-example-mes-fr-observation-heartrate-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-heartrate)
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "resourceType" : "StructureDefinition",
   "id" : "mesures-fr-observation-heartrate",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "MesFrObservationHeartrate",
   "title" : "Fréquence Cardiaque",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

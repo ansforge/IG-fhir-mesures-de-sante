@@ -17,11 +17,11 @@
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures"^^xsd:anyURI ;
      fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures>
   ] ; # 
-  fhir:version [ fhir:v "3.1.0"] ; # 
+  fhir:version [ fhir:v "3.1.1"] ; # 
   fhir:name [ fhir:v "Mesures"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FHIR - Mesures de santé"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-29T14:02:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-30T09:35:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1413,153 +1413,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "Bundle"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Bundle/bundle-example-bio> ;
-         fhir:reference [ fhir:v "Bundle/bundle-example-bio" ]
-       ] ;
-       fhir:name [ fhir:v "bundle-example-bio" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Bundle"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Bundle/bundle-example-body-weight> ;
-         fhir:reference [ fhir:v "Bundle/bundle-example-body-weight" ]
-       ] ;
-       fhir:name [ fhir:v "bundle-example-body-weight" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "DiagnosticReport"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/DiagnosticReport/cholesterol-dr> ;
-         fhir:reference [ fhir:v "DiagnosticReport/cholesterol-dr" ]
-       ] ;
-       fhir:name [ fhir:v "cholesterol-dr" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/cholesterol-hdl-example> ;
-         fhir:reference [ fhir:v "Observation/cholesterol-hdl-example" ]
-       ] ;
-       fhir:name [ fhir:v "cholesterol-hdl-example" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/cholesterol-ldl-example> ;
-         fhir:reference [ fhir:v "Observation/cholesterol-ldl-example" ]
-       ] ;
-       fhir:name [ fhir:v "cholesterol-ldl-example" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/cholesterol-total-example> ;
-         fhir:reference [ fhir:v "Observation/cholesterol-total-example" ]
-       ] ;
-       fhir:name [ fhir:v "cholesterol-total-example" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/cholesterol-trigly-example> ;
-         fhir:reference [ fhir:v "Observation/cholesterol-trigly-example" ]
-       ] ;
-       fhir:name [ fhir:v "cholesterol-trigly-example" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1686,17 +1539,19 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "Patient"
+           fhir:v "Bundle"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/ExamplefrPatient001> ;
-         fhir:reference [ fhir:v "Patient/ExamplefrPatient001" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Bundle/example-mes-fr-bundle-bio-003> ;
+         fhir:reference [ fhir:v "Bundle/example-mes-fr-bundle-bio-003" ]
        ] ;
-       fhir:name [ fhir:v "ExamplefrPatient001" ] ;
+       fhir:name [ fhir:v "Exemple de bundle FHIR pour un bilan lipidique et une glycémie" ] ;
+       fhir:description [ fhir:v "Exemple de bundle FHIR pour un bilan lipidique et une glycémie" ] ;
        fhir:example [
-         a fhir:Boolean ;
-         fhir:v true
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie>
        ]
      ] [
        fhir:extension ( [
@@ -1706,14 +1561,37 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "Practitioner"
+           fhir:v "Bundle"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Practitioner/ExampleFrPractitionner001> ;
-         fhir:reference [ fhir:v "Practitioner/ExampleFrPractitionner001" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Bundle/example-mes-fr-bundle-body-weight> ;
+         fhir:reference [ fhir:v "Bundle/example-mes-fr-bundle-body-weight" ]
        ] ;
-       fhir:name [ fhir:v "ExampleFrPractitionner001" ] ;
+       fhir:name [ fhir:v "Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD" ] ;
+       fhir:description [ fhir:v "Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Device/example-mes-fr-phd-device-001> ;
+         fhir:reference [ fhir:v "Device/example-mes-fr-phd-device-001" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de dispositif PHD : un oxymètre Nonin" ] ;
+       fhir:description [ fhir:v "Exemple de dispositif PHD : un oxymètre Nonin" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
@@ -1730,10 +1608,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesFrObservationBmi001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesFrObservationBmi001" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-bmi-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-bmi-001" ]
        ] ;
-       fhir:name [ fhir:v "ExampleMesFrObservationBmi001" ] ;
+       fhir:name [ fhir:v "Exemple de mesure de l'IMC" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de l'IMC" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi"^^xsd:anyURI ;
@@ -1751,94 +1630,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesFrObservationBodyHeight001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesFrObservationBodyHeight001" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-heartrate-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-heartrate-001" ]
        ] ;
-       fhir:name [ fhir:v "ExampleMesFrObservationBodyHeight001" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesFrObservationBodyTemperature001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesFrObservationBodyTemperature001" ]
-       ] ;
-       fhir:name [ fhir:v "ExampleMesFrObservationBodyTemperature001" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesFrObservationBodyWeight001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesFrObservationBodyWeight001" ]
-       ] ;
-       fhir:name [ fhir:v "ExampleMesFrObservationBodyWeight001" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesFrObservationBP001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesFrObservationBP001" ]
-       ] ;
-       fhir:name [ fhir:v "ExampleMesFrObservationBP001" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesFrObservationHeartrate001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesFrObservationHeartrate001" ]
-       ] ;
-       fhir:name [ fhir:v "ExampleMesFrObservationHeartrate001" ] ;
+       fhir:name [ fhir:v "Exemple de mesure de la fréquence cardiaque" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de la fréquence cardiaque" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate"^^xsd:anyURI ;
@@ -1856,31 +1652,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesFrOxygenSat> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesFrOxygenSat" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-resp-rate-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-resp-rate-001" ]
        ] ;
-       fhir:name [ fhir:v "ExampleMesFrOxygenSat" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesFrRespRate> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesFrRespRate" ]
-       ] ;
-       fhir:name [ fhir:v "ExampleMesFrRespRate" ] ;
+       fhir:name [ fhir:v "Exemple de mesure de la fréquence respiratoire" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de la fréquence respiratoire" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate"^^xsd:anyURI ;
@@ -1898,10 +1674,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesObservationGlucose001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesObservationGlucose001" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1> ;
+         fhir:reference [ fhir:v "Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1" ]
        ] ;
-       fhir:name [ fhir:v "ExampleMesObservationGlucose001" ] ;
+       fhir:name [ fhir:v "Exemple de mesure de la glycémie" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de la glycémie" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"^^xsd:anyURI ;
@@ -1919,14 +1696,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesObservationHeadCircumference001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesObservationHeadCircumference001" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-glucose-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-glucose-001" ]
        ] ;
-       fhir:name [ fhir:v "ExampleMesObservationHeadCircumference001" ] ;
+       fhir:name [ fhir:v "Exemple de mesure de la glycémie (001)" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de la glycémie (001)" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose>
        ]
      ] [
        fhir:extension ( [
@@ -1940,10 +1718,55 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesObservationPainSeverity001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesObservationPainSeverity001" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-bp-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-bp-001" ]
        ] ;
-       fhir:name [ fhir:v "ExampleMesObservationPainSeverity001" ] ;
+       fhir:name [ fhir:v "Exemple de mesure de la pression artérielle" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de la pression artérielle" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-oxygen-sat-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-oxygen-sat-001" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure de la saturation en oxygène" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de la saturation en oxygène" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-pain-severity-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-pain-severity-001" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure de la sévérité de la douleur" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de la sévérité de la douleur" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity"^^xsd:anyURI ;
@@ -1961,10 +1784,165 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleMesObservationStepsByDay001> ;
-         fhir:reference [ fhir:v "Observation/ExampleMesObservationStepsByDay001" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-body-temperature-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-body-temperature-001" ]
        ] ;
-       fhir:name [ fhir:v "ExampleMesObservationStepsByDay001" ] ;
+       fhir:name [ fhir:v "Exemple de mesure de la température corporelle" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de la température corporelle" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-body-weight-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-body-weight-001" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure de poids corporel" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de poids corporel" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-body-height-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-body-height-001" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure de taille corporelle" ] ;
+       fhir:description [ fhir:v "Exemple de mesure de taille corporelle" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/7b166d82-27b6-4878-9765-3fe101618edf> ;
+         fhir:reference [ fhir:v "Observation/7b166d82-27b6-4878-9765-3fe101618edf" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure du cholestérol HDL" ] ;
+       fhir:description [ fhir:v "Exemple de mesure du cholestérol HDL" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e> ;
+         fhir:reference [ fhir:v "Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure du cholestérol LDL" ] ;
+       fhir:description [ fhir:v "Exemple de mesure du cholestérol LDL" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce> ;
+         fhir:reference [ fhir:v "Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure du cholestérol total" ] ;
+       fhir:description [ fhir:v "Exemple de mesure du cholestérol total" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/645f7341-715f-44fb-87e9-93f2e7d125a5> ;
+         fhir:reference [ fhir:v "Observation/645f7341-715f-44fb-87e9-93f2e7d125a5" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure du cholestérol triglycérides (003)" ] ;
+       fhir:description [ fhir:v "Exemple de mesure du cholestérol triglycérides (003)" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-steps-by-day-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-steps-by-day-001" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure du nombre de pas par jour" ] ;
+       fhir:description [ fhir:v "Exemple de mesure du nombre de pas par jour" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-steps-by-day"^^xsd:anyURI ;
@@ -1982,10 +1960,33 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/ExampleObservationWaistCircumference001> ;
-         fhir:reference [ fhir:v "Observation/ExampleObservationWaistCircumference001" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-head-circumference-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-head-circumference-001" ]
        ] ;
-       fhir:name [ fhir:v "ExampleObservationWaistCircumference001" ] ;
+       fhir:name [ fhir:v "Exemple de mesure du périmètre crânien" ] ;
+       fhir:description [ fhir:v "Exemple de mesure du périmètre crânien" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-waist-circum-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-waist-circum-001" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de mesure du tour de taille" ] ;
+       fhir:description [ fhir:v "Exemple de mesure du tour de taille" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"^^xsd:anyURI ;
@@ -2003,8 +2004,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/exemple-observation-hb1ac> ;
-         fhir:reference [ fhir:v "Observation/exemple-observation-hb1ac" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/example-mes-fr-observation-hb1ac-001> ;
+         fhir:reference [ fhir:v "Observation/example-mes-fr-observation-hb1ac-001" ]
        ] ;
        fhir:name [ fhir:v "Exemple de mesure Hb1Ac" ] ;
        fhir:description [ fhir:v "Observation d'une hémoglobine glyquée mesurée à 6.5 %" ] ;
@@ -2012,6 +2013,70 @@
          a fhir:Canonical ;
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"^^xsd:anyURI ;
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
+         fhir:reference [ fhir:v "Patient/example-mes-fr-patient-001" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de patient français" ] ;
+       fhir:description [ fhir:v "Exemple de patient français (ressource Patient)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Practitioner/example-mes-fr-practitionner-001> ;
+         fhir:reference [ fhir:v "Practitioner/example-mes-fr-practitionner-001" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de practicien français" ] ;
+       fhir:description [ fhir:v "Exemple de practicien français (ressource Practitioner)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "DiagnosticReport"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/DiagnosticReport/example-mes-fr-diagnostic-report-cholesterol-003> ;
+         fhir:reference [ fhir:v "DiagnosticReport/example-mes-fr-diagnostic-report-cholesterol-003" ]
+       ] ;
+       fhir:name [ fhir:v "Exemple de rapport diagnostique de bilan lipidique" ] ;
+       fhir:description [ fhir:v "Exemple de rapport diagnostique de bilan lipidique" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report>
        ]
      ] [
        fhir:extension ( [
@@ -2054,27 +2119,6 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/glycemia-example> ;
-         fhir:reference [ fhir:v "Observation/glycemia-example" ]
-       ] ;
-       fhir:name [ fhir:v "glycemia-example" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose>
        ]
      ] [
        fhir:extension ( [
@@ -2243,26 +2287,6 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Device"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Device/phd-74E8FFFEFF051C00> ;
-         fhir:reference [ fhir:v "Device/phd-74E8FFFEFF051C00" ]
-       ] ;
-       fhir:name [ fhir:v "phd-74E8FFFEFF051C00" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -2605,6 +2629,25 @@
            fhir:l fhir:downloads.html
          ] ;
          fhir:title [ fhir:v "Téléchargements et usages" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "changes.html"^^xsd:anyURI ;
+             fhir:l fhir:changes.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "changes.html"^^xsd:anyURI ;
+           fhir:l fhir:changes.html
+         ] ;
+         fhir:title [ fhir:v "Historique des changements" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

@@ -1,4 +1,4 @@
-# Le profil FHIR des objets connectés - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Le profil FHIR des objets connectés - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * **Le profil FHIR des objets connectés**

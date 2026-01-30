@@ -1,4 +1,4 @@
-# Cholestérol - triglycerides - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Cholestérol - triglycerides - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly | *Version*:3.1.0 |
-| Active as of 2026-01-29 | *Computable Name*:MesObservationCholesterolTrigly |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly | *Version*:3.1.1 |
+| Active as of 2026-01-30 | *Computable Name*:MesObservationCholesterolTrigly |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol triglycerides 
@@ -17,7 +17,7 @@ Profil biologie de la ressource Observation pour définir le cholestérol trigly
 **Utilisations:**
 
 * Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
-* Exemples pour ce Profil: [Observation/cholesterol-trigly-example](Observation-cholesterol-trigly-example.md)
+* Exemples pour ce Profil: [Observation/645f7341-715f-44fb-87e9-93f2e7d125a5](Observation-645f7341-715f-44fb-87e9-93f2e7d125a5.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-trigly)
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-cholesterol-trigly",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "MesObservationCholesterolTrigly",
   "title" : "Cholestérol - triglycerides",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -183,7 +183,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
             {
               "system" : "http://loinc.org",
               "code" : "2571-8",
-              "display" : "LDL Cholesterol"
+              "display" : "Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique"
             }
           ]
         }

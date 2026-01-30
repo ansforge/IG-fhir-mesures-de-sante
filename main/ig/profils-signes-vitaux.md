@@ -1,4 +1,4 @@
-# Les profils FHIR des signes vitaux - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Les profils FHIR des signes vitaux - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * **Les profils FHIR des signes vitaux**

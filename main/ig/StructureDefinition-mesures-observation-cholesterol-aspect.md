@@ -1,4 +1,4 @@
-# Cholestérol - aspect - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Cholestérol - aspect - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect | *Version*:3.1.0 |
-| Active as of 2026-01-29 | *Computable Name*:MesObservationCholesterolAspect |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect | *Version*:3.1.1 |
+| Active as of 2026-01-30 | *Computable Name*:MesObservationCholesterolAspect |
 
  
 Profil biologie de la ressource Observation pour définir l’aspect du cholestérol 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-cholesterol-aspect",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "MesObservationCholesterolAspect",
   "title" : "Cholestérol - aspect",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

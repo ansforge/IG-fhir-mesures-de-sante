@@ -1,4 +1,4 @@
-# Périmètre Crânien - Guide d'implémentation FHIR - Mesures de santé v3.1.0
+# Périmètre Crânien - Guide d'implémentation FHIR - Mesures de santé v3.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference | *Version*:3.1.0 |
-| Active as of 2026-01-29 | *Computable Name*:MesObservationHeadCircumference |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference | *Version*:3.1.1 |
+| Active as of 2026-01-30 | *Computable Name*:MesObservationHeadCircumference |
 
  
 Profil de la ressource Observation pour définir un Périmètre Crânien 
@@ -17,7 +17,7 @@ Profil de la ressource Observation pour définir un Périmètre Crânien
 **Utilisations:**
 
 * Utiliser ce Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Exemples pour ce Profil: [Observation/ExampleMesObservationHeadCircumference001](Observation-ExampleMesObservationHeadCircumference001.md)
+* Exemples pour ce Profil: [Observation/example-mes-fr-observation-head-circumference-001](Observation-example-mes-fr-observation-head-circumference-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-head-circumference)
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-head-circumference",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference",
-  "version" : "3.1.0",
+  "version" : "3.1.1",
   "name" : "MesObservationHeadCircumference",
   "title" : "Périmètre Crânien",
   "status" : "active",
-  "date" : "2026-01-29T14:02:34+00:00",
+  "date" : "2026-01-30T09:35:57+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
