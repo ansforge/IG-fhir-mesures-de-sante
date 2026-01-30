@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-number-of-da
   "name" : "MesNumberOfDays",
   "title" : "Nombre de jours",
   "status" : "active",
-  "date" : "2026-01-30T09:29:11+00:00",
+  "date" : "2026-01-30T09:35:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationHeadCircumference",
   "title" : "Périmètre Crânien",
   "status" : "active",
-  "date" : "2026-01-30T09:29:11+00:00",
+  "date" : "2026-01-30T09:35:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

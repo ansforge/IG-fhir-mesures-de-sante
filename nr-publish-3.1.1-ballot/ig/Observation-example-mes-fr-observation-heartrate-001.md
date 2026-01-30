@@ -18,7 +18,7 @@ Profil: [Fréquence Cardiaque](StructureDefinition-mesures-fr-observation-heartr
 
 **effective**: 2022-11-06
 
-**value**: 70 battements/minute (Détails : code UCUM/min = 'per minute')
+**value**: 70 battements/minute (Détails : code UCUM/min = '/min')
 
 
 

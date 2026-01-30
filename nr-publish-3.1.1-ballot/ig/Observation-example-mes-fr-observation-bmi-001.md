@@ -18,7 +18,7 @@ Profil: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-
 
 **effective**: 2022-11-06
 
-**value**: 28 Kg/m2 (Détails : code UCUMkg/m2 = 'kilogram per square meter')
+**value**: 28 Kg/m2 (Détails : code UCUMkg/m2 = 'kg/m2')
 
 **interpretation**: High
 

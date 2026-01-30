@@ -18,7 +18,7 @@ Profil: [Fréquence respiratoire](StructureDefinition-mesures-fr-observation-res
 
 **effective**: 2023-07-02
 
-**value**: 18 /min (Détails : code UCUM/min = 'per minute')
+**value**: 18 /min (Détails : code UCUM/min = '/min')
 
 
 

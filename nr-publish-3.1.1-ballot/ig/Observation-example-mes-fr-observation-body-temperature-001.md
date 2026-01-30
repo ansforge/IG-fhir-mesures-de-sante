@@ -18,7 +18,7 @@ Profil: [Température](StructureDefinition-mesures-fr-observation-body-temperatu
 
 **effective**: 2022-11-06
 
-**value**: 36.5 C (Détails : code UCUMCel = 'degree Celsius')
+**value**: 36.5 C (Détails : code UCUMCel = 'Cel')
 
 
 

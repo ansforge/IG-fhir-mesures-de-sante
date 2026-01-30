@@ -18,7 +18,7 @@ Profil: [Taille](StructureDefinition-mesures-fr-observation-bodyheight.md)
 
 **effective**: 1999-07-02
 
-**value**: 185 cm (Détails : code UCUMcm = 'centimeter')
+**value**: 185 cm (Détails : code UCUMcm = 'cm')
 
 
 
