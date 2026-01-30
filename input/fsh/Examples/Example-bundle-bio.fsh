@@ -18,7 +18,7 @@ Description: "Exemple de mesure du cholestérol total"
 * method = https://smt.esante.gouv.fr/terminologie-tccr#DEG
 
 * extension[mes-original-data].extension[has-been-converted].valueBoolean = true
-* extension[mes-original-data].extension[original-code].valueCodeableConcept = http://loinc.org#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
+* extension[mes-original-data].extension[original-code].valueCodeableConcept = http://loinc.org#2093-3 "Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique"
 * extension[mes-original-data].extension[original-value].valueQuantity.value = 0.155
 * extension[mes-original-data].extension[original-value].valueQuantity.unit = "g/L"
 * extension[mes-original-data].extension[original-value].valueQuantity.code = #g/L
