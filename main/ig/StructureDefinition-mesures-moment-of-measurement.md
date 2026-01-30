@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-moment-of-me
   "name" : "MesMomentOfMeasurement",
   "title" : "Moment de la mesure",
   "status" : "active",
-  "date" : "2026-01-30T09:35:57+00:00",
+  "date" : "2026-01-30T10:15:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

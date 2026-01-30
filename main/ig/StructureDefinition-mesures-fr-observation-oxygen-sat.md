@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationOxygenSat",
   "title" : "Saturation en Oxygène",
   "status" : "active",
-  "date" : "2026-01-30T09:35:57+00:00",
+  "date" : "2026-01-30T10:15:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

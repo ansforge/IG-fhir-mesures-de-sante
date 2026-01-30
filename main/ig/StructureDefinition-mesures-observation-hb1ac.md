@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationHb1Ac",
   "title" : "Hémoglobine glyquée (Hb1Ac)",
   "status" : "active",
-  "date" : "2026-01-30T09:35:57+00:00",
+  "date" : "2026-01-30T10:15:26+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
