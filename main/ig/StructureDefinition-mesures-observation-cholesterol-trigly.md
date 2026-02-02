@@ -17,6 +17,7 @@ Profil biologie de la ressource Observation pour définir le cholestérol trigly
 **Utilisations:**
 
 * Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
+* Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
 * Exemples pour ce Profil: [Observation/645f7341-715f-44fb-87e9-93f2e7d125a5](Observation-645f7341-715f-44fb-87e9-93f2e7d125a5.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-trigly)
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolTrigly",
   "title" : "Cholestérol - triglycerides",
   "status" : "active",
-  "date" : "2026-02-02T08:10:43+00:00",
+  "date" : "2026-02-02T09:29:40+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
