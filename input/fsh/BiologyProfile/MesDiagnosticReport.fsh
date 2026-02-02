@@ -15,6 +15,7 @@ Description: "Profil biologie de la ressource DiagnosticReport pour définir un 
 
 * result[ldl-cholesterol] only Reference(mesures-observation-cholesterol-ldl)
 * result[hdl-cholesterol] only Reference(mesures-observation-cholesterol-hdl)
+* result[trigly-cholesterol] only Reference(mesures-observation-cholesterol-trigly)
 * result[total-cholesterol] only Reference(mesures-observation-cholesterol-total)
 * result[cholesterol-aspect] only Reference(mesures-observation-cholesterol-aspect)
 
@@ -24,4 +25,5 @@ Description: "Profil biologie de la ressource DiagnosticReport pour définir un 
 
 Invariant:   mes-ir
 Description: "L'intervalle de référence est obligatoire dans le cas où la donnée provient d'un compte rendu de biologie."
+
 * severity = #error
