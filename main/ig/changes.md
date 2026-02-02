@@ -1,13 +1,13 @@
-# Historique des changements - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Historique des changements - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Historique des changements**
 
 ## Historique des changements
 
-### Release 3.1.1 de l’Implementation Guide Mesures de santé
+### Release 3.2.0 de l’Implementation Guide Mesures de santé
 
-Modifications apportées dans la release [3.1.1](https://github.com/ansforge/IG-fhir-mesures-de-sante/milestone/5?closed=1) :
+Modifications apportées dans la release [3.2.0](https://github.com/ansforge/IG-fhir-mesures-de-sante/milestone/5?closed=1) :
 
 * Suppression du type de diabète dans la ressource Glucose et décommissionnement du JDV J153 [119](https://github.com/ansforge/IG-fhir-mesures-de-sante/pull/119)
 * Suppression du jdv 148 et mise à jour du dernier package FRCore [122](https://github.com/ansforge/IG-fhir-mesures-de-sante/pull/122)

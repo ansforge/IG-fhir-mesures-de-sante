@@ -1,4 +1,4 @@
-# Accueil - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Accueil - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,13 +7,13 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures | *Version*:3.1.1 |
-| Active as of 2026-01-30 | *Computable Name*:Mesures |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures | *Version*:3.2.0-ballot |
+| Active as of 2026-02-02 | *Computable Name*:Mesures |
 
  **Vital Signs Implementation Guide**
  This implementation guide contains the profiles to share vital-signs for the French ecosystem. 
 
->  **Attention !** Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante et publiée à utiliser est accessible à l'adresse https://interop.esante.gouv.fr/ig/fhir/mesures 
+>  **Attention !** Cette version du guide d'implémentation est en concertation. La version officielle est accessible à l'adresse https://interop.esante.gouv.fr/ig/fhir/mesures</b> 
 
 >  **📖 Guide de lecture**
 
@@ -166,11 +166,11 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fhir.fr.mesures",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures",
-  "version" : "3.1.1",
+  "version" : "3.2.0-ballot",
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-01-30T10:15:26+00:00",
+  "date" : "2026-02-02T08:09:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -264,7 +264,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           },
           {
             "url" : "value",
-            "valueString" : "ci-build"
+            "valueString" : "ballot"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -606,7 +606,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           },
           {
             "url" : "value",
-            "valueString" : "ci-build"
+            "valueString" : "ballot"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"

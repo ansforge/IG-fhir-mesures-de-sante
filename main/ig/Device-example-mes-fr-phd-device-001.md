@@ -1,4 +1,4 @@
-# Exemple de dispositif PHD : un oxymètre Nonin - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Exemple de dispositif PHD : un oxymètre Nonin - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

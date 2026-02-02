@@ -1,4 +1,4 @@
-# Température - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Température - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature | *Version*:3.1.1 |
-| Active as of 2026-01-30 | *Computable Name*:MesFrObservationBodyTemperature |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature | *Version*:3.2.0-ballot |
+| Active as of 2026-02-02 | *Computable Name*:MesFrObservationBodyTemperature |
 
  
 Profil de la ressource Observation pour définir une température 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "resourceType" : "StructureDefinition",
   "id" : "mesures-fr-observation-body-temperature",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature",
-  "version" : "3.1.1",
+  "version" : "3.2.0-ballot",
   "name" : "MesFrObservationBodyTemperature",
   "title" : "Température",
   "status" : "active",
-  "date" : "2026-01-30T10:15:26+00:00",
+  "date" : "2026-02-02T08:09:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Moment de la mesure - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Moment de la mesure - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement | *Version*:3.1.1 |
-| Active as of 2026-01-30 | *Computable Name*:MesMomentOfMeasurement |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement | *Version*:3.2.0-ballot |
+| Active as of 2026-02-02 | *Computable Name*:MesMomentOfMeasurement |
 
 Extension pour indiquer le moment de la mesure
 
@@ -47,11 +47,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-moment-of-me
   "resourceType" : "StructureDefinition",
   "id" : "mesures-moment-of-measurement",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement",
-  "version" : "3.1.1",
+  "version" : "3.2.0-ballot",
   "name" : "MesMomentOfMeasurement",
   "title" : "Moment de la mesure",
   "status" : "active",
-  "date" : "2026-01-30T10:15:26+00:00",
+  "date" : "2026-02-02T08:09:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

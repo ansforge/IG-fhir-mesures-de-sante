@@ -1,4 +1,4 @@
-# Raison de la mesure - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Raison de la mesure - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement | *Version*:3.1.1 |
-| Active as of 2026-01-30 | *Computable Name*:MesReasonForMeasurement |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement | *Version*:3.2.0-ballot |
+| Active as of 2026-02-02 | *Computable Name*:MesReasonForMeasurement |
 
 Extension du Motif de la mesure, exprimé en texte libre.
 
@@ -47,11 +47,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-reason-for-m
   "resourceType" : "StructureDefinition",
   "id" : "mesures-reason-for-measurement",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
-  "version" : "3.1.1",
+  "version" : "3.2.0-ballot",
   "name" : "MesReasonForMeasurement",
   "title" : "Raison de la mesure",
   "status" : "active",
-  "date" : "2026-01-30T10:15:26+00:00",
+  "date" : "2026-02-02T08:09:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

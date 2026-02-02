@@ -1,4 +1,4 @@
-# Exemple de mesure de la sévérité de la douleur - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Exemple de mesure de la sévérité de la douleur - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

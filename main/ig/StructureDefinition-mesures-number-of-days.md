@@ -1,4 +1,4 @@
-# Nombre de jours - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Nombre de jours - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days | *Version*:3.1.1 |
-| Active as of 2026-01-30 | *Computable Name*:MesNumberOfDays |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days | *Version*:3.2.0-ballot |
+| Active as of 2026-02-02 | *Computable Name*:MesNumberOfDays |
 
 Extension sur le Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.
 
@@ -49,11 +49,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-number-of-da
   "resourceType" : "StructureDefinition",
   "id" : "mesures-number-of-days",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days",
-  "version" : "3.1.1",
+  "version" : "3.2.0-ballot",
   "name" : "MesNumberOfDays",
   "title" : "Nombre de jours",
   "status" : "active",
-  "date" : "2026-01-30T10:15:26+00:00",
+  "date" : "2026-02-02T08:09:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

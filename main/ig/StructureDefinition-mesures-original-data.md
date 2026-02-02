@@ -1,4 +1,4 @@
-# Valeur originale - Guide d'implémentation FHIR - Mesures de santé v3.1.1
+# Valeur originale - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data | *Version*:3.1.1 |
-| Active as of 2026-01-30 | *Computable Name*:MesOriginalData |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data | *Version*:3.2.0-ballot |
+| Active as of 2026-02-02 | *Computable Name*:MesOriginalData |
 
 Extension permettant de renseigner la donnée originale. Dans le cas où une conversion d’unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.
 
@@ -47,11 +47,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-original-dat
   "resourceType" : "StructureDefinition",
   "id" : "mesures-original-data",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data",
-  "version" : "3.1.1",
+  "version" : "3.2.0-ballot",
   "name" : "MesOriginalData",
   "title" : "Valeur originale",
   "status" : "active",
-  "date" : "2026-01-30T10:15:26+00:00",
+  "date" : "2026-02-02T08:09:27+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
