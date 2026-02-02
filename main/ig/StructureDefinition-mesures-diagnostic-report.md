@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-diagnostic-r
   "name" : "MesDiagnosticReport",
   "title" : "DiagnosticReport mesures biologie",
   "status" : "active",
-  "date" : "2026-02-02T08:09:27+00:00",
+  "date" : "2026-02-02T08:10:43+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
