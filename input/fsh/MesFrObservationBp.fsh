@@ -18,6 +18,7 @@ Description: "Profil de la ressource Observation pour d√©finir une Pression Art√
 * bodySite ^binding.description = $JDV-J149-BodySiteBP-MES
 * bodySite.coding.system 1..
 * bodySite.coding.code 1..
+* bodySite 1..1
 
 * method MS
 * method from $JDV-J150-MethodBP-MES (extensible)
