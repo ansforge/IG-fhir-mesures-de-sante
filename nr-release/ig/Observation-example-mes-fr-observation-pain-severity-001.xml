@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-mes-fr-observation-pain-severity-001"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Observation example-mes-fr-observation-pain-severity-001</b></p><a name="example-mes-fr-observation-pain-severity-001"> </a><a name="hcexample-mes-fr-observation-pain-severity-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-mesures-observation-pain-severity.html">Niveau de douleur</a></p></div><p><b>Raison de la mesure</b>: Malaise du patient</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes :{http://loinc.org 72514-3}">Pain severity - 0-10 verbal numeric rating [Score] - Reported</span></p><p><b>subject</b>: <a href="Patient-example-mes-fr-patient-001.html">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 5 Level<span style="background: LightGoldenRodYellow"> (Détails : code UCUM1 = '1')</span></p></div>
+  </text>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement">
+    <valueString value="Malaise du patient"/>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="72514-3"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-mes-fr-patient-001"/>
+    <type value="Patient"/>
+    <display value="Pierre Durand"/>
+  </subject>
+  <effectiveDateTime value="2022-11-06"/>
+  <valueQuantity>
+    <value value="5"/>
+    <unit value="Level"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="1"/>
+  </valueQuantity>
+</Observation>

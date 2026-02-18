@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "8057b6ec-1417-4f1f-9a00-b0c46e7e71b1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Observation 8057b6ec-1417-4f1f-9a00-b0c46e7e71b1</b></p><a name=\"8057b6ec-1417-4f1f-9a00-b0c46e7e71b1\"> </a><a name=\"hc8057b6ec-1417-4f1f-9a00-b0c46e7e71b1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-glucose.html\">Glycémie</a></p></div><p><b>Raison de la mesure</b>: Malaise du patient</p><p><b>Moment de la mesure</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 16915-1}\">Glucose post prandial</span></p><p><b>Nombre de jours</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP GEN-275}\">7j</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\">Hémoglobine A1c %</span></p><p><b>subject</b>: <a href=\"Patient-example-mes-fr-patient-001.html\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>value</b>: 92 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmg/dL = 'mg/dL')</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>70 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmg/dL = 'mg/dL')</span></td><td>100 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmg/dL = 'mg/dL')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Malaise du patient"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc"^^xsd:anyURI ;
+           fhir:l <https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc>
+         ] ;
+         fhir:code [ fhir:v "16915-1" ] ;
+         fhir:display [ fhir:v "Glucose post prandial" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP"^^xsd:anyURI ;
+           fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP>
+         ] ;
+         fhir:code [ fhir:v "GEN-275" ] ;
+         fhir:display [ fhir:v "7j" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc>
+       ] ;
+       fhir:code [ fhir:v "4548-4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
+     fhir:reference [ fhir:v "Patient/example-mes-fr-patient-001" ] ;
+     fhir:type [
+       fhir:v "Patient"^^xsd:anyURI ;
+       fhir:l fhir:Patient
+     ] ;
+     fhir:display [ fhir:v "Pierre Durand" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2022-11-06"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "92"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "milligramme par décilitre" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "mg/dL" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "70"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "milligramme par décilitre" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mg/dL" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "milligramme par décilitre" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mg/dL" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
