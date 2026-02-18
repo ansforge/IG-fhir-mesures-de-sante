@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-reason-for-m
   "name" : "MesReasonForMeasurement",
   "title" : "Raison de la mesure",
   "status" : "active",
-  "date" : "2026-02-18T12:55:13+00:00",
+  "date" : "2026-02-18T13:24:18+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
