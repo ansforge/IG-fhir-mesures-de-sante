@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "name" : "MesBundleFluxAlimentation",
   "title" : "Bundle d'alimentation",
   "status" : "active",
-  "date" : "2026-02-18T13:24:18+00:00",
+  "date" : "2026-02-18T13:23:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
