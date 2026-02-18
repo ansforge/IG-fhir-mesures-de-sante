@@ -1,4 +1,4 @@
-# Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

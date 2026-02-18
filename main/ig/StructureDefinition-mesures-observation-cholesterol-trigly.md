@@ -1,4 +1,4 @@
-# Cholestérol - triglycerides - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Cholestérol - triglycerides - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,19 +8,19 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesObservationCholesterolTrigly |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesObservationCholesterolTrigly |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol triglycerides 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
-* Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
-* Exemples pour ce Profil: [Observation/645f7341-715f-44fb-87e9-93f2e7d125a5](Observation-645f7341-715f-44fb-87e9-93f2e7d125a5.md)
+* Utilise ce/t/te Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
+* Référence ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
+* Exemples pour ce/t/te Profil: [Observation/645f7341-715f-44fb-87e9-93f2e7d125a5](Observation-645f7341-715f-44fb-87e9-93f2e7d125a5.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-trigly)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-trigly)
 
 ### Formal Views of Profile Content
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-cholesterol-trigly",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesObservationCholesterolTrigly",
   "title" : "Cholestérol - triglycerides",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

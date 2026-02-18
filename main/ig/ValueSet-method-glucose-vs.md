@@ -1,4 +1,4 @@
-# Méthode de mesures de glycémie sanguine ou interstitielle - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Méthode de mesures de glycémie sanguine ou interstitielle - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MethodeGlucoseVS |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MethodeGlucoseVS |
 
  
 Méthode de mesures de glycémie sanguine ou interstitielle. 
@@ -47,11 +47,11 @@ Méthode de mesures de glycémie sanguine ou interstitielle.
   "resourceType" : "ValueSet",
   "id" : "method-glucose-vs",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MethodeGlucoseVS",
   "title" : "Méthode de mesures de glycémie sanguine ou interstitielle",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

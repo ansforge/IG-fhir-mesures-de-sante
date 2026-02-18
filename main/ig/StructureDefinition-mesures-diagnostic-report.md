@@ -1,4 +1,4 @@
-# DiagnosticReport mesures biologie - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# DiagnosticReport mesures biologie - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,18 +8,18 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesDiagnosticReport |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesDiagnosticReport |
 
  
 Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
-* Exemples pour ce Profil: [DiagnosticReport/example-mes-fr-diagnostic-report-cholesterol-003](DiagnosticReport-example-mes-fr-diagnostic-report-cholesterol-003.md)
+* Utilise ce/t/te Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
+* Exemples pour ce/t/te Profil: [DiagnosticReport/example-mes-fr-diagnostic-report-cholesterol-003](DiagnosticReport-example-mes-fr-diagnostic-report-cholesterol-003.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-diagnostic-report)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-diagnostic-report)
 
 ### Formal Views of Profile Content
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-diagnostic-r
   "resourceType" : "StructureDefinition",
   "id" : "mesures-diagnostic-report",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesDiagnosticReport",
   "title" : "DiagnosticReport mesures biologie",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

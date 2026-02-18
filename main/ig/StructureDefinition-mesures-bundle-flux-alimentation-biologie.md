@@ -1,4 +1,4 @@
-# Bundle d'alimentation des mesures de biologie - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Bundle d'alimentation des mesures de biologie - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,17 +8,17 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesBundleFluxAlimentationBiologie |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesBundleFluxAlimentationBiologie |
 
  
 Profil biologie de la ressource Bundle du flux d’alimentation des mesures de biologie à transmettre 
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md)
+* Exemples pour ce/t/te Profil: [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-bundle-flux-alimentation-biologie)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-bundle-flux-alimentation-biologie)
 
 ### Formal Views of Profile Content
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-bundle-flux-alimentation-biologie",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesBundleFluxAlimentationBiologie",
   "title" : "Bundle d'alimentation des mesures de biologie",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

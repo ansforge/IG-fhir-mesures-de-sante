@@ -1,4 +1,4 @@
-# Les profils FHIR des paramètres biologiques - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Les profils FHIR des paramètres biologiques - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * **Les profils FHIR des paramètres biologiques**

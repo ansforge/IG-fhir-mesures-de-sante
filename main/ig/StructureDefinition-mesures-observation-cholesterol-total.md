@@ -1,4 +1,4 @@
-# Cholestérol - total - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Cholestérol - total - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,19 +8,19 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesObservationCholesterolTotal |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesObservationCholesterolTotal |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol total 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
-* Référer à ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
-* Exemples pour ce Profil: [Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce](Observation-b7a049e3-c07e-4e1c-95a5-909da37f75ce.md)
+* Utilise ce/t/te Profil: [Bundle d'alimentation des mesures de biologie](StructureDefinition-mesures-bundle-flux-alimentation-biologie.md)
+* Référence ce Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnostic-report.md)
+* Exemples pour ce/t/te Profil: [Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce](Observation-b7a049e3-c07e-4e1c-95a5-909da37f75ce.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-total)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-cholesterol-total)
 
 ### Formal Views of Profile Content
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-cholesterol-total",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesObservationCholesterolTotal",
   "title" : "Cholestérol - total",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

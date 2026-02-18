@@ -1,4 +1,4 @@
-# Nombre de jours - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Nombre de jours - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesNumberOfDays |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesNumberOfDays |
 
 Extension sur le Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.
 
@@ -23,10 +23,10 @@ This extension may be used on the following element(s):
 
 **Utilisations:**
 
-* Utiliser ce Extension: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
-* Exemples pour ce Extension: [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md), [Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1](Observation-8057b6ec-1417-4f1f-9a00-b0c46e7e71b1.md) and [Observation/example-mes-fr-observation-glucose-001](Observation-example-mes-fr-observation-glucose-001.md)
+* Utilise ce/t/te Extension: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
+* Exemples pour ce/t/te Extension: [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md), [Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1](Observation-8057b6ec-1417-4f1f-9a00-b0c46e7e71b1.md) and [Observation/example-mes-fr-observation-glucose-001](Observation-example-mes-fr-observation-glucose-001.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-number-of-days)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-number-of-days)
 
 ### Formal Views of Extension Content
 
@@ -49,11 +49,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-number-of-da
   "resourceType" : "StructureDefinition",
   "id" : "mesures-number-of-days",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesNumberOfDays",
   "title" : "Nombre de jours",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

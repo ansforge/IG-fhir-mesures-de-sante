@@ -1,4 +1,4 @@
-# Saturation en Oxygène - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Saturation en Oxygène - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,18 +8,18 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesFrObservationOxygenSat |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesFrObservationOxygenSat |
 
  
 Profil de la ressource Observation pour définir une Saturation en Oxygène (acronyme : SPO2) 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Exemples pour ce Profil: [Observation/example-mes-fr-observation-oxygen-sat-001](Observation-example-mes-fr-observation-oxygen-sat-001.md)
+* Utilise ce/t/te Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
+* Exemples pour ce/t/te Profil: [Observation/example-mes-fr-observation-oxygen-sat-001](Observation-example-mes-fr-observation-oxygen-sat-001.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-oxygen-sat)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-oxygen-sat)
 
 ### Formal Views of Profile Content
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "resourceType" : "StructureDefinition",
   "id" : "mesures-fr-observation-oxygen-sat",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesFrObservationOxygenSat",
   "title" : "Saturation en Oxygène",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

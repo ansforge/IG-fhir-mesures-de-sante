@@ -1,4 +1,4 @@
-# Fréquence respiratoire - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Fréquence respiratoire - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,17 +8,17 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesFrObservationRespiratoryRate |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesFrObservationRespiratoryRate |
 
  
 Profil de la ressource Observation pour définir une fréquence respiratoire (acronyme : FR) 
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Observation/example-mes-fr-observation-resp-rate-001](Observation-example-mes-fr-observation-resp-rate-001.md)
+* Exemples pour ce/t/te Profil: [Observation/example-mes-fr-observation-resp-rate-001](Observation-example-mes-fr-observation-resp-rate-001.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-resp-rate)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-fr-observation-resp-rate)
 
 ### Formal Views of Profile Content
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "resourceType" : "StructureDefinition",
   "id" : "mesures-fr-observation-resp-rate",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesFrObservationRespiratoryRate",
   "title" : "Fréquence respiratoire",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Bundle d'alimentation - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Bundle d'alimentation - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,17 +8,17 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesBundleFluxAlimentation |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesBundleFluxAlimentation |
 
  
 Profil de la ressource Bundle du flux d’alimentation à envoyer au serveur 
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Bundle/example-mes-fr-bundle-body-weight](Bundle-example-mes-fr-bundle-body-weight.md)
+* Exemples pour ce/t/te Profil: [Bundle/example-mes-fr-bundle-body-weight](Bundle-example-mes-fr-bundle-body-weight.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-bundle-flux-alimentation)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-bundle-flux-alimentation)
 
 ### Formal Views of Profile Content
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-bundle-flux-alimentation",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesBundleFluxAlimentation",
   "title" : "Bundle d'alimentation",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Hémoglobine glyquée (Hb1Ac) - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Hémoglobine glyquée (Hb1Ac) - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,17 +8,17 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesObservationHb1Ac |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesObservationHb1Ac |
 
  
 Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %. 
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Observation/example-mes-fr-observation-hb1ac-001](Observation-example-mes-fr-observation-hb1ac-001.md)
+* Exemples pour ce/t/te Profil: [Observation/example-mes-fr-observation-hb1ac-001](Observation-example-mes-fr-observation-hb1ac-001.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-hb1ac)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-hb1ac)
 
 ### Formal Views of Profile Content
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-hb1ac",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesObservationHb1Ac",
   "title" : "Hémoglobine glyquée (Hb1Ac)",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

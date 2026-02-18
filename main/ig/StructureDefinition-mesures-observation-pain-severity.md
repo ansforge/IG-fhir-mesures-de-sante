@@ -1,4 +1,4 @@
-# Niveau de douleur - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Niveau de douleur - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,18 +8,18 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity | *Version*:3.2.0-ballot |
-| Active as of 2026-02-02 | *Computable Name*:MesObservationPainSeverity |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity | *Version*:3.2.0 |
+| Active as of 2026-02-18 | *Computable Name*:MesObservationPainSeverity |
 
  
 Profil de la ressource Observation pour définir un niveau de douleur 
 
 **Utilisations:**
 
-* Utiliser ce Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
-* Exemples pour ce Profil: [Observation/example-mes-fr-observation-pain-severity-001](Observation-example-mes-fr-observation-pain-severity-001.md)
+* Utilise ce/t/te Profil: [Bundle d'alimentation](StructureDefinition-mesures-bundle-flux-alimentation.md)
+* Exemples pour ce/t/te Profil: [Observation/example-mes-fr-observation-pain-severity-001](Observation-example-mes-fr-observation-pain-severity-001.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-pain-severity)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.mesures|current/StructureDefinition/mesures-observation-pain-severity)
 
 ### Formal Views of Profile Content
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "resourceType" : "StructureDefinition",
   "id" : "mesures-observation-pain-severity",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity",
-  "version" : "3.2.0-ballot",
+  "version" : "3.2.0",
   "name" : "MesObservationPainSeverity",
   "title" : "Niveau de douleur",
   "status" : "active",
-  "date" : "2026-02-02T09:29:40+00:00",
+  "date" : "2026-02-18T12:52:41+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

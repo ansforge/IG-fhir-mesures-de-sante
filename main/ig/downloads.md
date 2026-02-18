@@ -1,4 +1,4 @@
-# Téléchargements et usages - Guide d'implémentation FHIR - Mesures de santé v3.2.0-ballot
+# Téléchargements et usages - Guide d'implémentation FHIR - Mesures de santé v3.2.0
 
 * [**Table of Contents**](toc.md)
 * **Téléchargements et usages**
