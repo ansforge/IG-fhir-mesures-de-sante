@@ -33,34 +33,24 @@ Profil: [Poids](StructureDefinition-mesures-fr-observation-body-weight.md)
   "resourceType" : "Observation",
   "id" : "example-mes-fr-observation-body-weight-001",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-weight"]
   },
-  "extension" : [
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
-      "valueString" : "Calcul IMC"
-    }
-  ],
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
+    "valueString" : "Calcul IMC"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "29463-7"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29463-7"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001",
@@ -75,12 +65,10 @@ Profil: [Poids](StructureDefinition-mesures-fr-observation-body-weight.md)
     "code" : "kg"
   },
   "method" : {
-    "coding" : [
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED",
-        "code" : "K50BI02"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED",
+      "code" : "K50BI02"
+    }]
   }
 }
 

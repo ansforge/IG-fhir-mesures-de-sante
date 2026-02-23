@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data | *Version*:3.2.0 |
-| Active as of 2026-02-18 | *Computable Name*:MesOriginalData |
+| Active as of 2026-02-23 | *Computable Name*:MesOriginalData |
 
 Extension permettant de renseigner la donnée originale. Dans le cas où une conversion d’unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.
 
@@ -51,156 +51,136 @@ Other representations of profile: [CSV](StructureDefinition-mesures-original-dat
   "name" : "MesOriginalData",
   "title" : "Valeur originale",
   "status" : "active",
-  "date" : "2026-02-18T12:52:41+00:00",
+  "date" : "2026-02-23T17:17:29+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Observation"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Observation"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Nombre de jours",
-        "definition" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "min" : 3
-      },
-      {
-        "id" : "Extension.extension:has-been-converted",
-        "path" : "Extension.extension",
-        "sliceName" : "has-been-converted",
-        "short" : "Indication permettant de savoir si la valeur a été convertie.",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:has-been-converted.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:has-been-converted.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "has-been-converted"
-      },
-      {
-        "id" : "Extension.extension:has-been-converted.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ],
-        "patternBoolean" : true
-      },
-      {
-        "id" : "Extension.extension:original-code",
-        "path" : "Extension.extension",
-        "sliceName" : "original-code",
-        "short" : "Code original de la donnée. Il permet notamment d'identifier le niveau de comparabilité des résultats entre eux. Le choix a été fait de ne pas indiquer directement le numéro de comparabilité mais d'indiquer directement le code LOINC d'origine pour identifier le numéro de comparabilité dans le jeu de valeur circuit de la biologie.",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:original-code.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:original-code.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "original-code"
-      },
-      {
-        "id" : "Extension.extension:original-code.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "Extension.extension:original-value",
-        "path" : "Extension.extension",
-        "sliceName" : "original-value",
-        "short" : "Valeur originale | Original value",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:original-value.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:original-value.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "original-value"
-      },
-      {
-        "id" : "Extension.extension:original-value.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "max" : "0"
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Nombre de jours",
+      "definition" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "min" : 3
+    },
+    {
+      "id" : "Extension.extension:has-been-converted",
+      "path" : "Extension.extension",
+      "sliceName" : "has-been-converted",
+      "short" : "Indication permettant de savoir si la valeur a été convertie.",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "has-been-converted"
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "patternBoolean" : true
+    },
+    {
+      "id" : "Extension.extension:original-code",
+      "path" : "Extension.extension",
+      "sliceName" : "original-code",
+      "short" : "Code original de la donnée. Il permet notamment d'identifier le niveau de comparabilité des résultats entre eux. Le choix a été fait de ne pas indiquer directement le numéro de comparabilité mais d'indiquer directement le code LOINC d'origine pour identifier le numéro de comparabilité dans le jeu de valeur circuit de la biologie.",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:original-code.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:original-code.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "original-code"
+    },
+    {
+      "id" : "Extension.extension:original-code.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.extension:original-value",
+      "path" : "Extension.extension",
+      "sliceName" : "original-value",
+      "short" : "Valeur originale | Original value",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:original-value.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:original-value.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "original-value"
+    },
+    {
+      "id" : "Extension.extension:original-value.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
   }
 }
 

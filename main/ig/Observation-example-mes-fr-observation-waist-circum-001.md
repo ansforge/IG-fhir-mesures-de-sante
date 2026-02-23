@@ -31,34 +31,24 @@ Profil: [Tour de taille](StructureDefinition-mesures-observation-waist-circumfer
   "resourceType" : "Observation",
   "id" : "example-mes-fr-observation-waist-circum-001",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-waist-circumference"]
   },
-  "extension" : [
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
-      "valueString" : "Prise de masse importante récente (confinement)"
-    }
-  ],
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
+    "valueString" : "Prise de masse importante récente (confinement)"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "8280-0"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8280-0"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001",

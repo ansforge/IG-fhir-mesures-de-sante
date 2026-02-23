@@ -42,58 +42,44 @@ Profil: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
   "resourceType" : "Observation",
   "id" : "example-mes-fr-observation-glucose-001",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"]
   },
-  "extension" : [
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
-      "valueString" : "Malaise du patient"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc",
-            "code" : "16915-1",
-            "display" : "Glucose post prandial"
-          }
-        ]
-      }
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP",
-            "code" : "GEN-275",
-            "display" : "7j"
-          }
-        ]
-      }
-    }
-  ],
-  "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
-  "code" : {
-    "coding" : [
-      {
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
+    "valueString" : "Malaise du patient"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-moment-of-measurement",
+    "valueCodeableConcept" : {
+      "coding" : [{
         "system" : "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc",
-        "code" : "4548-4"
-      }
-    ]
+        "code" : "16915-1",
+        "display" : "Glucose post prandial"
+      }]
+    }
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R308-TAASIP/FHIR/TRE-R308-TAASIP",
+        "code" : "GEN-275",
+        "display" : "7j"
+      }]
+    }
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc",
+      "code" : "4548-4"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001",
@@ -107,22 +93,20 @@ Profil: [Glycémie](StructureDefinition-mesures-observation-glucose.md)
     "system" : "http://unitsofmeasure.org",
     "code" : "mg/dL"
   },
-  "referenceRange" : [
-    {
-      "low" : {
-        "value" : 70,
-        "unit" : "milligramme par décilitre",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "mg/dL"
-      },
-      "high" : {
-        "value" : 100,
-        "unit" : "milligramme par décilitre",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "mg/dL"
-      }
+  "referenceRange" : [{
+    "low" : {
+      "value" : 70,
+      "unit" : "milligramme par décilitre",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg/dL"
+    },
+    "high" : {
+      "value" : 100,
+      "unit" : "milligramme par décilitre",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg/dL"
     }
-  ]
+  }]
 }
 
 ```

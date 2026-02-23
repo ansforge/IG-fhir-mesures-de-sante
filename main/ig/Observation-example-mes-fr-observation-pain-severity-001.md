@@ -31,34 +31,24 @@ Profil: [Niveau de douleur](StructureDefinition-mesures-observation-pain-severit
   "resourceType" : "Observation",
   "id" : "example-mes-fr-observation-pain-severity-001",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-pain-severity"]
   },
-  "extension" : [
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
-      "valueString" : "Malaise du patient"
-    }
-  ],
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement",
+    "valueString" : "Malaise du patient"
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "72514-3"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "72514-3"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001",

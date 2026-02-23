@@ -24,36 +24,28 @@
 {
   "resourceType" : "Practitioner",
   "id" : "example-mes-fr-practitionner-001",
-  "identifier" : [
-    {
-      "system" : "http://www.acme.org/practitioners",
-      "value" : "801234567897"
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://www.acme.org/practitioners",
+    "value" : "801234567897"
+  }],
   "active" : true,
-  "name" : [
-    {
-      "family" : "Dupont",
-      "given" : ["Jean"],
-      "prefix" : ["Mr"]
-    }
-  ],
-  "telecom" : [
-    {
-      "system" : "phone",
-      "value" : "01 70 88 88 64",
-      "use" : "work",
-      "rank" : 1
-    }
-  ],
-  "address" : [
-    {
-      "use" : "home",
-      "line" : ["7 rue Coursier"],
-      "city" : "Amiens",
-      "postalCode" : "80000"
-    }
-  ]
+  "name" : [{
+    "family" : "Dupont",
+    "given" : ["Jean"],
+    "prefix" : ["Mr"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "01 70 88 88 64",
+    "use" : "work",
+    "rank" : 1
+  }],
+  "address" : [{
+    "use" : "home",
+    "line" : ["7 rue Coursier"],
+    "city" : "Amiens",
+    "postalCode" : "80000"
+  }]
 }
 
 ```

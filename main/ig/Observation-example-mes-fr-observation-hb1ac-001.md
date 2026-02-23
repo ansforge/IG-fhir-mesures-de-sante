@@ -33,52 +33,40 @@ Profil: [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-
   "resourceType" : "Observation",
   "id" : "example-mes-fr-observation-hb1ac-001",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "4548-4"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "4548-4"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001"
   },
   "effectiveDateTime" : "2025-07-07T09:00:00+02:00",
-  "performer" : [
-    {
-      "reference" : "Practitioner/example-mes-fr-practitionner-001",
-      "display" : "Jean Dupont"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/example-mes-fr-practitionner-001",
+    "display" : "Jean Dupont"
+  }],
   "valueQuantity" : {
     "value" : 6.5,
     "system" : "http://unitsofmeasure.org",
     "code" : "%"
   },
   "method" : {
-    "coding" : [
-      {
-        "system" : "http://hl7.org/fhir/ValueSet/method-glucose-vs",
-        "code" : "HPLC",
-        "display" : "High-performance liquid chromatography"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/ValueSet/method-glucose-vs",
+      "code" : "HPLC",
+      "display" : "High-performance liquid chromatography"
+    }]
   }
 }
 

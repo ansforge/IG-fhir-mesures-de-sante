@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for Mesures</h1>
- <p>Generated Wed Feb 18 12:57:57 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.2.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>))</p>
+ <p>Generated Mon Feb 23 17:23:02 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.mesures#3.2.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mesures">https://interop.esante.gouv.fr/ig/fhir/mesures</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mesures/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -783,13 +783,6 @@
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
   <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://hl7.org/fhir/ValueSet/observation-codes|4.0.1</td>
-    <td>http://loinc.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
-  </tr>
-  <tr>
     <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
     <td>https://smt.esante.gouv.fr/fhir</td>
     <td></td>
@@ -828,6 +821,13 @@
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td></td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
     <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
   </tr>
@@ -956,73 +956,6 @@
     <td></td>
     <td>urn:iso:std:iso:3166:-2</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
-  </tr>
-</table>
-<p>
-  <b>Errors</b>
-</p>
-<table class="grid">
-  <tr>
-    <td>
-      <b>URL</b>
-    </td>
-    <td>
-      <b>Message</b>
-    </td>
-  </tr>
-  <tr>
-    <td>http://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position</td>
-    <td style="background-color: #ffe3e3">
-      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=http%3A%2F%2Fhl7.fr%2Fig%2Ffhir%2Fcore%2FValueSet%2Ffr-core-vs-heart-rate-body-position">Error resolving valueSet http://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
-    </td>
-  </tr>
-  <tr>
-    <td>http://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method</td>
-    <td style="background-color: #ffe3e3">
-      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=http%3A%2F%2Fhl7.fr%2Fig%2Ffhir%2Fcore%2FValueSet%2Ffr-core-vs-heart-rate-method">Error resolving valueSet http://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
-    </td>
-  </tr>
-  <tr>
-    <td>http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS</td>
-    <td style="background-color: #ffe3e3">
-      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=http%3A%2F%2Fhl7.org%2Ffhir%2Fhspc%2FValueSet%2FbodyPositionVS">Error resolving valueSet http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
-    </td>
-  </tr>
-  <tr>
-    <td>http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS</td>
-    <td style="background-color: #ffe3e3">
-      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=http%3A%2F%2Fhl7.org%2Ffhir%2Fhspc%2FValueSet%2FheartRateMeasBodyLocationPrecoordVS">Error resolving valueSet http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
-    </td>
-  </tr>
-  <tr>
-    <td>http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS</td>
-    <td style="background-color: #ffe3e3">
-      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=http%3A%2F%2Fhl7.org%2Ffhir%2Fhspc%2FValueSet%2FrespiratoryRateMeasMethodVS">Error resolving valueSet http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
-    </td>
-  </tr>
-  <tr>
-    <td>http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS</td>
-    <td style="background-color: #ffe3e3">
-      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=http%3A%2F%2Fhl7.org%2Ffhir%2Fhspc%2FValueSet%2FsPO2BodyLocationVS">Error resolving valueSet http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
-    </td>
-  </tr>
-  <tr>
-    <td>http://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789</td>
-    <td style="background-color: #ffe3e3">
-      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=http%3A%2F%2Fsmt.esante.gouv.fr%2Ffhir%2FValueSet%2F1.2.250.1.213.1.1.5.789">Error resolving valueSet http://smt.esante.gouv.fr/fhir/ValueSet/1.2.250.1.213.1.1.5.789: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
-    </td>
-  </tr>
-  <tr>
-    <td>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position</td>
-    <td style="background-color: #ffe3e3">
-      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=https%3A%2F%2Fhl7.fr%2Fig%2Ffhir%2Fcore%2FValueSet%2Ffr-core-vs-heart-rate-body-position">Error resolving valueSet https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
-    </td>
-  </tr>
-  <tr>
-    <td>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method</td>
-    <td style="background-color: #ffe3e3">
-      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=https%3A%2F%2Fhl7.fr%2Fig%2Ffhir%2Fcore%2FValueSet%2Ffr-core-vs-heart-rate-method">Error resolving valueSet https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
-    </td>
   </tr>
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>

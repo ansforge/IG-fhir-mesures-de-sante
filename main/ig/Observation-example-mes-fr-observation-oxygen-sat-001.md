@@ -29,29 +29,21 @@ Profil: [Saturation en Oxygène](StructureDefinition-mesures-fr-observation-oxyg
   "resourceType" : "Observation",
   "id" : "example-mes-fr-observation-oxygen-sat-001",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-oxygen-sat"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "2708-6",
-        "display" : "Oxygène saturation [Fraction massique] Sang artériel ; Numérique"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2708-6",
+      "display" : "Oxygène saturation [Fraction massique] Sang artériel ; Numérique"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001",

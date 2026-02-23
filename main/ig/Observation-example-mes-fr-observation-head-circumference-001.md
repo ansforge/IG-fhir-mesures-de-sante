@@ -29,32 +29,24 @@ Profil: [Périmètre Crânien](StructureDefinition-mesures-observation-head-circ
   "resourceType" : "Observation",
   "id" : "example-mes-fr-observation-head-circumference-001",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "8287-5"
-      },
-      {
-        "system" : "http://loinc.org",
-        "code" : "9843-4"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8287-5"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9843-4"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001",

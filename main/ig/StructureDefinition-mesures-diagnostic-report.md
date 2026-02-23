@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report | *Version*:3.2.0 |
-| Active as of 2026-02-18 | *Computable Name*:MesDiagnosticReport |
+| Active as of 2026-02-23 | *Computable Name*:MesDiagnosticReport |
 
  
 Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie 
@@ -42,184 +42,144 @@ Other representations of profile: [CSV](StructureDefinition-mesures-diagnostic-r
   "name" : "MesDiagnosticReport",
   "title" : "DiagnosticReport mesures biologie",
   "status" : "active",
-  "date" : "2026-02-18T12:52:41+00:00",
+  "date" : "2026-02-23T17:17:29+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "DiagnosticReport",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "DiagnosticReport.code",
-        "path" : "DiagnosticReport.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://loinc.org",
-              "code" : "11502-2",
-              "display" : "Compte rendu du laboratoire [Recherche] Patient ; Document"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "DiagnosticReport.result",
-        "path" : "DiagnosticReport.result",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "profile",
-              "path" : "resolve()"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "DiagnosticReport.result:ldl-cholesterol",
-        "path" : "DiagnosticReport.result",
-        "sliceName" : "ldl-cholesterol",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "DiagnosticReport.result:hdl-cholesterol",
-        "path" : "DiagnosticReport.result",
-        "sliceName" : "hdl-cholesterol",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "DiagnosticReport.result:total-cholesterol",
-        "path" : "DiagnosticReport.result",
-        "sliceName" : "total-cholesterol",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "DiagnosticReport.result:trigly-cholesterol",
-        "path" : "DiagnosticReport.result",
-        "sliceName" : "trigly-cholesterol",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "DiagnosticReport.result:cholesterol-aspect",
-        "path" : "DiagnosticReport.result",
-        "sliceName" : "cholesterol-aspect",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "DiagnosticReport.result:glycemie",
-        "path" : "DiagnosticReport.result",
-        "sliceName" : "glycemie",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"
-            ]
-          }
-        ],
-        "mustSupport" : true
+    "element" : [{
+      "id" : "DiagnosticReport.code",
+      "path" : "DiagnosticReport.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11502-2",
+          "display" : "Compte rendu du laboratoire [Recherche] Patient ; Document"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "DiagnosticReport.result",
+      "path" : "DiagnosticReport.result",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "profile",
+          "path" : "resolve()"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "DiagnosticReport.result:ldl-cholesterol",
+      "path" : "DiagnosticReport.result",
+      "sliceName" : "ldl-cholesterol",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "DiagnosticReport.result:hdl-cholesterol",
+      "path" : "DiagnosticReport.result",
+      "sliceName" : "hdl-cholesterol",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "DiagnosticReport.result:total-cholesterol",
+      "path" : "DiagnosticReport.result",
+      "sliceName" : "total-cholesterol",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "DiagnosticReport.result:trigly-cholesterol",
+      "path" : "DiagnosticReport.result",
+      "sliceName" : "trigly-cholesterol",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-trigly"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "DiagnosticReport.result:cholesterol-aspect",
+      "path" : "DiagnosticReport.result",
+      "sliceName" : "cholesterol-aspect",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-aspect"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "DiagnosticReport.result:glycemie",
+      "path" : "DiagnosticReport.result",
+      "sliceName" : "glycemie",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-glucose"]
+      }],
+      "mustSupport" : true
+    }]
   }
 }
 

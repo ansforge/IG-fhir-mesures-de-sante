@@ -50,37 +50,31 @@ Profil: [DiagnosticReport mesures biologie](StructureDefinition-mesures-diagnost
   "resourceType" : "DiagnosticReport",
   "id" : "example-mes-fr-diagnostic-report-cholesterol-003",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"]
   },
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "11502-2",
-        "display" : "Compte rendu du laboratoire [Recherche] Patient ; Document"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11502-2",
+      "display" : "Compte rendu du laboratoire [Recherche] Patient ; Document"
+    }]
   },
-  "result" : [
-    {
-      "reference" : "Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce"
-    },
-    {
-      "reference" : "Observation/7b166d82-27b6-4878-9765-3fe101618edf"
-    },
-    {
-      "reference" : "Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e"
-    },
-    {
-      "reference" : "Observation/645f7341-715f-44fb-87e9-93f2e7d125a5"
-    },
-    {
-      "reference" : "Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1"
-    }
-  ]
+  "result" : [{
+    "reference" : "Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce"
+  },
+  {
+    "reference" : "Observation/7b166d82-27b6-4878-9765-3fe101618edf"
+  },
+  {
+    "reference" : "Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e"
+  },
+  {
+    "reference" : "Observation/645f7341-715f-44fb-87e9-93f2e7d125a5"
+  },
+  {
+    "reference" : "Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1"
+  }]
 }
 
 ```

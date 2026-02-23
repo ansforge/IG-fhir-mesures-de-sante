@@ -41,51 +41,41 @@ Profil: [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol
   "resourceType" : "Observation",
   "id" : "9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"]
   },
-  "extension" : [
+  "extension" : [{
+    "extension" : [{
+      "url" : "has-been-converted",
+      "valueBoolean" : true
+    },
     {
-      "extension" : [
-        {
-          "url" : "has-been-converted",
-          "valueBoolean" : true
-        },
-        {
-          "url" : "original-code",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "http://loinc.org",
-                "code" : "2089-1",
-                "display" : "Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique"
-              }
-            ]
-          }
-        },
-        {
-          "url" : "original-value",
-          "valueQuantity" : {
-            "value" : 3.02,
-            "unit" : "g/L",
-            "system" : "http://unitsofmeasure.org",
-            "code" : "g/L"
-          }
-        }
-      ],
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
-    }
-  ],
+      "url" : "original-code",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "2089-1",
+          "display" : "Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique"
+        }]
+      }
+    },
+    {
+      "url" : "original-value",
+      "valueQuantity" : {
+        "value" : 3.02,
+        "unit" : "g/L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g/L"
+      }
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
+  }],
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "2089-1",
-        "display" : "Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2089-1",
+      "display" : "Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001",
@@ -100,23 +90,19 @@ Profil: [Cholestérol - LDL](StructureDefinition-mesures-observation-cholesterol
     "code" : "mmol/L"
   },
   "method" : {
-    "coding" : [
-      {
-        "system" : "https://smt.esante.gouv.fr/terminologie-tccr",
-        "code" : "DEG"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://smt.esante.gouv.fr/terminologie-tccr",
+      "code" : "DEG"
+    }]
   },
-  "referenceRange" : [
-    {
-      "high" : {
-        "value" : 2.6,
-        "unit" : "mmol/L",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "mmol/L"
-      }
+  "referenceRange" : [{
+    "high" : {
+      "value" : 2.6,
+      "unit" : "mmol/L",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mmol/L"
     }
-  ]
+  }]
 }
 
 ```

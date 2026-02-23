@@ -29,28 +29,20 @@ Profil: [Fréquence respiratoire](StructureDefinition-mesures-fr-observation-res
   "resourceType" : "Observation",
   "id" : "example-mes-fr-observation-resp-rate-001",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "9279-1"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "9279-1"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001",

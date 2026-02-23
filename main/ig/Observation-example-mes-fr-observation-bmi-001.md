@@ -31,28 +31,20 @@ Profil: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-
   "resourceType" : "Observation",
   "id" : "example-mes-fr-observation-bmi-001",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bmi"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "39156-5"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "39156-5"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-mes-fr-patient-001",
@@ -66,17 +58,13 @@ Profil: [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-
     "system" : "http://unitsofmeasure.org",
     "code" : "kg/m2"
   },
-  "interpretation" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "code" : "H",
-          "display" : "High"
-        }
-      ]
-    }
-  ]
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "H",
+      "display" : "High"
+    }]
+  }]
 }
 
 ```
