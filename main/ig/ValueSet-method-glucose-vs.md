@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ValueSet/method-glucose-vs | *Version*:3.2.0 |
-| Active as of 2026-02-23 | *Computable Name*:MethodeGlucoseVS |
+| Active as of 2026-03-18 | *Computable Name*:MethodeGlucoseVS |
 
  
 Méthode de mesures de glycémie sanguine ou interstitielle. 
@@ -17,6 +17,8 @@ Méthode de mesures de glycémie sanguine ou interstitielle.
  **References** 
 
 * [Glycémie](StructureDefinition-mesures-observation-glucose.md)
+* [Glycémie](StructureDefinition-mesures-observation-glucose.md)
+* [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-hb1ac.md)
 * [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-hb1ac.md)
 
 ### Définition logique (CLD)
@@ -51,7 +53,7 @@ Méthode de mesures de glycémie sanguine ou interstitielle.
   "name" : "MethodeGlucoseVS",
   "title" : "Méthode de mesures de glycémie sanguine ou interstitielle",
   "status" : "active",
-  "date" : "2026-02-23T17:17:29+00:00",
+  "date" : "2026-03-18T17:41:07+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

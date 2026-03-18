@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-head-circumference | *Version*:3.2.0 |
-| Active as of 2026-02-23 | *Computable Name*:MesObservationHeadCircumference |
+| Active as of 2026-03-18 | *Computable Name*:MesObservationHeadCircumference |
 
  
 Profil de la ressource Observation pour définir un Périmètre Crânien 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationHeadCircumference",
   "title" : "Périmètre Crânien",
   "status" : "active",
-  "date" : "2026-02-23T17:17:29+00:00",
+  "date" : "2026-03-18T17:41:07+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

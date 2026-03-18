@@ -31,6 +31,7 @@ Ces profils peuvent être associés au sein du profil Bundle [MesBundleFluxAlime
 * le taux de glucose interstitiel, mesuré en mg/dl
 * l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
 L'extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .L'extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin. |
+| [MesObservationHb1Ac](StructureDefinition-mesures-observation-hb1ac.md) | Profil biologie de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %. |
 
 ### Exemples de requêtes FHIR
 

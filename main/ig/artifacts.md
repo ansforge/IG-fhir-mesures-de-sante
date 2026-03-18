@@ -27,7 +27,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 * le taux de glucose interstitiel, mesuré en mg/dl
 * l’index de gestion de glycémie (IGG) qui procure une estimation de l’HbA1c également mesuré en %
 L’extension MesNumberOfDays permet de spécifier le nombre de jours dans la mesure du taux de glucose interstitiel et de l’index de gestion de glycémie (IGG) .L’extension MesMomentOfMeasurement (contexte de la mesure) est utilisée dans le cas de la mesure du glucose sanguin. |
-| [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-hb1ac.md) | Profil de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %. |
+| [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-hb1ac.md) | Profil biologie de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %. |
 | [Indice de Masse Corporelle](StructureDefinition-mesures-fr-observation-bmi.md) | Profil de la ressource Observation pour définir un Indice de Masse Corporelle (acronyme : IMC ou BMI) |
 | [Niveau de douleur](StructureDefinition-mesures-observation-pain-severity.md) | Profil de la ressource Observation pour définir un niveau de douleur |
 | [Nombre de pas par jour](StructureDefinition-mesures-observation-steps-by-day.md) | Profil de la ressource Observation pour définir un nombre de pas par jour |
