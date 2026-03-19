@@ -23,17 +23,7 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 * valueQuantity.code = #mmol/L
 
 
-* referenceRange ^short = "L'intervalle de référence est obligatoire pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ..."
 * referenceRange obeys mes-ir
-* referenceRange.low 0..1
-* referenceRange.high 1..1
-* referenceRange.high only SimpleQuantity
-* referenceRange.type 0..0
-* referenceRange.type only CodeableConcept
-* referenceRange.appliesTo 0..0
-* referenceRange.appliesTo only CodeableConcept
-* referenceRange.age 0..0
-* referenceRange.age only Range
 
 * hasMember 0..0
 * derivedFrom 0..0

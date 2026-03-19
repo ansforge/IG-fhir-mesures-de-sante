@@ -17,15 +17,6 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 
 
 * referenceRange obeys mes-ir
-* referenceRange.low 1..1
-* referenceRange.low only SimpleQuantity
-* referenceRange.high 0..0
-* referenceRange.type 0..0
-* referenceRange.type only CodeableConcept
-* referenceRange.appliesTo 0..0
-* referenceRange.appliesTo only CodeableConcept
-* referenceRange.age 0..0
-* referenceRange.age only Range
 
 * hasMember 0..0
 * derivedFrom 0..0
