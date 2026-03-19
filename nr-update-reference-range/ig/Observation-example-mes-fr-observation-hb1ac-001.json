@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Observation",
+  "id" : "example-mes-fr-observation-hb1ac-001",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Observation example-mes-fr-observation-hb1ac-001</b></p><a name=\"example-mes-fr-observation-hb1ac-001\"> </a><a name=\"hcexample-mes-fr-observation-hb1ac-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-hb1ac.html\">Hémoglobine glyquée (Hb1Ac)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 4548-4}\">Hémoglobine A1c/hémoglobine totale [Fraction massique] Sang ; Numérique</span></p><p><b>subject</b>: <a href=\"Patient-example-mes-fr-patient-001.html\">Pierre Jean Durand (official) Male, Date de Naissance :1974-12-25 ( urn:oid:1.2.250.1.213.1.4.8#123456789012244\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2025-07-07 09:00:00+0200</p><p><b>performer</b>: <a href=\"Practitioner-example-mes-fr-practitionner-001.html\">Jean Dupont</a></p><p><b>value</b>: 6.5 %<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUM% = '%')</span></p><p><b>method</b>: <span title=\"Codes :{http://hl7.org/fhir/ValueSet/method-glucose-vs HPLC}\">High-performance liquid chromatography</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "4548-4"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/example-mes-fr-patient-001"
+  },
+  "effectiveDateTime" : "2025-07-07T09:00:00+02:00",
+  "performer" : [{
+    "reference" : "Practitioner/example-mes-fr-practitionner-001",
+    "display" : "Jean Dupont"
+  }],
+  "valueQuantity" : {
+    "value" : 6.5,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "%"
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/ValueSet/method-glucose-vs",
+      "code" : "HPLC",
+      "display" : "High-performance liquid chromatography"
+    }]
+  }
+}

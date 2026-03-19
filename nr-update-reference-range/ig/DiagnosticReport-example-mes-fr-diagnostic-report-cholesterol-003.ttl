@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/mesures/DiagnosticReport/example-mes-fr-diagnostic-report-cholesterol-003> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-mes-fr-diagnostic-report-cholesterol-003"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : RapportDiagnostique example-mes-fr-diagnostic-report-cholesterol-003</b></p><a name=\"example-mes-fr-diagnostic-report-cholesterol-003\"> </a><a name=\"hcexample-mes-fr-diagnostic-report-cholesterol-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-diagnostic-report.html\">DiagnosticReport mesures biologie</a></p></div><h2><span title=\"Codes :{http://loinc.org 11502-2}\">Compte rendu du laboratoire [Recherche] Patient ; Document</span> </h2><table class=\"grid\"/><p><b>Détails du rapport</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Valeur</b></td><td><b>Plage de référence</b></td><td><b>Drapeaux</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-b7a049e3-c07e-4e1c-95a5-909da37f75ce.html\"><span title=\"Codes :{http://loinc.org 2093-3}\">Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique</span></a></td><td>0.4 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span> - 11.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>Final</td><td>2024-10-15</td></tr><tr><td><a href=\"Observation-7b166d82-27b6-4878-9765-3fe101618edf.html\"><span title=\"Codes :{http://loinc.org 2085-9}\">Cholestérol HDL [Masse/Volume] Sérum/Plasma ; Numérique</span></a></td><td>2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>&gt;3.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>Final</td><td>2024-10-15</td></tr><tr><td><a href=\"Observation-9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e.html\"><span title=\"Codes :{http://loinc.org 2089-1}\">Cholestérol LDL [Masse/Volume] Sérum/Plasma ; Numérique</span></a></td><td>7.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>&lt;2.6 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>Final</td><td>2024-10-15</td></tr><tr><td><a href=\"Observation-645f7341-715f-44fb-87e9-93f2e7d125a5.html\"><span title=\"Codes :{http://loinc.org 2571-8}\">Triglycérides [Masse/Volume] Sérum/Plasma ; Numérique</span></a></td><td>5.6 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span> - 21.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>Final</td><td>2024-10-15</td></tr><tr><td><a href=\"Observation-8057b6ec-1417-4f1f-9a00-b0c46e7e71b1.html\"><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_A04-Loinc/FHIR/TRE-A04-Loinc 4548-4}\">Hémoglobine A1c %</span></a></td><td>92 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmg/dL = 'mg/dL')</span></td><td>70 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmg/dL = 'mg/dL')</span> - 100 milligramme par décilitre<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmg/dL = 'mg/dL')</span></td><td>Final</td><td>2022-11-06</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11502-2 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "11502-2" ] ;
+       fhir:display [ fhir:v "Compte rendu du laboratoire [Recherche] Patient ; Document" ]
+     ] )
+  ] ; # 
+  fhir:result ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce> ;
+     fhir:reference [ fhir:v "Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce" ]
+  ] [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/7b166d82-27b6-4878-9765-3fe101618edf> ;
+     fhir:reference [ fhir:v "Observation/7b166d82-27b6-4878-9765-3fe101618edf" ]
+  ] [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e> ;
+     fhir:reference [ fhir:v "Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e" ]
+  ] [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/645f7341-715f-44fb-87e9-93f2e7d125a5> ;
+     fhir:reference [ fhir:v "Observation/645f7341-715f-44fb-87e9-93f2e7d125a5" ]
+  ] [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1> ;
+     fhir:reference [ fhir:v "Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
