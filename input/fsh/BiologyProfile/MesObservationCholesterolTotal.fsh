@@ -24,6 +24,7 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 
 
 * referenceRange obeys mes-ir
+* referenceRange.type ^short = "Le type de référence permet d'indiquer s'il s'agit d'un intervalle de réfence ou d'un objectif cible."
 
 * hasMember 0..0
 * derivedFrom 0..0
