@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolLDL",
   "title" : "Cholestérol - LDL",
   "status" : "active",
-  "date" : "2026-03-19T08:20:47+00:00",
+  "date" : "2026-03-19T08:22:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -252,6 +252,11 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
         "source" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl"
       }],
       "mustSupport" : true
+    },
+    {
+      "id" : "Observation.referenceRange.type",
+      "path" : "Observation.referenceRange.type",
+      "short" : "Le type de référence permet d'indiquer s'il s'agit d'un intervalle de réfence ou d'un objectif cible."
     },
     {
       "id" : "Observation.hasMember",

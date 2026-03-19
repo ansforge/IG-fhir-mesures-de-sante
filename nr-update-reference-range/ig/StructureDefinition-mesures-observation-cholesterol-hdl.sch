@@ -57,4 +57,11 @@
       <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Observation/f:referenceRange</sch:title>
+    <sch:rule context="f:Observation/f:referenceRange">
+      <sch:assert test="count(f:appliesTo) &lt;= 0">appliesTo: maximum cardinality of 'appliesTo' is 0</sch:assert>
+      <sch:assert test="count(f:age) &lt;= 0">age: maximum cardinality of 'age' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>
