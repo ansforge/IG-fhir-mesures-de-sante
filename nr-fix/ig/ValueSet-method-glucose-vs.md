@@ -51,7 +51,7 @@ Méthode de mesures de glycémie sanguine ou interstitielle.
   "name" : "MethodeGlucoseVS",
   "title" : "Méthode de mesures de glycémie sanguine ou interstitielle",
   "status" : "active",
-  "date" : "2026-03-31T09:05:32+00:00",
+  "date" : "2026-03-31T09:17:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -65,7 +65,7 @@ Méthode de mesures de glycémie sanguine ou interstitielle.
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

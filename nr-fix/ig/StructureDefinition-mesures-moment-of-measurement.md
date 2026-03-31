@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-moment-of-me
   "name" : "MesMomentOfMeasurement",
   "title" : "Moment de la mesure",
   "status" : "active",
-  "date" : "2026-03-31T09:05:32+00:00",
+  "date" : "2026-03-31T09:17:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -65,7 +65,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-moment-of-me
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",
