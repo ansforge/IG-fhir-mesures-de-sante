@@ -221,5 +221,5 @@ Usage: #example
 Description: "Exemple de mesure de la fréquence respiratoire"
 * status = #final
 * subject = Reference(example-mes-fr-patient-001) "Pierre Durand"
-P* effectiveDateTime = "2023-07-02"
+* effectiveDateTime = "2023-07-02"
 * valueQuantity = 18 '/min' "/min"
