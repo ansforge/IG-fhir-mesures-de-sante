@@ -11,5 +11,3 @@ Usage: #example
 * effectiveDateTime = "2025-07-07T09:00:00+02:00"
 * performer  = Reference(example-mes-fr-practitionner-001) "Jean Dupont"
 * valueQuantity = 6.5 '%'
-
-* method = http://hl7.org/fhir/ValueSet/method-glucose-vs#HPLC "High-performance liquid chromatography"

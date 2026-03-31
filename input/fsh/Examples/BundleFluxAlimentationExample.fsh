@@ -1,7 +1,3 @@
-Alias: $ContinuaDeviceIdentifiers = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers
-Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $loinc = http://loinc.org
-
 Instance: example-mes-fr-bundle-body-weight
 InstanceOf: MesBundleFluxAlimentation
 Title: "Exemple de bundle FHIR pour une mesure de poids corporel avec un dispositif PHD"

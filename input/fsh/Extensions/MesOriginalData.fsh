@@ -4,7 +4,7 @@ Title: "Valeur originale"
 Description: "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif."
 * ^context.type = #element
 * ^context.expression = "Observation"
-* . ^short = "Nombre de jours"
+* . ^short = "Valeur originale de la donnée"
 
 
 * extension ^slicing.discriminator.type = #value
