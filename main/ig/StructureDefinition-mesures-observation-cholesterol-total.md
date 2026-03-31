@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total | *Version*:3.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:MesObservationCholesterolTotal |
+| Active as of 2026-03-31 | *Computable Name*:MesObservationCholesterolTotal |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol total 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolTotal",
   "title" : "Cholestérol - total",
   "status" : "active",
-  "date" : "2026-03-18T17:41:07+00:00",
+  "date" : "2026-03-31T09:00:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -243,7 +243,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
     {
       "id" : "Observation.referenceRange",
       "path" : "Observation.referenceRange",
-      "short" : "L'intervalle de référence est obligatoire pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ...",
+      "short" : "Associer la mesure à l'intervalle de référence est fortement recommandé pour interpréter le résultat par rapport à la norme, qui peut varier selon de nombreux critères : la méthode d'analyse, l'age, le sexe, ...",
       "max" : "1",
       "constraint" : [{
         "key" : "mes-ir",
@@ -254,24 +254,9 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.referenceRange.high",
-      "path" : "Observation.referenceRange.high",
-      "min" : 1
-    },
-    {
       "id" : "Observation.referenceRange.type",
       "path" : "Observation.referenceRange.type",
-      "max" : "0"
-    },
-    {
-      "id" : "Observation.referenceRange.appliesTo",
-      "path" : "Observation.referenceRange.appliesTo",
-      "max" : "0"
-    },
-    {
-      "id" : "Observation.referenceRange.age",
-      "path" : "Observation.referenceRange.age",
-      "max" : "0"
+      "short" : "Le type de référence permet d'indiquer s'il s'agit d'un intervalle de réfence ou d'un objectif cible."
     },
     {
       "id" : "Observation.hasMember",

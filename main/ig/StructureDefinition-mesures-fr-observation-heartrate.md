@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-heartrate | *Version*:3.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:MesFrObservationHeartrate |
+| Active as of 2026-03-31 | *Computable Name*:MesFrObservationHeartrate |
 
  
 Profil de la ressource Observation pour définir une Fréquence Cardiaque (acronyme : FC ou HR) 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationHeartrate",
   "title" : "Fréquence Cardiaque",
   "status" : "active",
-  "date" : "2026-03-18T17:41:07+00:00",
+  "date" : "2026-03-31T09:00:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-number-of-days | *Version*:3.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:MesNumberOfDays |
+| Active as of 2026-03-31 | *Computable Name*:MesNumberOfDays |
 
 Extension sur le Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-number-of-da
   "name" : "MesNumberOfDays",
   "title" : "Nombre de jours",
   "status" : "active",
-  "date" : "2026-03-18T17:41:07+00:00",
+  "date" : "2026-03-31T09:00:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

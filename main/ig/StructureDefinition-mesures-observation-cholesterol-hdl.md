@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-hdl | *Version*:3.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:MesObservationCholesterolHDL |
+| Active as of 2026-03-31 | *Computable Name*:MesObservationCholesterolHDL |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol HDL 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolHDL",
   "title" : "Cholestérol - HDL",
   "status" : "active",
-  "date" : "2026-03-18T17:41:07+00:00",
+  "date" : "2026-03-31T09:00:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -254,19 +254,9 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.referenceRange.low",
-      "path" : "Observation.referenceRange.low",
-      "min" : 1
-    },
-    {
-      "id" : "Observation.referenceRange.high",
-      "path" : "Observation.referenceRange.high",
-      "max" : "0"
-    },
-    {
       "id" : "Observation.referenceRange.type",
       "path" : "Observation.referenceRange.type",
-      "max" : "0"
+      "short" : "Le type de référence permet d'indiquer s'il s'agit d'un intervalle de réfence ou d'un objectif cible."
     },
     {
       "id" : "Observation.referenceRange.appliesTo",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-ldl | *Version*:3.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:MesObservationCholesterolLDL |
+| Active as of 2026-03-31 | *Computable Name*:MesObservationCholesterolLDL |
 
  
 Profil biologie de la ressource Observation pour définir le cholestérol LDL 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationCholesterolLDL",
   "title" : "Cholestérol - LDL",
   "status" : "active",
-  "date" : "2026-03-18T17:41:07+00:00",
+  "date" : "2026-03-31T09:00:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -254,29 +254,9 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.referenceRange.low",
-      "path" : "Observation.referenceRange.low",
-      "max" : "0"
-    },
-    {
-      "id" : "Observation.referenceRange.high",
-      "path" : "Observation.referenceRange.high",
-      "min" : 1
-    },
-    {
       "id" : "Observation.referenceRange.type",
       "path" : "Observation.referenceRange.type",
-      "max" : "0"
-    },
-    {
-      "id" : "Observation.referenceRange.appliesTo",
-      "path" : "Observation.referenceRange.appliesTo",
-      "max" : "0"
-    },
-    {
-      "id" : "Observation.referenceRange.age",
-      "path" : "Observation.referenceRange.age",
-      "max" : "0"
+      "short" : "Le type de référence permet d'indiquer s'il s'agit d'un intervalle de réfence ou d'un objectif cible."
     },
     {
       "id" : "Observation.hasMember",
