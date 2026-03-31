@@ -20,16 +20,8 @@ Description: "Profil biologie de la ressource Observation pour définir le chole
 * valueQuantity.code 1..
 * valueQuantity.code = #mmol/L
 
-* referenceRange 1..1 MS
 * referenceRange obeys mes-ir
-* referenceRange.low 0..1 // A DISCUTER, changé de 0..0 à 0..1
-* referenceRange.high 1..1
-* referenceRange.type 0..0
-* referenceRange.type only CodeableConcept
-* referenceRange.appliesTo 0..0
-* referenceRange.appliesTo only CodeableConcept
-* referenceRange.age 0..0
-* referenceRange.age only Range
+* referenceRange.type ^short = "Le type de référence permet d'indiquer s'il s'agit d'un intervalle de réfence ou d'un objectif cible."
 
 * hasMember 0..0
 * derivedFrom 0..0
