@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures | *Version*:3.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:Mesures |
+| Active as of 2026-05-06 | *Computable Name*:Mesures |
 
  **Vital Signs Implementation Guide**
  This implementation guide contains the profiles to share vital-signs for the French ecosystem. 
@@ -165,7 +165,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-03-31T09:00:47+00:00",
+  "date" : "2026-05-06T11:42:59+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -178,7 +178,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "packageId" : "ans.fhir.fr.mesures",
