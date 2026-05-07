@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report | *Version*:3.2.0 |
-| Active as of 2026-05-06 | *Computable Name*:MesDiagnosticReport |
+| Active as of 2026-05-07 | *Computable Name*:MesDiagnosticReport |
 
  
 Profil biologie de la ressource DiagnosticReport pour définir un rapport de biologie 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-diagnostic-r
   "name" : "MesDiagnosticReport",
   "title" : "DiagnosticReport mesures biologie",
   "status" : "active",
-  "date" : "2026-05-06T11:42:59+00:00",
+  "date" : "2026-05-07T07:18:48+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

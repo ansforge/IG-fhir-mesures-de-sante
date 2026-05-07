@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bodyheight | *Version*:3.2.0 |
-| Active as of 2026-05-06 | *Computable Name*:MesFrObservationBodyHeight |
+| Active as of 2026-05-07 | *Computable Name*:MesFrObservationBodyHeight |
 
  
 Profil de la ressource Observation pour définir une taille 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-fr-observati
   "name" : "MesFrObservationBodyHeight",
   "title" : "Taille",
   "status" : "active",
-  "date" : "2026-05-06T11:42:59+00:00",
+  "date" : "2026-05-07T07:18:48+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

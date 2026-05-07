@@ -1,10 +1,10 @@
 Mesures : Validation Results
 =========================================
 
-err = 247, warn = 133, info = 45
+err = 247, warn = 134, info = 45
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.mesures#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/mesures)
- Build Errors : 246 / 14 / 0
+ Build Errors : 245 / 15 / 0
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Bundle-example-mes-fr-bundle-bio-003 : 2 / 16 / 21
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Bundle-example-mes-fr-bundle-body-weight : 0 / 2 / 10
  /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/fsh-generated/resources/Device-example-mes-fr-phd-device-001 : 0 / 0 / 5
@@ -316,10 +316,10 @@ ERROR: changes.html#/html/body/div/div/div/div/div/h3/a at Line 264, column 65: 
 ERROR: changes.html#/html/body/div/div/div/div/div/h3/a at Line 272, column 65: The link 'https://interop.esante.gouv.fr/ig/fhir/mesures/3.0.0' for "Release 3.0.0" cannot be resolved
 WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/output/flux-alimentation-signes-vitaux.html: Illegal HTML: illegal html element: OID ()
 ERROR: flux-alimentation-signes-vitaux.html#/html/body/div/div/div/div/div/p/a at Line 336, column 8: The link 'Bundle-bundle-example.html' for "exemple complet" cannot be resolved
-ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
 WARNING: /home/runner/work/IG-fhir-mesures-de-sante/IG-fhir-mesures-de-sante/igSource/output/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img/footer/div/div/div/div/div/div/a/img/div/a/img/script at Line 255, column 7: The <script> containing the javascript '$( document ).ready('... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-example-mes-fr-bundle-bio-003.json ==
 INFORMATION: Bundle/example-mes-fr-bundle-bio-003: Bundle.entry[5]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation-biologie|3.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/example-mes-fr-bundle-bio-003: Bundle.entry[0].resource.result[4]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report|3.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)

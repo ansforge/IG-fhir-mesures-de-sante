@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures | *Version*:3.2.0 |
-| Active as of 2026-05-06 | *Computable Name*:Mesures |
+| Active as of 2026-05-07 | *Computable Name*:Mesures |
 
  **Vital Signs Implementation Guide**
  This implementation guide contains the profiles to share vital-signs for the French ecosystem. 
@@ -165,7 +165,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-05-06T11:42:59+00:00",
+  "date" : "2026-05-07T07:18:48+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -253,6 +253,17 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       {
         "url" : "value",
         "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-expansion-params"
+      },
+      {
+        "url" : "value",
+        "valueString" : "../../expansion-params.json"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -510,6 +521,12 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
+      "valueReference" : {
+        "reference" : "Parameters/expansion-parameters"
+      }
+    },
+    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
       "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
@@ -543,6 +560,17 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       {
         "url" : "value",
         "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-expansion-params"
+      },
+      {
+        "url" : "value",
+        "valueString" : "../../expansion-params.json"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
