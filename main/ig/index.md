@@ -165,7 +165,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-05-07T07:18:48+00:00",
+  "date" : "2026-05-07T07:24:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -249,6 +249,28 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       "extension" : [{
         "url" : "code",
         "valueString" : "shownav"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "fr-FR"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
       },
       {
         "url" : "value",
@@ -413,17 +435,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "apply-license"
       },
       {
@@ -556,6 +567,28 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       "extension" : [{
         "url" : "code",
         "valueCode" : "shownav"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "fr-FR"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
       },
       {
         "url" : "value",
@@ -710,17 +743,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       "extension" : [{
         "url" : "code",
         "valueCode" : "apply-copyright"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-jurisdiction"
       },
       {
         "url" : "value",
