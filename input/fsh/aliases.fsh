@@ -48,3 +48,9 @@ Alias: $JDV-J159-MethodPainSeverity-MES = https://mos.esante.gouv.fr/NOS/JDV_J15
 Alias: $JDV-J163-GlucoseUnits-MES = https://mos.esante.gouv.fr/NOS/JDV_J163-GlucoseUnits-ENS/FHIR/JDV-J163-GlucoseUnits-ENS
 Alias: $JDV-J164-GlucoseNumberOfDays-MES = https://mos.esante.gouv.fr/NOS/JDV_J164-GlucoseNumberOfDays-ENS/FHIR/JDV-J164-GlucoseNumberOfDays-ENS
 Alias: $jdv-technique-biologie-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-technique-biologie-cisis
+
+// --- Exemples ---
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+Alias: $ContinuaDeviceIdentifiers = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers

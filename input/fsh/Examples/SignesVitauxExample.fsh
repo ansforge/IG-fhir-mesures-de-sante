@@ -80,7 +80,7 @@ Description: "Exemple de mesure de taille corporelle"
 * status = #final
 * subject = Reference(example-mes-fr-patient-001) "Pierre Durand"
 * effectiveDateTime = "1999-07-02"
-* valueQuantity.value = 185 
+* valueQuantity.value = 185
 * valueQuantity.code = #cm
 * valueQuantity.system = $UCUM
 * valueQuantity.unit = "cm"
@@ -96,9 +96,6 @@ Description: "Exemple de mesure de la température corporelle"
   * type = "Patient"
 * effectiveDateTime = "2022-11-06"
 * valueQuantity = 36.5 'Cel' "C"
-
-Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $loinc = http://loinc.org
 
 Instance: example-mes-fr-observation-oxygen-sat-001
 InstanceOf: MesFrObservationOxygenSat
@@ -131,7 +128,6 @@ Description: "Exemple de mesure de la pression artérielle"
 * component[SystolicBP][0].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
 * component[SystolicBP][0].interpretation.text = "Normal"
 
-
 // Diastolic BP
 * component[DiastolicBP][0].code = http://loinc.org#8462-4 "Diastolic blood pressure"
 * component[DiastolicBP][0].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
@@ -156,7 +152,6 @@ Description: "Exemple de mesure de l'IMC"
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
 
 
-
 Instance: example-mes-fr-observation-heartrate-001
 InstanceOf: MesFrObservationHeartrate
 Title: "Exemple de mesure de la fréquence cardiaque"
@@ -176,9 +171,9 @@ Description: "Exemple de mesure du périmètre crânien"
 * status = #final
 * code = http://loinc.org#8287-5
 * subject = Reference(example-mes-fr-patient-001) "Pierre Durand"
-  * type = "Patient" 
+  * type = "Patient"
 * effectiveDateTime = "2022-11-06"
-* valueQuantity = 61 'cm' 
+* valueQuantity = 61 'cm'
 
 Instance: example-mes-fr-observation-pain-severity-001
 InstanceOf: MesObservationPainSeverity
@@ -204,7 +199,7 @@ Description: "Exemple de mesure du nombre de pas par jour"
   * type = "Patient"
 * code = http://loinc.org#41950-7
 * effectiveDateTime = "2022-11-06"
-* valueQuantity = 2500 '1/(24.h)' 
+* valueQuantity = 2500 '1/(24.h)'
 * extension[MesReasonForMeasurement].valueString = "Essoufflement du patient"
 
 Instance: example-mes-fr-observation-waist-circum-001
