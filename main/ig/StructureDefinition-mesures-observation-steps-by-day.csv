@@ -53,7 +53,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:supportingInfo","Observation.extension","supportingInfo","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo]]} {[]}
-","Other information that may be relevant to this event.","Autres ressources pertinentes *du dossier patient*","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Other information that may be relevant to this event.","Autres ressources pertinentes *du dossier patient*","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:MesReasonForMeasurement","Observation.extension","MesReasonForMeasurement","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-reason-for-measurement]]} {[]}
 ","Motif de la mesure","Motif de la mesure

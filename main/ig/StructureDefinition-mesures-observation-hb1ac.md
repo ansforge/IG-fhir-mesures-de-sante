@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-hb1ac | *Version*:3.2.0 |
-| Active as of 2026-05-07 | *Computable Name*:MesObservationHb1Ac |
+| Active as of 2026-06-09 | *Computable Name*:MesObservationHb1Ac |
 
  
 Profil biologie de la ressource Observation pour définir l’hémoglobine glyquée (Hb1Ac) mesurée en %. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-observation-
   "name" : "MesObservationHb1Ac",
   "title" : "Hémoglobine glyquée (Hb1Ac)",
   "status" : "active",
-  "date" : "2026-05-07T07:24:38+00:00",
+  "date" : "2026-06-09T08:46:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

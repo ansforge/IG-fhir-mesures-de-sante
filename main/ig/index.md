@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures | *Version*:3.2.0 |
-| Active as of 2026-05-07 | *Computable Name*:Mesures |
+| Active as of 2026-06-09 | *Computable Name*:Mesures |
 
  **Vital Signs Implementation Guide**
  This implementation guide contains the profiles to share vital-signs for the French ecosystem. 
@@ -117,13 +117,14 @@ Les spécifications techniques des Mesures de santé au format FHIR ont été é
 
 
 
+
 ### Propriété intellectuelle
 
 Certaines ressources sémantiques de ce guide sont protégées par des droits de propriété intellectuelle couverte par les déclarations ci-dessous. L’utilisation de ces ressources est soumise à l’acceptation et au respect des conditions précisées dans la licence d’utilisation de chacune d’entre elle.
 
 * [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) 
 
-* [European Medical device nomenclature](https://interop.esante.gouv.fr/terminologies/1.7.0/CodeSystem-terminologie-emdn.html): [MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md)... Show 5 more, [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md), [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md) and [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md)
+* [European Medical device nomenclature](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-emdn.html): [MesFrObservationBodyHeight](StructureDefinition-mesures-fr-observation-bodyheight.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md)... Show 5 more, [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md), [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md) and [MesObservationStepsByDay](StructureDefinition-mesures-observation-steps-by-day.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
@@ -143,13 +144,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](https://interop.esante.gouv.fr/terminologies/1.7.0/CodeSystem-900000000000207008-20260201.html): [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md) and [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md)
-
-
-* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
-
-* [Observation Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html): [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md), [Bundle/example-mes-fr-bundle-body-weight](Bundle-example-mes-fr-bundle-body-weight.md)... Show 15 more, [Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1](Observation-8057b6ec-1417-4f1f-9a00-b0c46e7e71b1.md), [Observation/example-mes-fr-observation-bmi-001](Observation-example-mes-fr-observation-bmi-001.md), [Observation/example-mes-fr-observation-body-height-001](Observation-example-mes-fr-observation-body-height-001.md), [Observation/example-mes-fr-observation-body-temperature-001](Observation-example-mes-fr-observation-body-temperature-001.md), [Observation/example-mes-fr-observation-body-weight-001](Observation-example-mes-fr-observation-body-weight-001.md), [Observation/example-mes-fr-observation-bp-001](Observation-example-mes-fr-observation-bp-001.md), [Observation/example-mes-fr-observation-glucose-001](Observation-example-mes-fr-observation-glucose-001.md), [Observation/example-mes-fr-observation-hb1ac-001](Observation-example-mes-fr-observation-hb1ac-001.md), [Observation/example-mes-fr-observation-head-circumference-001](Observation-example-mes-fr-observation-head-circumference-001.md), [Observation/example-mes-fr-observation-heartrate-001](Observation-example-mes-fr-observation-heartrate-001.md), [Observation/example-mes-fr-observation-oxygen-sat-001](Observation-example-mes-fr-observation-oxygen-sat-001.md), [Observation/example-mes-fr-observation-pain-severity-001](Observation-example-mes-fr-observation-pain-severity-001.md), [Observation/example-mes-fr-observation-resp-rate-001](Observation-example-mes-fr-observation-resp-rate-001.md), [Observation/example-mes-fr-observation-steps-by-day-001](Observation-example-mes-fr-observation-steps-by-day-001.md) and [Observation/example-mes-fr-observation-waist-circum-001](Observation-example-mes-fr-observation-waist-circum-001.md)
-* [ObservationInterpretation](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html): [MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md)... Show 5 more, [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md), [Observation/example-mes-fr-observation-bmi-001](Observation-example-mes-fr-observation-bmi-001.md) and [Observation/example-mes-fr-observation-bp-001](Observation-example-mes-fr-observation-bp-001.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md) and [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md)
 
 
 
@@ -165,7 +160,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-05-07T07:24:38+00:00",
+  "date" : "2026-06-09T08:46:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -202,7 +197,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   },
   {
     "id" : "hl7_fhir_fr_core",
@@ -220,7 +215,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.7.0"
+    "version" : "1.10.0"
   }],
   "definition" : {
     "extension" : [{

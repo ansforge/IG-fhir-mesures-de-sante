@@ -22,8 +22,6 @@ Profil: [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-
 
 **value**: 6.5 % (Détails : code UCUM% = '%')
 
-**method**: High-performance liquid chromatography
-
 
 
 ## Resource Content
@@ -60,13 +58,6 @@ Profil: [Hémoglobine glyquée (Hb1Ac)](StructureDefinition-mesures-observation-
     "value" : 6.5,
     "system" : "http://unitsofmeasure.org",
     "code" : "%"
-  },
-  "method" : {
-    "coding" : [{
-      "system" : "http://hl7.org/fhir/ValueSet/method-glucose-vs",
-      "code" : "HPLC",
-      "display" : "High-performance liquid chromatography"
-    }]
   }
 }
 
