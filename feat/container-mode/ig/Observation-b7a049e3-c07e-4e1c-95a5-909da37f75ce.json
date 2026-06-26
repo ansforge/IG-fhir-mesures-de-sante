@@ -1,0 +1,77 @@
+{
+  "resourceType" : "Observation",
+  "id" : "b7a049e3-c07e-4e1c-95a5-909da37f75ce",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Observation b7a049e3-c07e-4e1c-95a5-909da37f75ce</b></p><a name=\"b7a049e3-c07e-4e1c-95a5-909da37f75ce\"> </a><a name=\"hcb7a049e3-c07e-4e1c-95a5-909da37f75ce\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-mesures-observation-cholesterol-total.html\">Cholestérol - total</a></p></div><blockquote><p><b>Valeur originale</b></p><ul><li>has-been-converted: true</li><li>original-code: <span title=\"Codes :{http://loinc.org 2093-3}\">Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique</span></li><li>original-value: 0.155 g/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMg/L = 'g/L')</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2093-3}\">Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique</span></p><p><b>subject</b>: <a href=\"Patient-example-mes-fr-patient-001.html\">Pierre Durand</a></p><p><b>effective</b>: 2024-10-15</p><p><b>value</b>: 0.4 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></p><p><b>method</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/terminologie-tccr DEG}\">DEG</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.8 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td><td>11.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmmol/L = 'mmol/L')</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "has-been-converted",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "original-code",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "2093-3",
+          "display" : "Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique"
+        }]
+      }
+    },
+    {
+      "url" : "original-value",
+      "valueQuantity" : {
+        "value" : 0.155,
+        "unit" : "g/L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g/L"
+      }
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2093-3",
+      "display" : "Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/example-mes-fr-patient-001",
+    "type" : "Patient",
+    "display" : "Pierre Durand"
+  },
+  "effectiveDateTime" : "2024-10-15",
+  "valueQuantity" : {
+    "value" : 0.4,
+    "unit" : "mmol/L",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mmol/L"
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "https://smt.esante.gouv.fr/terminologie-tccr",
+      "code" : "DEG"
+    }]
+  },
+  "referenceRange" : [{
+    "low" : {
+      "value" : 2.8,
+      "unit" : "mmol/L",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mmol/L"
+    },
+    "high" : {
+      "value" : 11.1,
+      "unit" : "mmol/L",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mmol/L"
+    }
+  }]
+}

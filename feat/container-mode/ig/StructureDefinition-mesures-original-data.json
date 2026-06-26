@@ -1,0 +1,946 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "mesures-original-data",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure mesures-original-data</b></p><a name=\"mesures-original-data\"> </a><a name=\"hcmesures-original-data\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension\" title=\"Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.\">Extension</a><a name=\"Extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Valeur originale de la donnée</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Extension simple\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension\">extension</a><a name=\"Extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">3..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Définition de Slice\" class=\"hierarchy\"/> Slices pour extension<a name=\"Extension.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Contenu/Règles pour toutes les slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:has-been-converted\" title=\"Slice has-been-converted\">extension:has-been-converted</a><a name=\"Extension.extension:has-been-converted\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indication permettant de savoir si la valeur a été convertie.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Extension simple\" class=\"hierarchy\"/> <a style=\"text-decoration:line-through; text-decoration:line-through\" href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:has-been-converted.extension\">extension</a><a name=\"Extension.extension:has-been-converted.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:has-been-converted.url\">url</a><a name=\"Extension.extension:has-been-converted.url\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"color: darkgreen\">&quot;has-been-converted&quot;</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:has-been-converted.value[x]\">value[x]</a><a name=\"Extension.extension:has-been-converted.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Motif requis: </span><span style=\"color: darkgreen\">true</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:original-code\" title=\"Slice original-code\">extension:original-code</a><a name=\"Extension.extension:original-code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code original de la donnée. Il permet notamment d'identifier le niveau de comparabilité des résultats entre eux. Le choix a été fait de ne pas indiquer directement le numéro de comparabilité mais d'indiquer directement le code LOINC d'origine pour identifier le numéro de comparabilité dans le jeu de valeur circuit de la biologie.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Extension simple\" class=\"hierarchy\"/> <a style=\"text-decoration:line-through; text-decoration:line-through\" href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:original-code.extension\">extension</a><a name=\"Extension.extension:original-code.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:original-code.url\">url</a><a name=\"Extension.extension:original-code.url\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"color: darkgreen\">&quot;original-code&quot;</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:original-code.value[x]\">value[x]</a><a name=\"Extension.extension:original-code.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:original-value\" title=\"Slice original-value\">extension:original-value</a><a name=\"Extension.extension:original-value\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Valeur originale | Original value</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Extension simple\" class=\"hierarchy\"/> <a style=\"text-decoration:line-through; text-decoration:line-through\" href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:original-value.extension\">extension</a><a name=\"Extension.extension:original-value.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:original-value.url\">url</a><a name=\"Extension.extension:original-value.url\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"color: darkgreen\">&quot;original-value&quot;</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.extension:original-value.value[x]\">value[x]</a><a name=\"Extension.extension:original-value.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.url\">url</a><a name=\"Extension.url\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"color: darkgreen\">&quot;https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data&quot;</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a style=\"text-decoration:line-through; text-decoration:line-through\" href=\"StructureDefinition-mesures-original-data-definitions.html#Extension.value[x]\">value[x]</a><a name=\"Extension.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\">Value of extension</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data",
+  "version" : "3.2.0",
+  "name" : "MesOriginalData",
+  "title" : "Valeur originale",
+  "status" : "active",
+  "date" : "2026-06-26T10:32:15+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Observation"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "4.0.1"
+    }],
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Valeur originale de la donnée",
+      "definition" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false
+    },
+    {
+      "id" : "Extension.id",
+      "path" : "Extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 3,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Extension.extension:has-been-converted",
+      "path" : "Extension.extension",
+      "sliceName" : "has-been-converted",
+      "short" : "Indication permettant de savoir si la valeur a été convertie.",
+      "definition" : "An Extension",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.id",
+      "path" : "Extension.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.extension",
+      "path" : "Extension.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.url",
+      "path" : "Extension.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "uri"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "fixedUri" : "has-been-converted",
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "patternBoolean" : true,
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.extension:original-code",
+      "path" : "Extension.extension",
+      "sliceName" : "original-code",
+      "short" : "Code original de la donnée. Il permet notamment d'identifier le niveau de comparabilité des résultats entre eux. Le choix a été fait de ne pas indiquer directement le numéro de comparabilité mais d'indiquer directement le code LOINC d'origine pour identifier le numéro de comparabilité dans le jeu de valeur circuit de la biologie.",
+      "definition" : "An Extension",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Extension.extension:original-code.id",
+      "path" : "Extension.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Extension.extension:original-code.extension",
+      "path" : "Extension.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Extension.extension:original-code.url",
+      "path" : "Extension.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "uri"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "fixedUri" : "original-code",
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.extension:original-code.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.extension:original-value",
+      "path" : "Extension.extension",
+      "sliceName" : "original-value",
+      "short" : "Valeur originale | Original value",
+      "definition" : "An Extension",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Extension.extension:original-value.id",
+      "path" : "Extension.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Extension.extension:original-value.extension",
+      "path" : "Extension.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Extension.extension:original-value.url",
+      "path" : "Extension.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "uri"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "fixedUri" : "original-value",
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.extension:original-value.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "uri"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data",
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      },
+      {
+        "code" : "Meta"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Valeur originale de la donnée",
+      "definition" : "Extension permettant de renseigner la donnée originale. \r\nDans le cas où une conversion d'unité a été effectuée sur la valeur de la mesure, cette extension permet de conserver la valeur originale telle que mesurée par le dispositif."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "min" : 3
+    },
+    {
+      "id" : "Extension.extension:has-been-converted",
+      "path" : "Extension.extension",
+      "sliceName" : "has-been-converted",
+      "short" : "Indication permettant de savoir si la valeur a été convertie.",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "has-been-converted"
+    },
+    {
+      "id" : "Extension.extension:has-been-converted.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "patternBoolean" : true
+    },
+    {
+      "id" : "Extension.extension:original-code",
+      "path" : "Extension.extension",
+      "sliceName" : "original-code",
+      "short" : "Code original de la donnée. Il permet notamment d'identifier le niveau de comparabilité des résultats entre eux. Le choix a été fait de ne pas indiquer directement le numéro de comparabilité mais d'indiquer directement le code LOINC d'origine pour identifier le numéro de comparabilité dans le jeu de valeur circuit de la biologie.",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:original-code.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:original-code.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "original-code"
+    },
+    {
+      "id" : "Extension.extension:original-code.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.extension:original-value",
+      "path" : "Extension.extension",
+      "sliceName" : "original-value",
+      "short" : "Valeur originale | Original value",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:original-value.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:original-value.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "original-value"
+    },
+    {
+      "id" : "Extension.extension:original-value.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
+  }
+}
