@@ -13,7 +13,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-diagnostic-report>
      ] )
   ] ; # 
   fhir:text [
@@ -24,28 +24,25 @@
   fhir:code [
      fhir:coding ( [
        a loinc:11502-2 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "11502-2" ] ;
        fhir:display [ fhir:v "Compte rendu du laboratoire [Recherche] Patient ; Document" ]
      ] )
   ] ; # 
   fhir:result ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce> ;
      fhir:reference [ fhir:v "Observation/b7a049e3-c07e-4e1c-95a5-909da37f75ce" ]
   ] [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/7b166d82-27b6-4878-9765-3fe101618edf> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/7b166d82-27b6-4878-9765-3fe101618edf> ;
      fhir:reference [ fhir:v "Observation/7b166d82-27b6-4878-9765-3fe101618edf" ]
   ] [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e> ;
      fhir:reference [ fhir:v "Observation/9bd2b013-27b0-4283-aa9e-fe7a5e0c6f1e" ]
   ] [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/645f7341-715f-44fb-87e9-93f2e7d125a5> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/645f7341-715f-44fb-87e9-93f2e7d125a5> ;
      fhir:reference [ fhir:v "Observation/645f7341-715f-44fb-87e9-93f2e7d125a5" ]
   ] [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1> ;
      fhir:reference [ fhir:v "Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1" ]
   ] ) . # 
 

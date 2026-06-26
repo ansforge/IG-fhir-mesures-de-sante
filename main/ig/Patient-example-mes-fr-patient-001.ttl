@@ -15,10 +15,7 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [
-       fhir:v "urn:oid:1.2.250.1.213.1.4.8"^^xsd:anyURI ;
-       fhir:l <urn:oid:1.2.250.1.213.1.4.8>
-     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.250.1.213.1.4.8"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "123456789012244" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 
@@ -45,7 +42,7 @@
   fhir:gender [ fhir:v "male"] ; # 
   fhir:birthDate [ fhir:v "1974-12-25"^^xsd:date] ; # 
   fhir:deceased [
-     a fhir:Boolean ;
+     a fhir:boolean ;
      fhir:v false
   ] ; # 
   fhir:address ( [

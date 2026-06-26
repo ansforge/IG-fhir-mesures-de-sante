@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice>
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice>
      ] )
   ] ; # 
   fhir:text [
@@ -22,32 +22,20 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "SYSID" ]
        ] )
      ] ;
-     fhir:system [
-       fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ;
-       fhir:l <urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680>
-     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "74-E8-FF-FE-FF-05-1C-00" ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "BTMAC" ]
        ] )
      ] ;
-     fhir:system [
-       fhir:v "http://hl7.org/fhir/sid/eui-48/bluetooth"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/sid/eui-48/bluetooth>
-     ] ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/eui-48/bluetooth"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "00-1C-05-FF-E8-74" ]
   ] ) ; # 
   fhir:manufacturer [ fhir:v "Nonin_Medical_Inc."] ; # 
@@ -55,10 +43,7 @@
   fhir:modelNumber [ fhir:v "Model 3230"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
-         fhir:l <urn:iso:std:iso:11073:10101>
-       ] ;
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "65573" ]
      ] ) ;
      fhir:text [ fhir:v "MDC_MOC_VMS_MDS_SIMP" ]
@@ -66,10 +51,7 @@
   fhir:specialization ( [
      fhir:systemType [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
-           fhir:l <urn:iso:std:iso:11073:10101>
-         ] ;
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "528388" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_DEV_SPEC_PROFILE_PULS_OXIM: Pulse Oximeter" ]
@@ -79,10 +61,7 @@
   fhir:version ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
-           fhir:l <urn:iso:std:iso:11073:10101>
-         ] ;
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "531976" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_ID_PROD_SPEC_FW: Firmware revision" ]
@@ -91,10 +70,7 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
-           fhir:l <urn:iso:std:iso:11073:10101>
-         ] ;
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "531975" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_ID_PROD_SPEC_SW: Software revision" ]
@@ -103,10 +79,7 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
-           fhir:l <urn:iso:std:iso:11073:10101>
-         ] ;
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "531974" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_ID_PROD_SPEC_HW: Hardware revision" ]
@@ -115,10 +88,7 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
-           fhir:l <urn:iso:std:iso:11073:10101>
-         ] ;
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "532352" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version" ]
@@ -128,40 +98,28 @@
   fhir:property ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
-           fhir:l <urn:iso:std:iso:11073:10101>
-         ] ;
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "532353" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: certified device list as transport-specialization combo" ]
      ] ;
      fhir:valueCode ( [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "32772" ]
        ] )
      ] )
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "532354.0" ]
        ] ) ;
        fhir:text [ fhir:v "regulation-status" ]
      ] ;
      fhir:valueCode ( [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0136>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "N" ]
        ] ) ;
        fhir:text [ fhir:v "Device is Regulated" ]
@@ -169,20 +127,14 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
-           fhir:l <urn:iso:std:iso:11073:10101>
-         ] ;
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "68220" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol" ]
      ] ;
      fhir:valueCode ( [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
-           fhir:l <urn:iso:std:iso:11073:10101>
-         ] ;
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "532224" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_TIME_SYNC_NONE:" ]

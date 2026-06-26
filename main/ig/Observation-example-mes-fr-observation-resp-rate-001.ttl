@@ -13,7 +13,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-resp-rate>
      ] )
   ] ; # 
   fhir:text [
@@ -23,40 +23,31 @@
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:9279-1 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "9279-1" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
      fhir:reference [ fhir:v "Patient/example-mes-fr-patient-001" ] ;
      fhir:display [ fhir:v "Pierre Durand" ]
   ] ; # 
   fhir:effective [
-     a fhir:DateTime ;
+     a fhir:dateTime ;
      fhir:v "2023-07-02"^^xsd:date
   ] ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "18"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "/min" ] ;
-     fhir:system [
-       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-       fhir:l <http://unitsofmeasure.org>
-     ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "/min" ]
   ] . # 
 

@@ -14,10 +14,7 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Praticien example-mes-fr-practitionner-001</b></p><a name=\"example-mes-fr-practitionner-001\"> </a><a name=\"hcexample-mes-fr-practitionner-001\"> </a><p><b>identifier</b>: <code>http://www.acme.org/practitioners</code>/801234567897</p><p><b>active</b>: true</p><p><b>name</b>: Jean Dupont </p><p><b>telecom</b>: ph: 01 70 88 88 64(Work)</p><p><b>address</b>: 7 rue Coursier Amiens 80000 (home)</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ;
-       fhir:l <http://www.acme.org/practitioners>
-     ] ;
+     fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "801234567897" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 

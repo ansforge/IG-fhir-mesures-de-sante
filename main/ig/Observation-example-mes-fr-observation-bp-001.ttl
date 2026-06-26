@@ -13,7 +13,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-bp>
      ] )
   ] ; # 
   fhir:text [
@@ -23,47 +23,35 @@
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:85354-9 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "85354-9" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
      fhir:reference [ fhir:v "Patient/example-mes-fr-patient-001" ] ;
-     fhir:type [
-       fhir:v "Patient"^^xsd:anyURI ;
-       fhir:l fhir:Patient
-     ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
      fhir:display [ fhir:v "Pierre Durand" ]
   ] ; # 
   fhir:effective [
-     a fhir:DateTime ;
+     a fhir:dateTime ;
      fhir:v "2012-09-17"^^xsd:date
   ] ; # 
   fhir:performer ( [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Practitioner/example-mes-fr-practitionner-001> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Practitioner/example-mes-fr-practitionner-001> ;
      fhir:reference [ fhir:v "Practitioner/example-mes-fr-practitionner-001" ] ;
      fhir:display [ fhir:v "Jean Dupont" ]
   ] ) ; # 
   fhir:interpretation ( [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "L" ] ;
        fhir:display [ fhir:v "low" ]
      ] ) ;
@@ -71,10 +59,7 @@
   ] ) ; # 
   fhir:bodySite [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA"^^xsd:anyURI ;
-         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA>
-       ] ;
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "24890" ] ;
        fhir:display [ fhir:v "Bras" ]
      ] )
@@ -83,10 +68,7 @@
      fhir:code [
        fhir:coding ( [
          a loinc:8480-6 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "8480-6" ] ;
          fhir:display [ fhir:v "Systolic blood pressure" ]
        ] )
@@ -95,18 +77,12 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "107"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mm[Hg]" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "mm[Hg]" ]
      ] ;
      fhir:interpretation ( [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "N" ] ;
          fhir:display [ fhir:v "Normal" ]
        ] ) ;
@@ -116,10 +92,7 @@
      fhir:code [
        fhir:coding ( [
          a loinc:8462-4 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "8462-4" ] ;
          fhir:display [ fhir:v "Diastolic blood pressure" ]
        ] )
@@ -128,18 +101,12 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "60"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mm[Hg]" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "mm[Hg]" ]
      ] ;
      fhir:interpretation ( [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "L" ] ;
          fhir:display [ fhir:v "low" ]
        ] ) ;

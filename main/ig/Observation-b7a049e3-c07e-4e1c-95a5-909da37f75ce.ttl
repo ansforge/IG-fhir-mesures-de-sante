@@ -13,7 +13,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-observation-cholesterol-total>
      ] )
   ] ; # 
   fhir:text [
@@ -22,93 +22,63 @@
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "has-been-converted"^^xsd:anyURI ;
-         fhir:l fhir:has-been-converted
-       ] ;
+       fhir:url [ fhir:v "has-been-converted"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:Boolean ;
+         a fhir:boolean ;
          fhir:v true
        ]
      ] [
-       fhir:url [
-         fhir:v "original-code"^^xsd:anyURI ;
-         fhir:l fhir:original-code
-       ] ;
+       fhir:url [ fhir:v "original-code"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
            a loinc:2093-3 ;
-           fhir:system [
-             fhir:v "http://loinc.org"^^xsd:anyURI ;
-             fhir:l <http://loinc.org>
-           ] ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "2093-3" ] ;
            fhir:display [ fhir:v "Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique" ]
          ] )
        ]
      ] [
-       fhir:url [
-         fhir:v "original-value"^^xsd:anyURI ;
-         fhir:l fhir:original-value
-       ] ;
+       fhir:url [ fhir:v "original-value"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:Quantity ;
          fhir:value [ fhir:v 0.155 ] ;
          fhir:unit [ fhir:v "g/L" ] ;
-         fhir:system [
-           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-           fhir:l <http://unitsofmeasure.org>
-         ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "g/L" ]
        ]
      ] ) ;
-     fhir:url [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data>
-     ]
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-original-data"^^xsd:anyURI ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:2093-3 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "2093-3" ] ;
        fhir:display [ fhir:v "Cholestérol [Masse/Volume] Sérum/Plasma ; Numérique" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
      fhir:reference [ fhir:v "Patient/example-mes-fr-patient-001" ] ;
-     fhir:type [
-       fhir:v "Patient"^^xsd:anyURI ;
-       fhir:l fhir:Patient
-     ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
      fhir:display [ fhir:v "Pierre Durand" ]
   ] ; # 
   fhir:effective [
-     a fhir:DateTime ;
+     a fhir:dateTime ;
      fhir:v "2024-10-15"^^xsd:date
   ] ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v 0.4 ] ;
      fhir:unit [ fhir:v "mmol/L" ] ;
-     fhir:system [
-       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-       fhir:l <http://unitsofmeasure.org>
-     ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "mmol/L" ]
   ] ; # 
   fhir:method [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "https://smt.esante.gouv.fr/terminologie-tccr"^^xsd:anyURI ;
-         fhir:l <https://smt.esante.gouv.fr/terminologie-tccr>
-       ] ;
+       fhir:system [ fhir:v "https://smt.esante.gouv.fr/terminologie-tccr"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "DEG" ]
      ] )
   ] ; # 
@@ -116,19 +86,13 @@
      fhir:low [
        fhir:value [ fhir:v 2.8 ] ;
        fhir:unit [ fhir:v "mmol/L" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "mmol/L" ]
      ] ;
      fhir:high [
        fhir:value [ fhir:v 11.1 ] ;
        fhir:unit [ fhir:v "mmol/L" ] ;
-       fhir:system [
-         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-         fhir:l <http://unitsofmeasure.org>
-       ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "mmol/L" ]
      ]
   ] ) . # 

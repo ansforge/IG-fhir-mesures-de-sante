@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-bundle-flux-alimentation | *Version*:3.2.0 |
-| Active as of 2026-06-09 | *Computable Name*:MesBundleFluxAlimentation |
+| Active as of 2026-06-26 | *Computable Name*:MesBundleFluxAlimentation |
 
  
 Profil de la ressource Bundle du flux d’alimentation à envoyer au serveur 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mesures-bundle-flux-
   "name" : "MesBundleFluxAlimentation",
   "title" : "Bundle d'alimentation",
   "status" : "active",
-  "date" : "2026-06-09T08:46:34+00:00",
+  "date" : "2026-06-26T10:39:02+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

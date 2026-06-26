@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/mesures/ImplementationGuide/ans.fhir.fr.mesures | *Version*:3.2.0 |
-| Active as of 2026-06-09 | *Computable Name*:Mesures |
+| Active as of 2026-06-26 | *Computable Name*:Mesures |
 
  **Vital Signs Implementation Guide**
  This implementation guide contains the profiles to share vital-signs for the French ecosystem. 
@@ -147,6 +147,12 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 * [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md) and [MesFrObservationOxygenSat](StructureDefinition-mesures-fr-observation-oxygen-sat.md)
 
 
+* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
+
+* [Observation Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html): [Bundle/example-mes-fr-bundle-bio-003](Bundle-example-mes-fr-bundle-bio-003.md), [Bundle/example-mes-fr-bundle-body-weight](Bundle-example-mes-fr-bundle-body-weight.md)... Show 15 more, [Observation/8057b6ec-1417-4f1f-9a00-b0c46e7e71b1](Observation-8057b6ec-1417-4f1f-9a00-b0c46e7e71b1.md), [Observation/example-mes-fr-observation-bmi-001](Observation-example-mes-fr-observation-bmi-001.md), [Observation/example-mes-fr-observation-body-height-001](Observation-example-mes-fr-observation-body-height-001.md), [Observation/example-mes-fr-observation-body-temperature-001](Observation-example-mes-fr-observation-body-temperature-001.md), [Observation/example-mes-fr-observation-body-weight-001](Observation-example-mes-fr-observation-body-weight-001.md), [Observation/example-mes-fr-observation-bp-001](Observation-example-mes-fr-observation-bp-001.md), [Observation/example-mes-fr-observation-glucose-001](Observation-example-mes-fr-observation-glucose-001.md), [Observation/example-mes-fr-observation-hb1ac-001](Observation-example-mes-fr-observation-hb1ac-001.md), [Observation/example-mes-fr-observation-head-circumference-001](Observation-example-mes-fr-observation-head-circumference-001.md), [Observation/example-mes-fr-observation-heartrate-001](Observation-example-mes-fr-observation-heartrate-001.md), [Observation/example-mes-fr-observation-oxygen-sat-001](Observation-example-mes-fr-observation-oxygen-sat-001.md), [Observation/example-mes-fr-observation-pain-severity-001](Observation-example-mes-fr-observation-pain-severity-001.md), [Observation/example-mes-fr-observation-resp-rate-001](Observation-example-mes-fr-observation-resp-rate-001.md), [Observation/example-mes-fr-observation-steps-by-day-001](Observation-example-mes-fr-observation-steps-by-day-001.md) and [Observation/example-mes-fr-observation-waist-circum-001](Observation-example-mes-fr-observation-waist-circum-001.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [MesFrObservationBmi](StructureDefinition-mesures-fr-observation-bmi.md), [MesFrObservationBodyTemperature](StructureDefinition-mesures-fr-observation-body-temperature.md)... Show 5 more, [MesFrObservationBodyWeight](StructureDefinition-mesures-fr-observation-body-weight.md), [MesFrObservationBp](StructureDefinition-mesures-fr-observation-bp.md), [MesFrObservationHeartrate](StructureDefinition-mesures-fr-observation-heartrate.md), [Observation/example-mes-fr-observation-bmi-001](Observation-example-mes-fr-observation-bmi-001.md) and [Observation/example-mes-fr-observation-bp-001](Observation-example-mes-fr-observation-bp-001.md)
+
+
 
 
 ## Resource Content
@@ -160,7 +166,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "Mesures",
   "title" : "Guide d'implémentation FHIR - Mesures de santé",
   "status" : "active",
-  "date" : "2026-06-09T08:46:34+00:00",
+  "date" : "2026-06-26T10:39:02+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -187,7 +193,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.1.0"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",

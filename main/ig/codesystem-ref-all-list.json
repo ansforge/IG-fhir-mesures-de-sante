@@ -92,11 +92,11 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J154-TypeGlucose-ENS.html" : "JDV_J154_TypeGlucose_ENS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J157-MomentGlucose-ENS.html" : "JDV_J157_MomentGlucose_ENS",
     "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
     "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J157-MomentGlucose-ENS.html" : "JDV_J157_MomentGlucose_ENS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J154-TypeGlucose-ENS.html" : "JDV_J154_TypeGlucose_ENS"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -109,28 +109,28 @@
     "uses" : {
     },
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147_MethodHeartrate_ENS",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J149-BodySiteBP-ENS.html" : "JDV_J149_BodySiteBP_ENS",
     "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
     "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J151-BodySiteBodyTemperature-ENS.html" : "JDV_J151_BodySiteBodyTemperature_ENS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J149-BodySiteBP-ENS.html" : "JDV_J149_BodySiteBP_ENS",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J151-BodySiteBodyTemperature-ENS.html" : "JDV_J151_BodySiteBodyTemperature_ENS"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
-    "version" : "4.0.1",
-    "status" : "draft",
+    "version" : "1.0.1",
+    "status" : "active",
     "name" : "CommonTags",
     "title" : "Common Tags",
     "description" : "Common Tag Codes defined by FHIR project",
-    "oids" : ["2.16.840.1.113883.4.642.4.1067"],
+    "oids" : ["2.16.840.1.113883.4.642.1.1067"],
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-    "version" : "4.0.1",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "DataAbsentReason",
     "title" : "DataAbsentReason",
@@ -142,35 +142,35 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
-    "version" : "4.0.1",
-    "status" : "draft",
+    "version" : "2.0.0",
+    "status" : "active",
     "name" : "ObservationCategoryCodes",
     "title" : "Observation Category Codes",
     "description" : "Observation Category codes.",
-    "oids" : ["2.16.840.1.113883.4.642.4.1125"],
+    "oids" : ["2.16.840.1.113883.4.642.1.1125"],
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
-    "version" : "4.0.1",
-    "status" : "draft",
+    "version" : "1.0.1",
+    "status" : "active",
     "name" : "ObservationReferenceRangeMeaningCodes",
     "title" : "Observation Reference Range Meaning Codes",
     "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
-    "oids" : ["2.16.840.1.113883.4.642.4.1124"],
+    "oids" : ["2.16.840.1.113883.4.642.1.1124"],
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
-    "version" : "2.9",
+    "version" : "3.0.0",
     "status" : "active",
-    "name" : "v2.0074",
-    "title" : "v2 DIAGNOSTIC SERVICE SECTION ID",
-    "description" : "FHIR Value set/code system definition for HL7 v2 table 0074 ( DIAGNOSTIC SERVICE SECTION ID)",
+    "name" : "DiagnosticServiceSectionId",
+    "title" : "diagnosticServiceSectionId",
+    "description" : "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
     "oids" : ["2.16.840.1.113883.18.29"],
     "uses" : {
     },
@@ -178,11 +178,11 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-    "version" : "2018-08-12",
+    "version" : "4.0.0",
     "status" : "active",
-    "name" : "v3.ObservationInterpretation",
-    "title" : "v3 Code System ObservationInterpretation",
-    "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" /  \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+    "name" : "ObservationInterpretation",
+    "title" : "ObservationInterpretation",
+    "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
     "oids" : ["2.16.840.1.113883.5.83"],
     "uses" : {
     },
@@ -198,11 +198,11 @@
     "oids" : ["2.16.840.1.113883.6.8"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
-    "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
     "http://hl7.org/fhir/R4/valueset-ucum-bodytemp.html" : "Body Temperature Units",
-    "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J163-GlucoseUnits-ENS.html" : "JDV_J163_GlucoseUnits_ENS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J163-GlucoseUnits-ENS.html" : "JDV_J163_GlucoseUnits_ENS",
+    "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
+    "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
+    "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R307-NCIT/FHIR/TRE-R307-NCIT",
@@ -238,9 +238,9 @@
     "oids" : ["1.2.250.1.213.1.1.4.322"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J164-GlucoseNumberOfDays-ENS.html" : "JDV_J164_GlucoseNumberOfDays_ENS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J157-MomentGlucose-ENS.html" : "JDV_J157_MomentGlucose_ENS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J154-TypeGlucose-ENS.html" : "JDV_J154_TypeGlucose_ENS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J157-MomentGlucose-ENS.html" : "JDV_J157_MomentGlucose_ENS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J164-GlucoseNumberOfDays-ENS.html" : "JDV_J164_GlucoseNumberOfDays_ENS"
   },
   {
     "url" : "https://smt.esante.gouv.fr/terminologie-emdn",
@@ -252,12 +252,12 @@
     "oids" : ["1.2.250.1.213.2.68"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147_MethodHeartrate_ENS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J150-MethodBP-ENS.html" : "JDV_J150_MethodBP_ENS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J145-MethodBodyWeight-ENS.html" : "JDV_J145_MethodBodyWeight_ENS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J152-MethodBodyTemperature-ENS.html" : "JDV_J152_MethodBodyTemperature_ENS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J147-MethodHeartrate-ENS.html" : "JDV_J147_MethodHeartrate_ENS",
     "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J158-MethodStepsByDay-ENS.html" : "JDV_J158_MethodStepsByDay_ENS",
-    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J146-MethodBodyHeight-ENS.html" : "JDV_J146_MethodBodyHeight_ENS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J146-MethodBodyHeight-ENS.html" : "JDV_J146_MethodBodyHeight_ENS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J150-MethodBP-ENS.html" : "JDV_J150_MethodBP_ENS",
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J145-MethodBodyWeight-ENS.html" : "JDV_J145_MethodBodyWeight_ENS"
   },
   {
     "url" : "urn:ietf:bcp:47",

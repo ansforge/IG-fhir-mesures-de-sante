@@ -13,7 +13,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/StructureDefinition/mesures-fr-observation-body-temperature>
      ] )
   ] ; # 
   fhir:text [
@@ -23,44 +23,32 @@
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:8310-5 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "8310-5" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/mesures/Patient/example-mes-fr-patient-001> ;
      fhir:reference [ fhir:v "Patient/example-mes-fr-patient-001" ] ;
-     fhir:type [
-       fhir:v "Patient"^^xsd:anyURI ;
-       fhir:l fhir:Patient
-     ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
      fhir:display [ fhir:v "Pierre Durand" ]
   ] ; # 
   fhir:effective [
-     a fhir:DateTime ;
+     a fhir:dateTime ;
      fhir:v "2022-11-06"^^xsd:date
   ] ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v 36.5 ] ;
      fhir:unit [ fhir:v "C" ] ;
-     fhir:system [
-       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
-       fhir:l <http://unitsofmeasure.org>
-     ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "Cel" ]
   ] . # 
 
